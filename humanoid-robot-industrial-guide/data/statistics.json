@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "generated_at": "2026-06-07",
+  "description": "项目统计数据，将由T27/T29任务生成",
+  "scenes": {
+    "total": 0,
+    "by_industry": {},
+    "by_difficulty": {},
+    "by_status": {}
+  },
+  "actions": {
+    "total": 0,
+    "by_level": {},
+    "by_difficulty": {},
+    "by_tech_maturity": {}
+  },
+  "quality_checks": {
+    "last_check": null,
+    "issues_found": []
+  }
+}

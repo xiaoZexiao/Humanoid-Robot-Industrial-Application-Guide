@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "generated_at": "2026-06-07",
+  "description": "场景与元动作的映射关系，将由T25任务生成",
+  "scene_to_actions": {},
+  "action_to_scenes": {},
+  "statistics": {
+    "total_scenes": 0,
+    "total_actions": 0,
+    "avg_actions_per_scene": 0,
+    "avg_scenes_per_action": 0
+  }
+}

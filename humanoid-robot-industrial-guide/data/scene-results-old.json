@@ -1,0 +1,678 @@
+[
+  {
+    "scene_name_zh": "安全巡检-井下巷道-高瓦斯环境",
+    "scene_name_en": "SafetyInspection-UndergroundTunnel-HighGasEnvironment",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "安全监测",
+    "scene_description": "该工位分布于井下主要巷道、采区联络巷及回风巷等关键通道，上游承接采煤作业区，下游连接通风系统和提升系统。当前由专职安全员人工巡检，携带便携式瓦斯检测仪、温度计、风速仪沿固定路线行走，检查巷道支护状态、瓦斯浓度、顶板离层、积水情况等。核心操作为行走观察和仪器读数，巡检路线单程2-5公里，需在瓦斯浓度0.5%-1.0%的环境中作业，携带设备总重约3-5kg。典型配置为每班2-3名安全员覆盖一个采区，单次完整巡检耗时2-4小时。该工位容易出现的问题包括：人员疲劳导致巡检不到位、瓦斯突然涌出时人员撤离不及、夜班注意力下降漏检隐患点。",
+    "selection_rationale": "命中入口二（高瓦斯环境人类不宜长时间暴露）、入口三（巡检漏检可下轮补上）、入口四（重复性巡检人类注意力衰减明显）、入口五（煤矿安全法规要求巡检数据可追溯）。机器人可在危险环境持续作业，且自动生成带时间戳的巡检记录。",
+    "scores": {
+      "labor_urgency": {
+        "score": 5,
+        "basis": "井下瓦斯浓度超限时人员必须撤离，近年多次发生瓦斯事故致人员伤亡"
+      },
+      "scale_potential": {
+        "score": 5,
+        "basis": "全国煤矿数千座，每座矿井需覆盖数十公里巷道，同类工位以万计"
+      },
+      "superhuman_value": {
+        "score": 5,
+        "basis": "命中V1全时在线、V2一致性、V5过程数据、V6超人感知（瓦斯/温度）、V7失败数据、V3操作检测合并"
+      },
+      "operation_complexity": {
+        "score": 1,
+        "basis": "纯行走观察加仪器读数，无精密接触操作"
+      },
+      "structure_level": {
+        "score": 3,
+        "basis": "巷道布局固定但存在积水、落石等随机障碍，人员偶有走动"
+      },
+      "fault_tolerance": {
+        "score": 5,
+        "basis": "漏检一次可下轮补上，巡检频率可覆盖遗漏"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "无固定节拍要求，按规定周期完成巡检即可"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "设备巡检-采煤工作面-综采机组",
+    "scene_name_en": "EquipmentInspection-CoalFace-LongwallMiningUnit",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "采煤作业",
+    "scene_description": "该工位位于综采工作面，紧邻采煤机、液压支架和刮板输送机，是井下最危险的作业区域之一。当前由机电维护工人工巡检，检查液压支架立柱压力、采煤机截齿磨损、刮板机链条张紧度、电缆拖拽状态等。核心操作为目视检查、手持仪器测量、手动调整阀门，工作面长度150-300米，高度1.5-4米不等，粉尘浓度高、噪声超90分贝。典型配置为每班3-4名机电工覆盖一个工作面，完整巡检耗时1-2小时。该工位容易出现的问题：顶板来压时支架失稳风险、煤尘爆炸风险、采煤机滚筒伤人、长时间弯腰作业导致职业病。",
+    "selection_rationale": "命中入口二（粉尘爆炸风险、顶板压力危险）、入口一（狭窄空间需人形通过、多工位切换）、入口五（综采设备运行数据需追溯分析）。综采工作面是煤矿最危险区域，机器人替代可显著降低人员伤亡风险。",
+    "scores": {
+      "labor_urgency": {
+        "score": 5,
+        "basis": "综采工作面是煤矿事故高发区，粉尘浓度常超标，顶板事故频发"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "单矿井1-3个综采面，全国大中型煤矿约3000座，工位数以千计"
+      },
+      "superhuman_value": {
+        "score": 5,
+        "basis": "命中V1/V2/V5/V6（振动、温度、压力多模态感知）/V7，可在人员撤离后继续监测"
+      },
+      "operation_complexity": {
+        "score": 3,
+        "basis": "需操作手动阀门和简单调整，有轻度力控要求"
+      },
+      "structure_level": {
+        "score": 2,
+        "basis": "工作面随采煤推进持续变化，支架间距不均，煤块随机散落"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "巡检遗漏可立即重检，不影响采煤作业连续性"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "巡检任务无固定节拍，按规程周期执行即可"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "监测维护-瓦斯传感器-定点巡检更换",
+    "scene_name_en": "MonitoringMaintenance-GasSensor-ScheduledInspectionReplacement",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "安全监测",
+    "scene_description": "该工位分布于井下各监测点位，包括采掘工作面、回风巷、机电硐室等关键位置，上游为安全监控系统，下游数据汇入调度中心。当前由专职监测工人工完成，需定期校准传感器零点和灵敏度、更换故障传感器、检查线缆接头。核心操作包括攀爬至传感器安装位置（通常距地面1.5-2米）、使用标准气体校准、拆装传感器固定卡扣、接线端子紧固。单矿井传感器数量200-500个，单个传感器校准耗时10-15分钟。典型配置为每班2名监测工，月度全覆盖校准一次。该工位容易出现的问题：传感器漂移导致误报警或漏报警、高处作业坠落风险、遗漏偏远点位的校准。",
+    "selection_rationale": "命中入口二（需在瓦斯可能超限区域作业）、入口一（多工位切换覆盖全矿、工具适配操作多种传感器型号）、入口五（传感器校准记录是安全合规必检项）、入口八（单矿数百个同类工位）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "传感器点位分散，人工全覆盖耗时长，偏远点位易遗漏导致安全盲区"
+      },
+      "scale_potential": {
+        "score": 5,
+        "basis": "单矿井200-500个传感器点位，全国煤矿同类工位超百万"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1全时覆盖、V2校准一致性、V5校准记录自动归档、V7失败溯源"
+      },
+      "operation_complexity": {
+        "score": 3,
+        "basis": "需拆装卡扣、接线紧固，定位精度厘米级，有轻度力控"
+      },
+      "structure_level": {
+        "score": 3,
+        "basis": "传感器位置固定但安装高度和周边环境各异，需适应不同安装条件"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "单个传感器校准失败可重做，不影响整体监测系统运行"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按月度计划执行，无实时节拍要求"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "操作巡检-井下配电室-高压开关柜",
+    "scene_name_en": "OperationInspection-UndergroundSubstation-HighVoltageSwitchgear",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "设备维护",
+    "scene_description": "该工位位于井下中央变电所和采区变电所，为采煤机、输送机、水泵等设备供电，是矿井电力系统核心节点。当前由持证电工人工操作，包括高压开关分合闸、保护装置整定值调整、红外测温检查接头发热、绝缘电阻测量等。核心操作涉及旋转操作手柄（力矩20-50Nm）、按压复位按钮、读取仪表数值，开关柜高度2米、柜间通道宽度0.8-1.2米。典型配置为每个变电所1-2名值班电工，重要操作需双人确认。该工位容易出现的问题：误操作导致全矿停电、带电作业触电风险、瓦斯环境电弧引爆。",
+    "selection_rationale": "命中入口二（瓦斯环境电气操作存在爆炸风险）、入口一（空间受限需人形通过、操作多种开关和仪表）、入口五（电气操作必须有完整记录）、入口六（操作与红外测温检测可合并）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 5,
+        "basis": "井下带电作业叠加瓦斯风险，电气事故可引发次生灾害"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "单矿井5-15个变电所，全国大中型煤矿工位数以万计"
+      },
+      "superhuman_value": {
+        "score": 5,
+        "basis": "命中V1值守、V3操作同步红外检测、V5操作记录、V6电流/温度感知、V7故障溯源"
+      },
+      "operation_complexity": {
+        "score": 4,
+        "basis": "高压开关操作需精确力控和位置确认，涉及多步操作序列"
+      },
+      "structure_level": {
+        "score": 4,
+        "basis": "配电室布局固定，开关柜位置恒定，环境相对稳定"
+      },
+      "fault_tolerance": {
+        "score": 2,
+        "basis": "误操作可能导致全矿停电或电气事故，后果严重"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按调度指令操作，无固定节拍要求"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "巡检监测-皮带输送机-井下主运系统",
+    "scene_name_en": "InspectionMonitoring-BeltConveyor-UndergroundMainHaulage",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "运输提升",
+    "scene_description": "该工位沿井下主运输巷道皮带机全线分布，连接采煤工作面与主井提升系统，是煤炭运输咽喉。当前由皮带巡检工人工沿线巡检，检查皮带跑偏、托辊转动、接头磨损、堆煤传感器、沿线消防设施等。核心操作为行走观察、手动调整纠偏装置、更换故障托辊，皮带全长2-10公里，带宽0.8-1.4米，运行速度2-4米/秒。典型配置为每2公里设1名巡检工，三班轮换，单次巡检耗时1-2小时。该工位容易出现的问题：皮带打滑起火、托辊卡死引发皮带撕裂、跑偏磨损巷道支护。",
+    "selection_rationale": "命中入口一（多工位切换沿线巡检）、入口三（巡检遗漏可下轮补上）、入口四（长距离重复巡检注意力衰减）、入口五（皮带运行数据需连续记录）、入口八（单矿数公里皮带沿线工位众多）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "三班连续巡检人员配置压力大，皮带火灾是矿井重大隐患"
+      },
+      "scale_potential": {
+        "score": 5,
+        "basis": "单矿井皮带总长数公里至十余公里，全国同类巡检工位以十万计"
+      },
+      "superhuman_value": {
+        "score": 5,
+        "basis": "命中V1连续巡检、V2一致性、V3行走同步热成像检测、V5运行数据、V6温度/振动感知"
+      },
+      "operation_complexity": {
+        "score": 2,
+        "basis": "以行走观察为主，纠偏调整为简单机械操作"
+      },
+      "structure_level": {
+        "score": 4,
+        "basis": "皮带巷道布局固定，巡检路线明确，环境变化小"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "单次巡检遗漏可通过增加巡检频率弥补"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按规定周期巡检，无实时节拍约束"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "监测操作-矿井水泵房-排水系统",
+    "scene_name_en": "MonitoringOperation-MinePumpStation-DrainageSystem",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "设备维护",
+    "scene_description": "该工位位于井下中央水泵房，是防止矿井水害的关键设施，上游汇集各采区涌水，通过水泵排至地面。当前由水泵司机人工值守，操作内容包括启停水泵、切换备用泵、检查轴承温度和振动、观察水位和流量、记录运行参数。核心操作涉及按压启停按钮、旋转阀门手轮（直径200-400mm）、读取仪表盘数值，水泵房面积约200-500平方米，噪声80-100分贝。典型配置为每班1-2名水泵司机24小时值守，单台泵启停操作耗时3-5分钟。该工位容易出现的问题：水泵故障导致矿井被淹、轴承过热烧毁、值班人员疲劳漏检。",
+    "selection_rationale": "命中入口一（工具适配操作多种阀门和控制界面）、入口四（24小时值守注意力衰减）、入口五（排水系统运行数据是安全合规必记项）、入口六（操作同时可完成设备状态检测）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "24小时值守人员配置压力大，夜班疲劳易导致响应迟缓"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "单矿井1-3个水泵房，全国煤矿水泵房工位数以万计"
+      },
+      "superhuman_value": {
+        "score": 5,
+        "basis": "命中V1全时值守、V2操作一致性、V3操作同步检测、V5运行记录、V6振动/温度感知"
+      },
+      "operation_complexity": {
+        "score": 3,
+        "basis": "阀门旋转和按钮操作有力控要求，需按规程顺序执行"
+      },
+      "structure_level": {
+        "score": 5,
+        "basis": "水泵房布局固定，设备位置恒定，无人员走动干扰"
+      },
+      "fault_tolerance": {
+        "score": 3,
+        "basis": "操作失误需人工介入纠正，但有备用泵冗余设计"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按水位和调度指令操作，无固定节拍"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "调节巡检-矿井通风设施-风门风窗",
+    "scene_name_en": "AdjustmentInspection-MineVentilation-AirDoorsAndRegulators",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "安全监测",
+    "scene_description": "该工位分布于井下各通风构筑物处，包括风门、风窗、风桥、密闭墙等，是矿井通风系统的调控节点。当前由通风工人工巡检和调节，检查风门闭锁装置、风窗开度、测量风量风压、调整风窗位置优化风流分配。核心操作包括开关风门（推拉力50-100N）、调节风窗挡板（旋转或滑动）、使用风表测量风速，单矿井通风构筑物50-200处。典型配置为每班2-3名通风工覆盖全矿，单处检查调节耗时5-10分钟。该工位容易出现的问题：风门漏风导致风流短路、风窗调节不当造成局部瓦斯积聚、人工测风数据不连续。",
+    "selection_rationale": "命中入口一（多工位切换覆盖全矿、工具适配多种通风设施）、入口二（在可能瓦斯积聚区域作业）、入口五（通风参数是安全监管核心数据）、入口八（单矿数十至数百处同类工位）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "通风不良直接导致瓦斯积聚，通风工需覆盖大量分散点位"
+      },
+      "scale_potential": {
+        "score": 5,
+        "basis": "单矿井50-200处通风构筑物，全国同类工位数十万"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1持续巡检、V2调节一致性、V5通风数据连续记录、V6风速/瓦斯浓度感知"
+      },
+      "operation_complexity": {
+        "score": 2,
+        "basis": "风门开关和风窗调节为简单推拉滑动操作"
+      },
+      "structure_level": {
+        "score": 3,
+        "basis": "通风设施位置固定，但周边环境因巷道不同而异"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "单次调节不当可立即重调，通风系统有冗余设计"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按通风调度计划执行，无实时节拍要求"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "应急侦测-灾后救援区域-危险环境探查",
+    "scene_name_en": "EmergencyReconnaissance-PostDisasterZone-HazardousEnvironmentSurvey",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "安全监测",
+    "scene_description": "该工位位于矿井事故发生后的灾区边界及内部，是救援行动的前沿侦察阵地。当前由矿山救护队员穿戴呼吸器进入灾区侦测，探查瓦斯浓度、一氧化碳浓度、温度、巷道垮塌情况、被困人员位置。核心操作为携带检测仪器行进、手持热成像仪搜寻、清理小型障碍物、放置标识物，灾区环境极端复杂，能见度极低，随时可能发生二次灾害。救护队员单次进入时间受呼吸器容量限制（通常4小时），且必须编组行动不得单独作业。该工位的核心问题：救护人员生命安全风险极高、呼吸器限制侦察时长和范围、黑暗浓烟中搜救效率低。",
+    "selection_rationale": "命中入口二（灾后环境人类不可达或不宜到达）、入口七（救援专家稀缺且需远程投射能力）。这是人形机器人最高价值场景之一——替代人员进入致命环境，一台机器人损失的成本远低于一名救护队员伤亡的代价。",
+    "scores": {
+      "labor_urgency": {
+        "score": 5,
+        "basis": "矿难救援中救护队员伤亡率高，是煤矿安全最痛点之一"
+      },
+      "scale_potential": {
+        "score": 2,
+        "basis": "属于应急场景，单矿年均事故次数有限，但一旦需要价值极高"
+      },
+      "superhuman_value": {
+        "score": 5,
+        "basis": "命中V1持续作业、V5环境数据实时回传、V6多模态感知、V7失败数据（即使损毁也能回传最后数据）"
+      },
+      "operation_complexity": {
+        "score": 2,
+        "basis": "以行走探测为主，清障为辅助性简单操作"
+      },
+      "structure_level": {
+        "score": 1,
+        "basis": "灾后环境完全不可预测，垮塌、积水、烟雾随机分布"
+      },
+      "fault_tolerance": {
+        "score": 5,
+        "basis": "机器人损毁不造成人员伤亡，可派第二台继续侦测"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "无节拍要求，尽快获取信息即可"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "巡检监测-洗煤厂设备-重介旋流器系统",
+    "scene_name_en": "InspectionMonitoring-CoalWasheryEquipment-DenseMediaCycloneSystem",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "洗选加工",
+    "scene_description": "该工位位于地面洗煤厂重介车间，上游承接原煤准备系统，下游连接产品脱水和介质回收系统。当前由设备巡检工人工完成，检查旋流器入料压力、分流比、介质密度、泵组运行状态、管道磨损情况。核心操作为行走观察、读取压力表和流量计、取样检测介质密度、调整阀门开度，车间噪声85-95分贝，煤泥飞溅环境潮湿。典型配置为每班2名巡检工覆盖重介系统，巡检周期1-2小时。该工位容易出现的问题：旋流器堵塞影响分选效率、介质密度波动导致产品质量不稳、人工取样检测滞后。",
+    "selection_rationale": "命中入口三（巡检遗漏可下轮补上）、入口四（重复性巡检注意力衰减）、入口五（洗选工艺参数需连续记录优化）、入口六（巡检同时可完成在线检测）、入口八（洗煤厂各系统均需巡检）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 3,
+        "basis": "地面作业安全风险较低，但噪声粉尘环境仍影响健康"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "全国数千座洗煤厂，每厂重介系统巡检工位数十个"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1连续巡检、V2一致性、V5工艺数据连续记录、V6密度/压力在线感知"
+      },
+      "operation_complexity": {
+        "score": 2,
+        "basis": "以行走观察和仪表读数为主，阀门调节为简单操作"
+      },
+      "structure_level": {
+        "score": 4,
+        "basis": "车间布局固定，设备位置恒定，但地面潮湿有煤泥"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "巡检遗漏可通过增加频率弥补，不影响连续生产"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按规定周期巡检，无实时节拍约束"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "巡检监测-储煤场-自燃隐患排查",
+    "scene_name_en": "InspectionMonitoring-CoalStockyard-SpontaneousCombustionHazardPatrol",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "储存装运",
+    "scene_description": "该工位位于露天储煤场和封闭式煤仓，是原煤和产品煤的缓冲存储区域。当前由安全员人工巡检，检查煤堆表面温度、有无冒烟点、煤堆高度和形态、喷淋降尘系统状态。核心操作为行走观察、使用红外测温仪探测热点、插入温度探针测量内部温度，储煤场面积数千至数万平方米，煤堆高度10-20米。典型配置为每班1-2名巡检员，夏季高温期加密巡检频率。该工位容易出现的问题：煤堆内部自燃不易早期发现、大面积储煤场巡检覆盖不完整、粉尘环境损害呼吸系统。",
+    "selection_rationale": "命中入口二（粉尘爆炸风险区域）、入口三（巡检遗漏可下轮补上）、入口四（大面积重复巡检注意力衰减）、入口六（行走同时红外检测可合并）。煤堆自燃是储运环节主要安全隐患，早期发现依赖持续监测。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "储煤场自燃事故频发，大面积巡检人工难以全覆盖"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "每座煤矿和洗煤厂均有储煤场，全国工位数以万计"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1持续巡检、V3行走同步红外检测、V5温度数据连续记录、V6热成像感知"
+      },
+      "operation_complexity": {
+        "score": 1,
+        "basis": "纯行走观察和温度探测，无接触操作"
+      },
+      "structure_level": {
+        "score": 3,
+        "basis": "储煤场布局基本固定，但煤堆形态随进出料变化"
+      },
+      "fault_tolerance": {
+        "score": 5,
+        "basis": "单次巡检遗漏可下轮补上，自燃发展有时间窗口"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按规定周期巡检，无实时节拍要求"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "巡检维护-掘进工作面-综掘机组",
+    "scene_name_en": "InspectionMaintenance-DevelopmentFace-RoadheaderUnit",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "巷道掘进",
+    "scene_description": "该工位位于掘进巷道迎头，是矿井扩展和采准工程的前沿阵地，紧邻综掘机、临时支护设备和局部通风机。当前由机电维护工人工完成设备巡检，检查综掘机截割头磨损、液压系统压力、履带张紧度、除尘喷雾系统、临时支护锚杆锚索状态。核心操作为目视检查、手持仪器测量、简单部件调整，迎头空间狭小（宽4-5米、高3-4米），粉尘浓度高，存在顶板冒落风险。典型配置为每班2-3名机电工随掘进队作业，设备停机时集中检修。该工位容易出现的问题：截割头磨损未及时发现影响掘进效率、液压泄漏导致设备故障、迎头冒顶伤人。",
+    "selection_rationale": "命中入口二（迎头是矿井最危险区域之一，顶板冒落和瓦斯突出高发）、入口一（狭窄空间需人形通过）、入口五（掘进设备运行数据需记录分析）。",
+    "scores": {
+      "labor_urgency": {
+        "score": 5,
+        "basis": "掘进迎头是顶板事故和瓦斯突出高发区，人员伤亡风险高"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "单矿井1-5个掘进工作面，全国大中型煤矿工位数以万计"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1持续监测、V5设备运行数据记录、V6振动/压力感知、V7故障数据溯源"
+      },
+      "operation_complexity": {
+        "score": 3,
+        "basis": "需操作调整装置和简单部件更换，有轻度力控要求"
+      },
+      "structure_level": {
+        "score": 2,
+        "basis": "迎头随掘进推进持续变化，临时支护状态不稳定"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "巡检发现问题可安排停机处理，不影响其他系统"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "利用设备停机间隙巡检，无固定节拍"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "操作监测-主井提升系统-卷扬机房",
+    "scene_name_en": "OperationMonitoring-MainShaftHoisting-WindingEngineRoom",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "运输提升",
+    "scene_description": "该工位位于主井提升机房，是煤炭从井下运至地面的关键枢纽，连接井下装载系统和地面储运系统。当前由提升机司机人工操作，控制箕斗或罐笼升降、监视深度指示器和速度表、响应井口井底信号、检查钢丝绳和滚筒状态。核心操作涉及操纵控制手柄、按压信号按钮、读取仪表参数，提升机功率数百至数千千瓦，是矿井最大型设备之一。典型配置为每班1名司机24小时值守，单次提升循环3-8分钟。该工位容易出现的问题：过卷事故、断绳事故、司机疲劳导致误操作。",
+    "selection_rationale": "命中入口四（24小时值守注意力衰减是主要风险因素）、入口五（提升系统运行数据是安全监管必检项）、入口六（操作同时监测钢丝绳和设备状态）。提升机是矿井生命线，误操作后果严重。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "24小时值守疲劳是过卷断绳事故主因，需持续高度注意力"
+      },
+      "scale_potential": {
+        "score": 3,
+        "basis": "单矿井1-3套提升系统，全国煤矿提升机房数以千计"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1全时值守、V2操作一致性、V5运行数据完整记录、V6钢丝绳/滚筒状态感知"
+      },
+      "operation_complexity": {
+        "score": 4,
+        "basis": "操作手柄需精确力控和速度协调，涉及多步操作序列"
+      },
+      "structure_level": {
+        "score": 5,
+        "basis": "机房布局固定，控制台位置恒定，环境稳定"
+      },
+      "fault_tolerance": {
+        "score": 1,
+        "basis": "过卷或断绳事故可造成重大人员伤亡和设备损毁"
+      },
+      "takt_pressure": {
+        "score": 3,
+        "basis": "提升循环有固定时间要求，但有缓冲余量"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "样品采集-原煤质量检测-自动化验",
+    "scene_name_en": "SampleCollection-RawCoalQualityTesting-AutomatedAssay",
+    "industry_code": "6-61-610",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "洗选加工",
+    "scene_description": "该工位位于煤质化验室及采样点，连接生产系统和质量管理系统，为洗选工艺调整和销售定价提供依据。当前由化验员人工完成，在皮带采样机处收集样品、破碎缩分制样、使用化验设备测定水分灰分硫分发热量。核心操作包括操作采样机控制面板、转移样品至破碎缩分设备、称量装瓶、操作马弗炉和量热仪等化验设备，化验室面积约100-200平方米。典型配置为每班2-3名化验员，单个完整化验流程耗时2-4小时。该工位容易出现的问题：采样代表性差导致化验结果失真、手工操作引入误差、化验周期长滞后于生产调整。",
+    "selection_rationale": "命中入口四（重复性化验操作人类注意力衰减影响精度）、入口五（煤质数据是贸易结算和生产调度核心依据）、入口八（每座煤矿洗煤厂都有化验室）。标准化化验流程适合机器人自动化。",
+    "scores": {
+      "labor_urgency": {
+        "score": 3,
+        "basis": "化验工作环境较好但重复性高，人员流动率适中"
+      },
+      "scale_potential": {
+        "score": 4,
+        "basis": "每座煤矿和洗煤厂均设化验室，全国化验工位数以万计"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1连续化验、V2操作一致性消除人为误差、V5化验数据自动归档、V7异常数据溯源"
+      },
+      "operation_complexity": {
+        "score": 3,
+        "basis": "涉及称量、转移、设备操作多个步骤，需毫米级定位"
+      },
+      "structure_level": {
+        "score": 5,
+        "basis": "化验室布局固定，仪器设备位置恒定，环境稳定受控"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "单次化验失误可重做，样品可重新制备"
+      },
+      "takt_pressure": {
+        "score": 4,
+        "basis": "有化验周期要求但非瓶颈，可并行多个样品"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "巡检监测-褐煤储存-低温干燥系统",
+    "scene_name_en": "InspectionMonitoring-LigniteStorage-LowTemperatureDryingSystem",
+    "industry_code": "6-62-620",
+    "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+    "process_step": "储存装运",
+    "scene_description": "该工位位于褐煤矿洗选厂的干燥和储存系统，褐煤水分高、易自燃，需特殊处理后储运。当前由设备巡检工人工完成，检查干燥机运行温度、皮带输送状态、储仓料位和温度、通风除尘系统状态。核心操作为行走观察、读取温度和料位仪表、调整风门和阀门开度，干燥系统温度100-200℃，储仓温度需严格监控防止自燃。典型配置为每班2名巡检工覆盖干燥储运系统，巡检周期1-2小时。该工位容易出现的问题：褐煤自燃风险高于烟煤、干燥系统过热引发火灾、储仓料位监测不及时导致溢料。",
+    "selection_rationale": "命中入口二（高温和自燃风险区域）、入口三（巡检遗漏可下轮补上）、入口四（重复性巡检注意力衰减）、入口五（褐煤储运温度数据需连续监控）。褐煤特性决定了更高的安全监测要求。",
+    "scores": {
+      "labor_urgency": {
+        "score": 4,
+        "basis": "褐煤自燃倾向性高，储运安全监测压力大于烟煤"
+      },
+      "scale_potential": {
+        "score": 3,
+        "basis": "褐煤矿集中于内蒙古云南等地，数量少于烟煤矿但单矿工位完整"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1持续监测、V2一致性、V5温度数据连续记录、V6红外测温感知"
+      },
+      "operation_complexity": {
+        "score": 2,
+        "basis": "以行走观察和仪表读数为主，阀门调节为简单操作"
+      },
+      "structure_level": {
+        "score": 4,
+        "basis": "干燥储运系统布局固定，设备位置恒定"
+      },
+      "fault_tolerance": {
+        "score": 4,
+        "basis": "巡检遗漏可通过增加频率弥补"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按规定周期巡检，无实时节拍约束"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "scene_name_zh": "监测采样-石煤开采-放射性检测",
+    "scene_name_en": "MonitoringSampling-StoneCoalMining-RadioactivityDetection",
+    "industry_code": "6-69-690",
+    "industry_chain": "勘探测量→露天/地下开采→破碎筛分→储存装运→安全监测→环境治理",
+    "process_step": "安全监测",
+    "scene_description": "该工位位于石煤矿区的开采现场和加工区域，石煤常伴生铀等放射性元素，需定期监测辐射水平。当前由专业监测人员穿戴防护进行，使用便携式辐射剂量仪沿采区和加工区巡测、在特定点位采集样品送检。核心操作为行走测量、记录辐射读数、使用采样工具收集岩样和粉尘样品，监测范围覆盖采场、破碎站、储料场。典型配置为每周1-2次专项监测，单次覆盖全矿区耗时4-8小时。该工位容易出现的问题：放射性暴露累积风险、防护装备笨重影响效率、偏远点位监测覆盖不足。",
+    "selection_rationale": "命中入口二（放射性环境人类需严格限制暴露时间）、入口七（辐射防护专业人员稀缺）。石煤的放射性伴生特性使机器人替代具有独特价值。",
+    "scores": {
+      "labor_urgency": {
+        "score": 5,
+        "basis": "放射性暴露有累积效应，监测人员需严格轮换和剂量管理"
+      },
+      "scale_potential": {
+        "score": 2,
+        "basis": "石煤矿数量有限，主要分布于湖南湖北等地，但单矿需完整覆盖"
+      },
+      "superhuman_value": {
+        "score": 4,
+        "basis": "命中V1持续监测无剂量累积、V5辐射数据完整记录、V6辐射感知、V7异常数据溯源"
+      },
+      "operation_complexity": {
+        "score": 2,
+        "basis": "以行走测量为主，采样为简单收集操作"
+      },
+      "structure_level": {
+        "score": 2,
+        "basis": "露天采场环境变化较大，地形不规则"
+      },
+      "fault_tolerance": {
+        "score": 5,
+        "basis": "单次测量遗漏可下次补测，数据用于趋势分析"
+      },
+      "takt_pressure": {
+        "score": 5,
+        "basis": "按周期监测计划执行，无实时节拍要求"
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  },
+  {
+    "summary": {
+      "industry_major_code": "6",
+      "industry_major_name": "煤炭开采和洗选业",
+      "total_scenes": 15,
+      "industry_chain": "勘探测量→巷道掘进→采煤作业→运输提升→洗选加工→储存装运→安全监测→设备维护",
+      "score_distribution": {
+        "labor_urgency": {
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 8,
+          "5": 5
+        },
+        "scale_potential": {
+          "1": 0,
+          "2": 2,
+          "3": 2,
+          "4": 6,
+          "5": 5
+        },
+        "superhuman_value": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 9,
+          "5": 6
+        },
+        "operation_complexity": {
+          "1": 2,
+          "2": 5,
+          "3": 5,
+          "4": 3,
+          "5": 0
+        },
+        "structure_level": {
+          "1": 1,
+          "2": 3,
+          "3": 4,
+          "4": 4,
+          "5": 3
+        },
+        "fault_tolerance": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 7,
+          "5": 5
+        },
+        "takt_pressure": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 1,
+          "5": 13
+        }
+      }
+    },
+    "source_major_code": "6",
+    "source_major_name": "煤炭开采和洗选业"
+  }
+]
