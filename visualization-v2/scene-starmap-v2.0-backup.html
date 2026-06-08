@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人形机器人工业场景星图 v2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Three.js 核心 -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <!-- 3d-force-graph -->
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+    <!-- Three.js 后处理模块 -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: #050510;
+            color: #e0e0e0;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        #app { display: flex; height: 100vh; }
+
+        /* 左侧筛选面板 240px */
+        #filter-panel {
+            width: 240px;
+            background: rgba(8, 10, 20, 0.95);
+            border-right: 1px solid rgba(255,255,255,0.06);
+            padding: 16px;
+            overflow-y: auto;
+            transition: width 0.3s ease;
+            z-index: 100;
+            flex-shrink: 0;
+        }
+        #filter-panel.collapsed { width: 48px; padding: 16px 8px; }
+        #filter-panel.collapsed .panel-content { display: none; }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .panel-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+        .toggle-btn {
+            width: 28px; height: 28px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 6px;
+            color: #666;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .toggle-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+        .filter-section { margin-bottom: 24px; }
+        .filter-label {
+            font-size: 10px;
+            color: #444;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .industry-select {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 8px;
+            max-height: 180px;
+            overflow-y: auto;
+        }
+        .industry-item {
+            display: flex;
+            align-items: center;
+            padding: 5px 4px;
+            cursor: pointer;
+            font-size: 11px;
+            border-radius: 4px;
+            transition: background 0.15s;
+        }
+        .industry-item:hover { background: rgba(255,255,255,0.03); }
+        .industry-checkbox {
+            width: 14px; height: 14px;
+            margin-right: 8px;
+            accent-color: #4a9eff;
+        }
+        .industry-color {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .industry-name { flex: 1; color: #888; }
+        .industry-count {
+            font-size: 10px;
+            color: #444;
+            font-family: monospace;
+        }
+
+        .range-slider { margin-bottom: 12px; }
+        .range-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+        .range-name { font-size: 11px; color: #666; }
+        .range-value { font-size: 10px; color: #4a9eff; font-family: monospace; }
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            background: rgba(255,255,255,0.06);
+            height: 4px;
+            border-radius: 2px;
+            margin: 4px 0;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12px; height: 12px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 6px rgba(74,158,255,0.5);
+        }
+
+        .stats-panel {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.04);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 20px;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            padding: 4px 0;
+        }
+        .stats-label { color: #555; }
+        .stats-value { color: #4a9eff; font-family: monospace; }
+
+        /* 3D图容器 */
+        #graph-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            background: #050510;
+        }
+
+        /* 右上角悬停信息面板 */
+        #hover-panel {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 280px;
+            background: rgba(8, 10, 25, 0.94);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 18px;
+            opacity: 0;
+            transform: translateY(-12px);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            pointer-events: none;
+            backdrop-filter: blur(16px);
+            z-index: 200;
+        }
+        #hover-panel.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-name-zh {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+        .hover-name-en {
+            font-size: 11px;
+            color: #555;
+            font-family: monospace;
+            margin-bottom: 14px;
+        }
+        .hover-tags {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+        .hover-tag {
+            font-size: 10px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            color: #fff;
+        }
+        .hover-scores {
+            display: flex;
+            gap: 4px;
+        }
+        .hover-score-block {
+            flex: 1;
+            text-align: center;
+            padding: 8px 2px;
+            border-radius: 6px;
+            min-width: 32px;
+        }
+        .hover-score-block .score-val {
+            font-size: 15px;
+            font-weight: 700;
+            font-family: monospace;
+        }
+        .hover-score-block .score-lbl {
+            font-size: 9px;
+            color: #666;
+            margin-top: 3px;
+        }
+        .score-low { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        .score-mid { background: rgba(234, 179, 8, 0.15); color: #eab308; }
+        .score-high { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+
+        /* 详情卡片 */
+        #detail-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(3, 3, 12, 0.92);
+            backdrop-filter: blur(12px);
+            z-index: 300;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #detail-overlay.visible { display: flex; }
+
+        #detail-card {
+            width: 800px;
+            max-height: 88vh;
+            background: rgba(10, 12, 28, 0.96);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            animation: cardFadeIn 0.35s ease;
+        }
+        @keyframes cardFadeIn {
+            from { transform: scale(0.94) translateY(20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        .detail-header {
+            padding: 24px 28px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .detail-title-zh {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .detail-title-en {
+            font-size: 12px;
+            color: #555;
+            font-family: monospace;
+        }
+        .detail-tags {
+            margin-top: 14px;
+            display: flex;
+            gap: 8px;
+        }
+        .detail-tag {
+            font-size: 11px;
+            padding: 5px 14px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.06);
+            color: #aaa;
+        }
+        .close-btn {
+            width: 36px; height: 36px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            color: #666;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .close-btn:hover {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        .detail-body {
+            display: flex;
+            padding: 28px;
+            gap: 32px;
+            max-height: calc(88vh - 160px);
+            overflow-y: auto;
+        }
+        .detail-left {
+            width: 300px;
+            flex-shrink: 0;
+        }
+        .radar-container {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+        }
+        .quadrant-info {
+            text-align: center;
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .detail-right { flex: 1; }
+        .info-block { margin-bottom: 24px; }
+        .info-block-title {
+            font-size: 10px;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .info-block-content {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #bbb;
+        }
+
+        .process-chain {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+        .process-step {
+            padding: 5px 12px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 6px;
+            font-size: 12px;
+            color: #777;
+        }
+        .process-step.current {
+            background: rgba(74, 158, 255, 0.2);
+            color: #4a9eff;
+            font-weight: 500;
+        }
+        .process-arrow { color: #333; font-size: 10px; }
+
+        .score-row {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        .score-name {
+            width: 110px;
+            font-size: 12px;
+            color: #666;
+        }
+        .score-num {
+            width: 28px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: monospace;
+        }
+        .score-basis {
+            flex: 1;
+            font-size: 12px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .sn-1, .sn-2 { color: #ef4444; }
+        .sn-3 { color: #eab308; }
+        .sn-4, .sn-5 { color: #22c55e; }
+
+        .detail-footer {
+            padding: 16px 28px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-btn {
+            width: 40px; height: 40px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            color: #666;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+        .nav-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+        .nav-info {
+            font-size: 13px;
+            color: #555;
+            font-family: monospace;
+        }
+
+        /* 控制提示 */
+        #controls-hint {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 10px;
+            color: #333;
+            text-align: right;
+            line-height: 1.8;
+        }
+        #controls-hint kbd {
+            display: inline-block;
+            padding: 3px 6px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- 左侧筛选面板 -->
+        <div id="filter-panel">
+            <div class="panel-header">
+                <span class="panel-title panel-content">筛选器</span>
+                <button class="toggle-btn" onclick="togglePanel()">☰</button>
+            </div>
+            <div class="panel-content">
+                <div class="filter-section">
+                    <div class="filter-label">行业</div>
+                    <div class="industry-select" id="industry-list"></div>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-label">评分筛选</div>
+                    <div id="score-filters"></div>
+                </div>
+                <div class="stats-panel">
+                    <div class="stats-row">
+                        <span class="stats-label">当前显示</span>
+                        <span class="stats-value" id="stats-count">0 / 0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label">快速落地区</span>
+                        <span class="stats-value" id="stats-q1">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label">战略攻坚区</span>
+                        <span class="stats-value" id="stats-q2">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label">锦上添花区</span>
+                        <span class="stats-value" id="stats-q3">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label">暂缓观望区</span>
+                        <span class="stats-value" id="stats-q4">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D图容器 -->
+        <div id="graph-container">
+            <div id="controls-hint">
+                鼠标拖拽旋转 / 滚轮缩放 / 右键平移<br>
+                <kbd>R</kbd> 重置视图 <kbd>F</kbd> 全屏
+            </div>
+        </div>
+
+        <!-- 悬停信息面板 -->
+        <div id="hover-panel">
+            <div class="hover-name-zh" id="hover-name-zh"></div>
+            <div class="hover-name-en" id="hover-name-en"></div>
+            <div class="hover-tags" id="hover-tags"></div>
+            <div class="hover-scores" id="hover-scores"></div>
+        </div>
+    </div>
+
+    <!-- 详情卡片 -->
+    <div id="detail-overlay" onclick="if(event.target === this) closeDetail()">
+        <div id="detail-card">
+            <div class="detail-header">
+                <div>
+                    <div class="detail-title-zh" id="detail-title-zh"></div>
+                    <div class="detail-title-en" id="detail-title-en"></div>
+                    <div class="detail-tags">
+                        <span class="detail-tag" id="detail-industry-tag"></span>
+                        <span class="detail-tag" id="detail-process-tag"></span>
+                    </div>
+                </div>
+                <button class="close-btn" onclick="closeDetail()">×</button>
+            </div>
+            <div class="detail-body">
+                <div class="detail-left">
+                    <canvas class="radar-container" id="detail-radar" width="280" height="280"></canvas>
+                    <div class="quadrant-info" id="detail-quadrant"></div>
+                </div>
+                <div class="detail-right">
+                    <div class="info-block">
+                        <div class="info-block-title">场景描述</div>
+                        <div class="info-block-content" id="detail-description"></div>
+                    </div>
+                    <div class="info-block">
+                        <div class="info-block-title">选中理由</div>
+                        <div class="info-block-content" id="detail-rationale"></div>
+                    </div>
+                    <div class="info-block">
+                        <div class="info-block-title">工序链</div>
+                        <div class="info-block-content">
+                            <div class="process-chain" id="detail-chain"></div>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <div class="info-block-title">评分明细</div>
+                        <div id="detail-scores"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-footer">
+                <button class="nav-btn" id="prev-btn" onclick="navigateScene(-1)">←</button>
+                <span class="nav-info" id="nav-info">1 / 100</span>
+                <button class="nav-btn" id="next-btn" onclick="navigateScene(1)">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+    import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+    import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+    import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+
+    // ============================================================
+    // 全局状态
+    // ============================================================
+    let scenes = [];
+    let filteredScenes = [];
+    let currentSceneIndex = -1;
+    let Graph;
+    let composer;
+    let nodeObjects = new Map();
+    let hoveredNode = null;
+    let animationId;
+
+    // 行业颜色 (色盲友好高对比度)
+    const industryColors = {};
+    const colorPalette = [
+        '#4a9eff', '#22c55e', '#eab308', '#ef4444', '#a855f7',
+        '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#84cc16',
+        '#06b6d4', '#f43f5e', '#8b5cf6', '#10b981', '#fbbf24',
+        '#64748b', '#78716c', '#0ea5e9', '#d946ef', '#f472b6'
+    ];
+
+    // 评分维度
+    const scoreDims = {
+        labor_urgency: '紧迫',
+        scale_potential: '规模',
+        superhuman_value: '超人',
+        operation_complexity: '复杂',
+        structure_level: '结构',
+        fault_tolerance: '容错',
+        takt_pressure: '节拍'
+    };
+
+    const scoreNamesFull = {
+        labor_urgency: '人工替代紧迫性',
+        scale_potential: '规模化潜力',
+        superhuman_value: '超人类价值',
+        operation_complexity: '操作复杂度',
+        structure_level: '结构化程度',
+        fault_tolerance: '容错空间',
+        takt_pressure: '节拍压力'
+    };
+
+    // 筛选状态
+    const filters = { industries: new Set(), scores: {} };
+    Object.keys(scoreDims).forEach(k => filters.scores[k] = [1, 5]);
+
+    // 相机初始距离
+    const CAMERA_DIST = 380;
+
+    // ============================================================
+    // 初始化
+    // ============================================================
+    async function init() {
+        const response = await fetch('scenes-data.json');
+        scenes = await response.json();
+
+        // 分配行业颜色
+        const industries = [...new Set(scenes.map(s => s.source_major_name))].sort();
+        industries.forEach((ind, i) => {
+            industryColors[ind] = colorPalette[i % colorPalette.length];
+            filters.industries.add(ind);
+        });
+
+        // 为每个场景设置随机相位 (用于脉动动画)
+        scenes.forEach((scene, index) => {
+            scene.id = index;
+            scene._phase = Math.random() * Math.PI * 2;
+        });
+
+        initFilters();
+        applyFilters();
+        initGraph();
+        setupBloom();
+        animate();
+
+        document.addEventListener('keydown', handleKeyDown);
+    }
+
+    // ============================================================
+    // 3D Force Graph 初始化
+    // ============================================================
+    function initGraph() {
+        const container = document.getElementById('graph-container');
+
+        Graph = ForceGraph3D()(container)
+            .graphData({ nodes: filteredScenes, links: [] })
+            .backgroundColor('#050510')
+            .showNavInfo(false)
+            // 自定义节点渲染
+            .nodeThreeObject(createNodeObject)
+            .nodeThreeObjectExtend(false)
+            // 漂浮效果 - 永不收敛
+            .d3AlphaDecay(0.005)
+            .d3VelocityDecay(0.3)
+            .cooldownTicks(Infinity)
+            .cooldownTime(Infinity)
+            // 交互
+            .onNodeHover(handleNodeHover)
+            .onNodeClick(handleNodeClick)
+            // 相机
+            .cameraPosition({ x: 0, y: 0, z: CAMERA_DIST });
+
+        // 设置排斥力
+        Graph.d3Force('charge').strength(-50);
+        // 禁用中心力和连线力
+        Graph.d3Force('center', null);
+        Graph.d3Force('link', null);
+
+        // 添加星空背景
+        addStarfield();
+    }
+
+    // ============================================================
+    // 节点渲染 (核心球体 + 光晕Sprite)
+    // ============================================================
+    function createNodeObject(node) {
+        const color = new THREE.Color(industryColors[node.source_major_name] || '#4a9eff');
+        const scaleScore = node.scores?.scale_potential?.score || 3;
+        const valueScore = getValueScore(node);
+
+        // 节点大小映射: 1分=3, 5分=10
+        const radius = 3 + (scaleScore - 1) * 1.75;
+
+        // 核心球体
+        const coreGeom = new THREE.SphereGeometry(radius, 24, 24);
+        const coreMat = new THREE.MeshBasicMaterial({
+            color: color,
+            transparent: true,
+            opacity: 0.85 + valueScore * 0.03
+        });
+        const core = new THREE.Mesh(coreGeom, coreMat);
+
+        // 外层光晕 (径向渐变Canvas纹理)
+        const glowCanvas = createGlowTexture(color);
+        const glowTexture = new THREE.CanvasTexture(glowCanvas);
+        const glowMat = new THREE.SpriteMaterial({
+            map: glowTexture,
+            transparent: true,
+            opacity: 0.3 + valueScore * 0.06,
+            blending: THREE.AdditiveBlending
+        });
+        const glow = new THREE.Sprite(glowMat);
+        const glowSize = radius * (3.5 + valueScore * 0.3);
+        glow.scale.set(glowSize, glowSize, 1);
+
+        const group = new THREE.Group();
+        group.add(core);
+        group.add(glow);
+
+        // 存储引用
+        nodeObjects.set(node.id, {
+            group, core, glow, coreMat, glowMat,
+            baseRadius: radius,
+            baseGlowSize: glowSize,
+            baseOpacity: 0.85 + valueScore * 0.03,
+            baseGlowOpacity: 0.3 + valueScore * 0.06
+        });
+
+        return group;
+    }
+
+    function createGlowTexture(color) {
+        const size = 128;
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+
+        const gradient = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+        const r = Math.floor(color.r * 255);
+        const g = Math.floor(color.g * 255);
+        const b = Math.floor(color.b * 255);
+        gradient.addColorStop(0, `rgba(${r},${g},${b},1)`);
+        gradient.addColorStop(0.3, `rgba(${r},${g},${b},0.4)`);
+        gradient.addColorStop(0.6, `rgba(${r},${g},${b},0.1)`);
+        gradient.addColorStop(1, 'rgba(0,0,0,0)');
+
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, size, size);
+        return canvas;
+    }
+
+    function getValueScore(node) {
+        const s = node.scores || {};
+        return ((s.labor_urgency?.score || 3) + (s.scale_potential?.score || 3) + (s.superhuman_value?.score || 3)) / 3;
+    }
+
+    // ============================================================
+    // 星空背景 (2000颗粒子)
+    // ============================================================
+    function addStarfield() {
+        const scene = Graph.scene();
+        const starCount = 2000;
+        const radius = 2000;
+
+        const positions = new Float32Array(starCount * 3);
+        for (let i = 0; i < starCount; i++) {
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            positions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
+            positions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+            positions[i * 3 + 2] = radius * Math.cos(phi);
+        }
+
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        const material = new THREE.PointsMaterial({
+            color: 0xffffff,
+            size: 1.5,
+            transparent: true,
+            opacity: 0.6,
+            sizeAttenuation: true
+        });
+        scene.add(new THREE.Points(geometry, material));
+    }
+
+    // ============================================================
+    // Bloom 后处理
+    // ============================================================
+    function setupBloom() {
+        const renderer = Graph.renderer();
+        const scene = Graph.scene();
+        const camera = Graph.camera();
+
+        composer = new EffectComposer(renderer);
+
+        const renderPass = new RenderPass(scene, camera);
+        composer.addPass(renderPass);
+
+        const bloomPass = new UnrealBloomPass(
+            new THREE.Vector2(window.innerWidth, window.innerHeight),
+            1.5,   // strength
+            0.8,   // radius
+            0.2    // threshold
+        );
+        composer.addPass(bloomPass);
+
+        // 替换默认渲染
+        Graph.postProcessingComposer(composer);
+    }
+
+    // ============================================================
+    // 动画循环 (脉动效果)
+    // ============================================================
+    let animationTime = 0;
+
+    function animate() {
+        animationId = requestAnimationFrame(animate);
+        animationTime += 0.016;
+
+        // 光晕脉动: scale 在 0.95-1.05 之间
+        nodeObjects.forEach((obj, nodeId) => {
+            const scene = scenes.find(s => s.id === nodeId);
+            if (!scene || !obj.glow) return;
+
+            const pulse = 0.95 + 0.1 * Math.sin(animationTime * 1.5 + scene._phase);
+            const size = obj.baseGlowSize * pulse;
+            obj.glow.scale.set(size, size, 1);
+        });
+    }
+
+    // ============================================================
+    // 交互: 悬停
+    // ============================================================
+    function handleNodeHover(node) {
+        const panel = document.getElementById('hover-panel');
+
+        if (!node) {
+            // 恢复所有节点
+            nodeObjects.forEach(obj => {
+                obj.coreMat.opacity = obj.baseOpacity;
+                obj.glowMat.opacity = obj.baseGlowOpacity;
+                obj.core.scale.set(1, 1, 1);
+            });
+            hoveredNode = null;
+            panel.classList.remove('visible');
+            document.getElementById('graph-container').style.cursor = 'grab';
+            return;
+        }
+
+        hoveredNode = node;
+
+        // 被悬停节点放大1.5x，其他透明度降至0.2
+        nodeObjects.forEach((obj, nodeId) => {
+            if (nodeId === node.id) {
+                obj.coreMat.opacity = 1;
+                obj.glowMat.opacity = obj.baseGlowOpacity * 2;
+                obj.core.scale.set(1.5, 1.5, 1.5);
+            } else {
+                obj.coreMat.opacity = 0.2;
+                obj.glowMat.opacity = 0.05;
+            }
+        });
+
+        // 更新面板
+        document.getElementById('hover-name-zh').textContent = node.scene_name_zh || '';
+        document.getElementById('hover-name-en').textContent = node.scene_name_en || '';
+
+        document.getElementById('hover-tags').innerHTML = `
+            <span class="hover-tag" style="background:${industryColors[node.source_major_name]}">${node.source_major_name || ''}</span>
+            <span class="hover-tag" style="background:rgba(255,255,255,0.08)">${node.process_step || ''}</span>
+        `;
+
+        // 7维评分色块
+        const scoresHtml = Object.entries(scoreDims).map(([key, label]) => {
+            const score = node.scores?.[key]?.score || 0;
+            const cls = score <= 2 ? 'score-low' : (score === 3 ? 'score-mid' : 'score-high');
+            return `<div class="hover-score-block ${cls}"><div class="score-val">${score}</div><div class="score-lbl">${label}</div></div>`;
+        }).join('');
+        document.getElementById('hover-scores').innerHTML = scoresHtml;
+
+        panel.classList.add('visible');
+        document.getElementById('graph-container').style.cursor = 'pointer';
+    }
+
+    // ============================================================
+    // 交互: 点击
+    // ============================================================
+    function handleNodeClick(node) {
+        if (!node) return;
+
+        currentSceneIndex = filteredScenes.indexOf(node);
+
+        // 相机飞向节点 (1秒过渡，距离30)
+        const offset = 30;
+        Graph.cameraPosition(
+            { x: node.x + offset, y: node.y, z: node.z + offset },
+            { x: node.x, y: node.y, z: node.z },
+            1000
+        );
+
+        // 延迟显示详情
+        setTimeout(() => showDetail(node), 600);
+    }
+
+    // ============================================================
+    // 键盘
+    // ============================================================
+    function handleKeyDown(e) {
+        const overlay = document.getElementById('detail-overlay');
+        const isDetailOpen = overlay.classList.contains('visible');
+
+        if (isDetailOpen) {
+            if (e.key === 'ArrowLeft') navigateScene(-1);
+            else if (e.key === 'ArrowRight') navigateScene(1);
+            else if (e.key === 'Escape') closeDetail();
+        } else {
+            if (e.key === 'r' || e.key === 'R') resetView();
+            else if (e.key === 'f' || e.key === 'F') toggleFullscreen();
+        }
+    }
+
+    window.resetView = function() {
+        Graph.cameraPosition({ x: 0, y: 0, z: CAMERA_DIST }, { x: 0, y: 0, z: 0 }, 1000);
+    };
+
+    window.toggleFullscreen = function() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    };
+
+    // ============================================================
+    // 详情卡片
+    // ============================================================
+    function showDetail(scene) {
+        document.getElementById('detail-title-zh').textContent = scene.scene_name_zh || '';
+        document.getElementById('detail-title-en').textContent = scene.scene_name_en || '';
+
+        const industryTag = document.getElementById('detail-industry-tag');
+        industryTag.textContent = scene.source_major_name || '';
+        industryTag.style.background = industryColors[scene.source_major_name];
+        industryTag.style.color = '#fff';
+
+        document.getElementById('detail-process-tag').textContent = scene.process_step || '';
+        document.getElementById('detail-description').textContent = scene.scene_description || '';
+        document.getElementById('detail-rationale').textContent = scene.selection_rationale || '';
+
+        // 工序链
+        const chainDiv = document.getElementById('detail-chain');
+        const steps = scene.industry_chain?.split('→') || [];
+        chainDiv.innerHTML = steps.map(step => {
+            const isCurrent = step.trim() === scene.process_step;
+            return `<span class="process-step ${isCurrent ? 'current' : ''}">${step.trim()}</span>`;
+        }).join('<span class="process-arrow">→</span>');
+
+        // 评分明细
+        const scoresDiv = document.getElementById('detail-scores');
+        scoresDiv.innerHTML = Object.entries(scoreNamesFull).map(([key, name]) => {
+            const score = scene.scores?.[key]?.score || 0;
+            const basis = scene.scores?.[key]?.basis || '';
+            return `<div class="score-row"><span class="score-name">${name}</span><span class="score-num sn-${score}">${score}</span><span class="score-basis">${basis}</span></div>`;
+        }).join('');
+
+        // 象限
+        document.getElementById('detail-quadrant').textContent = `本场景位于「${getQuadrant(scene)}」`;
+
+        updateNavInfo();
+        drawDetailRadar(scene);
+
+        document.getElementById('detail-overlay').classList.add('visible');
+        document.getElementById('hover-panel').classList.remove('visible');
+    }
+
+    function getQuadrant(scene) {
+        const s = scene.scores || {};
+        const difficulty = (
+            (s.operation_complexity?.score || 3) +
+            (6 - (s.structure_level?.score || 3)) +
+            (6 - (s.fault_tolerance?.score || 3)) +
+            (6 - (s.takt_pressure?.score || 3))
+        ) / 4;
+        const value = (
+            (s.labor_urgency?.score || 3) +
+            (s.scale_potential?.score || 3) +
+            (s.superhuman_value?.score || 3)
+        ) / 3;
+
+        if (difficulty < 3 && value >= 3) return '快速落地区';
+        if (difficulty >= 3 && value >= 3) return '战略攻坚区';
+        if (difficulty < 3 && value < 3) return '锦上添花区';
+        return '暂缓观望区';
+    }
+
+    function drawDetailRadar(scene) {
+        const canvas = document.getElementById('detail-radar');
+        const ctx = canvas.getContext('2d');
+        const center = 140;
+        const radius = 105;
+
+        ctx.clearRect(0, 0, 280, 280);
+
+        const dims = Object.keys(scoreDims);
+        const dimNames = Object.values(scoreDims);
+        const angles = dims.map((_, i) => (i * 2 * Math.PI / 7) - Math.PI / 2);
+
+        // 网格
+        ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+        ctx.lineWidth = 1;
+        for (let r = 1; r <= 5; r++) {
+            ctx.beginPath();
+            angles.forEach((angle, i) => {
+                const x = center + Math.cos(angle) * (radius * r / 5);
+                const y = center + Math.sin(angle) * (radius * r / 5);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.closePath();
+            ctx.stroke();
+        }
+
+        // 轴线
+        angles.forEach(angle => {
+            ctx.beginPath();
+            ctx.moveTo(center, center);
+            ctx.lineTo(center + Math.cos(angle) * radius, center + Math.sin(angle) * radius);
+            ctx.stroke();
+        });
+
+        // 数据填充
+        const color = industryColors[scene.source_major_name] || '#4a9eff';
+        ctx.fillStyle = color + '30';
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 2;
+
+        ctx.beginPath();
+        dims.forEach((dim, i) => {
+            const score = scene.scores?.[dim]?.score || 0;
+            const x = center + Math.cos(angles[i]) * (radius * score / 5);
+            const y = center + Math.sin(angles[i]) * (radius * score / 5);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+        });
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+
+        // 标签
+        ctx.fillStyle = '#777';
+        ctx.font = '11px sans-serif';
+        ctx.textAlign = 'center';
+        angles.forEach((angle, i) => {
+            const x = center + Math.cos(angle) * (radius + 18);
+            const y = center + Math.sin(angle) * (radius + 18);
+            ctx.fillText(dimNames[i], x, y + 4);
+        });
+    }
+
+    window.closeDetail = function() {
+        document.getElementById('detail-overlay').classList.remove('visible');
+        resetView();
+    };
+
+    window.navigateScene = function(dir) {
+        const newIndex = currentSceneIndex + dir;
+        if (newIndex >= 0 && newIndex < filteredScenes.length) {
+            currentSceneIndex = newIndex;
+            const node = filteredScenes[currentSceneIndex];
+            Graph.cameraPosition(
+                { x: node.x + 30, y: node.y, z: node.z + 30 },
+                { x: node.x, y: node.y, z: node.z },
+                500
+            );
+            showDetail(node);
+        }
+    };
+
+    function updateNavInfo() {
+        document.getElementById('nav-info').textContent = `${currentSceneIndex + 1} / ${filteredScenes.length}`;
+        document.getElementById('prev-btn').disabled = currentSceneIndex === 0;
+        document.getElementById('next-btn').disabled = currentSceneIndex === filteredScenes.length - 1;
+    }
+
+    // ============================================================
+    // 筛选器
+    // ============================================================
+    function initFilters() {
+        const industryList = document.getElementById('industry-list');
+        const industries = [...new Set(scenes.map(s => s.source_major_name))].sort();
+
+        industryList.innerHTML = industries.map(ind => {
+            const count = scenes.filter(s => s.source_major_name === ind).length;
+            return `
+                <label class="industry-item">
+                    <input type="checkbox" class="industry-checkbox" value="${ind}" checked onchange="toggleIndustry('${ind}')">
+                    <span class="industry-color" style="background:${industryColors[ind]}"></span>
+                    <span class="industry-name">${ind.length > 8 ? ind.substring(0, 8) + '…' : ind}</span>
+                    <span class="industry-count">${count}</span>
+                </label>
+            `;
+        }).join('');
+
+        const scoreFilters = document.getElementById('score-filters');
+        scoreFilters.innerHTML = Object.entries(scoreDims).map(([key, name]) => `
+            <div class="range-slider">
+                <div class="range-header">
+                    <span class="range-name">${name}</span>
+                    <span class="range-value" id="range-${key}-value">1-5</span>
+                </div>
+                <input type="range" min="1" max="5" value="1" id="range-${key}-min" onchange="updateScoreFilter('${key}')">
+                <input type="range" min="1" max="5" value="5" id="range-${key}-max" onchange="updateScoreFilter('${key}')">
+            </div>
+        `).join('');
+    }
+
+    window.toggleIndustry = function(industry) {
+        if (filters.industries.has(industry)) {
+            filters.industries.delete(industry);
+        } else {
+            filters.industries.add(industry);
+        }
+        applyFilters();
+        updateGraph();
+    };
+
+    window.updateScoreFilter = function(key) {
+        const minVal = parseInt(document.getElementById(`range-${key}-min`).value);
+        const maxVal = parseInt(document.getElementById(`range-${key}-max`).value);
+        filters.scores[key] = [Math.min(minVal, maxVal), Math.max(minVal, maxVal)];
+        document.getElementById(`range-${key}-value`).textContent = `${filters.scores[key][0]}-${filters.scores[key][1]}`;
+        applyFilters();
+        updateGraph();
+    };
+
+    function applyFilters() {
+        filteredScenes = scenes.filter(scene => {
+            if (!filters.industries.has(scene.source_major_name)) return false;
+            for (const [key, [min, max]] of Object.entries(filters.scores)) {
+                const score = scene.scores?.[key]?.score || 0;
+                if (score < min || score > max) return false;
+            }
+            return true;
+        });
+        updateStats();
+    }
+
+    function updateStats() {
+        document.getElementById('stats-count').textContent = `${filteredScenes.length} / ${scenes.length}`;
+
+        let q1 = 0, q2 = 0, q3 = 0, q4 = 0;
+        filteredScenes.forEach(scene => {
+            const q = getQuadrant(scene);
+            if (q === '快速落地区') q1++;
+            else if (q === '战略攻坚区') q2++;
+            else if (q === '锦上添花区') q3++;
+            else q4++;
+        });
+
+        document.getElementById('stats-q1').textContent = q1;
+        document.getElementById('stats-q2').textContent = q2;
+        document.getElementById('stats-q3').textContent = q3;
+        document.getElementById('stats-q4').textContent = q4;
+    }
+
+    function updateGraph() {
+        nodeObjects.clear();
+        if (Graph) {
+            Graph.graphData({ nodes: filteredScenes, links: [] });
+        }
+    }
+
+    window.togglePanel = function() {
+        document.getElementById('filter-panel').classList.toggle('collapsed');
+    };
+
+    // 启动
+    init();
+    </script>
+</body>
+</html>
