@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python *)"
+      "Bash(python *)",
+      "PowerShell(Get-ChildItem C:\\\\HRIA\\\\ -Force | Where-Object { $_.Name -ne 'humanoid-robot-industrial-guide' } | Format-Table Name, Mode)"
     ]
   }
 }
