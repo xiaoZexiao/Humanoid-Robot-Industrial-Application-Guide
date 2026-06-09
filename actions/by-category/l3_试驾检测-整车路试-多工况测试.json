@@ -1,0 +1,1353 @@
+{
+  "scene_id": "36-361-00",
+  "scene_name": "试驾检测-整车路试-多工况测试",
+  "total_steps": 47,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待测区步行至测试车辆停放位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-测试跑道地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在驾驶座车门旁精确站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-车门把手位置-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手至车门外把手位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-车门把手-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "握住车门外把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-车门把手-标准尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "拉动把手解除车门锁止并拉开车门",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-汽车车门-0至70度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "松开车门把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-把手已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "转身面向车内驾驶座方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "弯腰降低身体高度以进入车内",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-进入车舱",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "坐入驾驶座椅",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-01",
+      "l2_name": "站坐跪转换",
+      "l3_id": "L3-02-01-001",
+      "l3_name": "转换-站立-坐于车座",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "伸手握住座椅调节杆",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-座椅调节杆-下方探入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "拉起调节杆解锁座椅滑轨",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-座椅解锁杆-轻拉力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "用腿部力量推动座椅沿导轨滑移至合适位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-001",
+      "l3_name": "滑移-座椅导轨-前后150mm行程",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "松开调节杆锁定座椅位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-快速松手-机构自锁",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "转头注视后视镜",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-车内后视镜-视野确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "伸手触碰后视镜进行角度微调",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-后视镜角度-5度精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手至安全带卡扣位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-安全带卡扣-斜后方探入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "捏取安全带卡扣",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-安全带扣舌-小型握持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "拉出安全带至胸前",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-002",
+      "l3_name": "拉拔-安全带-卷收器抽出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将安全带卡扣插入锁座",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-安全带扣舌-弹簧锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "松开安全带卡扣",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-卡扣已锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "右脚踩下刹车踏板",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-刹车踏板-持续踩踏",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "按下一键启动按钮启动车辆",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-启动按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "21",
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "注视仪表盘确认车辆启动状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-汽车仪表盘-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双手握住方向盘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-方向盘-双手对称握持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "松开刹车踏板",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-004",
+      "l3_name": "释放-足部渐进-踏板回位",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]足部动作归入L2-04-07释放类，因核心是解除压力的受控动作",
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 26,
+      "human_description": "右脚踩下油门踏板进行加速测试",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-002",
+      "l3_name": "推压-油门踏板-变力踩踏",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 27,
+      "human_description": "旋转方向盘进行转向测试",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-05",
+      "l2_name": "连续回转驱动",
+      "l3_id": "L3-06-05-001",
+      "l3_name": "回转-方向盘-变速转向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "26",
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 28,
+      "human_description": "快速松开油门并踩下刹车踏板进行制动测试",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-003",
+      "l3_name": "推压-刹车踏板-急制动测试",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 29,
+      "human_description": "侧耳倾听车辆行驶中的异响",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-车辆异响-底盘及内饰区域",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "27",
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 30,
+      "human_description": "驾驶车辆通过颠簸路面感知底盘响应",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-振动反馈-座椅及方向盘",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]通过座椅和方向盘传递的振动感知底盘状态，属于触觉信息采集",
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 31,
+      "human_description": "维持驾驶姿态抵抗颠簸引起的身体扰动",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-坐姿驾驶姿态-抗颠簸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "30",
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 32,
+      "human_description": "驾驶车辆通过涉水路面时观察车况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-车内渗水点-视觉扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 33,
+      "human_description": "驾驶车辆上坡测试动力响应",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-004",
+      "l3_name": "推压-油门踏板-坡道加载测试",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 34,
+      "human_description": "驾驶车辆下坡测试制动效能",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-005",
+      "l3_name": "推压-刹车踏板-坡道减速控制",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 35,
+      "human_description": "将车辆停至指定位置并踩住刹车",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-刹车踏板-持续踩踏",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 36,
+      "human_description": "拉起电子手刹或推入P档",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-003",
+      "l3_name": "拉拔-电子手刹开关-上提触发",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 37,
+      "human_description": "按下启动按钮熄火",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-启动按钮-中等力度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 38,
+      "human_description": "松开方向盘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-005",
+      "l3_name": "释放-双手同步松开-方向盘",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 39,
+      "human_description": "按下安全带锁扣释放按钮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-安全带释放按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 40,
+      "human_description": "将安全带归位至卷收器",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-安全带扣舌-引导归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 41,
+      "human_description": "伸手推开车门",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-汽车车门-0至70度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 42,
+      "human_description": "转身面向车门方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧方",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 43,
+      "human_description": "从驾驶座起身",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-01",
+      "l2_name": "站坐跪转换",
+      "l3_id": "L3-02-01-002",
+      "l3_name": "转换-坐于车座-站立",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 44,
+      "human_description": "跨出车门门槛站到地面",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-车门门槛-20cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 45,
+      "human_description": "握住车门内侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-车门把手-标准尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 46,
+      "human_description": "关闭车门",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-汽车车门-70度至关闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 47,
+      "human_description": "松开车门",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-把手已固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-测试跑道地面-匀速",
+      "l3_name_en": "Walking-TestTrackSurface-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在汽车测试跑道的硬化地面上以匀速步态行走至待测车辆位置",
+      "object_category": "测试跑道地面（沥青/混凝土）",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "米级定位"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-车门把手位置-分米级",
+      "l3_name_en": "Positioning-DoorHandleLocation-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在汽车驾驶座车门旁停止行走，调整站位使身体位于便于开门的最佳位置",
+      "object_category": "汽车车门",
+      "parameter_ranges": {
+        "size_range": "站位调整范围±30cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-车门把手-无障碍直线",
+      "l3_name_en": "Reaching-DoorHandle-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂从身侧位置沿直线路径伸向汽车外门把手",
+      "object_category": "汽车外门把手",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-车门把手-标准尺寸",
+      "l3_name_en": "PowerGrasp-DoorHandle-StandardSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握汽车车门外把手，准备施力拉开车门",
+      "object_category": "汽车门把手",
+      "parameter_ranges": {
+        "size_range": "把手长度80-150mm，直径15-30mm",
+        "weight_range": "N/A",
+        "force_range": "握力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-汽车车门-0至70度",
+      "l3_name_en": "HingedOpenClose-CarDoor-0to70Degrees",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿车门铰链定义的圆弧轨迹将车门从关闭状态打开至约70度位置",
+      "object_category": "汽车侧车门",
+      "parameter_ranges": {
+        "size_range": "车门宽度800-1200mm",
+        "weight_range": "车门重量15-40kg",
+        "force_range": "拉力20-50N",
+        "precision_requirement": "角度控制±5度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-把手已固定",
+      "l3_name_en": "Release-GradualFingerOpen-HandleFixed",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐步张开手指解除对已固定物体（如门把手）的抓握",
+      "object_category": "固定把手类物体",
+      "parameter_ranges": {
+        "size_range": "把手直径15-40mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向侧方",
+      "l3_name_en": "TrunkRotation-90Degrees-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "以脊柱纵轴为中心将上半身旋转约90度面向侧方",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-进入车舱",
+      "l3_name_en": "Bending-ModerateStooping-EnterCabin",
+      "parent_l2_id": "L2-02-02",
+      "description": "弯腰前屈约45-60度以降低头部高度便于进入汽车车舱",
+      "object_category": "汽车车舱入口",
+      "parameter_ranges": {
+        "size_range": "车门开口高度900-1200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-02-01-001",
+      "l3_name_zh": "转换-站立-坐于车座",
+      "l3_name_en": "Transition-Standing-SittingInCarSeat",
+      "parent_l2_id": "L2-02-01",
+      "description": "从站立姿态转换为坐在汽车驾驶座上的坐姿",
+      "object_category": "汽车座椅",
+      "parameter_ranges": {
+        "size_range": "座椅高度400-550mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-座椅调节杆-下方探入",
+      "l3_name_en": "Reaching-SeatAdjustLever-LowerProbing",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂向座椅下方伸入以触及座椅位置调节杆",
+      "object_category": "座椅调节杆",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-40cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-座椅解锁杆-轻拉力",
+      "l3_name_en": "Pulling-SeatUnlockLever-LightForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "向上拉起座椅调节杆使座椅滑轨解锁便于前后调节",
+      "object_category": "座椅调节杆",
+      "parameter_ranges": {
+        "size_range": "杆长100-200mm",
+        "weight_range": "N/A",
+        "force_range": "拉力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-07-04-001",
+      "l3_name_zh": "滑移-座椅导轨-前后150mm行程",
+      "l3_name_en": "Sliding-SeatRail-ForwardBackward150mm",
+      "parent_l2_id": "L2-07-04",
+      "description": "在座椅导轨解锁状态下推动座椅前后滑动至合适位置",
+      "object_category": "汽车座椅导轨",
+      "parameter_ranges": {
+        "size_range": "行程100-200mm",
+        "weight_range": "座椅重量10-20kg",
+        "force_range": "推力30-80N",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-快速松手-机构自锁",
+      "l3_name_en": "Release-QuickRelease-MechanismSelfLock",
+      "parent_l2_id": "L2-04-07",
+      "description": "快速松开调节杆使座椅锁止机构自动卡入锁定",
+      "object_category": "机械锁止杆",
+      "parameter_ranges": {
+        "size_range": "杆直径10-25mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-车内后视镜-视野确认",
+      "l3_name_en": "Gaze-InteriorMirror-ViewConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "转头注视车内后视镜确认后方视野覆盖范围",
+      "object_category": "车内后视镜",
+      "parameter_ranges": {
+        "size_range": "后视镜尺寸200-300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准±5度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-后视镜角度-5度精度",
+      "l3_name_en": "FineAdjust-MirrorAngle-5DegreePrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "用手指轻推后视镜边缘进行小角度调节以获得最佳后方视野",
+      "object_category": "车内后视镜",
+      "parameter_ranges": {
+        "size_range": "调节幅度±15度",
+        "weight_range": "N/A",
+        "force_range": "推力1-5N",
+        "precision_requirement": "角度±5度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-安全带卡扣-斜后方探入",
+      "l3_name_en": "Reaching-SeatbeltBuckle-DiagonalRearProbing",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂向斜后上方伸出以触及位于肩部后方的安全带卡扣",
+      "object_category": "安全带卡扣",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-安全带扣舌-小型握持",
+      "l3_name_en": "PowerGrasp-SeatbeltTongue-SmallGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "用手指和手掌握住安全带的金属扣舌部分",
+      "object_category": "安全带扣舌",
+      "parameter_ranges": {
+        "size_range": "扣舌宽度40-60mm，厚度3-5mm",
+        "weight_range": "N/A",
+        "force_range": "握力5-15N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-03-002",
+      "l3_name_zh": "拉拔-安全带-卷收器抽出",
+      "l3_name_en": "Pulling-Seatbelt-RetractorExtraction",
+      "parent_l2_id": "L2-05-03",
+      "description": "将安全带从卷收器中平稳拉出并绕过身体前方",
+      "object_category": "安全带",
+      "parameter_ranges": {
+        "size_range": "拉出长度50-80cm",
+        "weight_range": "N/A",
+        "force_range": "拉力5-20N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-安全带扣舌-弹簧锁定",
+      "l3_name_en": "SnapFit-SeatbeltTongue-SpringLocking",
+      "parent_l2_id": "L2-07-06",
+      "description": "将安全带扣舌对准锁座插入直至弹簧锁止机构咔嗒锁定",
+      "object_category": "安全带锁座",
+      "parameter_ranges": {
+        "size_range": "锁座宽度50-70mm",
+        "weight_range": "N/A",
+        "force_range": "插入力10-30N",
+        "precision_requirement": "对准精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-卡扣已锁定",
+      "l3_name_en": "Release-GradualFingerOpen-BuckleLocked",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认安全带锁止后逐步松开对扣舌的握持",
+      "object_category": "安全带扣舌",
+      "parameter_ranges": {
+        "size_range": "扣舌宽度40-60mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-刹车踏板-持续踩踏",
+      "l3_name_en": "Pushing-BrakePedal-SustainedPress",
+      "parent_l2_id": "L2-05-02",
+      "description": "用右脚持续踩踏刹车踏板保持车辆静止或进行制动",
+      "object_category": "汽车刹车踏板",
+      "parameter_ranges": {
+        "size_range": "踏板宽度60-100mm",
+        "weight_range": "N/A",
+        "force_range": "踩踏力50-300N",
+        "precision_requirement": "力度可变调节"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-启动按钮-中等力度",
+      "l3_name_en": "PointPress-StartButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按压汽车一键启动按钮以启动或熄灭发动机",
+      "object_category": "汽车启动按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径20-40mm",
+        "weight_range": "N/A",
+        "force_range": "按压力5-15N",
+        "precision_requirement": "定点按压"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-汽车仪表盘-状态确认",
+      "l3_name_en": "Reading-CarDashboard-StatusConfirmation",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视汽车仪表盘读取车速、转速、油量、故障灯等状态信息",
+      "object_category": "汽车仪表盘",
+      "parameter_ranges": {
+        "size_range": "仪表盘宽度300-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "OCR可读清晰度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-方向盘-双手对称握持",
+      "l3_name_en": "PowerGrasp-SteeringWheel-BimanualSymmetric",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手在方向盘9点和3点位置进行对称性全握，准备进行转向控制",
+      "object_category": "汽车方向盘",
+      "parameter_ranges": {
+        "size_range": "方向盘直径350-400mm，握把直径25-35mm",
+        "weight_range": "N/A",
+        "force_range": "握力15-40N每手",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-07-004",
+      "l3_name_zh": "释放-足部渐进-踏板回位",
+      "l3_name_en": "Release-FootGradual-PedalReturn",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐步减小对踏板的下压力使踏板在复位弹簧作用下回位",
+      "object_category": "汽车踏板",
+      "parameter_ranges": {
+        "size_range": "踏板行程30-80mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "力度渐变控制"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-02-002",
+      "l3_name_zh": "推压-油门踏板-变力踩踏",
+      "l3_name_en": "Pushing-AcceleratorPedal-VariableForce",
+      "parent_l2_id": "L2-05-02",
+      "description": "用右脚踩踏油门踏板并根据加速需求动态调节下压力度",
+      "object_category": "汽车油门踏板",
+      "parameter_ranges": {
+        "size_range": "踏板宽度40-80mm",
+        "weight_range": "N/A",
+        "force_range": "踩踏力10-100N",
+        "precision_requirement": "力度精细调节"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-06-05-001",
+      "l3_name_zh": "回转-方向盘-变速转向",
+      "l3_name_en": "ContinuousRotation-SteeringWheel-VariableSpeed",
+      "parent_l2_id": "L2-06-05",
+      "description": "双手协调连续旋转方向盘实现车辆转向，角速度根据弯道曲率动态调整",
+      "object_category": "汽车方向盘",
+      "parameter_ranges": {
+        "size_range": "方向盘直径350-400mm",
+        "weight_range": "N/A",
+        "force_range": "转向力矩5-30Nm",
+        "precision_requirement": "角度连续控制"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-02-003",
+      "l3_name_zh": "推压-刹车踏板-急制动测试",
+      "l3_name_en": "Pushing-BrakePedal-EmergencyBrakeTest",
+      "parent_l2_id": "L2-05-02",
+      "description": "快速踩下刹车踏板至接近最大行程以测试紧急制动性能",
+      "object_category": "汽车刹车踏板",
+      "parameter_ranges": {
+        "size_range": "踏板行程50-100mm",
+        "weight_range": "N/A",
+        "force_range": "踩踏力200-500N",
+        "precision_requirement": "快速响应"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-车辆异响-底盘及内饰区域",
+      "l3_name_en": "Listening-VehicleAbnormalSound-ChassisAndInterior",
+      "parent_l2_id": "L2-09-05",
+      "description": "在车辆行驶过程中侧耳倾听来自底盘、悬挂、内饰等部位的异常声音",
+      "object_category": "车辆声音信号",
+      "parameter_ranges": {
+        "size_range": "监听范围车内全域",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "声源定位±30度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-振动反馈-座椅及方向盘",
+      "l3_name_en": "TactileProbing-VibrationFeedback-SeatAndSteeringWheel",
+      "parent_l2_id": "L2-09-04",
+      "description": "通过座椅和方向盘传递的振动感知车辆底盘和悬挂的工作状态",
+      "object_category": "车辆振动信号",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "振动接触力<2N",
+        "precision_requirement": "频率敏感0.5-100Hz"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-坐姿驾驶姿态-抗颠簸",
+      "l3_name_en": "Bracing-SeatedDrivingPosture-AntiJolt",
+      "parent_l2_id": "L2-02-06",
+      "description": "在颠簸路面行驶时通过核心肌群持续发力维持稳定的驾驶坐姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "核心抗扰力[待补充]",
+        "precision_requirement": "姿态稳定±10度"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-车内渗水点-视觉扫描",
+      "l3_name_en": "Scanning-InteriorLeakPoints-VisualScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "涉水测试时系统性扫视车内各密封部位检查是否有渗水现象",
+      "object_category": "车内密封部位",
+      "parameter_ranges": {
+        "size_range": "扫描区域车内全域",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "毫米级渗水点识别"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-02-004",
+      "l3_name_zh": "推压-油门踏板-坡道加载测试",
+      "l3_name_en": "Pushing-AcceleratorPedal-RampLoadTest",
+      "parent_l2_id": "L2-05-02",
+      "description": "在上坡路面踩踏油门测试发动机在负载工况下的动力响应",
+      "object_category": "汽车油门踏板",
+      "parameter_ranges": {
+        "size_range": "踏板宽度40-80mm",
+        "weight_range": "N/A",
+        "force_range": "踩踏力30-80N",
+        "precision_requirement": "力度稳定控制"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-02-005",
+      "l3_name_zh": "推压-刹车踏板-坡道减速控制",
+      "l3_name_en": "Pushing-BrakePedal-RampDecelerationControl",
+      "parent_l2_id": "L2-05-02",
+      "description": "在下坡路面踩踏刹车测试制动系统在重力加速工况下的减速效能",
+      "object_category": "汽车刹车踏板",
+      "parameter_ranges": {
+        "size_range": "踏板宽度60-100mm",
+        "weight_range": "N/A",
+        "force_range": "踩踏力80-250N",
+        "precision_requirement": "力度渐变调节"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-03-003",
+      "l3_name_zh": "拉拔-电子手刹开关-上提触发",
+      "l3_name_en": "Pulling-ElectronicParkingBrake-UpwardTrigger",
+      "parent_l2_id": "L2-05-03",
+      "description": "向上拉起电子手刹开关以激活驻车制动系统",
+      "object_category": "电子手刹开关",
+      "parameter_ranges": {
+        "size_range": "开关长度40-60mm",
+        "weight_range": "N/A",
+        "force_range": "拉力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-04-07-005",
+      "l3_name_zh": "释放-双手同步松开-方向盘",
+      "l3_name_en": "Release-BimanualSimultaneous-SteeringWheel",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手同时张开手指解除对方向盘的握持",
+      "object_category": "汽车方向盘",
+      "parameter_ranges": {
+        "size_range": "方向盘直径350-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "双手同步"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-安全带释放按钮-中等力度",
+      "l3_name_en": "PointPress-SeatbeltReleaseButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用拇指按压安全带锁座上的红色释放按钮解除锁止",
+      "object_category": "安全带释放按钮",
+      "parameter_ranges": {
+        "size_range": "按钮面积约15x30mm",
+        "weight_range": "N/A",
+        "force_range": "按压力10-25N",
+        "precision_requirement": "定点按压"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-安全带扣舌-引导归位",
+      "l3_name_en": "Transfer-SeatbeltTongue-GuidedReturn",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持安全带扣舌将其从身前引导至肩侧使其被卷收器回收",
+      "object_category": "安全带",
+      "parameter_ranges": {
+        "size_range": "移动距离30-60cm",
+        "weight_range": "安全带及扣舌约100-200g",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-02-01-002",
+      "l3_name_zh": "转换-坐于车座-站立",
+      "l3_name_en": "Transition-SittingInCarSeat-Standing",
+      "parent_l2_id": "L2-02-01",
+      "description": "从汽车驾驶座的坐姿转换为站立姿态准备下车",
+      "object_category": "汽车座椅",
+      "parameter_ranges": {
+        "size_range": "起身高度400-550mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-车门门槛-20cm以内",
+      "l3_name_en": "Crossing-DoorSill-Under20cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "抬腿跨过汽车车门下沿门槛从车内移动到车外地面",
+      "object_category": "汽车门槛",
+      "parameter_ranges": {
+        "size_range": "门槛高度10-20cm，宽度5-15cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免触碰门槛"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    },
+    {
+      "l3_id": "L3-07-05-002",
+      "l3_name_zh": "开合-汽车车门-70度至关闭",
+      "l3_name_en": "HingedOpenClose-CarDoor-70DegreesToClosed",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿车门铰链圆弧轨迹将已打开的车门推回至完全关闭状态",
+      "object_category": "汽车侧车门",
+      "parameter_ranges": {
+        "size_range": "车门宽度800-1200mm",
+        "weight_range": "车门重量15-40kg",
+        "force_range": "推力30-60N",
+        "precision_requirement": "确保门锁闭合"
+      },
+      "is_new": true,
+      "source_scene": "36-361-00-RoadTest-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-05",
+      "L2-01-08",
+      "L2-02-01",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-02",
+      "L2-05-03",
+      "L2-06-05",
+      "L2-06-06",
+      "L2-07-04",
+      "L2-07-05",
+      "L2-07-06",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-04",
+      "L2-09-05",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 9
+  }
+}

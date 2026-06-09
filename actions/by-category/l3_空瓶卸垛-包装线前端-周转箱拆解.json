@@ -1,0 +1,699 @@
+{
+  "scene_id": "15-152-00",
+  "scene_name": "空瓶卸垛-包装线前端-周转箱拆解",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区沿通道直行走向空瓶托盘工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在托盘前方精确站位，双脚对准操作标定点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-托盘操作点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视确认托盘当前层状态、周转箱位置及玻璃瓶完整性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-托盘层面-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身降低上半身高度以便抓取中低层周转箱",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": "顶层可跳过此步骤，底层改用L2-02-03下蹲",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂同时伸向周转箱两侧把手位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-周转箱把手-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "左手全手包络抓握周转箱左侧把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-周转箱把手-握孔式",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "右手全手包络抓握周转箱右侧把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-周转箱把手-握孔式",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "6",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调向上提升周转箱脱离托盘层面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-周转箱-中载垂直提升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "挺直腰部恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身复位-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "此为弯腰俯身的逆向动作，在L2-02-02范围内",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "保持双臂持握周转箱，躯干向输送带方向旋转约90度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-负载转向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "双手持周转箱向输送带方向行走数步",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型箱体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "目视确认输送带放置位置，对准空位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-输送带空位-放置定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双臂协调将周转箱缓慢下降轻放至输送带上，避免玻璃瓶碰撞",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-周转箱-输送带轻放",
+      "is_new_l3": true,
+      "boundary_note": "强调低速轻放以防玻璃瓶碰撞，精度要求较高",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "双手同时逐步松开对周转箱把手的抓握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-周转箱已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "躯干旋转转回面向托盘方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-空载返回",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "空手行走返回托盘前继续下一个周转箱的卸载",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "一层周转箱卸完后，弯腰伸手抓取层间垫板边缘",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "双手伸向垫板对角位置准备抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-垫板边缘-双臂对角",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双手抓握垫板两侧边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-薄板边缘-侧握式",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "双臂协调将垫板从托盘上提起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-大面积薄板-双臂平托",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "起身并转体朝向垫板回收区",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-003",
+      "l3_name": "转体-任意角度-负载薄板",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "持垫板行走至垫板回收堆放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-大面积薄板-双臂平持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将垫板按规律叠放至回收堆上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-垫板叠放-单件层叠",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开双手释放垫板",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-平稳松手-薄板已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walking-EpoxyFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间常见的环氧树脂地坪上以匀速步态直线行走",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度≥1.2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±10cm以内"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-托盘操作点-厘米级",
+      "l3_name_en": "Positioning-PalletOperationPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘前方预设的操作位置精确停位，确保双臂可及托盘上的周转箱",
+      "object_category": "地面标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域约0.6m×0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±3cm，朝向精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-托盘层面-状态确认",
+      "l3_name_en": "Gaze-PalletLayer-StatusConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视扫描托盘当前层面，确认周转箱位置、数量及玻璃瓶完整性",
+      "object_category": "托盘/周转箱/玻璃瓶",
+      "parameter_ranges": {
+        "size_range": "托盘面积约1.2m×1.0m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别瓶体破损、箱体偏移"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Stooping-ModerateBend-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "腰部前屈约30-60度，使双手可及腰部至膝部高度范围的操作对象",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "目标高度0.4-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持躯干稳定"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-周转箱把手-双臂对称",
+      "l3_name_en": "Reaching-CrateHandle-BimanualSymmetric",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时对称伸向周转箱两侧的提手孔位置，准备抓握",
+      "object_category": "周转箱把手",
+      "parameter_ranges": {
+        "size_range": "箱体宽度400-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "手掌对准把手孔±2cm"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-周转箱把手-握孔式",
+      "l3_name_en": "PowerGrasp-CrateHandle-HoleGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "手指穿入周转箱侧面的提手孔，全手包络抓握形成稳固持握",
+      "object_category": "周转箱把手孔",
+      "parameter_ranges": {
+        "size_range": "把手孔尺寸约100mm×40mm",
+        "weight_range": "单箱含瓶20-30kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "防滑稳固抓握"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-周转箱-中载垂直提升",
+      "l3_name_en": "BimanualCarry-Crate-MediumLoadVerticalLift",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调垂直向上提升装有玻璃瓶的周转箱，保持水平姿态防止瓶体碰撞",
+      "object_category": "周转箱（含玻璃瓶）",
+      "parameter_ranges": {
+        "size_range": "箱体约600mm×400mm×300mm",
+        "weight_range": "20-30kg",
+        "force_range": "双臂协调提升力200-300N",
+        "precision_requirement": "水平偏差≤5°，垂直加速度≤0.5g"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身复位-负载状态",
+      "l3_name_en": "Stooping-RisingReturn-LoadedState",
+      "parent_l2_id": "L2-02-02",
+      "description": "在双手持有重物状态下，从弯腰姿态挺直腰部恢复直立站姿",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "负载20-30kg",
+        "force_range": "腰部伸展力矩[待补充]",
+        "precision_requirement": "保持负载稳定"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-负载转向",
+      "l3_name_en": "TrunkRotation-90Degree-LoadedTurn",
+      "parent_l2_id": "L2-02-04",
+      "description": "在双手持有重物状态下，上半身绕垂直轴旋转约90度改变朝向",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100°",
+        "weight_range": "负载20-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "转向后面对目标方向±10°"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型箱体-双臂前持",
+      "l3_name_en": "LoadedWalking-MediumCrate-BimanualFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手在身前持握中型周转箱状态下的短距离行走移动",
+      "object_category": "周转箱",
+      "parameter_ranges": {
+        "size_range": "箱体约600mm×400mm×300mm",
+        "weight_range": "20-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走平稳，负载无晃动"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-输送带空位-放置定位",
+      "l3_name_en": "Gaze-ConveyorSlot-PlacementPositioning",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认输送带上的空闲位置，为周转箱放置进行视觉定位",
+      "object_category": "输送带",
+      "parameter_ranges": {
+        "size_range": "输送带宽度约500-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别可用放置区域"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-周转箱-输送带轻放",
+      "l3_name_en": "PrecisionPlacement-Crate-ConveyorGentleSet",
+      "parent_l2_id": "L2-03-05",
+      "description": "将周转箱低速、平稳地放置到输送带上，最后阶段速度极低以避免玻璃瓶相互碰撞",
+      "object_category": "周转箱（含玻璃瓶）",
+      "parameter_ranges": {
+        "size_range": "箱体约600mm×400mm×300mm",
+        "weight_range": "20-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "触地速度≤0.05m/s，位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-周转箱已支撑",
+      "l3_name_en": "Release-GradualUngrip-CrateSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "周转箱已稳定放置在输送带上后，逐步张开手指解除抓握",
+      "object_category": "周转箱把手",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "握力从150N渐减至0",
+        "precision_requirement": "释放过程不扰动箱体"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-空载返回",
+      "l3_name_en": "TrunkRotation-90Degree-UnloadedReturn",
+      "parent_l2_id": "L2-02-04",
+      "description": "空手状态下上半身绕垂直轴旋转约90度，转回面向托盘方向",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100°",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "转向后面对托盘±10°"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-垫板边缘-双臂对角",
+      "l3_name_en": "Reaching-SeparatorEdge-BimanualDiagonal",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂伸向层间垫板的对角位置，准备抓握垫板边缘",
+      "object_category": "垫板边缘",
+      "parameter_ranges": {
+        "size_range": "垫板尺寸约1200mm×1000mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "手掌对准垫板边缘"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-薄板边缘-侧握式",
+      "l3_name_en": "PowerGrasp-ThinPanelEdge-EdgeGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "手指包络抓握薄型垫板的边缘，形成稳固的侧边夹持",
+      "object_category": "垫板/隔板",
+      "parameter_ranges": {
+        "size_range": "板厚3-10mm",
+        "weight_range": "2-5kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "抓握稳固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-大面积薄板-双臂平托",
+      "l3_name_en": "BimanualCarry-LargeThinPanel-BimanualFlatHold",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运大面积薄型垫板，保持板面水平防止弯折",
+      "object_category": "垫板/隔板",
+      "parameter_ranges": {
+        "size_range": "面积约1.0-1.5m²",
+        "weight_range": "2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "板面水平偏差≤10°"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-003",
+      "l3_name_zh": "转体-任意角度-负载薄板",
+      "l3_name_en": "TrunkRotation-VariableAngle-LoadedPanel",
+      "parent_l2_id": "L2-02-04",
+      "description": "在双手持有大面积薄板状态下，躯干旋转至目标方向",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "旋转角度0-180°",
+        "weight_range": "负载2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "转向过程薄板不碰撞周围物体"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-大面积薄板-双臂平持",
+      "l3_name_en": "LoadedWalking-LargePanel-BimanualFlatHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手平持大面积薄型垫板状态下的行走移动，注意避让障碍",
+      "object_category": "垫板/隔板",
+      "parameter_ranges": {
+        "size_range": "面积约1.0-1.5m²",
+        "weight_range": "2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走时板面水平，不碰撞"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-垫板叠放-单件层叠",
+      "l3_name_en": "Stacking-SeparatorPanel-SingleLayerStack",
+      "parent_l2_id": "L2-03-06",
+      "description": "将垫板按层叠方式放置到回收堆上，保持堆垛整齐",
+      "object_category": "垫板/隔板",
+      "parameter_ranges": {
+        "size_range": "面积约1.0-1.5m²",
+        "weight_range": "2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "边缘对齐偏差≤5cm"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-平稳松手-薄板已支撑",
+      "l3_name_en": "Release-SteadyUngrip-PanelSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "垫板已稳定放置后，平稳松开双手抓握",
+      "object_category": "垫板/隔板",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "握力渐减至0",
+        "precision_requirement": "释放不扰动堆垛"
+      },
+      "is_new": true,
+      "source_scene": "15-152-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-02-04",
+    "涉及的L1数量": 5
+  }
+}

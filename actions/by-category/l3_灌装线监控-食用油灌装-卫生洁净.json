@@ -1,0 +1,624 @@
+{
+  "scene_id": "13-133-1331",
+  "scene_name": "灌装线监控-食用油灌装-卫生洁净",
+  "total_steps": 22,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从监控区域沿车间通道直线行走至第一条灌装线",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在灌装机监控点精确停止并调整站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "转动上半身使视线正对灌装机操作面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-面向设备-90度内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "头部水平扫视灌装线整体运行状况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-灌装线整体-水平扫视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "注视灌装机指示灯确认设备运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-设备指示灯-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 6,
+      "human_description": "读取灌装量显示屏上的计量数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-计量显示屏-灌装量数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "视线跟随传送带观察瓶子灌装量一致性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-传送带产品-线性跟踪扫视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 8,
+      "human_description": "读取液位传感器显示屏确认原料液位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-液位传感器显示-液位数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "发现卡瓶后直线行走接近故障位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在卡瓶处理位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-故障处理点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身降低上身高度以接近传送带上的卡瓶",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-轻度前屈-传送带高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "空手伸向卡瓶位置准备抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-传送带上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "全手包络抓握卡住的塑料油瓶瓶身",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱瓶体-直径60至100mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将卡涩的瓶子从卡位处拉出",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-卡涩瓶体-轻拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]瓶子卡涩但无严格几何配合约束，偏离直线不会导致卡死，归入L2-05-03而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "单手持瓶将其从传送带移至废料收集处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-灌装瓶体-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 16,
+      "human_description": "逐步松开手指将瓶子放入废料箱",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "从俯身状态恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身复位-直立恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "转弯行走至下一条灌装线",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 19,
+      "human_description": "在下一条灌装线观察点精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "扫视新灌装线整体运行状况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-灌装线整体-水平扫视",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "完成全部线路巡视后沿通道直线行走返回监控区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 22,
+      "human_description": "在监控区域工位精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-监控工位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walking-EpoxyFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在食品级车间环氧地坪上以恒定速度直线行走，地面平整、防滑、洁净",
+      "object_category": "环氧地坪地面",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.5-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备观察点-厘米级",
+      "l3_name_en": "Positioning-EquipmentObservationPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备前方预设的观察点位置精确停止，确保视野能够覆盖设备操作面和显示面板",
+      "object_category": "设备观察标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域0.5×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-面向设备-90度内",
+      "l3_name_en": "TrunkRotation-FacingEquipment-Within90Degrees",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身绕垂直轴旋转使正面朝向待观察设备",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-灌装线整体-水平扫视",
+      "l3_name_en": "AreaScan-FillingLineOverall-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "头部沿水平方向缓慢转动，视觉覆盖整条灌装线的运行状态，检查是否有异常停机或故障",
+      "object_category": "灌装生产线",
+      "parameter_ranges": {
+        "size_range": "扫视范围3-10m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖率100%"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-设备指示灯-状态确认",
+      "l3_name_en": "GazeAlignment-EquipmentIndicatorLight-StatusConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准设备操作面板上的指示灯，确认颜色和闪烁模式以判断运行状态",
+      "object_category": "设备指示灯",
+      "parameter_ranges": {
+        "size_range": "指示灯直径10-30mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-计量显示屏-灌装量数值",
+      "l3_name_en": "Reading-MeteringDisplay-FillingVolumeValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视觉传感器对准灌装计量显示屏，识别并读取当前灌装量数值",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸50×30mm至150×100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数值识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-传送带产品-线性跟踪扫视",
+      "l3_name_en": "AreaScan-ConveyorProducts-LinearTrackingSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线跟随传送带上移动的瓶子，检查各瓶灌装量是否一致、有无漏灌或溢灌",
+      "object_category": "传送带上的灌装瓶",
+      "parameter_ranges": {
+        "size_range": "扫视长度1-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "检出率>95%"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-液位传感器显示-液位数值",
+      "l3_name_en": "Reading-LevelSensorDisplay-LevelValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视觉传感器对准液位传感器显示界面，读取原料罐液位高度数值",
+      "object_category": "液位显示仪表",
+      "parameter_ranges": {
+        "size_range": "显示区域30×20mm至100×60mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数值识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-故障处理点-厘米级",
+      "l3_name_en": "Positioning-FaultHandlingPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在卡瓶故障位置旁精确停止，确保手臂可达范围覆盖故障瓶位置",
+      "object_category": "故障处理点",
+      "parameter_ranges": {
+        "size_range": "站位区域0.5×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-轻度前屈-传送带高度",
+      "l3_name_en": "Bending-SlightForwardFlexion-ConveyorHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴向前弯曲约30-45度，降低手部工作高度至传送带水平",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "弯曲角度30-45度"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-传送带上方-无障碍直线",
+      "l3_name_en": "Reaching-AboveConveyor-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手将手臂从体侧伸向传送带上方的目标瓶位置，路径无遮挡",
+      "object_category": "传送带上方空间",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱瓶体-直径60至100mm",
+      "l3_name_en": "PowerGrasp-CylindricalBottle-Diameter60to100mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握圆柱形塑料油瓶瓶身，确保抓持稳定不滑脱",
+      "object_category": "塑料圆柱瓶",
+      "parameter_ranges": {
+        "size_range": "瓶身直径60-100mm，高度150-300mm",
+        "weight_range": "0.5-5kg（含油）",
+        "force_range": "抓持力10-30N",
+        "precision_requirement": "抓持稳定性无滑移"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-卡涩瓶体-轻拉力",
+      "l3_name_en": "Pulling-JammedBottle-LightPullForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "对卡在传送带导轨或挡板处的瓶子施加拉力，将其从卡位中拉出",
+      "object_category": "卡涩的灌装瓶",
+      "parameter_ranges": {
+        "size_range": "瓶体直径60-100mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "拉力5-20N",
+        "precision_requirement": "不损坏瓶体"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-灌装瓶体-近距",
+      "l3_name_en": "Transfer-FillingBottle-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持瓶从传送带卡位移动至旁边的废料收集箱，距离约0.5-1m",
+      "object_category": "灌装瓶",
+      "parameter_ranges": {
+        "size_range": "瓶体直径60-100mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "平稳无倾洒"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpening-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在瓶子已放入收集箱或置于支撑面后，逐步张开手指解除抓握",
+      "object_category": "已放置的瓶体",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "无弹出或倾倒"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身复位-直立恢复",
+      "l3_name_en": "Bending-RisingReset-UprightRecovery",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰状态恢复至直立站姿，腰部前屈角度归零",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "恢复完全直立"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "DirectionalWalking-90DegreeTurn-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在灌装线之间的通道拐角处转弯行走，行进方向变化约90度",
+      "object_category": "车间通道弯道",
+      "parameter_ranges": {
+        "size_range": "弯道半径1-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "步态连续无停顿"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-监控工位-厘米级",
+      "l3_name_en": "Positioning-MonitoringStation-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在监控区域的工作站位置精确停止，准备进行下一轮巡视或数据记录",
+      "object_category": "监控工位标定点",
+      "parameter_ranges": {
+        "size_range": "工位区域0.8×0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "13-133-1331-FillingLineMonitoring"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-09-03",
+    "涉及的L1数量": 6
+  }
+}

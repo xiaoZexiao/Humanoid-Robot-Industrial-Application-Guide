@@ -1,0 +1,881 @@
+{
+  "scene_id": "10-00-1091",
+  "scene_name": "粉尘检测-石棉矿区-致癌粉尘环境",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从安全区域沿矿区通道行走前往第一个检测点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-矿区碎石地面-变速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在路径拐弯处转向行走绕过障碍或设备",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-采区弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 3,
+      "human_description": "跨过地面上的管线或碎石障碍物",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-矿区管线碎石-20cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "到达检测点标记位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-检测点标记-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "转头注视检测点周围环境确认采样位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-采样点环境-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "弯腰俯身以便操作背负的设备包",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "空手伸向身侧的设备包拉链位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-设备包开口-身侧近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "捏住设备包拉链头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-拉链头",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "拉开设备包拉链使开口敞开",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-拉链开启-轻力拉动",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "松开拉链头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-拉链头",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "伸手进入设备包内部触及采样器",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-设备包内部-受限空间",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "满握抓持粉尘采样器主机",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-便携仪器-单手包络",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将采样器从设备包中取出移至体前",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-便携采样器-近距取出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "站直恢复正常站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-俯身回正-站立恢复",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰姿态恢复站立，涉及髋膝协调但膝屈<90°，介于L2-02-02逆向和L2-02-03之间，按姿态恢复的完整性归入L2-02-03",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "转身面向选定的采样位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度内-面向作业点",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "注视目标采样位置确认放置点",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-设备放置点-定位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将采样器移送至预定采样位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-采样设备-中距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将采样器精确放置在采样点位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-采样器-厘米级定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 19,
+      "human_description": "松开采样器使其稳定放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-设备已稳定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "伸手指向采样器操作面板启动按钮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-设备按钮-近距精准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "按下采样器启动按钮开始采样",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-仪器按钮-轻力触发",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "注视采样器指示灯确认设备已启动运行",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-设备指示灯-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "读取采样器显示屏上的采样数据数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-采样器显示屏-浓度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 24,
+      "human_description": "按下采样器停止按钮结束采样",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-仪器按钮-轻力触发",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手抓握已停止的采样器主机",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-设备按钮-近距精准",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 26,
+      "human_description": "满握抓持采样器准备回收",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-便携仪器-单手包络",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将采样器从采样位置移回体前",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-采样设备-中距定位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "弯腰俯身准备将采样器放回设备包",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 29,
+      "human_description": "将采样器放入设备包内的固定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-仪器入包-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 30,
+      "human_description": "松开采样器使其稳定在设备包内",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-设备已稳定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 31,
+      "human_description": "拉上设备包拉链关闭设备包",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-拉链闭合-轻力推送",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]拉链闭合是推动拉链头沿轨道移动，与拉开方向相反，属于推而非拉，归入L2-05-02",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 32,
+      "human_description": "站直恢复站立姿态准备前往下一检测点",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-俯身回正-站立恢复",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-矿区碎石地面-变速",
+      "l3_name_en": "Walking-MineGravelGround-VariableSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在矿区碎石或不平整地面上进行的直线行走，需根据地面条件调节步速",
+      "object_category": "地面/碎石路面",
+      "parameter_ranges": {
+        "size_range": "步幅0.4-0.7m",
+        "weight_range": "自重负载",
+        "force_range": "正常步行力",
+        "precision_requirement": "分米级路径跟随"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-采区弯道-连续步态",
+      "l3_name_en": "TurnWalking-MiningAreaCurve-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在矿区采掘通道弯道处进行的转向行走，保持连续步态完成方向转换",
+      "object_category": "矿区通道",
+      "parameter_ranges": {
+        "size_range": "转弯角度30-120度",
+        "weight_range": "自重负载",
+        "force_range": "正常步行力",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-矿区管线碎石-20cm以内",
+      "l3_name_en": "Crossing-MinePipesRubble-Under20cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "跨越矿区地面上的管线、碎石等低矮障碍物，高度在20cm以内",
+      "object_category": "管线/碎石障碍",
+      "parameter_ranges": {
+        "size_range": "障碍高度5-20cm",
+        "weight_range": "自重负载",
+        "force_range": "抬腿跨越力",
+        "precision_requirement": "厘米级落脚"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-检测点标记-分米级",
+      "l3_name_en": "StopPositioning-MonitoringMarker-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在预定检测点标记位置精确停止，定位精度达到分米级",
+      "object_category": "检测点标记",
+      "parameter_ranges": {
+        "size_range": "目标区域直径0.3-1m",
+        "weight_range": "自重",
+        "force_range": "无额外力需求",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-采样点环境-位置确认",
+      "l3_name_en": "Gaze-SamplingPointEnvironment-LocationConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "转头注视检测点周围环境，确认适合放置采样器的具体位置",
+      "object_category": "检测点环境",
+      "parameter_ranges": {
+        "size_range": "视野范围3-10m",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "视觉覆盖完整"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Stooping-ModerateBend-WaistLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴心向前弯曲上身约45-60度，使双手能够触及腰部高度的设备或物品",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "弯曲角度45-60度",
+        "weight_range": "自身重量",
+        "force_range": "姿态保持力",
+        "precision_requirement": "无精度要求"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-设备包开口-身侧近距",
+      "l3_name_en": "Reaching-EquipmentBagOpening-NearSide",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手将手臂伸向身体侧面携带的设备包开口位置，准备操作拉链或取物",
+      "object_category": "设备包",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.5m",
+        "weight_range": "空载",
+        "force_range": "无",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-拉链头",
+      "l3_name_en": "PinchGrasp-TwoFingerOppose-ZipperPull",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指对捏方式捏住拉链拉片，为后续拉开或闭合拉链做准备",
+      "object_category": "拉链头",
+      "parameter_ranges": {
+        "size_range": "拉片宽10-25mm",
+        "weight_range": "<10g",
+        "force_range": "捏持力1-5N",
+        "precision_requirement": "毫米级"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-拉链开启-轻力拉动",
+      "l3_name_en": "Pulling-ZipperOpening-LightForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "持续拉动拉链头使拉链沿轨道滑开，开启设备包或衣物的拉链闭合口",
+      "object_category": "拉链",
+      "parameter_ranges": {
+        "size_range": "拉开距离0.1-0.5m",
+        "weight_range": "无",
+        "force_range": "拉力2-10N",
+        "precision_requirement": "厘米级轨迹"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-拉链头",
+      "l3_name_en": "Release-GradualFingerOpen-ZipperPull",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐步打开手指解除对拉链头的捏持，使其自然停留在当前位置",
+      "object_category": "拉链头",
+      "parameter_ranges": {
+        "size_range": "拉片宽10-25mm",
+        "weight_range": "<10g",
+        "force_range": "释放过程力渐减",
+        "precision_requirement": "无"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-设备包内部-受限空间",
+      "l3_name_en": "Reaching-InsideEquipmentBag-ConfinedSpace",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手伸入已打开的设备包内部受限空间，准备抓取其中的仪器设备",
+      "object_category": "设备包内部空间",
+      "parameter_ranges": {
+        "size_range": "伸入深度0.1-0.3m",
+        "weight_range": "空载",
+        "force_range": "无",
+        "precision_requirement": "厘米级避障"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-便携仪器-单手包络",
+      "l3_name_en": "PowerGrasp-PortableInstrument-SingleHandEnvelop",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手掌和多根手指共同包络握持便携式检测仪器，确保稳固持握",
+      "object_category": "便携式仪器",
+      "parameter_ranges": {
+        "size_range": "仪器直径40-100mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "握力20-80N",
+        "precision_requirement": "稳固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-便携采样器-近距取出",
+      "l3_name_en": "Transfer-PortableSampler-NearExtraction",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握便携式粉尘采样器从设备包中取出移至体前操作位置",
+      "object_category": "粉尘采样器",
+      "parameter_ranges": {
+        "size_range": "移动距离0.2-0.5m",
+        "weight_range": "0.5-3kg",
+        "force_range": "搬运力10-30N",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-俯身回正-站立恢复",
+      "l3_name_en": "Squat-StandRecovery-FromBend",
+      "parent_l2_id": "L2-02-03",
+      "description": "从弯腰或半蹲姿态通过髋膝协调伸展恢复到正常站立姿态",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "重心上升0.3-0.6m",
+        "weight_range": "自身重量",
+        "force_range": "下肢伸展力",
+        "precision_requirement": "平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度内-面向作业点",
+      "l3_name_en": "TrunkRotation-Within90Deg-FacingWorkPoint",
+      "parent_l2_id": "L2-02-04",
+      "description": "以脊柱纵轴为旋转中心转动上半身，使身体正面朝向作业目标位置",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度30-90度",
+        "weight_range": "自身重量",
+        "force_range": "转体力",
+        "precision_requirement": "朝向误差<10度"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-设备放置点-定位确认",
+      "l3_name_en": "Gaze-EquipmentPlacementPoint-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准设备即将放置的目标位置，确认放置点的空间坐标和环境条件",
+      "object_category": "放置目标点",
+      "parameter_ranges": {
+        "size_range": "目标区域0.1-0.5m",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "厘米级视觉定位"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-采样设备-中距定位",
+      "l3_name_en": "Transfer-SamplingEquipment-MidRangePositioning",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握采样设备从体前移送至0.5-1m距离的目标采样位置",
+      "object_category": "采样设备",
+      "parameter_ranges": {
+        "size_range": "移动距离0.5-1m",
+        "weight_range": "0.5-3kg",
+        "force_range": "搬运力10-30N",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-采样器-厘米级定位",
+      "l3_name_en": "PrecisionPlacement-Sampler-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将粉尘采样器精确放置在采样点指定位置，确保采样口朝向和高度满足检测要求",
+      "object_category": "粉尘采样器",
+      "parameter_ranges": {
+        "size_range": "设备尺寸100-200mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "放置力5-15N",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-设备已稳定",
+      "l3_name_en": "Release-GradualFingerOpen-EquipmentStable",
+      "parent_l2_id": "L2-04-07",
+      "description": "在确认设备已稳定放置后逐步打开手指解除握持，设备不会移动或倾倒",
+      "object_category": "便携设备",
+      "parameter_ranges": {
+        "size_range": "设备直径40-100mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "释放过程力渐减",
+        "precision_requirement": "设备保持静止"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-设备按钮-近距精准",
+      "l3_name_en": "Reaching-EquipmentButton-NearPrecise",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手指伸向近距离（0.1-0.3m）设备面板上的按钮位置，准备进行按压操作",
+      "object_category": "设备按钮",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.1-0.3m",
+        "weight_range": "空载",
+        "force_range": "无",
+        "precision_requirement": "毫米级"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-仪器按钮-轻力触发",
+      "l3_name_en": "PointPress-InstrumentButton-LightTrigger",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指对便携式仪器面板上的按钮施加短暂压力触发功能",
+      "object_category": "仪器按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径8-20mm",
+        "weight_range": "无",
+        "force_range": "按压力1-10N",
+        "precision_requirement": "毫米级定位"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-设备指示灯-状态确认",
+      "l3_name_en": "Gaze-EquipmentIndicator-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准设备上的指示灯或显示屏，确认设备运行状态是否正常",
+      "object_category": "指示灯/显示屏",
+      "parameter_ranges": {
+        "size_range": "指示灯直径5-15mm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "清晰可辨识"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-采样器显示屏-浓度数值",
+      "l3_name_en": "Reading-SamplerDisplay-ConcentrationValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "调整视角和距离使粉尘采样器显示屏数值清晰可读，读取粉尘浓度检测结果",
+      "object_category": "采样器显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸30-80mm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "数字识别准确"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-仪器入包-厘米级",
+      "l3_name_en": "PrecisionPlacement-InstrumentIntoBag-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将便携式仪器精确放入设备包内的固定隔层或卡槽位置",
+      "object_category": "便携仪器/设备包",
+      "parameter_ranges": {
+        "size_range": "仪器尺寸100-200mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "放置力5-15N",
+        "precision_requirement": "±2cm对位"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-拉链闭合-轻力推送",
+      "l3_name_en": "Push-ZipperClosing-LightForce",
+      "parent_l2_id": "L2-05-02",
+      "description": "持续推动拉链头沿轨道滑动使拉链闭合，关闭设备包开口",
+      "object_category": "拉链",
+      "parameter_ranges": {
+        "size_range": "闭合距离0.1-0.5m",
+        "weight_range": "无",
+        "force_range": "推力2-10N",
+        "precision_requirement": "完全闭合"
+      },
+      "is_new": true,
+      "source_scene": "10-00-1091-DustMonitoring"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-05",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-02",
+      "L2-05-03",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 6
+  }
+}

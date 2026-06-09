@@ -1,0 +1,627 @@
+{
+  "scene_id": "40-00-00",
+  "scene_name": "螺丝紧固-仪表外壳-定扭矩装配",
+  "total_steps": 21,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "沿车间通道直线行走至整机装配工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在装配工位前精确调整站位至操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-装配工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 3,
+      "human_description": "空手伸向工具架上的电动螺丝刀位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架位置-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "以旋拧功能握姿握持电动螺丝刀手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-电动螺丝刀-旋拧功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将电动螺丝刀从工具架移至工作区域上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "另一只手空手伸向仪表外壳面板边缘",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工件面板边缘-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "5",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "手掌抵住仪表面板保持其位置稳定",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-水平顶压面板-持续固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "持续至螺丝紧固完成"
+    },
+    {
+      "step_order": 8,
+      "human_description": "持螺丝刀的手伸向螺丝料盒上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "注视螺丝料盒确认目标螺丝位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-螺丝料盒-目标定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "用拇指和食指捏取一颗M2-M6螺丝",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-小型螺丝",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将螺丝移动至工件螺丝孔上方位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-小型紧固件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "视觉对准工件上的螺丝孔位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-螺丝孔位-对准确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将螺丝尖端精确对准螺丝孔开口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-螺丝对孔-毫米级",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽然螺丝最终要旋入孔中涉及几何约束，但当前动作仅是将螺丝尖端对准孔口，属于精确定点放置而非约束路径插入",
+      "parallel_with": "7",
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "用手指将螺丝预旋入螺丝孔使其咬合站住",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-小螺丝预紧-顺时针旋入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "松开手指释放已咬合在孔内的螺丝",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-螺丝已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将电动螺丝刀刀头对准螺丝头十字槽并插入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-刀头槽配合-间隙紧密",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 螺丝刀刀头与螺丝头槽形成孔-轴配合，需要位置和角度对准后直线插入，属于直线插入而非多轴对位（因为XY对准后沿Z轴单方向插入即可）",
+      "parallel_with": "7",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "使用电动螺丝刀将螺丝旋紧至规定扭矩",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-电动螺丝刀-M2至M6定扭矩",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将电动螺丝刀刀头从螺丝头中垂直抬起脱离",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-刀头脱离螺丝头-无阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "松开抵住面板的手恢复空手状态",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-解除抵持-面板已固定",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽然前序动作是L1-05静态抵持，但解除接触的动作本质是手部构型变化（从压持状态到松开状态），归入L1-04受控释放",
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将电动螺丝刀移回工具架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "松开手指将电动螺丝刀放回工具架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-工具已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪表面以匀速步态直线行走至目标工位",
+      "object_category": "地面/环氧地坪",
+      "parameter_ranges": {
+        "size_range": "通道宽度≥1.2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±50cm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-装配工位标定点-厘米级",
+      "l3_name_en": "Stop-AssemblyStationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在装配工位的标定位置精确停止，调整身体朝向面对工作台",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域约0.5m×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±2cm，朝向精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架位置-无障碍直线",
+      "l3_name_en": "Reach-ToolRackPosition-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手沿直线轨迹将手臂伸至工具架上工具存放位置",
+      "object_category": "工具架/空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工件面板边缘-无障碍直线",
+      "l3_name_en": "Reach-WorkpiecePanelEdge-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手沿直线轨迹将手臂伸至工件面板边缘准备扶持",
+      "object_category": "工件面板/空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-电动螺丝刀-旋拧功能姿",
+      "l3_name_en": "ToolGrasp-ElectricScrewdriver-TwistingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以旋拧功能握姿握持电动螺丝刀手柄，食指置于触发开关位置，手掌包络手柄",
+      "object_category": "电动螺丝刀",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，长度80-150mm",
+        "weight_range": "200-800g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "手指位置精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer-HandheldTool-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握工具状态下将工具从一个位置移动到近距目标位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "移动距离20-80cm",
+        "weight_range": "100-1000g",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-水平顶压面板-持续固定",
+      "l3_name_en": "Brace-HorizontalPanelPress-SustainedHold",
+      "parent_l2_id": "L2-05-06",
+      "description": "手掌抵住仪表面板边缘持续施加水平压力，防止面板在紧固过程中移位",
+      "object_category": "仪表面板/外壳",
+      "parameter_ranges": {
+        "size_range": "面板尺寸100-500mm",
+        "weight_range": "面板重量50-2000g",
+        "force_range": "抵持力5-20N",
+        "precision_requirement": "位置保持精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-螺丝料盒-目标定位",
+      "l3_name_en": "Gaze-ScrewTray-TargetLocating",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视线对准螺丝料盒，确认待取螺丝的具体位置",
+      "object_category": "螺丝料盒",
+      "parameter_ranges": {
+        "size_range": "料盒尺寸50-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-小型螺丝",
+      "l3_name_en": "Pinch-TwoFingerOpposed-SmallScrew",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指和食指指腹对捏方式捏取M2-M6小型螺丝",
+      "object_category": "螺丝/紧固件",
+      "parameter_ranges": {
+        "size_range": "螺丝规格M2-M6，长度4-30mm",
+        "weight_range": "0.1-5g",
+        "force_range": "捏持力0.5-3N",
+        "precision_requirement": "捏取位置精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-小型紧固件-近距",
+      "l3_name_en": "Transfer-SmallFastener-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "手指捏持小型螺丝状态下将其从料盒移动至工件螺丝孔上方",
+      "object_category": "螺丝/紧固件",
+      "parameter_ranges": {
+        "size_range": "移动距离15-50cm",
+        "weight_range": "0.1-5g",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-螺丝孔位-对准确认",
+      "l3_name_en": "Gaze-ScrewHole-AlignmentConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准工件上的螺丝孔，确认孔位位置以指导螺丝对准",
+      "object_category": "螺丝孔",
+      "parameter_ranges": {
+        "size_range": "孔径2-7mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准精度±3°"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-螺丝对孔-毫米级",
+      "l3_name_en": "PrecisionPlace-ScrewToHole-MillimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将手持螺丝的尖端精确对准工件螺丝孔开口位置",
+      "object_category": "螺丝/螺丝孔",
+      "parameter_ranges": {
+        "size_range": "螺丝M2-M6，孔径2-7mm",
+        "weight_range": "0.1-5g",
+        "force_range": "N/A",
+        "precision_requirement": "对孔精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-小螺丝预紧-顺时针旋入",
+      "l3_name_en": "ManualTwist-SmallScrewPretighten-ClockwiseIn",
+      "parent_l2_id": "L2-06-02",
+      "description": "用手指捏持螺丝头顺时针旋转将螺丝预旋入螺纹孔1-3圈使其咬合站住",
+      "object_category": "螺丝/紧固件",
+      "parameter_ranges": {
+        "size_range": "螺丝M2-M6",
+        "weight_range": "0.1-5g",
+        "force_range": "预紧扭矩0.05-0.3Nm",
+        "precision_requirement": "旋入深度2-5mm"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-螺丝已固定",
+      "l3_name_en": "Release-GradualFingerOpen-ScrewSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "螺丝已咬合在螺纹孔中后，逐步张开手指解除对螺丝的捏持",
+      "object_category": "螺丝/紧固件",
+      "parameter_ranges": {
+        "size_range": "螺丝M2-M6",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-刀头槽配合-间隙紧密",
+      "l3_name_en": "Insert-BitSlotMating-TightClearance",
+      "parent_l2_id": "L2-07-01",
+      "description": "将螺丝刀刀头沿垂直方向插入螺丝头的十字槽或一字槽中",
+      "object_category": "螺丝刀刀头/螺丝头槽",
+      "parameter_ranges": {
+        "size_range": "刀头规格PH0-PH2或SL1-SL4",
+        "weight_range": "N/A",
+        "force_range": "插入力1-5N",
+        "precision_requirement": "对中精度±0.3mm，角度精度±3°"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-06-01-001",
+      "l3_name_zh": "工具旋拧-电动螺丝刀-M2至M6定扭矩",
+      "l3_name_en": "ToolTwist-ElectricScrewdriver-M2toM6TorqueControlled",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用电动螺丝刀将M2-M6螺丝旋紧至规定扭矩，扭矩精度±10%",
+      "object_category": "螺丝/紧固件",
+      "parameter_ranges": {
+        "size_range": "螺丝M2-M6",
+        "weight_range": "N/A",
+        "force_range": "扭矩0.2-5Nm",
+        "precision_requirement": "扭矩精度±10%"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-刀头脱离螺丝头-无阻力",
+      "l3_name_en": "Extract-BitFromScrewHead-NoResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "紧固完成后将螺丝刀刀头沿垂直方向从螺丝头槽中抬起脱离",
+      "object_category": "螺丝刀刀头/螺丝头槽",
+      "parameter_ranges": {
+        "size_range": "刀头规格PH0-PH2或SL1-SL4",
+        "weight_range": "N/A",
+        "force_range": "抽出力<2N",
+        "precision_requirement": "垂直抬起，避免侧向偏移"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-解除抵持-面板已固定",
+      "l3_name_en": "Release-EndBracing-PanelSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "螺丝紧固完成后解除对面板的抵持，手掌从面板上移开",
+      "object_category": "仪表面板/外壳",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-工具已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ToolSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "将工具放置在工具架上后逐步张开手指解除握持",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "40-00-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-06",
+      "L2-06-01",
+      "L2-06-02",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 7
+  }
+}

@@ -1,0 +1,1216 @@
+{
+  "scene_id": "17-171-1713",
+  "scene_name": "加料投放-染缸化学品-高温蒸汽环境",
+  "total_steps": 42,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区域沿车间通道直行走向化料间物料暂存区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在物料暂存区的化学品桶前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料架前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "低头注视化学品桶上的标签确认物料品名和批次",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-化学品标签-品名批次确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰降低身体重心以便够到放置在地面或低层架上的化学品桶",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手伸向化学品桶的两侧把手位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-桶装容器把手-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手握住化学品桶的两侧提把形成稳固抓持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-桶装提把-双手对称握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调将化学品桶从存放位置提起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆柱桶体-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "起身恢复站立姿态同时保持对化学品桶的稳固持握",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-负载起身-腰部恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手搬持化学品桶沿车间通道向染缸操作平台行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型桶体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 10,
+      "human_description": "登上染缸操作平台的台阶",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业平台踏步-负载上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在染缸进料口前方精确站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-染缸进料口-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "弯腰将化学品桶放置到操作平台台面上",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-放置物料-中度前屈",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双臂协调将化学品桶稳定放置在操作平台上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-桶装容器-操作台面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "逐步松开双手解除对化学品桶的抓持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "单手伸向染缸进料口盖板的把手",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-设备盖板把手-单臂前伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "握住染缸进料口盖板把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-设备把手-单手满握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "向上掀开染缸进料口的铰链式盖板",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-染缸进料口盖-0至90度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开盖板把手使盖板保持在打开位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-盖板自锁",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "单手伸向化学品桶的桶盖",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-桶盖上方-单臂下探",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "单手握住化学品桶的旋盖",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-圆形旋盖-单手包覆",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "逆时针旋转桶盖将其拧开",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-化学品桶盖-逆时针松开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将拧下的桶盖转移放置到操作台一侧",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-桶盖-近距侧放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "松手释放桶盖",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "伸手到搅拌工具存放位置取搅拌棒",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-工具架位置-单臂侧伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "以操作姿势握持搅拌棒手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-搅拌棒-旋转操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将搅拌棒垂直插入化学品桶内液面下",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-搅拌工具入液-无约束插入",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽然无严格几何配合，但需沿垂直方向直线进入桶口，归入L2-07-01",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "手持搅拌棒在化学品桶内进行连续旋转搅拌使内容物均匀",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-05",
+      "l2_name": "连续回转驱动",
+      "l3_id": "L3-06-05-001",
+      "l3_name": "回转-搅拌棒-匀速连续搅拌",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 28,
+      "human_description": "将搅拌棒从化学品桶中垂直抽出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-搅拌工具出液-垂直提升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 29,
+      "human_description": "将搅拌棒转移放置到工具存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-长柄工具-侧向归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "松手释放搅拌棒",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 31,
+      "human_description": "双手握住化学品桶两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-桶装提把-双手对称握",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 32,
+      "human_description": "双臂协调提起化学品桶移至染缸进料口正上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆柱桶体-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 33,
+      "human_description": "双臂协调将化学品桶倾斜使内容物流入染缸进料口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-液体容器倾倒-绕水平轴90至120度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-45"
+    },
+    {
+      "step_order": 34,
+      "human_description": "保持倾斜姿态维持稳定直至内容物完全流出",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-倾倒持物姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 35,
+      "human_description": "将空桶回正并放回操作台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-空容器回正-绕水平轴复位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 36,
+      "human_description": "伸手取冲洗水管或喷头",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-005",
+      "l3_name": "伸达-冲洗设备位置-单臂侧伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 37,
+      "human_description": "以操作姿势握持冲洗喷头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-喷水设备-喷射操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 38,
+      "human_description": "对准空桶内壁喷水冲洗残留化学品",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "喷涂-清洗水-容器内壁冲洗",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽是清洗而非涂覆，但工具与表面非接触、沿路径喷射，符合L2-08-03特征",
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 39,
+      "human_description": "将冲洗水也倒入染缸确保化学品完全投放",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-液体容器倾倒-绕水平轴90至120度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 40,
+      "human_description": "关闭染缸进料口盖板",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-染缸进料口盖-关闭锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 41,
+      "human_description": "双手搬持空桶下平台台阶返回物料区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-工业平台踏步-轻载下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 42,
+      "human_description": "将空桶放置到指定回收位置完成本次加料作业",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-空桶-回收区指定位置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walking-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪等防滑工业地面上以稳定速度进行直线行走",
+      "object_category": "环氧地坪/防滑地面",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.5-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料架前-厘米级",
+      "l3_name_en": "Positioning-MaterialRack-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料存放架前精确停止以便进行物料拾取操作",
+      "object_category": "物料架/存放区",
+      "parameter_ranges": {
+        "size_range": "停位目标区域50x50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-化学品标签-品名批次确认",
+      "l3_name_en": "Reading-ChemicalLabel-NameBatchConfirmation",
+      "parent_l2_id": "L2-09-07",
+      "description": "调整视觉传感器角度和距离对准化学品容器标签读取品名、规格、批次等信息",
+      "object_category": "化学品标签/产品标识",
+      "parameter_ranges": {
+        "size_range": "标签尺寸5x10cm至15x20cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "字符识别精度>95%"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰下高度",
+      "l3_name_en": "Stooping-ModerateBend-BelowWaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴向前弯曲上身约45-60度以够到腰部以下高度的操作对象",
+      "object_category": "低位物料/地面放置物",
+      "parameter_ranges": {
+        "size_range": "目标高度30-70cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-桶装容器把手-双臂对称",
+      "l3_name_en": "Reaching-BucketHandle-BimanualSymmetric",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向桶装容器两侧把手位置伸展以准备抓取",
+      "object_category": "桶装容器把手",
+      "parameter_ranges": {
+        "size_range": "桶径30-50cm，把手间距35-55cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-桶装提把-双手对称握",
+      "l3_name_en": "PowerGrasp-BucketHandle-BimanualSymmetric",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手同时以全掌包覆方式握住桶装容器两侧的提把形成稳固抓持",
+      "object_category": "桶装容器提把",
+      "parameter_ranges": {
+        "size_range": "把手直径20-35mm，宽度80-120mm",
+        "weight_range": "总负载10-30kg",
+        "force_range": "单手握力50-150N",
+        "precision_requirement": "握持稳定无滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-圆柱桶体-中载",
+      "l3_name_en": "BimanualCarrying-CylindricalBucket-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将圆柱形桶装容器从一个位置搬运至另一位置",
+      "object_category": "圆柱形桶装容器",
+      "parameter_ranges": {
+        "size_range": "桶径30-50cm，高度40-60cm",
+        "weight_range": "10-30kg",
+        "force_range": "双臂合力100-300N",
+        "precision_requirement": "搬运过程保持竖直±15度"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-负载起身-腰部恢复",
+      "l3_name_en": "Stooping-LoadedRising-WaistRecovery",
+      "parent_l2_id": "L2-02-02",
+      "description": "在持有重物状态下从弯腰姿态恢复到直立站姿",
+      "object_category": "负载状态恢复",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "持物重量10-30kg",
+        "force_range": "腰背伸展力矩[待补充]",
+        "precision_requirement": "恢复过程保持平衡"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型桶体-双臂前持",
+      "l3_name_en": "LoadedWalking-MediumBucket-BimanualFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手在身前持有中型桶装容器状态下进行步行移动",
+      "object_category": "桶装容器",
+      "parameter_ranges": {
+        "size_range": "桶径30-50cm",
+        "weight_range": "10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "行走速度0.5-1.0m/s"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业平台踏步-负载上行",
+      "l3_name_en": "Climbing-IndustrialPlatformSteps-LoadedAscent",
+      "parent_l2_id": "L2-01-03",
+      "description": "在持有负载状态下登上工业设备操作平台的金属踏步",
+      "object_category": "工业平台踏步/金属楼梯",
+      "parameter_ranges": {
+        "size_range": "踏步高度15-25cm，深度20-30cm",
+        "weight_range": "负载10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "落脚精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-染缸进料口-负载状态",
+      "l3_name_en": "Positioning-DyeVatInlet-LoadedState",
+      "parent_l2_id": "L2-01-08",
+      "description": "在持有化学品桶状态下于染缸进料口前方精确停位",
+      "object_category": "染缸进料口操作区",
+      "parameter_ranges": {
+        "size_range": "停位区域80x80cm",
+        "weight_range": "负载10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-放置物料-中度前屈",
+      "l3_name_en": "Stooping-PlacingMaterial-ModerateBend",
+      "parent_l2_id": "L2-02-02",
+      "description": "在持有物料状态下弯腰将其放置到较低位置的台面上",
+      "object_category": "操作台面放置",
+      "parameter_ranges": {
+        "size_range": "放置高度70-90cm",
+        "weight_range": "物料重量10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置稳定无倾倒"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-桶装容器-操作台面",
+      "l3_name_en": "PrecisionPlacement-BucketContainer-Worktop",
+      "parent_l2_id": "L2-03-05",
+      "description": "将桶装容器精确放置到操作台面的指定位置",
+      "object_category": "桶装容器",
+      "parameter_ranges": {
+        "size_range": "桶底直径25-40cm",
+        "weight_range": "10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有其他支撑的情况下逐步张开手指解除抓持",
+      "object_category": "已支撑物体",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "释放过程力递减至0",
+        "precision_requirement": "无弹出无滑落"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-设备盖板把手-单臂前伸",
+      "l3_name_en": "Reaching-EquipmentCoverHandle-SingleArmForward",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向前伸展到设备盖板或检修口把手位置",
+      "object_category": "设备盖板把手",
+      "parameter_ranges": {
+        "size_range": "伸达距离40-70cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-设备把手-单手满握",
+      "l3_name_en": "PowerGrasp-EquipmentHandle-SingleHandFull",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手以全掌包覆方式握住设备上的把手或拉手",
+      "object_category": "设备把手/拉手",
+      "parameter_ranges": {
+        "size_range": "把手直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "握力30-100N",
+        "precision_requirement": "握持稳固"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-染缸进料口盖-0至90度",
+      "l3_name_en": "HingedOpening-DyeVatInletCover-0to90Degrees",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿铰链将染缸进料口盖板从关闭位置掀开至垂直或超过垂直位置",
+      "object_category": "染缸进料口盖板",
+      "parameter_ranges": {
+        "size_range": "盖板尺寸30x30cm至50x50cm",
+        "weight_range": "盖板重量3-8kg",
+        "force_range": "开启力矩20-50Nm",
+        "precision_requirement": "到达开启定位"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-盖板自锁",
+      "l3_name_en": "Release-GradualFingerOpen-CoverSelfLocking",
+      "parent_l2_id": "L2-04-07",
+      "description": "在盖板到达自锁或限位位置后逐步松开手指",
+      "object_category": "自锁式盖板",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "释放过程力递减至0",
+        "precision_requirement": "确认盖板稳定不回落"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-桶盖上方-单臂下探",
+      "l3_name_en": "Reaching-BucketLidAbove-SingleArmDownward",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向下伸展到放置在操作台面上的桶盖位置",
+      "object_category": "桶盖/容器盖",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-圆形旋盖-单手包覆",
+      "l3_name_en": "PowerGrasp-CircularScrewCap-SingleHandWrap",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手以手掌和手指包覆方式握住圆形旋转式盖子以准备旋拧",
+      "object_category": "圆形旋盖",
+      "parameter_ranges": {
+        "size_range": "盖径50-100mm",
+        "weight_range": "不适用",
+        "force_range": "握力20-60N",
+        "precision_requirement": "握持稳定可传递扭矩"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-化学品桶盖-逆时针松开",
+      "l3_name_en": "ManualTwist-ChemicalBucketLid-CounterclockwiseLoosen",
+      "parent_l2_id": "L2-06-02",
+      "description": "用手逆时针旋转化学品桶的螺纹旋盖使其松脱",
+      "object_category": "化学品桶螺纹旋盖",
+      "parameter_ranges": {
+        "size_range": "盖径50-100mm，螺纹圈数2-4圈",
+        "weight_range": "不适用",
+        "force_range": "松脱扭矩5-20Nm",
+        "precision_requirement": "完全脱离螺纹"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-桶盖-近距侧放",
+      "l3_name_en": "Transfer-BucketLid-NearSidePlacement",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手将拧下的桶盖转移到操作区域一侧放置",
+      "object_category": "桶盖/容器盖",
+      "parameter_ranges": {
+        "size_range": "盖径50-100mm",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-工具架位置-单臂侧伸",
+      "l3_name_en": "Reaching-ToolRackPosition-SingleArmSideward",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方伸展到工具存放架或工具挂钩位置",
+      "object_category": "工具架/工具挂钩",
+      "parameter_ranges": {
+        "size_range": "伸达距离40-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-搅拌棒-旋转操作姿",
+      "l3_name_en": "FunctionalToolGrasp-StirringRod-RotationOperationPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以便于进行旋转搅拌操作的姿势握持搅拌棒手柄",
+      "object_category": "搅拌棒/搅拌工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm，长度100-150mm",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "稳固握持可传递旋转力"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-搅拌工具入液-无约束插入",
+      "l3_name_en": "Insertion-StirringToolIntoLiquid-UnconstrainedEntry",
+      "parent_l2_id": "L2-07-01",
+      "description": "将搅拌工具沿垂直方向插入容器内的液体中",
+      "object_category": "搅拌工具/液体容器",
+      "parameter_ranges": {
+        "size_range": "桶口直径200-400mm，插入深度200-400mm",
+        "weight_range": "不适用",
+        "force_range": "插入阻力<10N",
+        "precision_requirement": "居中入口±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-06-05-001",
+      "l3_name_zh": "回转-搅拌棒-匀速连续搅拌",
+      "l3_name_en": "ContinuousRotation-StirringRod-SteadyContinuousStirring",
+      "parent_l2_id": "L2-06-05",
+      "description": "手持搅拌棒在液体中进行多圈连续旋转以使内容物充分混合均匀",
+      "object_category": "搅拌棒/液体混合",
+      "parameter_ranges": {
+        "size_range": "搅拌半径100-200mm",
+        "weight_range": "液体粘度[待补充]",
+        "force_range": "搅拌阻力矩2-10Nm",
+        "precision_requirement": "转速30-60rpm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-搅拌工具出液-垂直提升",
+      "l3_name_en": "Extraction-StirringToolFromLiquid-VerticalLift",
+      "parent_l2_id": "L2-07-02",
+      "description": "将搅拌工具沿垂直方向从液体和容器中抽出",
+      "object_category": "搅拌工具",
+      "parameter_ranges": {
+        "size_range": "抽出行程200-400mm",
+        "weight_range": "工具重量0.5-2kg+附着液体",
+        "force_range": "抽出阻力<15N",
+        "precision_requirement": "保持垂直避免碰壁"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-长柄工具-侧向归位",
+      "l3_name_en": "Transfer-LongHandleTool-SidewardReturn",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手将长柄工具转移放置到侧面的工具存放位置",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度500-1000mm",
+        "weight_range": "0.5-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "归位稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-液体容器倾倒-绕水平轴90至120度",
+      "l3_name_en": "Reorientation-LiquidContainerPouring-HorizontalAxis90to120Degrees",
+      "parent_l2_id": "L2-03-04",
+      "description": "双臂协调将装有液体的容器绕水平轴旋转倾斜使液体内容物倒出",
+      "object_category": "液体容器/桶装容器",
+      "parameter_ranges": {
+        "size_range": "容器容积10-30L",
+        "weight_range": "满载10-35kg，渐减至空载3-5kg",
+        "force_range": "初始翻转力矩30-80Nm",
+        "precision_requirement": "倾倒对准进料口±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-倾倒持物姿态-抗重力",
+      "l3_name_en": "StaticBracing-PouringHoldingPosture-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "在将容器保持倾斜倾倒姿态时持续输出力矩抵抗重力维持稳定",
+      "object_category": "倾倒中容器",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "持物重量随倾倒递减",
+        "force_range": "维持力矩20-60Nm",
+        "precision_requirement": "姿态稳定±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "翻转-空容器回正-绕水平轴复位",
+      "l3_name_en": "Reorientation-EmptyContainerUpright-HorizontalAxisReset",
+      "parent_l2_id": "L2-03-04",
+      "description": "将倾倒完毕的空容器从倾斜姿态转回竖直正立状态",
+      "object_category": "空容器",
+      "parameter_ranges": {
+        "size_range": "容器容积10-30L",
+        "weight_range": "空载3-5kg",
+        "force_range": "回正力矩10-20Nm",
+        "precision_requirement": "恢复竖直±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-01-005",
+      "l3_name_zh": "伸达-冲洗设备位置-单臂侧伸",
+      "l3_name_en": "Reaching-RinsingEquipmentPosition-SingleArmSideward",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方伸展到冲洗水管或喷头的存放位置",
+      "object_category": "冲洗设备/水管喷头",
+      "parameter_ranges": {
+        "size_range": "伸达距离40-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-喷水设备-喷射操作姿",
+      "l3_name_en": "FunctionalToolGrasp-WaterSprayEquipment-SprayOperationPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以便于控制喷射方向和开关的姿势握持冲洗喷头或水枪",
+      "object_category": "喷水设备/冲洗喷头",
+      "parameter_ranges": {
+        "size_range": "手柄长度80-150mm",
+        "weight_range": "设备重量0.3-1kg",
+        "force_range": "握力15-40N",
+        "precision_requirement": "稳固握持可控制方向"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-08-03-001",
+      "l3_name_zh": "喷涂-清洗水-容器内壁冲洗",
+      "l3_name_en": "PathSpray-RinsingWater-ContainerInteriorWashing",
+      "parent_l2_id": "L2-08-03",
+      "description": "手持喷水设备沿容器内壁进行喷射冲洗以清除残留物",
+      "object_category": "容器内壁",
+      "parameter_ranges": {
+        "size_range": "容器内径200-400mm",
+        "weight_range": "不适用",
+        "force_range": "水压[待补充]",
+        "precision_requirement": "覆盖内壁全周"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-07-05-002",
+      "l3_name_zh": "开合-染缸进料口盖-关闭锁定",
+      "l3_name_en": "HingedClosing-DyeVatInletCover-ClosingAndLocking",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿铰链将染缸进料口盖板从打开位置放下关闭并确保锁定",
+      "object_category": "染缸进料口盖板",
+      "parameter_ranges": {
+        "size_range": "盖板尺寸30x30cm至50x50cm",
+        "weight_range": "盖板重量3-8kg",
+        "force_range": "控制关闭速度避免撞击",
+        "precision_requirement": "完全闭合密封"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-工业平台踏步-轻载下行",
+      "l3_name_en": "Descending-IndustrialPlatformSteps-LightLoadDescent",
+      "parent_l2_id": "L2-01-03",
+      "description": "在持有轻载（空桶）状态下从工业设备操作平台的台阶走下",
+      "object_category": "工业平台踏步/金属楼梯",
+      "parameter_ranges": {
+        "size_range": "踏步高度15-25cm，深度20-30cm",
+        "weight_range": "负载3-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "落脚精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-空桶-回收区指定位置",
+      "l3_name_en": "PrecisionPlacement-EmptyBucket-DesignatedRecyclingArea",
+      "parent_l2_id": "L2-03-05",
+      "description": "将空化学品桶精确放置到回收区的指定位置",
+      "object_category": "空桶/回收容器",
+      "parameter_ranges": {
+        "size_range": "桶底直径25-40cm",
+        "weight_range": "3-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1713-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-06-02",
+      "L2-06-05",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-05",
+      "L2-08-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 8
+  }
+}

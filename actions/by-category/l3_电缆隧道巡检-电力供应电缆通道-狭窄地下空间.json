@@ -1,0 +1,817 @@
+{
+  "scene_id": "44-442-4420",
+  "scene_name": "电缆隧道巡检-电力供应电缆通道-狭窄地下空间",
+  "total_steps": 30,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "步行至隧道入口竖井处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-水泥地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿竖井楼梯下行进入地下隧道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业楼梯-下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 3,
+      "human_description": "沿隧道通道直行至第一个电缆检查点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-隧道地面-匀速巡检",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]隧道宽度1.5-2.5m大于机器人肩宽1.5倍，归入平地直行而非狭窄通行",
+      "parallel_with": null,
+      "duration_estimate": "30-300"
+    },
+    {
+      "step_order": 4,
+      "human_description": "跨过隧道地面的横向电缆桥架",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-地面电缆桥架-30cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在电缆接头检查点精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检标记点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸手至腰挂工具包位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-腰部工具包-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "以测量功能姿势抓握红外测温枪把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-红外测温枪-测量扣扳机姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将红外测温枪对准电缆接头表面进行温度测量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-红外测温枪-接头温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 9,
+      "human_description": "读取测温枪显示屏上的温度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-仪器显示屏-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将红外测温枪移回腰部工具包位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持检测仪器-近距归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "松开手指释放测温枪至工具包卡槽",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已卡固",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "上半身向侧方旋转约90度面向电缆架",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "转动头部注视电缆外护层表面",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-电缆外护层-损伤检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 14,
+      "human_description": "沿电缆走向方向移动视线系统性扫描检查外护层完整性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-电缆外护层表面-线性扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 15,
+      "human_description": "以腰部为轴心向前弯曲上身查看地面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "注视隧道地面观察是否存在积水",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-地面区域-积水检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 17,
+      "human_description": "从弯腰姿态恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "起身-恢复直立-从俯身姿态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰俯身的逆过程，仍归入L2-02-02",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "伸手至工具包取气体检测仪",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-腰部工具包-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "以检测功能姿势抓握气体检测仪",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-气体检测仪-检测读数姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将气体检测仪定位至呼吸区域高度进行空气质量检测",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-002",
+      "l3_name": "测量定位-气体检测仪-空气质量",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "读取气体检测仪显示屏上的氧气含量和有害气体浓度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-仪器显示屏-温度数值",
+      "is_new_l3": false,
+      "boundary_note": "[边界判定]复用仪器显示屏读取L3，气体数值与温度数值属同类电子显示屏读取",
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将气体检测仪移回工具包位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持检测仪器-近距归位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "松开手指释放气体检测仪",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已卡固",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "沿隧道继续行走至消防设施区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-隧道地面-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-120"
+    },
+    {
+      "step_order": 25,
+      "human_description": "在低矮区段弯腰降低身体高度准备通过",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-深度前屈-净空通行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "通过低矮区段后恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "起身-恢复直立-从俯身姿态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "在消防设施前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检标记点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "系统性扫视检查消防箱、灭火器、应急灯等消防设施状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-消防设施区-全面检视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 29,
+      "human_description": "贴近灭火器压力表读取压力数值确认是否在正常范围",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-机械压力表-压力数值",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]机械表盘与电子显示屏属不同物理类别，需新建L3",
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 30,
+      "human_description": "沿竖井楼梯上行离开隧道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-工业楼梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-水泥地面-匀速",
+      "l3_name_en": "Walking-ConcreteSurface-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在平整水泥地面上以稳定速度进行直线行走",
+      "object_category": "水泥/混凝土地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±0.3m"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-隧道地面-匀速巡检",
+      "l3_name_en": "Walking-TunnelFloor-PatrolPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在电缆隧道内的水泥或金属格栅地面上进行巡检行走，需适应照明较暗环境",
+      "object_category": "隧道地面（水泥/格栅）",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.5-2.5m，步幅0.4-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±0.2m，需持续保持居中"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业楼梯-下行",
+      "l3_name_en": "Descent-IndustrialStairs-Downward",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿工业标准楼梯下行进入地下或低层区域，需抓扶栏杆保持稳定",
+      "object_category": "金属/混凝土工业楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高15-20cm，宽25-30cm，坡度30-45度",
+        "weight_range": "N/A",
+        "force_range": "扶栏抓力10-30N",
+        "precision_requirement": "落脚位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-工业楼梯-上行",
+      "l3_name_en": "Ascent-IndustrialStairs-Upward",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿工业标准楼梯上行离开地下区域，需抓扶栏杆保持稳定",
+      "object_category": "金属/混凝土工业楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高15-20cm，宽25-30cm，坡度30-45度",
+        "weight_range": "N/A",
+        "force_range": "扶栏抓力10-30N，蹬腿力较下行增大",
+        "precision_requirement": "落脚位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-地面电缆桥架-30cm以内",
+      "l3_name_en": "StepOver-FloorCableTray-Under30cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "抬高步幅跨越横穿隧道地面的电缆桥架或管道支架",
+      "object_category": "电缆桥架/管道支架",
+      "parameter_ranges": {
+        "size_range": "障碍高度10-30cm，宽度20-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "抬腿净空≥5cm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-巡检标记点-分米级",
+      "l3_name_en": "StopPosition-InspectionMarker-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在预定巡检点标记处精确停止并调整站位，为后续检查操作做准备",
+      "object_category": "地面标记/设施定位点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±10cm，朝向精度±15度"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝部高度",
+      "l3_name_en": "BendForward-ModerateFlex-KneeLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴心向前弯曲上身约45-60度，使头部降至膝部高度以便观察低位目标",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "躯干前屈角度45-60度",
+        "weight_range": "N/A",
+        "force_range": "腰背肌力维持姿态",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "起身-恢复直立-从俯身姿态",
+      "l3_name_en": "RiseUp-RestoreUpright-FromBentPosition",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复到正常直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "躯干回正角度45-90度",
+        "weight_range": "N/A",
+        "force_range": "腰背伸肌发力",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-深度前屈-净空通行",
+      "l3_name_en": "BendForward-DeepFlex-ClearancePassage",
+      "parent_l2_id": "L2-02-02",
+      "description": "深度弯腰使身体高度降低以通过净空高度受限的区段",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "躯干前屈角度60-90度，身体高度降至1.2-1.6m",
+        "weight_range": "N/A",
+        "force_range": "腰背肌力维持姿态",
+        "precision_requirement": "头部净空≥10cm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向侧方",
+      "l3_name_en": "TrunkRotation-90Degrees-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身相对下半身绕脊柱纵轴旋转约90度，改变上肢工作方向",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-腰部工具包-无障碍直线",
+      "l3_name_en": "Reach-WaistToolPouch-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿直线路径移动到腰部佩戴的工具包位置，准备取出工具",
+      "object_category": "腰挂工具包/工具袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.4m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持检测仪器-近距归位",
+      "l3_name_en": "Transfer-HandheldInstrument-ShortRangeReturn",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手持的检测仪器从检测位置移回工具包或存放位置",
+      "object_category": "手持式检测仪器",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.6m",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "终点位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-红外测温枪-测量扣扳机姿",
+      "l3_name_en": "ToolGrasp-InfraredThermometer-TriggerReadyGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "以食指置于扳机位、其余手指包握手柄的功能姿势握持红外测温枪",
+      "object_category": "红外测温枪/测温仪",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm",
+        "weight_range": "0.15-0.4kg",
+        "force_range": "握持力5-15N，扳机触发力2-5N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-气体检测仪-检测读数姿",
+      "l3_name_en": "ToolGrasp-GasDetector-MonitoringGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "以便于观察显示屏和操作按键的姿势握持便携式气体检测仪",
+      "object_category": "便携式气体检测仪",
+      "parameter_ranges": {
+        "size_range": "仪器尺寸约80x60x30mm",
+        "weight_range": "0.2-0.5kg",
+        "force_range": "握持力5-10N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已卡固",
+      "l3_name_en": "Release-GradualFingerOpen-ToolSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工具已放入卡槽或固定位置后逐步松开手指完成释放",
+      "object_category": "手持工具/检测仪器",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "释放过程中握力从5-15N渐减至0",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-电缆外护层-损伤检查",
+      "l3_name_en": "Gaze-CableSheath-DamageInspection",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视觉传感器对准电缆外护层表面，检查是否有破损、老化、变形等异常",
+      "object_category": "电力电缆外护层",
+      "parameter_ranges": {
+        "size_range": "电缆直径50-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视觉分辨率能识别5mm以上缺陷"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-地面区域-积水检查",
+      "l3_name_en": "Gaze-FloorArea-WaterPoolingCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准隧道地面区域，检查是否存在积水或渗水迹象",
+      "object_category": "隧道地面",
+      "parameter_ranges": {
+        "size_range": "观察区域1-3m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别10mm以上水深积水"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-电缆外护层表面-线性扫描",
+      "l3_name_en": "Scan-CableSheathSurface-LinearSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "沿电缆走向方向系统性移动视线，完整扫描检查电缆外护层的完整性",
+      "object_category": "电力电缆外表面",
+      "parameter_ranges": {
+        "size_range": "扫描长度2-10m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "覆盖率100%，无遗漏区域"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-消防设施区-全面检视",
+      "l3_name_en": "Scan-FireEquipmentZone-ComprehensiveReview",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视检查消防箱、灭火器、应急灯、消防标识等消防设施的完好状态",
+      "object_category": "消防设施设备",
+      "parameter_ranges": {
+        "size_range": "扫描区域2-5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别设施缺失、损坏、过期等异常"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-红外测温枪-接头温度",
+      "l3_name_en": "MeasurePosition-InfraredThermometer-JointTemperature",
+      "parent_l2_id": "L2-09-06",
+      "description": "将红外测温枪对准电缆接头表面，保持适当距离和角度进行非接触式温度测量",
+      "object_category": "电缆接头/连接器",
+      "parameter_ranges": {
+        "size_range": "测量距离0.1-0.5m，接头直径80-250mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "瞄准精度±2cm，温度精度±2℃"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-06-002",
+      "l3_name_zh": "测量定位-气体检测仪-空气质量",
+      "l3_name_en": "MeasurePosition-GasDetector-AirQuality",
+      "parent_l2_id": "L2-09-06",
+      "description": "将气体检测仪定位至呼吸区域高度（距地面1.5-1.8m）进行氧气含量和有害气体浓度检测",
+      "object_category": "空气/气体",
+      "parameter_ranges": {
+        "size_range": "检测高度1.5-1.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "氧气精度±0.5%，有害气体精度±10ppm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-仪器显示屏-温度数值",
+      "l3_name_en": "Read-InstrumentDisplay-TemperatureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视觉传感器对准检测仪器的电子显示屏，读取显示的测量数值",
+      "object_category": "电子显示屏（LCD/LED）",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸20x15mm至60x40mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别4-6位数字显示"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-机械压力表-压力数值",
+      "l3_name_en": "Read-MechanicalPressureGauge-PressureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "贴近灭火器等设备上的机械式压力表盘，读取指针指示的压力数值判断是否在正常范围",
+      "object_category": "机械式压力表盘",
+      "parameter_ranges": {
+        "size_range": "表盘直径30-60mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别表盘刻度区间（绿/红区）"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-44-4420-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-05",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-02-02",
+    "涉及的L1数量": 5
+  }
+}

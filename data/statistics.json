@@ -1,21 +1,426 @@
 {
-  "version": "0.1.0",
-  "generated_at": "2026-06-07",
-  "description": "项目统计数据，将由T27/T29任务生成",
+  "generated_at": "2026-06-09 11:13:32",
+  "version": "1.0",
+  "summary": {
+    "total_industries": 41,
+    "total_scenes": 973,
+    "total_l1": 9,
+    "total_l2": 65,
+    "total_l3": 122,
+    "scenes_with_l3": 34,
+    "scenes_with_guide": 34
+  },
+  "l1_l2_taxonomy": {
+    "l1_count": 9,
+    "l2_count": 65,
+    "l1_details": [
+      {
+        "l1_id": "L1-01",
+        "l1_name_zh": "全身位移",
+        "l2_count": 8
+      },
+      {
+        "l1_id": "L1-02",
+        "l1_name_zh": "躯体姿态调整",
+        "l2_count": 7
+      },
+      {
+        "l1_id": "L1-03",
+        "l1_name_zh": "上肢空间运动",
+        "l2_count": 8
+      },
+      {
+        "l1_id": "L1-04",
+        "l1_name_zh": "手部抓握操控",
+        "l2_count": 7
+      },
+      {
+        "l1_id": "L1-05",
+        "l1_name_zh": "线性力施加",
+        "l2_count": 7
+      },
+      {
+        "l1_id": "L1-06",
+        "l1_name_zh": "旋转操作",
+        "l2_count": 7
+      },
+      {
+        "l1_id": "L1-07",
+        "l1_name_zh": "约束路径操作",
+        "l2_count": 7
+      },
+      {
+        "l1_id": "L1-08",
+        "l1_name_zh": "表面随形运动",
+        "l2_count": 7
+      },
+      {
+        "l1_id": "L1-09",
+        "l1_name_zh": "感知定位运动",
+        "l2_count": 7
+      }
+    ]
+  },
+  "l3_library": {
+    "l3_count": 122,
+    "l2_covered": 57,
+    "l2_coverage_rate": 87.7,
+    "l3_per_l2_distribution": {
+      "L2-01-01": 3,
+      "L2-01-08": 4,
+      "L2-03-01": 6,
+      "L2-04-01": 5,
+      "L2-03-03": 3,
+      "L2-01-07": 2,
+      "L2-03-05": 2,
+      "L2-04-07": 5,
+      "L2-02-02": 5,
+      "L2-09-03": 2,
+      "L2-09-02": 2,
+      "L2-09-07": 3,
+      "L2-04-03": 2,
+      "L2-09-06": 2,
+      "L2-03-02": 5,
+      "L2-03-04": 2,
+      "L2-03-06": 1,
+      "L2-02-04": 3,
+      "L2-01-06": 2,
+      "L2-02-05": 1,
+      "L2-05-01": 2,
+      "L2-09-01": 4,
+      "L2-05-02": 5,
+      "L2-07-06": 1,
+      "L2-07-02": 3,
+      "L2-08-05": 2,
+      "L2-08-03": 2,
+      "L2-09-05": 1,
+      "L2-04-02": 3,
+      "L2-04-05": 1,
+      "L2-04-06": 1,
+      "L2-05-03": 3,
+      "L2-07-01": 3,
+      "L2-04-04": 1,
+      "L2-02-03": 1,
+      "L2-05-06": 1,
+      "L2-03-08": 1,
+      "L2-05-05": 1,
+      "L2-08-02": 2,
+      "L2-01-03": 2,
+      "L2-01-05": 1,
+      "L2-01-02": 1,
+      "L2-06-03": 3,
+      "L2-08-04": 1,
+      "L2-07-05": 2,
+      "L2-02-01": 2,
+      "L2-07-04": 1,
+      "L2-06-06": 1,
+      "L2-06-05": 1,
+      "L2-09-04": 1,
+      "L2-02-06": 1,
+      "L2-08-06": 1,
+      "L2-06-04": 1,
+      "L2-06-02": 1,
+      "L2-07-07": 1,
+      "L2-06-01": 1,
+      "L2-07-03": 2
+    }
+  },
   "scenes": {
-    "total": 0,
-    "by_industry": {},
-    "by_difficulty": {},
-    "by_status": {}
+    "total": 973,
+    "l3_extracted": 34,
+    "l3_pending": 939,
+    "guide_generated": 34,
+    "guide_pending": 939,
+    "l3_progress_rate": 3.5,
+    "guide_progress_rate": 3.5
   },
-  "actions": {
-    "total": 0,
-    "by_level": {},
-    "by_difficulty": {},
-    "by_tech_maturity": {}
-  },
-  "quality_checks": {
-    "last_check": null,
-    "issues_found": []
-  }
+  "industries": [
+    {
+      "name": "汽车制造业",
+      "code": "36",
+      "scene_count": 34,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "文教、工美、体育和娱乐用品制造业",
+      "code": "24",
+      "scene_count": 33,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "电气机械和器材制造业",
+      "code": "38",
+      "scene_count": 33,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "非金属矿物制品业",
+      "code": "30",
+      "scene_count": 32,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "专用设备制造业",
+      "code": "35",
+      "scene_count": 32,
+      "l3_done": 4,
+      "guide_done": 4
+    },
+    {
+      "name": "食品制造业",
+      "code": "14",
+      "scene_count": 31,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "通用设备制造业",
+      "code": "34",
+      "scene_count": 31,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "铁路、船舶、航空航天和其他运输设备制造业",
+      "code": "37",
+      "scene_count": 30,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "纺织业",
+      "code": "17",
+      "scene_count": 29,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "皮革、毛皮、羽毛及其制品和制鞋业",
+      "code": "19",
+      "scene_count": 29,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "医药制造业",
+      "code": "27",
+      "scene_count": 29,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "有色金属冶炼和压延加工业",
+      "code": "32",
+      "scene_count": 29,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "化学纤维制造业",
+      "code": "28",
+      "scene_count": 28,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "化学原料和化学制品制造业",
+      "code": "26",
+      "scene_count": 27,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "农副食品加工业",
+      "code": "13",
+      "scene_count": 27,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "酒、饮料和精制茶制造业",
+      "code": "15",
+      "scene_count": 27,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "金属制品业",
+      "code": "33",
+      "scene_count": 26,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "计算机、通信和其他电子设备制造业",
+      "code": "39",
+      "scene_count": 26,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "黑色金属冶炼和压延加工业",
+      "code": "31",
+      "scene_count": 25,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "木材加工和木、竹、藤、棕、草制品业",
+      "code": "20",
+      "scene_count": 24,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "橡胶和塑料制品业",
+      "code": "29",
+      "scene_count": 24,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "电力、热力生产和供应业",
+      "code": "44",
+      "scene_count": 24,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "石油、煤炭及其他燃料加工业",
+      "code": "25",
+      "scene_count": 23,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "石油和天然气开采业",
+      "code": "7",
+      "scene_count": 23,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "有色金属矿采选业",
+      "code": "9",
+      "scene_count": 21,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "非金属矿采选业",
+      "code": "10",
+      "scene_count": 21,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "仪器仪表制造业",
+      "code": "40",
+      "scene_count": 21,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "家具制造业",
+      "code": "21",
+      "scene_count": 20,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "黑色金属矿采选业",
+      "code": "8",
+      "scene_count": 20,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "开采专业及辅助性活动",
+      "code": "11",
+      "scene_count": 20,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "其他制造业",
+      "code": "41",
+      "scene_count": 19,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "造纸和纸制品业",
+      "code": "22",
+      "scene_count": 18,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "煤炭开采和洗选业",
+      "code": "6",
+      "scene_count": 18,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "印刷和记录媒介复制业",
+      "code": "23",
+      "scene_count": 17,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "金属制品、机械和设备修理业",
+      "code": "43",
+      "scene_count": 17,
+      "l3_done": 1,
+      "guide_done": 1
+    },
+    {
+      "name": "燃气生产和供应业",
+      "code": "45",
+      "scene_count": 17,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "纺织服装、服饰业",
+      "code": "18",
+      "scene_count": 16,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "废弃资源综合利用业",
+      "code": "42",
+      "scene_count": 16,
+      "l3_done": 2,
+      "guide_done": 2
+    },
+    {
+      "name": "烟草制品业",
+      "code": "16",
+      "scene_count": 15,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "水的生产和供应业",
+      "code": "46",
+      "scene_count": 15,
+      "l3_done": 0,
+      "guide_done": 0
+    },
+    {
+      "name": "其他采矿业",
+      "code": "12",
+      "scene_count": 6,
+      "l3_done": 0,
+      "guide_done": 0
+    }
+  ]
 }

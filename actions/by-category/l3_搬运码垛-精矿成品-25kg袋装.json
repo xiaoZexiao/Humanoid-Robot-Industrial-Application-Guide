@@ -1,0 +1,430 @@
+{
+  "scene_id": "9-91-00",
+  "scene_name": "搬运码垛-精矿成品-25kg袋装",
+  "total_steps": 14,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "注视输送线末端，确认袋装精矿已到位并估计其位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-输送线末端-物料到位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "双臂同步伸向输送线末端的袋装精矿上方，准备抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-输送线物料区-双臂同步",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "左手全掌包络抓握袋装精矿左侧边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形袋体-宽度40至50cm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "右手全掌包络抓握袋装精矿右侧边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形袋体-宽度40至50cm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 3,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂协调发力将25kg袋装精矿从输送线上提起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-袋状物-中重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "持握袋装精矿状态下躯干旋转，转身朝向托盘码垛区",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂前持袋装精矿，步行至托盘码垛区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-25kg袋装物-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "在当前码垛层对应位置精确停步定位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-托盘码垛点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "根据当前码垛层高度弯腰俯身，调整至码放作业高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 膝关节未显著屈曲，以髋关节和腰椎前屈为主，归入弯腰俯身而非下蹲起立",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "按规定垛型将袋装精矿码放到托盘上的预定位置，保持层间交错",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-交错叠层-多层垛",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "双手逐步松开对袋装精矿的握持，受控释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "从俯身姿态恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-站姿高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 弯腰的逆过程仍归入L2-02-02，因为运动学特征相同（髋关节和腰椎角度变化），仅方向相反",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "空载状态下躯干旋转，转身朝向输送线方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90至180度-空载返程",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "空载直线步行返回输送线末端取料位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速返程",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-输送线末端-物料到位确认",
+      "l3_name_en": "Gaze-ConveyorEnd-MaterialArrivalConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视觉传感器对准输送线末端区域，确认袋装物料已到位并估计其位置姿态",
+      "object_category": "输送线末端/袋装物料",
+      "parameter_ranges": {
+        "size_range": "视距2-5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别物料存在及大致位置"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-输送线物料区-双臂同步",
+      "l3_name_en": "Reach-ConveyorMaterialZone-BimanualSync",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同步从身体两侧伸向输送线末端物料上方，准备进行双手抓取",
+      "object_category": "袋装精矿上方空间",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A（空载）",
+        "force_range": "N/A",
+        "precision_requirement": "双手到达可抓取位置"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-矩形袋体-宽度40至50cm",
+      "l3_name_en": "PowerGrasp-RectangularBag-Width40to50cm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手掌包络抓握袋装精矿的侧边或底部，形成稳固握持以承受25kg载荷",
+      "object_category": "袋装精矿（编织袋/复合袋）",
+      "parameter_ranges": {
+        "size_range": "袋体长60-80cm，宽40-50cm，厚15-25cm",
+        "weight_range": "25kg",
+        "force_range": "单手握力80-150N",
+        "precision_requirement": "稳固抓持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-袋状物-中重载",
+      "l3_name_en": "BimanualCarry-BaggedMaterial-MediumHeavy",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调发力将袋装重物从支撑面提起并保持在搬运位置，双臂需维持相对位姿一致性防止袋体滑脱",
+      "object_category": "袋装精矿",
+      "parameter_ranges": {
+        "size_range": "袋体长60-80cm",
+        "weight_range": "20-30kg",
+        "force_range": "双臂合力>250N",
+        "precision_requirement": "搬运过程袋体稳定不倾斜"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-负载状态",
+      "l3_name_en": "TrunkRotation-90to180deg-Loaded",
+      "parent_l2_id": "L2-02-04",
+      "description": "在双臂持握重物状态下，以脊柱为轴旋转上半身90-180度，使身体朝向目标方向",
+      "object_category": "全身带负载旋转",
+      "parameter_ranges": {
+        "size_range": "旋转角度90-180度",
+        "weight_range": "携带负载20-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "旋转后正对目标区域"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-25kg袋装物-双臂前持",
+      "l3_name_en": "LoadedWalk-25kgBag-FrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身体前方托持25kg袋装物进行步行运动，需调整步态参数维持动态稳定",
+      "object_category": "袋装精矿",
+      "parameter_ranges": {
+        "size_range": "行走距离2-10m",
+        "weight_range": "25kg",
+        "force_range": "N/A",
+        "precision_requirement": "步态稳定、负载不晃动"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-托盘码垛点-厘米级",
+      "l3_name_en": "StepPosition-PalletStackPoint-CmLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘前的码垛作业位置精确停止，通过微步调整使双脚到达便于码放的最优站位",
+      "object_category": "托盘码垛位置",
+      "parameter_ranges": {
+        "size_range": "微调范围±10cm",
+        "weight_range": "携带25kg负载",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "Stoop-MediumBend-AboveKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴向前弯曲上身30-60度，使手部工作高度降至膝上位置，用于低层码垛作业",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "俯身角度30-60度",
+        "weight_range": "可携带20-30kg负载",
+        "force_range": "N/A",
+        "precision_requirement": "到达目标工作高度"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-交错叠层-多层垛",
+      "l3_name_en": "Stacking-InterleavedLayer-MultiTier",
+      "parent_l2_id": "L2-03-06",
+      "description": "按照预定的交错垛型将袋装物放置到托盘上，层与层之间交叉排列以提高垛体稳定性",
+      "object_category": "袋装精矿",
+      "parameter_ranges": {
+        "size_range": "单层4-6袋，总层数3-5层",
+        "weight_range": "25kg/袋",
+        "force_range": "N/A",
+        "precision_requirement": "层间对齐误差<5cm，垛体稳定"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已被码垛支撑面承托后，逐步打开手指解除握持，避免物体弹出或滑落",
+      "object_category": "袋装精矿",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "25kg",
+        "force_range": "握力从150N渐减至0",
+        "precision_requirement": "物体平稳落位不偏移"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-站姿高度",
+      "l3_name_en": "Stoop-RecoverUpright-StandingHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "从俯身作业姿态恢复到直立站姿，髋关节和腰椎伸展归位",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "从俯身30-60度恢复至直立",
+        "weight_range": "空载（释放负载后）",
+        "force_range": "N/A",
+        "precision_requirement": "平衡恢复站姿"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90至180度-空载返程",
+      "l3_name_en": "TrunkRotation-90to180deg-UnloadedReturn",
+      "parent_l2_id": "L2-02-04",
+      "description": "在空载状态下以脊柱为轴旋转上半身90-180度，转向返程方向",
+      "object_category": "全身空载旋转",
+      "parameter_ranges": {
+        "size_range": "旋转角度90-180度",
+        "weight_range": "无负载",
+        "force_range": "N/A",
+        "precision_requirement": "旋转后朝向取料区"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-匀速返程",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyReturn",
+      "parent_l2_id": "L2-01-01",
+      "description": "在平坦的工业环氧地坪上以匀速直线步行返回取料位置",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "行走距离2-10m",
+        "weight_range": "无负载",
+        "force_range": "N/A",
+        "precision_requirement": "返回取料工位"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-PL001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-09-01",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-03-03",
+      "L2-02-04",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-06",
+      "L2-04-07",
+      "L2-01-01"
+    ],
+    "最高频L2": "L2-04-01、L2-02-04、L2-02-02（各出现2次）",
+    "涉及的L1数量": 5
+  }
+}

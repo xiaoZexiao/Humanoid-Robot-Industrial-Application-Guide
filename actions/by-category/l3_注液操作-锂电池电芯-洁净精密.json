@@ -1,0 +1,640 @@
+{
+  "scene_id": "38-384-3841",
+  "scene_name": "注液操作-锂电池电芯-洁净精密",
+  "total_steps": 21,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "将手臂伸向待注液电芯料盘上方，准备抓取电芯",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-电芯料盘上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "用全手包络抓取方形锂电池电芯，确保握持稳固",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-方形电芯-中小尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "将电芯从料盘移动到注液夹具上方位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-方形电芯-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将电芯沿垂直方向插入注液定位夹具的卡槽中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-电芯定位夹具-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "确认电芯到位后逐步松开手指释放电芯",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将手臂伸向悬挂的注液枪位置准备抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-注液枪悬挂位-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "以功能操作姿势握持注液枪，食指置于触发开关位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-注液枪-精密触发姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将注液枪移动到电芯注液口正上方位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-注液工具-近距精密",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将注液头精确对准并垂直插入电芯注液口",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-注液头对接注液口-高精度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 注液头需要精确对准注液口（直径约3-8mm），偏差超过配合间隙会导致泄漏或无法注液，符合L2-07-01几何约束特征",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "按压注液枪触发开关启动注液程序",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-注液枪触发开关-轻力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "保持注液枪位置稳定，维持注液头与注液口的密封接触直到注液完成",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-垂直向下轻压-注液保持",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 需要持续施加向下轻压力保持密封，属于L2-05-06静态抵持而非L2-02-06全身姿态保持",
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 12,
+      "human_description": "注液完成后将注液头沿垂直方向从注液口抽出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-注液头脱离注液口-低阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将注液枪移回悬挂架原位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-注液工具-归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将注液枪挂回固定位置后松开手指",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-工具挂放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将手臂伸向注液夹具中已注液的电芯",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-注液工位电芯-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "用全手包络抓取已注液的电芯",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-方形电芯-中小尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将电芯沿垂直方向从注液定位夹具中抽出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-002",
+      "l3_name": "抽出-电芯脱离定位夹具-低阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将已注液电芯移动到出料托盘上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-004",
+      "l3_name": "转移-电芯-近距出料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将电芯按矩阵排列规律放置到出料托盘指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-电芯矩阵排列-单层",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 电芯需按批次顺序排列到出料托盘特定位置，强调相对位置一致性，符合L2-03-06而非L2-03-05",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "确认电芯放置稳定后逐步松开手指",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "目视确认电芯注液口状态，检查有无电解液溢出",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-电芯注液口-质量确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-电芯料盘上方-无障碍直线",
+      "l3_name_en": "Reach-CellTray-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿直线路径伸向锂电池电芯料盘上方，为抓取电芯做准备",
+      "object_category": "电芯料盘",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "空载",
+        "force_range": "无外力需求",
+        "precision_requirement": "位置精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-方形电芯-中小尺寸",
+      "l3_name_en": "PowerGrasp-PrismaticCell-SmallMedium",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络方式抓握方形锂电池电芯，确保握持稳固且不损伤电芯外壳",
+      "object_category": "方形锂电池电芯",
+      "parameter_ranges": {
+        "size_range": "长度50-200mm，宽度30-100mm，厚度5-30mm",
+        "weight_range": "50-500g",
+        "force_range": "握持力5-20N",
+        "precision_requirement": "握持稳定，无滑移"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-方形电芯-近距",
+      "l3_name_en": "Transfer-PrismaticCell-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握方形电芯从取料位置转移到注液工位，距离较短且需保持电芯水平",
+      "object_category": "方形锂电池电芯",
+      "parameter_ranges": {
+        "size_range": "转移距离200-600mm",
+        "weight_range": "50-500g",
+        "force_range": "维持握持力5-20N",
+        "precision_requirement": "保持电芯水平，姿态偏差<10°"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-电芯定位夹具-间隙配合",
+      "l3_name_en": "Insert-CellFixture-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将方形电芯沿垂直方向插入注液工位的定位夹具卡槽中，夹具提供侧向定位约束",
+      "object_category": "电芯与定位夹具配合",
+      "parameter_ranges": {
+        "size_range": "电芯尺寸50-200mm，夹具间隙0.5-2mm",
+        "weight_range": "电芯50-500g",
+        "force_range": "插入力1-5N",
+        "precision_requirement": "位置对准精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已定位",
+      "l3_name_en": "Release-GradualOpen-ObjectPositioned",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已被定位夹具约束后，逐步张开手指解除握持，避免物体移位",
+      "object_category": "已定位工件",
+      "parameter_ranges": {
+        "size_range": "适用于中小型工件",
+        "weight_range": "50-500g",
+        "force_range": "释放过程力逐渐减小至0",
+        "precision_requirement": "释放后物体位移<1mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-注液枪悬挂位-无障碍",
+      "l3_name_en": "Reach-InjectorHanger-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向悬挂式注液枪的存放位置，准备抓取注液工具",
+      "object_category": "悬挂式工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "空载",
+        "force_range": "无外力需求",
+        "precision_requirement": "位置精度±30mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-注液枪-精密触发姿",
+      "l3_name_en": "ToolGrasp-Injector-PrecisionTrigger",
+      "parent_l2_id": "L2-04-03",
+      "description": "以精密操作姿势握持注液枪，食指置于触发开关位置，便于单手控制注液启停",
+      "object_category": "手持式注液枪",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm，枪身长度150-300mm",
+        "weight_range": "200-800g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "食指可精确触发开关"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-注液工具-近距精密",
+      "l3_name_en": "Transfer-Injector-ShortRangePrecise",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持注液枪从悬挂位置精密移动到电芯注液口上方，需控制注液头朝向",
+      "object_category": "手持式注液枪",
+      "parameter_ranges": {
+        "size_range": "移动距离200-500mm",
+        "weight_range": "200-800g",
+        "force_range": "维持握持力",
+        "precision_requirement": "终点位置精度±5mm，姿态垂直度<5°"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-注液头对接注液口-高精度",
+      "l3_name_en": "Insert-InjectorNozzle-HighPrecision",
+      "parent_l2_id": "L2-07-01",
+      "description": "将注液枪的注液头精确对准并垂直插入电芯注液口，建立密封连接以防止电解液泄漏",
+      "object_category": "注液头与电芯注液口",
+      "parameter_ranges": {
+        "size_range": "注液口直径3-8mm，注液头适配尺寸",
+        "weight_range": "注液枪200-800g",
+        "force_range": "插入力2-10N",
+        "precision_requirement": "同轴度误差<0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-注液枪触发开关-轻力度",
+      "l3_name_en": "PointPress-InjectorTrigger-LightForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用食指按压注液枪的触发开关启动电解液注入程序，按压后自动执行定量注液",
+      "object_category": "注液枪触发开关",
+      "parameter_ranges": {
+        "size_range": "开关行程2-5mm",
+        "weight_range": "不适用",
+        "force_range": "触发力2-10N",
+        "precision_requirement": "触发响应确认"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-垂直向下轻压-注液保持",
+      "l3_name_en": "Brace-VerticalDownward-InjectionHold",
+      "parent_l2_id": "L2-05-06",
+      "description": "在注液过程中持续施加向下轻压力，保持注液头与注液口的密封接触，防止电解液泄漏",
+      "object_category": "注液头密封接触",
+      "parameter_ranges": {
+        "size_range": "接触面积约10-50mm²",
+        "weight_range": "不适用",
+        "force_range": "抵持力5-15N",
+        "precision_requirement": "位置保持稳定，漂移<1mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-注液头脱离注液口-低阻力",
+      "l3_name_en": "Extract-InjectorNozzle-LowResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "注液完成后将注液头沿垂直方向从电芯注液口中精确抽出，保持同轴以避免损伤注液口",
+      "object_category": "注液头与注液口",
+      "parameter_ranges": {
+        "size_range": "抽出距离10-30mm",
+        "weight_range": "不适用",
+        "force_range": "抽出力2-8N",
+        "precision_requirement": "同轴抽出，偏斜<2°"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-注液工具-归位",
+      "l3_name_en": "Transfer-Injector-Return",
+      "parent_l2_id": "L2-03-02",
+      "description": "将注液枪从工作位置移回悬挂架原位，为下一电芯注液做准备",
+      "object_category": "手持式注液枪",
+      "parameter_ranges": {
+        "size_range": "移动距离200-500mm",
+        "weight_range": "200-800g",
+        "force_range": "维持握持力",
+        "precision_requirement": "挂位精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-工具挂放",
+      "l3_name_en": "Release-GradualOpen-ToolHang",
+      "parent_l2_id": "L2-04-07",
+      "description": "将注液枪挂回固定悬挂位置后逐步松开手指，确保工具稳定悬挂不脱落",
+      "object_category": "悬挂式工具",
+      "parameter_ranges": {
+        "size_range": "适用于手持式工具",
+        "weight_range": "200-800g",
+        "force_range": "释放过程力逐渐减小",
+        "precision_requirement": "工具稳定挂放"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-注液工位电芯-无障碍",
+      "l3_name_en": "Reach-InjectedCell-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向注液夹具中已完成注液的电芯，准备抓取并转移",
+      "object_category": "注液夹具中的电芯",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-400mm",
+        "weight_range": "空载",
+        "force_range": "无外力需求",
+        "precision_requirement": "位置精度±15mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-07-02-002",
+      "l3_name_zh": "抽出-电芯脱离定位夹具-低阻力",
+      "l3_name_en": "Extract-CellFromFixture-LowResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "将已注液电芯沿垂直方向从定位夹具卡槽中抽出，保持电芯平稳",
+      "object_category": "电芯与定位夹具",
+      "parameter_ranges": {
+        "size_range": "电芯尺寸50-200mm",
+        "weight_range": "电芯50-500g（含电解液）",
+        "force_range": "抽出力1-5N",
+        "precision_requirement": "垂直抽出，避免倾斜卡涩"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-02-004",
+      "l3_name_zh": "转移-电芯-近距出料",
+      "l3_name_en": "Transfer-Cell-ShortRangeOutput",
+      "parent_l2_id": "L2-03-02",
+      "description": "将已注液电芯从注液夹具位置转移到出料托盘上方，距离较短",
+      "object_category": "已注液电芯",
+      "parameter_ranges": {
+        "size_range": "转移距离200-600mm",
+        "weight_range": "60-550g（含电解液）",
+        "force_range": "维持握持力",
+        "precision_requirement": "保持电芯水平，防止电解液溢出"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-电芯矩阵排列-单层",
+      "l3_name_en": "Stack-CellMatrix-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将已注液电芯按矩阵排列规律逐个放置到出料托盘中，保持电芯间距一致",
+      "object_category": "方形锂电池电芯",
+      "parameter_ranges": {
+        "size_range": "托盘容量10-50个电芯，间距5-15mm",
+        "weight_range": "单电芯60-550g",
+        "force_range": "轻放力<5N",
+        "precision_requirement": "位置一致性±3mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "物体已被托盘支撑后逐步松开手指，释放过程平稳避免物体弹起或位移",
+      "object_category": "已放置工件",
+      "parameter_ranges": {
+        "size_range": "适用于中小型工件",
+        "weight_range": "50-550g",
+        "force_range": "释放过程力逐渐减小至0",
+        "precision_requirement": "释放后物体位移<2mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-电芯注液口-质量确认",
+      "l3_name_en": "Gaze-CellInjectionPort-QualityCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部注视电芯注液口区域，目视确认有无电解液溢出或注液不良",
+      "object_category": "电芯注液口",
+      "parameter_ranges": {
+        "size_range": "观察目标直径3-10mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视觉分辨溢液>0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "38-384-3841-INJECTION-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-06",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-03-02",
+    "涉及的L1数量": 5
+  }
+}

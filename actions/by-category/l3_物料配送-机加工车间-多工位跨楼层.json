@@ -1,0 +1,878 @@
+{
+  "scene_id": "35-351-3516",
+  "scene_name": "物料配送-机加工车间-多工位跨楼层",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "注视配送任务显示屏读取本次配送的目标工位号和物料信息",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-MES显示屏-配送任务",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿车间通道直线行走前往刀具库房或毛坯暂存区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-常速空载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在货架通道入口处转弯进入物料存储区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在目标货架前精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-货架取料位-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "转头注视货架各层定位目标物料存放位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-货架物料-位置搜索",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "贴近物料标签读取批次号、规格等信息进行核对",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-物料标签-批次核对",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "弯腰俯身调整身体高度以便够到中低层货架上的物料",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂空手伸向目标物料的抓握位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-货架物料位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手全掌包络抓握物料建立稳固持握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-中型工业件-双手包络",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "双臂协调将物料从货架上搬出并托在身前",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-中型物料件-中载5至30kg",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在持握物料状态下起身恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-负载起身-恢复站姿",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰的逆过程，归入同一L2；负载状态下起身需更大腰背力量输出",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双手持物沿车间通道行走前往楼梯口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型物料-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-45"
+    },
+    {
+      "step_order": 13,
+      "human_description": "持物状态下沿楼梯台阶上行到目标楼层",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业楼梯-负载上行",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽为负载状态，但核心运动特征是梯阶升降而非平地行走，按主要特征归入L2-01-03",
+      "parallel_with": null,
+      "duration_estimate": "20-60"
+    },
+    {
+      "step_order": 14,
+      "human_description": "到达目标楼层后持物行走前往目标机床工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型物料-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-60"
+    },
+    {
+      "step_order": 15,
+      "human_description": "在目标工位的物料放置台前精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-工位物料台-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双臂协调将物料从身前搬移到物料台上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-中型物料件-中载5至30kg",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将物料精确放置到物料台的指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-配送物料-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 18,
+      "human_description": "逐步张开手指释放对物料的握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "躯干旋转转身面向机床操作员",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-面向人员",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "注视操作员进行物料交接确认",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-操作人员-交接确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "转头注视工位旁需回收的旧刀具或废料位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-回收物料-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "空手伸向需回收的旧刀具或废料",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工位回收物-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "双手抓握回收物料建立稳固持握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-中型工业件-双手包络",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双臂协调将回收物料搬起并托在身前",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-中型物料件-中载5至30kg",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 25,
+      "human_description": "持回收物沿楼梯台阶下行返回仓库楼层",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-工业楼梯-负载下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-45"
+    },
+    {
+      "step_order": 26,
+      "human_description": "持回收物行走返回仓库回收区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型物料-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-60"
+    },
+    {
+      "step_order": 27,
+      "human_description": "在回收物料存放区精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-回收存放区-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "将回收物料放置到指定存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-回收物料-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 29,
+      "human_description": "逐步张开手指释放对回收物料的握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "空载行走前往配送记录终端",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-常速空载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 31,
+      "human_description": "在配送记录终端前精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-004",
+      "l3_name": "停位-记录终端-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 32,
+      "human_description": "点按触控屏录入配送完成记录并确认提交",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业触控屏-轻力度多次",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-MES显示屏-配送任务",
+      "l3_name_en": "Read-MESDisplay-DeliveryTask",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视觉传感器对准MES系统显示屏，调整视角和距离读取配送任务单上的工位号、物料编号、数量等结构化信息",
+      "object_category": "工业显示屏/MES终端",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸15-24英寸",
+        "weight_range": "不适用（固定设备）",
+        "force_range": "不适用",
+        "precision_requirement": "文字识别精度需支持5mm以上字符"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-常速空载",
+      "l3_name_en": "Walk-WorkshopFloor-NormalSpeedUnloaded",
+      "parent_l2_id": "L2-01-01",
+      "description": "在机加工车间的环氧地坪或混凝土地面上以正常步速进行空载直线行走，无负载物品",
+      "object_category": "车间地面",
+      "parameter_ranges": {
+        "size_range": "单次行走距离10-100m",
+        "weight_range": "不适用（空载）",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差允许±30cm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeTurn-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在行进过程中完成约90度的方向转换，保持连续步态不停顿，用于通道拐角或进入支线通道",
+      "object_category": "车间通道拐角",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转向角度误差±15度内"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-货架取料位-分米级",
+      "l3_name_en": "Stop-ShelfPickPosition-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料货架前精确停止，使身体位于可伸手取料的最佳位置，定位精度达到分米级",
+      "object_category": "物料货架",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5m×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm，朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-货架物料-位置搜索",
+      "l3_name_en": "Gaze-ShelfMaterial-LocationSearch",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部在多层货架上视觉搜索目标物料的存放位置，确认物料所在层位和具体位置",
+      "object_category": "货架存储物料",
+      "parameter_ranges": {
+        "size_range": "搜索范围货架高度1.5-2.5m，宽度1-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别10cm以上物料轮廓"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-物料标签-批次核对",
+      "l3_name_en": "Read-MaterialLabel-BatchVerification",
+      "parent_l2_id": "L2-09-07",
+      "description": "贴近物料上的标签读取物料编号、批次号、规格等信息，与配送任务单进行核对确认",
+      "object_category": "物料标签/条码",
+      "parameter_ranges": {
+        "size_range": "标签尺寸30mm×50mm至100mm×150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "支持识别3mm以上字符和标准工业条码"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Stoop-ModerateBend-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴心向前弯曲上身约45-60度，使双手可达到腰部至膝部之间的高度范围",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "手部到达高度0.4-0.8m",
+        "weight_range": "不适用",
+        "force_range": "腰背肌力输出[待补充]",
+        "precision_requirement": "弯曲角度控制±10度"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-货架物料位-无障碍直线",
+      "l3_name_en": "Reach-ShelfMaterialPosition-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂空手沿无障碍直线路径伸向货架上的目标物料位置，准备进行抓取",
+      "object_category": "货架物料",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用（空载）",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-中型工业件-双手包络",
+      "l3_name_en": "PowerGrasp-MediumIndustrialPart-BimanualEnvelope",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手全掌包络抓握中等尺寸的工业物料，建立稳固的双手协同握持状态",
+      "object_category": "刀具/夹具/毛坯件",
+      "parameter_ranges": {
+        "size_range": "物料最大尺寸100-400mm",
+        "weight_range": "5-30kg",
+        "force_range": "单手握力50-150N",
+        "precision_requirement": "握持稳定性需承受行走和爬楼梯的动态冲击"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-中型物料件-中载5至30kg",
+      "l3_name_en": "BimanualCarry-MediumMaterial-MidLoad5to30kg",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂同时持有中等重量的物料并协调运动将其从一个位置搬运到另一个位置，两臂保持相对位姿一致",
+      "object_category": "刀具/夹具/毛坯件",
+      "parameter_ranges": {
+        "size_range": "物料尺寸100-400mm",
+        "weight_range": "5-30kg",
+        "force_range": "双臂合力需持续支撑负载",
+        "precision_requirement": "搬运过程姿态稳定，防止倾斜滑脱"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-负载起身-恢复站姿",
+      "l3_name_en": "Stoop-LoadedRising-RecoverStanding",
+      "parent_l2_id": "L2-02-02",
+      "description": "在双手持握负载的状态下从弯腰姿态起身恢复直立站姿，需要腰背和腿部协调发力",
+      "object_category": "姿态调整（负载状态）",
+      "parameter_ranges": {
+        "size_range": "姿态恢复角度45-60度",
+        "weight_range": "负载重量5-30kg",
+        "force_range": "腰背肌力输出需克服负载力矩[待补充]",
+        "precision_requirement": "起身过程保持负载稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型物料-双臂前持",
+      "l3_name_en": "LoadedWalk-MediumMaterial-BimanualFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手将物料托持在身前状态下进行平地行走，需实时调整步态参数以维持动态稳定",
+      "object_category": "刀具/夹具/毛坯件",
+      "parameter_ranges": {
+        "size_range": "单次行走距离10-100m",
+        "weight_range": "5-30kg",
+        "force_range": "需持续支撑负载重量",
+        "precision_requirement": "步态稳定，负载无明显晃动"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业楼梯-负载上行",
+      "l3_name_en": "StairTraversal-IndustrialStairs-LoadedAscent",
+      "parent_l2_id": "L2-01-03",
+      "description": "双手持握负载状态下沿工业厂房标准楼梯向上攀登，需精确落脚和重心垂直转移控制",
+      "object_category": "工业楼梯",
+      "parameter_ranges": {
+        "size_range": "单次攀登1-3层楼，每层约20-30级台阶",
+        "weight_range": "负载5-30kg",
+        "force_range": "需克服自重和负载的垂直提升",
+        "precision_requirement": "落脚点精度±5cm，保持负载稳定"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-工位物料台-分米级",
+      "l3_name_en": "Stop-WorkstationMaterialTable-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在机床工位的物料放置台前精确停止，使身体位于可便利放置物料的最佳位置",
+      "object_category": "工位物料台",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5m×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm，便于后续放置动作"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-配送物料-厘米级",
+      "l3_name_en": "PrecisionPlace-DeliveryMaterial-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将配送物料在工位物料台的指定位置进行厘米级精度的定位放置",
+      "object_category": "刀具/夹具/毛坯件",
+      "parameter_ranges": {
+        "size_range": "物料尺寸100-400mm",
+        "weight_range": "5-30kg",
+        "force_range": "放置末端需缓慢稳定降低",
+        "precision_requirement": "放置位置精度±2-5cm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "物体已被工作台支撑后逐步张开手指解除握持，控制松开速度避免物体滑动",
+      "object_category": "刀具/夹具/毛坯件",
+      "parameter_ranges": {
+        "size_range": "物料尺寸100-400mm",
+        "weight_range": "5-30kg（已由台面支撑）",
+        "force_range": "握力渐进释放",
+        "precision_requirement": "释放过程物体无位移或倾斜"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-面向人员",
+      "l3_name_en": "TrunkRotation-90to180Degree-FacingPersonnel",
+      "parent_l2_id": "L2-02-04",
+      "description": "以脊柱纵轴为中心上半身相对于下半身转动90-180度，使正面朝向需要交互的人员",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "旋转角度90-180度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "最终朝向对准目标人员±15度"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-操作人员-交接确认",
+      "l3_name_en": "Gaze-Operator-HandoverConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准机床操作员进行目光交流，确认物料交接完成并接收可能的口头或手势反馈",
+      "object_category": "人员",
+      "parameter_ranges": {
+        "size_range": "观察距离1-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能观察到人员的面部表情和手势"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-回收物料-位置确认",
+      "l3_name_en": "Gaze-RecycleMaterial-LocationConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "转头注视工位旁需要回收的旧刀具、废料等物品，确认其位置和状态",
+      "object_category": "待回收物料",
+      "parameter_ranges": {
+        "size_range": "观察范围工位周边1-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别物料位置和可抓取姿态"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工位回收物-无障碍",
+      "l3_name_en": "Reach-WorkstationRecycleItem-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂空手伸向工位旁需回收的旧刀具或废料位置，准备进行抓取",
+      "object_category": "待回收物料",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-1.0m",
+        "weight_range": "不适用（空载）",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-工业楼梯-负载下行",
+      "l3_name_en": "StairTraversal-IndustrialStairs-LoadedDescent",
+      "parent_l2_id": "L2-01-03",
+      "description": "双手持握负载状态下沿工业厂房标准楼梯向下走，需精确控制落脚和制动以防失稳",
+      "object_category": "工业楼梯",
+      "parameter_ranges": {
+        "size_range": "单次下降1-3层楼，每层约20-30级台阶",
+        "weight_range": "负载5-30kg",
+        "force_range": "需控制下降速度和制动力",
+        "precision_requirement": "落脚点精度±5cm，下行过程重心稳定"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-回收存放区-分米级",
+      "l3_name_en": "Stop-RecycleStorageArea-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在回收物料存放区域精确停止站定，使身体位于可便利放置回收物的最佳位置",
+      "object_category": "回收物料存放区",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5m×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-回收物料-厘米级",
+      "l3_name_en": "PrecisionPlace-RecycleMaterial-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将回收物料在指定存放位置进行厘米级精度的定位放置",
+      "object_category": "旧刀具/废料",
+      "parameter_ranges": {
+        "size_range": "物料尺寸50-400mm",
+        "weight_range": "2-30kg",
+        "force_range": "放置末端需缓慢稳定降低",
+        "precision_requirement": "放置位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-01-08-004",
+      "l3_name_zh": "停位-记录终端-分米级",
+      "l3_name_en": "Stop-RecordTerminal-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在配送记录终端前精确停止站定，使身体位于可便利操作触控屏的最佳位置",
+      "object_category": "记录终端",
+      "parameter_ranges": {
+        "size_range": "停位区域0.3m×0.3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm，便于手部操作屏幕"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业触控屏-轻力度多次",
+      "l3_name_en": "PointPress-IndustrialTouchscreen-LightMultiple",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指在工业触控屏上进行多次点按操作，录入配送完成信息并确认提交",
+      "object_category": "工业触控屏",
+      "parameter_ranges": {
+        "size_range": "触控区域约10-20英寸",
+        "weight_range": "不适用",
+        "force_range": "点压力度1-5N",
+        "precision_requirement": "点击位置精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "35-351-3516-MaterialDelivery-MultiFloor"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-03",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 6
+  }
+}

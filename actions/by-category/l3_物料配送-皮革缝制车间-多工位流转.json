@@ -1,0 +1,630 @@
+{
+  "scene_id": "19-00-1921",
+  "scene_name": "物料配送-皮革缝制车间-多工位流转",
+  "total_steps": 20,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "查看配送任务屏幕或清单，确认待配送物料对应的目标工位编号",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-配送任务屏-工位物料对应",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在物料准备区内走向对应物料包的存放位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-水泥地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在物料架或准备台前精确站定，使身体处于便于取料的位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料架前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手伸向物料架上的目标物料包",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架层位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手全掌包握物料包袋体建立稳固抓持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-包袋袋体-宽度200至400mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂协调将物料包从架上提起至胸前搬运位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-包袋状物料-中载2至10kg",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "持物料包状态下转身朝向车间目标工位方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-朝向目标工位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双手持物料包沿车间通道向目标工位行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型包袋-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 9,
+      "human_description": "在车间通道拐角或工位间转弯调整行进方向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]负载状态下的转弯，主运动仍是变向而非负载行走本身，故归入L2-01-02",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "到达目标缝纫工位旁精确停位便于交付物料",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-缝纫工位旁-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身将物料包下放至工位物料接收区高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰至膝高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将物料包放置到工位指定的物料接收区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-物料包袋-中等精度厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "渐进松开双手释放物料包确保其稳定放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "从弯腰姿态恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-从前屈姿态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "转头注视工位半成品放置区确认是否有待取回物品",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-工位半成品区-取料确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手到工位半成品放置区准备取料",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工位半成品区-近距横向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "自适应抓取柔软的皮革半成品避免过度变形",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质皮革-片状或组件",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]皮革半成品为柔性材料需自适应力控制，与力量抓握的刚性包络不同",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "单臂将皮革半成品提起离开工位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-皮革半成品-近距提起",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "持半成品转身朝向下一工位或半成品暂存区方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90至180度-朝向下一目标",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "持皮革半成品行走前往下一工位或半成品收集区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-轻质皮革件-单臂侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-配送任务屏-工位物料对应",
+      "l3_name_en": "Read-DeliveryTaskScreen-StationMaterialMapping",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准配送任务显示屏或纸质清单，读取待配送物料与目标工位的对应信息",
+      "object_category": "显示屏/清单",
+      "parameter_ranges": {
+        "size_range": "屏幕7-15英寸或A4纸张",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "字符识别精度"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-水泥地坪-匀速",
+      "l3_name_en": "Walk-CementFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间水泥或环氧地坪上进行匀速直线行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料架前-厘米级",
+      "l3_name_en": "Stop-MaterialRackFront-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料架或准备台前精确停止，调整站位使身体处于最佳取料位置",
+      "object_category": "物料架/台",
+      "parameter_ranges": {
+        "size_range": "站位距架距离0.3-0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架层位-无障碍直线",
+      "l3_name_en": "Reach-MaterialRackShelf-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "双手沿直线路径伸向物料架上目标物料包所在层位",
+      "object_category": "物料架层",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "空载",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-包袋袋体-宽度200至400mm",
+      "l3_name_en": "PowerGrasp-BagBody-Width200to400mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手全掌包络抓握物料包袋体或提手部位建立稳固持握",
+      "object_category": "物料包/袋",
+      "parameter_ranges": {
+        "size_range": "袋体宽度200-400mm",
+        "weight_range": "2-10kg",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持稳定性"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-包袋状物料-中载2至10kg",
+      "l3_name_en": "BimanualCarry-BagShapedMaterial-MidLoad2to10kg",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将包袋状物料从当前位置搬运至目标位置，保持物料稳定不晃动",
+      "object_category": "物料包袋",
+      "parameter_ranges": {
+        "size_range": "包袋尺寸300×200×150至500×400×300mm",
+        "weight_range": "2-10kg",
+        "force_range": "双臂承载20-100N",
+        "precision_requirement": "稳定性控制"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-朝向目标工位",
+      "l3_name_en": "TrunkRotate-90to180deg-TowardTargetStation",
+      "parent_l2_id": "L2-02-04",
+      "description": "在持物状态下以脊柱为轴转动上半身使身体朝向目标工位方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "持物状态0-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型包袋-双臂前持",
+      "l3_name_en": "LoadedWalk-MediumBag-BiarmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身体前方持握物料包状态下沿车间通道行走",
+      "object_category": "物料包袋",
+      "parameter_ranges": {
+        "size_range": "行走距离20-100m",
+        "weight_range": "2-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-负载状态",
+      "l3_name_en": "DirectionalWalk-90degTurn-LoadedState",
+      "parent_l2_id": "L2-01-02",
+      "description": "在持物负载状态下通过L型通道拐角或工位间转弯",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5-2m",
+        "weight_range": "负载2-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "转弯轨迹连续"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-缝纫工位旁-厘米级",
+      "l3_name_en": "Stop-SewingStationSide-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在目标缝纫工位旁精确停位，便于物料交付和半成品取回",
+      "object_category": "缝纫工位",
+      "parameter_ranges": {
+        "size_range": "站位距工位0.3-0.6m",
+        "weight_range": "持物状态2-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰至膝高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistToKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴向前弯腰使手部从腰部高度下放到膝部高度区域",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "弯腰角度30-60度",
+        "weight_range": "持物0-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-物料包袋-中等精度厘米级",
+      "l3_name_en": "PrecisionPlace-MaterialBag-MediumPrecisionCm",
+      "parent_l2_id": "L2-03-05",
+      "description": "将物料包放置到工位指定物料接收区域的正确位置",
+      "object_category": "物料包袋",
+      "parameter_ranges": {
+        "size_range": "放置区域300×300mm以上",
+        "weight_range": "2-10kg",
+        "force_range": "轻放力<20N",
+        "precision_requirement": "±2-3cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有支撑面承托后渐进松开手指解除抓握",
+      "object_category": "物料包袋",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "释放前持物2-10kg",
+        "force_range": "松指速度控制",
+        "precision_requirement": "避免物体倾倒"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-从前屈姿态",
+      "l3_name_en": "BendForward-RecoverUpright-FromFlexedPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前屈弯腰姿态恢复到直立站姿",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "恢复角度30-60度",
+        "weight_range": "空载或轻载",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-工位半成品区-取料确认",
+      "l3_name_en": "Gaze-StationSemifinishedArea-PickupConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "转头注视工位半成品放置区确认是否有待取回的完工品",
+      "object_category": "半成品/工位区域",
+      "parameter_ranges": {
+        "size_range": "视野范围0.5-1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "目标识别"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工位半成品区-近距横向",
+      "l3_name_en": "Reach-StationSemifinishedArea-ShortLateral",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂横向伸向工位旁的半成品放置区准备取料",
+      "object_category": "工位区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "空载",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质皮革-片状或组件",
+      "l3_name_en": "AdaptiveGrasp-SoftLeather-SheetOrComponent",
+      "parent_l2_id": "L2-04-04",
+      "description": "对柔软皮革半成品进行自适应抓取，控制力分布避免过度变形或损伤",
+      "object_category": "皮革半成品",
+      "parameter_ranges": {
+        "size_range": "皮革件尺寸100×100至500×500mm",
+        "weight_range": "0.1-2kg",
+        "force_range": "抓取力5-20N",
+        "precision_requirement": "形状保持"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-皮革半成品-近距提起",
+      "l3_name_en": "Transfer-LeatherSemifinished-ShortLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手将皮革半成品从工位提起至搬运位置",
+      "object_category": "皮革半成品",
+      "parameter_ranges": {
+        "size_range": "提升高度0.2-0.5m",
+        "weight_range": "0.1-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "防止滑落"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90至180度-朝向下一目标",
+      "l3_name_en": "TrunkRotate-90to180deg-TowardNextTarget",
+      "parent_l2_id": "L2-02-04",
+      "description": "持轻质半成品状态下转身朝向下一工位或暂存区方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "持物0.1-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-轻质皮革件-单臂侧持",
+      "l3_name_en": "LoadedWalk-LightLeatherPart-SingleArmSideHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "单臂侧持皮革半成品状态下沿车间通道行走至下一目标",
+      "object_category": "皮革半成品",
+      "parameter_ranges": {
+        "size_range": "行走距离10-100m",
+        "weight_range": "0.1-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1921-01"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 5
+  }
+}

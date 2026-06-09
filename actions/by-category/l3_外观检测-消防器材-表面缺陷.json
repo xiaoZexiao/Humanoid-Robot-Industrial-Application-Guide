@@ -1,0 +1,656 @@
+{
+  "scene_id": "35-359-3595",
+  "scene_name": "外观检测-消防器材-表面缺陷",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至待检产品暂存区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在待检产品前精确停止，对准取料位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料暂存区-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "双臂向前伸向待检的灭火器罐体",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料暂存区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手包络抓握灭火器罐体中部",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体-直径80至150mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂协调将灭火器从暂存区搬起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆柱罐体-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 6,
+      "human_description": "负载灭火器行走至标准光源检验台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型罐体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将灭火器精确放置在检验台标定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-检验工件-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双手渐进松开灭火器罐体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "躯干向前微倾靠近检验台以便观察",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-轻度前倾-台面高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "目视扫描罐体整体表面检查涂层均匀性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-罐体涂层表面-环绕扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 11,
+      "human_description": "视线对准焊缝区域进行近距检视",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-焊缝表面-外观缺陷检查",
+      "is_new_l3": true,
+      "boundary_note": "与L2-09-01的区别：需要将视线拉近到200mm以内观察焊缝细节，而非仅角度对准",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 12,
+      "human_description": "注视产品标识区域读取并核验标识信息",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-产品标签-标识清晰度验证",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "单手伸向工具架上的卡尺",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具架-侧向伸取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "以测量功能姿势握持卡尺",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-卡尺-测量功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将卡尺定位至罐体待测尺寸部位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-卡尺-外径尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将卡尺放回工具架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "松开手指释放卡尺",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "双手抓握灭火器罐体准备翻转",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体-直径80至150mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将灭火器绕水平轴翻转180度以检查另一侧",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 20,
+      "human_description": "目视扫描翻转后的罐体表面",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-罐体涂层表面-环绕扫描",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双臂协调将检验完成的产品搬起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆柱罐体-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 22,
+      "human_description": "负载产品行走至合格品区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型罐体-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将产品按规律码放到合格品区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-单列排列-单层",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双手渐进松开产品完成放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工厂车间的环氧地坪上以稳定匀速行走，保持平稳步态",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "行走轨迹偏差<10cm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料暂存区-厘米级",
+      "l3_name_en": "Stop-MaterialStagingArea-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料暂存区前精确停止，使身体处于便于取料的最佳位置",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料暂存区-无障碍直线",
+      "l3_name_en": "Reach-MaterialStagingArea-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向物料暂存区的待取物品位置",
+      "object_category": "物料区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点位置偏差<5cm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱体-直径80至150mm",
+      "l3_name_en": "PowerGrasp-Cylinder-Diameter80to150mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络方式抓握中等直径的圆柱形物体如灭火器罐体",
+      "object_category": "圆柱形罐体",
+      "parameter_ranges": {
+        "size_range": "直径80-150mm",
+        "weight_range": "2-15kg",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持稳定无滑移"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-圆柱罐体-中载",
+      "l3_name_en": "CoordinatedCarry-CylindricalTank-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调配合将中等重量的圆柱形罐体从一个位置搬运起来",
+      "object_category": "圆柱形罐体",
+      "parameter_ranges": {
+        "size_range": "长度300-600mm，直径80-200mm",
+        "weight_range": "5-20kg",
+        "force_range": "双臂合计负载50-200N",
+        "precision_requirement": "搬运过程平稳无晃动"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型罐体-双臂前持",
+      "l3_name_en": "LoadedWalk-MediumTank-DualArmFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身前持握中型罐体状态下的行走，需保持负载稳定",
+      "object_category": "中型罐体",
+      "parameter_ranges": {
+        "size_range": "负载体积约0.01-0.05m³",
+        "weight_range": "5-20kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走过程负载晃动<5cm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-检验工件-厘米级",
+      "l3_name_en": "PrecisionPlace-InspectionWorkpiece-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将待检工件精确放置到检验台的标定位置，确保处于标准光源照射区域",
+      "object_category": "待检工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸200-600mm",
+        "weight_range": "2-20kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已被外部支撑面承托后，手指渐进张开解除抓握",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放过程力渐减至0",
+        "precision_requirement": "释放过程物体无滑移或倾倒"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-轻度前倾-台面高度",
+      "l3_name_en": "LeanForward-SlightBend-TableHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干轻度前倾以便眼睛更接近检验台面高度的工件进行观察",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "前倾角度15-30度"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-罐体涂层表面-环绕扫描",
+      "l3_name_en": "ScanInspect-TankCoatingSurface-CircumferentialScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线沿圆柱形罐体表面进行环绕式系统扫描，检查涂层均匀性和表面缺陷",
+      "object_category": "涂层表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积0.1-0.5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "覆盖率100%，可检测>0.5mm缺陷"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-焊缝表面-外观缺陷检查",
+      "l3_name_en": "CloseInspect-WeldSurface-VisualDefectCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "将视线移近至焊缝区域200mm以内，检查焊缝成型、气孔、裂纹等外观缺陷",
+      "object_category": "焊缝",
+      "parameter_ranges": {
+        "size_range": "焊缝长度50-300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检视距离100-200mm，可检测>0.3mm缺陷"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-产品标签-标识清晰度验证",
+      "l3_name_en": "Read-ProductLabel-LegibilityVerification",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准产品标签区域，核验标识文字、图案的清晰度和完整性",
+      "object_category": "产品标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸50x100mm至200x300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别3mm以上字符"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工具架-侧向伸取",
+      "l3_name_en": "Reach-ToolRack-LateralExtension",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方工具架位置伸出以准备抓取工具",
+      "object_category": "工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点位置偏差<3cm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-卡尺-测量功能姿",
+      "l3_name_en": "ToolGrip-Caliper-MeasurementPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以测量操作所需的功能姿势握持卡尺，拇指可操作游标",
+      "object_category": "卡尺",
+      "parameter_ranges": {
+        "size_range": "卡尺长度150-300mm",
+        "weight_range": "50-200g",
+        "force_range": "握持力5-15N",
+        "precision_requirement": "握姿稳定可进行精密读数"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-卡尺-外径尺寸",
+      "l3_name_en": "MeasurementPosition-Caliper-OuterDiameter",
+      "parent_l2_id": "L2-09-06",
+      "description": "将卡尺外测量爪定位至圆柱体外径测量位置并完成尺寸测量",
+      "object_category": "圆柱形工件",
+      "parameter_ranges": {
+        "size_range": "测量范围0-200mm",
+        "weight_range": "N/A",
+        "force_range": "测量接触力1-3N",
+        "precision_requirement": "测量精度±0.02mm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer-HandTool-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握轻小工具在近距离范围内转移至目标位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-300mm",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "转移过程工具姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-180度",
+      "l3_name_en": "Flip-HorizontalAxis-180Degrees",
+      "parent_l2_id": "L2-03-04",
+      "description": "双手协调将物体绕水平轴翻转180度以露出另一侧表面",
+      "object_category": "中型工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸200-600mm",
+        "weight_range": "2-20kg",
+        "force_range": "翻转力矩10-50Nm",
+        "precision_requirement": "翻转过程平稳可控"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-单列排列-单层",
+      "l3_name_en": "Stack-SingleRow-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将工件按单列顺序排列码放，保持相邻工件间距一致",
+      "object_category": "检验完成工件",
+      "parameter_ranges": {
+        "size_range": "工件间距50-100mm",
+        "weight_range": "2-20kg/件",
+        "force_range": "N/A",
+        "precision_requirement": "排列间距偏差<20mm"
+      },
+      "is_new": true,
+      "source_scene": "35-359-3595-VisualInspection-FirefightingEquipment-SurfaceDefects"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 5
+  }
+}

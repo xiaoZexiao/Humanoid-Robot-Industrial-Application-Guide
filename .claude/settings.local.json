@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(python *)",
-      "PowerShell(Get-ChildItem C:\\\\HRIA\\\\ -Force | Where-Object { $_.Name -ne 'humanoid-robot-industrial-guide' } | Format-Table Name, Mode)"
+      "PowerShell(Get-ChildItem C:\\\\HRIA\\\\ -Force | Where-Object { $_.Name -ne 'humanoid-robot-industrial-guide' } | Format-Table Name, Mode)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

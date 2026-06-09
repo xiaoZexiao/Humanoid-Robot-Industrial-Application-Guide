@@ -1,0 +1,680 @@
+{
+  "scene_id": "45-00-4512",
+  "scene_name": "充装监控-LPG钢瓶-灌装过程",
+  "total_steps": 26,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "充装工从待命位置沿车间通道行走至充装枪工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防爆车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在充装枪操作位置精确站定，确保处于最佳操作距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-充装工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视确认空瓶已通过上游输送到达待充装位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-LPG钢瓶-到位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身至钢瓶操作高度，准备推送空瓶",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-钢瓶高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "伸手至空瓶侧面准备推送操作",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-钢瓶侧面-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手抵住钢瓶侧面将其沿地面推送至充装位精确对准充装枪",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-LPG钢瓶-匀力推送定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "起身恢复直立站姿准备操作充装枪",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "起身-从俯身恢复-直立姿态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰俯身的逆动作，仍归入L2-02-02",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "伸手至充装枪悬挂/存放位置准备抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-充装枪存放位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "满握抓持充装枪手柄，确保稳固握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-充装枪手柄-直径25至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将充装枪从存放位移动至钢瓶阀门上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-充装枪-近距移动",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "目视对准钢瓶阀门接口，确认快接头与阀门对正",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-钢瓶阀门接口-对准确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将充装枪快接头插入钢瓶阀门直至卡扣锁定到位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-LPG充装快接头-插入自锁",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "确认连接牢固后松开对充装枪的握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-充装枪已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "伸手至充装控制面板上的启动按钮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-充装控制面板-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "按下充装启动按钮开始充装流程",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-防爆启动按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "转头注视充装仪表盘，持续监视充装量读数直至达到定量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-充装仪表盘-充装量监视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 17,
+      "human_description": "充装完成后伸手至充装枪位置准备断开",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-钢瓶侧面-近距直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "抓握充装枪手柄准备断开操作",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-充装枪手柄-直径25至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "按压快接头上的释放按钮解除锁定",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-快接头释放按钮-轻按",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将充装枪快接头从钢瓶阀门中垂直拔出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-LPG充装快接头-轻度阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将充装枪移回存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-充装枪-近距移动",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将充装枪放置到存放位后松开手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-充装枪已固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 23,
+      "human_description": "弯腰俯身至成品瓶操作高度准备推送",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-钢瓶高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "伸手至成品瓶侧面准备推送",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-钢瓶侧面-近距直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "将成品瓶沿地面推送至下游检验区",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-LPG钢瓶-匀力推送定位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 26,
+      "human_description": "起身恢复直立站姿完成本次充装循环",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "起身-从俯身恢复-直立姿态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防爆车间地坪-匀速",
+      "l3_name_en": "Walking-ExplosionProofFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在LPG充装车间的防爆地坪上进行匀速直线行走，地面为防静电环氧涂层",
+      "object_category": "防爆车间地面",
+      "parameter_ranges": {
+        "size_range": "行走距离3-15m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<0.3m"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-充装工位标定点-厘米级",
+      "l3_name_en": "Positioning-FillingStationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在充装枪操作位置精确停止，对准地面工位标线或视觉标识",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "定位区域0.5m×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-LPG钢瓶-到位确认",
+      "l3_name_en": "Gaze-LPGCylinder-ArrivalConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认LPG钢瓶已通过上游输送系统到达待充装位置",
+      "object_category": "LPG钢瓶",
+      "parameter_ranges": {
+        "size_range": "钢瓶高度500-800mm，直径300-400mm",
+        "weight_range": "空瓶15-25kg",
+        "force_range": "不适用",
+        "precision_requirement": "确认到位状态"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-钢瓶高度",
+      "l3_name_en": "Bending-ModerateFlex-CylinderHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "上身向前弯曲约45-60度，使手部能够接触到地面站立的LPG钢瓶侧面",
+      "object_category": "操作姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度400-700mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "躯干角度45-60度"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-钢瓶侧面-近距直线",
+      "l3_name_en": "Reaching-CylinderSide-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手臂伸向LPG钢瓶侧面，准备进行推送操作",
+      "object_category": "LPG钢瓶表面",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达钢瓶侧面中部"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-LPG钢瓶-匀力推送定位",
+      "l3_name_en": "Pushing-LPGCylinder-SteadyForcePositioning",
+      "parent_l2_id": "L2-05-02",
+      "description": "双手抵住LPG钢瓶侧面，以稳定推力将其沿地面推送至充装位或下游位置",
+      "object_category": "LPG钢瓶",
+      "parameter_ranges": {
+        "size_range": "推送距离0.3-1.5m",
+        "weight_range": "空瓶15-25kg，满瓶35-50kg",
+        "force_range": "推力30-80N",
+        "precision_requirement": "定位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "起身-从俯身恢复-直立姿态",
+      "l3_name_en": "Rising-FromBending-UprightPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态恢复到直立站姿，髋关节和腰椎伸展",
+      "object_category": "操作姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "恢复至直立"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-充装枪存放位-无障碍直线",
+      "l3_name_en": "Reaching-FillingGunHolder-ClearLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手臂伸向充装枪的悬挂或存放位置准备抓取",
+      "object_category": "充装枪存放架",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.4-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达充装枪手柄位置"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-充装枪手柄-直径25至40mm",
+      "l3_name_en": "PowerGrasp-FillingGunHandle-Dia25to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握LPG充装枪的手柄，确保稳固握持便于操作",
+      "object_category": "充装枪手柄",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，长度100-150mm",
+        "weight_range": "充装枪重量1.5-3kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "稳固握持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-充装枪-近距移动",
+      "l3_name_en": "Transfer-FillingGun-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持充装枪从存放位移动至钢瓶阀门处或反向归位",
+      "object_category": "充装枪",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.8m",
+        "weight_range": "1.5-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "末端位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-钢瓶阀门接口-对准确认",
+      "l3_name_en": "Gaze-CylinderValvePort-AlignmentCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认充装枪快接头与钢瓶阀门接口的对正状态",
+      "object_category": "钢瓶阀门接口",
+      "parameter_ranges": {
+        "size_range": "接口直径15-25mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "轴线偏差<2mm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-LPG充装快接头-插入自锁",
+      "l3_name_en": "SnapFit-LPGFillingQuickConnect-InsertLock",
+      "parent_l2_id": "L2-07-06",
+      "description": "将充装枪快接头对准钢瓶阀门插入，直至卡扣弹入锁定位置并听到click声",
+      "object_category": "快接式充装接头",
+      "parameter_ranges": {
+        "size_range": "接头直径20-30mm，插入深度15-25mm",
+        "weight_range": "不适用",
+        "force_range": "插入力20-50N",
+        "precision_requirement": "轴线对准精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-充装枪已固定",
+      "l3_name_en": "Release-GradualLoosen-GunSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认充装枪已连接牢固后逐步打开手指解除握持",
+      "object_category": "充装枪",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "确保释放后物体稳定"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-充装控制面板-近距直线",
+      "l3_name_en": "Reaching-FillingControlPanel-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手伸向充装控制面板的按钮区域",
+      "object_category": "控制面板",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达按钮位置"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-防爆启动按钮-中等力度",
+      "l3_name_en": "Press-ExplosionProofStartButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按下防爆型充装启动按钮触发充装程序启动",
+      "object_category": "防爆按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "按压力5-15N",
+        "precision_requirement": "准确触发"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-充装仪表盘-充装量监视",
+      "l3_name_en": "Reading-FillingGaugeDial-QuantityMonitoring",
+      "parent_l2_id": "L2-09-07",
+      "description": "持续注视充装仪表盘读取充装量数值，监视是否达到额定充装量±3%",
+      "object_category": "充装量仪表",
+      "parameter_ranges": {
+        "size_range": "仪表盘直径80-150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "读数精度±3%"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-快接头释放按钮-轻按",
+      "l3_name_en": "Press-QuickConnectReleaseButton-LightPress",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按压快接头上的释放按钮解除卡扣锁定",
+      "object_category": "快接头释放按钮",
+      "parameter_ranges": {
+        "size_range": "按钮尺寸10-20mm",
+        "weight_range": "不适用",
+        "force_range": "按压力3-10N",
+        "precision_requirement": "完全解锁"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-LPG充装快接头-轻度阻力",
+      "l3_name_en": "Extraction-LPGFillingQuickConnect-LightResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "在释放锁定后将充装枪快接头从钢瓶阀门中垂直抽出",
+      "object_category": "快接式充装接头",
+      "parameter_ranges": {
+        "size_range": "抽出行程15-25mm",
+        "weight_range": "不适用",
+        "force_range": "抽出力10-30N",
+        "precision_requirement": "保持轴向抽出"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4512-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-02",
+      "L2-07-02",
+      "L2-07-06",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 6
+  }
+}

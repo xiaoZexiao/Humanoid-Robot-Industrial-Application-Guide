@@ -1,0 +1,634 @@
+{
+  "scene_id": "13-139-1392",
+  "scene_name": "设备巡检-豆制品车间-高温蒸煮",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区沿车间主通道步行至煮浆区入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "站在煮浆区入口处转动头部扫视整体区域环境和设备布局",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-车间区域-全景扫视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 3,
+      "human_description": "沿设备间通道行走至第一台蒸汽煮浆锅前方",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在蒸汽煮浆锅操作面板前精确调整站位以便观察仪表",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备操作位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "注视设备运行指示灯确认设备处于正常运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-设备指示灯-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "注视温度仪表盘读取当前煮浆温度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-温度表盘-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "注视压力仪表盘读取蒸汽压力数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-压力表盘-压力数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "注视计时器或时间显示屏读取煮浆时间参数",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-计时显示屏-时间数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "上半身向右侧转体面向蒸汽阀门方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "注视蒸汽进汽阀门确认开度位置是否正常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-阀门开度-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "空手伸向设备外壳表面准备触摸检测温度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-设备外壳-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "手指轻触设备外壳表面感知是否存在异常发热",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-温度异常-设备外壳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 13,
+      "human_description": "手臂收回至身体侧面自然位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身侧复位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]手臂从伸出位置收回虽是逆向运动，但本质仍是空间中的轨迹运动，归入空载伸达",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "弯腰俯身以便查看设备底部的管路连接和阀门状态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "注视设备底部管路检查是否有泄漏或连接异常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-管路连接-泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "起身恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-从弯腰",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰的逆过程，仍属于躯干构型变化，归入弯腰俯身类别",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将头部靠近煮浆锅观察窗检视浆液状态和颜色",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-观察窗-浆液状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "4-8"
+    },
+    {
+      "step_order": 18,
+      "human_description": "侧耳贴近设备听取运转声音判断是否有异常杂音",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-设备运转声-煮浆锅",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 19,
+      "human_description": "沿通道行走至下一台点浆设备前方",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 20,
+      "human_description": "在点浆设备操作面板前精确调整站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备操作位-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "注视点浆设备仪表和指示灯确认设备运行参数正常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-温度表盘-温度数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 22,
+      "human_description": "贴近观察点浆过程中浆液凝固状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-观察窗-浆液状态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 23,
+      "human_description": "扫视煮浆区域整体环境确认无明显安全隐患后准备离开",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-车间区域-全景扫视",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 24,
+      "human_description": "沿车间通道行走返回待命区或下一巡检区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walking-EpoxyFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在食品车间环氧地坪地面上以均匀速度直线行走，地面可能有水渍或蒸汽凝结导致湿滑",
+      "object_category": "地面/环氧树脂地坪",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.2-2.0m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差<20cm"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备操作位-厘米级",
+      "l3_name_en": "Positioning-EquipmentOperationSpot-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备操作面板前方精确调整站立位置，使身体朝向正对仪表盘，便于读取参数",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域0.5×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±5cm，朝向精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下高度",
+      "l3_name_en": "Stooping-ModerateBend-BelowKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴向前弯曲上身约45-60度，使视线能够到达膝盖以下高度区域进行观察",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "弯曲角度45-60度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "姿态保持稳定3-10秒"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-从弯腰",
+      "l3_name_en": "Stooping-RecoverUpright-FromBend",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复至直立站姿，躯干从前屈状态逐步回正",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度45-60度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "恢复过程平稳无晃动"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向右",
+      "l3_name_en": "TrunkRotation-90Degree-RightTurn",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚保持原位，上半身绕脊柱纵轴向右旋转约90度，改变上肢工作方向",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "朝向精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-设备外壳-无障碍直线",
+      "l3_name_en": "Reaching-EquipmentShell-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手臂沿直线轨迹伸向设备外壳表面，准备进行触觉检测",
+      "object_category": "设备外壳表面",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-身侧复位-无障碍直线",
+      "l3_name_en": "Reaching-SideReset-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂从伸出位置沿直线轨迹收回至身体侧面自然下垂位置",
+      "object_category": "身体侧位空间",
+      "parameter_ranges": {
+        "size_range": "收回距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "自然位置即可"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-设备指示灯-状态确认",
+      "l3_name_en": "Gaze-EquipmentIndicator-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视线对准设备运行状态指示灯，确认灯光颜色和闪烁模式是否正常",
+      "object_category": "指示灯/LED显示",
+      "parameter_ranges": {
+        "size_range": "指示灯直径10-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-阀门开度-状态确认",
+      "l3_name_en": "Gaze-ValvePosition-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视线对准阀门手轮或开度指示，确认阀门开度位置是否符合工艺要求",
+      "object_category": "阀门/手轮",
+      "parameter_ranges": {
+        "size_range": "阀门手轮直径80-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-管路连接-泄漏检查",
+      "l3_name_en": "Gaze-PipeConnection-LeakCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视线对准管路接头和连接处，观察是否存在泄漏、渗漏或连接松动",
+      "object_category": "管路接头/法兰连接",
+      "parameter_ranges": {
+        "size_range": "管路直径DN25-DN100",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能辨识滴漏级别泄漏"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-观察窗-浆液状态",
+      "l3_name_en": "CloseInspect-ViewingWindow-SlurryStatus",
+      "parent_l2_id": "L2-09-02",
+      "description": "将头部靠近设备观察窗（视窗），近距离检视浆液的颜色、浓稠度、气泡状态和搅拌情况",
+      "object_category": "观察窗/视镜",
+      "parameter_ranges": {
+        "size_range": "观察窗直径100-300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "观察距离10-30cm"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-车间区域-全景扫视",
+      "l3_name_en": "AreaScan-WorkshopZone-PanoramicView",
+      "parent_l2_id": "L2-09-03",
+      "description": "转动头部进行180-270度范围的缓慢扫视，观察车间区域整体环境、设备布局和安全状况",
+      "object_category": "车间空间区域",
+      "parameter_ranges": {
+        "size_range": "扫视区域面积50-200m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "覆盖主要设备和通道"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-温度异常-设备外壳",
+      "l3_name_en": "TactileProbe-TemperatureAnomaly-EquipmentShell",
+      "parent_l2_id": "L2-09-04",
+      "description": "手指轻触设备外壳表面1-3秒，通过触觉感知表面温度是否存在异常发热或过热情况",
+      "object_category": "金属外壳表面",
+      "parameter_ranges": {
+        "size_range": "接触面积约10cm²",
+        "weight_range": "N/A",
+        "force_range": "接触力<1N",
+        "precision_requirement": "能感知50-80℃温度范围异常"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-设备运转声-煮浆锅",
+      "l3_name_en": "AcousticListen-OperationSound-CookingPot",
+      "parent_l2_id": "L2-09-05",
+      "description": "调整头部朝向使耳部接近设备，听取电机、泵、阀门等部件运转声音，判断是否有异常杂音",
+      "object_category": "设备运转噪声",
+      "parameter_ranges": {
+        "size_range": "聆听距离20-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别明显异响"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-温度表盘-温度数值",
+      "l3_name_en": "Reading-TemperatureGauge-TempValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准温度仪表盘，调整头部角度和距离使表盘刻度清晰可读，读取当前温度数值",
+      "object_category": "指针式/数字式温度表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2℃"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-压力表盘-压力数值",
+      "l3_name_en": "Reading-PressureGauge-PressureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准压力仪表盘，调整头部角度和距离使表盘刻度清晰可读，读取当前压力数值",
+      "object_category": "指针式/数字式压力表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±0.02MPa"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    },
+    {
+      "l3_id": "L3-09-07-003",
+      "l3_name_zh": "读取-计时显示屏-时间数值",
+      "l3_name_en": "Reading-TimerDisplay-TimeValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准计时器或数字显示屏，读取当前工艺运行时间或倒计时数值",
+      "object_category": "数字显示屏/计时器",
+      "parameter_ranges": {
+        "size_range": "显示区域50×30mm至150×80mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1秒"
+      },
+      "is_new": true,
+      "source_scene": "13-139-1392-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-04",
+      "L2-09-05",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-09-07",
+    "涉及的L1数量": 4
+  }
+}

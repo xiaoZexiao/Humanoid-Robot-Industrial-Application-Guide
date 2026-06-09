@@ -1,0 +1,1017 @@
+{
+  "scene_id": "9-91-00",
+  "scene_name": "清扫回收-精矿脱水滤饼-湿滑粉尘环境",
+  "total_steps": 35,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区沿湿滑地面行走到压滤机卸料工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-湿滑工业地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在压滤机旁操作点精确站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备操作点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视观察滤饼堆放位置和工具存放情况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-物料堆位置-作业规划",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰向下准备拿取存放在低处的铁锹",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "伸手到铁锹存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具存放处-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "以铲运功能姿势握住铁锹手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-铁锹-铲运功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将铁锹提起到操作高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-长柄工具-垂直提起",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-从前屈位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "持铁锹在湿滑地面行走到滤饼堆旁",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具-单手侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在滤饼堆旁精确站位准备铲料",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-物料堆旁-作业位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身降低身体重心准备铲料",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-深度前屈-地面作业位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将铁锹铲头对准滤饼堆边缘",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-铁锹-水平对准目标",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "用力将铁锹插入滤饼物料堆中",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-铁锹入料-匀力插入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "用脚踩踏铁锹背部边缘加力下压使铲头深入",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-002",
+      "l3_name": "推压-脚踩锹背-垂直下压",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]该动作使用脚部而非手臂施力，但运动模式符合L2-05-02的持续推压特征",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "下压铁锹手柄利用杠杆原理撬起满载的铲头",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-003",
+      "l3_name": "推压-杠杆撬起-下压手柄",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]杠杆撬起动作的施力方式是向下推压手柄端，虽然效果是物料被撬起，但主要控制量仍是下压力",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将满载滤饼的铁锹抬离地面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-满载铁锹-垂直抬起",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "恢复直立站姿同时保持铁锹平稳",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-004",
+      "l3_name": "俯身-负载起身-保持工具平稳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "转体朝向皮带输送机或料仓方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双手持满载铁锹在湿滑地面行走到皮带投料口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-满载铁锹-双手前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 20,
+      "human_description": "在皮带投料口旁精确站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-投料口旁-卸料位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "向前倾身对准投料口位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-005",
+      "l3_name": "俯身-轻度前倾-对准投料口",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "翻转倾斜铁锹将滤饼倒入皮带或料仓",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-铁锹倾倒-绕横轴90度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "抖动铁锹清除残留在铲面的物料",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-05",
+      "l2_name": "冲击敲击",
+      "l3_id": "L3-05-05-001",
+      "l3_name": "敲击-抖落残料-往复振动",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "持铁锹行走到滤布清理位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具-单手侧持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 25,
+      "human_description": "目视检查滤布上的残留精矿分布",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-滤布表面-残留检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将铁锹移至临时存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-004",
+      "l3_name": "转移-铁锹-移至倚靠位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "松手释放铁锹使其倚靠存放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已倚靠",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "弯腰俯身用手或铁锹边缘刮除滤布上的残留精矿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-深度前屈-地面作业位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 29,
+      "human_description": "沿滤布表面刮擦清除粘附的残留精矿",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-05",
+      "l2_name": "表面擦拭清洁",
+      "l3_id": "L3-08-05-001",
+      "l3_name": "擦拭-滤布表面-刮除残料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 30,
+      "human_description": "起身后行走到洒落物料区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-湿滑工业地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 31,
+      "human_description": "伸手拿取扫帚",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具存放处-近距直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 32,
+      "human_description": "以清扫功能姿势握住扫帚柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-扫帚-清扫功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 33,
+      "human_description": "弯腰俯身将扫帚贴近地面进行来回清扫",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-05",
+      "l2_name": "表面擦拭清洁",
+      "l3_id": "L3-08-05-002",
+      "l3_name": "擦拭-湿滑地面-扫帚往复清扫",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-120"
+    },
+    {
+      "step_order": 34,
+      "human_description": "用扫帚将洒落物料推扫聚集到一处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-001",
+      "l3_name": "推送-散落物料-扫帚聚集",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 35,
+      "human_description": "将扫帚归位存放",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-长柄工具-存放架位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-湿滑工业地面-匀速",
+      "l3_name_en": "Walking-WetIndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在有水渍、粉尘或油污的湿滑工业地面上以稳定速度直线行走，需降低步速、缩短步幅以防滑倒",
+      "object_category": "地面环境",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "步态稳定性要求高"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备操作点-厘米级",
+      "l3_name_en": "Positioning-EquipmentOperationPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备旁的固定操作点精确停止站立，双脚到达便于操作设备或物料的最优位置",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-物料堆旁-作业位",
+      "l3_name_en": "Positioning-MaterialPileSide-WorkingPosition",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料堆旁精确站位，使身体与物料堆保持适宜的作业距离和角度",
+      "object_category": "物料堆",
+      "parameter_ranges": {
+        "size_range": "与物料堆距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-投料口旁-卸料位",
+      "l3_name_en": "Positioning-FeedingPort-UnloadingPosition",
+      "parent_l2_id": "L2-01-08",
+      "description": "在皮带输送机或料仓投料口旁精确停位，便于将物料倾倒入指定位置",
+      "object_category": "投料口",
+      "parameter_ranges": {
+        "size_range": "与投料口距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-长柄工具-单手侧持",
+      "l3_name_en": "LoadedWalking-LongHandleTool-SingleHandSideCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "单手握持铁锹、扫帚等长柄工具，工具竖直或倾斜靠在肩侧行走",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度1.0-1.5m",
+        "weight_range": "2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持工具稳定不碰撞周围"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-满载铁锹-双手前持",
+      "l3_name_en": "LoadedWalking-LoadedShovel-TwoHandFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手握持装满物料的铁锹，铲面保持水平或微倾斜状态行走，防止物料洒落",
+      "object_category": "满载铁锹",
+      "parameter_ranges": {
+        "size_range": "铲面宽度20-30cm",
+        "weight_range": "单铲物料5-15kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持铲面平稳防洒落"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝部高度",
+      "l3_name_en": "Bending-ModerateFlex-KneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴向前弯曲上身约45-60度，使手部能够到达膝盖高度的物体",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "手部到达高度40-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-从前屈位",
+      "l3_name_en": "Bending-RecoverUpright-FromFlexion",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰前屈状态恢复到直立站姿，脊柱和髋关节逐步伸展",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-深度前屈-地面作业位",
+      "l3_name_en": "Bending-DeepFlex-GroundWorkPosition",
+      "parent_l2_id": "L2-02-02",
+      "description": "深度弯腰使上身接近水平，手部能够到达地面或接近地面的物体进行作业",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "手部到达高度0-30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-02-02-004",
+      "l3_name_zh": "俯身-负载起身-保持工具平稳",
+      "l3_name_en": "Bending-LoadedRising-KeepToolSteady",
+      "parent_l2_id": "L2-02-02",
+      "description": "在双手持握满载工具的状态下从弯腰位恢复直立，同时保持工具姿态平稳防止物料洒落",
+      "object_category": "满载工具",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负载5-15kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持工具水平±10度"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-02-02-005",
+      "l3_name_zh": "俯身-轻度前倾-对准投料口",
+      "l3_name_en": "Bending-SlightLean-AlignFeedingPort",
+      "parent_l2_id": "L2-02-02",
+      "description": "身体轻度前倾约15-30度，使持握的工具能够准确对准投料口位置",
+      "object_category": "投料口",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "对准精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-负载状态",
+      "l3_name_en": "TrunkRotation-90to180Degrees-LoadedState",
+      "parent_l2_id": "L2-02-04",
+      "description": "在双手持握负载的状态下，以脊柱为轴旋转上半身90-180度改变朝向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负载5-15kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持负载稳定"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具存放处-近距直线",
+      "l3_name_en": "Reaching-ToolStorageArea-NearLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手臂沿直线伸向工具存放位置，准备抓取工具",
+      "object_category": "工具存放位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-长柄工具-垂直提起",
+      "l3_name_en": "Transfer-LongHandleTool-VerticalLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手或双手握持长柄工具后将其垂直向上提起到操作高度",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度1.0-1.5m",
+        "weight_range": "2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-铁锹-水平对准目标",
+      "l3_name_en": "Transfer-Shovel-HorizontalAlignment",
+      "parent_l2_id": "L2-03-02",
+      "description": "调整铁锹的空间位置和姿态，使铲头对准待铲取的物料位置",
+      "object_category": "铁锹",
+      "parameter_ranges": {
+        "size_range": "铲面宽度20-30cm",
+        "weight_range": "2-4kg",
+        "force_range": "不适用",
+        "precision_requirement": "对准精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-满载铁锹-垂直抬起",
+      "l3_name_en": "Transfer-LoadedShovel-VerticalLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "将装满物料的铁锹从地面位置垂直抬起，同时保持铲面水平防止物料滑落",
+      "object_category": "满载铁锹",
+      "parameter_ranges": {
+        "size_range": "铲面宽度20-30cm",
+        "weight_range": "单铲总重7-20kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持铲面水平±15度"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-02-004",
+      "l3_name_zh": "转移-铁锹-移至倚靠位",
+      "l3_name_en": "Transfer-Shovel-MoveToLeanPosition",
+      "parent_l2_id": "L2-03-02",
+      "description": "将铁锹移动到临时存放位置，使其可以倚靠在墙壁或设备旁",
+      "object_category": "铁锹",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-1.0m",
+        "weight_range": "2-4kg",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-铁锹倾倒-绕横轴90度",
+      "l3_name_en": "Reorientation-ShovelTipping-HorizontalAxis90Deg",
+      "parent_l2_id": "L2-03-04",
+      "description": "将满载铁锹绕横轴旋转约90度，使铲面从水平变为倾斜向下，物料自然滑落倒出",
+      "object_category": "满载铁锹",
+      "parameter_ranges": {
+        "size_range": "铲面宽度20-30cm",
+        "weight_range": "单铲总重7-20kg",
+        "force_range": "不适用",
+        "precision_requirement": "控制倾倒速度防飞溅"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-长柄工具-存放架位",
+      "l3_name_en": "PrecisionPlacement-LongHandleTool-StorageRack",
+      "parent_l2_id": "L2-03-05",
+      "description": "将长柄工具精确放置到指定的存放架或存放位置",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度1.0-1.5m",
+        "weight_range": "2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-03-08-001",
+      "l3_name_zh": "推送-散落物料-扫帚聚集",
+      "l3_name_en": "SlidingPush-ScatteredMaterial-BroomGathering",
+      "parent_l2_id": "L2-03-08",
+      "description": "使用扫帚沿地面推送散落的物料，将其聚集到一处便于后续铲运",
+      "object_category": "散落物料",
+      "parameter_ranges": {
+        "size_range": "清扫面积1-10m²",
+        "weight_range": "物料总量5-30kg",
+        "force_range": "推扫力5-20N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-铁锹-铲运功能姿",
+      "l3_name_en": "FunctionalToolGrasp-Shovel-ShovelingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以铲运作业所需的功能姿势握持铁锹手柄，一手握近端控制方向，一手握中段提供支撑力",
+      "object_category": "铁锹",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm",
+        "weight_range": "工具重2-4kg",
+        "force_range": "握持力20-50N",
+        "precision_requirement": "双手间距0.4-0.6m"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-扫帚-清扫功能姿",
+      "l3_name_en": "FunctionalToolGrasp-Broom-SweepingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以清扫作业所需的功能姿势握持扫帚柄，双手握持位置便于进行往复推拉动作",
+      "object_category": "扫帚",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-30mm",
+        "weight_range": "工具重0.5-2kg",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "双手间距0.3-0.5m"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已倚靠",
+      "l3_name_en": "ControlledRelease-GradualLoosen-ToolSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工具已有支撑（倚靠墙壁或存放架）的情况下逐渐松开手指释放对工具的握持",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "工具重2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "确保工具不倾倒"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-铁锹入料-匀力插入",
+      "l3_name_en": "SustainedPushing-ShovelIntoMaterial-SteadyInsertion",
+      "parent_l2_id": "L2-05-02",
+      "description": "双手握持铁锹向前持续施力，将铲头水平插入物料堆中",
+      "object_category": "滤饼物料堆",
+      "parameter_ranges": {
+        "size_range": "插入深度10-30cm",
+        "weight_range": "不适用",
+        "force_range": "推力50-150N",
+        "precision_requirement": "保持铲面水平"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-05-02-002",
+      "l3_name_zh": "推压-脚踩锹背-垂直下压",
+      "l3_name_en": "SustainedPushing-FootOnShovelBack-VerticalPress",
+      "parent_l2_id": "L2-05-02",
+      "description": "用脚踩踏铁锹背部边缘施加向下压力，使铲头更深入物料底部",
+      "object_category": "铁锹背部",
+      "parameter_ranges": {
+        "size_range": "踩踏面积约10×5cm",
+        "weight_range": "不适用",
+        "force_range": "下压力200-500N",
+        "precision_requirement": "保持身体平衡"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-05-02-003",
+      "l3_name_zh": "推压-杠杆撬起-下压手柄",
+      "l3_name_en": "SustainedPushing-LeverPrying-PressingHandle",
+      "parent_l2_id": "L2-05-02",
+      "description": "向下压铁锹手柄端，利用杠杆原理以物料边缘为支点将铲头连同物料撬起",
+      "object_category": "铁锹手柄",
+      "parameter_ranges": {
+        "size_range": "手柄长度1.0-1.3m",
+        "weight_range": "撬起物料5-15kg",
+        "force_range": "下压力80-200N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-05-05-001",
+      "l3_name_zh": "敲击-抖落残料-往复振动",
+      "l3_name_en": "ImpactTapping-ShakeOffResidue-ReciprocalVibration",
+      "parent_l2_id": "L2-05-05",
+      "description": "快速往复抖动铁锹产生振动，使粘附在铲面上的残留物料脱落",
+      "object_category": "铁锹铲面",
+      "parameter_ranges": {
+        "size_range": "振动幅度5-15cm",
+        "weight_range": "不适用",
+        "force_range": "抖动力10-30N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-08-05-001",
+      "l3_name_zh": "擦拭-滤布表面-刮除残料",
+      "l3_name_en": "SurfaceWiping-FilterClothSurface-ScrapingResidue",
+      "parent_l2_id": "L2-08-05",
+      "description": "用手或刮板沿滤布表面往复刮擦，清除粘附在滤布上的残留精矿",
+      "object_category": "滤布表面",
+      "parameter_ranges": {
+        "size_range": "滤布面积1-4m²",
+        "weight_range": "不适用",
+        "force_range": "刮擦力10-50N",
+        "precision_requirement": "覆盖全部表面"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-08-05-002",
+      "l3_name_zh": "擦拭-湿滑地面-扫帚往复清扫",
+      "l3_name_en": "SurfaceWiping-WetFloor-BroomReciprocalSweeping",
+      "parent_l2_id": "L2-08-05",
+      "description": "使用扫帚在湿滑地面上进行来回往复清扫动作，收集散落的物料",
+      "object_category": "工业地面",
+      "parameter_ranges": {
+        "size_range": "清扫面积1-10m²",
+        "weight_range": "不适用",
+        "force_range": "清扫力5-20N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-物料堆位置-作业规划",
+      "l3_name_en": "GazeAlignment-MaterialPileLocation-WorkPlanning",
+      "parent_l2_id": "L2-09-01",
+      "description": "转动头部使视线对准滤饼物料堆，观察其位置、体量和状态以规划铲运作业",
+      "object_category": "物料堆",
+      "parameter_ranges": {
+        "size_range": "观察距离1-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-滤布表面-残留检查",
+      "l3_name_en": "GazeAlignment-FilterClothSurface-ResidueInspection",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查滤布表面，识别残留精矿的分布位置和粘附程度",
+      "object_category": "滤布表面",
+      "parameter_ranges": {
+        "size_range": "观察距离0.5-1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别残留分布"
+      },
+      "is_new": true,
+      "source_scene": "9-91-00-精矿脱水-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-03-08",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-05-05",
+      "L2-08-05",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-02-02",
+    "涉及的L1数量": 8
+  }
+}

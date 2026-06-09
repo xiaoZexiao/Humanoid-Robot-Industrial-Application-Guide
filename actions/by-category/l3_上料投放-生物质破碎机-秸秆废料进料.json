@@ -1,0 +1,550 @@
+{
+  "scene_id": "25-254-2541",
+  "scene_name": "上料投放-生物质破碎机-秸秆废料进料",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机位置沿车间通道直线行走至原料堆旁",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-中速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在原料堆旁的取料位置调整站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料堆旁-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "视觉扫视原料堆选择适合抓取的秸秆/木屑位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-散料堆-取料点选择",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "以功能性握姿双手握持叉子手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-长柄叉-铲叉功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "弯腰俯身使叉子能够接触地面或低位原料堆",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-深度前屈-地面高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将持握的叉子向前伸向目标原料处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-长柄工具-轻载前伸",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]双手握持长柄叉子进行协调移动，虽叉子本身较轻但因双手操作归入双臂协调搬运",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将叉子齿端插入秸秆或木屑堆中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-叉齿入散料堆-松散无约束",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]叉齿插入松散物料堆，虽配合间隙大但仍需沿直线方向推进，归入直线插入而非持续推压",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "用叉子向上挑起一叉秸秆或木屑物料",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-叉载散料-中载抬升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "从弯腰状态恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-负载起身-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "站在原地转体面向破碎机进料口方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "持叉负载状态下行走至破碎机进料口旁",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具载物-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 12,
+      "human_description": "在破碎机进料口前方的投料位置调整站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-进料口前-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将载有物料的叉子抬升并移动到进料口上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-003",
+      "l3_name": "协搬-叉载物料-抬升至投放位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "倾斜叉子使秸秆或木屑滑落入破碎机进料口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-长柄工具前倾-45至90度卸料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "观察物料进入破碎机的状态确认无堵塞",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-破碎机进料口-运行状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "侧耳听破碎机运行声音判断是否正常无卡料",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-设备运转声-破碎机处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 15,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "转体面向原料堆方向准备返回取料",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90至180度-空载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "持空叉行走返回原料堆旁准备下一次取料",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-中速",
+      "is_new_l3": false,
+      "boundary_note": "[边界判定]空叉重量未超过机器人自重5%，归入平地直行而非负载行走",
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-中速",
+      "l3_name_en": "Walking-IndustrialFloor-MediumSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间环氧地坪或混凝土地面上以中等速度（0.8-1.2m/s）进行的常规直线行走",
+      "object_category": "地面环境",
+      "parameter_ranges": {
+        "size_range": "单次行走距离3-20m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±20cm以内"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料堆旁-分米级",
+      "l3_name_en": "Positioning-MaterialPileSide-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在散装物料堆旁的取料位置进行分米级精度的站位调整",
+      "object_category": "工位定点",
+      "parameter_ranges": {
+        "size_range": "调整范围±50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-进料口前-分米级",
+      "l3_name_en": "Positioning-InletFront-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在破碎机进料口前方的投料位置进行分米级精度的站位调整",
+      "object_category": "工位定点",
+      "parameter_ranges": {
+        "size_range": "调整范围±50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-长柄工具载物-双臂前持",
+      "l3_name_en": "LoadedWalking-LongHandleToolLoaded-BothArmsFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手前持长柄叉子或抓斗并装载有生物质散料状态下的行走运动",
+      "object_category": "长柄工具及载物",
+      "parameter_ranges": {
+        "size_range": "叉子长度1.2-1.8m，载物体积0.05-0.3m³",
+        "weight_range": "叉子+物料总重8-25kg",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±30cm以内"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-深度前屈-地面高度",
+      "l3_name_en": "Bending-DeepForwardFlexion-GroundLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "深度弯腰使手部或手持工具能够接触地面或近地面高度的物料",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "躯干前屈角度60-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-负载起身-恢复直立",
+      "l3_name_en": "Bending-LoadedRising-RestoreUpright",
+      "parent_l2_id": "L2-02-02",
+      "description": "在持握负载状态下从深度弯腰姿态恢复到直立站姿",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "躯干伸展角度60-90度",
+        "weight_range": "手持负载5-25kg",
+        "force_range": "腰部力矩[待补充]",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-负载状态",
+      "l3_name_en": "TrunkRotation-90to180Degrees-Loaded",
+      "parent_l2_id": "L2-02-04",
+      "description": "在手持负载状态下站在原地进行90至180度的躯干旋转以改变朝向",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度90-180度",
+        "weight_range": "手持负载5-25kg",
+        "force_range": "N/A",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90至180度-空载状态",
+      "l3_name_en": "TrunkRotation-90to180Degrees-Unloaded",
+      "parent_l2_id": "L2-02-04",
+      "description": "在空载或轻载状态下站在原地进行90至180度的躯干旋转以改变朝向",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度90-180度",
+        "weight_range": "手持轻载<5kg",
+        "force_range": "N/A",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-长柄工具-轻载前伸",
+      "l3_name_en": "BimanualCarrying-LongHandleTool-LightLoadReach",
+      "parent_l2_id": "L2-03-03",
+      "description": "双手握持长柄工具向前伸出以接近目标物料的协调运动",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度1.2-1.8m，前伸距离0.5-1.5m",
+        "weight_range": "工具重量2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-叉载散料-中载抬升",
+      "l3_name_en": "BimanualCarrying-ForkLoadedBulk-MediumLoadLifting",
+      "parent_l2_id": "L2-03-03",
+      "description": "双手协调将叉子连同其上的生物质散料从低位向上抬升",
+      "object_category": "长柄工具及载物",
+      "parameter_ranges": {
+        "size_range": "抬升高度0.5-1.5m",
+        "weight_range": "叉子+物料总重8-25kg",
+        "force_range": "臂力输出[待补充]",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-03-03-003",
+      "l3_name_zh": "协搬-叉载物料-抬升至投放位",
+      "l3_name_en": "BimanualCarrying-ForkLoadedMaterial-LiftToDischargePosition",
+      "parent_l2_id": "L2-03-03",
+      "description": "双手将载有物料的叉子抬升并移动到进料口上方的投放位置",
+      "object_category": "长柄工具及载物",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-1.0m，高度调整0.3-0.8m",
+        "weight_range": "叉子+物料总重8-25kg",
+        "force_range": "臂力输出[待补充]",
+        "precision_requirement": "位置精度±15cm"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-长柄工具前倾-45至90度卸料",
+      "l3_name_en": "Reorientation-LongHandleToolTilt-45to90DegreeDischarge",
+      "parent_l2_id": "L2-03-04",
+      "description": "将长柄叉子向前倾斜45至90度使上面的物料滑落到目标位置",
+      "object_category": "长柄工具及载物",
+      "parameter_ranges": {
+        "size_range": "倾斜角度45-90度",
+        "weight_range": "叉子+物料总重8-25kg",
+        "force_range": "控制力矩[待补充]",
+        "precision_requirement": "卸料落点精度±30cm"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-长柄叉-铲叉功能姿",
+      "l3_name_en": "ToolGrasp-LongHandleFork-ShovelingFunctionalPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合铲叉作业的功能性握姿双手握持长柄叉子手柄",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，握距0.4-0.8m",
+        "weight_range": "工具重量2-5kg",
+        "force_range": "握力20-80N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-叉齿入散料堆-松散无约束",
+      "l3_name_en": "Insertion-ForkTinesIntoBulkPile-LooseUnconstrained",
+      "parent_l2_id": "L2-07-01",
+      "description": "将叉子的齿端插入松散堆放的生物质原料堆中",
+      "object_category": "叉齿与散料",
+      "parameter_ranges": {
+        "size_range": "叉齿长度30-50cm，插入深度20-40cm",
+        "weight_range": "N/A",
+        "force_range": "插入力20-100N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-散料堆-取料点选择",
+      "l3_name_en": "Gaze-BulkPile-PickupPointSelection",
+      "parent_l2_id": "L2-09-01",
+      "description": "视觉扫视散装物料堆以选择适合抓取的位置和物料形态",
+      "object_category": "视觉目标",
+      "parameter_ranges": {
+        "size_range": "扫视范围2-5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-破碎机进料口-运行状态确认",
+      "l3_name_en": "Gaze-CrusherInlet-OperationStatusConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "注视破碎机进料口观察物料进入状态确认无堵塞",
+      "object_category": "视觉目标",
+      "parameter_ranges": {
+        "size_range": "观察区域0.5-1m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-设备运转声-破碎机处",
+      "l3_name_en": "Listening-EquipmentOperationSound-AtCrusher",
+      "parent_l2_id": "L2-09-05",
+      "description": "调整头部朝向侧听破碎机运转声音以判断是否存在卡料或异常",
+      "object_category": "声学目标",
+      "parameter_ranges": {
+        "size_range": "听音距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "25-254-2541-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-04-03",
+      "L2-07-01",
+      "L2-09-01",
+      "L2-09-05"
+    ],
+    "最高频L2": "L2-03-03",
+    "涉及的L1数量": 6
+  }
+}

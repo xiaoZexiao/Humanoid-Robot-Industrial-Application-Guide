@@ -1,0 +1,353 @@
+{
+  "scene_id": "39-00-3974",
+  "scene_name": "装配贴合-显示屏模组-柔性OLED异形曲面",
+  "total_steps": 11,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "将视线对准料盘，定位待取出的柔性OLED屏位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-料盘物料-取料定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "将手臂从工位待机位置伸向料盘上方，准备取料",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-料盘上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "用拇指和食指从侧面轻轻捏住柔性OLED屏的边缘部位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-超薄柔性膜边缘",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 柔性OLED虽为柔性材料，但捏取边缘时不产生可观察形变，主要挑战是厚度极薄(0.1-0.3mm)而非柔性变形，故归入L2-04-02精密捏取而非L2-04-04形变适应抓取",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将柔性屏从料盘中平稳提起并转移至贴合治具正上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-超薄柔性面板-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "注视贴合治具上的定位标记，确认柔性屏与治具的对准状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-治具定位标记-对准确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将柔性屏的一端边缘精确对准并轻放到治具曲面的起始位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-柔性显示屏端部-亚毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "柔性屏一端已接触治具后，逐步松开对边缘的捏持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体部分支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将手指移动到柔性屏背面的已贴合端起始位置，准备压合",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工件背面-压合起始位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "手指沿曲面轮廓从已贴合端向另一端滑动，持续施加法向压力使柔性屏紧密贴合，排除气泡",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-02",
+      "l2_name": "曲面适形打磨",
+      "l3_id": "L3-08-02-001",
+      "l3_name": "曲面压合-柔性屏贴附-小曲率半径",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽然L2-08-02命名为'曲面适形打磨'，但其核心运动特征（沿曲面运动+法向力控制+姿态自适应）与柔性屏贴合压合完全一致。在现有L2框架下，这是最合适的分类。L3层面通过命名体现具体应用为'压合贴附'而非'打磨'",
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 10,
+      "human_description": "视线沿贴合完成的柔性屏表面扫描，检查是否存在气泡、褶皱或边缘翘起",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-贴合面质量-线性扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "完成贴合后将手从屏幕表面撤回至工位待机位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-空中回撤-工位待机",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-料盘物料-取料定位",
+      "l3_name_en": "Gaze-TrayMaterial-PickupPositioning",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准料盘中的待取物料，确认其精确位置和姿态，为后续精密取料动作提供视觉定位",
+      "object_category": "料盘/物料盒",
+      "parameter_ranges": {
+        "size_range": "料盘尺寸200-400mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-料盘上方-无障碍直线",
+      "l3_name_en": "Reach-AboveTray-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手臂从当前位置沿直线路径伸向料盘上方，为后续抓取动作做准备",
+      "object_category": "不适用（空载）",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-超薄柔性膜边缘",
+      "l3_name_en": "Pinch-TwoFingerOpposed-UltrathinFlexibleFilmEdge",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指指腹从侧面轻轻捏住超薄柔性材料（如OLED柔性屏、柔性电路板）的边缘部位，避免对主体功能区域造成接触压力",
+      "object_category": "超薄柔性膜/柔性显示屏/柔性电路板",
+      "parameter_ranges": {
+        "size_range": "5-15英寸（对角线）",
+        "weight_range": "5-50g",
+        "force_range": "捏持力0.5-2N",
+        "precision_requirement": "捏持位置精度±1mm，边缘宽度3-10mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-超薄柔性面板-近距",
+      "l3_name_en": "Transfer-UltrathinFlexiblePanel-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手捏持超薄柔性面板边缘，从取料位置平稳转移至作业位置上方，全程保持面板平整避免弯折变形",
+      "object_category": "超薄柔性面板/柔性显示屏",
+      "parameter_ranges": {
+        "size_range": "5-15英寸，厚度0.1-0.3mm",
+        "weight_range": "5-50g",
+        "force_range": "维持捏持力0.5-2N",
+        "precision_requirement": "转移距离0.2-0.5m，路径平稳无冲击"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-治具定位标记-对准确认",
+      "l3_name_en": "Gaze-JigAlignmentMark-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准贴合治具上的定位标记或边缘线，实时确认待贴合物料与治具的相对位置对准状态",
+      "object_category": "定位标记/贴合治具",
+      "parameter_ranges": {
+        "size_range": "标记尺寸1-5mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视觉分辨精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-柔性显示屏端部-亚毫米级",
+      "l3_name_en": "PrecisionPlace-FlexibleDisplayEdge-SubMillimeter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将柔性显示屏的一端边缘精确放置到贴合治具曲面的起始位置，对准精度达到亚毫米级，作为后续渐进贴合的基准端",
+      "object_category": "柔性显示屏端部",
+      "parameter_ranges": {
+        "size_range": "5-15英寸屏幕",
+        "weight_range": "5-50g",
+        "force_range": "接触力<1N",
+        "precision_requirement": "定位精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体部分支撑",
+      "l3_name_en": "Release-GradualFingerOpen-PartiallySupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有部分支撑（如一端已接触治具表面）的情况下，逐步松开手指对物体边缘的捏持，确保释放过程平稳无冲击",
+      "object_category": "通用/已部分支撑物体",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "通用",
+        "force_range": "从捏持力渐减至0",
+        "precision_requirement": "松开速度可控，无突然脱落"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工件背面-压合起始位",
+      "l3_name_en": "Reach-WorkpieceBackside-LaminationStart",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手状态下将手指移动到已放置工件的背面（远离治具侧）起始位置，准备进行渐进式表面压合操作",
+      "object_category": "不适用（空载）",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-08-02-001",
+      "l3_name_zh": "曲面压合-柔性屏贴附-小曲率半径",
+      "l3_name_en": "CurvedSurfaceLamination-FlexibleScreenBonding-SmallCurvatureRadius",
+      "parent_l2_id": "L2-08-02",
+      "description": "手指沿三维曲面轮廓从已贴合端向另一端连续滑动，同时施加垂直于曲面的法向压力，使柔性屏紧密贴合到曲面基底上；需实时调整手指姿态以保持与局部曲面法向对准，控制压合速度和力度以排除气泡、避免褶皱",
+      "object_category": "柔性显示屏/曲面贴合基底",
+      "parameter_ranges": {
+        "size_range": "5-15英寸屏幕，曲率半径≥3mm",
+        "weight_range": "不适用（压合过程）",
+        "force_range": "法向压合力2-10N",
+        "precision_requirement": "压合速度5-20mm/s，气泡直径<0.3mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-贴合面质量-线性扫描",
+      "l3_name_en": "ScanInspect-LaminationQuality-LinearScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线沿贴合完成的柔性屏表面进行线性扫描，系统检查是否存在气泡、褶皱、边缘翘起或贴合不良等缺陷",
+      "object_category": "贴合面/显示屏表面",
+      "parameter_ranges": {
+        "size_range": "5-15英寸屏幕面积",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可视缺陷检出尺寸≥0.3mm"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-空中回撤-工位待机",
+      "l3_name_en": "Reach-AerialRetract-StationStandby",
+      "parent_l2_id": "L2-03-01",
+      "description": "完成作业后将手从工件表面撤回至工位待机位置，准备下一循环操作",
+      "object_category": "不适用（空载）",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "回撤距离0.1-0.3m"
+      },
+      "is_new": true,
+      "source_scene": "39-00-3974-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-08-02",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-03-01（空载伸达，3次）",
+    "涉及的L1数量": 4
+  }
+}

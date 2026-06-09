@@ -1,0 +1,485 @@
+{
+  "scene_id": "33-338-3381",
+  "scene_name": "抛光打磨-金属厨具-镜面处理",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从物料区沿车间通道直行步行至抛光机工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在抛光机操作位前精确调整站位，确保身体与抛光轮保持安全工作距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-抛光机工位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "双臂空手伸向物料架上待抛光的锅具/盆具",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "左手全握抓住锅具/盆具的左侧边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-环形边缘-直径200至600mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "5",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "右手全握抓住锅具/盆具的右侧边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-环形边缘-直径200至600mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "4",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂协调将工件从物料架搬运至身前工作区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆盘状厨具-轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂旋转调整工件角度使待抛光表面朝向抛光轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-角度调整",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调将工件靠近高速旋转的抛光轮至接触位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-厨具趋近-精确进给",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]此动作将工件移向抛光轮是为后续抛光做位置准备，属于搬运移动而非抛光作业本身",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "控制工件外表面贴靠抛光轮，施加适当压力开始抛光",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-02",
+      "l2_name": "曲面适形打磨",
+      "l3_id": "L3-08-02-001",
+      "l3_name": "曲磨-不锈钢厨具外表面-镜面抛光",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-40"
+    },
+    {
+      "step_order": 10,
+      "human_description": "沿工件外表面曲面移动进行均匀抛磨覆盖外表面全部区域",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-02",
+      "l2_name": "曲面适形打磨",
+      "l3_id": "L3-08-02-001",
+      "l3_name": "曲磨-不锈钢厨具外表面-镜面抛光",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-50"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将工件从抛光轮处移开以便翻转",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-厨具趋近-精确进给",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双臂将工件翻转180度使内表面朝向抛光轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-绕水平轴-180度翻面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将工件内表面贴靠抛光轮进行内壁抛光",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-02",
+      "l2_name": "曲面适形打磨",
+      "l3_id": "L3-08-02-002",
+      "l3_name": "曲磨-不锈钢厨具内表面-镜面抛光",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]内表面为凹曲面，与外表面凸曲面的抛光在工具姿态适应上有差异，分列为不同L3",
+      "parallel_with": null,
+      "duration_estimate": "20-60"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将完成抛光的工件从抛光轮处移开到检查位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆盘状厨具-轻载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "转头注视工件表面检查抛光光洁度是否达到镜面要求",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-厨具抛光表面-光洁度检查",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]需要扫视整个工件表面检查光洁度均匀性，覆盖面积>0.1m²，归入区域扫描而非单点注视",
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双臂协调将合格工件搬运至成品区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆盘状厨具-轻载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双手逐步松开将工件轻放到成品架上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "转身面向物料区准备取下一工件",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-换向取料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walking-WorkshopFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上以匀速直线行走，从物料区移动到加工工位或在工位间移动",
+      "object_category": "工业厂房地面",
+      "parameter_ranges": {
+        "size_range": "步行距离3-30m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径精度±30cm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-抛光机工位-厘米级",
+      "l3_name_en": "Positioning-PolishingStation-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在抛光机前的操作位置精确停位，确保双脚站位使身体与抛光轮保持合适的工作距离和角度",
+      "object_category": "抛光机工位标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域50×50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm，朝向精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架上方-无障碍直线",
+      "l3_name_en": "Reaching-MaterialRackAbove-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂空载状态伸向物料架上方的工件位置，沿无障碍直线路径移动准备抓取",
+      "object_category": "物料架空间",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-环形边缘-直径200至600mm",
+      "l3_name_en": "PowerGrasp-CircularRim-Diameter200to600mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握锅具、盆具等圆形容器的边缘部分，手掌和多指共同用力确保持握稳定",
+      "object_category": "圆形容器边缘",
+      "parameter_ranges": {
+        "size_range": "边缘直径200-600mm，边缘厚度2-8mm",
+        "weight_range": "工件重量0.5-3kg",
+        "force_range": "握持力20-60N",
+        "precision_requirement": "握持位置精度±1cm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-圆盘状厨具-轻载",
+      "l3_name_en": "BimanualCarry-DiscShapedCookware-LightLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调持握圆盘状金属厨具（锅、盆）进行空间搬运，保持工件水平稳定",
+      "object_category": "圆盘状金属厨具",
+      "parameter_ranges": {
+        "size_range": "直径200-600mm，高度50-200mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "持握力20-60N",
+        "precision_requirement": "搬运终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-厨具趋近-精确进给",
+      "l3_name_en": "BimanualCarry-CookwareApproach-PrecisionFeed",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将手持厨具工件缓慢精确地靠近或离开高速旋转抛光轮，控制接近速度和最终距离",
+      "object_category": "圆盘状金属厨具",
+      "parameter_ranges": {
+        "size_range": "移动距离10-50cm",
+        "weight_range": "0.5-3kg",
+        "force_range": "持握力20-60N",
+        "precision_requirement": "位置精度±5mm，速度<10cm/s"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-角度调整",
+      "l3_name_en": "Reorientation-AroundHorizontalAxis-AngleAdjust",
+      "parent_l2_id": "L2-03-04",
+      "description": "双手持握工件绕水平轴旋转调整角度，使目标加工面朝向正确方向",
+      "object_category": "圆盘状金属工件",
+      "parameter_ranges": {
+        "size_range": "工件直径200-600mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "操控力矩2-8Nm",
+        "precision_requirement": "角度精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "翻转-绕水平轴-180度翻面",
+      "l3_name_en": "Reorientation-AroundHorizontalAxis-180DegreeFlip",
+      "parent_l2_id": "L2-03-04",
+      "description": "双手持握工件绕水平轴翻转180度，使工件的另一面朝向加工位置",
+      "object_category": "圆盘状金属工件",
+      "parameter_ranges": {
+        "size_range": "工件直径200-600mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "操控力矩3-10Nm",
+        "precision_requirement": "翻转角度180°±15°"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-08-02-001",
+      "l3_name_zh": "曲磨-不锈钢厨具外表面-镜面抛光",
+      "l3_name_en": "CurvedPolishing-StainlessCookwareOuter-MirrorFinish",
+      "parent_l2_id": "L2-08-02",
+      "description": "手持不锈钢厨具将其凸曲面外表面贴靠高速旋转的布轮/砂轮，控制压力和角度沿曲面均匀移动实现镜面抛光效果",
+      "object_category": "不锈钢厨具外表面（凸曲面）",
+      "parameter_ranges": {
+        "size_range": "曲率半径100-300mm，抛光面积0.03-0.3m²",
+        "weight_range": "工件0.5-3kg",
+        "force_range": "法向压力5-30N",
+        "precision_requirement": "表面粗糙度Ra≤0.1μm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-08-02-002",
+      "l3_name_zh": "曲磨-不锈钢厨具内表面-镜面抛光",
+      "l3_name_en": "CurvedPolishing-StainlessCookwareInner-MirrorFinish",
+      "parent_l2_id": "L2-08-02",
+      "description": "手持不锈钢厨具将其凹曲面内表面贴靠高速旋转的布轮，控制压力和角度沿内凹曲面均匀移动实现镜面抛光效果",
+      "object_category": "不锈钢厨具内表面（凹曲面）",
+      "parameter_ranges": {
+        "size_range": "曲率半径100-300mm，抛光面积0.03-0.25m²",
+        "weight_range": "工件0.5-3kg",
+        "force_range": "法向压力5-25N",
+        "precision_requirement": "表面粗糙度Ra≤0.1μm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-厨具抛光表面-光洁度检查",
+      "l3_name_en": "AreaScan-CookwarePolishedSurface-FinishInspection",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视已抛光厨具的完整表面，检查镜面光洁度是否均匀达标、有无抛光痕迹或遗漏区域",
+      "object_category": "抛光后金属厨具表面",
+      "parameter_ranges": {
+        "size_range": "扫视面积0.03-0.5m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别Ra0.1级别光洁度差异"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工件已稳定放置于支撑面上后，逐步松开手指解除抓握，确保工件不发生倾倒或滑落",
+      "object_category": "已放置的工件",
+      "parameter_ranges": {
+        "size_range": "适用于各尺寸工件",
+        "weight_range": "0.1-5kg",
+        "force_range": "握力从初始值渐降至0",
+        "precision_requirement": "释放过程工件位移<5mm"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-换向取料",
+      "l3_name_en": "TrunkRotation-90to180Degree-TurnForMaterial",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不移动，上身绕脊柱纵轴旋转90-180度，将身体朝向从成品区切换到物料区方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±15°"
+      },
+      "is_new": true,
+      "source_scene": "33-338-3381-006"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-08-02",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-03-03",
+    "涉及的L1数量": 6
+  }
+}

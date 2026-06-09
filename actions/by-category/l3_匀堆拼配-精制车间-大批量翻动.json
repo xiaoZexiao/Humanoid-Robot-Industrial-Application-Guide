@@ -1,0 +1,669 @@
+{
+  "scene_id": "15-153-1530",
+  "scene_name": "匀堆拼配-精制车间-大批量翻动",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置步行至匀堆区指定茶堆操作位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在茶堆边缘找到适合操作的位置精确站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料堆边缘-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手至工具架上茶铲存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架侧方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "以翻动操作所需的功能姿势抓握茶铲长柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-长柄铲-翻动操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将茶铲从工具架移至身前工作准备位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-长柄工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "弯腰俯身使茶铲能够接触到茶堆表面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将茶铲沿斜向下方向推入松散茶叶堆中",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-松散物料堆-斜向插入推",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "向上撬起茶铲将茶叶铲离茶堆并抬起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-铲载散料-上抬短距",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]此步骤虽涉及向上力，但主要目的是将铲载物料从堆中提离并转移，力作用点变化，属于负载转移而非持续推压",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "持铲转体朝向茶叶抛撒的目标区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-60至120度-向侧方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "翻转茶铲使茶叶倾倒抛撒至目标位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕横轴-90度倾倒",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "转体复位面向茶堆准备下一次翻动",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-60至120度-复位回正",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "从弯腰姿态起身直立以调整位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身复位-直立恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "沿茶堆边缘弧线移动到新的操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-小角度弧线-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "在茶堆新位置精确站定准备继续翻动",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料堆边缘-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "目视注视茶堆表面判断茶叶混合状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-散料堆表面-均匀度判断",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "弯腰靠近茶叶堆以便近距检视",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "近距离仔细检视茶叶混合均匀程度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-茶叶混合面-均匀度检视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 18,
+      "human_description": "空手伸向茶叶表面准备触摸检查",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-物料表面-低位探入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "用手指触摸茶叶感知质地和湿度状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-质地湿度-茶叶表面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "起身直立准备归位工具",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身复位-直立恢复",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "步行至工具架存放位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将茶铲放置到工具架指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-长柄工具-归位放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "松开手指释放茶铲",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "步行离开匀堆工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walking-WorkshopFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间内水平地坪上以匀速步态直线行走，地面为水泥或环氧树脂材质",
+      "object_category": "车间地坪",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±0.3m"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料堆边缘-分米级",
+      "l3_name_en": "StopPosition-MaterialPileEdge-DecimeterPrecision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在松散物料堆边缘精确站位，确保手臂操作范围覆盖工作区域",
+      "object_category": "物料堆边缘",
+      "parameter_ranges": {
+        "size_range": "距物料堆边缘0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架侧方-无障碍直线",
+      "l3_name_en": "Reaching-ToolRackSide-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿无障碍直线路径伸向身侧工具架上的工具存放位置",
+      "object_category": "工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-长柄铲-翻动操作姿",
+      "l3_name_en": "ToolGrasp-LongHandledShovel-TurningOperationPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以支持翻动操作的功能姿势握持长柄铲具，双手分握铲柄不同位置以获得杠杆力臂",
+      "object_category": "长柄铲类工具",
+      "parameter_ranges": {
+        "size_range": "铲柄长度1.0-1.5m，柄径25-40mm",
+        "weight_range": "工具重量1-3kg",
+        "force_range": "握力15-40N",
+        "precision_requirement": "握持位置±5cm"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-长柄工具-近距",
+      "l3_name_en": "Transfer-LongHandledTool-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持长柄工具在近距离范围内进行空间转移移动",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "移动距离0.2-0.6m",
+        "weight_range": "1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Bending-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴心前屈约45-60度，使手部工作高度降至腰部以下",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "前屈角度45-60度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-松散物料堆-斜向插入推",
+      "l3_name_en": "Pushing-LooseMaterialPile-AngledInsertion",
+      "parent_l2_id": "L2-05-02",
+      "description": "将铲具沿斜向下方向（约30-45度角）持续推入松散颗粒物料堆中",
+      "object_category": "松散颗粒物料",
+      "parameter_ranges": {
+        "size_range": "插入深度0.1-0.3m",
+        "weight_range": "单铲物料2-8kg",
+        "force_range": "推力20-80N",
+        "precision_requirement": "角度偏差±15度"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-铲载散料-上抬短距",
+      "l3_name_en": "Transfer-ShovelLoadedBulk-LiftShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "将铲载松散物料从物料堆中撬起并向上抬离，完成短距离垂直方向转移",
+      "object_category": "铲载松散物料",
+      "parameter_ranges": {
+        "size_range": "上抬距离0.3-0.8m",
+        "weight_range": "铲载重量2-8kg（含工具）",
+        "force_range": "抬升力30-100N",
+        "precision_requirement": "防洒落平稳控制"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-60至120度-向侧方",
+      "l3_name_en": "TrunkRotation-60to120Deg-ToSide",
+      "parent_l2_id": "L2-02-04",
+      "description": "保持双脚位置不变，上身绕垂直轴向左或向右旋转60-120度",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "旋转角度60-120度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕横轴-90度倾倒",
+      "l3_name_en": "Flip-AroundHorizontalAxis-90DegDump",
+      "parent_l2_id": "L2-03-04",
+      "description": "将手持铲具绕横轴方向翻转约90度，使铲面从水平变为垂直，实现物料倾倒",
+      "object_category": "铲载物料",
+      "parameter_ranges": {
+        "size_range": "翻转角度80-100度",
+        "weight_range": "铲载重量2-8kg",
+        "force_range": "翻转力矩[待补充]",
+        "precision_requirement": "控制抛撒落点±0.3m"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-60至120度-复位回正",
+      "l3_name_en": "TrunkRotation-60to120Deg-ReturnToCenter",
+      "parent_l2_id": "L2-02-04",
+      "description": "从侧向转体姿态恢复到正面朝向原工作方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "旋转角度60-120度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身复位-直立恢复",
+      "l3_name_en": "Bending-RiseUp-StandingRecovery",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复到直立站姿",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "起身角度45-60度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "稳定恢复直立"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-小角度弧线-连续步态",
+      "l3_name_en": "DirectionalWalk-SmallAngleCurve-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "沿小角度弧线路径连续步行移动，适用于绕物料堆移动换位",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "弧线半径1-3m，弧长1-4m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±0.2m"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-散料堆表面-均匀度判断",
+      "l3_name_en": "Gaze-BulkMaterialSurface-UniformityJudgment",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视注视松散物料堆表面，判断不同批次物料的混合均匀程度",
+      "object_category": "散料堆表面",
+      "parameter_ranges": {
+        "size_range": "观察面积1-10m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "颜色/纹理差异识别"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-茶叶混合面-均匀度检视",
+      "l3_name_en": "CloseInspection-TeaBlendSurface-UniformityCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离仔细检视茶叶混合面，观察不同等级茶叶的分布均匀性",
+      "object_category": "茶叶混合表面",
+      "parameter_ranges": {
+        "size_range": "观察距离0.1-0.3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "细节分辨能力"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-物料表面-低位探入",
+      "l3_name_en": "Reaching-MaterialSurface-LowPositionProbing",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手将手臂伸向低位物料表面，为触觉检测做准备",
+      "object_category": "物料表面",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-质地湿度-茶叶表面",
+      "l3_name_en": "TactileProbe-TextureMoisture-TeaLeafSurface",
+      "parent_l2_id": "L2-09-04",
+      "description": "用手指轻触茶叶表面感知茶叶的质地、干燥度和松散程度",
+      "object_category": "茶叶表面",
+      "parameter_ranges": {
+        "size_range": "接触面积约2-10cm²",
+        "weight_range": "不适用",
+        "force_range": "接触力<2N",
+        "precision_requirement": "质地/湿度感知"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-长柄工具-归位放置",
+      "l3_name_en": "Transfer-LongHandledTool-ReturnPlacement",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手持长柄工具移动至工具架并放置到指定存放位置",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.8m",
+        "weight_range": "1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置位置±10cm"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ToolSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工具已由外部结构支撑的状态下逐步松开手指完成释放",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "1-5kg",
+        "force_range": "释放过程力渐降",
+        "precision_requirement": "防止工具滑落"
+      },
+      "is_new": true,
+      "source_scene": "15-153-1530-BlendingPiling-BulkTurning"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-04"
+    ],
+    "最高频L2": "L2-02-02",
+    "涉及的L1数量": 6
+  }
+}

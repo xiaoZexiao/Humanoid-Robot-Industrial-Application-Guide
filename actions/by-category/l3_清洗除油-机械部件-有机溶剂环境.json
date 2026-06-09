@@ -1,0 +1,991 @@
+{
+  "scene_id": "43-432-4320",
+  "scene_name": "清洗除油-机械部件-有机溶剂环境",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置步行到上游拆解工位的待清洗部件存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在待清洗机械部件前精确调整站位，便于后续抓取操作",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料存放点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰降低身体重心，使双手能够触及低位存放的机械部件",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "目视检查待清洗部件的油污程度和部件状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-机械部件-污染评估",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手同时伸向机械部件的抓取位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料区域-双臂同步",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手全握包络机械部件，确保抓持稳固",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-中型机械件-双手满握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调将机械部件从存放位置提起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-中型机械件-双臂托举",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "从弯腰姿态恢复到直立站姿，同时保持对部件的持握",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-起立恢复-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰恢复直立涉及膝关节配合，按起立动作归类",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手持机械部件从接收区步行到清洗工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型部件-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在清洗槽前精确停位，身体正对清洗槽",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-清洗槽前-操作位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "目视检查清洗槽液位和溶剂状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-清洗槽液面-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双臂协调将机械部件缓慢下放浸入清洗槽溶剂中",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-浸入清洗槽-垂直下放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "逐步松开手指，将部件放置在清洗筐或悬挂架上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-槽内支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将双手从清洗槽溶剂中抽回到槽口上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-槽外空间-手部回撤",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "转动上半身面向清洗枪挂架位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手到清洗枪挂架位置准备取枪",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具挂架-单臂",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "以操作姿势握持高压清洗枪手柄，食指扣住扳机位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-清洗枪-扳机操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将清洗枪从挂架上取下并移向清洗槽方向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-清洗工具-近距取用",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "食指按压清洗枪扳机启动高压溶剂喷射",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-扳机开关-启动喷射",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "手持清洗枪沿部件表面移动，用高压溶剂冲洗各个油污区域",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "高压喷洗-有机溶剂-机械部件表面",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]高压清洗与喷涂运动模式一致（非接触、保持枪距、沿路径移动），归入L2-08-03，在L3层面区分清洗与涂覆",
+      "parallel_with": null,
+      "duration_estimate": "60-300"
+    },
+    {
+      "step_order": 21,
+      "human_description": "释放清洗枪扳机停止喷射",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-扳机释放-停止喷射",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将清洗枪移回挂架位置并放回原位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-清洗工具-归位挂架",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "松开手指释放清洗枪使其挂回挂架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-工具归位-挂架支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双手伸入清洗槽到达已清洗部件位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-清洗槽内-双臂同步",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "双手重新抓握清洗后的机械部件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-中型机械件-双手满握",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "双臂将部件从清洗槽中提起并保持悬空让溶剂沥干",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-003",
+      "l3_name": "协搬-槽中提起-垂直上提",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "保持部件悬空姿态使残留溶剂自然滴落",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-悬空托举-沥干等待",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 28,
+      "human_description": "目视检查部件表面清洗效果，确认油污已去除",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-部件表面-清洁度检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 29,
+      "human_description": "翻转部件检查各个面的清洗效果",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-多面检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 30,
+      "human_description": "持部件步行到下游检测评估区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型部件-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 31,
+      "human_description": "在检测台前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-检测工位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 32,
+      "human_description": "将清洗后部件精确放置到检测台指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-机械部件-检测台位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 33,
+      "human_description": "逐步松开手指释放部件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-台面支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walking-WorkshopFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上以稳定速度直线行走，从一个工位移动到另一个工位",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料存放点-厘米级",
+      "l3_name_en": "Positioning-MaterialStoragePoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料存放区域前精确调整站位，使身体位于最佳抓取距离",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-清洗槽前-操作位",
+      "l3_name_en": "Positioning-WashingTankFront-OperationPosition",
+      "parent_l2_id": "L2-01-08",
+      "description": "在清洗槽前精确调整站位，身体正对清洗槽便于浸泡和清洗操作",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-检测工位-厘米级",
+      "l3_name_en": "Positioning-InspectionStation-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在检测工位前精确调整站位，便于将部件放置到检测台",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型部件-双臂前持",
+      "l3_name_en": "LoadedWalking-MediumPart-BimanualFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身前托持中型机械部件状态下的平稳行走，需要调整步态以适应负载",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "负载重力50-500N",
+        "precision_requirement": "步态稳定性"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Bending-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以腰部为轴向前弯曲约45-60度，使双手可触及腰部以下高度的物体",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "弯曲角度45-60度"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-起立恢复-负载状态",
+      "l3_name_en": "Squat-RisingRecovery-LoadedState",
+      "parent_l2_id": "L2-02-03",
+      "description": "在双手持有负载状态下从弯腰或半蹲姿态恢复到直立站姿",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "负载0.5-50kg",
+        "force_range": "腿部发力克服负载",
+        "precision_requirement": "保持负载稳定"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向侧方",
+      "l3_name_en": "TrunkRotation-90Degrees-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身以脊柱为轴水平旋转约90度，转向侧面方向",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度80-100度"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料区域-双臂同步",
+      "l3_name_en": "Reaching-MaterialArea-BimanualSync",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向物料存放区域伸展，准备进行双手抓取",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "双手到达位置±30mm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-槽外空间-手部回撤",
+      "l3_name_en": "Reaching-OutsideTank-HandRetraction",
+      "parent_l2_id": "L2-03-01",
+      "description": "将双手从清洗槽溶剂中抽回到槽口上方的安全区域",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "回撤距离200-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免溶剂飞溅"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-工具挂架-单臂",
+      "l3_name_en": "Reaching-ToolRack-SingleArm",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向工具挂架方向伸展，准备取用挂置的清洗工具",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "手部到达工具位置±20mm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-清洗槽内-双臂同步",
+      "l3_name_en": "Reaching-InsideTank-BimanualSync",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向清洗槽内部伸展，准备抓取槽内的清洗后部件",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸入深度200-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "双手到达部件位置±30mm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-清洗工具-近距取用",
+      "l3_name_en": "Transfer-CleaningTool-ShortDistancePickup",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持清洗枪从挂架位置移至工作区域，移动距离较短",
+      "object_category": "清洗工具",
+      "parameter_ranges": {
+        "size_range": "工具长度300-600mm",
+        "weight_range": "1-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-清洗工具-归位挂架",
+      "l3_name_en": "Transfer-CleaningTool-ReturnToRack",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持清洗枪从工作区域移回挂架位置归位",
+      "object_category": "清洗工具",
+      "parameter_ranges": {
+        "size_range": "工具长度300-600mm",
+        "weight_range": "1-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "对准挂架±10mm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-中型机械件-双臂托举",
+      "l3_name_en": "BimanualCarry-MediumMechanicalPart-DualArmLift",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调托举中型机械部件，从存放位置提起或移动",
+      "object_category": "机械部件（齿轮、轴承座、阀体等）",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "提升力50-500N",
+        "precision_requirement": "双臂协调同步"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-浸入清洗槽-垂直下放",
+      "l3_name_en": "BimanualCarry-ImmersionIntoTank-VerticalLowering",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将机械部件缓慢垂直下放浸入清洗槽溶剂中",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "控制下降速度",
+        "precision_requirement": "避免溶剂飞溅，下降速度<0.2m/s"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-03-003",
+      "l3_name_zh": "协搬-槽中提起-垂直上提",
+      "l3_name_en": "BimanualCarry-LiftFromTank-VerticalRaising",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将清洗后的机械部件从清洗槽中垂直提起",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "提升力50-500N",
+        "precision_requirement": "保持稳定避免溶剂飞溅"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-多面检查",
+      "l3_name_en": "Flip-AroundHorizontalAxis-MultiFaceInspection",
+      "parent_l2_id": "L2-03-04",
+      "description": "在持握状态下将部件绕水平轴旋转，逐一检查各个表面的清洗效果",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "翻转力矩依尺寸而定",
+        "precision_requirement": "翻转角度90-180度"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-机械部件-检测台位",
+      "l3_name_en": "PrecisionPlacement-MechanicalPart-InspectionTablePosition",
+      "parent_l2_id": "L2-03-05",
+      "description": "将清洗后的机械部件精确放置到检测台的指定位置",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-中型机械件-双手满握",
+      "l3_name_en": "PowerGrasp-MediumMechanicalPart-BimanualFullGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手同时对中型机械部件进行全手掌包络式抓握，确保搬运过程稳固",
+      "object_category": "机械部件（齿轮、轴承座、阀体等）",
+      "parameter_ranges": {
+        "size_range": "抓握尺寸100-300mm",
+        "weight_range": "5-50kg",
+        "force_range": "抓握力50-200N",
+        "precision_requirement": "抓持稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-清洗枪-扳机操作姿",
+      "l3_name_en": "FunctionalGrasp-WashGun-TriggerOperationPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以功能操作姿势握持高压清洗枪手柄，食指扣住扳机位置便于启停控制",
+      "object_category": "清洗工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "1-3kg",
+        "force_range": "抓握力20-50N",
+        "precision_requirement": "食指可灵活操作扳机"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-槽内支撑",
+      "l3_name_en": "Release-GradualFingerOpen-InTankSupport",
+      "parent_l2_id": "L2-04-07",
+      "description": "在清洗槽内将部件放置到清洗筐后逐步张开手指释放部件",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "5-50kg",
+        "force_range": "逐步减小至0",
+        "precision_requirement": "确保部件稳定落位"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-工具归位-挂架支撑",
+      "l3_name_en": "Release-ToolReturn-RackSupport",
+      "parent_l2_id": "L2-04-07",
+      "description": "将清洗枪挂回挂架后松开手指释放工具",
+      "object_category": "清洗工具",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "1-3kg",
+        "force_range": "逐步减小至0",
+        "precision_requirement": "确保工具挂稳"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-台面支撑",
+      "l3_name_en": "Release-GradualFingerOpen-TableSupport",
+      "parent_l2_id": "L2-04-07",
+      "description": "将部件放置到检测台面后逐步张开手指释放部件",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "5-50kg",
+        "force_range": "逐步减小至0",
+        "precision_requirement": "确保部件稳定"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-扳机开关-启动喷射",
+      "l3_name_en": "PointPress-TriggerSwitch-StartSpray",
+      "parent_l2_id": "L2-05-01",
+      "description": "食指按压清洗枪扳机开关启动高压溶剂喷射",
+      "object_category": "工具扳机",
+      "parameter_ranges": {
+        "size_range": "扳机宽度15-25mm",
+        "weight_range": "N/A",
+        "force_range": "按压力10-30N",
+        "precision_requirement": "触发响应时间<0.5s"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-扳机释放-停止喷射",
+      "l3_name_en": "PointPress-TriggerRelease-StopSpray",
+      "parent_l2_id": "L2-05-01",
+      "description": "释放清洗枪扳机使其复位，停止高压溶剂喷射",
+      "object_category": "工具扳机",
+      "parameter_ranges": {
+        "size_range": "扳机宽度15-25mm",
+        "weight_range": "N/A",
+        "force_range": "释放力<5N",
+        "precision_requirement": "释放响应时间<0.5s"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-悬空托举-沥干等待",
+      "l3_name_en": "StaticBracing-SuspendedHold-DrainingWait",
+      "parent_l2_id": "L2-05-06",
+      "description": "双臂持续输出力托举部件保持悬空姿态，等待残留溶剂自然滴落沥干",
+      "object_category": "机械部件",
+      "parameter_ranges": {
+        "size_range": "200mm-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "持续支撑力50-500N",
+        "precision_requirement": "保持姿态稳定10-30秒"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-08-03-001",
+      "l3_name_zh": "高压喷洗-有机溶剂-机械部件表面",
+      "l3_name_en": "HighPressureSprayWash-OrganicSolvent-MechanicalPartSurface",
+      "parent_l2_id": "L2-08-03",
+      "description": "手持高压清洗枪沿机械部件表面移动，用有机溶剂高压射流冲洗油污区域，保持适当枪距和覆盖路径",
+      "object_category": "机械部件表面",
+      "parameter_ranges": {
+        "size_range": "部件尺寸200-600mm",
+        "weight_range": "N/A",
+        "force_range": "射流压力[待补充]",
+        "precision_requirement": "枪距50-150mm，覆盖率>95%"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-机械部件-污染评估",
+      "l3_name_en": "GazeAlign-MechanicalPart-ContaminationAssessment",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查待清洗机械部件表面的油污分布和污染程度",
+      "object_category": "机械部件表面",
+      "parameter_ranges": {
+        "size_range": "观察距离300-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别油污区域"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-清洗槽液面-状态确认",
+      "l3_name_en": "GazeAlign-WashTankSurface-StatusConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查清洗槽液位高度和溶剂清澈度，确认可用于清洗",
+      "object_category": "清洗槽",
+      "parameter_ranges": {
+        "size_range": "观察距离500-1000mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "判断液位和浑浊度"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-部件表面-清洁度检查",
+      "l3_name_en": "GazeAlign-PartSurface-CleanlinessInspection",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查清洗后部件表面，确认油污是否彻底去除",
+      "object_category": "机械部件表面",
+      "parameter_ranges": {
+        "size_range": "观察距离200-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别残留油污"
+      },
+      "is_new": true,
+      "source_scene": "43-432-4320-WASH-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-06",
+      "L2-08-03",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "scene_id": "41-00-4111",
+  "scene_name": "植毛装配-工业刷头-高速重复",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "伸手到上游传送位置准备接收成型刷柄",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-传送带取料位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "用全手包络抓取圆柱形刷柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体-直径15至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "将刷柄从取料位移动到工作夹具位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻型圆柱工件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将刷柄精确放置到工作夹具的定位槽中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-夹具定位槽-间隙0.5mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "松开对刷柄的握持使其固定在夹具中",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸手到刷丝料盒上方准备抓取刷丝束",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-物料盒上方-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "用拇指和食指精密捏取定量的刷丝束",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-细丝束",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 刷丝为柔性细丝，但需定量精确捏取，以精密捏取为主而非形变适应抓取，因目标是精确控制数量而非适应形变",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将捏取的刷丝束移动到刷柄孔位上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-细丝束-近距精确",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "注视孔位调整刷丝束位置使其与孔位对准",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-微小孔位-插入对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将刷丝束沿轴向插入刷柄预制孔中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-刷丝植毛孔-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "持续下压刷丝束确保植入到位深度一致",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-刷丝定深-匀力短时推",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "松开手指释放已植入的刷丝束",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-快速张指-物体已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "重复步骤6-12完成剩余所有植毛孔的刷丝植入（此为循环标记，实际执行19-99次）",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-物料盒上方-侧向伸展",
+      "is_new_l3": false,
+      "boundary_note": "此步骤代表循环重复，实际动作与步骤6相同",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "目视扫视整个刷头表面检查植毛完整性和一致性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-刷头植毛面-环视检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "抓握夹具中已完成植毛的刷头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体-直径15至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将刷头从夹具中垂直提起",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-夹具定位槽-无过盈",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将完成的刷头移动到下游传送位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻型圆柱工件-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开手指将刷头放置在下游传送带上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-传送带取料位-无障碍直线",
+      "l3_name_en": "Reach-ConveyorPickupPoint-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿直线路径伸向传送带或物料流转位置，准备抓取上游传来的工件",
+      "object_category": "传送带取料点",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "空载",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱体-直径15至40mm",
+      "l3_name_en": "PowerGrasp-Cylinder-Dia15to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手掌和多根手指包络抓取中小型圆柱形工件如刷柄、手柄、管件等",
+      "object_category": "圆柱形工件",
+      "parameter_ranges": {
+        "size_range": "直径15-40mm，长度50-200mm",
+        "weight_range": "50-500g",
+        "force_range": "抓持力10-30N",
+        "precision_requirement": "握持稳定无滑移"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻型圆柱工件-近距",
+      "l3_name_en": "Transfer-LightCylindricalPart-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握轻型圆柱形工件在近距离范围内进行空间位置转移",
+      "object_category": "轻型圆柱工件",
+      "parameter_ranges": {
+        "size_range": "直径15-50mm，长度50-200mm",
+        "weight_range": "50-500g",
+        "force_range": "维持抓持力即可",
+        "precision_requirement": "终点位置精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-夹具定位槽-间隙0.5mm",
+      "l3_name_en": "Insert-FixtureLocatingSlot-Clearance0.5mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将工件沿轴向插入工作夹具的定位槽或定位孔中实现快速定位固定",
+      "object_category": "夹具定位槽",
+      "parameter_ranges": {
+        "size_range": "定位槽宽度15-50mm",
+        "weight_range": "工件50-500g",
+        "force_range": "插入力2-10N",
+        "precision_requirement": "对准精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有外部支撑（如夹具、平面）的情况下逐步打开手指解除抓持",
+      "object_category": "已支撑工件",
+      "parameter_ranges": {
+        "size_range": "各种尺寸",
+        "weight_range": "各种重量",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "防止物体偏移"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-物料盒上方-侧向伸展",
+      "l3_name_en": "Reach-MaterialBinAbove-LateralExtension",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂向侧方伸展至物料盒上方位置准备抓取小型物料",
+      "object_category": "物料盒取料位",
+      "parameter_ranges": {
+        "size_range": "伸达距离150-400mm",
+        "weight_range": "空载",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±15mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-细丝束",
+      "l3_name_en": "PinchGrasp-TwoFingerOppose-FineFiberBundle",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指与食指以对捏方式精确捏取定量的细丝状材料束",
+      "object_category": "细丝束/纤维束",
+      "parameter_ranges": {
+        "size_range": "丝束直径2-8mm，单丝直径0.1-0.5mm",
+        "weight_range": "0.1-2g",
+        "force_range": "捏持力0.5-3N",
+        "precision_requirement": "定量精度±10%根数"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-细丝束-近距精确",
+      "l3_name_en": "Transfer-FineFiberBundle-ShortRangePrecise",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手指捏持的细丝束在近距离范围内精确移动到目标孔位上方",
+      "object_category": "细丝束",
+      "parameter_ranges": {
+        "size_range": "丝束直径2-8mm",
+        "weight_range": "0.1-2g",
+        "force_range": "维持捏持力",
+        "precision_requirement": "终点精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-微小孔位-插入对准",
+      "l3_name_en": "Gaze-SmallHolePosition-InsertionAlignment",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线精确对准工件上的微小孔位以辅助物料的精确插入对准",
+      "object_category": "微小孔位",
+      "parameter_ranges": {
+        "size_range": "孔径2-10mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视觉分辨率优于0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-刷丝植毛孔-间隙配合",
+      "l3_name_en": "Insert-BristleHole-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将刷丝束沿轴向精确插入刷柄预制的植毛孔中完成初步定位",
+      "object_category": "植毛孔",
+      "parameter_ranges": {
+        "size_range": "孔径2-8mm，深度5-15mm",
+        "weight_range": "刷丝束0.1-2g",
+        "force_range": "插入力1-5N",
+        "precision_requirement": "对准精度±0.3mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-刷丝定深-匀力短时推",
+      "l3_name_en": "Push-BristleDepthSet-UniformForceShortDuration",
+      "parent_l2_id": "L2-05-02",
+      "description": "对已插入孔中的刷丝束施加均匀下压力确保植入深度一致并与孔壁形成固定",
+      "object_category": "刷丝束",
+      "parameter_ranges": {
+        "size_range": "刷丝束直径2-8mm",
+        "weight_range": "N/A",
+        "force_range": "下压力5-20N",
+        "precision_requirement": "深度一致性±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-快速张指-物体已固定",
+      "l3_name_en": "Release-QuickFingerOpen-ObjectSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已被固定（如插入孔中）后快速张开手指解除接触以提高操作效率",
+      "object_category": "已固定物体",
+      "parameter_ranges": {
+        "size_range": "各种尺寸",
+        "weight_range": "各种重量",
+        "force_range": "瞬时释放",
+        "precision_requirement": "不扰动物体位置"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-刷头植毛面-环视检查",
+      "l3_name_en": "Scan-BrushHeadSurface-CircularInspection",
+      "parent_l2_id": "L2-09-03",
+      "description": "对完成植毛的刷头表面进行环视扫描检查植毛完整性、深度一致性和有无漏植",
+      "object_category": "刷头植毛面",
+      "parameter_ranges": {
+        "size_range": "刷头面积10-100cm²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能检出漏植和深度偏差>1mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-夹具定位槽-无过盈",
+      "l3_name_en": "Extract-FixtureLocatingSlot-NoPressureFit",
+      "parent_l2_id": "L2-07-02",
+      "description": "将工件沿轴向从工作夹具的定位槽中垂直提起抽出",
+      "object_category": "夹具定位槽",
+      "parameter_ranges": {
+        "size_range": "定位槽宽度15-50mm",
+        "weight_range": "工件50-500g",
+        "force_range": "抽出力2-10N",
+        "precision_requirement": "保持轴向对准±1mm"
+      },
+      "is_new": true,
+      "source_scene": "41-00-4111-BristleInsertion"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 5
+  }
+}

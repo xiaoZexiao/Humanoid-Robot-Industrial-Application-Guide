@@ -1,0 +1,669 @@
+{
+  "scene_id": "35-358-3584",
+  "scene_name": "无菌组装-医疗器械部件-洁净室",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "沿洁净室通道直线行走至指定装配工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在装配台前的标定位置精确停步站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-装配台标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "扫视装配台面确认物料托盘位置及零件状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-装配台面-水平扫视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "读取物料托盘上的批次标签二维码",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-批次二维码-追溯信息",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将右手伸向无菌物料托盘上方准备取件",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料托盘上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "用拇指和食指精密捏取毫米级医疗器械主体零件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-微型医疗零件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将捏取的零件移至装配区近眼位置进行外观检查",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-微型医疗零件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "近距离目视检查零件表面质量确认无缺陷污染",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-医疗零件表面-外观缺陷检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "通过手指拨转使零件在手内旋转至正确装配朝向",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-05",
+      "l2_name": "手内旋转调姿",
+      "l3_id": "L3-04-05-001",
+      "l3_name": "手旋-纵轴-90度调向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将调整好朝向的主体零件精确放置到装配夹具定位槽",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-医疗零件-亚毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "松开手指释放零件使其落入定位槽",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-零件已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将左手伸向另一物料托盘准备取配合零件",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料托盘上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "用拇指和食指精密捏取配合用的密封圈或连接件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-002",
+      "l3_name": "捏取-二指对捏-弹性密封件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将密封件移至主体零件上方的装配位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-弹性密封件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将弹性密封圈轻微撑开套入主体零件的配合槽",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-07",
+      "l2_name": "弹性形变装配",
+      "l3_id": "L3-07-07-001",
+      "l3_name": "弹装-O型密封圈-径向撑开套入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 16,
+      "human_description": "右手伸向物料托盘取连接器或盖体零件",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料托盘上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "精密捏取连接器盖体零件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-微型医疗零件",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将盖体零件移至主体上方对准装配接口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-微型医疗零件-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将盖体沿轴向精确插入主体配合孔完成装配",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-精密轴孔配合-间隙0.02mm",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 医疗器械精密配合，间隙极小，偏离即卡死，属于L2-07-01而非L2-05-02",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 20,
+      "human_description": "松开手指完成装配后释放组件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-零件已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "近距离目视检查组装完成的器械确认装配到位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-002",
+      "l3_name": "贴检-装配接缝-配合质量检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "捏取检验合格的成品组件准备转移",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-003",
+      "l3_name": "捏取-三指稳持-小型组件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将成品组件精确放入洁净托盘的指定分格位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-成品组件至托盘分格-毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "点击触控屏确认本件组装完成录入GMP记录",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-触控屏确认键-轻触",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walking-EpoxyFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在洁净室环氧树脂地坪上以稳定速度直线行走，无需跨越障碍",
+      "object_category": "地面/环氧地坪",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.2-2.0m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-装配台标定点-厘米级",
+      "l3_name_en": "Positioning-AssemblyBenchMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在装配工作台前的标定站位点精确停止,确保双手可达物料托盘和装配夹具",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域50×50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-装配台面-水平扫视",
+      "l3_name_en": "AreaScan-AssemblyBench-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "头部缓慢水平转动扫视装配台面,确认物料托盘位置、零件状态和装配夹具就位情况",
+      "object_category": "装配台面区域",
+      "parameter_ranges": {
+        "size_range": "扫视范围0.5×0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "覆盖率100%"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-批次二维码-追溯信息",
+      "l3_name_en": "Reading-BatchQRCode-TraceabilityInfo",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视觉传感器对准物料托盘上的批次二维码标签,调整距离和角度确保可识别解码",
+      "object_category": "二维码标签",
+      "parameter_ranges": {
+        "size_range": "二维码尺寸15×15mm至30×30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "解码成功率>99%"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料托盘上方-无障碍直线",
+      "l3_name_en": "Reaching-MaterialTrayAbove-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将空载手臂沿直线轨迹从身前伸向物料托盘上方,准备进行零件捏取",
+      "object_category": "物料托盘",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±5mm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-微型医疗零件",
+      "l3_name_en": "PinchGrasp-TwoFingerOpposed-MicroMedicalPart",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指与食指指腹对捏方式精密夹取毫米至厘米级医疗器械零件",
+      "object_category": "微型医疗零件",
+      "parameter_ranges": {
+        "size_range": "零件尺寸2-30mm",
+        "weight_range": "0.1-20g",
+        "force_range": "捏持力0.5-3N",
+        "precision_requirement": "抓取位置精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-微型医疗零件-近距",
+      "l3_name_en": "Transfer-MicroMedicalPart-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握微型医疗零件从取件位置转移至装配位置或检查位置",
+      "object_category": "微型医疗零件",
+      "parameter_ranges": {
+        "size_range": "零件尺寸2-30mm",
+        "weight_range": "0.1-20g",
+        "force_range": "维持捏持力0.5-3N",
+        "precision_requirement": "转移过程姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-医疗零件表面-外观缺陷检查",
+      "l3_name_en": "CloseInspection-MedicalPartSurface-DefectCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "将视觉传感器靠近医疗零件表面进行近距离检视,检查表面缺陷、污染物或加工瑕疵",
+      "object_category": "医疗零件表面",
+      "parameter_ranges": {
+        "size_range": "检视距离50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别0.1mm级缺陷"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-04-05-001",
+      "l3_name_zh": "手旋-纵轴-90度调向",
+      "l3_name_en": "InHandRotation-LongitudinalAxis-90DegreeReorientation",
+      "parent_l2_id": "L2-04-05",
+      "description": "通过手指协调拨转使手中零件绕纵轴旋转约90度以调整至正确装配朝向",
+      "object_category": "微型医疗零件",
+      "parameter_ranges": {
+        "size_range": "零件尺寸5-30mm",
+        "weight_range": "0.1-20g",
+        "force_range": "指间力<2N",
+        "precision_requirement": "角度精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-医疗零件-亚毫米级",
+      "l3_name_en": "PrecisionPlacement-MedicalPart-SubMillimeter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将医疗零件精确放置到装配夹具定位槽中,满足亚毫米级位置精度要求",
+      "object_category": "医疗零件/装配夹具",
+      "parameter_ranges": {
+        "size_range": "定位槽尺寸3-35mm",
+        "weight_range": "0.1-20g",
+        "force_range": "轻放力<1N",
+        "precision_requirement": "位置精度±0.3mm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-零件已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-PartSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在零件已被夹具或支撑面承托后逐步张开手指解除捏持,避免零件位移或倾倒",
+      "object_category": "已支撑零件",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "松释过程力渐减至0",
+        "precision_requirement": "释放后零件无位移"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-04-02-002",
+      "l3_name_zh": "捏取-二指对捏-弹性密封件",
+      "l3_name_en": "PinchGrasp-TwoFingerOpposed-ElasticSealPart",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指与食指精密捏取O型圈、垫圈等弹性密封件,控制捏持力避免变形",
+      "object_category": "弹性密封件",
+      "parameter_ranges": {
+        "size_range": "直径3-25mm,截面1-4mm",
+        "weight_range": "0.05-5g",
+        "force_range": "捏持力0.3-1.5N",
+        "precision_requirement": "不造成永久变形"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-弹性密封件-近距",
+      "l3_name_en": "Transfer-ElasticSealPart-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握弹性密封件从取件位置转移至装配位置,维持稳定捏持避免脱落",
+      "object_category": "弹性密封件",
+      "parameter_ranges": {
+        "size_range": "直径3-25mm",
+        "weight_range": "0.05-5g",
+        "force_range": "维持捏持力0.3-1.5N",
+        "precision_requirement": "转移过程不脱落"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-07-07-001",
+      "l3_name_zh": "弹装-O型密封圈-径向撑开套入",
+      "l3_name_en": "ElasticAssembly-ORing-RadialStretchFitting",
+      "parent_l2_id": "L2-07-07",
+      "description": "将O型密封圈径向撑开使其内径大于配合轴外径,套入后释放使其弹性回复贴紧密封槽",
+      "object_category": "O型密封圈",
+      "parameter_ranges": {
+        "size_range": "密封圈内径3-20mm",
+        "weight_range": "0.05-3g",
+        "force_range": "撑开力1-5N",
+        "precision_requirement": "装入密封槽无扭曲"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-精密轴孔配合-间隙0.02mm",
+      "l3_name_en": "Insertion-PrecisionShaftHoleFit-Gap0.02mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将医疗器械盖体或连接件沿轴向精确插入主体配合孔,配合间隙极小需精确对准",
+      "object_category": "精密配合零件",
+      "parameter_ranges": {
+        "size_range": "配合直径2-15mm",
+        "weight_range": "0.5-30g",
+        "force_range": "插入力1-10N",
+        "precision_requirement": "轴向对准精度±0.02mm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-09-02-002",
+      "l3_name_zh": "贴检-装配接缝-配合质量检查",
+      "l3_name_en": "CloseInspection-AssemblySeam-FitQualityCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离检视组装完成的器械装配接缝,确认配合到位、无间隙、密封完整",
+      "object_category": "装配接缝",
+      "parameter_ranges": {
+        "size_range": "检视距离30-100mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别0.05mm级间隙"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-04-02-003",
+      "l3_name_zh": "捏取-三指稳持-小型组件",
+      "l3_name_en": "PinchGrasp-ThreeFingerStable-SmallAssembly",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指、食指、中指三指稳定捏持已组装完成的小型医疗器械组件",
+      "object_category": "小型组件",
+      "parameter_ranges": {
+        "size_range": "组件尺寸10-50mm",
+        "weight_range": "1-50g",
+        "force_range": "捏持力1-5N",
+        "precision_requirement": "稳定持握不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-成品组件至托盘分格-毫米级",
+      "l3_name_en": "PrecisionPlacement-FinishedAssemblyToTrayCell-MillimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将组装完成的医疗器械成品精确放入洁净托盘的指定分格位置,确保放置方向和位置符合规范",
+      "object_category": "成品组件/托盘分格",
+      "parameter_ranges": {
+        "size_range": "分格尺寸20×20mm至50×50mm",
+        "weight_range": "1-50g",
+        "force_range": "轻放力<2N",
+        "precision_requirement": "位置精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-触控屏确认键-轻触",
+      "l3_name_en": "PointPress-TouchScreenConfirmButton-LightTouch",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指轻触触控屏上的确认按钮完成GMP记录的数据录入确认",
+      "object_category": "触控屏按钮",
+      "parameter_ranges": {
+        "size_range": "按钮区域15×15mm至40×40mm",
+        "weight_range": "N/A",
+        "force_range": "触发力0.5-2N",
+        "precision_requirement": "点击位置±3mm"
+      },
+      "is_new": true,
+      "source_scene": "35-358-3584-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-02",
+      "L2-04-05",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-07-01",
+      "L2-07-07",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-02",
+    "涉及的L1数量": 7
+  }
+}

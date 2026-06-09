@@ -1,0 +1,536 @@
+{
+  "scene_id": "26-261-00",
+  "scene_name": "阀门操作-管廊手轮阀-应急切换",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "接到DCS指令后，沿管廊主通道快速直行向目标阀门位置移动",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-管廊钢格栅-快速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿工业楼梯攀升至管廊层或设备平台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-管廊钢梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在管线密集区域侧身穿过狭窄通道接近目标阀门",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-002",
+      "l3_name": "通行-管线间隙-侧身穿越",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在目标阀门手轮正前方精确停位，调整站姿朝向手轮",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-阀门操作位-中心对正",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "目视检查阀门外观及周围环境确认无泄漏或异常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-004",
+      "l3_name": "注视-阀门本体-泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "读取阀门开度指示器确认当前开度位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-阀门开度指示-开度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手同时伸向手轮握持位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-005",
+      "l3_name": "伸达-阀门手轮-双臂同步",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双手全握包覆手轮轮缘建立稳固握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-006",
+      "l3_name": "力握-手轮轮缘-双手对握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手协调旋转手轮执行阀门开启或关闭操作，持续旋转5-30圈直至到达目标位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-手轮阀-多圈连续旋转",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 旋转圈数5-30圈属于连续多圈操作，但有明确的起止位置（全开/全关或特定开度），符合L2-06-03而非L2-06-05",
+      "parallel_with": null,
+      "duration_estimate": "30-180"
+    },
+    {
+      "step_order": 10,
+      "human_description": "当阀门卡涩时松开手轮准备取用加力杆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-手轮-双手同步松开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "转身伸手到工具存放处取加力杆",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-006",
+      "l3_name": "伸达-工具存放区-近距取物",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "单手握持加力杆的握柄端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-007",
+      "l3_name": "力握-加力杆-单手握柄",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将加力杆从存放处搬运到手轮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-004",
+      "l3_name": "转移-加力杆-近距搬运",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将加力杆插入手轮辐条孔或卡住辐条",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-005",
+      "l3_name": "插入-手轮辐条-加力杆配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 15,
+      "human_description": "双手握持加力杆末端利用杠杆原理旋转手轮克服卡涩阻力",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-手轮阀-加力杆增力旋转",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽然使用了工具，但工具是用于增大手轮旋转力矩而非直接作用于紧固件，仍归入L2-06-03而非L2-06-01",
+      "parallel_with": null,
+      "duration_estimate": "20-120"
+    },
+    {
+      "step_order": 16,
+      "human_description": "读取阀门开度指示确认已到达目标开度位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-阀门开度指示-开度数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "松开对手轮或加力杆的握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-手轮-双手同步松开",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将加力杆从手轮辐条中抽出归还至存放处",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-003",
+      "l3_name": "抽出-手轮辐条-加力杆脱离",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-003",
+      "l3_name_zh": "行走-管廊钢格栅-快速",
+      "l3_name_en": "Walking-SteelGrating-Fast",
+      "parent_l2_id": "L2-01-01",
+      "description": "在管廊区域的钢格栅地面上以较快速度直线行走，需适应格栅的间隙和弹性",
+      "object_category": "钢格栅地面",
+      "parameter_ranges": {
+        "size_range": "格栅间距30-50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "步态稳定性要求"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-管廊钢梯-上行",
+      "l3_name_en": "Climbing-PipeRackStairs-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿管廊区域工业钢梯攀升，楼梯通常较陡且带有防滑条纹",
+      "object_category": "工业钢梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度180-220mm，宽度800-1000mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "落脚点精度±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-01-06-002",
+      "l3_name_zh": "通行-管线间隙-侧身穿越",
+      "l3_name_en": "Passing-PipeGap-SidewaysSqueeze",
+      "parent_l2_id": "L2-01-06",
+      "description": "在管廊或装置区密集管线之间侧身穿过狭窄间隙，需收缩身体轮廓",
+      "object_category": "管线间隙",
+      "parameter_ranges": {
+        "size_range": "间隙宽度400-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "与管线保持安全距离>50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-阀门操作位-中心对正",
+      "l3_name_en": "Positioning-ValveStation-CenterAlign",
+      "parent_l2_id": "L2-01-08",
+      "description": "在手轮阀门正前方精确停位，使身体中线与手轮中心对齐以便双手操作",
+      "object_category": "阀门操作位",
+      "parameter_ranges": {
+        "size_range": "站位距离手轮300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "中心对正精度±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-09-01-004",
+      "l3_name_zh": "注视-阀门本体-泄漏检查",
+      "l3_name_en": "Gazing-ValveBody-LeakInspection",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查阀门本体、填料函、法兰连接处是否有泄漏痕迹或异常",
+      "object_category": "阀门及连接部位",
+      "parameter_ranges": {
+        "size_range": "检查范围阀门本体±300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别渗漏液滴或蒸汽"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-09-07-003",
+      "l3_name_zh": "读取-阀门开度指示-开度数值",
+      "l3_name_en": "Reading-ValvePositionIndicator-OpeningValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取阀门开度指示器显示的开度百分比或开关状态",
+      "object_category": "阀门开度指示器",
+      "parameter_ranges": {
+        "size_range": "指示盘直径50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别开度刻度±5%"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-03-01-005",
+      "l3_name_zh": "伸达-阀门手轮-双臂同步",
+      "l3_name_en": "Reaching-ValveHandwheel-BimanualSync",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前伸出到达手轮握持位置，为双手握持做准备",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "双手对称到位"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-04-01-006",
+      "l3_name_zh": "力握-手轮轮缘-双手对握",
+      "l3_name_en": "PowerGrasp-HandwheelRim-BimanualGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手在手轮轮缘对称位置进行全握包覆，建立稳固的旋转操作握持",
+      "object_category": "手轮轮缘",
+      "parameter_ranges": {
+        "size_range": "手轮直径DN50-DN300（约200-450mm外径）",
+        "weight_range": "N/A",
+        "force_range": "握持力50-200N",
+        "precision_requirement": "对称握持"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-手轮阀-多圈连续旋转",
+      "l3_name_en": "ValveOp-HandwheelValve-MultiTurnContinuous",
+      "parent_l2_id": "L2-06-03",
+      "description": "双手握持手轮进行多圈连续旋转操作，实现阀门的开启或关闭",
+      "object_category": "手轮阀（闸阀、截止阀等）",
+      "parameter_ranges": {
+        "size_range": "手轮直径200-450mm",
+        "weight_range": "N/A",
+        "force_range": "正常操作力矩20-100Nm，卡涩时可达200Nm以上",
+        "precision_requirement": "旋转圈数5-30圈"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-手轮-双手同步松开",
+      "l3_name_en": "Release-Handwheel-BimanualLetGo",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手同步张开手指释放对手轮轮缘的握持",
+      "object_category": "手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径200-450mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "同步释放"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-03-01-006",
+      "l3_name_zh": "伸达-工具存放区-近距取物",
+      "l3_name_en": "Reaching-ToolStorage-NearbyFetch",
+      "parent_l2_id": "L2-03-01",
+      "description": "伸手到附近工具存放位置准备取用工具",
+      "object_category": "工具存放区",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "到达工具握持位置"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-04-01-007",
+      "l3_name_zh": "力握-加力杆-单手握柄",
+      "l3_name_en": "PowerGrasp-CheaterBar-SingleHandGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手全握包覆加力杆的握柄端，准备进行杠杆操作",
+      "object_category": "加力杆",
+      "parameter_ranges": {
+        "size_range": "杆径20-40mm，长度500-1200mm",
+        "weight_range": "2-5kg",
+        "force_range": "握持力80-150N",
+        "precision_requirement": "握持稳固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-03-02-004",
+      "l3_name_zh": "转移-加力杆-近距搬运",
+      "l3_name_en": "Transfer-CheaterBar-ShortCarry",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持加力杆从存放处搬运到手轮操作位置",
+      "object_category": "加力杆",
+      "parameter_ranges": {
+        "size_range": "杆长500-1200mm",
+        "weight_range": "2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞周围管线"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-07-01-005",
+      "l3_name_zh": "插入-手轮辐条-加力杆配合",
+      "l3_name_en": "Insert-HandwheelSpoke-CheaterBarFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将加力杆插入手轮辐条孔或卡在辐条上形成杠杆臂",
+      "object_category": "手轮辐条",
+      "parameter_ranges": {
+        "size_range": "辐条孔径25-50mm或辐条间隙",
+        "weight_range": "N/A",
+        "force_range": "插入力10-50N",
+        "precision_requirement": "对准精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-手轮阀-加力杆增力旋转",
+      "l3_name_en": "ValveOp-HandwheelValve-CheaterBarLeverage",
+      "parent_l2_id": "L2-06-03",
+      "description": "通过加力杆延长力臂对卡涩手轮施加更大旋转力矩，克服阀门卡涩阻力",
+      "object_category": "手轮阀（卡涩状态）",
+      "parameter_ranges": {
+        "size_range": "加力杆长度500-1200mm",
+        "weight_range": "N/A",
+        "force_range": "输出力矩200-500Nm",
+        "precision_requirement": "力矩平稳输出避免冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    },
+    {
+      "l3_id": "L3-07-02-003",
+      "l3_name_zh": "抽出-手轮辐条-加力杆脱离",
+      "l3_name_en": "Extract-HandwheelSpoke-CheaterBarRemove",
+      "parent_l2_id": "L2-07-02",
+      "description": "将加力杆从手轮辐条配合位置沿轴向抽出",
+      "object_category": "手轮辐条配合",
+      "parameter_ranges": {
+        "size_range": "抽出行程50-150mm",
+        "weight_range": "N/A",
+        "force_range": "抽出力10-30N",
+        "precision_requirement": "直线抽出避免卡阻"
+      },
+      "is_new": true,
+      "source_scene": "S-26-261-00-007"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-06-03",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-06-03",
+    "涉及的L1数量": 6
+  }
+}

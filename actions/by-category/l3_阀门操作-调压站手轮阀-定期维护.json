@@ -1,0 +1,624 @@
+{
+  "scene_id": "45-00-4511",
+  "scene_name": "阀门操作-调压站手轮阀-定期维护",
+  "total_steps": 22,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "在调压站内从当前位置步行至目标阀门所在位置，途中根据管路布置进行转弯",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-调压站内通道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在阀门前方精确站定，调整身体朝向使双臂可触及手轮",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-阀门操作位-手臂可达",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "注视阀门铭牌或标签，读取阀门编号和规格信息确认操作对象",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-阀门铭牌-编号确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "目视检查阀门外观，查看是否存在锈蚀、泄漏、变形等异常状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-阀门本体-状态检查",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 对单一阀门的局部检查归入注视对准，若需系统性扫视整个管段则归入L2-09-03",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂从身体两侧向前伸出，手部移动至手轮外缘位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-阀门手轮-双臂前伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手握住手轮外缘，形成稳固的全手包络握持以准备施加旋转力矩",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-手轮外缘-双手对称握持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "旋转手轮使阀门从当前位置运动至全开位置，根据阀门规格需转动多圈",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-手轮阀-全行程开启",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-45"
+    },
+    {
+      "step_order": 8,
+      "human_description": "在全开位置反向回转手轮约半圈（180度），避免阀门长期处于极限位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-手轮阀-回位半圈",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手逐步松开手轮，解除对手轮的握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-手轮已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "上半身向润滑剂存放处方向转动，便于取用润滑材料",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度内-向侧方工具位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "手臂伸向润滑脂容器所在位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具存放位-单臂侧伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "握住润滑脂容器，形成便于挤压或涂抹的功能性握姿",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-润滑脂管-挤压涂抹姿",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 润滑脂管需要特定握姿以便挤压出脂，非简单包络握持，归入工具功能握持",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将润滑脂容器从存放位置移至阀门阀杆填料位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "沿阀杆填料压盖周围环形涂抹润滑脂，确保填料处得到充分润滑",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-001",
+      "l3_name": "涂脂-润滑脂-阀杆填料环形",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 润滑脂涂抹沿阀杆周围窄带涂覆，涂覆方式符合L2-08-04线性涂覆模式，与涂胶类似",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将润滑脂容器移回存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开润滑脂容器，将其放置在存放位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-工具归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双手再次握住阀门手轮外缘，准备进行关闭测试",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-手轮外缘-双手对称握持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "旋转手轮使阀门从当前位置运动至全关位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-003",
+      "l3_name": "阀操-手轮阀-全行程关闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-45"
+    },
+    {
+      "step_order": 19,
+      "human_description": "在全关位置反向回转手轮约半圈，避免阀门卡死在关闭极限位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-手轮阀-回位半圈",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 20,
+      "human_description": "双手松开手轮，完成本阀门的启闭测试",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-手轮已固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "注视维护记录表或手持终端，定位当前阀门的记录栏位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-维护记录表-栏位定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "在手持终端上点击确认完成该阀门的维护记录",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-触控屏确认键-轻触",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-调压站内通道-连续步态",
+      "l3_name_en": "Directional Walking - Regulator Station Corridor - Continuous Gait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在调压站内管路设备间的通道中行走，根据阀门分布位置进行方向调整，步态保持连续",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度0.8-1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "行走路径精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-阀门操作位-手臂可达",
+      "l3_name_en": "Stop Positioning - Valve Operation Position - Arm Reachable",
+      "parent_l2_id": "L2-01-08",
+      "description": "在阀门手轮前方精确站定，站位距离确保双臂可舒适触及手轮并施加旋转力矩",
+      "object_category": "阀门操作工位",
+      "parameter_ranges": {
+        "size_range": "站位距阀门0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-阀门铭牌-编号确认",
+      "l3_name_en": "Reading - Valve Nameplate - ID Confirmation",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视阀门本体或管道上的铭牌标签，读取阀门编号、规格、介质方向等信息以确认操作对象",
+      "object_category": "阀门铭牌/标签",
+      "parameter_ranges": {
+        "size_range": "铭牌尺寸50x30mm至150x100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "字符识别清晰度"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-阀门本体-状态检查",
+      "l3_name_en": "Gaze - Valve Body - Status Inspection",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准阀门本体及周边区域，检查锈蚀程度、泄漏痕迹、阀杆变形等外观异常",
+      "object_category": "阀门本体",
+      "parameter_ranges": {
+        "size_range": "DN50-DN200阀门",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可辨识mm级锈蚀/渗漏痕迹"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-阀门手轮-双臂前伸",
+      "l3_name_en": "Reaching - Valve Handwheel - Bimanual Forward Extension",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前伸出，将双手移动至阀门手轮外缘位置，为后续握持做准备",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-400mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部定位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-手轮外缘-双手对称握持",
+      "l3_name_en": "Power Grasp - Handwheel Rim - Bimanual Symmetric Grip",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手在手轮外缘对称位置形成全手包络握持，确保可稳定施加20-80Nm旋转力矩",
+      "object_category": "手轮外缘",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-400mm，轮缘截面圆形或方形",
+        "weight_range": "不适用（固定件）",
+        "force_range": "握持力50-150N",
+        "precision_requirement": "握持位置对称"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-手轮阀-全行程开启",
+      "l3_name_en": "Valve Operation - Handwheel Valve - Full Stroke Opening",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转阀门手轮使阀芯从当前位置运动至全开位置，需根据阀门规格转动若干圈",
+      "object_category": "手轮式阀门（闸阀/截止阀）",
+      "parameter_ranges": {
+        "size_range": "DN50-DN200",
+        "weight_range": "不适用（固定件）",
+        "force_range": "操作扭矩20-80Nm",
+        "precision_requirement": "到位判断（机械止点或开度指示）"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-手轮阀-回位半圈",
+      "l3_name_en": "Valve Operation - Handwheel Valve - Half Turn Setback",
+      "parent_l2_id": "L2-06-03",
+      "description": "在阀门到达全开或全关极限位置后，反向旋转手轮约半圈（180度），避免阀杆长期受极限应力",
+      "object_category": "手轮式阀门",
+      "parameter_ranges": {
+        "size_range": "DN50-DN200",
+        "weight_range": "不适用",
+        "force_range": "操作扭矩10-40Nm",
+        "precision_requirement": "回转角度约180±30度"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-手轮已固定",
+      "l3_name_en": "Release - Gradual Finger Opening - Handwheel Secured",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手逐步张开手指，解除对手轮的握持，手轮因自身摩擦力保持在当前位置",
+      "object_category": "手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-400mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度内-向侧方工具位",
+      "l3_name_en": "Trunk Rotation - Within 90 Degrees - Toward Side Tool Position",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身绕脊柱纵轴旋转，转向侧方工具或物料存放位置，双脚位置保持不变",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转体角度45-90度"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工具存放位-单臂侧伸",
+      "l3_name_en": "Reaching - Tool Storage Position - Single Arm Lateral Extension",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方伸出，将手部移动至工具或物料存放位置，准备进行抓取",
+      "object_category": "工具/物料存放位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部定位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-润滑脂管-挤压涂抹姿",
+      "l3_name_en": "Functional Tool Grasp - Grease Tube - Squeeze Application Pose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以可进行挤压出脂的功能性握姿握持润滑脂管，拇指和手指排列便于控制挤压力度和方向",
+      "object_category": "润滑脂管/容器",
+      "parameter_ranges": {
+        "size_range": "管径20-40mm，长度100-200mm",
+        "weight_range": "100-500g",
+        "force_range": "挤压力10-30N",
+        "precision_requirement": "出脂量可控"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer - Handheld Tool - Short Distance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持有工具或小型物料，在工作区域内进行近距离搬运转移",
+      "object_category": "手持工具/小型物料",
+      "parameter_ranges": {
+        "size_range": "工具长度100-400mm",
+        "weight_range": "100g-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "终点定位±5cm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-08-04-001",
+      "l3_name_zh": "涂脂-润滑脂-阀杆填料环形",
+      "l3_name_en": "Grease Application - Lubricating Grease - Valve Stem Packing Ring",
+      "parent_l2_id": "L2-08-04",
+      "description": "沿阀杆填料压盖周围环形涂抹润滑脂，确保填料处得到充分润滑以防止阀杆锈蚀卡滞",
+      "object_category": "阀杆填料压盖",
+      "parameter_ranges": {
+        "size_range": "阀杆直径15-50mm，涂覆环周长50-160mm",
+        "weight_range": "不适用",
+        "force_range": "涂覆压力2-10N",
+        "precision_requirement": "覆盖完整，涂层厚度1-3mm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-工具归位",
+      "l3_name_en": "Release - Gradual Finger Opening - Tool Return",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐步松开手指将工具放置到存放位置，确保工具稳定放置不倾倒",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-400mm",
+        "weight_range": "100g-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置稳定"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-06-03-003",
+      "l3_name_zh": "阀操-手轮阀-全行程关闭",
+      "l3_name_en": "Valve Operation - Handwheel Valve - Full Stroke Closing",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转阀门手轮使阀芯从当前位置运动至全关位置，需根据阀门规格转动若干圈",
+      "object_category": "手轮式阀门（闸阀/截止阀）",
+      "parameter_ranges": {
+        "size_range": "DN50-DN200",
+        "weight_range": "不适用（固定件）",
+        "force_range": "操作扭矩20-80Nm",
+        "precision_requirement": "到位判断（机械止点或关闭力矩）"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-维护记录表-栏位定位",
+      "l3_name_en": "Reading - Maintenance Record Form - Field Location",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视纸质记录表或手持终端屏幕，定位当前阀门对应的记录栏位以准备填写维护信息",
+      "object_category": "记录表/手持终端",
+      "parameter_ranges": {
+        "size_range": "A4纸张或5-10寸屏幕",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "栏位识别准确"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-触控屏确认键-轻触",
+      "l3_name_en": "Point Press - Touchscreen Confirm Button - Light Touch",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指轻触手持终端触控屏上的确认按键，完成维护记录的提交操作",
+      "object_category": "触控屏按键",
+      "parameter_ranges": {
+        "size_range": "按键面积10x10mm至30x30mm",
+        "weight_range": "不适用",
+        "force_range": "触压力1-5N",
+        "precision_requirement": "点击位置精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "45-00-4511-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-02",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-06-03",
+      "L2-08-04",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-06-03",
+    "涉及的L1数量": 7
+  }
+}

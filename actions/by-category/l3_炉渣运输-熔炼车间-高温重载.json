@@ -1,0 +1,714 @@
+{
+  "scene_id": "32-321-00",
+  "scene_name": "炉渣运输-熔炼车间-高温重载",
+  "total_steps": 25,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机位置沿车间通道向渣包区行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-中速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在渣包区操作位标定点精确站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-安全操作区标定点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "扫视渣包区域检查渣包整体状态和周围环境",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-高温渣包区-环视扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 4,
+      "human_description": "伸手到工具架上方准备取测温枪",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "以功能握姿抓取红外测温枪手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-测温枪-单手握持姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将测温枪从工具架移至测量位置对准渣包",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持测量仪器-中距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将测温枪瞄准渣包表面进行非接触测温",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-红外测温枪-表面温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "读取测温枪显示屏上的温度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-测温枪显示屏-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将测温枪移回工具架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持测量仪器-中距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将测温枪轻放在工具架上后松手释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "转身朝向运输设备操作控制台",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "伸手到控制台面板按钮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-控制面板-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "按下渣包车呼叫按钮通知运输设备就位",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业呼叫按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "转体朝向渣包车进入方向等待设备到达",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-180度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "目视注视渣包车确认其到达并对位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-重型运输设备-对位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手到遥控操作手柄位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-遥控器架位-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "以操作功能姿势握持遥控操作手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-工业遥控器-双手操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "按压遥控器操纵杆控制渣包车完成渣包叉取",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-遥控操纵杆-连续操作",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]此处为多次点压操作叉取动作，属于短暂按压控制而非持续推压",
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 19,
+      "human_description": "目视确认渣包被稳定叉起且无倾斜风险",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-高温渣包-稳定性确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 20,
+      "human_description": "手持遥控器沿运输通道向渣场方向行走并操控设备跟随",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持遥控器-慢速跟随",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "180-360"
+    },
+    {
+      "step_order": 21,
+      "human_description": "在渣场卸载位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-渣场卸载区-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "按压遥控器控制渣包车执行渣包卸载动作",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-遥控操纵杆-连续操作",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 23,
+      "human_description": "扫视渣场卸载区域确认卸载完成且无残渣洒落",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-渣场卸载区-环视确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将遥控器放回固定位置后松手释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "沿车间通道返回渣包区待机位置准备下一次运输",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-中速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-耐高温地坪-中速",
+      "l3_name_en": "Walking-HeatResistantFloor-MediumSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在熔炼车间的耐高温工业地坪上以中等速度进行直线行走，需适应高温环境和地面热辐射",
+      "object_category": "工业地坪",
+      "parameter_ranges": {
+        "size_range": "通道宽度2-4m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±30cm以内"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-安全操作区标定点-分米级",
+      "l3_name_en": "Positioning-SafetyZoneMarker-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在渣包区安全操作区域的标定点精确停止站位，保持与高温渣包的安全距离",
+      "object_category": "地面标定点",
+      "parameter_ranges": {
+        "size_range": "标定区域0.5×0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-高温渣包区-环视扫描",
+      "l3_name_en": "AreaScan-HighTempSlagZone-PanoramicSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "对高温渣包存放区域进行全方位环视扫描，检查渣包状态、周围环境安全及设备就位情况",
+      "object_category": "高温作业区域",
+      "parameter_ranges": {
+        "size_range": "扫描区域5-20m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视野覆盖>95%"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架上方-近距直线",
+      "l3_name_en": "Reaching-ToolRackAbove-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向工具架上方位置准备抓取工具，沿无障碍直线路径运动",
+      "object_category": "工具架位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-测温枪-单手握持姿",
+      "l3_name_en": "ToolGrasp-ThermometerGun-SingleHandGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "以单手功能握持姿势抓握红外测温枪手柄，食指置于扳机位置便于触发测量",
+      "object_category": "手持测量仪器",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm",
+        "weight_range": "200-500g",
+        "force_range": "握持力5-15N",
+        "precision_requirement": "稳定握持无晃动"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持测量仪器-中距",
+      "l3_name_en": "Transfer-HandheldInstrument-MediumDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握测量仪器进行中距离空间转移，保持仪器稳定朝向",
+      "object_category": "手持仪器",
+      "parameter_ranges": {
+        "size_range": "转移距离50-100cm",
+        "weight_range": "200-1000g",
+        "force_range": "不适用",
+        "precision_requirement": "平稳运动无冲击"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-红外测温枪-表面温度",
+      "l3_name_en": "MeasurementPositioning-IRThermometer-SurfaceTemp",
+      "parent_l2_id": "L2-09-06",
+      "description": "将红外测温枪对准高温渣包表面进行非接触式温度测量，保持安全距离和正确测量角度",
+      "object_category": "高温容器表面",
+      "parameter_ranges": {
+        "size_range": "测量距离1-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "瞄准精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-测温枪显示屏-温度数值",
+      "l3_name_en": "Reading-ThermometerDisplay-TemperatureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取红外测温枪LCD显示屏上的温度数值，确认测量结果在安全范围内",
+      "object_category": "仪器显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸2-4cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数字识别准确"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ToolSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工具已稳定放置在支撑面后逐步打开手指释放握持，避免工具滑落或倾倒",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "100-1000g",
+        "force_range": "释放过程<2秒",
+        "precision_requirement": "平稳释放无冲击"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向左",
+      "l3_name_en": "TrunkRotation-90Degree-LeftTurn",
+      "parent_l2_id": "L2-02-04",
+      "description": "以脊柱纵轴为中心向左转动上半身约90度，改变上肢工作方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转动角度±10°"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-控制面板-近距直线",
+      "l3_name_en": "Reaching-ControlPanel-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向控制面板按钮位置准备进行操作触发",
+      "object_category": "控制面板",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业呼叫按钮-中等力度",
+      "l3_name_en": "PointPress-IndustrialCallButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按下工业级呼叫按钮触发设备召唤信号，需施加适中力度确保触发",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "按压力5-15N",
+        "precision_requirement": "准确触发"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-180度-向右",
+      "l3_name_en": "TrunkRotation-180Degree-RightTurn",
+      "parent_l2_id": "L2-02-04",
+      "description": "以脊柱纵轴为中心向右转动上半身约180度，转向运输设备进入方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转动角度±10°"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-重型运输设备-对位确认",
+      "l3_name_en": "Gaze-HeavyTransportEquipment-AlignmentConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "持续注视重型运输设备（叉车/渣包车）确认其到达指定位置并完成对位",
+      "object_category": "重型运输设备",
+      "parameter_ranges": {
+        "size_range": "观察距离5-20m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "对位偏差确认±10cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-遥控器架位-近距直线",
+      "l3_name_en": "Reaching-RemoteControllerHolder-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向遥控器存放架位置准备取用工业遥控操作手柄",
+      "object_category": "遥控器存放位",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-工业遥控器-双手操作姿",
+      "l3_name_en": "ToolGrasp-IndustrialRemote-TwoHandOperationGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "以双手功能握持姿势握持工业遥控操作手柄，拇指置于操纵杆位置便于精确控制",
+      "object_category": "工业遥控器",
+      "parameter_ranges": {
+        "size_range": "遥控器尺寸20×15×8cm",
+        "weight_range": "500-2000g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "稳定握持便于精确操作"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-遥控操纵杆-连续操作",
+      "l3_name_en": "PointPress-RemoteJoystick-ContinuousOperation",
+      "parent_l2_id": "L2-05-01",
+      "description": "通过多次按压遥控器上的操纵杆和按钮控制运输设备执行叉取、升降、移动等动作",
+      "object_category": "遥控操纵杆",
+      "parameter_ranges": {
+        "size_range": "操纵杆行程10-30mm",
+        "weight_range": "不适用",
+        "force_range": "按压力2-10N",
+        "precision_requirement": "操作响应准确"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-高温渣包-稳定性确认",
+      "l3_name_en": "Gaze-HighTempSlagPot-StabilityConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视注视被叉起的高温渣包确认其稳定性，检查是否有倾斜、晃动或洒落风险",
+      "object_category": "高温渣包",
+      "parameter_ranges": {
+        "size_range": "渣包直径1-2m",
+        "weight_range": "500kg-5t",
+        "force_range": "不适用",
+        "precision_requirement": "倾斜角度偏差<5°"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-手持遥控器-慢速跟随",
+      "l3_name_en": "LoadedWalking-HoldingRemote-SlowFollowing",
+      "parent_l2_id": "L2-01-07",
+      "description": "手持遥控器沿运输通道慢速行走，同步操控运输设备跟随移动至渣场",
+      "object_category": "手持遥控设备",
+      "parameter_ranges": {
+        "size_range": "行走距离50-200m",
+        "weight_range": "遥控器500-2000g",
+        "force_range": "不适用",
+        "precision_requirement": "与设备保持安全距离3-5m"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-渣场卸载区-分米级",
+      "l3_name_en": "Positioning-SlagYardUnloadZone-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在渣场指定卸载区域精确停位，确保处于安全观察位置",
+      "object_category": "渣场卸载区",
+      "parameter_ranges": {
+        "size_range": "定位区域1×1m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±20cm"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-渣场卸载区-环视确认",
+      "l3_name_en": "AreaScan-SlagYardUnloadZone-PanoramicConfirm",
+      "parent_l2_id": "L2-09-03",
+      "description": "对渣场卸载区域进行环视扫描，确认渣包卸载完成、无残渣洒落及周围环境安全",
+      "object_category": "渣场区域",
+      "parameter_ranges": {
+        "size_range": "扫描区域10-30m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视野覆盖>90%"
+      },
+      "is_new": true,
+      "source_scene": "32-321-00-SlagTransport"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-05-01",
+    "涉及的L1数量": 6
+  }
+}
