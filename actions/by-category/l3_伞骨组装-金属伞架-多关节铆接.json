@@ -1,0 +1,895 @@
+{
+  "scene_id": "41-00-4119",
+  "scene_name": "伞骨组装-金属伞架-多关节铆接",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "步行至伞骨组装工位并在工装前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工装标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "伸手至主伞骨物料盒上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料盒上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "力量抓握主伞骨（细长金属杆件）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-细长杆件-直径3至8mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将主伞骨从物料盒转移至工装上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-细长轻质杆件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将主伞骨精确定位放置到工装固定槽中",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-杆件入槽-毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "松开手指释放主伞骨使其落入工装槽",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "伸手至支撑骨物料盒上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料盒上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "力量抓握支撑骨（细长金属杆件）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-细长杆件-直径3至8mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将支撑骨转移至工装关节对位区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-细长轻质杆件-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "左手伸向主伞骨关节孔位置准备扶持",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工装关节位-精确定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "左手捏持主伞骨关节孔位置保持固定",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-双指对向-持续固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "右手将支撑骨关节孔与主伞骨关节孔精确对准",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-双杆件关节孔-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]涉及XY位置对准+角度对准，属于多轴对位而非单轴插入",
+      "parallel_with": "11",
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 13,
+      "human_description": "保持双骨对位状态，左手临时固持两根伞骨",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-002",
+      "l3_name": "夹持-多杆件捆持-短时固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "右手伸向铆钉/关节销物料盒",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料盒上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "13",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "精密捏取单颗铆钉/关节销",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-小型销钉",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将铆钉转移至对齐的关节孔位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-小型紧固件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将铆钉插入对齐的双层关节孔中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-销孔配合-间隙0.1mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "释放铆钉（已预插入孔中）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-销钉已定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 19,
+      "human_description": "右手伸向铆枪工具架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具架位置-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "以功能握姿握持铆枪手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-手持铆枪-扳机操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将铆枪头部转移对准铆钉位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-手持工具-精确对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "铆枪头套入铆钉尾部",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-工具套接-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 23,
+      "human_description": "按压铆枪扳机完成铆接作业",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工具扳机-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将铆枪从铆钉位置抽离",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-工具脱离-低阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "将铆枪转移放回工具架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-手持工具-精确对位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "释放铆枪使其落入工具架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-工具归位-渐进松指",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 27,
+      "human_description": "左手解除对伞骨关节的固持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 28,
+      "human_description": "视觉注视检查铆接点的成型质量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-铆接点-质量确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 29,
+      "human_description": "手指轻触铆接关节检查松紧度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-关节松紧-铆接点位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "双手同时抓握已完成的伞架两端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-多杆件框架-双手协同",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 31,
+      "human_description": "双臂协调将伞架从工装搬运至成品区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-框架结构件-轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 32,
+      "human_description": "双手同时释放伞架使其落入成品料架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-004",
+      "l3_name": "释放-双手同步-成品归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工装标定点-厘米级",
+      "l3_name_en": "Stop-FixtureMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工装台前的标定位置精确停止，使身体正对工装操作面，停位精度达到厘米级",
+      "object_category": "工装定位标记",
+      "parameter_ranges": {
+        "size_range": "[待补充]",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料盒上方-无障碍直线",
+      "l3_name_en": "Reach-MaterialBoxAbove-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线轨迹伸展至物料盒正上方，为后续抓取做准备",
+      "object_category": "物料盒空间位置",
+      "parameter_ranges": {
+        "size_range": "伸展距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工装关节位-精确定位",
+      "l3_name_en": "Reach-FixtureJointPosition-PreciseLocating",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向工装上的关节装配位置，需要精确对准以便后续扶持操作",
+      "object_category": "工装定位点",
+      "parameter_ranges": {
+        "size_range": "伸展距离200-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-工具架位置-侧向伸展",
+      "l3_name_en": "Reach-ToolRackPosition-LateralExtension",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向侧方伸展至工具架位置，准备抓取或放回工具",
+      "object_category": "工具架空间位置",
+      "parameter_ranges": {
+        "size_range": "伸展距离300-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±15mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-细长轻质杆件-近距",
+      "l3_name_en": "Transfer-SlenderLightRod-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握细长轻质杆件（如伞骨）进行近距离空间转移",
+      "object_category": "细长金属杆件",
+      "parameter_ranges": {
+        "size_range": "长度300-600mm，直径3-8mm",
+        "weight_range": "10-50g",
+        "force_range": "N/A",
+        "precision_requirement": "±10mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-小型紧固件-近距",
+      "l3_name_en": "Transfer-SmallFastener-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握小型紧固件（如铆钉、销钉）进行近距离精确转移",
+      "object_category": "小型金属紧固件",
+      "parameter_ranges": {
+        "size_range": "直径2-5mm，长度5-15mm",
+        "weight_range": "1-10g",
+        "force_range": "N/A",
+        "precision_requirement": "±3mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-手持工具-精确对位",
+      "l3_name_en": "Transfer-HandheldTool-PreciseAlignment",
+      "parent_l2_id": "L2-03-02",
+      "description": "持握手持工具（如铆枪）进行转移并精确对准作业点",
+      "object_category": "手持作业工具",
+      "parameter_ranges": {
+        "size_range": "工具长度150-300mm",
+        "weight_range": "200-800g",
+        "force_range": "N/A",
+        "precision_requirement": "±2mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-框架结构件-轻载",
+      "l3_name_en": "CoopCarry-FrameStructure-LightLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运框架型结构件（如组装完成的伞架），载荷较轻但体积较大",
+      "object_category": "金属框架结构",
+      "parameter_ranges": {
+        "size_range": "展开直径500-1200mm",
+        "weight_range": "100-500g",
+        "force_range": "N/A",
+        "precision_requirement": "±30mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-杆件入槽-毫米级",
+      "l3_name_en": "PlacePrecise-RodIntoSlot-MillimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将细长杆件精确放入工装定位槽中，要求毫米级定位精度",
+      "object_category": "细长金属杆件",
+      "parameter_ranges": {
+        "size_range": "槽宽5-10mm",
+        "weight_range": "10-50g",
+        "force_range": "N/A",
+        "precision_requirement": "±1mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-细长杆件-直径3至8mm",
+      "l3_name_en": "PowerGrip-SlenderRod-Diameter3to8mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络抓握细长金属或玻纤杆件，如伞骨",
+      "object_category": "细长金属/玻纤杆件",
+      "parameter_ranges": {
+        "size_range": "直径3-8mm，长度300-600mm",
+        "weight_range": "10-80g",
+        "force_range": "握力5-20N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-多杆件框架-双手协同",
+      "l3_name_en": "PowerGrip-MultiRodFrame-BimanualCoord",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手同时力量抓握由多根杆件组成的框架结构的不同部位",
+      "object_category": "多杆件框架结构",
+      "parameter_ranges": {
+        "size_range": "框架跨度500-1200mm",
+        "weight_range": "100-500g",
+        "force_range": "单手握力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-小型销钉",
+      "l3_name_en": "PrecisionPinch-TwoFingerOppose-SmallPin",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指精密捏取小型销钉、铆钉等紧固件",
+      "object_category": "小型金属销钉/铆钉",
+      "parameter_ranges": {
+        "size_range": "直径2-5mm，长度5-15mm",
+        "weight_range": "1-10g",
+        "force_range": "捏力1-5N",
+        "precision_requirement": "±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-手持铆枪-扳机操作姿",
+      "l3_name_en": "ToolGrip-HandRiveter-TriggerPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以扳机操作功能姿势握持手持式铆枪，食指位于扳机位置",
+      "object_category": "手持铆枪",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm",
+        "weight_range": "200-800g",
+        "force_range": "握持力15-40N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有外部支撑的状态下渐进松开手指完成释放",
+      "object_category": "已支撑物体",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "通用",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-销钉已定位",
+      "l3_name_en": "Release-GradualLoosen-PinPositioned",
+      "parent_l2_id": "L2-04-07",
+      "description": "在销钉已插入孔中定位的状态下渐进松开手指",
+      "object_category": "已定位销钉",
+      "parameter_ranges": {
+        "size_range": "直径2-5mm",
+        "weight_range": "1-10g",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-工具归位-渐进松指",
+      "l3_name_en": "Release-ToolReturn-GradualLoosen",
+      "parent_l2_id": "L2-04-07",
+      "description": "将工具放回工具架后渐进松开手指完成归位释放",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "通用工具尺寸",
+        "weight_range": "100-1000g",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-04-07-004",
+      "l3_name_zh": "释放-双手同步-成品归位",
+      "l3_name_en": "Release-BimanualSync-ProductReturn",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手同步松开手指释放成品使其落入成品料架",
+      "object_category": "成品工件",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "100-1000g",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工具扳机-中等力度",
+      "l3_name_en": "PointPress-ToolTrigger-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "使用食指点压手持工具的扳机，触发工具执行动作",
+      "object_category": "工具扳机",
+      "parameter_ranges": {
+        "size_range": "扳机宽度15-25mm",
+        "weight_range": "N/A",
+        "force_range": "按压力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-双指对向-持续固定",
+      "l3_name_en": "Clamp-TwoFingerOppose-SustainedHold",
+      "parent_l2_id": "L2-05-04",
+      "description": "使用双指对向施力夹持细长杆件的某一位置，保持持续固定",
+      "object_category": "细长杆件定位点",
+      "parameter_ranges": {
+        "size_range": "杆件直径3-8mm",
+        "weight_range": "N/A",
+        "force_range": "夹持力5-15N",
+        "precision_requirement": "位置保持±1mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-05-04-002",
+      "l3_name_zh": "夹持-多杆件捆持-短时固定",
+      "l3_name_en": "Clamp-MultiRodBundle-ShortHold",
+      "parent_l2_id": "L2-05-04",
+      "description": "将多根已对位的杆件捆在一起夹持固定，等待后续紧固操作",
+      "object_category": "多杆件对位组",
+      "parameter_ranges": {
+        "size_range": "2-3根杆件，单根直径3-8mm",
+        "weight_range": "N/A",
+        "force_range": "夹持力10-25N",
+        "precision_requirement": "对位保持±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-销孔配合-间隙0.1mm",
+      "l3_name_en": "Insert-PinHoleFit-Clearance0.1mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将销钉/铆钉插入对齐的单层或多层孔中，配合间隙约0.1mm",
+      "object_category": "销钉-孔配合",
+      "parameter_ranges": {
+        "size_range": "销直径2-5mm，孔深3-10mm",
+        "weight_range": "N/A",
+        "force_range": "插入力1-10N",
+        "precision_requirement": "对中±0.1mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-工具套接-间隙配合",
+      "l3_name_en": "Insert-ToolSocket-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将工具头部（如铆枪嘴）套入待操作件（如铆钉尾部）",
+      "object_category": "工具-工件套接",
+      "parameter_ranges": {
+        "size_range": "套接直径3-8mm",
+        "weight_range": "N/A",
+        "force_range": "插入力2-10N",
+        "precision_requirement": "对中±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-工具脱离-低阻力",
+      "l3_name_en": "Withdraw-ToolDisengage-LowResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "将工具头部从工件上沿轴向抽离，脱离阻力较低",
+      "object_category": "工具-工件脱离",
+      "parameter_ranges": {
+        "size_range": "脱离行程5-20mm",
+        "weight_range": "N/A",
+        "force_range": "抽出力2-10N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-双杆件关节孔-3自由度对准",
+      "l3_name_en": "Dock-DualRodJointHole-3DOFAlign",
+      "parent_l2_id": "L2-07-03",
+      "description": "将两根杆件的关节孔精确对准，需同时控制XY位置和旋转角度",
+      "object_category": "杆件关节孔对位",
+      "parameter_ranges": {
+        "size_range": "孔径2-5mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "孔位对准±0.2mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-铆接点-质量确认",
+      "l3_name_en": "Gaze-RivetPoint-QualityConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准铆接完成点，观察铆钉成型质量和关节外观",
+      "object_category": "铆接点",
+      "parameter_ranges": {
+        "size_range": "观察目标直径3-8mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视觉分辨率0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-关节松紧-铆接点位",
+      "l3_name_en": "TouchProbe-JointTightness-RivetPosition",
+      "parent_l2_id": "L2-09-04",
+      "description": "用手指轻触并轻微晃动铆接关节，感知关节松紧程度",
+      "object_category": "铆接关节",
+      "parameter_ranges": {
+        "size_range": "关节尺寸5-15mm",
+        "weight_range": "N/A",
+        "force_range": "探测力<2N",
+        "precision_requirement": "松动感知±0.2mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-41-00-4119-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-04",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-03",
+      "L2-09-01",
+      "L2-09-04"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 6
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "scene_id": "19-191-1910",
+  "scene_name": "操作监控-湿整理转鼓-有毒环境",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从休息区走到复鞣染色车间转鼓操作区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在转鼓控制面板前精确停止到操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-控制面板前-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "注视控制面板显示屏读取转鼓运行状态参数",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-数字显示屏-工艺参数",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "走到化学品暂存区取染料助剂桶",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 5,
+      "human_description": "弯腰俯身至化学品桶所在高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸手至化学品桶提手位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-容器提手-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手抓握化学品桶两侧提手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱提手-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "起身恢复站立姿态同时提起化学品桶",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-负载起身-提物恢复",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰俯身的逆过程，仍归入L2-02-02",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双臂持化学品桶行走至转鼓投料口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-化学品桶-双手提持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在转鼓投料口前放下化学品桶",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-容器落地",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "伸手至转鼓投料口盖板锁扣位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-设备盖板-前上方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "旋转解锁转鼓投料口盖板锁扣",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-04",
+      "l2_name": "旋转解锁脱开",
+      "l3_id": "L3-06-04-001",
+      "l3_name": "旋脱-旋转锁扣-逆时针90度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "掀开投料口盖板至全开位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-设备投料口盖-0至90度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "弯腰抓握化学品桶提手",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "双手抓握化学品桶",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱提手-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "提起化学品桶并举至投料口高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆桶容器-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "翻转化学品桶将染料助剂倾倒入转鼓",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-倾倒容器-绕水平轴120度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将空桶放回地面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-空桶容器-近距下放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 19,
+      "human_description": "松开空桶",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-容器落地",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "关闭转鼓投料口盖板",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-设备投料口盖-90至0度关闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "旋转锁紧投料口盖板锁扣",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-旋转锁扣-顺时针锁紧",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 22,
+      "human_description": "走到控制面板前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "按下控制面板启动按钮调整工艺参数",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业控制按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "旋转调节旋钮设定转速或温度参数",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-参数调节旋钮-5度精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 25,
+      "human_description": "走到转鼓取样口位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 26,
+      "human_description": "旋转打开取样阀门",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-球阀手柄-90度开启",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "用取样容器接取样品液",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-取样容器-直径40至80mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 28,
+      "human_description": "旋转关闭取样阀门",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-球阀手柄-90度关闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 29,
+      "human_description": "将pH计探头对准样品液进行检测",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-pH计探头-酸碱度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 30,
+      "human_description": "读取pH计显示屏上的检测数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-pH计显示屏-pH数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 31,
+      "human_description": "转体巡视相邻转鼓运行状态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度范围-左右巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 32,
+      "human_description": "目视扫描多台转鼓外观和指示灯状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-转鼓设备区域-水平扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在化工车间环氧防腐地坪上匀速直线行走",
+      "object_category": "环氧地坪",
+      "parameter_ranges": {
+        "size_range": "[待补充]",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm路径偏差"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-控制面板前-分米级",
+      "l3_name_en": "Stop-ControlPanel-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在控制面板前精确停止到便于操作的位置",
+      "object_category": "控制面板",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-数字显示屏-工艺参数",
+      "l3_name_en": "Read-DigitalDisplay-ProcessParams",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视控制面板数字显示屏读取转速、温度、时间等工艺参数",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸3至10英寸",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别0.1单位数字"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Bend-ModerateFlex-WaistLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "弯腰俯身使手部能够触及腰部以下、膝部以上高度的物体",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "目标高度40至80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-容器提手-无障碍直线",
+      "l3_name_en": "Reach-ContainerHandle-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向化学品桶等容器的提手位置，路径无障碍",
+      "object_category": "容器提手",
+      "parameter_ranges": {
+        "size_range": "提手直径15至50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱提手-直径20至40mm",
+      "l3_name_en": "PowerGrip-CylindricalHandle-D20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握圆柱形容器提手",
+      "object_category": "圆柱提手",
+      "parameter_ranges": {
+        "size_range": "直径20至40mm",
+        "weight_range": "容器含物料5至30kg",
+        "force_range": "握力50至150N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-负载起身-提物恢复",
+      "l3_name_en": "Bend-LoadedRise-LiftRecovery",
+      "parent_l2_id": "L2-02-02",
+      "description": "在手持负载物情况下从弯腰姿态恢复站立",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "负载5至30kg",
+        "force_range": "腰背力矩[待补充]",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-化学品桶-双手提持",
+      "l3_name_en": "LoadedWalk-ChemicalDrum-TwoHandCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手提持化学品桶在车间内行走",
+      "object_category": "化学品桶",
+      "parameter_ranges": {
+        "size_range": "桶直径300至400mm",
+        "weight_range": "5至30kg",
+        "force_range": "N/A",
+        "precision_requirement": "±15cm路径偏差"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-容器落地",
+      "l3_name_en": "Release-GradualLoosen-ContainerToGround",
+      "parent_l2_id": "L2-04-07",
+      "description": "缓慢松开手指使容器平稳落地或放置在支撑面上",
+      "object_category": "容器",
+      "parameter_ranges": {
+        "size_range": "直径200至400mm",
+        "weight_range": "0至30kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳无倾倒"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-设备盖板-前上方",
+      "l3_name_en": "Reach-EquipmentCover-FrontAbove",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向前上方伸出触及设备盖板或锁扣位置",
+      "object_category": "设备盖板",
+      "parameter_ranges": {
+        "size_range": "目标高度1.2至1.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-06-04-001",
+      "l3_name_zh": "旋脱-旋转锁扣-逆时针90度",
+      "l3_name_en": "RotateUnlock-TwistLatch-CCW90deg",
+      "parent_l2_id": "L2-06-04",
+      "description": "逆时针旋转90度解锁设备盖板旋转锁扣",
+      "object_category": "旋转锁扣",
+      "parameter_ranges": {
+        "size_range": "锁扣直径30至60mm",
+        "weight_range": "N/A",
+        "force_range": "解锁力矩2至10Nm",
+        "precision_requirement": "±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-设备投料口盖-0至90度",
+      "l3_name_en": "HingeOpen-FeedPortCover-0to90deg",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿铰链掀开设备投料口盖板至全开位置",
+      "object_category": "铰接盖板",
+      "parameter_ranges": {
+        "size_range": "盖板直径300至500mm",
+        "weight_range": "盖板重量3至10kg",
+        "force_range": "开启力10至30N",
+        "precision_requirement": "全开到位"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-圆桶容器-中载",
+      "l3_name_en": "CoordCarry-DrumContainer-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调提起圆桶容器并举至操作高度",
+      "object_category": "圆桶容器",
+      "parameter_ranges": {
+        "size_range": "直径300至400mm",
+        "weight_range": "10至30kg",
+        "force_range": "N/A",
+        "precision_requirement": "稳定无晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-倾倒容器-绕水平轴120度",
+      "l3_name_en": "Flip-PourContainer-HorizontalAxis120deg",
+      "parent_l2_id": "L2-03-04",
+      "description": "将容器绕水平轴翻转约120度倾倒内容物",
+      "object_category": "液体容器",
+      "parameter_ranges": {
+        "size_range": "容器容积10至50L",
+        "weight_range": "含液体10至50kg",
+        "force_range": "翻转力矩[待补充]",
+        "precision_requirement": "控制倾倒速度"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-空桶容器-近距下放",
+      "l3_name_en": "Transfer-EmptyContainer-NearbyLower",
+      "parent_l2_id": "L2-03-02",
+      "description": "将空容器从操作高度下放至地面或暂存位置",
+      "object_category": "空容器",
+      "parameter_ranges": {
+        "size_range": "直径200至400mm",
+        "weight_range": "1至5kg",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-07-05-002",
+      "l3_name_zh": "开合-设备投料口盖-90至0度关闭",
+      "l3_name_en": "HingeClose-FeedPortCover-90to0deg",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿铰链关闭设备投料口盖板至闭合位置",
+      "object_category": "铰接盖板",
+      "parameter_ranges": {
+        "size_range": "盖板直径300至500mm",
+        "weight_range": "盖板重量3至10kg",
+        "force_range": "关闭力10至30N",
+        "precision_requirement": "闭合到位无缝隙"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-旋转锁扣-顺时针锁紧",
+      "l3_name_en": "HandTwist-RotateLatch-CWLock",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手顺时针旋转锁扣至锁紧位置",
+      "object_category": "旋转锁扣",
+      "parameter_ranges": {
+        "size_range": "锁扣直径30至60mm",
+        "weight_range": "N/A",
+        "force_range": "锁紧力矩2至10Nm",
+        "precision_requirement": "锁紧到位"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业控制按钮-中等力度",
+      "l3_name_en": "Press-IndustrialButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "按压工业控制面板上的按钮触发功能",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径15至30mm",
+        "weight_range": "N/A",
+        "force_range": "按压力3至10N",
+        "precision_requirement": "±5mm对准"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-参数调节旋钮-5度精度",
+      "l3_name_en": "FineTune-ParamKnob-5degPrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "精密旋转参数调节旋钮设定工艺参数值",
+      "object_category": "调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径20至40mm",
+        "weight_range": "N/A",
+        "force_range": "旋转力矩0.1至0.5Nm",
+        "precision_requirement": "±5度角度精度"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-球阀手柄-90度开启",
+      "l3_name_en": "ValveOp-BallValveHandle-90degOpen",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转球阀手柄90度至全开位置",
+      "object_category": "球阀手柄",
+      "parameter_ranges": {
+        "size_range": "手柄长度50至150mm",
+        "weight_range": "N/A",
+        "force_range": "操作力矩5至20Nm",
+        "precision_requirement": "全开到位"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-取样容器-直径40至80mm",
+      "l3_name_en": "PowerGrip-SampleContainer-D40to80mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手抓握取样用小型容器或量杯",
+      "object_category": "取样容器",
+      "parameter_ranges": {
+        "size_range": "直径40至80mm",
+        "weight_range": "含液体0.1至0.5kg",
+        "force_range": "握力20至50N",
+        "precision_requirement": "稳定不洒"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-球阀手柄-90度关闭",
+      "l3_name_en": "ValveOp-BallValveHandle-90degClose",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转球阀手柄90度至全关位置",
+      "object_category": "球阀手柄",
+      "parameter_ranges": {
+        "size_range": "手柄长度50至150mm",
+        "weight_range": "N/A",
+        "force_range": "操作力矩5至20Nm",
+        "precision_requirement": "全关密封"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-pH计探头-酸碱度",
+      "l3_name_en": "MeasurePosition-pHProbe-Acidity",
+      "parent_l2_id": "L2-09-06",
+      "description": "将pH计探头定位浸入样品液中进行酸碱度检测",
+      "object_category": "pH计探头",
+      "parameter_ranges": {
+        "size_range": "探头直径10至20mm",
+        "weight_range": "探头仪器0.1至0.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "探头完全浸没"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-pH计显示屏-pH数值",
+      "l3_name_en": "Read-pHMeterDisplay-pHValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取pH计显示屏上的酸碱度数值",
+      "object_category": "pH计显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏1至2英寸",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别0.01pH单位"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度范围-左右巡视",
+      "l3_name_en": "TrunkRotate-90degRange-LeftRightSurvey",
+      "parent_l2_id": "L2-02-04",
+      "description": "躯干左右旋转约90度范围进行环顾巡视",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-转鼓设备区域-水平扫描",
+      "l3_name_en": "AreaScan-DrumEquipmentZone-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视扫描多台转鼓设备区域检查运行状态",
+      "object_category": "转鼓设备区域",
+      "parameter_ranges": {
+        "size_range": "扫描区域10至50平方米",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别异常指示灯状态"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-191-1910-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-06-02",
+      "L2-06-03",
+      "L2-06-04",
+      "L2-06-06",
+      "L2-07-05",
+      "L2-09-03",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 8
+  }
+}

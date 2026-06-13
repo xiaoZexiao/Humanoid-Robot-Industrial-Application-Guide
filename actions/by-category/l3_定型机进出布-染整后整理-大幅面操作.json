@@ -1,0 +1,451 @@
+{
+  "scene_id": "17-175-1752",
+  "scene_name": "定型机进出布-染整后整理-大幅面操作",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "目视观察上游传送过来的湿布状态，确认布边位置和来布节奏",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-004",
+      "l3_name": "注视-布料传入状态-边缘定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "双臂向两侧张开，伸向布料左右两侧边缘位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-005",
+      "l3_name": "伸达-布边两侧-双臂展开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "双手分别抓取左右两侧布边，布料宽幅1.5-3米，为柔性材料",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-002",
+      "l3_name": "适抓-柔性布边-对捏夹持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双臂向外侧拉开布边，将布面展平保持适当张力，消除褶皱",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-004",
+      "l3_name": "协展-大幅面布料-张力展平",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 本动作涉及双臂协调向两侧移动保持张力，与L2-05-03拉拔的区别在于目的是位移+张力控制而非单纯施力克服阻力",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将左侧布边精确移动到布铗轨道入口处，对准夹入位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-003",
+      "l3_name": "定放-布边至布铗入口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将左侧布边插入布铗的夹口，使布铗夹住布边",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-003",
+      "l3_name": "插入-布边至布铗-柔性夹持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "确认左侧布边被布铗夹牢后，松开左手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将右侧布边精确移动到右侧布铗轨道入口处，对准夹入位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-003",
+      "l3_name": "定放-布边至布铗入口-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将右侧布边插入右侧布铗的夹口，使布铗夹住布边",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-003",
+      "l3_name": "插入-布边至布铗-柔性夹持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "确认右侧布边被布铗夹牢后，松开右手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "扫视检查进入定型机的布面是否平整，无褶皱、无歪斜",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-003",
+      "l3_name": "扫检-布面平整度-横向扫视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "目视观察定型机出口处定型完成的布料出机状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-005",
+      "l3_name": "注视-布料出机状态-连续性确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双臂伸向出口处布铗轨道两侧的布边位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-005",
+      "l3_name": "伸达-布边两侧-双臂展开",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "双手分别抓取从布铗脱出后的左右两侧布边",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-002",
+      "l3_name": "适抓-柔性布边-对捏夹持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "双臂协调将布料引导向下游卷取机方向牵引移动",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-005",
+      "l3_name": "协引-大幅面布料-导向牵引",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将布料前端引入卷取机的入口辊隙中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-004",
+      "l3_name": "插入-布料至卷取辊隙-柔性引入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "确认布料已被卷取机辊轮夹持后，双手松开布边",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "观察卷取机运行状态，确认布料平整卷入无偏移",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-006",
+      "l3_name": "注视-卷取运行状态-对中确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-01-004",
+      "l3_name_zh": "注视-布料传入状态-边缘定位",
+      "l3_name_en": "Gaze-FabricInfeedStatus-EdgeLocalization",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察连续传入的布料，识别布边位置、来料节奏和布面状态，为后续挂入布铗做准备",
+      "object_category": "湿布/染色布料",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别布边位置精度±5cm，观察距离0.5-1.5m"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-01-005",
+      "l3_name_zh": "伸达-布边两侧-双臂展开",
+      "l3_name_en": "Reach-FabricEdgeBothSides-DualArmSpread",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向左右两侧展开伸达，准备抓取大幅面布料的两侧边缘",
+      "object_category": "布边区域",
+      "parameter_ranges": {
+        "size_range": "双臂展开跨度1.5-2m，伸达距离0.4-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点位置偏差<8cm"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-04-04-002",
+      "l3_name_zh": "适抓-柔性布边-对捏夹持",
+      "l3_name_en": "AdaptiveGrasp-FlexibleFabricEdge-PinchGrip",
+      "parent_l2_id": "L2-04-04",
+      "description": "使用拇指与其他手指对捏方式抓取柔软的布料边缘，需适应布料的柔性和厚度变化，保证夹持牢靠不滑脱",
+      "object_category": "织物布边",
+      "parameter_ranges": {
+        "size_range": "布料厚度0.3-2mm，抓取宽度3-8cm",
+        "weight_range": "抓持部分重量可忽略（布料连续受支撑）",
+        "force_range": "夹持力3-10N",
+        "precision_requirement": "防滑脱，保持布边平整不打折"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-03-004",
+      "l3_name_zh": "协展-大幅面布料-张力展平",
+      "l3_name_en": "CoordinatedSpread-LargeFabric-TensionFlattening",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂向两侧协调移动，对大幅面柔性布料施加横向张力使其展平，消除褶皱并保持均匀张力",
+      "object_category": "大幅面织物",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m，展开行程0.3-0.8m",
+        "weight_range": "布料线密度50-300g/m²",
+        "force_range": "单侧张力5-20N",
+        "precision_requirement": "左右张力均匀，布面平整无褶皱"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-05-003",
+      "l3_name_zh": "定放-布边至布铗入口-厘米级",
+      "l3_name_en": "PrecisionPlace-FabricEdgeToTenterClip-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将布边精确移动到布铗轨道入口的夹入位置，确保布边与布铗夹口对齐",
+      "object_category": "布边/布铗入口",
+      "parameter_ranges": {
+        "size_range": "布铗夹口宽度10-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "对位精度±1cm，布边进入夹口中心"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-07-01-003",
+      "l3_name_zh": "插入-布边至布铗-柔性夹持",
+      "l3_name_en": "Insert-FabricEdgeToTenterClip-FlexibleClamping",
+      "parent_l2_id": "L2-07-01",
+      "description": "将柔性布边沿布铗夹口方向推入，使布铗的夹针或夹板夹住布边固定",
+      "object_category": "布铗夹口配合",
+      "parameter_ranges": {
+        "size_range": "插入深度5-15mm",
+        "weight_range": "N/A",
+        "force_range": "插入力2-8N",
+        "precision_requirement": "布边插入深度一致，夹持牢靠"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-09-03-003",
+      "l3_name_zh": "扫检-布面平整度-横向扫视",
+      "l3_name_en": "AreaScan-FabricFlatness-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线沿布料宽度方向横向扫视，检查进入定型机的布面是否平整、有无褶皱、歪斜或张力不均",
+      "object_category": "织物布面",
+      "parameter_ranges": {
+        "size_range": "扫视宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检测>5mm的褶皱或偏移"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-09-01-005",
+      "l3_name_zh": "注视-布料出机状态-连续性确认",
+      "l3_name_en": "Gaze-FabricExitStatus-ContinuityConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察定型机出口处布料的出机状态，确认布料连续平稳输出、无断裂或堆积",
+      "object_category": "定型布料",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "观察距离0.5-1.5m，识别出机异常"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-03-005",
+      "l3_name_zh": "协引-大幅面布料-导向牵引",
+      "l3_name_en": "CoordinatedGuide-LargeFabric-DirectionalTraction",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调配合将大幅面布料沿指定方向引导牵引，控制布料行进路径和张力",
+      "object_category": "大幅面织物",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m，牵引距离0.5-1.5m",
+        "weight_range": "单位长度布料重量0.5-3kg/m",
+        "force_range": "牵引力5-25N",
+        "precision_requirement": "保持布料行进方向稳定，无偏移"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-07-01-004",
+      "l3_name_zh": "插入-布料至卷取辊隙-柔性引入",
+      "l3_name_en": "Insert-FabricToWinderNip-FlexibleFeeding",
+      "parent_l2_id": "L2-07-01",
+      "description": "将柔性布料前端引入卷取机的辊轮间隙中，使辊轮能够夹住并自动卷取布料",
+      "object_category": "卷取机辊隙配合",
+      "parameter_ranges": {
+        "size_range": "辊隙间距3-10mm",
+        "weight_range": "N/A",
+        "force_range": "引入力3-10N",
+        "precision_requirement": "布料对中引入，无偏斜"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-09-01-006",
+      "l3_name_zh": "注视-卷取运行状态-对中确认",
+      "l3_name_en": "Gaze-WinderOperationStatus-CenteringConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察卷取机运行状态，确认布料居中卷入、张力适当、无偏移跑卷",
+      "object_category": "卷取机/布卷",
+      "parameter_ranges": {
+        "size_range": "卷筒宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别布料偏移>1cm的异常"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-09-01",
+      "L2-03-01",
+      "L2-04-04",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-07-01",
+      "L2-04-07",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 4
+  }
+}

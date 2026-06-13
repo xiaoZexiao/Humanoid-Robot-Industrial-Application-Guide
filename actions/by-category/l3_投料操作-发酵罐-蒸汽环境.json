@@ -1,0 +1,565 @@
+{
+  "scene_id": "14-146-00",
+  "scene_name": "投料操作-发酵罐-蒸汽环境",
+  "total_steps": 19,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前工位走向原料暂存区的袋装原料堆放处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在袋装原料堆垛前精确停稳，为后续抓取做好位置准备",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料堆垛前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "下蹲降低身体重心，使双手能够接触地面或低位堆放的原料袋",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-短时保持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双臂向前伸出，接近袋装原料的抓取位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-地面物料袋-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手分别抓握袋装原料的两端或边缘，形成稳定包络握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-柔性大袋-边缘握持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "在保持抓握的状态下，膝关节和髋关节伸展，从蹲姿恢复站立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿起立-负载状态-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调将25kg袋装原料抬举至胸前搬运位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-大袋状物-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 6,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂前持袋装原料，从原料区行走至投料平台底部",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-大袋原料-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 9,
+      "human_description": "保持负载状态，沿工业楼梯攀爬至投料平台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业楼梯-负载上行",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 负载状态下攀爬楼梯，核心运动特征是梯阶升降而非平地负载行走，故归入L2-01-03",
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在投料平台上负载行走，从楼梯口移动至投料口位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-大袋原料-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在投料口边缘精确停位，使身体位置适合后续倾倒操作",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-设备开口边-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "躯干前屈俯身，将袋装原料靠近投料口上方",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-设备开口高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将袋装原料绕水平轴翻转约180度，使袋口朝向投料口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-180度倒置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "保持前倾持袋姿态不动，使袋内原料在重力作用下持续流入投料口",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-前倾持物姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 15,
+      "human_description": "待原料倾倒完毕，逐渐张开手指释放空袋使其落入投料口或废料区",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体落入开口",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "躯干从俯身状态恢复直立，结束投料姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-空载",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 俯身恢复是弯腰俯身的逆过程，运动学特征相同方向相反，归入同一L2",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "空载状态下从投料口位置走向平台楼梯口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-钢格栅平台-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 18,
+      "human_description": "空载状态下沿工业楼梯下行返回地面",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-工业楼梯-空载下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 19,
+      "human_description": "从楼梯底部行走返回原料暂存区，准备下一轮投料",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间标准环氧地坪上匀速直线行走，地面平整防滑",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-30m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-钢格栅平台-匀速",
+      "l3_name_en": "Walk-SteelGratingPlatform-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业钢格栅平台上匀速直线行走，格栅表面有纹理增加摩擦",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离2-10m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业楼梯-负载上行",
+      "l3_name_en": "Climb-IndustrialStairs-LoadedAscend",
+      "parent_l2_id": "L2-01-03",
+      "description": "双臂持重物状态下沿标准工业楼梯上行，需保持平衡稳定",
+      "object_category": "楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度15-20cm，楼梯高度2-5m",
+        "weight_range": "负载20-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "踏步精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-工业楼梯-空载下行",
+      "l3_name_en": "Climb-IndustrialStairs-UnloadedDescend",
+      "parent_l2_id": "L2-01-03",
+      "description": "空载状态下沿标准工业楼梯下行返回地面",
+      "object_category": "楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度15-20cm，楼梯高度2-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "踏步精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-大袋原料-双臂前持",
+      "l3_name_en": "LoadedWalk-LargeBag-BothArmsFront",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在胸前持握大型袋装物料行走，袋体柔软需控制晃动",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "袋体尺寸约60×40×20cm",
+        "weight_range": "20-30kg",
+        "force_range": "持握力50-100N",
+        "precision_requirement": "路径偏差±15cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料堆垛前-厘米级",
+      "l3_name_en": "Stop-MaterialStack-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料堆垛前精确停位，为后续弯腰抓取提供合适站位",
+      "object_category": "定位参考点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-设备开口边-厘米级",
+      "l3_name_en": "Stop-EquipmentOpening-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备投料口或检修口边缘精确停位，为倾倒或操作提供站位",
+      "object_category": "定位参考点",
+      "parameter_ranges": {
+        "size_range": "距开口边缘30-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-设备开口高度",
+      "l3_name_en": "BendForward-ModerateFlex-EquipmentOpeningHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干前屈约45-60度，使持物手臂能够到达设备开口上方位置",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "前屈角度45-60度",
+        "weight_range": "可持物0-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "姿态角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-空载",
+      "l3_name_en": "BendForward-RecoverUpright-Unloaded",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前屈俯身姿态恢复至直立站姿，空载状态下完成",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度45-60度",
+        "weight_range": "空载",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-短时保持",
+      "l3_name_en": "Squat-HalfSquat-ShortHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "膝关节屈曲约90度的半蹲姿态，短时保持用于低位取物准备",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "膝关节角度80-100度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿起立-负载状态-重载",
+      "l3_name_en": "SquatStand-Loaded-HeavyLoad",
+      "parent_l2_id": "L2-02-03",
+      "description": "双手持重物状态下从蹲姿起立，需协调下肢发力和躯干稳定",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负载20-30kg",
+        "force_range": "下肢推力200-400N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-前倾持物姿态-抗重力",
+      "l3_name_en": "Support-ForwardLeanHolding-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "保持躯干前倾并持物的静态姿态，持续对抗重力直至物料倾倒完毕",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "保持时间10-30秒",
+        "weight_range": "持物0-30kg（渐减）",
+        "force_range": "躯干抗矩50-150Nm",
+        "precision_requirement": "姿态偏差±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-地面物料袋-无障碍直线",
+      "l3_name_en": "Reach-GroundMaterialBag-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂向前下方伸出接近地面或低位堆放的袋装物料，路径无障碍",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "伸达距离40-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-大袋状物-重载",
+      "l3_name_en": "CoopCarry-LargeBag-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调抬举并搬运大型柔性袋装物料，需控制袋体变形和重心偏移",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "袋体尺寸约60×40×20cm",
+        "weight_range": "20-30kg",
+        "force_range": "单臂力100-150N",
+        "precision_requirement": "重心控制±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-180度倒置",
+      "l3_name_en": "Flip-AroundHorizontalAxis-180DegreeInvert",
+      "parent_l2_id": "L2-03-04",
+      "description": "将持握物体绕水平轴翻转180度使其开口朝下，用于倾倒内容物",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "物体尺寸约60×40×20cm",
+        "weight_range": "20-30kg",
+        "force_range": "翻转力矩20-50Nm",
+        "precision_requirement": "翻转角度±15度"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-柔性大袋-边缘握持",
+      "l3_name_en": "PowerGrip-FlexibleLargeBag-EdgeGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握柔性袋装物料的边缘或封口处，需适应袋体变形",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "握持部位厚度3-8cm",
+        "weight_range": "单手承载10-15kg",
+        "force_range": "握力80-150N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体落入开口",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectFallIntoOpening",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐渐张开手指释放空袋或轻物，使其在重力作用下落入指定开口",
+      "object_category": "空袋/轻物",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "释放物<0.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "落点偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-14-146-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-04-01",
+      "L2-04-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 4
+  }
+}

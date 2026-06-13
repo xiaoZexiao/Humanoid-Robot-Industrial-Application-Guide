@@ -1,0 +1,793 @@
+{
+  "scene_id": "10-00-00",
+  "scene_name": "筛分设备清堵-矿石筛选线-堵塞疏通处理",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从监控位置沿车间通道向振动筛设备方向行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业车间地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在振动筛设备旁的观察位置精确停住",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身降低视线高度以便观察筛面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-设备观察高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "扫视整个筛面区域确定堵塞位置和严重程度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-筛面区域-栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 5,
+      "human_description": "从弯腰姿态恢复到直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-从观察姿态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身动作本质上是弯腰的逆过程，仍归入L2-02-02而非L2-02-03，因为主要涉及髋关节和腰椎伸展，膝关节变化不显著",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "向工具存放区行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业车间地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 7,
+      "human_description": "伸手至工具架上橡胶锤位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "以旋拧功能姿握住橡胶锤手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-橡胶锤-敲击功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "伸另一只手至钢钎位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "握住钢钎手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-钢钎-撬动功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "双手持工具返回振动筛工作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持工具-双手分持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 12,
+      "human_description": "在筛面堵塞位置旁精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-设备作业点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "侧倾身体探伸至筛面堵塞位置上方",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-001",
+      "l3_name": "侧倾-向设备侧-中等探伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "挥动橡胶锤敲击堵塞的筛孔",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-05",
+      "l2_name": "冲击敲击",
+      "l3_id": "L3-05-05-001",
+      "l3_name": "敲击-橡皮锤-中等冲击",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "重复敲击动作疏通多处堵塞点",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-05",
+      "l2_name": "冲击敲击",
+      "l3_id": "L3-05-05-001",
+      "l3_name": "敲击-橡皮锤-中等冲击",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 16,
+      "human_description": "对准顽固堵塞点用钢钎插入筛孔缝隙",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-钢钎入缝隙-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "用钢钎撬动松动堵塞物",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-钢钎撬动-杠杆施力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]撬动本质是利用杠杆原理持续施加推力，属于L2-05-02而非L2-05-05，因为力作用时间>1秒且需要维持",
+      "parallel_with": null,
+      "duration_estimate": "5-20"
+    },
+    {
+      "step_order": 18,
+      "human_description": "注视观察疏通效果",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-筛孔状态-疏通效果确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 19,
+      "human_description": "如堵塞严重需攀登梯阶到达筛面平台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业钢梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 20,
+      "human_description": "在筛面平台上跨越散落矿石和设备构件行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-散落矿石-10至30cm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "下蹲至筛面高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-中时保持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "徒手抓取筛面上的大块堵塞矿石",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-不规则矿石-直径50至200mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将矿石从筛面移出至旁边",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-矿石块料-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开手释放矿石",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-自由落下-物体无支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "从下蹲姿态起立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-起立恢复-从半蹲",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "沿梯阶下行返回地面",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-工业钢梯-下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 27,
+      "human_description": "扫视筛面确认堵塞已全部清除",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-筛面区域-栅格扫描",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 28,
+      "human_description": "持工具返回工具存放区并归位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持工具-双手分持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业车间地面-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间的环氧或混凝土地面上匀速直线行走，地面可能有轻微粉尘覆盖",
+      "object_category": "工业地面",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "分米级路径跟踪"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备观察点-分米级",
+      "l3_name_en": "Stop-EquipmentObservationPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备旁的观察位置精确停止，确保视野可覆盖待观察区域",
+      "object_category": "设备观察点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5x0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-设备观察高度",
+      "l3_name_en": "Bend-ModerateFlex-EquipmentViewHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "上身前倾约45度，降低视线高度以观察位于腰部以下的设备部件",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准目标区域"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-筛面区域-栅格扫描",
+      "l3_name_en": "Scan-ScreenSurface-GridPattern",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视振动筛筛面，按栅格模式覆盖整个筛面区域以识别堵塞位置",
+      "object_category": "筛分设备筛面",
+      "parameter_ranges": {
+        "size_range": "筛面面积2-10m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别50mm以上堵塞物"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-从观察姿态",
+      "l3_name_en": "Bend-ReturnUpright-FromObservation",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前屈观察姿态恢复到直立站姿，髋关节和腰椎伸展",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架上方-无障碍直线",
+      "l3_name_en": "Reach-ToolRack-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向工具存放架上的目标工具位置",
+      "object_category": "工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-橡胶锤-敲击功能姿",
+      "l3_name_en": "ToolGrip-RubberMallet-StrikingPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合挥动敲击的姿势握住橡胶锤手柄，拇指沿柄方向，其余四指环绕握紧",
+      "object_category": "橡胶锤",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm，长度300-400mm",
+        "weight_range": "0.5-2kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "握点距锤头250-350mm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-钢钎-撬动功能姿",
+      "l3_name_en": "ToolGrip-SteelChisel-PryingPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合撬动施力的姿势握住钢钎，主手握近端提供力矩，辅手握中部引导方向",
+      "object_category": "钢钎",
+      "parameter_ranges": {
+        "size_range": "直径16-25mm，长度600-1200mm",
+        "weight_range": "2-5kg",
+        "force_range": "握力30-80N",
+        "precision_requirement": "双手间距300-500mm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-手持工具-双手分持",
+      "l3_name_en": "LoadedWalk-HandTools-TwoHandsSeparate",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手各持一件工具（如橡胶锤和钢钎）行走，工具重量影响步态和平衡",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度300-1200mm",
+        "weight_range": "总负载2-7kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-设备作业点-分米级",
+      "l3_name_en": "Stop-EquipmentWorkPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备旁的作业位置精确停止，确保手臂可触及目标工作区域",
+      "object_category": "设备作业点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5x0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-05-001",
+      "l3_name_zh": "侧倾-向设备侧-中等探伸",
+      "l3_name_en": "Lean-TowardEquipment-ModerateReach",
+      "parent_l2_id": "L2-02-05",
+      "description": "身体向设备方向侧倾，扩展手臂的有效作业范围以触及较远的作业点",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-05-001",
+      "l3_name_zh": "敲击-橡皮锤-中等冲击",
+      "l3_name_en": "Strike-RubberMallet-MediumImpact",
+      "parent_l2_id": "L2-05-05",
+      "description": "挥动橡皮锤对目标施加冲击力，用于疏通堵塞或松动卡滞部件",
+      "object_category": "堵塞物/筛孔",
+      "parameter_ranges": {
+        "size_range": "锤头直径50-80mm",
+        "weight_range": "锤头0.3-1.5kg",
+        "force_range": "冲击力50-200N",
+        "precision_requirement": "命中精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-钢钎入缝隙-间隙配合",
+      "l3_name_en": "Insert-ChiselIntoGap-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将钢钎尖端精确插入筛孔或堵塞物与筛面之间的缝隙，为后续撬动做准备",
+      "object_category": "筛孔缝隙",
+      "parameter_ranges": {
+        "size_range": "缝隙宽度10-50mm",
+        "weight_range": "N/A",
+        "force_range": "插入力10-50N",
+        "precision_requirement": "对准精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-钢钎撬动-杠杆施力",
+      "l3_name_en": "Push-ChiselPry-LeverageForce",
+      "parent_l2_id": "L2-05-02",
+      "description": "以钢钎为杠杆，支点在筛面边缘，持续施加推力撬动松动堵塞物",
+      "object_category": "堵塞矿石",
+      "parameter_ranges": {
+        "size_range": "杠杆臂长400-800mm",
+        "weight_range": "堵塞物重量1-20kg",
+        "force_range": "施加力50-200N",
+        "precision_requirement": "力方向控制"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-筛孔状态-疏通效果确认",
+      "l3_name_en": "Gaze-ScreenHoleStatus-ClearanceConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准刚疏通的筛孔位置，确认矿石已通过、筛孔恢复通畅",
+      "object_category": "筛孔",
+      "parameter_ranges": {
+        "size_range": "筛孔直径10-50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别筛孔通断状态"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业钢梯-上行",
+      "l3_name_en": "Climb-IndustrialSteelStairs-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿工业钢制梯阶向上攀登，到达筛分设备平台或检修通道",
+      "object_category": "工业钢梯",
+      "parameter_ranges": {
+        "size_range": "台阶宽度600-800mm，踏步高150-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "每步稳定落脚"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-散落矿石-10至30cm",
+      "l3_name_en": "StepOver-ScatteredOre-10to30cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "抬腿跨越筛面上散落的矿石块和设备构件，保持行进连续性",
+      "object_category": "散落矿石",
+      "parameter_ranges": {
+        "size_range": "障碍高度10-30cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免绊倒"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-中时保持",
+      "l3_name_en": "Squat-HalfSquat-MediumHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "膝关节屈曲至约90度的半蹲姿态，保持一段时间以进行地面作业",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持稳定10-60秒"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-不规则矿石-直径50至200mm",
+      "l3_name_en": "PowerGrip-IrregularOre-Dia50to200mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "以全手包络方式抓握形状不规则的矿石块，强调握力和稳定性",
+      "object_category": "矿石块",
+      "parameter_ranges": {
+        "size_range": "等效直径50-200mm",
+        "weight_range": "0.5-10kg",
+        "force_range": "握力30-100N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-矿石块料-近距",
+      "l3_name_en": "Transfer-OreChunk-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "将抓取的矿石块从筛面移动至旁边的卸料区域，移动距离较短",
+      "object_category": "矿石块",
+      "parameter_ranges": {
+        "size_range": "等效直径50-200mm",
+        "weight_range": "0.5-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-自由落下-物体无支撑",
+      "l3_name_en": "Release-FreeDrop-NoSupport",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指张开释放所持矿石，让其自由落下至下方区域",
+      "object_category": "矿石块",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "0.5-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立恢复-从半蹲",
+      "l3_name_en": "Squat-StandUp-FromHalfSquat",
+      "parent_l2_id": "L2-02-03",
+      "description": "从半蹲姿态站起恢复到直立站姿，膝关节和髋关节伸展",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-工业钢梯-下行",
+      "l3_name_en": "Climb-IndustrialSteelStairs-Descending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿工业钢制梯阶向下行走，从筛分设备平台返回地面",
+      "object_category": "工业钢梯",
+      "parameter_ranges": {
+        "size_range": "台阶宽度600-800mm，踏步高150-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "每步稳定落脚"
+      },
+      "is_new": true,
+      "source_scene": "10-00-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-05",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-05",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-05-05",
+      "L2-07-01",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 7
+  }
+}

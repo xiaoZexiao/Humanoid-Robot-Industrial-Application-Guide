@@ -5,7 +5,7 @@
   "statistics": {
     "l1_count": 0,
     "l2_count": 0,
-    "l3_count": 122,
+    "l3_count": 215,
     "total": 0
   },
   "actions": [
@@ -1960,7 +1960,1495 @@
       },
       "is_new": true,
       "source_scene": "40-402-4028-AGING-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立-恢复站姿",
+      "l3_name_en": "Squat-StandUp-RestoreStanding",
+      "parent_l2_id": "L2-02-03",
+      "description": "从蹲姿起立恢复至站立姿态，完成低位作业后的姿态转换",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-3712-001"
+    },
+    {
+      "l3_id": "L3-07-01-003",
+      "l3_name_zh": "插入-套筒套入螺栓头-间隙配合",
+      "l3_name_en": "Insert-SocketOnBoltHead-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将扭矩扳手套筒对准并套入螺栓六角头",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "螺栓规格M16-M36",
+        "weight_range": "N/A",
+        "force_range": "插入力<20N",
+        "precision_requirement": "对中精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "SCENE-37-373-3734-001"
+    },
+    {
+      "l3_id": "L3-04-02-004",
+      "l3_name_zh": "捏取-三指环抱-圆盘形精密件",
+      "l3_name_en": "Pinch-ThreeFingerSurround-DiscPrecisionPart",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用三指环抱方式捏取圆盘形精密零件如旋梭",
+      "object_category": "圆盘形精密件",
+      "parameter_ranges": {
+        "size_range": "直径20-50mm，厚度5-20mm",
+        "weight_range": "20-100g",
+        "force_range": "捏取力3-10N",
+        "precision_requirement": "不接触工作面"
+      },
+      "is_new": true,
+      "source_scene": "SewingHeadAssembly-SewingMachine-PrecisionFit"
+    },
+    {
+      "l3_id": "L3-04-02-005",
+      "l3_name_zh": "捏取-二指对捏-薄片塞尺",
+      "l3_name_en": "Pinch-TwoFingerOpposed-FeelerGaugeBlade",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用二指对捏方式从塞尺组中捏取合适厚度的塞尺片",
+      "object_category": "塞尺片",
+      "parameter_ranges": {
+        "size_range": "厚度0.02-0.1mm，宽度10-15mm",
+        "weight_range": "1-5g",
+        "force_range": "捏取力0.5-2N",
+        "precision_requirement": "不弯折塞尺片"
+      },
+      "is_new": true,
+      "source_scene": "SewingHeadAssembly-SewingMachine-PrecisionFit"
+    },
+    {
+      "l3_id": "L3-07-01-004",
+      "l3_name_zh": "插入-间隙测量-塞尺检测",
+      "l3_name_en": "Insert-ClearanceMeasure-FeelerGaugeCheck",
+      "parent_l2_id": "L2-07-01",
+      "description": "将塞尺片插入配合间隙进行间隙值测量检测",
+      "object_category": "测量间隙",
+      "parameter_ranges": {
+        "size_range": "间隙0.02-0.1mm",
+        "weight_range": "不适用",
+        "force_range": "插入力0.5-5N",
+        "precision_requirement": "间隙判定±0.01mm"
+      },
+      "is_new": true,
+      "source_scene": "SewingHeadAssembly-SewingMachine-PrecisionFit"
+    },
+    {
+      "l3_id": "L3-09-04-002",
+      "l3_name_zh": "触探-旋转阻力变化-顺滑度判定",
+      "l3_name_en": "TactileProbe-RotationResistanceVariation-SmoothnessJudge",
+      "parent_l2_id": "L2-09-04",
+      "description": "在旋转机构过程中感知阻力变化，判断运转是否顺滑",
+      "object_category": "旋转机构",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "感知阻力变化阈值±0.3Nm",
+        "precision_requirement": "异常点定位±10度"
+      },
+      "is_new": true,
+      "source_scene": "SewingHeadAssembly-SewingMachine-PrecisionFit"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-钳夹皮革-工具对向夹",
+      "l3_name_en": "clamp-plier_leather-tool_opposing",
+      "parent_l2_id": "L2-05-04",
+      "description": "使用绷帮钳夹住皮革帮面边缘，形成稳定夹持以便后续拉紧",
+      "object_category": "皮革边缘",
+      "parameter_ranges": {
+        "size_range": "夹持宽度10-30mm",
+        "weight_range": "不适用",
+        "force_range": "夹持力20-50N",
+        "precision_requirement": "夹持牢固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-02-03-003",
+      "l3_name_zh": "蹲姿-负载下蹲-放置准备",
+      "l3_name_en": "Squat-LoadedLower-PlacePreparation",
+      "parent_l2_id": "L2-02-03",
+      "description": "在握持重物状态下缓慢下蹲，准备将物品放置到低位目标",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "下蹲行程0.3-0.6m",
+        "weight_range": "负载30-150kg",
+        "force_range": "下肢制动力300-800N",
+        "precision_requirement": "下降速度可控"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-02-03-004",
+      "l3_name_zh": "蹲姿-空载起立-姿态恢复",
+      "l3_name_en": "Squat-UnloadedRise-PostureRecovery",
+      "parent_l2_id": "L2-02-03",
+      "description": "释放物品后空载状态下起立恢复站立姿态",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "起立行程0.3-0.6m",
+        "weight_range": "不适用（空载）",
+        "force_range": "下肢推力100-200N",
+        "precision_requirement": "快速恢复稳定站姿"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-04-04-002",
+      "l3_name_zh": "适抓-柔性布边-对捏夹持",
+      "l3_name_en": "AdaptiveGrasp-FlexibleFabricEdge-PinchGrip",
+      "parent_l2_id": "L2-04-04",
+      "description": "使用拇指与其他手指对捏方式抓取柔软的布料边缘，需适应布料的柔性和厚度变化，保证夹持牢靠不滑脱",
+      "object_category": "织物布边",
+      "parameter_ranges": {
+        "size_range": "布料厚度0.3-2mm，抓取宽度3-8cm",
+        "weight_range": "抓持部分重量可忽略（布料连续受支撑）",
+        "force_range": "夹持力3-10N",
+        "precision_requirement": "防滑脱，保持布边平整不打折"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-03-004",
+      "l3_name_zh": "协展-大幅面布料-张力展平",
+      "l3_name_en": "CoordinatedSpread-LargeFabric-TensionFlattening",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂向两侧协调移动，对大幅面柔性布料施加横向张力使其展平，消除褶皱并保持均匀张力",
+      "object_category": "大幅面织物",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m，展开行程0.3-0.8m",
+        "weight_range": "布料线密度50-300g/m²",
+        "force_range": "单侧张力5-20N",
+        "precision_requirement": "左右张力均匀，布面平整无褶皱"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-05-003",
+      "l3_name_zh": "定放-布边至布铗入口-厘米级",
+      "l3_name_en": "PrecisionPlace-FabricEdgeToTenterClip-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将布边精确移动到布铗轨道入口的夹入位置，确保布边与布铗夹口对齐",
+      "object_category": "布边/布铗入口",
+      "parameter_ranges": {
+        "size_range": "布铗夹口宽度10-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "对位精度±1cm，布边进入夹口中心"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-09-03-003",
+      "l3_name_zh": "扫检-布面平整度-横向扫视",
+      "l3_name_en": "AreaScan-FabricFlatness-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线沿布料宽度方向横向扫视，检查进入定型机的布面是否平整、有无褶皱、歪斜或张力不均",
+      "object_category": "织物布面",
+      "parameter_ranges": {
+        "size_range": "扫视宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检测>5mm的褶皱或偏移"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-09-01-005",
+      "l3_name_zh": "注视-布料出机状态-连续性确认",
+      "l3_name_en": "Gaze-FabricExitStatus-ContinuityConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察定型机出口处布料的出机状态，确认布料连续平稳输出、无断裂或堆积",
+      "object_category": "定型布料",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "观察距离0.5-1.5m，识别出机异常"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-03-03-005",
+      "l3_name_zh": "协引-大幅面布料-导向牵引",
+      "l3_name_en": "CoordinatedGuide-LargeFabric-DirectionalTraction",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调配合将大幅面布料沿指定方向引导牵引，控制布料行进路径和张力",
+      "object_category": "大幅面织物",
+      "parameter_ranges": {
+        "size_range": "布幅宽度1.5-3m，牵引距离0.5-1.5m",
+        "weight_range": "单位长度布料重量0.5-3kg/m",
+        "force_range": "牵引力5-25N",
+        "precision_requirement": "保持布料行进方向稳定，无偏移"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-09-01-006",
+      "l3_name_zh": "注视-卷取运行状态-对中确认",
+      "l3_name_en": "Gaze-WinderOperationStatus-CenteringConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察卷取机运行状态，确认布料居中卷入、张力适当、无偏移跑卷",
+      "object_category": "卷取机/布卷",
+      "parameter_ranges": {
+        "size_range": "卷筒宽度1.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别布料偏移>1cm的异常"
+      },
+      "is_new": true,
+      "source_scene": "17-175-1752-StenterFrameLoadUnload"
+    },
+    {
+      "l3_id": "L3-01-04-001",
+      "l3_name_zh": "坡面行走-弧形筒壁-斜向移动",
+      "l3_name_en": "SlopeWalk-CurvedCylinderWall-DiagonalMovement",
+      "parent_l2_id": "L2-01-04",
+      "description": "在球磨机等圆筒形设备内壁上沿弧面行走，坡度随位置连续变化（0-30度），需持续调整身体平衡",
+      "object_category": "圆筒内壁",
+      "parameter_ranges": {
+        "size_range": "筒体直径3-6米",
+        "weight_range": "N/A",
+        "force_range": "[待补充]",
+        "precision_requirement": "防滑稳定"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-07-001",
+      "l3_name_zh": "传递-吊装挂钩-人机协作",
+      "l3_name_en": "Handover-LiftingHook-HumanMachineCoord",
+      "parent_l2_id": "L2-03-07",
+      "description": "配合起吊设备，协助将吊装挂钩正确挂装到重型部件吊耳上",
+      "object_category": "吊装挂钩",
+      "parameter_ranges": {
+        "size_range": "挂钩开口50-150mm",
+        "weight_range": "挂钩5-20kg",
+        "force_range": "[待补充]",
+        "precision_requirement": "准确挂入吊耳"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-05-06-002",
+      "l3_name_zh": "抵持-起吊衬板-导向扶稳",
+      "l3_name_en": "Brace-LiftingLiner-GuidingStabilize",
+      "parent_l2_id": "L2-05-06",
+      "description": "在吊装设备起吊超重衬板过程中持续扶稳，防止摆动并引导路径",
+      "object_category": "衬板",
+      "parameter_ranges": {
+        "size_range": "衬板面积0.2-1㎡",
+        "weight_range": "100-800kg",
+        "force_range": "导向力100-500N",
+        "precision_requirement": "摆幅<10cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-06-02-002",
+      "l3_name_zh": "手拧-大螺栓-顺时针预紧",
+      "l3_name_en": "HandTurn-LargeBolt-CWPreTighten",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手顺时针旋转大螺栓使螺纹初步咬合，为后续工具紧固做准备",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M24-M48",
+        "weight_range": "螺栓0.3-3kg",
+        "force_range": "手拧扭矩<30Nm",
+        "precision_requirement": "螺纹咬合3-5牙"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-06-01-002",
+      "l3_name_zh": "工具旋拧-液压扳手-定扭矩紧固",
+      "l3_name_en": "ToolTorque-HydraulicWrench-TargetTorqueFasten",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用液压扳手将螺栓紧固至规定扭矩值，扭矩值由设备要求确定",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M30-M48",
+        "weight_range": "螺栓0.5-3kg",
+        "force_range": "目标扭矩800-3000Nm",
+        "precision_requirement": "扭矩精度±5%"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-08-002",
+      "l3_name_zh": "推送-重载绕盘-滚入货架",
+      "l3_name_en": "Push-HeavyCoil-RollIntoShelf",
+      "parent_l2_id": "L2-03-08",
+      "description": "持续向前推送使丝绳盘滚动进入货架层入口，克服入口台阶或导轨阻力",
+      "object_category": "重载绕盘",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "推送力100-400N",
+        "precision_requirement": "入口对准偏差<5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-07-06-002",
+      "l3_name_zh": "卡接-传感器接头卡扣-推入锁定",
+      "l3_name_en": "snap-sensor-connector-latch-push-lock",
+      "parent_l2_id": "L2-07-06",
+      "description": "按压传感器信号接头使锁扣锁定到位",
+      "object_category": "信号接头卡扣",
+      "parameter_ranges": {
+        "size_range": "接头宽度10-25mm",
+        "weight_range": "N/A",
+        "force_range": "按压力5-15N",
+        "precision_requirement": "锁扣到位确认"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-05-04-002",
+      "l3_name_zh": "夹持-压接钳压合-定力压接",
+      "l3_name_en": "Clamp-CrimpingPliersCompress-ControlledForce",
+      "parent_l2_id": "L2-05-04",
+      "description": "双手压合压接钳手柄，以控制力度完成端子与线芯的机械压接",
+      "object_category": "接线端子",
+      "parameter_ranges": {
+        "size_range": "端子规格0.5-10mm²",
+        "weight_range": "N/A",
+        "force_range": "压接力50-300N",
+        "precision_requirement": "压接变形量符合端子规格"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-01-08-005",
+      "l3_name_zh": "停位-高温安全观测点-米级",
+      "l3_name_en": "Stop-HighTempSafeObservationPoint-MeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在高温设备观察安全距离（5-10米）处精确停止站定，确保处于热辐射和飞溅物安全区",
+      "object_category": "安全观测标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域约1×1m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "与热源保持最小安全距离5m，位置精度±50cm"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-004",
+      "l3_name_zh": "读取-电压表盘-电压数值",
+      "l3_name_en": "Read-VoltmeterDial-VoltageValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准电压表表盘或数显屏，读取各相电极工作电压数值",
+      "object_category": "电压表/数显仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1%FS，电压范围0-500V"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-005",
+      "l3_name_zh": "读取-功率表盘-功率数值",
+      "l3_name_en": "Read-PowerMeterDial-PowerValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准功率表或功率因数表，读取矿热炉当前运行功率参数",
+      "object_category": "功率表/功率因数表",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2%，功率范围0-50MW"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-01-08-006",
+      "l3_name_zh": "停位-管路检查点-分米级",
+      "l3_name_en": "Stop-PipelineCheckpoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在冷却水管路或工艺管道检查位置精确停止，便于观察管路状态和读取仪表",
+      "object_category": "管路检查工位",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-006",
+      "l3_name_zh": "读取-流量表盘-流量数值",
+      "l3_name_en": "Read-FlowmeterDial-FlowValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准冷却水流量计表盘或数显屏，读取当前冷却水流量数值",
+      "object_category": "流量计/流量显示",
+      "parameter_ranges": {
+        "size_range": "表盘直径80-150mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2%，流量范围根据管径"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-007",
+      "l3_name_zh": "读取-温度表盘-冷却水温度",
+      "l3_name_en": "Read-TemperatureGauge-CoolingWaterTemp",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准冷却水进出口温度表，读取温度数值并计算温升判断冷却效果",
+      "object_category": "温度表/数显温度计",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-100mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1℃，温度范围0-100℃"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-05-002",
+      "l3_name_zh": "侧听-冷却泵运转声-异响判别",
+      "l3_name_en": "Listen-CoolingPumpSound-AnomalyDetection",
+      "parent_l2_id": "L2-09-05",
+      "description": "调整头部使耳部朝向冷却水泵方向，听取泵体运转声音判断是否存在轴承磨损、气蚀或振动异常",
+      "object_category": "冷却水泵/循环泵",
+      "parameter_ranges": {
+        "size_range": "聆听距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "在环境噪音70-90dB中识别异常声"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-04-03-003",
+      "l3_name_zh": "工具握持-红外测温枪-测量功能姿",
+      "l3_name_en": "ToolGrip-InfraredThermometer-MeasurementPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以测量操作所需的功能姿势握持红外测温枪，食指置于测量扳机位置便于瞄准和触发",
+      "object_category": "红外测温仪",
+      "parameter_ranges": {
+        "size_range": "测温枪长度150-250mm",
+        "weight_range": "200-500g",
+        "force_range": "握持力10-20N",
+        "precision_requirement": "握姿稳定可单手瞄准"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-06-003",
+      "l3_name_zh": "测量定位-红外测温枪-炉壁温度",
+      "l3_name_en": "MeasurePosition-InfraredThermometer-FurnaceWallTemp",
+      "parent_l2_id": "L2-09-06",
+      "description": "将红外测温枪激光瞄准炉壁、电极夹持器、冷却壁等关键部位，扣动扳机进行非接触温度测量",
+      "object_category": "炉壁/设备表面",
+      "parameter_ranges": {
+        "size_range": "测量距离1-10m，光斑直径根据距离变化",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "测温精度±2℃或±2%，量程-50~1500℃"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-03-004",
+      "l3_name_zh": "扫检-矿热炉区域-安全确认",
+      "l3_name_en": "ScanInspect-SubmergedArcFurnaceArea-SafetyConfirm",
+      "parent_l2_id": "L2-09-03",
+      "description": "对整个矿热炉区域进行环视扫描，确认设备运行正常、无异常烟气泄漏、无人员安全隐患",
+      "object_category": "矿热炉区域/设备群",
+      "parameter_ranges": {
+        "size_range": "扫描区域100-500m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视野覆盖>90%，识别明显异常"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-01-07-003",
+      "l3_name_zh": "负载行走-手持工具-单臂侧持",
+      "l3_name_en": "LoadedWalk-HandheldTool-SingleArmSideCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "单臂在身侧握持中等重量电动工具状态下的行走，工具重量影响步态平衡",
+      "object_category": "手持电动工具",
+      "parameter_ranges": {
+        "size_range": "工具长度200-400mm",
+        "weight_range": "1.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走过程工具不碰撞"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-02-01-003",
+      "l3_name_zh": "转换-站立-双膝跪地",
+      "l3_name_en": "Transition-Standing-DoubleKneeling",
+      "parent_l2_id": "L2-02-01",
+      "description": "从站立姿态转换为双膝跪地姿态，降低身体重心准备进入低矮空间",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "膝盖软着地避免冲击"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-06-003",
+      "l3_name_zh": "通行-筒体内腔开口-蜷曲钻入",
+      "l3_name_en": "Passing-CylindricalVesselOpening-CrouchedEntry",
+      "parent_l2_id": "L2-01-06",
+      "description": "蜷曲身体从直径600-800mm的容器开口钻入内腔，需收缩肩部依次通过",
+      "object_category": "筒体开口/人孔",
+      "parameter_ranges": {
+        "size_range": "开口直径400-800mm，通过深度300-600mm",
+        "weight_range": "可能携带工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "身体通过时与开口边缘保持间距"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-06-004",
+      "l3_name_zh": "通行-筒体内壁-四肢爬行",
+      "l3_name_en": "Passing-CylinderInnerWall-QuadrupedCrawl",
+      "parent_l2_id": "L2-01-06",
+      "description": "在直径600-1500mm的圆筒形容器内沿弧形内壁四肢着地爬行移动",
+      "object_category": "筒体内壁",
+      "parameter_ranges": {
+        "size_range": "筒体直径600-1500mm，爬行距离1-3m",
+        "weight_range": "可能携带工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "保持身体稳定不撞壁"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-02-02-006",
+      "l3_name_zh": "俯身-蜷曲适形-狭窄内腔作业",
+      "l3_name_en": "Bending-CrouchedConform-NarrowCavityWork",
+      "parent_l2_id": "L2-02-02",
+      "description": "在狭窄圆筒内腔中持续保持躯干深度弯曲蜷缩姿态以适应空间限制进行作业",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "适应空间直径600-1500mm",
+        "weight_range": "N/A",
+        "force_range": "持续核心肌群发力",
+        "precision_requirement": "保持姿态稳定可进行精细操作"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-09-02-003",
+      "l3_name_zh": "贴检-内焊缝表面-打磨前状态确认",
+      "l3_name_en": "CloseInspect-InnerWeldSurface-PreGrindingStatusCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离检视容器内部焊缝的原始状态，识别焊瘤、飞溅、咬边等待打磨缺陷位置",
+      "object_category": "内焊缝",
+      "parameter_ranges": {
+        "size_range": "焊缝长度1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检视距离100-300mm，可识别>1mm缺陷"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-02-006",
+      "l3_name_zh": "转移-角磨机-近距定位",
+      "l3_name_en": "Transfer-AngleGrinder-ShortRangePositioning",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手持角磨机从待机位置移动至焊缝作业点，砂轮盘靠近但不接触工件表面",
+      "object_category": "角磨机",
+      "parameter_ranges": {
+        "size_range": "移动距离200-500mm",
+        "weight_range": "1.5-4kg",
+        "force_range": "N/A",
+        "precision_requirement": "砂轮与工件保持5-20mm间距"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-05-01-003",
+      "l3_name_zh": "点压-角磨机开关-启动触发",
+      "l3_name_en": "PointPress-AngleGrinderSwitch-StartTrigger",
+      "parent_l2_id": "L2-05-01",
+      "description": "按下角磨机的电源开关或扳机启动电机，开关需保持按压状态设备才持续运转",
+      "object_category": "电动工具开关",
+      "parameter_ranges": {
+        "size_range": "开关行程5-15mm",
+        "weight_range": "N/A",
+        "force_range": "按压力10-30N",
+        "precision_requirement": "触发到位即可"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-08-07-001",
+      "l3_name_zh": "焊缝跟随-内环焊缝-角磨打磨",
+      "l3_name_en": "WeldTracking-InnerCircularWeld-AngleGrinding",
+      "parent_l2_id": "L2-08-07",
+      "description": "角磨机砂轮沿容器内部环焊缝路径持续接触移动，去除焊瘤、飞溅及余高使表面平整",
+      "object_category": "环焊缝",
+      "parameter_ranges": {
+        "size_range": "焊缝长度1-3m，焊缝宽度10-30mm",
+        "weight_range": "N/A",
+        "force_range": "法向压力10-50N",
+        "precision_requirement": "打磨深度控制避免伤及母材"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-04-07-006",
+      "l3_name_zh": "释放-扳机松开-角磨机停止",
+      "l3_name_en": "Release-TriggerRelease-AngleGrinderStop",
+      "parent_l2_id": "L2-04-07",
+      "description": "松开对角磨机扳机开关的按压力，使开关复位电机停转",
+      "object_category": "电动工具扳机",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "完全松开确保停转"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-05-004",
+      "l3_name_zh": "定放-角磨机-容器内临时存放",
+      "l3_name_en": "PrecisionPlace-AngleGrinder-InVesselTemporaryStorage",
+      "parent_l2_id": "L2-03-05",
+      "description": "将角磨机平稳放置在容器内壁稳定位置，确保不滑落且便于再次取用",
+      "object_category": "角磨机",
+      "parameter_ranges": {
+        "size_range": "放置区域约300×200mm",
+        "weight_range": "1.5-4kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置稳定不滑移"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-01-007",
+      "l3_name_zh": "伸达-随身工具袋-近距取用",
+      "l3_name_en": "Reach-PersonalToolPouch-ShortRangeAccess",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向腰间或身旁的随身工具袋位置准备取用辅助工具",
+      "object_category": "工具袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离150-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "准确触及工具位置"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-04-03-004",
+      "l3_name_zh": "工具握持-钢丝刷-清渣功能姿",
+      "l3_name_en": "ToolGrip-WireBrush-SlagCleaningPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以清渣刷扫操作所需姿势握持钢丝刷手柄，便于往复施力",
+      "object_category": "钢丝刷",
+      "parameter_ranges": {
+        "size_range": "刷柄长度150-300mm",
+        "weight_range": "100-500g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "握姿稳定可控制刷压"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-08-05-003",
+      "l3_name_zh": "擦拭-焊缝表面-钢丝刷清渣",
+      "l3_name_en": "Wiping-WeldSurface-WireBrushSlagRemoval",
+      "parent_l2_id": "L2-08-05",
+      "description": "使用钢丝刷沿焊缝表面往复刷扫，清除打磨后残留的氧化皮和细碎焊渣",
+      "object_category": "焊缝表面",
+      "parameter_ranges": {
+        "size_range": "清洁长度1-3m",
+        "weight_range": "N/A",
+        "force_range": "法向压力2-8N",
+        "precision_requirement": "覆盖焊缝全宽"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-06-005",
+      "l3_name_zh": "通行-筒体内腔开口-蜷曲钻出",
+      "l3_name_en": "Passing-CylindricalVesselOpening-CrouchedExit",
+      "parent_l2_id": "L2-01-06",
+      "description": "蜷曲身体从容器内腔向外钻出开口，通常脚先出或后退爬出",
+      "object_category": "筒体开口/人孔",
+      "parameter_ranges": {
+        "size_range": "开口直径400-800mm，通过深度300-600mm",
+        "weight_range": "可能携带工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "身体通过时与开口边缘保持间距"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-02-01-004",
+      "l3_name_zh": "转换-跪地-站立恢复",
+      "l3_name_en": "Transition-Kneeling-StandingRecovery",
+      "parent_l2_id": "L2-02-01",
+      "description": "从双膝跪地姿态恢复为站立姿态，单腿先撑起后站稳",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "可能手持工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "站稳后保持平衡"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-05-005",
+      "l3_name_zh": "定放-电动工具-工具架归位",
+      "l3_name_en": "PrecisionPlace-PowerTool-ToolRackReturn",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电动工具精确放置回工具架的指定位置完成归位",
+      "object_category": "电动工具",
+      "parameter_ranges": {
+        "size_range": "工具架槽位尺寸适配工具",
+        "weight_range": "1.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-06-002",
+      "l3_name_zh": "码放-料箱阵列-多层堆叠",
+      "l3_name_en": "Stack-BoxArray-MultiLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将重载料箱按阵列模式码放在托盘上，支持3-5层堆叠，确保垂直对齐",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "箱体400-600mm边长",
+        "weight_range": "15-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "层间垂直偏差±1cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-05-07-001",
+      "l3_name_zh": "拨动-航天器切换开关-上下切换",
+      "l3_name_en": "Toggle-SpacecraftSwitch-UpDownToggle",
+      "parent_l2_id": "L2-05-07",
+      "description": "用拇指或食指拨动航天器面板上的拨动开关，使其从一个档位切换到另一个档位",
+      "object_category": "拨动开关",
+      "parameter_ranges": {
+        "size_range": "开关行程5-15mm",
+        "weight_range": "不适用",
+        "force_range": "切换力0.5-5N",
+        "precision_requirement": "切换到位并确认锁定"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-01-04-002",
+      "l3_name_zh": "坡面行走-矿道斜坡-上坡负载",
+      "l3_name_en": "SlopeWalk-MineTunnelRamp-UphillLoaded",
+      "parent_l2_id": "L2-01-04",
+      "description": "在矿道斜坡上负重向上行走，需克服重力做功，步速较下坡慢",
+      "object_category": "矿道斜坡地面",
+      "parameter_ranges": {
+        "size_range": "坡道宽度2-4m，长度10-100m",
+        "weight_range": "负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "坡度5-15度"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-07-004",
+      "l3_name_zh": "负载行走-大幅背板-双臂平持",
+      "l3_name_en": "LoadedWalk-LargeBacksheet-DualArmFlatHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "手持大幅背板以双臂平持姿势行走",
+      "object_category": "复合背板",
+      "parameter_ranges": {
+        "size_range": "1600×1000mm",
+        "weight_range": "1-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-38-382-3825-叠层-001"
+    },
+    {
+      "l3_id": "L3-08-04-002",
+      "l3_name_zh": "刮平-密封胶条-直线轨迹",
+      "l3_name_en": "Scrape-SealantBead-LinearPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "使用刮刀沿已涂布的密封胶条刮平，去除多余胶量，使胶条厚度均匀、表面平整",
+      "object_category": "密封胶条",
+      "parameter_ranges": {
+        "size_range": "胶条宽度3-10mm，长度0.3-5m",
+        "weight_range": "不适用",
+        "force_range": "法向力5-15N",
+        "precision_requirement": "表面平整度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-04-002",
+      "l3_name_zh": "滑移-电镀槽导轨-拉出500至1500mm",
+      "l3_name_en": "Slide-PlatingTankRail-PullOut500to1500mm",
+      "parent_l2_id": "L2-07-04",
+      "description": "拉动挂具沿电镀槽导轨滑移从镀槽中拉出",
+      "object_category": "电镀槽导轨与挂具",
+      "parameter_ranges": {
+        "size_range": "行程500-1500mm",
+        "weight_range": "挂具满载50-500kg（含镀液残留）",
+        "force_range": "拉力50-200N",
+        "precision_requirement": "导轨对准"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-04-01-008",
+      "l3_name_zh": "力握-小型圆柱瓶体-单手环握",
+      "l3_name_en": "PowerGrasp-SmallCylindricalBottle-SingleHandWrap",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手全包络握持小型圆柱形瓶体，手指环绕瓶身形成稳固握持",
+      "object_category": "小型圆柱瓶体",
+      "parameter_ranges": {
+        "size_range": "直径30-70mm，高度50-200mm",
+        "weight_range": "空瓶20-80g，满瓶50-600g",
+        "force_range": "握力15-40N",
+        "precision_requirement": "握持稳定无滑移"
+      },
+      "is_new": true,
+      "source_scene": "24-241-2414-FillingCapping-InkBottle-QuantitativeLiquid"
+    },
+    {
+      "l3_id": "L3-05-01-004",
+      "l3_name_zh": "点压-灌装启动按钮-触发灌装",
+      "l3_name_en": "PointPress-FillingStartButton-TriggerFilling",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按下灌装机启动按钮触发定量灌装程序",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径15-30mm",
+        "weight_range": "N/A",
+        "force_range": "按压力3-10N",
+        "precision_requirement": "准确触发启动信号"
+      },
+      "is_new": true,
+      "source_scene": "24-241-2414-FillingCapping-InkBottle-QuantitativeLiquid"
+    },
+    {
+      "l3_id": "L3-03-02-007",
+      "l3_name_zh": "转移-已灌装瓶体-竖直保持",
+      "l3_name_en": "Transfer-FilledBottle-UprightMaintain",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握已灌装液体的瓶体进行搬运，全程保持瓶体竖直防止液体洒出",
+      "object_category": "已灌装瓶体",
+      "parameter_ranges": {
+        "size_range": "移动距离150-500mm",
+        "weight_range": "50-600g",
+        "force_range": "N/A",
+        "precision_requirement": "瓶体倾斜<5度"
+      },
+      "is_new": true,
+      "source_scene": "24-241-2414-FillingCapping-InkBottle-QuantitativeLiquid"
+    },
+    {
+      "l3_id": "L3-07-03-003",
+      "l3_name_zh": "对接-瓶口螺纹-初始对准",
+      "l3_name_en": "Alignment-BottleThread-InitialPositioning",
+      "parent_l2_id": "L2-07-03",
+      "description": "将瓶盖移动到瓶口正上方，调整XY位置和旋转角度使瓶盖螺纹与瓶口螺纹对准",
+      "object_category": "螺纹配合接口",
+      "parameter_ranges": {
+        "size_range": "瓶口直径15-30mm",
+        "weight_range": "瓶盖2-10g",
+        "force_range": "对位过程轻触力<5N",
+        "precision_requirement": "同轴度±1mm，螺纹起始角度对准"
+      },
+      "is_new": true,
+      "source_scene": "24-241-2414-FillingCapping-InkBottle-QuantitativeLiquid"
+    },
+    {
+      "l3_id": "L3-06-02-003",
+      "l3_name_zh": "手拧-螺纹瓶盖-顺时针紧固",
+      "l3_name_en": "ManualTwist-ThreadedCap-CWTighten",
+      "parent_l2_id": "L2-06-02",
+      "description": "手指捏握瓶盖边缘顺时针旋转数圈将瓶盖拧紧至目标扭矩",
+      "object_category": "螺纹瓶盖",
+      "parameter_ranges": {
+        "size_range": "瓶盖直径15-35mm，旋转圈数2-5圈",
+        "weight_range": "N/A",
+        "force_range": "终拧扭矩0.5-2Nm",
+        "precision_requirement": "扭矩一致性±15%"
+      },
+      "is_new": true,
+      "source_scene": "24-241-2414-FillingCapping-InkBottle-QuantitativeLiquid"
+    },
+    {
+      "l3_id": "L3-09-05-003",
+      "l3_name_zh": "侧听-异常摩擦声-循环泵处",
+      "l3_name_en": "listen-abnormal_friction-pump_location",
+      "parent_l2_id": "L2-09-05",
+      "description": "头部朝向循环泵方向侧耳倾听，识别是否存在轴承摩擦声或汽蚀声",
+      "object_category": "循环泵",
+      "parameter_ranges": {
+        "size_range": "听觉距离0.5-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "声音异常识别"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-04-01-011",
+      "l3_name_zh": "力握-高压软管-直径15至25mm",
+      "l3_name_en": "PowerGrip-HighPressureHose-Dia15to25mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握高压液压测试软管中段，手指环绕软管外壁形成稳固握持",
+      "object_category": "高压软管",
+      "parameter_ranges": {
+        "size_range": "软管外径15-25mm，长度1-3m",
+        "weight_range": "0.5-2kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "中等精度，允许沿轴向滑动调整"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-04-01-012",
+      "l3_name_zh": "力握-圆盘压力表-直径60至100mm",
+      "l3_name_en": "PowerGrip-DialPressureGauge-Dia60to100mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握圆盘式液压压力表表体，拇指和四指环绕表壳形成稳定握持",
+      "object_category": "压力表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-100mm，厚度30-50mm",
+        "weight_range": "0.3-0.8kg",
+        "force_range": "握力15-30N",
+        "precision_requirement": "中等精度，避免遮挡表盘"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-06-02-005",
+      "l3_name_zh": "手拧-液压快接接头-顺时针紧固",
+      "l3_name_en": "HandTighten-HydraulicQuickConnect-CW",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手旋拧液压快速接头顺时针紧固，达到手紧密封扭矩",
+      "object_category": "液压快接接头",
+      "parameter_ranges": {
+        "size_range": "接头规格G1/4至G1/2",
+        "weight_range": "不适用",
+        "force_range": "旋拧扭矩5-15Nm（手紧）",
+        "precision_requirement": "紧固至接触面压紧，无间隙"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-06-02-006",
+      "l3_name_zh": "手拧-压力表接头-顺时针紧固",
+      "l3_name_en": "HandTighten-PressureGaugeConnector-CW",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手旋拧压力表螺纹接头顺时针紧固至密封位",
+      "object_category": "压力表接头",
+      "parameter_ranges": {
+        "size_range": "接头规格G1/4至G3/8",
+        "weight_range": "不适用",
+        "force_range": "旋拧扭矩3-10Nm",
+        "precision_requirement": "紧固至密封，表盘朝向便于读数"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-06-06-002",
+      "l3_name_zh": "微调-液压调压旋钮-压力精度",
+      "l3_name_en": "FineTune-HydraulicPressureKnob-PressurePrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "精细旋转液压泵调压旋钮，配合压力表读数调节输出压力至目标值",
+      "object_category": "调压旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "旋转力矩0.1-0.5Nm",
+        "precision_requirement": "压力调节精度±0.5MPa"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-09-02-004",
+      "l3_name_zh": "贴检-液压接头-泄漏检测",
+      "l3_name_en": "CloseInspect-HydraulicJoint-LeakDetection",
+      "parent_l2_id": "L2-09-02",
+      "description": "将视觉传感器贴近高压液压接头处，检测油液渗漏痕迹或湿润状态",
+      "object_category": "液压接头",
+      "parameter_ranges": {
+        "size_range": "接头规格G1/4至G1/2",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "检视距离50-150mm，可识别微量油渍"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-04-03-006",
+      "l3_name_zh": "工具握持-操纵杆手柄-推拉功能姿",
+      "l3_name_en": "ToolGrip-ControlLeverHandle-PushPullPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "手掌握持操纵杆球形或圆柱手柄，拇指侧置，食指至小指环绕，便于前后推拉操作",
+      "object_category": "操纵杆手柄",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，长度60-100mm",
+        "weight_range": "不适用（固定件）",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "握持稳固，可精确控制推拉幅度"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-07-04-003",
+      "l3_name_zh": "滑移-操纵杆导槽-前后行程",
+      "l3_name_en": "SlideMove-ControlLeverGuide-ForeAftTravel",
+      "parent_l2_id": "L2-07-04",
+      "description": "推拉操纵杆沿固定导槽前后滑移，控制液压执行机构动作",
+      "object_category": "操纵杆导槽",
+      "parameter_ranges": {
+        "size_range": "导槽行程80-150mm",
+        "weight_range": "不适用",
+        "force_range": "操作力10-40N",
+        "precision_requirement": "可分级定位或无级调节"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-09-03-005",
+      "l3_name_zh": "扫检-门架倾斜机构-角度观察",
+      "l3_name_en": "ScanInspect-MastTiltMechanism-AngleObserve",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉扫描叉车门架倾斜全过程，观察倾斜角度范围和动作平顺性",
+      "object_category": "门架倾斜机构",
+      "parameter_ranges": {
+        "size_range": "倾斜角度前倾3-6度、后倾10-12度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可判断角度是否达标、是否有卡滞"
+      },
+      "is_new": true,
+      "source_scene": "SC-34-343-3433-HydraulicTest"
+    },
+    {
+      "l3_id": "L3-06-01-003",
+      "l3_name_zh": "工具旋拧-液压扳手-大螺栓松脱",
+      "l3_name_en": "ToolTwist-HydraulicWrench-LargeBoltLoosen",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用液压扳手逆时针旋转将大规格螺栓从紧固状态松脱，需克服初始大扭矩",
+      "object_category": "大规格紧固件",
+      "parameter_ranges": {
+        "size_range": "螺栓规格M24-M48",
+        "weight_range": "螺栓0.5-5kg",
+        "force_range": "松脱扭矩500-3000Nm",
+        "precision_requirement": "扭矩控制避免损伤螺纹"
+      },
+      "is_new": true,
+      "source_scene": "43-00-4341-BogieOverhaul-001"
+    },
+    {
+      "l3_id": "L3-06-02-004",
+      "l3_name_zh": "手拧-大螺栓-逆时针退出",
+      "l3_name_en": "HandTurn-LargeBolt-CCWRemoval",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手逆时针旋转已松脱的大螺栓，将其完全从螺纹孔中退出取下",
+      "object_category": "大规格紧固件",
+      "parameter_ranges": {
+        "size_range": "螺栓规格M24-M48",
+        "weight_range": "螺栓0.3-5kg",
+        "force_range": "手拧扭矩<50Nm",
+        "precision_requirement": "保持轴向对正避免卡涩"
+      },
+      "is_new": true,
+      "source_scene": "43-00-4341-BogieOverhaul-001"
+    },
+    {
+      "l3_id": "L3-05-03-004",
+      "l3_name_zh": "拉拔-重型部件连接-大力分离",
+      "l3_name_en": "Pull-HeavyComponentJoint-ForcefulSeparation",
+      "parent_l2_id": "L2-05-03",
+      "description": "对卡涩或紧配合的重型部件连接施加大拉力使其分离，可能需借助撬棍等工具辅助",
+      "object_category": "重型部件连接面",
+      "parameter_ranges": {
+        "size_range": "部件重量10-100kg",
+        "weight_range": "N/A",
+        "force_range": "拉拔力100-500N",
+        "precision_requirement": "控制分离速度避免碰撞"
+      },
+      "is_new": true,
+      "source_scene": "43-00-4341-BogieOverhaul-001"
+    },
+    {
+      "l3_id": "L3-05-03-005",
+      "l3_name_zh": "拉拔-轴承脱离-专用工具",
+      "l3_name_en": "Pull-BearingRemoval-SpecializedTool",
+      "parent_l2_id": "L2-05-03",
+      "description": "使用专用轴承拉拔器将轴承从轴上脱离，施加均匀拉力避免损伤轴承和轴",
+      "object_category": "轴承",
+      "parameter_ranges": {
+        "size_range": "轴承内径50-200mm",
+        "weight_range": "轴承5-50kg",
+        "force_range": "拉拔力1-20kN",
+        "precision_requirement": "轴向对正，均匀施力"
+      },
+      "is_new": true,
+      "source_scene": "43-00-4341-BogieOverhaul-001"
+    },
+    {
+      "l3_id": "L3-08-01-001",
+      "l3_name_zh": "平磨-精抛光泽-布轮抛光",
+      "l3_name_en": "FlatPolish-MirrorFinish-ClothWheel",
+      "parent_l2_id": "L2-08-01",
+      "description": "将金属工件平面部位接触高速旋转布轮，施加可控压力进行精抛以获得光泽",
+      "object_category": "金属平面",
+      "parameter_ranges": {
+        "size_range": "抛光面积1-2500cm²",
+        "weight_range": "工件0.01-5kg",
+        "force_range": "抛光压力1-10kg（10-100N）",
+        "precision_requirement": "表面粗糙度Ra<0.2μm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-08-04-003",
+      "l3_name_zh": "涂胶-车身密封胶-低位水平路径",
+      "l3_name_en": "SealantApplication-BodySealant-LowHorizontalPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "弯腰姿态下沿车身门槛底部等低位接缝涂覆密封胶",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "枪口贴近压力2-5N",
+        "precision_requirement": "胶线宽度8-12mm，操作高度20-50cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-08-04-004",
+      "l3_name_zh": "涂胶-车身密封胶-高位仰角路径",
+      "l3_name_en": "SealantApplication-BodySealant-OverheadAngledPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "仰头姿态下沿车顶边缘流水槽等高位接缝涂覆密封胶",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "枪口贴近压力2-5N",
+        "precision_requirement": "胶线宽度8-12mm，操作高度180-220cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-04-04-003",
+      "l3_name_zh": "适抓-纸张边缘-指尖捏边",
+      "l3_name_en": "AdaptGrasp-PaperEdge-FingernipPinch",
+      "parent_l2_id": "L2-04-04",
+      "description": "指尖捏取纸张边缘用于后续折叠操作，控制力度避免撕裂",
+      "object_category": "柔性纸张边缘",
+      "parameter_ranges": {
+        "size_range": "捏取宽度5-20mm",
+        "weight_range": "N/A",
+        "force_range": "捏持力1-5N",
+        "precision_requirement": "边缘对齐"
+      },
+      "is_new": true,
+      "source_scene": "SC-23-232-2320-001"
+    },
+    {
+      "l3_id": "L3-04-01-004",
+      "l3_name_zh": "力握-电芯单体-单手包络",
+      "l3_name_en": "PowerGrip-BatteryCell-SingleHandEnvelop",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手包络式抓握锂电池电芯单体",
+      "object_category": "电芯单体",
+      "parameter_ranges": {
+        "size_range": "圆柱型直径18-46mm长度65-120mm，方形100x50x10mm至200x100x30mm",
+        "weight_range": "50-500g",
+        "force_range": "握力20-60N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-04-003",
+      "l3_name_zh": "翻转-绕水平轴-180度",
+      "l3_name_en": "Flip-HorizontalAxis-180Degree",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中绕水平轴翻转工件180度，使对面朝向检视方向",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "角度误差±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-02-06-002",
+      "l3_name_zh": "支撑-侧倾避让姿态-抗倾斜",
+      "l3_name_en": "Support-LateralLeanPosture-AntiTilt",
+      "parent_l2_id": "L2-02-06",
+      "description": "保持身体侧倾避让姿态稳定，抵抗重力引起的倾斜趋势",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "侧向抗力",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-05-002",
+      "l3_name_zh": "侧倾-回正-姿态恢复",
+      "l3_name_en": "LateralLean-ReturnCenter-PostureRecovery",
+      "parent_l2_id": "L2-02-05",
+      "description": "从侧倾姿态恢复至直立中正姿态",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "不适用",
+        "precision_requirement": "直立稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-08-07-002",
+      "l3_name_zh": "焊缝跟随-纵焊缝-超声波探伤",
+      "l3_name_en": "weld-seam-follow-longitudinal-weld-ultrasonic-inspection",
+      "parent_l2_id": "L2-08-07",
+      "description": "沿压力容器纵向焊缝路径移动超声波探头进行探伤检测",
+      "object_category": "纵焊缝",
+      "parameter_ranges": {
+        "size_range": "焊缝宽度10-30mm，长度2-20m",
+        "weight_range": "不适用",
+        "force_range": "探头接触压力5-15N",
+        "precision_requirement": "探头中心对准焊缝±3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3332-006"
+    },
+    {
+      "l3_id": "L3-08-03-003",
+      "l3_name_zh": "喷涂-防腐底漆-高处作业",
+      "l3_name_en": "SprayCoat-AnticorrosivePrimer-ElevatedWork",
+      "parent_l2_id": "L2-08-03",
+      "description": "在高处作业平台上对设备顶部和高位表面进行喷涂",
+      "object_category": "设备高位表面",
+      "parameter_ranges": {
+        "size_range": "作业高度2-15m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "安全防护下保持喷涂质量"
+      },
+      "is_new": true,
+      "source_scene": "SC-246-SPRAY-001"
+    },
+    {
+      "l3_id": "L3-01-02-002",
+      "l3_name_zh": "转向行走-多角度弯道-连续步态",
+      "l3_name_en": "TurnWalk-MultiAngleTurns-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "沿复杂巡检路线行走，需完成多次不同角度的方向转换",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "单次转弯半径0.3-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径跟踪精度±30cm"
+      },
+      "is_new": true,
+      "source_scene": "S-31-311-3110-001"
+    },
+    {
+      "l3_id": "L3-01-01-004",
+      "l3_name_zh": "行走-冷却带通道-匀速",
+      "l3_name_en": "Walk-CoolingZone-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "沿隧道窑冷却带侧通道行走，温度逐渐降低",
+      "object_category": "冷却区通道地面",
+      "parameter_ranges": {
+        "size_range": "行走距离20-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<0.3m"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-07-05-003",
+      "l3_name_zh": "开合-纸箱大盖-90度闭合",
+      "l3_name_en": "Hinge-CartonMajorFlap-90DegClose",
+      "parent_l2_id": "L2-07-05",
+      "description": "将纸箱长边侧的大折盖从垂直位置向内折叠闭合覆盖箱顶",
+      "object_category": "纸箱折盖",
+      "parameter_ranges": {
+        "size_range": "折盖宽度150-300mm",
+        "weight_range": "N/A",
+        "force_range": "翻折力3-12N",
+        "precision_requirement": "与另一大盖对齐"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-09-02-005",
+      "l3_name_zh": "贴检-控制台下方-细节检查",
+      "l3_name_en": "CloseInspect-UnderConsole-DetailCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "贴近检视控制台下方区域的安装细节和表面质量",
+      "object_category": "控制台",
+      "parameter_ranges": {
+        "size_range": "检视距离5-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别安装缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-07-05-004",
+      "l3_name_zh": "开合-机床防护门-0至90度",
+      "l3_name_en": "HingedOpenClose-MachineGuardDoor-0to90Degrees",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿防护门铰链轨迹将门从关闭位置拉开至约90度全开位置",
+      "object_category": "机床防护门",
+      "parameter_ranges": {
+        "size_range": "门扇尺寸600×800mm至1000×1200mm",
+        "weight_range": "门重10-30kg",
+        "force_range": "开启力30-80N",
+        "precision_requirement": "平稳开启无卡滞"
+      },
+      "is_new": true,
+      "source_scene": "34-348-3484-PartsLoadUnload-MechanicalComponents-MultiProcess"
+    },
+    {
+      "l3_id": "L3-07-05-005",
+      "l3_name_zh": "开合-机床防护门-90度至关闭",
+      "l3_name_en": "HingedOpenClose-MachineGuardDoor-90DegreesToClosed",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿防护门铰链轨迹将已打开的门推回至完全关闭位置",
+      "object_category": "机床防护门",
+      "parameter_ranges": {
+        "size_range": "门扇尺寸600×800mm至1000×1200mm",
+        "weight_range": "门重10-30kg",
+        "force_range": "关闭力20-60N",
+        "precision_requirement": "关闭到位触发联锁"
+      },
+      "is_new": true,
+      "source_scene": "34-348-3484-PartsLoadUnload-MechanicalComponents-MultiProcess"
+    },
+    {
+      "l3_id": "L3-08-05-004",
+      "l3_name_zh": "擦拭-方向盘皮革-湿布轻拭",
+      "l3_name_en": "Wipe-SteeringWheelLeather-DampClothLight",
+      "parent_l2_id": "L2-08-05",
+      "description": "使用微湿清洁布对方向盘皮革或仿皮表面进行轻柔擦拭，去除指纹油渍",
+      "object_category": "皮革/仿皮表面",
+      "parameter_ranges": {
+        "size_range": "方向盘直径350-400mm",
+        "weight_range": "N/A",
+        "force_range": "1-2N法向力",
+        "precision_requirement": "中等"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-PDI-001"
     }
   ],
-  "updated_at": "2026-06-09 03:45:03"
+  "updated_at": "2026-06-13 23:15:31"
 }

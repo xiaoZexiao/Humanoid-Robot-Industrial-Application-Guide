@@ -1,0 +1,896 @@
+{
+  "scene_id": "33-336-3360",
+  "scene_name": "上下挂-金属件电镀-酸碱环境",
+  "total_steps": 31,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置走向工件存放区与挂具之间的操作工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防腐地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在工件存放区与挂具之间的最佳操作位置精确站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-双侧物料点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "转动上半身朝向工件存放位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "目视确认待挂工件的具体位置和姿态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-金属工件-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "弯腰降低身体以便够到低位存放的工件",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]工件存放高度在腰部以下膝部以上，以髋关节屈曲为主，膝关节微屈，归入弯腰俯身而非下蹲",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸出手臂到达工件所在位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料存放区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "用全手包络抓住金属工件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-不规则金属件-重量0.1至10kg",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "在臂部空间中调整工件朝向使挂孔朝向便于挂载的方位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕任意轴-调整挂孔朝向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "转动上半身朝向挂具方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-180度-换向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "目视确认挂具上的空闲挂钩位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-挂具挂钩-空位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将手中工件移动到目标挂钩正上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-金属工件-近距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将工件挂孔对准挂钩并向下套入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-挂孔挂钩配合-间隙2至5mm",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]工件挂孔套入挂钩属于沿垂直方向的约束路径运动，挂孔与挂钩形成几何配合，偏离将导致无法挂入",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "近距离目视检查工件与挂钩的接触是否良好",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-挂钩接触点-电镀接触确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "确认接触良好后松开手指释放工件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已悬挂",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手到挂具的推拉杆位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-挂具推杆-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "用全手握住挂具推拉杆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆柱形杆-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "沿导轨将满载挂具推入镀槽中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-001",
+      "l3_name": "滑移-电镀槽导轨-推入500至1500mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 19,
+      "human_description": "松开推杆让挂具停留在镀槽内",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-快速松手-推杆固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "电镀完成后伸手到镀槽内挂具拉杆位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-镀槽内拉杆-跨越槽沿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "握住挂具拉杆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆柱形杆-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "沿导轨将挂具从镀槽中拉出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-002",
+      "l3_name": "滑移-电镀槽导轨-拉出500至1500mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 23,
+      "human_description": "松开拉杆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-快速松手-推杆固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "目视确认挂具上待取工件的位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-已镀工件-取件位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手到挂具上的工件位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-挂具工件位-避开相邻件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 26,
+      "human_description": "抓握住挂具上的已镀工件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-不规则金属件-重量0.1至10kg",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将工件沿挂钩向上提起脱离挂钩",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-挂孔挂钩配合-轻阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "转动上半身朝向周转筐方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-180度-换向",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 29,
+      "human_description": "将工件移动到周转筐上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-已镀金属件-近距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "按照规律排列将工件放入周转筐指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-行列排列-单层平铺",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 31,
+      "human_description": "松开手指释放工件到周转筐中",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防腐地坪-匀速",
+      "l3_name_en": "Walk-AnticorrosionFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在电镀车间防腐蚀处理的地坪上以均匀速度行走移动",
+      "object_category": "防腐环氧地坪",
+      "parameter_ranges": {
+        "size_range": "行走距离3-15m",
+        "weight_range": "自身负载",
+        "force_range": "正常步行",
+        "precision_requirement": "厘米级落脚"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-双侧物料点-分米级",
+      "l3_name_en": "Stop-DualMaterialPoints-DecimeterPrecision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工件存放区与挂具之间的操作工位精确站定，确保双侧均可转身操作",
+      "object_category": "操作工位标记点",
+      "parameter_ranges": {
+        "size_range": "停位范围±10cm",
+        "weight_range": "自身负载",
+        "force_range": "无",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向侧方",
+      "l3_name_en": "Rotate-90Degrees-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不移动情况下上半身绕垂直轴旋转约90度朝向侧方目标",
+      "object_category": "躯干",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "自身躯干",
+        "force_range": "自身驱动",
+        "precision_requirement": "±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-金属工件-位置确认",
+      "l3_name_en": "Gaze-MetalWorkpiece-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光对准待操作的金属工件，确认其具体位置和姿态以便后续抓取",
+      "object_category": "金属工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸50-500mm",
+        "weight_range": "[不适用]",
+        "force_range": "[不适用]",
+        "precision_requirement": "厘米级定位"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节屈曲为主，躯干前倾约45-60度，使手部能够到达腰部以下膝部以上高度的物体",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度0.5-0.8m",
+        "weight_range": "自身躯干",
+        "force_range": "自身驱动",
+        "precision_requirement": "±5cm到达范围"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料存放区-无障碍直线",
+      "l3_name_en": "Reach-MaterialStorage-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手将手臂伸展到物料存放区的工件位置，路径上无障碍物",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "空载",
+        "force_range": "自身驱动",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-不规则金属件-重量0.1至10kg",
+      "l3_name_en": "PowerGrip-IrregularMetal-Weight0.1to10kg",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络抓握形状不规则的金属工件，确保稳定持握",
+      "object_category": "金属工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸50-500mm",
+        "weight_range": "0.1-10kg",
+        "force_range": "抓握力10-100N",
+        "precision_requirement": "稳定持握"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-负载状态",
+      "l3_name_en": "BendForward-RecoverUpright-Loaded",
+      "parent_l2_id": "L2-02-02",
+      "description": "手中持有工件的状态下从弯腰姿态恢复到直立站姿",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "起身幅度45-60度",
+        "weight_range": "手持负载0.1-10kg",
+        "force_range": "腰背驱动",
+        "precision_requirement": "平稳起身"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕任意轴-调整挂孔朝向",
+      "l3_name_en": "Flip-ArbitraryAxis-AdjustHangingHole",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中翻转调整工件姿态，使工件的挂孔朝向便于挂载的方位",
+      "object_category": "金属工件",
+      "parameter_ranges": {
+        "size_range": "翻转角度0-180度",
+        "weight_range": "0.1-10kg",
+        "force_range": "臂部驱动",
+        "precision_requirement": "挂孔朝向正确"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-180度-换向",
+      "l3_name_en": "Rotate-180Degrees-TurnAround",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不移动情况下上半身绕垂直轴旋转约180度实现前后换向",
+      "object_category": "躯干",
+      "parameter_ranges": {
+        "size_range": "旋转角度160-200度",
+        "weight_range": "自身躯干或含手持物",
+        "force_range": "自身驱动",
+        "precision_requirement": "±15度"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-挂具挂钩-空位确认",
+      "l3_name_en": "Gaze-RackHook-VacancyConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光扫描挂具上的挂钩阵列，确认可用的空闲挂钩位置",
+      "object_category": "电镀挂具挂钩",
+      "parameter_ranges": {
+        "size_range": "挂钩间距50-150mm",
+        "weight_range": "[不适用]",
+        "force_range": "[不适用]",
+        "precision_requirement": "识别空位"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-金属工件-近距定位",
+      "l3_name_en": "Transfer-MetalWorkpiece-ShortRangePosition",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握金属工件在近距离范围内移动到目标挂钩上方精确位置",
+      "object_category": "金属工件",
+      "parameter_ranges": {
+        "size_range": "移动距离0.2-0.6m",
+        "weight_range": "0.1-10kg",
+        "force_range": "臂部驱动",
+        "precision_requirement": "厘米级对准"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-挂孔挂钩配合-间隙2至5mm",
+      "l3_name_en": "Insert-HangingHoleHookFit-Clearance2to5mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将工件的挂孔对准挂钩后沿垂直方向向下套入，使工件悬挂在挂钩上",
+      "object_category": "工件挂孔与挂钩",
+      "parameter_ranges": {
+        "size_range": "挂孔直径8-30mm，挂钩直径5-20mm",
+        "weight_range": "工件0.1-10kg",
+        "force_range": "下压力5-50N",
+        "precision_requirement": "对准精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-挂钩接触点-电镀接触确认",
+      "l3_name_en": "CloseInspect-HookContact-PlatingContactConfirm",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离目视检查工件与挂钩的接触点，确认导电接触良好且不被遮挡",
+      "object_category": "挂钩接触点",
+      "parameter_ranges": {
+        "size_range": "检视距离100-300mm",
+        "weight_range": "[不适用]",
+        "force_range": "[不适用]",
+        "precision_requirement": "接触状态判定"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已悬挂",
+      "l3_name_en": "Release-GradualLoosen-ObjectHanging",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐渐张开手指释放工件，工件此时已稳定悬挂在挂钩上",
+      "object_category": "已悬挂工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸50-500mm",
+        "weight_range": "0.1-10kg",
+        "force_range": "释放力渐减",
+        "precision_requirement": "平稳释放"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-挂具推杆-无障碍直线",
+      "l3_name_en": "Reach-RackPushBar-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手将手臂伸展到挂具的推拉杆位置准备握持",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "空载",
+        "force_range": "自身驱动",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-圆柱形杆-直径20至40mm",
+      "l3_name_en": "PowerGrip-CylindricalBar-Diameter20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络抓握圆柱形推拉杆，确保稳定握持以施加推拉力",
+      "object_category": "圆柱形杆",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "[通过杆传递力]",
+        "force_range": "握力30-80N",
+        "precision_requirement": "稳定握持"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-07-04-001",
+      "l3_name_zh": "滑移-电镀槽导轨-推入500至1500mm",
+      "l3_name_en": "Slide-PlatingTankRail-PushIn500to1500mm",
+      "parent_l2_id": "L2-07-04",
+      "description": "推动挂具沿电镀槽导轨滑移进入镀槽内部",
+      "object_category": "电镀槽导轨与挂具",
+      "parameter_ranges": {
+        "size_range": "行程500-1500mm",
+        "weight_range": "挂具满载50-500kg",
+        "force_range": "推力50-200N",
+        "precision_requirement": "导轨对准"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-快速松手-推杆固定",
+      "l3_name_en": "Release-QuickRelease-BarFixed",
+      "parent_l2_id": "L2-04-07",
+      "description": "快速张开手指释放推拉杆，挂具此时已固定在目标位置",
+      "object_category": "推拉杆",
+      "parameter_ranges": {
+        "size_range": "杆直径20-40mm",
+        "weight_range": "[不适用]",
+        "force_range": "快速释放",
+        "precision_requirement": "无特殊要求"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-镀槽内拉杆-跨越槽沿",
+      "l3_name_en": "Reach-TankPullBar-AcrossTankEdge",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂跨越镀槽边沿伸入槽内，到达挂具拉杆位置",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.4-0.8m",
+        "weight_range": "空载",
+        "force_range": "自身驱动",
+        "precision_requirement": "避开槽液"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-07-04-002",
+      "l3_name_zh": "滑移-电镀槽导轨-拉出500至1500mm",
+      "l3_name_en": "Slide-PlatingTankRail-PullOut500to1500mm",
+      "parent_l2_id": "L2-07-04",
+      "description": "拉动挂具沿电镀槽导轨滑移从镀槽中拉出",
+      "object_category": "电镀槽导轨与挂具",
+      "parameter_ranges": {
+        "size_range": "行程500-1500mm",
+        "weight_range": "挂具满载50-500kg（含镀液残留）",
+        "force_range": "拉力50-200N",
+        "precision_requirement": "导轨对准"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-已镀工件-取件位置确认",
+      "l3_name_en": "Gaze-PlatedWorkpiece-PickPositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认挂具上已电镀工件的位置，规划取件顺序",
+      "object_category": "已电镀工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸50-500mm",
+        "weight_range": "[不适用]",
+        "force_range": "[不适用]",
+        "precision_requirement": "位置识别"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-挂具工件位-避开相邻件",
+      "l3_name_en": "Reach-RackWorkpiecePosition-AvoidAdjacent",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手伸向挂具上的目标工件，注意避开相邻的其他工件",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.5m",
+        "weight_range": "空载",
+        "force_range": "自身驱动",
+        "precision_requirement": "避障路径"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-挂孔挂钩配合-轻阻力",
+      "l3_name_en": "Extract-HangingHoleHookFit-LightResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "将工件沿挂钩向上提起使挂孔脱离挂钩，阻力较小",
+      "object_category": "工件挂孔与挂钩",
+      "parameter_ranges": {
+        "size_range": "挂孔直径8-30mm，挂钩直径5-20mm",
+        "weight_range": "工件0.1-10kg",
+        "force_range": "提升力10-100N",
+        "precision_requirement": "垂直提升"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-已镀金属件-近距定位",
+      "l3_name_en": "Transfer-PlatedMetalPart-ShortRangePosition",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握已电镀的金属工件移动到周转筐上方位置",
+      "object_category": "已电镀金属工件",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.8m",
+        "weight_range": "0.1-10kg",
+        "force_range": "臂部驱动",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-行列排列-单层平铺",
+      "l3_name_en": "Stack-RowColumnArrangement-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "按照行列规律将工件平铺放入周转筐的指定位置",
+      "object_category": "周转筐内工件",
+      "parameter_ranges": {
+        "size_range": "工件间距30-100mm",
+        "weight_range": "0.1-10kg/件",
+        "force_range": "放置力5-50N",
+        "precision_requirement": "均匀间距"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐渐张开手指释放工件，工件此时已稳定放置在周转筐底面上",
+      "object_category": "已支撑工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸50-500mm",
+        "weight_range": "0.1-10kg",
+        "force_range": "释放力渐减",
+        "precision_requirement": "平稳释放"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-336-3360-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-04",
+      "L2-09-01",
+      "L2-09-02"
+    ],
+    "最高频L2": "L2-04-01",
+    "涉及的L1数量": 7
+  }
+}

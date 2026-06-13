@@ -1,0 +1,262 @@
+{
+  "scene_id": "14-00-1453",
+  "scene_name": "原料分拣-蔬果罐头-人工挑选",
+  "total_steps": 8,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "在湿滑的工作地面上保持稳定站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-湿滑站立姿态-抗滑移",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "持续"
+    },
+    {
+      "step_order": 2,
+      "human_description": "目光沿输送带方向连续扫描移动中的蔬果流寻找不合格品",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-输送带物料流-连续线性",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "1",
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "视线锁定发现的可疑蔬果并判断是否存在腐烂虫蛀或机械损伤",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-移动物料-缺陷判定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "伸手到输送带上移动中的目标蔬果位置上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-输送带上方-跟随动态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "抓取湿滑表面且可能部分软烂的不合格蔬果",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-湿滑软质-球状蔬果",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]蔬果表面湿滑且部分腐烂软化，需要形变适应以防滑脱和过度挤压，而非简单力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将不合格蔬果从输送带转移到侧边废料容器上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-小型蔬果-近距侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "松手释放蔬果使其自由落入废料容器",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-自由落放-入容器",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手臂快速收回至输送带上方待命位置准备下一次抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-待命位置-快速回位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-湿滑站立姿态-抗滑移",
+      "l3_name_en": "Support-WetFloorStanding-AntiSlip",
+      "parent_l2_id": "L2-02-06",
+      "description": "在潮湿或有水渍的地面上保持双脚稳定站立，通过微调重心和脚底摩擦力抵抗侧向滑移风险",
+      "object_category": "地面支撑",
+      "parameter_ranges": {
+        "size_range": "站立区域0.3-0.5m²",
+        "weight_range": "N/A",
+        "force_range": "抗滑力需克服地面摩擦系数降低至0.3-0.5",
+        "precision_requirement": "重心偏移控制在支撑面内"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-输送带物料流-连续线性",
+      "l3_name_en": "Scan-ConveyorMaterialFlow-ContinuousLinear",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线沿输送带运动方向连续追踪扫描移动中的物料流，覆盖输送带宽度范围内的所有物料",
+      "object_category": "输送带物料流",
+      "parameter_ranges": {
+        "size_range": "扫描宽度0.4-0.8m，扫描深度0.5-1.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别50mm以上的目标"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-移动物料-缺陷判定",
+      "l3_name_en": "Gaze-MovingMaterial-DefectJudgment",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线锁定输送带上移动中的单个目标物料，在其经过观察区域期间完成外观缺陷判定",
+      "object_category": "移动中的单体物料",
+      "parameter_ranges": {
+        "size_range": "目标尺寸50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能在0.5-1秒内完成判定，对应线速0.2-0.5m/s"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-输送带上方-跟随动态",
+      "l3_name_en": "Reach-AboveConveyor-DynamicTracking",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向输送带上方的移动目标位置，需要实时跟随目标的线性运动",
+      "object_category": "输送带上移动目标",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±30mm，需匹配0.2-0.5m/s线速"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-待命位置-快速回位",
+      "l3_name_en": "Reach-StandbyPosition-QuickReturn",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从当前位置快速收回至输送带上方的待命位置，为下一次抓取做准备",
+      "object_category": "固定待命点",
+      "parameter_ranges": {
+        "size_range": "回位距离0.2-0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±50mm，速度优先"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-湿滑软质-球状蔬果",
+      "l3_name_en": "AdaptiveGrip-WetSoft-SphericalProduce",
+      "parent_l2_id": "L2-04-04",
+      "description": "对表面湿滑且可能部分软烂的球状或近球状蔬果进行自适应抓取，控制握力避免滑脱和过度挤压",
+      "object_category": "湿滑蔬果",
+      "parameter_ranges": {
+        "size_range": "直径40-120mm",
+        "weight_range": "50-500g",
+        "force_range": "握力2-15N，需根据软硬度自适应",
+        "precision_requirement": "力控精度±2N"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-小型蔬果-近距侧向",
+      "l3_name_en": "Transfer-SmallProduce-ShortLateral",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握小型蔬果从输送带侧向转移至废料容器上方，距离较短",
+      "object_category": "小型蔬果",
+      "parameter_ranges": {
+        "size_range": "转移距离0.3-0.6m",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±100mm"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-自由落放-入容器",
+      "l3_name_en": "Release-FreeDrop-IntoContainer",
+      "parent_l2_id": "L2-04-07",
+      "description": "松开手指使物体自由落入下方容器，无需精确控制落点",
+      "object_category": "待丢弃物料",
+      "parameter_ranges": {
+        "size_range": "释放高度0.1-0.3m",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "容器开口>物体尺寸2倍即可"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1453"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 4
+  }
+}

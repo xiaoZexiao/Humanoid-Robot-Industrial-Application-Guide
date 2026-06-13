@@ -1,0 +1,293 @@
+{
+  "scene_id": "29-292-00",
+  "scene_name": "取件码垛-注塑制品-高频循环",
+  "total_steps": 9,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "目视注塑机开模状态指示灯或模具开合位置，确认模具已完全打开",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-设备状态指示-开模确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "手臂从待机位置伸入注塑机模具开合区域，接近制品位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-模具开合区域-避障路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1.0"
+    },
+    {
+      "step_order": 3,
+      "human_description": "手指张开后包络抓握模具型腔中的注塑制品",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-注塑制品-全手包络",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 制品重量0.05-5kg跨度大，轻质小件可用L2-04-02精密捏取，但考虑通用性和稳定性需求，主归类为力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "沿脱模方向将制品从模具型腔中拉出，克服脱模阻力",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-模具型腔制品-脱模方向",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 与L2-07-02区分：注塑脱模虽有方向约束但允许一定偏斜而不卡死，归入L2-05-03",
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 5,
+      "human_description": "持握制品将手臂从模具区域撤出至安全位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-注塑制品-模具外撤出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1.0"
+    },
+    {
+      "step_order": 6,
+      "human_description": "躯干向放置区方向转体，使手臂工作范围覆盖传送带或料箱",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-工位内换向-90度以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.6"
+    },
+    {
+      "step_order": 7,
+      "human_description": "持握制品将手臂移动至料箱或传送带上方的目标放置位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-注塑制品-放置区定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1.0"
+    },
+    {
+      "step_order": 8,
+      "human_description": "按照排列规律将制品放入料箱指定位置，保持行列整齐",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-注塑制品-矩阵单层",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 若放置于传送带则为L2-03-05精确定点放置，料箱码垛归入L2-03-06",
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.6"
+    },
+    {
+      "step_order": 9,
+      "human_description": "手指渐进张开释放制品，确认制品稳定后完全松开",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-已支撑状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-设备状态指示-开模确认",
+      "l3_name_en": "Gaze-EquipmentStatusIndicator-MoldOpenConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视注塑机开模指示灯或模具位置，确认模具已完全打开且进入安全取件窗口",
+      "object_category": "设备指示器/模具状态",
+      "parameter_ranges": {
+        "size_range": "指示灯直径10-30mm或模具开合行程100-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "状态二值判断（开/合）"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-模具开合区域-避障路径",
+      "l3_name_en": "Reach-MoldCavityZone-ObstacleAvoidPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从待机位置沿避障路径伸入注塑机模具开合区域，避开导柱和模具边缘",
+      "object_category": "模具开合空间",
+      "parameter_ranges": {
+        "size_range": "模具开合距离200-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径误差±20mm以内避免碰撞"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-注塑制品-全手包络",
+      "l3_name_en": "PowerGrip-InjectionPart-FullHandEnvelop",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络方式抓握注塑成型制品，手指和手掌形成稳定握持",
+      "object_category": "注塑制品",
+      "parameter_ranges": {
+        "size_range": "外形尺寸20-300mm",
+        "weight_range": "0.05-5kg",
+        "force_range": "握力5-50N",
+        "precision_requirement": "抓握稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-模具型腔制品-脱模方向",
+      "l3_name_en": "Pull-MoldCavityPart-DemoldDirection",
+      "parent_l2_id": "L2-05-03",
+      "description": "沿模具开模方向将制品从型腔中拉出，克服脱模阻力和残余抱紧力",
+      "object_category": "注塑制品/模具型腔",
+      "parameter_ranges": {
+        "size_range": "脱模行程10-100mm",
+        "weight_range": "0.05-5kg",
+        "force_range": "脱模力2-30N",
+        "precision_requirement": "脱模方向偏差±5°以内"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-注塑制品-模具外撤出",
+      "l3_name_en": "Transfer-InjectionPart-MoldWithdraw",
+      "parent_l2_id": "L2-03-02",
+      "description": "持握制品将手臂从模具开合区域沿安全路径撤出至模具外部",
+      "object_category": "注塑制品",
+      "parameter_ranges": {
+        "size_range": "撤出距离200-500mm",
+        "weight_range": "0.05-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "路径误差±20mm避免碰撞模具"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-工位内换向-90度以内",
+      "l3_name_en": "TorsoRotate-InStationTurn-Within90Deg",
+      "parent_l2_id": "L2-02-04",
+      "description": "在工位原地双脚不动情况下躯干旋转换向，使手臂工作范围覆盖新的目标区域",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度30-90度"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-注塑制品-放置区定位",
+      "l3_name_en": "Transfer-InjectionPart-PlacementZonePosition",
+      "parent_l2_id": "L2-03-02",
+      "description": "持握制品将手臂移动至传送带或料箱上方的目标放置位置",
+      "object_category": "注塑制品",
+      "parameter_ranges": {
+        "size_range": "移动距离300-800mm",
+        "weight_range": "0.05-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "终点定位±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-注塑制品-矩阵单层",
+      "l3_name_en": "Stack-InjectionPart-MatrixSingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "按照行列规律将注塑制品放入料箱，单层矩阵排列，相邻制品间距均匀",
+      "object_category": "注塑制品/料箱",
+      "parameter_ranges": {
+        "size_range": "制品尺寸20-300mm，料箱尺寸300x400-600x800mm",
+        "weight_range": "0.05-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "排列间距误差±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-已支撑状态",
+      "l3_name_en": "Release-GradualFingerOpen-SupportedState",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得支撑后渐进张开手指释放物体，确保物体稳定后完全松开",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "物体尺寸20-300mm",
+        "weight_range": "0.05-5kg",
+        "force_range": "释放过程力渐减至0",
+        "precision_requirement": "释放后物体位置偏差<5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-292-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-09-01",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-05-03",
+      "L2-03-02",
+      "L2-02-04",
+      "L2-03-06",
+      "L2-04-07"
+    ],
+    "最高频L2": "L2-03-02",
+    "涉及的L1数量": 5
+  }
+}

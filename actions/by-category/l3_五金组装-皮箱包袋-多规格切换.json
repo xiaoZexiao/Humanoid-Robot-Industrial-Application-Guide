@@ -1,0 +1,807 @@
+{
+  "scene_id": "19-00-1922",
+  "scene_name": "五金组装-皮箱包袋-多规格切换",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从上游传送位置伸手准备接收缝制完成的包体",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-传送带上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "双手包络抓握柔软的皮质包体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质皮革-袋状包体",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]皮质包体为柔软变形材料，抓取时需适应变形，非刚性力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "将包体从传送位置搬运到工作台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-软质包袋-轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将包体放置到工作台指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-皮质包体-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "松开双手释放包体使其平稳放置在台面上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-柔性物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "翻转包体调整至适合安装五金的朝向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90至180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "目视确认第一个五金安装位置的预置标记点",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-安装位置标记-定位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "伸手到五金件料盒区域准备取料",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-物料盒上方-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "用指尖精确捏取铆钉等小型五金件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-小型铆钉",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将铆钉从料盒转移到包体安装位置上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-小型紧固件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将铆钉精确对准预打孔位置并穿入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-铆钉穿孔-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "松开手指释放已穿入孔位的铆钉",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-指尖松开-紧固件已定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "伸手到工具架取铆接工具（铆枪或铆锤）",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具架区域-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "以适合铆接操作的姿势握持铆接工具手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-铆接工具-冲压功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将铆接工具移动对准已穿入的铆钉位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-手持工具-近距对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "按压铆枪或敲击铆锤完成铆钉铆合",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-05",
+      "l2_name": "冲击敲击",
+      "l3_id": "L3-05-05-001",
+      "l3_name": "敲击-铆接工具-中等冲击",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]铆接需要瞬时冲击力使铆钉变形锁定，非持续推压",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将铆接工具放回工具架或台面暂存位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-手持工具-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开手指释放工具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-工具已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "伸手到锁扣料盒区域准备取锁扣五金",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-物料盒上方-侧向伸展",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "捏取锁扣组件（包含螺丝）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-002",
+      "l3_name": "捏取-三指捏持-锁扣组件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将锁扣对准安装孔位并穿入螺柱",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-锁扣螺柱-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]锁扣安装需XY定位+角度对准+Z向插入，属多轴对位",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "用手指拧入锁扣螺母数圈进行预紧",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-锁扣螺母-顺时针预紧",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 23,
+      "human_description": "取螺丝刀以旋拧功能姿势握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-螺丝刀-旋拧功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "用螺丝刀将锁扣螺母拧紧至规定扭矩",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-十字螺丝刀-M3至M5螺钉",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 25,
+      "human_description": "目视逐一检查所有已安装五金件的位置和牢固度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-包体五金安装面-逐点扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 26,
+      "human_description": "双手抓握完成安装的包体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质皮革-袋状包体",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将成品包体搬运至下游传送位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-软质包袋-轻载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "释放包体至下游传送带或暂存位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-柔性物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-传送带上方-无障碍直线",
+      "l3_name_en": "Reach-ConveyorAbove-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "上肢从身体侧沿直线轨迹伸展至传送带上方区域，准备接取物料",
+      "object_category": "空间目标区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "空载",
+        "force_range": "无外力",
+        "precision_requirement": "厘米级终点精度"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质皮革-袋状包体",
+      "l3_name_en": "AdaptiveGrasp-SoftLeather-BagBody",
+      "parent_l2_id": "L2-04-04",
+      "description": "双手包络式抓取柔软皮革材质的包袋，手指适应包体变形分布握力",
+      "object_category": "柔性皮革制品",
+      "parameter_ranges": {
+        "size_range": "包体尺寸200-500mm",
+        "weight_range": "0.3-2kg",
+        "force_range": "握力5-15N",
+        "precision_requirement": "适应性握持"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-软质包袋-轻载",
+      "l3_name_en": "CoordinatedCarry-SoftBag-LightLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运柔软变形的皮质包袋，保持包体形态稳定",
+      "object_category": "柔性包袋",
+      "parameter_ranges": {
+        "size_range": "包体尺寸200-500mm",
+        "weight_range": "0.3-2kg",
+        "force_range": "搬运力5-20N",
+        "precision_requirement": "形态保持"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-皮质包体-厘米级",
+      "l3_name_en": "PrecisionPlace-LeatherBag-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将柔软皮质包体精确放置到工作台指定位置，位置偏差控制在厘米级",
+      "object_category": "柔性皮革制品",
+      "parameter_ranges": {
+        "size_range": "包体尺寸200-500mm",
+        "weight_range": "0.3-2kg",
+        "force_range": "放置力2-5N",
+        "precision_requirement": "位置精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-柔性物体已支撑",
+      "l3_name_en": "Release-GradualOpen-SoftObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指渐进张开释放已放置在支撑面上的柔软物体，避免变形反弹",
+      "object_category": "柔性物体",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "0.1-3kg",
+        "force_range": "释放控制",
+        "precision_requirement": "平稳释放"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-90至180度",
+      "l3_name_en": "Flip-HorizontalAxis-90to180Degrees",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中绕水平轴翻转物体90°至180°，调整至所需操作朝向",
+      "object_category": "通用可翻转物体",
+      "parameter_ranges": {
+        "size_range": "物体尺寸100-600mm",
+        "weight_range": "0.1-5kg",
+        "force_range": "翻转力矩1-10Nm",
+        "precision_requirement": "角度精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-安装位置标记-定位确认",
+      "l3_name_en": "Gaze-InstallationMark-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视觉注视工件上的预置安装位置标记点，确认安装定位",
+      "object_category": "位置标记",
+      "parameter_ranges": {
+        "size_range": "标记直径1-5mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视觉分辨率1mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-物料盒上方-侧向伸展",
+      "l3_name_en": "Reach-MaterialBinAbove-LateralExtension",
+      "parent_l2_id": "L2-03-01",
+      "description": "上肢侧向伸展至物料盒上方区域，准备拾取零部件",
+      "object_category": "空间目标区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "空载",
+        "force_range": "无外力",
+        "precision_requirement": "厘米级终点精度"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-小型铆钉",
+      "l3_name_en": "Pinch-TwoFingerOpposed-SmallRivet",
+      "parent_l2_id": "L2-04-02",
+      "description": "拇指与食指指尖对捏精密拾取小型铆钉类五金件",
+      "object_category": "小型金属紧固件",
+      "parameter_ranges": {
+        "size_range": "铆钉直径2-8mm，长度3-15mm",
+        "weight_range": "0.5-5g",
+        "force_range": "捏持力1-5N",
+        "precision_requirement": "定位精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-小型紧固件-近距",
+      "l3_name_en": "Transfer-SmallFastener-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握小型紧固件在近距离范围内转移至目标位置",
+      "object_category": "小型金属紧固件",
+      "parameter_ranges": {
+        "size_range": "紧固件直径2-10mm",
+        "weight_range": "0.5-10g",
+        "force_range": "转移过程无外力",
+        "precision_requirement": "终点精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-铆钉穿孔-间隙配合",
+      "l3_name_en": "Insert-RivetThroughHole-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将铆钉沿轴向穿入预制孔中，孔与铆钉为间隙配合关系",
+      "object_category": "铆钉/通孔配合",
+      "parameter_ranges": {
+        "size_range": "铆钉直径2-8mm，孔径+0.1至+0.5mm",
+        "weight_range": "0.5-5g",
+        "force_range": "插入力1-10N",
+        "precision_requirement": "对准精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-指尖松开-紧固件已定位",
+      "l3_name_en": "Release-FingertipOpen-FastenerPositioned",
+      "parent_l2_id": "L2-04-07",
+      "description": "指尖松开已穿入孔位的紧固件，紧固件由孔壁约束保持位置",
+      "object_category": "已定位紧固件",
+      "parameter_ranges": {
+        "size_range": "紧固件直径2-10mm",
+        "weight_range": "0.5-10g",
+        "force_range": "释放控制",
+        "precision_requirement": "保持定位"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-工具架区域-侧向伸展",
+      "l3_name_en": "Reach-ToolRackArea-LateralExtension",
+      "parent_l2_id": "L2-03-01",
+      "description": "上肢侧向伸展至工具架区域，准备取用工具",
+      "object_category": "空间目标区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "空载",
+        "force_range": "无外力",
+        "precision_requirement": "厘米级终点精度"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-铆接工具-冲压功能姿",
+      "l3_name_en": "ToolGrip-RivetingTool-PressFunction",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合冲压操作的姿势握持铆枪或铆锤手柄，食指置于触发位",
+      "object_category": "铆接工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-40mm",
+        "weight_range": "200-800g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "功能姿势正确"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-手持工具-近距对位",
+      "l3_name_en": "Transfer-HandheldTool-ShortRangeAlignment",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂握持工具在近距离范围内转移并对准工作位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-300mm",
+        "weight_range": "100-1000g",
+        "force_range": "转移过程无外力",
+        "precision_requirement": "对位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-05-05-001",
+      "l3_name_zh": "敲击-铆接工具-中等冲击",
+      "l3_name_en": "Strike-RivetingTool-MediumImpact",
+      "parent_l2_id": "L2-05-05",
+      "description": "使用铆枪或铆锤对铆钉施加冲击力使其变形铆合",
+      "object_category": "铆钉铆合",
+      "parameter_ranges": {
+        "size_range": "铆钉直径2-8mm",
+        "weight_range": "工具200-800g",
+        "force_range": "冲击力50-200N峰值",
+        "precision_requirement": "对准精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-手持工具-厘米级",
+      "l3_name_en": "PrecisionPlace-HandheldTool-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将手持工具精确放置到工具架或台面指定位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-300mm",
+        "weight_range": "100-1000g",
+        "force_range": "放置力2-10N",
+        "precision_requirement": "位置精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-工具已支撑",
+      "l3_name_en": "Release-GradualOpen-ToolSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指渐进张开释放已放置在支撑面上的工具",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "100-1000g",
+        "force_range": "释放控制",
+        "precision_requirement": "平稳释放"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-02-002",
+      "l3_name_zh": "捏取-三指捏持-锁扣组件",
+      "l3_name_en": "Pinch-ThreeFingerGrip-LockClaspAssembly",
+      "parent_l2_id": "L2-04-02",
+      "description": "拇指、食指、中指三指协调捏取锁扣组件",
+      "object_category": "五金锁扣组件",
+      "parameter_ranges": {
+        "size_range": "锁扣尺寸10-40mm",
+        "weight_range": "5-30g",
+        "force_range": "捏持力3-10N",
+        "precision_requirement": "稳定捏持"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-锁扣螺柱-3自由度对准",
+      "l3_name_en": "Dock-LockClaspStud-3DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "将锁扣螺柱与安装孔进行XY平面定位+角度对准+Z向插入的多轴对位插接",
+      "object_category": "锁扣五金件",
+      "parameter_ranges": {
+        "size_range": "螺柱直径M2-M5",
+        "weight_range": "5-30g",
+        "force_range": "插入力2-15N",
+        "precision_requirement": "对准精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-锁扣螺母-顺时针预紧",
+      "l3_name_en": "HandTighten-LockClaspNut-ClockwisePreTighten",
+      "parent_l2_id": "L2-06-02",
+      "description": "用手指直接旋拧锁扣螺母数圈进行预紧固定",
+      "object_category": "锁扣螺母",
+      "parameter_ranges": {
+        "size_range": "螺母规格M2-M5",
+        "weight_range": "1-5g",
+        "force_range": "手拧力矩0.1-0.5Nm",
+        "precision_requirement": "预紧到位"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-螺丝刀-旋拧功能姿",
+      "l3_name_en": "ToolGrip-Screwdriver-TurningFunction",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合旋拧操作的姿势握持螺丝刀，手掌包握手柄末端便于施加旋转力矩",
+      "object_category": "螺丝刀",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm",
+        "weight_range": "50-200g",
+        "force_range": "握持力10-25N",
+        "precision_requirement": "功能姿势正确"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-06-01-001",
+      "l3_name_zh": "工具旋拧-十字螺丝刀-M3至M5螺钉",
+      "l3_name_en": "ToolTurn-PhillipsScrewdriver-M3toM5Screw",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用十字螺丝刀旋拧M3至M5规格的螺钉或螺母至规定扭矩",
+      "object_category": "螺钉/螺母",
+      "parameter_ranges": {
+        "size_range": "螺钉规格M3-M5",
+        "weight_range": "工具50-200g",
+        "force_range": "旋拧力矩0.5-2Nm",
+        "precision_requirement": "扭矩控制±10%"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-包体五金安装面-逐点扫描",
+      "l3_name_en": "ScanInspect-BagHardwareSurface-PointByPoint",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉逐点扫描检查包体表面所有五金件的安装位置和牢固状态",
+      "object_category": "五金安装面",
+      "parameter_ranges": {
+        "size_range": "扫描区域200-500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "检出安装偏差>2mm"
+      },
+      "is_new": true,
+      "source_scene": "19-00-1922-HardwareAssembly-LeatherBag-MultiSpec"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-05",
+      "L2-06-01",
+      "L2-06-02",
+      "L2-07-01",
+      "L2-07-03",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 6
+  }
+}

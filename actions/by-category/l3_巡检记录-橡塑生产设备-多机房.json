@@ -1,0 +1,777 @@
+{
+  "scene_id": "29-00-00",
+  "scene_name": "巡检记录-橡塑生产设备-多机房",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "伸手到工具存放处拿取巡检记录板或手持终端",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具存放区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "用全手包握住记录板边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-板状物体-单手侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "另一手伸向测温枪存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具存放区-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "以枪型握姿抓取红外测温枪",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-手持测量仪-枪型瞄准姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "沿车间通道向第一个巡检区域行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 6,
+      "human_description": "在通道转角处转向进入设备区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-车间通道弯角-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "在第一台设备前的观察位置精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "目光扫视设备整体外观检查明显异常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-设备外观整体-快速巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "注视设备运行状态指示灯确认运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-设备指示灯-运行状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "读取温度表刻度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-仪表盘刻度-工艺参数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "读取压力表刻度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-仪表盘刻度-工艺参数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "躯干向左旋转朝向设备侧面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-中等角度-侧向观察",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "侧耳倾听设备运转声音判断是否有异响",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-设备运转声-异响排查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将测温枪瞄准电机外壳测量点",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-红外测温枪-设备表面温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "按下测温枪触发按钮进行测量",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-手持仪器按钮-轻触触发",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "读取测温枪显示屏上的温度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-手持仪器显示屏-测量数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "弯腰俯身查看设备底部区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-设备底部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "注视设备底部和地面检查油液泄漏痕迹",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-设备底部地面-泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 19,
+      "human_description": "起身恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身恢复-直立站姿",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰的逆过程，仍归属弯腰俯身L2，方向相反",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "行走到下一台设备位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "推开车间连通门",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-车间防护门-推开通过",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]门绕铰链旋转，手跟随圆弧轨迹，属于铰接开合而非持续推压",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 22,
+      "human_description": "行走穿过连通门到另一车间",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 23,
+      "human_description": "上楼梯前往楼上设备区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业楼梯-上行巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在设备间狭窄通道中侧身通过",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-侧身穿行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 25,
+      "human_description": "下楼梯返回地面层",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-工业楼梯-下行返回",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 26,
+      "human_description": "行走返回巡检起点工具存放处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 27,
+      "human_description": "松开手指释放记录板放回原位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 28,
+      "human_description": "松开测温枪放回工具架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具归位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-匀速巡检",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPatrol",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧/水泥地坪上以匀速行走进行设备巡检，路线固定，无需快速变速",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "巡检路线长度100-500m",
+        "weight_range": "手持工具负载<2kg",
+        "force_range": "正常步行推进力",
+        "precision_requirement": "路线偏差<0.5m"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-车间通道弯角-连续步态",
+      "l3_name_en": "TurnWalk-WorkshopCorner-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在车间通道转角处进行转向行走，角度通常为90度，保持连续步态不停顿",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5-2m",
+        "weight_range": "手持工具负载<2kg",
+        "force_range": "正常步行推进力",
+        "precision_requirement": "转向角度误差<10度"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业楼梯-上行巡检",
+      "l3_name_en": "Climb-IndustrialStairs-AscendPatrol",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿工业标准楼梯上行至上层设备区，手持巡检工具，单手可扶栏杆",
+      "object_category": "楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度15-20cm，宽度25-30cm",
+        "weight_range": "手持负载<2kg",
+        "force_range": "正常上楼推进力",
+        "precision_requirement": "踏步精度<3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-工业楼梯-下行返回",
+      "l3_name_en": "Climb-IndustrialStairs-DescendReturn",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿工业标准楼梯下行返回下层，手持巡检工具，控制下降速度",
+      "object_category": "楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度15-20cm，宽度25-30cm",
+        "weight_range": "手持负载<2kg",
+        "force_range": "正常下楼制动力",
+        "precision_requirement": "踏步精度<3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-侧身穿行",
+      "l3_name_en": "Pass-EquipmentGap-SidewaysTraverse",
+      "parent_l2_id": "L2-01-06",
+      "description": "在设备密集区域的狭窄间隙中侧身通行，通道宽度小于正常肩宽",
+      "object_category": "通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度40-60cm",
+        "weight_range": "手持负载<2kg需贴身携带",
+        "force_range": "无",
+        "precision_requirement": "避免与设备接触"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备观察点-分米级",
+      "l3_name_en": "Stop-EquipmentViewpoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备观察最佳位置精确停止，确保仪表盘和指示灯在最佳视野范围内",
+      "object_category": "地面标记或虚拟位置",
+      "parameter_ranges": {
+        "size_range": "停止位置范围直径30-50cm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "定位精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-设备底部高度",
+      "l3_name_en": "BendForward-ModerateFlex-EquipmentBase",
+      "parent_l2_id": "L2-02-02",
+      "description": "弯腰俯身使视线能够观察到设备底部和地面区域，前屈角度约45-60度",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "俯身后头部高度降至0.8-1.2m",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "保持稳定不晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身恢复-直立站姿",
+      "l3_name_en": "BendForward-RiseRecover-StandUpright",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态起身恢复到直立站姿，完成底部检查后的姿态复位",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "恢复到正常站高",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "平稳起身不失衡"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-中等角度-侧向观察",
+      "l3_name_en": "TurnBody-MediumAngle-LateralView",
+      "parent_l2_id": "L2-02-04",
+      "description": "躯干绕垂直轴旋转30-90度，调整身体朝向以便观察设备侧面或倾听",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "旋转角度30-90度",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "稳定转体不移步"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具存放区-无障碍直线",
+      "l3_name_en": "Reach-ToolStorage-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向工具存放位置，准备抓取巡检工具",
+      "object_category": "工具存放架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "末端定位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-板状物体-单手侧持",
+      "l3_name_en": "PowerGrip-PlateObject-SingleHandSide",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络握住板状物体（如记录板、平板电脑）边缘，单手侧持便于行走携带",
+      "object_category": "板状工具",
+      "parameter_ranges": {
+        "size_range": "板尺寸A5至A4",
+        "weight_range": "0.3-1kg",
+        "force_range": "握力10-30N",
+        "precision_requirement": "握持稳定不滑落"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-手持测量仪-枪型瞄准姿",
+      "l3_name_en": "ToolGrip-HandheldMeter-GunAimPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以枪型握姿握持手持测量仪器（如测温枪），食指置于扳机位置，便于瞄准和触发",
+      "object_category": "手持测量仪器",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "0.2-0.5kg",
+        "force_range": "握力15-25N",
+        "precision_requirement": "瞄准稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具归位",
+      "l3_name_en": "Release-GradualLoosen-ToolReturn",
+      "parent_l2_id": "L2-04-07",
+      "description": "渐进松开手指释放手持工具，确保工具平稳放置到存放位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "各类手持工具",
+        "weight_range": "0.2-2kg",
+        "force_range": "释放力渐进至0",
+        "precision_requirement": "平稳释放不跌落"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-手持仪器按钮-轻触触发",
+      "l3_name_en": "Press-HandheldButton-LightTrigger",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指轻触按压手持仪器上的触发按钮，启动测量或记录功能",
+      "object_category": "仪器按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径8-15mm",
+        "weight_range": "无",
+        "force_range": "触发力1-5N",
+        "precision_requirement": "准确触发不误按"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-车间防护门-推开通过",
+      "l3_name_en": "OpenClose-WorkshopDoor-PushThrough",
+      "parent_l2_id": "L2-07-05",
+      "description": "推开车间连通或防护门扇，门绕铰链旋转，开启足够角度供通过",
+      "object_category": "铰接门",
+      "parameter_ranges": {
+        "size_range": "门宽0.8-1.2m",
+        "weight_range": "门重10-30kg",
+        "force_range": "推力20-50N",
+        "precision_requirement": "开启角度>60度"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-设备指示灯-运行状态确认",
+      "l3_name_en": "Gaze-EquipmentIndicator-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光对准设备运行状态指示灯，确认灯光颜色和闪烁状态以判断设备运行是否正常",
+      "object_category": "指示灯",
+      "parameter_ranges": {
+        "size_range": "指示灯直径10-30mm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "视线对准精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-设备底部地面-泄漏检查",
+      "l3_name_en": "Gaze-EquipmentBase-LeakCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光对准设备底部和周围地面区域，检查是否存在油液泄漏痕迹或积液",
+      "object_category": "地面区域",
+      "parameter_ranges": {
+        "size_range": "检查区域0.5-2m²",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "能识别直径>5mm的液滴"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-设备外观整体-快速巡视",
+      "l3_name_en": "Scan-EquipmentExterior-QuickInspect",
+      "parent_l2_id": "L2-09-03",
+      "description": "目光快速扫视设备整体外观，检查是否有明显异常如变形、破损、松动部件等",
+      "object_category": "设备外壳",
+      "parameter_ranges": {
+        "size_range": "设备尺寸1-5m",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "能发现>50mm的明显异常"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-设备运转声-异响排查",
+      "l3_name_en": "Listen-EquipmentSound-AbnormalCheck",
+      "parent_l2_id": "L2-09-05",
+      "description": "侧耳倾听设备运转声音，排查是否存在异常响声如摩擦声、敲击声、嗡鸣声等",
+      "object_category": "设备声源",
+      "parameter_ranges": {
+        "size_range": "听觉距离0.5-2m",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "能分辨10dB以上异常声"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-红外测温枪-设备表面温度",
+      "l3_name_en": "MeasurePosition-IRThermometer-SurfaceTemp",
+      "parent_l2_id": "L2-09-06",
+      "description": "将红外测温枪瞄准设备表面（如电机外壳、轴承座）的测量点，保持适当距离进行非接触温度测量",
+      "object_category": "设备表面测温点",
+      "parameter_ranges": {
+        "size_range": "测量点直径10-50mm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "瞄准精度±10mm，距离10-50cm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-仪表盘刻度-工艺参数值",
+      "l3_name_en": "Read-GaugeDial-ProcessParameter",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉读取设备上圆形或方形仪表盘的刻度和指针位置，获取温度、压力等工艺参数数值",
+      "object_category": "仪表盘",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "读数精度为最小刻度"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-手持仪器显示屏-测量数值",
+      "l3_name_en": "Read-HandheldDisplay-MeasuredValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取手持测量仪器LCD/LED显示屏上的数字测量结果",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸20-50mm",
+        "weight_range": "无",
+        "force_range": "无",
+        "precision_requirement": "数字清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-00-EquipmentPatrol-RubberPlasticMachine-MultiRoom"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-03",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-07-05",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-05",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 7
+  }
+}

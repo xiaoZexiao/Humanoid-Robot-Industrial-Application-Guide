@@ -1,0 +1,503 @@
+{
+  "scene_id": "10-101-00",
+  "scene_name": "安全巡检-地下矿井巷道-粉尘高温环境",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区沿巷道行走至检测仪存放处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-矿井巷道地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "将手臂伸向工具架上的便携式多参数检测仪",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "以单手功能姿势握持便携式多参数检测仪",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-便携式检测仪-单手持握姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "手持检测仪沿巷道行走至巡检起点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-轻型手持仪器-单手前持",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]检测仪约0.5kg属于轻载，但需保持稳定读数姿态，归入负载行走",
+      "parallel_with": null,
+      "duration_estimate": "60-120"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在首个巡检标记点精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检点标记-米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "抬头注视顶板支护结构检查其完好状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-顶板支护结构-完好性确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "躯干向左旋转约90度朝向巷道侧壁",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "注视巷道通风管道设施检查其运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-通风管道设施-运行状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将检测仪举至胸前高度对准巷道空气区域进行瓦斯检测",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-便携式气体检测仪-气体浓度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "注视检测仪显示屏读取瓦斯浓度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-检测仪数显屏-浓度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "调整检测仪位置进行粉尘浓度检测定位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-便携式气体检测仪-气体浓度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "注视检测仪显示屏读取粉尘浓度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-检测仪数显屏-浓度数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "躯干向右旋转约90度回正朝向巷道前方",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "手持检测仪沿巷道继续行走前往下一巡检点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-轻型手持仪器-单手前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 15,
+      "human_description": "在巷道转弯处变向转弯行走通过弯道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-巷道弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 16,
+      "human_description": "完成全线巡检后沿巷道行走返回起点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-轻型手持仪器-单手前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "120-240"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将检测仪移动至工具架存放位置上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-便携式检测仪-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "手指逐渐松开释放检测仪使其稳定置于架上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-矿井巷道地面-匀速",
+      "l3_name_en": "Walk-MineTunnelFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在矿井巷道的水泥或岩石地面上以匀速步态直线行走，适应粉尘环境和有限照明条件",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "巷道宽度2-3m，高度2-2.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±0.3m"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-巷道弯道-连续步态",
+      "l3_name_en": "TurnWalk-TunnelCorner-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在矿井巷道的弯道处以连续步态转向行走，保持行进流畅性",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "转弯半径1-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转向角度30-120度"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-轻型手持仪器-单手前持",
+      "l3_name_en": "LoadedWalk-LightHandheldDevice-SingleHandFront",
+      "parent_l2_id": "L2-01-07",
+      "description": "单手在身前持握轻型便携式仪器进行行走，保持仪器稳定便于随时读数",
+      "object_category": "便携式检测仪器",
+      "parameter_ranges": {
+        "size_range": "仪器尺寸150x80x40mm",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "不适用",
+        "precision_requirement": "仪器保持水平±15度"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-巡检点标记-米级",
+      "l3_name_en": "Stop-InspectionMarker-MeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在巷道巡检点标记位置精确停止，停位精度达到米级以确保覆盖检测区域",
+      "object_category": "地面标记/检查点",
+      "parameter_ranges": {
+        "size_range": "标记区域直径0.5-1m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±0.5m"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向左",
+      "l3_name_en": "TorsoRotate-90Deg-Left",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置保持不变，躯干绕垂直轴向左旋转约90度以改变观察方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "旋转角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-向右",
+      "l3_name_en": "TorsoRotate-90Deg-Right",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置保持不变，躯干绕垂直轴向右旋转约90度以恢复前向朝向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "旋转角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架上方-无障碍直线",
+      "l3_name_en": "Reach-ToolRackAbove-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向工具存放架上方，为后续抓取工具做准备",
+      "object_category": "工具架/存放区",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±50mm"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-便携式检测仪-厘米级",
+      "l3_name_en": "PlacePrecise-PortableDetector-CmLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将便携式检测仪精确放置到工具架指定位置，确保仪器稳定不滑落",
+      "object_category": "便携式检测仪器",
+      "parameter_ranges": {
+        "size_range": "仪器尺寸150x80x40mm",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "不适用",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-便携式检测仪-单手持握姿",
+      "l3_name_en": "ToolGrip-PortableDetector-SingleHandHold",
+      "parent_l2_id": "L2-04-03",
+      "description": "以单手功能握姿握持便携式多参数检测仪，拇指可操作按键，显示屏朝向操作者",
+      "object_category": "便携式检测仪器",
+      "parameter_ranges": {
+        "size_range": "握柄直径30-50mm",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "握力5-15N",
+        "precision_requirement": "保持仪器稳定不晃动"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑后，手指逐渐张开释放物体，确保释放过程平稳无冲击",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "物体尺寸50-200mm",
+        "weight_range": "0.1-2.0kg",
+        "force_range": "释放力渐进降至0N",
+        "precision_requirement": "释放时物体位移<10mm"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-顶板支护结构-完好性确认",
+      "l3_name_en": "Gaze-RoofSupport-IntegrityCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "抬头将视线对准巷道顶板支护结构，观察锚杆、锚索、金属网等支护构件的完好状态",
+      "object_category": "矿井支护结构",
+      "parameter_ranges": {
+        "size_range": "观察距离1.5-2.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视野覆盖2m宽度范围"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-通风管道设施-运行状态确认",
+      "l3_name_en": "Gaze-VentilationDuct-OperationCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准巷道侧壁的通风管道设施，观察风筒完整性、连接处密封性和运行状态",
+      "object_category": "通风设施",
+      "parameter_ranges": {
+        "size_range": "观察距离0.5-2.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可识别接头松动、破损等异常"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-便携式气体检测仪-气体浓度",
+      "l3_name_en": "MeasurePosition-PortableGasDetector-GasConcentration",
+      "parent_l2_id": "L2-09-06",
+      "description": "将便携式多参数气体检测仪举至胸前高度并对准待检测空气区域，保持稳定等待读数",
+      "object_category": "便携式检测仪器",
+      "parameter_ranges": {
+        "size_range": "检测高度1.2-1.5m",
+        "weight_range": "仪器重量0.3-1.0kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持静止3-5秒"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-检测仪数显屏-浓度数值",
+      "l3_name_en": "Read-DetectorDisplay-ConcentrationValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准检测仪的数字显示屏，识别并记录瓦斯、粉尘等参数的浓度数值",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸30x50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可识别0.01%精度数值"
+      },
+      "is_new": true,
+      "source_scene": "10-101-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-05",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 5
+  }
+}

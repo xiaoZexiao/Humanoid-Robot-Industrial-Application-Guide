@@ -1,0 +1,650 @@
+{
+  "scene_id": "39-00-00",
+  "scene_name": "巡检读数-电子厂设备仪表-固定路线多点位",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从巡检起点出发，沿固定路线在车间环氧地坪上匀速行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在车间通道转角处转向90度继续行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在第一个仪表点位前精确停止，脚步对准地面巡检标识",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检地标-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "上半身向左转动约60度，使视线正对墙面仪表盘",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-60度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "调整视线聚焦于温度仪表的指针和刻度区域",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-模拟仪表盘-数值读取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "识别并读取模拟温度表盘上的指针指示数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-模拟表盘刻度-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "扫视设备外观整体状态，检查是否有异常现象",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-设备外观-栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "对准设备整体进行拍照记录当前状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-设备整体-拍照记录",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "沿路线继续直行前往下一个巡检点位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在低位压力表前精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检地标-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身至膝部高度以便查看低位安装的压力表",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "调整视线对准低位压力表刻度盘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-模拟仪表盘-压力读取",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]与L3-09-01-001区别在于观察对象为压力表而非温度表",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "读取压力表指针指示的压力数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-模拟表盘刻度-压力数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "直立恢复站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-直立恢复-起身",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "沿路线行走至需要上楼的楼梯口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-90"
+    },
+    {
+      "step_order": 16,
+      "human_description": "沿工业楼梯上行至二楼继续巡检",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-标准工业楼梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 17,
+      "human_description": "在数字显示屏点位前精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检地标-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "视线对准设备数字显示屏",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-004",
+      "l3_name": "注视-数字显示屏-数值读取",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]数字显示屏与模拟表盘需要不同的识别方式",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "读取数字显示屏上的电流数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-数字显示屏-电流数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 20,
+      "human_description": "穿过设备间的狭窄通道到达下一个巡检区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-肩宽以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "跨越地面的线缆槽盖继续行进",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-地面线缆槽-10cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "沿工业楼梯下行返回一楼",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-标准工业楼梯-下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 23,
+      "human_description": "沿固定路线直行返回巡检起点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-300"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在巡检起点/终点处精确停止完成本次巡检",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检地标-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房的环氧地坪上以匀速稳定步态直线行走，适用于车间巡检、工位转移等场景",
+      "object_category": "地面环境",
+      "parameter_ranges": {
+        "size_range": "单次行走距离10m-500m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeBend-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在车间通道转角处进行约90度的转向行走，保持连续步态不停顿",
+      "object_category": "地面环境",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5m-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转向角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-标准工业楼梯-上行",
+      "l3_name_en": "Climb-StandardIndustrialStairs-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿标准工业楼梯（踏步高度15-20cm，宽度25-30cm）上行，适用于厂房楼层间移动",
+      "object_category": "楼梯设施",
+      "parameter_ranges": {
+        "size_range": "踏步高度15-20cm，宽度25-30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "踏步中心±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-标准工业楼梯-下行",
+      "l3_name_en": "Climb-StandardIndustrialStairs-Descending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿标准工业楼梯下行，需控制重心和步速确保安全",
+      "object_category": "楼梯设施",
+      "parameter_ranges": {
+        "size_range": "踏步高度15-20cm，宽度25-30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "踏步中心±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-地面线缆槽-10cm以内",
+      "l3_name_en": "StepOver-FloorCableTray-Under10cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "跨越地面的线缆槽盖或凸起的走线架，高度在10cm以内",
+      "object_category": "地面障碍物",
+      "parameter_ranges": {
+        "size_range": "高度5-10cm，宽度20-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "落脚点±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-肩宽以内",
+      "l3_name_en": "Pass-EquipmentGap-WithinShoulderWidth",
+      "parent_l2_id": "L2-01-06",
+      "description": "穿过设备与设备之间的狭窄间隙，通道宽度接近或小于肩宽，需侧身或调整姿态通行",
+      "object_category": "狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度40-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不触碰两侧设备"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-巡检地标-厘米级",
+      "l3_name_en": "Stop-InspectionMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在巡检点位的地面标识处精确停止，为后续的仪表读取做好位置准备",
+      "object_category": "地面标识",
+      "parameter_ranges": {
+        "size_range": "标识尺寸10x10cm-30x30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝部高度",
+      "l3_name_en": "BendDown-ModerateFlex-KneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "腰部前屈弯腰至视线能够对准膝部高度的目标，用于查看低位安装的仪表设备",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度30-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准目标±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-直立恢复-起身",
+      "l3_name_en": "BendDown-UprightRecovery-StandUp",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复到直立站姿，完成低位检查后的姿态复原",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "恢复稳定站姿"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-60度-向左",
+      "l3_name_en": "TrunkRotation-60Degree-Left",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身向左旋转约60度，使视线和身体正面朝向侧方目标",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度45-90度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-模拟仪表盘-数值读取",
+      "l3_name_en": "Gaze-AnalogGauge-ValueReading",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准模拟仪表盘的刻度区域，调整视角使指针和刻度清晰可辨",
+      "object_category": "模拟仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视角±5度"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-设备整体-拍照记录",
+      "l3_name_en": "Gaze-EquipmentOverview-PhotoCapture",
+      "parent_l2_id": "L2-09-01",
+      "description": "调整视角对准设备整体，使设备完整进入视野范围以便拍照记录设备状态",
+      "object_category": "工业设备",
+      "parameter_ranges": {
+        "size_range": "设备尺寸0.5m-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "设备完整入画"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-模拟仪表盘-压力读取",
+      "l3_name_en": "Gaze-AnalogGauge-PressureReading",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准压力表盘的刻度区域，调整视角使指针和压力刻度清晰可辨",
+      "object_category": "压力仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视角±5度"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-004",
+      "l3_name_zh": "注视-数字显示屏-数值读取",
+      "l3_name_en": "Gaze-DigitalDisplay-ValueReading",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准数字显示屏，调整视角使数字清晰可识别，避免反光和视角畸变",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸30x15mm-100x50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "正视角度±15度"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-设备外观-栅格扫描",
+      "l3_name_en": "Scan-EquipmentExterior-GridPattern",
+      "parent_l2_id": "L2-09-03",
+      "description": "以栅格模式系统性扫视设备外观各部位，检查是否存在漏油、变形、发热变色等异常现象",
+      "object_category": "工业设备",
+      "parameter_ranges": {
+        "size_range": "扫描面积0.5-5m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖率>95%"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-模拟表盘刻度-温度数值",
+      "l3_name_en": "Read-AnalogDial-TemperatureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "识别模拟温度表盘上的指针位置，对照刻度读取温度数值",
+      "object_category": "温度仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "读数精度±1格"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-模拟表盘刻度-压力数值",
+      "l3_name_en": "Read-AnalogDial-PressureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "识别模拟压力表盘上的指针位置，对照刻度读取压力数值",
+      "object_category": "压力仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "读数精度±1格"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-003",
+      "l3_name_zh": "读取-数字显示屏-电流数值",
+      "l3_name_en": "Read-DigitalDisplay-CurrentValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "识别数字显示屏上显示的电流数值，进行OCR识别或直接数字读取",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸30x15mm-100x50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-03",
+      "L2-01-05",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 3
+  }
+}

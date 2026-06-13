@@ -1,0 +1,490 @@
+{
+  "scene_id": "28-282-00",
+  "scene_name": "搬运码垛-短纤包装袋-50kg重载",
+  "total_steps": 16,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从等待位置平地行走至输送线末端的取料工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧车间地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "目视检查输送线上的短纤包是否已到达取料位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-包装袋到位-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在输送线侧面的最佳抓取位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-输送线侧-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身降低身体重心至短纤包抓取高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-输送线高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂同时向前伸出至短纤包两侧的抓握位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-大型包装袋侧面-双臂协同",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手全掌包络抓握短纤包的编织袋表面",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-编织袋包装-大型柔性包",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "保持抓握状态从弯腰姿态起立恢复直立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "起立-负载状态-重载起身",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽从弯腰姿态恢复，但膝关节同时深度屈曲参与发力，归入下蹲起立而非弯腰俯身",
+      "parallel_with": 8,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调将短纤包从输送线高度抬起至搬运高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-大型柔性包-重载提升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 7,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双臂前持短纤包负载状态下行走至托盘码垛区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-重型柔性包-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在托盘当前层的目标码放位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-托盘码垛位-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "根据当前码垛层高度弯腰俯身调整身体姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-自适应深度-码垛层高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 12,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双臂协调将短纤包从搬运高度缓慢下放至码垛层",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-大型柔性包-重载下放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 11,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将短纤包按矩阵排列规律调整至目标位置完成码放",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-矩阵排列-多层堆叠",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 14,
+      "human_description": "确认短纤包已稳定支撑后双手渐进松开释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-重载已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "从弯腰姿态起身恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "起立-空载状态-正常起身",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "平地行走返回输送线取料位置准备下一循环",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧车间地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧车间地面-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在化纤车间环氧地坪上以均匀步速直线行走，地面平整无明显障碍",
+      "object_category": "环氧地坪",
+      "parameter_ranges": {
+        "size_range": "行走距离3-15m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-包装袋到位-状态确认",
+      "l3_name_en": "Gaze-BagArrival-StatusCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视输送线末端，确认短纤包装袋是否已到达可抓取位置",
+      "object_category": "包装袋",
+      "parameter_ranges": {
+        "size_range": "目标尺寸600x800x500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别到位状态"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-输送线侧-分米级",
+      "l3_name_en": "Stop-ConveyorSide-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在输送线侧面的最佳抓取位置精确停止，确保双臂可达范围覆盖目标物",
+      "object_category": "输送线工位",
+      "parameter_ranges": {
+        "size_range": "停位区域±10cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-输送线高度",
+      "l3_name_en": "BendForward-ModerateFlex-ConveyorHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "身体前屈约45-60度，使双手可达输送线上物体的高度位置",
+      "object_category": "输送线平台",
+      "parameter_ranges": {
+        "size_range": "目标高度600-900mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部到达目标高度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-大型包装袋侧面-双臂协同",
+      "l3_name_en": "Reach-LargeBagSides-DualArm",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前伸出，手掌张开准备从两侧包络抓握大型包装袋",
+      "object_category": "大型包装袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离400-700mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "双手对称到达包两侧"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-编织袋包装-大型柔性包",
+      "l3_name_en": "PowerGrip-WovenBag-LargeFlexiblePack",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手全掌包络抓握编织袋材质的大型柔性包装，手指深入袋体褶皱增加摩擦",
+      "object_category": "编织袋包装",
+      "parameter_ranges": {
+        "size_range": "包体宽度500-800mm",
+        "weight_range": "50-200kg",
+        "force_range": "单手握力100-300N",
+        "precision_requirement": "抓握稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "起立-负载状态-重载起身",
+      "l3_name_en": "StandUp-Loaded-HeavyLift",
+      "parent_l2_id": "L2-02-03",
+      "description": "双手持握重物状态下从弯腰/半蹲姿态起立，膝关节和髋关节协调发力",
+      "object_category": "重载起身",
+      "parameter_ranges": {
+        "size_range": "起身高度变化400-600mm",
+        "weight_range": "负载50-200kg",
+        "force_range": "腿部输出力500-1500N",
+        "precision_requirement": "保持负载稳定"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-大型柔性包-重载提升",
+      "l3_name_en": "CoopCarry-LargeFlexPack-HeavyLift",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将大型柔性包装从低位提升至腰部搬运高度，保持包体稳定",
+      "object_category": "大型柔性包",
+      "parameter_ranges": {
+        "size_range": "提升高度300-600mm",
+        "weight_range": "50-200kg",
+        "force_range": "双臂合力500-2000N",
+        "precision_requirement": "包体不倾斜滑落"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-重型柔性包-双臂前持",
+      "l3_name_en": "LoadedWalk-HeavyFlexPack-DualArmFront",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持重型柔性包装在车间内行走，步态稳定，注意视野受遮挡",
+      "object_category": "重型柔性包",
+      "parameter_ranges": {
+        "size_range": "行走距离3-20m",
+        "weight_range": "50-200kg",
+        "force_range": "持续支撑力500-2000N",
+        "precision_requirement": "步态稳定不跌倒"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-托盘码垛位-分米级",
+      "l3_name_en": "Stop-PalletStackPos-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘码垛区的当前层目标位置精确停止，为规律码放做准备",
+      "object_category": "托盘码垛位",
+      "parameter_ranges": {
+        "size_range": "停位区域±15cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±15cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-自适应深度-码垛层高度",
+      "l3_name_en": "BendForward-AdaptiveDepth-StackLayerHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "根据当前码垛层高度自适应调整俯身深度，底层需深俯身，高层轻微俯身或不俯身",
+      "object_category": "码垛层面",
+      "parameter_ranges": {
+        "size_range": "目标高度0-1500mm（随层数变化）",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部到达当前层高度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-大型柔性包-重载下放",
+      "l3_name_en": "CoopCarry-LargeFlexPack-HeavyLower",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将大型柔性包装从搬运高度缓慢下放至目标码垛层，控制下降速度",
+      "object_category": "大型柔性包",
+      "parameter_ranges": {
+        "size_range": "下放高度200-800mm",
+        "weight_range": "50-200kg",
+        "force_range": "双臂合力500-2000N（离心制动）",
+        "precision_requirement": "平稳下放不冲击"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-矩阵排列-多层堆叠",
+      "l3_name_en": "Stack-MatrixArray-MultiLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "按照矩阵排列规律将包装袋码放在托盘上，注意层间交错和边缘对齐",
+      "object_category": "大型包装袋",
+      "parameter_ranges": {
+        "size_range": "单层2x2至3x3排列，4-6层堆叠",
+        "weight_range": "单包50-200kg",
+        "force_range": "定位调整力50-200N",
+        "precision_requirement": "包间间隙<5cm，边缘对齐±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-重载已支撑",
+      "l3_name_en": "Release-GradualUngrip-HeavySupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认重载包装袋已稳定落在支撑面上后，双手手指渐进松开完成释放",
+      "object_category": "重载包装袋",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "50-200kg",
+        "force_range": "握力从100-300N渐降至0",
+        "precision_requirement": "释放过程包体不位移"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "起立-空载状态-正常起身",
+      "l3_name_en": "StandUp-Unloaded-NormalRise",
+      "parent_l2_id": "L2-02-03",
+      "description": "空手状态下从弯腰姿态恢复直立站姿，正常速度起身",
+      "object_category": "空载起身",
+      "parameter_ranges": {
+        "size_range": "起身高度变化400-600mm",
+        "weight_range": "无负载",
+        "force_range": "自重支撑",
+        "precision_requirement": "平稳起身"
+      },
+      "is_new": true,
+      "source_scene": "SCN-28-282-CP-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-03-03",
+    "涉及的L1数量": 5
+  }
+}

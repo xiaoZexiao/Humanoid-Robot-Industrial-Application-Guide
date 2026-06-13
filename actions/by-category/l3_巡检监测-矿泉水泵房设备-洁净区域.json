@@ -1,0 +1,486 @@
+{
+  "scene_id": "12-120-1200",
+  "scene_name": "巡检监测-矿泉水泵房设备-洁净区域",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从值班室出发，沿泵房通道行走至第一台离心泵位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在第一台水泵前方约0.5米处精确停定，面向设备",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视检查水泵机组整体外观及运行状态指示灯",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-设备指示灯-运行状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "侧耳倾听电机运行声音，判断是否存在异响",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-电机运转声-异响判别",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 5,
+      "human_description": "上身向右旋转约90度，面向压力表方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-朝向仪表",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "行走2-3步至压力表正前方可视位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "注视压力表表盘，读取当前压力数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-压力表盘-压力数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "行走至流量计显示屏位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "注视流量计显示屏，读取当前流量数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-流量计显示屏-流量数值",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 流量计为数字显示屏而非刻度盘，但读取目的相同，仍归入L2-09-07标识读取定位",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "行走至管道接头所在位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身至膝下高度，以便近距离观察低位管道接头",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "近距离目视检查管道接头表面是否有水渍或渗漏痕迹",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-管道接头表面-渗漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 13,
+      "human_description": "直起腰部恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-复位直立-站姿恢复",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 从弯腰状态恢复站立属于L2-02-02的逆向动作，而非L2-02-03下蹲起立，因为全程膝关节基本不弯曲",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "转向并行走至下一台水泵设备位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 15,
+      "human_description": "重复步骤2-13对第二台水泵进行完整巡检",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-水泵机组区域-系统巡检",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 此处概括多台设备的重复巡检动作，每台设备的详细步骤与步骤2-13相同，实际执行时按单台设备拆解",
+      "parallel_with": null,
+      "duration_estimate": "180-360"
+    },
+    {
+      "step_order": 16,
+      "human_description": "完成所有设备巡检后，沿通道行走返回泵房出口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 17,
+      "human_description": "在设备间狭窄过道处侧身通过",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-侧身通过",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "在泵房出口处精确停位，准备离开",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速巡检",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPatrol",
+      "parent_l2_id": "L2-01-01",
+      "description": "在环氧树脂地坪表面以匀速步态行走，用于工业厂房内部的日常巡检移动",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.2-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备观察点-分米级",
+      "l3_name_en": "Stop-EquipmentViewpoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备观察点前方精确停止，使身体正对待检设备，为后续视觉检查做准备",
+      "object_category": "定位标识点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-设备指示灯-运行状态确认",
+      "l3_name_en": "Gaze-EquipmentIndicator-StatusConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视对准设备面板上的运行状态指示灯，确认指示灯颜色和闪烁状态是否正常",
+      "object_category": "指示灯/状态显示器",
+      "parameter_ranges": {
+        "size_range": "指示灯直径10-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准精度±5°"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-电机运转声-异响判别",
+      "l3_name_en": "Listen-MotorSound-AnomalyDetection",
+      "parent_l2_id": "L2-09-05",
+      "description": "将头部偏向电机方向，通过听觉感知电机运转声音，判别是否存在异常摩擦声、振动声或其他故障特征音",
+      "object_category": "电机/旋转设备",
+      "parameter_ranges": {
+        "size_range": "电机功率0.5-50kW",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "声源定位精度±15°"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-朝向仪表",
+      "l3_name_en": "Rotate-90Degree-TowardInstrument",
+      "parent_l2_id": "L2-02-04",
+      "description": "在双脚不移动的情况下，上半身绕垂直轴旋转约90度，使视线朝向待读取的仪表方向",
+      "object_category": "仪表/显示设备",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-压力表盘-压力数值",
+      "l3_name_en": "Read-PressureGauge-PressureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "对准压力表表盘，识别指针位置并读取对应的压力数值，通常需要保持适当距离和角度以消除视差",
+      "object_category": "压力表/机械仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2%FS"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-流量计显示屏-流量数值",
+      "l3_name_en": "Read-FlowmeterDisplay-FlowValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "对准流量计数字显示屏，读取当前瞬时流量或累计流量数值",
+      "object_category": "流量计/数字显示仪表",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸50×30mm至100×60mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "OCR识别精度100%"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下高度",
+      "l3_name_en": "BendForward-MediumFlexion-BelowKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节和腰椎屈曲为主进行前倾俯身，使视线高度降低至膝盖以下，用于观察低位设备或管道",
+      "object_category": "低位设备/管道",
+      "parameter_ranges": {
+        "size_range": "目标高度0.3-0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "俯身角度45-90°"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-管道接头表面-渗漏检查",
+      "l3_name_en": "CloseInspect-PipeJointSurface-LeakageCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "将视觉传感器（眼睛/摄像头）靠近管道接头表面，检查是否存在水渍、锈迹或渗漏痕迹",
+      "object_category": "管道接头/法兰连接",
+      "parameter_ranges": {
+        "size_range": "接头直径DN25-DN150",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检视距离100-300mm"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-复位直立-站姿恢复",
+      "l3_name_en": "BendForward-ReturnUpright-StanceRecovery",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态恢复至正常站立姿态，髋关节和腰椎从屈曲位伸展至中立位",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "恢复后躯干垂直度±5°"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeTurn-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在行进过程中完成约90度的方向转换，采用连续步态不停顿完成转弯",
+      "object_category": "通道/转角",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "转向角度精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-水泵机组区域-系统巡检",
+      "l3_name_en": "ScanInspect-PumpUnitArea-SystemPatrol",
+      "parent_l2_id": "L2-09-03",
+      "description": "对水泵机组所在区域进行系统性视觉扫描巡视，覆盖泵体、电机、管道、仪表等全部可视部件",
+      "object_category": "水泵机组/设备区域",
+      "parameter_ranges": {
+        "size_range": "单台机组占地面积2-6m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "扫描覆盖率100%"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-侧身通过",
+      "l3_name_en": "Pass-EquipmentGap-SidewaysThrough",
+      "parent_l2_id": "L2-01-06",
+      "description": "在两台设备之间的狭窄间隙中侧身通过，身体转成侧向以减小通过宽度",
+      "object_category": "设备间隙/狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度400-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "身体与设备最小间距50mm"
+      },
+      "is_new": true,
+      "source_scene": "12-120-1200-INSPECTION-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-05",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 3
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "scene_id": "12-120-1200",
+  "scene_name": "旋拧操作-地热井口阀门手轮-高温防护",
+  "total_steps": 12,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至目标阀门所在区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-户外工业地坪-常速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在目标阀门手轮前方精确停定站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-阀门操作位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视阀门铭牌标识确认为调度指定的目标阀门",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-阀门铭牌-身份确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 4,
+      "human_description": "转动上半身使躯干正对阀门手轮",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-小角度-面向操作目标",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂同时向前伸出至手轮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-手轮轮辐-双臂同步",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手分别握住手轮对称位置的轮辐形成稳固握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱轮辐-双手对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手协同施加旋转力矩转动手轮至目标开度",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-闸阀截止阀手轮-高扭矩全程",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 与L2-06-05连续回转驱动的区别：阀门有明确的全开/全闭端点，不是无限连续回转；与L2-06-02徒手旋拧的区别：操作对象是固定在管路上的阀门操纵机构且旋转半径>50mm",
+      "parallel_with": null,
+      "duration_estimate": "30-300"
+    },
+    {
+      "step_order": 8,
+      "human_description": "观察阀门位置指示器确认已到达目标开度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-阀门位置指示-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手同步渐进松开手轮轮辐",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-同步松指-物体已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "双臂从手轮位置收回至身侧自然位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身侧复位-双臂收回",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "后退一步脱离高温辐射区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-后退脱离-短距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "行走离开当前阀门区域前往下一任务点或返回安全区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-户外工业地坪-常速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-户外工业地坪-常速",
+      "l3_name_en": "Walk-OutdoorIndustrialGround-NormalSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在户外工业场地的硬化地面上以常规速度直线行走，地面可能包含砂石、金属格栅或混凝土等材质",
+      "object_category": "地面/路面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-100m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±50cm"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-后退脱离-短距",
+      "l3_name_en": "Walk-BackwardRetreat-ShortDistance",
+      "parent_l2_id": "L2-01-01",
+      "description": "向后直线行走1-3步以脱离当前操作位置或危险区域，需保持对前方目标的视觉监控",
+      "object_category": "地面/路面",
+      "parameter_ranges": {
+        "size_range": "行走距离0.5-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-阀门操作位-厘米级",
+      "l3_name_en": "Stop-ValveOperationPosition-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在阀门手轮正前方的最佳操作位置精确停定，确保双臂可舒适够及手轮且身体稳定",
+      "object_category": "阀门/操作工位",
+      "parameter_ranges": {
+        "size_range": "停位距手轮中心0.4-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-阀门铭牌-身份确认",
+      "l3_name_en": "Read-ValveNameplate-IdentityConfirmation",
+      "parent_l2_id": "L2-09-07",
+      "description": "目视读取阀门本体或管道上的标识铭牌，识别阀门编号或名称以确认为调度指定的目标设备",
+      "object_category": "铭牌/标识牌",
+      "parameter_ranges": {
+        "size_range": "铭牌尺寸50x30mm至150x100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "字符识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-小角度-面向操作目标",
+      "l3_name_en": "Rotate-SmallAngle-FaceOperationTarget",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身小幅度旋转调整使躯干正对操作目标，双脚位置基本不变",
+      "object_category": "操作目标/工位",
+      "parameter_ranges": {
+        "size_range": "旋转角度10-45度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-手轮轮辐-双臂同步",
+      "l3_name_en": "Reach-HandwheelSpoke-DualArmSync",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同步向前方伸出，使双手到达手轮对称位置的轮辐处，为后续握持做准备",
+      "object_category": "手轮/操纵机构",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部到位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-身侧复位-双臂收回",
+      "l3_name_en": "Reach-SideReset-DualArmRetract",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂从前方操作位置收回至身体两侧自然下垂位，解除操作姿态",
+      "object_category": "无/身体复位",
+      "parameter_ranges": {
+        "size_range": "收回距离0.3-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "无严格要求"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱轮辐-双手对称",
+      "l3_name_en": "PowerGrip-CylindricalSpoke-DualHandSymmetric",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手分别以全手包络方式握住手轮对称位置的圆柱形轮辐，形成稳固的旋转施力握持",
+      "object_category": "手轮轮辐",
+      "parameter_ranges": {
+        "size_range": "轮辐直径20-40mm，手轮直径200-400mm",
+        "weight_range": "不适用（固定件）",
+        "force_range": "握持力50-150N",
+        "precision_requirement": "对称位置握持误差<30度"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-闸阀截止阀手轮-高扭矩全程",
+      "l3_name_en": "ValveOp-GateGlobeValveHandwheel-HighTorqueFullStroke",
+      "parent_l2_id": "L2-06-03",
+      "description": "双手协同施加旋转力矩转动闸阀或截止阀的手轮，从全开到全闭或反向完成全行程操作，过程中需克服密封摩擦和介质压力产生的阻力矩",
+      "object_category": "闸阀/截止阀手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径200-400mm",
+        "weight_range": "不适用（固定件）",
+        "force_range": "操作扭矩50-150Nm",
+        "precision_requirement": "开度控制精度±5%或到机械限位"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-阀门位置指示-状态确认",
+      "l3_name_en": "Gaze-ValvePositionIndicator-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视阀门本体上的开度指示标记或位置指示器，确认阀门已到达目标开度状态",
+      "object_category": "位置指示器/刻度标记",
+      "parameter_ranges": {
+        "size_range": "指示器尺寸20-100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "开度判读精度±10%"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-同步松指-物体已固定",
+      "l3_name_en": "Release-SyncFingerOpen-ObjectFixed",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手手指同步渐进张开，解除对固定物体（如手轮）的握持，物体本身不会因释放而移动或坠落",
+      "object_category": "固定操纵机构",
+      "parameter_ranges": {
+        "size_range": "被释放对象直径20-60mm",
+        "weight_range": "不适用（固定件）",
+        "force_range": "释放速度0.5-2秒完成",
+        "precision_requirement": "无"
+      },
+      "is_new": true,
+      "source_scene": "S-12-120-1200-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-06-03",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 6
+  }
+}

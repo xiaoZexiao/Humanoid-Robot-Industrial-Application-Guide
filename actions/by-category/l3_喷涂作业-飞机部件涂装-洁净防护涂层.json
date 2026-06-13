@@ -1,0 +1,519 @@
+{
+  "scene_id": "37-374-3741",
+  "scene_name": "喷涂作业-飞机部件涂装-洁净防护涂层",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "步行穿过洁净喷涂房到达喷涂工位区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-洁净厂房地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在喷涂支架前精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-喷涂支架前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视确认待喷涂零部件在支架上的固定状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-待喷涂零部件-固定确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "伸手至喷枪悬挂架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-悬挂工具架-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "以喷涂功能姿势握持喷枪手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-喷枪-喷涂功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将喷枪从悬挂架移至身前工作位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-喷涂工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "目视检查喷枪雾化头及管路连接状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-喷枪雾化头-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "精细调节喷枪流量控制旋钮至目标涂层厚度参数",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-流量控制旋钮-精细调节",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "扫视零部件全表面规划喷涂路径和顺序",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-零部件表面-路径规划",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 10,
+      "human_description": "躯干旋转调整身体朝向对准喷涂起始区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-小角度范围-对准工件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "沿零部件表面按规划路径执行底漆喷涂覆盖",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "喷涂-航空底漆-微米级精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "120-300"
+    },
+    {
+      "step_order": 12,
+      "human_description": "扫视检查底漆涂层的均匀性和覆盖完整性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-涂层表面-质量检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 13,
+      "human_description": "沿零部件表面按规划路径执行面漆喷涂覆盖",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-002",
+      "l3_name": "喷涂-航空面漆-微米级精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "120-300"
+    },
+    {
+      "step_order": 14,
+      "human_description": "扫视检查面漆涂层的光泽度和表面质量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-涂层表面-质量检查",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 15,
+      "human_description": "贴近关键区域检视涂层厚度是否达到微米级精度要求",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-涂层表面-厚度确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将喷枪移回悬挂架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-喷涂工具-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "渐进松开手指将喷枪释放至悬挂架钩上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已悬挂",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "步行离开喷涂工位走向出口区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-洁净厂房地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-洁净厂房地面-匀速",
+      "l3_name_en": "Walk-CleanroomFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在洁净等级受控的涂装车间环氧地坪上匀速行走，需注意防护装备对步态的影响",
+      "object_category": "洁净厂房地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-30m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±50cm以内"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-喷涂支架前-厘米级",
+      "l3_name_en": "Stop-SprayBracketFront-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在喷涂支架前方指定工作位置精确停止，确保与零部件保持最佳喷涂距离",
+      "object_category": "喷涂工位标定点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-小角度范围-对准工件",
+      "l3_name_en": "Rotate-SmallAngle-AlignWorkpiece",
+      "parent_l2_id": "L2-02-04",
+      "description": "原地躯干旋转调整身体朝向以对准待喷涂工件的特定区域",
+      "object_category": "自身躯干",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度15-90度"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-悬挂工具架-无障碍直线",
+      "l3_name_en": "Reach-HangingToolRack-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线轨迹伸向悬挂式工具架准备抓取工具",
+      "object_category": "悬挂工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端到达精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-喷涂工具-近距",
+      "l3_name_en": "Transfer-SprayTool-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持喷涂工具在身前近距离范围内转移，保持工具姿态稳定",
+      "object_category": "喷涂工具",
+      "parameter_ranges": {
+        "size_range": "移动距离30-80cm",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "路径平稳无剧烈晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-喷枪-喷涂功能姿",
+      "l3_name_en": "ToolGrip-SprayGun-SprayingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以喷涂作业专用姿势握持喷枪手柄，食指搭在扳机上，掌心贴合握柄",
+      "object_category": "喷枪",
+      "parameter_ranges": {
+        "size_range": "握柄直径20-35mm",
+        "weight_range": "喷枪重量0.5-2kg",
+        "force_range": "握力10-30N",
+        "precision_requirement": "扳机触发位置精确"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已悬挂",
+      "l3_name_en": "Release-GradualLoosen-ToolHung",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开释放喷涂工具，确保工具已稳定悬挂于挂钩后完全松手",
+      "object_category": "喷涂工具",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "释放过程力渐减",
+        "precision_requirement": "确认工具稳定后释放"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-流量控制旋钮-精细调节",
+      "l3_name_en": "FineTune-FlowControlKnob-PreciseAdjust",
+      "parent_l2_id": "L2-06-06",
+      "description": "精细旋转喷枪流量控制旋钮，调节至目标涂层厚度对应的涂料流量参数",
+      "object_category": "流量控制旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径10-25mm",
+        "weight_range": "N/A",
+        "force_range": "旋转力矩0.1-0.5Nm",
+        "precision_requirement": "角度分辨率<5度"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-08-03-001",
+      "l3_name_zh": "喷涂-航空底漆-微米级精度",
+      "l3_name_en": "Spray-AviationPrimer-MicronPrecision",
+      "parent_l2_id": "L2-08-03",
+      "description": "手持喷枪沿飞机零部件表面按规划路径进行底漆喷涂，保持恒定枪距和移动速度以实现微米级涂层厚度控制",
+      "object_category": "飞机零部件表面",
+      "parameter_ranges": {
+        "size_range": "零部件面积0.1-5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "涂层厚度精度±5μm，枪距150-250mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-08-03-002",
+      "l3_name_zh": "喷涂-航空面漆-微米级精度",
+      "l3_name_en": "Spray-AviationTopcoat-MicronPrecision",
+      "parent_l2_id": "L2-08-03",
+      "description": "手持喷枪沿飞机零部件表面按规划路径进行面漆喷涂，需更高的表面光洁度和颜色一致性控制",
+      "object_category": "飞机零部件表面",
+      "parameter_ranges": {
+        "size_range": "零部件面积0.1-5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "涂层厚度精度±3μm，枪距150-250mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-待喷涂零部件-固定确认",
+      "l3_name_en": "Gaze-WorkpieceToSpray-FixtureConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视对准待喷涂零部件，确认其在支架上的固定状态和朝向正确",
+      "object_category": "待喷涂零部件",
+      "parameter_ranges": {
+        "size_range": "零部件尺寸0.1-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "确认固定无松动"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-喷枪雾化头-状态确认",
+      "l3_name_en": "Gaze-SprayGunNozzle-StatusCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查喷枪雾化头，确认无堵塞、无残留涂料积聚、管路连接正常",
+      "object_category": "喷枪雾化头",
+      "parameter_ranges": {
+        "size_range": "雾化头直径10-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "确认雾化孔通畅"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-涂层表面-厚度确认",
+      "l3_name_en": "CloseInspect-CoatingSurface-ThicknessConfirm",
+      "parent_l2_id": "L2-09-02",
+      "description": "贴近涂层表面关键区域进行近距离检视，确认涂层厚度均匀性和表面质量符合微米级精度要求",
+      "object_category": "涂层表面",
+      "parameter_ranges": {
+        "size_range": "检视距离50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可辨识微米级厚度差异"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-零部件表面-路径规划",
+      "l3_name_en": "ScanInspect-WorkpieceSurface-PathPlanning",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视零部件全表面，规划最优喷涂路径和喷涂顺序",
+      "object_category": "零部件表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积0.1-5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "完整覆盖所有待喷涂区域"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-涂层表面-质量检查",
+      "l3_name_en": "ScanInspect-CoatingSurface-QualityCheck",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视已喷涂涂层全表面，检查涂层均匀性、覆盖完整性、有无流挂或漏喷",
+      "object_category": "涂层表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积0.1-5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可辨识1mm以上缺陷"
+      },
+      "is_new": true,
+      "source_scene": "SC-374-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-06-06",
+      "L2-08-03",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-09-03",
+    "涉及的L1数量": 6
+  }
+}

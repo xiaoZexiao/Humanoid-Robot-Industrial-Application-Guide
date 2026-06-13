@@ -1,0 +1,903 @@
+{
+  "scene_id": "37-373-3733",
+  "scene_name": "检测记录-游艇内饰质检-多角度外观检查",
+  "total_steps": 34,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从质检准备区行走至游艇停放位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿舷梯攀登上游艇甲板",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-舷梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在游艇甲板上行走至客舱入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-游艇甲板-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 4,
+      "human_description": "侧身通过客舱舱门进入内部",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-船舱门-肩宽限制",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在客舱内行走至第一个检查区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-船舱地板-低速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 6,
+      "human_description": "在检查点位置精确停稳",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-检查点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "视线对准内饰整体布局进行初步观察",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-内饰布局-整体评估",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "沿栅格模式扫描检查面板表面",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-内饰面板-栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 9,
+      "human_description": "弯腰使视线接近低位内饰区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将视线贴近表面检查划痕和色差",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-内饰表面-划痕色差",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 11,
+      "human_description": "用手指轻触接缝处感知平整度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-表面平整度-接缝处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "从弯腰姿态恢复直立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-复位起身-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰恢复站立仍以髋关节和腰椎运动为主，属于弯腰俯身的逆向执行，非下蹲起立",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "上半身向左旋转约90度调整观察角度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-观察调整",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "向侧面倾斜身体探查侧壁细节",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-001",
+      "l3_name": "侧倾-中等探伸-侧壁检视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "贴近侧壁表面检查细微瑕疵",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-002",
+      "l3_name": "贴检-侧壁表面-瑕疵检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 16,
+      "human_description": "从侧倾姿态恢复直立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-002",
+      "l3_name": "侧倾-复位-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "下蹲至半蹲姿态检查底部区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-检查保持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "贴近检视踢脚线和底部接缝",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-003",
+      "l3_name": "贴检-踢脚线-接缝对齐",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 19,
+      "human_description": "从半蹲姿态起立恢复站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-起立-恢复站姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "行走至五金件安装位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-船舱地板-低速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "视线对准五金件观察安装状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-五金件-安装状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "贴近检视五金件表面和边缘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-004",
+      "l3_name": "贴检-五金件表面-安装质量",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 23,
+      "human_description": "用手指轻推五金件检测固定牢固度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-002",
+      "l3_name": "触探-固定牢固度-五金件",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]轻推力度<2N，目的是感知松动而非施力固定，属于触觉探测而非L1-05线性力施加",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 24,
+      "human_description": "行走至驾驶室方向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-船舱地板-低速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 25,
+      "human_description": "侧身通过舱门进入驾驶室",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-船舱门-肩宽限制",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 26,
+      "human_description": "在控制台前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-检查点-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "沿系统模式扫描检查控制台表面",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-控制台表面-系统扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 28,
+      "human_description": "弯腰检查控制台下方区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 29,
+      "human_description": "贴近检视控制台下方细节",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-005",
+      "l3_name": "贴检-控制台下方-细节检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 30,
+      "human_description": "从弯腰姿态恢复直立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-复位起身-恢复直立",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 31,
+      "human_description": "侧身通过舱门离开驾驶室",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-船舱门-肩宽限制",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 32,
+      "human_description": "在甲板上行走至舷梯位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-游艇甲板-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 33,
+      "human_description": "沿舷梯下行离开游艇",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-舷梯-下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 34,
+      "human_description": "行走返回质检记录区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业质检区环氧地坪上以匀速步态行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅50-70cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "无特殊精度要求"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-游艇甲板-匀速",
+      "l3_name_en": "Walk-YachtDeck-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在游艇甲板表面以匀速步态行走，需适应甲板材质和微小晃动",
+      "object_category": "甲板",
+      "parameter_ranges": {
+        "size_range": "步幅40-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "需保持平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-01-01-003",
+      "l3_name_zh": "行走-船舱地板-低速",
+      "l3_name_en": "Walk-CabinFloor-SlowPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在游艇船舱内部以低速步态行走，空间受限需谨慎移动",
+      "object_category": "船舱地板",
+      "parameter_ranges": {
+        "size_range": "步幅30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞内饰"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-舷梯-上行",
+      "l3_name_en": "Climb-Gangway-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿游艇舷梯向上攀登登艇",
+      "object_category": "舷梯",
+      "parameter_ranges": {
+        "size_range": "阶高15-25cm，阶宽25-35cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "踏准阶面中心"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-舷梯-下行",
+      "l3_name_en": "Climb-Gangway-Descending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿游艇舷梯向下行走离艇",
+      "object_category": "舷梯",
+      "parameter_ranges": {
+        "size_range": "阶高15-25cm，阶宽25-35cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "踏准阶面中心"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-船舱门-肩宽限制",
+      "l3_name_en": "Pass-CabinDoor-ShoulderWidth",
+      "parent_l2_id": "L2-01-06",
+      "description": "侧身或调整姿态通过宽度受限的船舱舱门",
+      "object_category": "船舱门",
+      "parameter_ranges": {
+        "size_range": "门宽60-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞门框"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-检查点-厘米级",
+      "l3_name_en": "Stop-InspectionPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在质检检查点位置精确停稳，达到厘米级定位精度",
+      "object_category": "检查点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下高度",
+      "l3_name_en": "BendForward-ModerateFlex-BelowKnee",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴前屈弯腰，使头部/视线降至膝盖以下高度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "前屈角度60-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-复位起身-恢复直立",
+      "l3_name_en": "BendForward-Recovery-Upright",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复至直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "前屈角度从60-90度恢复至0度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "平稳恢复"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-检查保持",
+      "l3_name_en": "Squat-HalfSquat-InspectionHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "下蹲至半蹲姿态并短时保持以便检视低位区域",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "膝关节屈曲90-120度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持稳定3-30秒"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立-恢复站姿",
+      "l3_name_en": "Squat-StandUp-Upright",
+      "parent_l2_id": "L2-02-03",
+      "description": "从半蹲姿态起立恢复至直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "膝关节从90-120度伸展至0度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "平稳起立"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-观察调整",
+      "l3_name_en": "TrunkRotation-90Degrees-ViewAdjust",
+      "parent_l2_id": "L2-02-04",
+      "description": "保持双脚位置不变，上半身绕垂直轴旋转约90度以调整观察角度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "旋转角度60-120度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "无特殊精度要求"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-05-001",
+      "l3_name_zh": "侧倾-中等探伸-侧壁检视",
+      "l3_name_en": "SideLean-MediumReach-SideWallInspect",
+      "parent_l2_id": "L2-02-05",
+      "description": "身体向侧面倾斜以接近侧壁表面进行检视",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "侧倾角度15-30度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持平衡"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-02-05-002",
+      "l3_name_zh": "侧倾-复位-恢复直立",
+      "l3_name_en": "SideLean-Recovery-Upright",
+      "parent_l2_id": "L2-02-05",
+      "description": "从侧倾姿态恢复至直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "侧倾角度从15-30度恢复至0度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "平稳恢复"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-内饰布局-整体评估",
+      "l3_name_en": "Gaze-InteriorLayout-OverallAssess",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准内饰区域整体布局进行初步观察评估",
+      "object_category": "内饰",
+      "parameter_ranges": {
+        "size_range": "观察距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "覆盖整体区域"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-五金件-安装状态",
+      "l3_name_en": "Gaze-Hardware-InstallStatus",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准五金件观察其安装状态和外观",
+      "object_category": "五金件",
+      "parameter_ranges": {
+        "size_range": "观察距离0.3-1m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别安装缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-内饰表面-划痕色差",
+      "l3_name_en": "CloseInspect-InteriorSurface-ScratchColor",
+      "parent_l2_id": "L2-09-02",
+      "description": "将视线贴近内饰表面检查划痕、色差等细微瑕疵",
+      "object_category": "内饰表面",
+      "parameter_ranges": {
+        "size_range": "检视距离5-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别0.5mm以上划痕"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-02-002",
+      "l3_name_zh": "贴检-侧壁表面-瑕疵检查",
+      "l3_name_en": "CloseInspect-SideWall-DefectCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "贴近侧壁表面检查细微瑕疵和表面质量",
+      "object_category": "侧壁",
+      "parameter_ranges": {
+        "size_range": "检视距离5-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别细微瑕疵"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-02-003",
+      "l3_name_zh": "贴检-踢脚线-接缝对齐",
+      "l3_name_en": "CloseInspect-Baseboard-SeamAlignment",
+      "parent_l2_id": "L2-09-02",
+      "description": "贴近检视踢脚线区域的接缝对齐度和安装质量",
+      "object_category": "踢脚线",
+      "parameter_ranges": {
+        "size_range": "检视距离5-15cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别1mm以上错位"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-02-004",
+      "l3_name_zh": "贴检-五金件表面-安装质量",
+      "l3_name_en": "CloseInspect-HardwareSurface-InstallQuality",
+      "parent_l2_id": "L2-09-02",
+      "description": "贴近检视五金件表面光洁度和安装质量",
+      "object_category": "五金件",
+      "parameter_ranges": {
+        "size_range": "检视距离5-15cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别划痕和安装缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-02-005",
+      "l3_name_zh": "贴检-控制台下方-细节检查",
+      "l3_name_en": "CloseInspect-UnderConsole-DetailCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "贴近检视控制台下方区域的安装细节和表面质量",
+      "object_category": "控制台",
+      "parameter_ranges": {
+        "size_range": "检视距离5-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别安装缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-内饰面板-栅格扫描",
+      "l3_name_en": "AreaScan-InteriorPanel-GridPattern",
+      "parent_l2_id": "L2-09-03",
+      "description": "按栅格模式系统扫描检查内饰面板表面",
+      "object_category": "内饰面板",
+      "parameter_ranges": {
+        "size_range": "扫描区域>0.5m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "完整覆盖无遗漏"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-控制台表面-系统扫描",
+      "l3_name_en": "AreaScan-ConsoleSurface-SystemScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "按系统模式扫描检查控制台表面各区域",
+      "object_category": "控制台",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.3-1m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "完整覆盖各功能区"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-表面平整度-接缝处",
+      "l3_name_en": "TactileProbe-Flatness-Seam",
+      "parent_l2_id": "L2-09-04",
+      "description": "用手指轻触接缝处感知表面平整度和对齐状态",
+      "object_category": "接缝",
+      "parameter_ranges": {
+        "size_range": "探测范围1-5cm",
+        "weight_range": "N/A",
+        "force_range": "<2N",
+        "precision_requirement": "感知0.5mm以上高差"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    },
+    {
+      "l3_id": "L3-09-04-002",
+      "l3_name_zh": "触探-固定牢固度-五金件",
+      "l3_name_en": "TactileProbe-Firmness-Hardware",
+      "parent_l2_id": "L2-09-04",
+      "description": "用手指轻推五金件检测其固定牢固度是否松动",
+      "object_category": "五金件",
+      "parameter_ranges": {
+        "size_range": "五金件尺寸10-100mm",
+        "weight_range": "N/A",
+        "force_range": "<2N",
+        "precision_requirement": "感知松动位移"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3733-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-02-05",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-04"
+    ],
+    "最高频L2": "L2-09-02",
+    "涉及的L1数量": 3
+  }
+}

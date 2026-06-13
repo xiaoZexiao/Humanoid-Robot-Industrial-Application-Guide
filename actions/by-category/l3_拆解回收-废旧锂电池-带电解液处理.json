@@ -1,0 +1,1125 @@
+{
+  "scene_id": "42-421-4210",
+  "scene_name": "拆解回收-废旧锂电池-带电解液处理",
+  "total_steps": 38,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待处理区平地行走至通风柜内拆解工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防爆地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在工作台前精确停位，对准操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工作台标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "视觉检查来料电池包外观，确认有无泄漏或变形",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-电池包外观-泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身接近来料托盘上的电池包",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂空载伸达至电池包两侧抓取位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-电池包侧面-双臂协同",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手力量抓握电池包两侧把手或外壳边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形箱体-双手对握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调将电池包搬运至工作台上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-电池包箱体-中重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将电池包精确放置在工作台夹具上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-电池包-夹具对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "松开双手释放电池包",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "起立恢复站姿准备操作",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲起立-快速恢复",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]弯腰后起身涉及膝关节屈曲恢复，归入下蹲起立",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "左手力握固定电池包侧边防止移动",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-单手抵压-持续固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "右手空载伸达至工具架取绝缘螺丝刀",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具架-无障碍侧伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 11,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "右手工具功能握持绝缘螺丝刀",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-绝缘螺丝刀-旋拧功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "右手持螺丝刀转移至电池包外壳螺栓位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "使用绝缘螺丝刀逆时针旋拧松开外壳螺栓",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-绝缘螺丝刀-外壳螺栓",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 16,
+      "human_description": "放下螺丝刀至工作台",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-工具放置-台面支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "手指精密捏取已松脱的外壳螺栓",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-螺栓",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将螺栓转移至螺栓收集盒",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-小型紧固件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "松开手指释放螺栓入收集盒",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-自由落入-容器内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "双手力握抓取电池包外壳边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-壳体边缘-双手夹持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "向上拉拔取下电池包外壳",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-卡扣固定外壳-中等拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]外壳通过卡扣固定，拉出过程允许轻微偏移，归入拉拔而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将外壳搬运至外壳分类区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-电池外壳-轻中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 23,
+      "human_description": "释放外壳放入分类容器",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "左手抵持固定BMS模块防止移动",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-水平抵压-短时间",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "右手空载伸达至BMS模块接插件位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-接插件位置-精确接近",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 24,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "精密捏取BMS接插件连接器外壳",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-002",
+      "l3_name": "捏取-三指捏握-矩形连接器",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "沿插接方向直线抽出BMS接插件",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-矩形连接器-轻度阻力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]接插件有导向槽约束，偏斜>1°会卡死，归入直线抽出",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "释放松开的接插件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-004",
+      "l3_name": "释放-渐进松指-悬空归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 29,
+      "human_description": "双手力握抓取BMS模块",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-电子模块-双手包络",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "将BMS模块搬运至电子件分类区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-003",
+      "l3_name": "协搬-电子模块-轻载防静电",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 31,
+      "human_description": "精确放置BMS模块在指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-电子模块-分类容器",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 32,
+      "human_description": "释放BMS模块",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 33,
+      "human_description": "精密捏取电芯间连接排线接插件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-003",
+      "l3_name": "捏取-二指对捏-排线端子",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 34,
+      "human_description": "直线抽出电芯间连接排线",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-002",
+      "l3_name": "抽出-排线连接器-轻度阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 35,
+      "human_description": "单手力握抓取电芯单体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-004",
+      "l3_name": "力握-电芯单体-单手包络",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 36,
+      "human_description": "将电芯单体转移至电芯收集容器上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-电芯单体-近距平稳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 37,
+      "human_description": "精确放置电芯于防泄漏托盘内",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-003",
+      "l3_name": "定放-电芯单体-防泄漏托盘",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 38,
+      "human_description": "释放电芯完成放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防爆地坪-匀速",
+      "l3_name_en": "Walk-ExplosionProofFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在防爆车间内的防静电/防爆地坪上匀速行走至指定工位",
+      "object_category": "防爆地坪",
+      "parameter_ranges": {
+        "size_range": "行走距离2-10m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "厘米级终点定位"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工作台标定点-厘米级",
+      "l3_name_en": "Stop-WorkbenchMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工作台前的标定位置精确停止，确保双手可达操作区域",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-电池包外观-泄漏检查",
+      "l3_name_en": "Gaze-BatteryPackAppearance-LeakageInspection",
+      "parent_l2_id": "L2-09-01",
+      "description": "视觉注视电池包外观，检查是否有电解液泄漏痕迹、外壳变形或膨胀",
+      "object_category": "电池包外观",
+      "parameter_ranges": {
+        "size_range": "电池包尺寸300x200x100mm至800x600x300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别>1mm泄漏痕迹"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干向前弯曲约45-60度，使双手可达腰部以下高度的物体",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-电池包侧面-双臂协同",
+      "l3_name_en": "Reach-BatteryPackSide-DualArmCoordinated",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时空载伸出，到达电池包两侧的抓取位置",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-矩形箱体-双手对握",
+      "l3_name_en": "PowerGrip-RectangularCase-DualHandOpposing",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手从两侧对向包络抓握矩形箱体结构，形成稳定的双手夹持",
+      "object_category": "矩形箱体",
+      "parameter_ranges": {
+        "size_range": "宽度200-600mm",
+        "weight_range": "5-50kg",
+        "force_range": "握力50-200N每手",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-电池包箱体-中重载",
+      "l3_name_en": "CoordinatedCarry-BatteryPackCase-MediumHeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运中重量级电池包箱体，保持平稳和水平",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "300x200x100mm至800x600x300mm",
+        "weight_range": "5-50kg",
+        "force_range": "N/A",
+        "precision_requirement": "保持水平±5°"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-电池包-夹具对位",
+      "l3_name_en": "PrecisionPlace-BatteryPack-FixtureAlignment",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电池包精确放置在工作台夹具的定位点上，确保后续操作的稳定性",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "300x200x100mm至800x600x300mm",
+        "weight_range": "5-50kg",
+        "force_range": "N/A",
+        "precision_requirement": "±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑的情况下，手指渐进张开释放物体",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "通用",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲起立-快速恢复",
+      "l3_name_en": "Squat-HalfSquatStandUp-QuickRecovery",
+      "parent_l2_id": "L2-02-03",
+      "description": "从半蹲或弯腰姿态快速起立恢复至站立姿态",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-单手抵压-持续固定",
+      "l3_name_en": "Clamp-SingleHandPress-SustainedHold",
+      "parent_l2_id": "L2-05-04",
+      "description": "单手按压在物体表面或侧面，持续施加固定力防止物体移动",
+      "object_category": "待固定工件",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "5-50kg被固定物",
+        "force_range": "20-80N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工具架-无障碍侧伸",
+      "l3_name_en": "Reach-ToolRack-UnobstructedSideReach",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方伸出，到达工具架位置准备取工具",
+      "object_category": "工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-绝缘螺丝刀-旋拧功能姿",
+      "l3_name_en": "ToolGrip-InsulatedScrewdriver-TurningPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以旋拧功能姿势握持绝缘螺丝刀手柄，手指按旋转操作要求排列",
+      "object_category": "绝缘螺丝刀",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm，长度100-200mm",
+        "weight_range": "50-200g",
+        "force_range": "握力20-50N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer-HandheldTool-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握工具从工具架转移至工作位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-300mm",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "终点±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-06-01-001",
+      "l3_name_zh": "工具旋拧-绝缘螺丝刀-外壳螺栓",
+      "l3_name_en": "ToolTurn-InsulatedScrewdriver-CaseBolt",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用绝缘螺丝刀旋拧松开电池包外壳固定螺栓",
+      "object_category": "外壳螺栓",
+      "parameter_ranges": {
+        "size_range": "M4-M8螺栓",
+        "weight_range": "N/A",
+        "force_range": "扭矩2-15Nm",
+        "precision_requirement": "对中精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-工具放置-台面支撑",
+      "l3_name_en": "Release-ToolPlacement-TableSupport",
+      "parent_l2_id": "L2-04-07",
+      "description": "将手持工具放置在工作台面上后松开手指释放",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "通用工具",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-螺栓",
+      "l3_name_en": "PinchGrip-TwoFingerOpposing-Bolt",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指对捏抓取已松脱的螺栓",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "M4-M8，长度10-30mm",
+        "weight_range": "2-20g",
+        "force_range": "捏力2-10N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-小型紧固件-近距",
+      "l3_name_en": "Transfer-SmallFastener-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将捏取的小型紧固件转移至收集容器",
+      "object_category": "小型紧固件",
+      "parameter_ranges": {
+        "size_range": "M4-M8螺栓螺母",
+        "weight_range": "2-50g",
+        "force_range": "N/A",
+        "precision_requirement": "终点±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-自由落入-容器内",
+      "l3_name_en": "Release-FreeDrop-IntoContainer",
+      "parent_l2_id": "L2-04-07",
+      "description": "在收集容器上方松开手指，让小件物体自由落入容器",
+      "object_category": "小型零件",
+      "parameter_ranges": {
+        "size_range": "通用小件",
+        "weight_range": "<100g",
+        "force_range": "N/A",
+        "precision_requirement": "落点在容器范围内"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-壳体边缘-双手夹持",
+      "l3_name_en": "PowerGrip-CaseEdge-DualHandClamp",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手从两侧抓握壳体边缘，形成稳定夹持准备拆卸",
+      "object_category": "外壳边缘",
+      "parameter_ranges": {
+        "size_range": "壳体周长600-2000mm",
+        "weight_range": "1-10kg",
+        "force_range": "握力30-100N每手",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-卡扣固定外壳-中等拉力",
+      "l3_name_en": "Pull-SnapFixedCase-MediumForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "向上拉拔通过卡扣或螺栓固定的外壳，使其脱离主体",
+      "object_category": "外壳",
+      "parameter_ranges": {
+        "size_range": "外壳面积0.05-0.5m²",
+        "weight_range": "1-10kg",
+        "force_range": "拉力30-150N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-电池外壳-轻中载",
+      "l3_name_en": "CoordinatedCarry-BatteryCase-LightMediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运已拆下的电池包外壳至分类区",
+      "object_category": "电池外壳",
+      "parameter_ranges": {
+        "size_range": "面积0.05-0.5m²",
+        "weight_range": "1-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-水平抵压-短时间",
+      "l3_name_en": "Brace-HorizontalPress-ShortDuration",
+      "parent_l2_id": "L2-05-06",
+      "description": "单手水平方向抵压固定组件，为另一只手的操作提供稳定支撑",
+      "object_category": "待固定组件",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "N/A",
+        "force_range": "抵持力10-50N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-接插件位置-精确接近",
+      "l3_name_en": "Reach-ConnectorPosition-PreciseApproach",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂空载伸达至电气接插件位置，准备进行拔插操作",
+      "object_category": "接插件",
+      "parameter_ranges": {
+        "size_range": "伸达距离100-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-02-002",
+      "l3_name_zh": "捏取-三指捏握-矩形连接器",
+      "l3_name_en": "PinchGrip-ThreeFingerGrip-RectangularConnector",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指、食指和中指捏握矩形电气连接器外壳",
+      "object_category": "矩形连接器",
+      "parameter_ranges": {
+        "size_range": "连接器宽度10-40mm",
+        "weight_range": "10-100g",
+        "force_range": "捏力5-20N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-矩形连接器-轻度阻力",
+      "l3_name_en": "Extract-RectangularConnector-LightResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "沿连接器插接方向直线抽出矩形电气连接器",
+      "object_category": "矩形连接器",
+      "parameter_ranges": {
+        "size_range": "连接器宽度10-40mm，行程10-30mm",
+        "weight_range": "10-100g",
+        "force_range": "抽出力10-50N",
+        "precision_requirement": "轴向偏斜<1°"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-07-004",
+      "l3_name_zh": "释放-渐进松指-悬空归位",
+      "l3_name_en": "Release-GradualFingerOpen-HangingReturn",
+      "parent_l2_id": "L2-04-07",
+      "description": "松开手指让接插件等悬挂件自然归位到悬空状态",
+      "object_category": "悬挂件",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "<200g",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-电子模块-双手包络",
+      "l3_name_en": "PowerGrip-ElectronicModule-DualHandEnvelop",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手包络式抓握BMS等电子模块，确保稳定且避免静电损伤",
+      "object_category": "电子模块",
+      "parameter_ranges": {
+        "size_range": "模块尺寸100x50x20mm至300x200x50mm",
+        "weight_range": "200g-2kg",
+        "force_range": "握力20-60N每手",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-03-003",
+      "l3_name_zh": "协搬-电子模块-轻载防静电",
+      "l3_name_en": "CoordinatedCarry-ElectronicModule-LightAntiStatic",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运电子模块，注意防静电和轻拿轻放",
+      "object_category": "电子模块",
+      "parameter_ranges": {
+        "size_range": "模块尺寸100x50x20mm至300x200x50mm",
+        "weight_range": "200g-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "避免冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-电子模块-分类容器",
+      "l3_name_en": "PrecisionPlace-ElectronicModule-SortingContainer",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电子模块精确放置在指定的分类收集容器中",
+      "object_category": "电子模块",
+      "parameter_ranges": {
+        "size_range": "模块尺寸100x50x20mm至300x200x50mm",
+        "weight_range": "200g-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-02-003",
+      "l3_name_zh": "捏取-二指对捏-排线端子",
+      "l3_name_en": "PinchGrip-TwoFingerOpposing-FlatCableTerminal",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指对捏抓取排线端子或小型连接器",
+      "object_category": "排线端子",
+      "parameter_ranges": {
+        "size_range": "端子宽度5-20mm",
+        "weight_range": "5-50g",
+        "force_range": "捏力2-15N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-07-02-002",
+      "l3_name_zh": "抽出-排线连接器-轻度阻力",
+      "l3_name_en": "Extract-FlatCableConnector-LightResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "沿插接方向直线抽出排线连接器",
+      "object_category": "排线连接器",
+      "parameter_ranges": {
+        "size_range": "端子宽度5-20mm，行程5-15mm",
+        "weight_range": "5-50g",
+        "force_range": "抽出力5-30N",
+        "precision_requirement": "轴向偏斜<2°"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-04-01-004",
+      "l3_name_zh": "力握-电芯单体-单手包络",
+      "l3_name_en": "PowerGrip-BatteryCell-SingleHandEnvelop",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手包络式抓握锂电池电芯单体",
+      "object_category": "电芯单体",
+      "parameter_ranges": {
+        "size_range": "圆柱型直径18-46mm长度65-120mm，方形100x50x10mm至200x100x30mm",
+        "weight_range": "50-500g",
+        "force_range": "握力20-60N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-电芯单体-近距平稳",
+      "l3_name_en": "Transfer-BatteryCell-ShortDistanceSteady",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将电芯单体平稳转移至收集容器，避免碰撞和跌落",
+      "object_category": "电芯单体",
+      "parameter_ranges": {
+        "size_range": "电芯各类规格",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    },
+    {
+      "l3_id": "L3-03-05-003",
+      "l3_name_zh": "定放-电芯单体-防泄漏托盘",
+      "l3_name_en": "PrecisionPlace-BatteryCell-LeakProofTray",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电芯精确放置在防泄漏托盘的指定位置",
+      "object_category": "电芯单体",
+      "parameter_ranges": {
+        "size_range": "电芯各类规格",
+        "weight_range": "50-500g",
+        "force_range": "N/A",
+        "precision_requirement": "±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-42-421-4210-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-05-04",
+      "L2-05-06",
+      "L2-06-01",
+      "L2-07-02",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 7
+  }
+}

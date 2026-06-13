@@ -1,0 +1,807 @@
+{
+  "scene_id": "8-00-00",
+  "scene_name": "取样检测-矿石品位取样-多点定时",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "沿厂房通道行走至目标取样点位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在取样阀操作位置精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-取样阀操作点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "将手臂伸向挂在取样点旁的取样勺",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具挂放位置-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "用全手包络抓握取样勺长柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-长柄工具-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将取样勺从挂钩上提起取下",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-长柄取样工具-近距提起",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "另一只手伸向取样阀手轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-阀门手轮-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "全手包络抓握取样阀手轮外缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-阀门手轮-直径80至150mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "逆时针旋转取样阀手轮至全开位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-取样阀手轮-全关至全开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "松开取样阀手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-手轮已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将取样勺移动至取样口正下方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-取样勺-中距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "保持取样勺位置稳定接取流出的矿浆或矿粉",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-抗重力托持-中长时间",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将装有样品的取样勺移出取样口区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-满载取样勺-平稳移出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "空出的手伸向取样阀手轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-阀门手轮-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "全手抓握取样阀手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-阀门手轮-直径80至150mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "顺时针旋转取样阀手轮至全闭位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-取样阀手轮-全开至全闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开取样阀手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-手轮已固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "空手伸向样品袋存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-物料袋存放处-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "用指尖捏取一个样品袋的袋口边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-塑料袋口",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将样品袋转移至取样勺旁的操作位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-004",
+      "l3_name": "转移-样品袋-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "双手配合撑开样品袋口形成开口",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质-袋口撑开",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 撑开袋口涉及对柔性袋体的形变控制，属于形变适应抓取而非力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "一手保持袋口张开，另一手重新抓握取样勺",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-长柄工具-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 20,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "翻转取样勺将样品倒入样品袋中",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-120至180度倾倒",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将取样勺挂回原位置的挂钩上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-长柄工具-挂钩对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双手配合卷紧样品袋口并扭转封口",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-塑料袋口-顺时针扭紧",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手取标记笔",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-书写工具位置-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 26,
+      "human_description": "以书写姿势握持标记笔",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-标记笔-书写功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 27,
+      "human_description": "在样品袋标签区书写取样点编号、时间等标记信息",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-001",
+      "l3_name": "涂胶-墨水书写-字符线条路径",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 书写动作本质是沿线性路径涂覆墨水，与涂胶的运动学特征一致，归入线性涂胶密封",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 28,
+      "human_description": "将已标记的样品袋放入样品收集箱中指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-样品袋-单层顺序排列",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业厂房地面-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房环氧地坪或水泥地面上保持匀速直线行走，适用于在选矿车间内各取样点间移动",
+      "object_category": "工业地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<0.3m"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-取样阀操作点-厘米级",
+      "l3_name_en": "Stop-SamplingValvePosition-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在取样阀前的最佳操作位置精确停止，确保双手可触及阀门和取样工具",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "站位区域0.5x0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具挂放位置-无障碍直线",
+      "l3_name_en": "Reach-ToolHangingPosition-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿直线路径伸向挂在墙面或支架上的工具存放位置",
+      "object_category": "工具挂放点",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-阀门手轮-无障碍直线",
+      "l3_name_en": "Reach-ValveHandwheel-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿直线路径伸向阀门手轮位置，准备进行阀门操作",
+      "object_category": "阀门操作部件",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-物料袋存放处-无障碍直线",
+      "l3_name_en": "Reach-SampleBagStorage-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向样品袋的存放位置，准备取出空袋",
+      "object_category": "耗材存放点",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-书写工具位置-无障碍直线",
+      "l3_name_en": "Reach-WritingToolPosition-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向标记笔等书写工具的存放位置",
+      "object_category": "书写工具",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.4m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-长柄取样工具-近距提起",
+      "l3_name_en": "Transfer-LongHandleSamplingTool-ShortLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "将长柄取样勺从挂钩或支架上提起并转移至操作位置",
+      "object_category": "长柄取样工具",
+      "parameter_ranges": {
+        "size_range": "工具长度0.5-1.0m，勺部直径8-15cm",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "3-10N",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-取样勺-中距定位",
+      "l3_name_en": "Transfer-SamplingScoop-MediumPositioning",
+      "parent_l2_id": "L2-03-02",
+      "description": "将空载取样勺移动至取样口正下方的精确接料位置",
+      "object_category": "取样勺",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.6m",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "3-10N",
+        "precision_requirement": "位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-满载取样勺-平稳移出",
+      "l3_name_en": "Transfer-LoadedSamplingScoop-SteadyRemoval",
+      "parent_l2_id": "L2-03-02",
+      "description": "将装有样品物料的取样勺平稳移出取样口区域，避免物料洒落",
+      "object_category": "满载取样勺",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.5m",
+        "weight_range": "0.8-3.0kg（含样品）",
+        "force_range": "8-30N",
+        "precision_requirement": "水平姿态保持±5°"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-02-004",
+      "l3_name_zh": "转移-样品袋-近距",
+      "l3_name_en": "Transfer-SampleBag-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "将空样品袋转移至取样勺旁的操作位置",
+      "object_category": "样品袋",
+      "parameter_ranges": {
+        "size_range": "移动距离0.2-0.4m",
+        "weight_range": "0.01-0.05kg",
+        "force_range": "0.1-0.5N",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-120至180度倾倒",
+      "l3_name_en": "Flip-HorizontalAxis-120to180DegreePour",
+      "parent_l2_id": "L2-03-04",
+      "description": "将取样勺绕水平轴翻转120-180度，使勺内物料倾倒入目标容器",
+      "object_category": "取样勺/容器",
+      "parameter_ranges": {
+        "size_range": "翻转角度120-180°",
+        "weight_range": "0.8-3.0kg",
+        "force_range": "5-20N",
+        "precision_requirement": "倾倒对准精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-长柄工具-挂钩对位",
+      "l3_name_en": "Place-LongHandleTool-HookAlignment",
+      "parent_l2_id": "L2-03-05",
+      "description": "将长柄取样工具精确放回挂钩位置，确保稳固悬挂",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "挂钩直径15-25mm",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "3-10N",
+        "precision_requirement": "对位精度±1cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-样品袋-单层顺序排列",
+      "l3_name_en": "Stack-SampleBag-SingleLayerSequence",
+      "parent_l2_id": "L2-03-06",
+      "description": "将样品袋按顺序排列放入样品收集箱中，保持单层整齐码放",
+      "object_category": "样品袋",
+      "parameter_ranges": {
+        "size_range": "袋尺寸15x20cm至25x35cm",
+        "weight_range": "0.5-2.5kg/袋",
+        "force_range": "5-25N",
+        "precision_requirement": "排列间距均匀±2cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-长柄工具-直径20至40mm",
+      "l3_name_en": "PowerGrip-LongHandle-Diameter20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "用全手包络方式抓握取样勺等长柄工具的手柄部分",
+      "object_category": "长柄工具手柄",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-40mm，长度100-200mm",
+        "weight_range": "0.3-1.0kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "握持稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-阀门手轮-直径80至150mm",
+      "l3_name_en": "PowerGrip-ValveHandwheel-Diameter80to150mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "用全手包络方式抓握阀门手轮外缘，准备进行旋转操作",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径80-150mm，轮缘厚度15-30mm",
+        "weight_range": "不适用（固定部件）",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持位置适合施力"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-塑料袋口",
+      "l3_name_en": "Pinch-TwoFingerOppose-PlasticBagEdge",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指和食指对捏方式捏取塑料样品袋的袋口边缘",
+      "object_category": "塑料袋口",
+      "parameter_ranges": {
+        "size_range": "袋口厚度0.05-0.2mm",
+        "weight_range": "0.01-0.05kg",
+        "force_range": "捏力1-5N",
+        "precision_requirement": "捏取位置精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-标记笔-书写功能姿",
+      "l3_name_en": "ToolGrip-Marker-WritingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以标准书写姿势握持记号笔或油性笔，拇指食指中指形成三点支撑",
+      "object_category": "书写工具",
+      "parameter_ranges": {
+        "size_range": "笔身直径8-15mm，长度100-150mm",
+        "weight_range": "0.01-0.03kg",
+        "force_range": "握力5-15N",
+        "precision_requirement": "笔尖控制精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质-袋口撑开",
+      "l3_name_en": "AdaptiveGrip-Soft-BagOpening",
+      "parent_l2_id": "L2-04-04",
+      "description": "双手分别抓住柔性袋口两侧，通过反向拉力撑开袋口形成装料开口",
+      "object_category": "柔性袋口",
+      "parameter_ranges": {
+        "size_range": "袋口宽度150-300mm",
+        "weight_range": "0.01-0.05kg",
+        "force_range": "撑开力3-10N",
+        "precision_requirement": "开口直径>80mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-手轮已固定",
+      "l3_name_en": "Release-GradualUngrip-HandwheelSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "在阀门手轮已到位固定后，手指逐渐放松解除抓握",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "不产生误操作"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-抗重力托持-中长时间",
+      "l3_name_en": "Brace-AntiGravityHold-MediumDuration",
+      "parent_l2_id": "L2-05-06",
+      "description": "保持手臂姿态稳定，抵抗重力和物料冲击力，维持取样勺在接料位置",
+      "object_category": "取样勺及物料",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "动态增加0至2.5kg",
+        "force_range": "抵持力10-30N",
+        "precision_requirement": "位置偏移<2cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-塑料袋口-顺时针扭紧",
+      "l3_name_en": "HandTwist-PlasticBagNeck-ClockwiseTighten",
+      "parent_l2_id": "L2-06-02",
+      "description": "双手配合将塑料袋口卷紧后顺时针扭转，形成密封扎口",
+      "object_category": "塑料袋口",
+      "parameter_ranges": {
+        "size_range": "袋口卷紧后直径10-20mm",
+        "weight_range": "不适用",
+        "force_range": "扭转力矩0.5-2Nm",
+        "precision_requirement": "封口牢固不松脱"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-取样阀手轮-全关至全开",
+      "l3_name_en": "ValveOp-SamplingValveHandwheel-ClosedToOpen",
+      "parent_l2_id": "L2-06-03",
+      "description": "逆时针旋转取样阀手轮，从全关位置转至全开位置，开启物料流",
+      "object_category": "取样阀手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径80-150mm",
+        "weight_range": "不适用",
+        "force_range": "操作力矩5-20Nm",
+        "precision_requirement": "旋转圈数2-5圈"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-取样阀手轮-全开至全闭",
+      "l3_name_en": "ValveOp-SamplingValveHandwheel-OpenToClosed",
+      "parent_l2_id": "L2-06-03",
+      "description": "顺时针旋转取样阀手轮，从全开位置转至全关位置，关闭物料流",
+      "object_category": "取样阀手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径80-150mm",
+        "weight_range": "不适用",
+        "force_range": "操作力矩5-20Nm",
+        "precision_requirement": "旋转圈数2-5圈"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    },
+    {
+      "l3_id": "L3-08-04-001",
+      "l3_name_zh": "涂胶-墨水书写-字符线条路径",
+      "l3_name_en": "LineDraw-InkWriting-CharacterPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "用标记笔在样品袋标签区沿字符轨迹书写标记信息，本质为沿线性路径涂覆墨水",
+      "object_category": "标签表面",
+      "parameter_ranges": {
+        "size_range": "字符高度5-15mm，书写区域50x30mm",
+        "weight_range": "不适用",
+        "force_range": "书写压力1-3N",
+        "precision_requirement": "字迹清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-sampling-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-06",
+      "L2-06-02",
+      "L2-06-03",
+      "L2-08-04"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 6
+  }
+}

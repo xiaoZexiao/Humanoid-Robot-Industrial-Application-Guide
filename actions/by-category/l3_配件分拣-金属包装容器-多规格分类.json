@@ -1,0 +1,447 @@
+{
+  "scene_id": "33-333-3333",
+  "scene_name": "配件分拣-金属包装容器-多规格分类",
+  "total_steps": 14,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从上一工位行走至分拣工作台前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在工作台前精确停位，身体正对混合料箱与周转盒排列方向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工作台标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "视觉扫视混合料箱内配件分布，定位待抓取的目标配件",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-料箱内部-视觉搜索",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "伸手到混合料箱上方，准备抓取目标配件",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-料箱上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "用拇指和食指捏取混合料箱中的小型金属配件（盖、底、拉环或提手）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-小型金属配件",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 配件重量1-50g属于精密捏取范围，非力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将配件从料箱中提起至视野高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻型金属配件-近距提升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "视觉注视手中配件，识别其具体规格型号",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-手持配件-规格识别",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手指旋转配件以查看不同角度的标识或特征",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-05",
+      "l2_name": "手内旋转调姿",
+      "l3_id": "L3-04-05-001",
+      "l3_name": "手旋-纵轴-小角度查看",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 手指调整物体角度查看，非L2-03-04臂部翻转",
+      "parallel_with": "7",
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "躯干向目标周转盒方向转体，以便手臂够到该位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-小角度-朝向周转盒",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将手中配件转移至对应规格的周转盒上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-轻型金属配件-近距水平",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1.5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "松开手指将配件释放入周转盒中",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-配件入盒",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "视觉确认周转盒内配件数量是否达到配套要求",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-周转盒-数量确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双手抓取已配套完成的周转盒",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形周转盒-双手侧握",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 周转盒较大需双手力量抓握，非精密捏取",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将配套完成的周转盒放置到指定的成品区位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-周转盒-码放区位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walk-WorkshopFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上以稳定速度直线行走至目标工位",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm到达精度"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工作台标定点-厘米级",
+      "l3_name_en": "StopPosition-WorkbenchMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工作台前的标定位置精确停止，确保身体正对操作区域",
+      "object_category": "工位标记",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm位置精度"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-料箱内部-视觉搜索",
+      "l3_name_en": "Scan-BinInterior-VisualSearch",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉扫描混合料箱内部区域，识别和定位待抓取的目标配件",
+      "object_category": "料箱/配件堆",
+      "parameter_ranges": {
+        "size_range": "料箱300x400mm至500x600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "配件定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-料箱上方-无障碍直线",
+      "l3_name_en": "Reach-AboveBin-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向料箱上方，准备抓取配件",
+      "object_category": "空间目标点",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-小型金属配件",
+      "l3_name_en": "Pinch-TwoFingerOppose-SmallMetalPart",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指与食指对捏方式抓取小型金属包装容器配件（盖、底、拉环、提手等）",
+      "object_category": "金属配件",
+      "parameter_ranges": {
+        "size_range": "直径/边长10-80mm",
+        "weight_range": "1-50g",
+        "force_range": "捏取力0.5-5N",
+        "precision_requirement": "抓取位置±3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻型金属配件-近距提升",
+      "l3_name_en": "Transfer-LightMetalPart-ShortLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "将抓取的轻型金属配件从料箱中向上提起至视野高度",
+      "object_category": "金属配件",
+      "parameter_ranges": {
+        "size_range": "直径/边长10-80mm",
+        "weight_range": "1-50g",
+        "force_range": "N/A",
+        "precision_requirement": "路径无碰撞"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-手持配件-规格识别",
+      "l3_name_en": "Gaze-HeldPart-SpecIdentification",
+      "parent_l2_id": "L2-09-01",
+      "description": "视觉聚焦手中持有的配件，识别其规格型号特征",
+      "object_category": "手持配件",
+      "parameter_ranges": {
+        "size_range": "配件10-80mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "规格识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-04-05-001",
+      "l3_name_zh": "手旋-纵轴-小角度查看",
+      "l3_name_en": "InHandRotate-LongAxis-SmallAngleView",
+      "parent_l2_id": "L2-04-05",
+      "description": "通过手指动作在手内旋转配件小角度，以查看不同角度的标识或特征",
+      "object_category": "手持小型配件",
+      "parameter_ranges": {
+        "size_range": "配件10-80mm",
+        "weight_range": "1-50g",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度±30°"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-小角度-朝向周转盒",
+      "l3_name_en": "TorsoRotate-SmallAngle-TowardBin",
+      "parent_l2_id": "L2-02-04",
+      "description": "躯干小角度转动以使手臂能够够到目标周转盒位置",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "转体角度15-60°"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-轻型金属配件-近距水平",
+      "l3_name_en": "Transfer-LightMetalPart-ShortHorizontal",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手中配件沿水平方向转移至目标周转盒上方",
+      "object_category": "金属配件",
+      "parameter_ranges": {
+        "size_range": "直径/边长10-80mm",
+        "weight_range": "1-50g",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-配件入盒",
+      "l3_name_en": "Release-GradualFingerOpen-PartIntoBin",
+      "parent_l2_id": "L2-04-07",
+      "description": "渐进松开手指将配件释放落入周转盒中",
+      "object_category": "金属配件",
+      "parameter_ranges": {
+        "size_range": "配件10-80mm",
+        "weight_range": "1-50g",
+        "force_range": "N/A",
+        "precision_requirement": "落点偏差<30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-周转盒-数量确认",
+      "l3_name_en": "Gaze-TransferBin-QuantityCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视觉注视周转盒内配件，确认数量是否达到配套要求",
+      "object_category": "周转盒内配件",
+      "parameter_ranges": {
+        "size_range": "周转盒200x300mm至400x500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "计数准确"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-矩形周转盒-双手侧握",
+      "l3_name_en": "PowerGrip-RectangularBin-TwoHandSide",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手从两侧以力量抓握方式握持矩形周转盒",
+      "object_category": "周转盒",
+      "parameter_ranges": {
+        "size_range": "200x300mm至400x500mm",
+        "weight_range": "含配件总重0.5-5kg",
+        "force_range": "握力10-50N",
+        "precision_requirement": "稳定握持"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-周转盒-码放区位",
+      "l3_name_en": "PrecisionPlace-TransferBin-StackingArea",
+      "parent_l2_id": "L2-03-05",
+      "description": "将配套完成的周转盒精确放置到成品码放区的指定位置",
+      "object_category": "周转盒",
+      "parameter_ranges": {
+        "size_range": "200x300mm至400x500mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-333-3333-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-05",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-03-02",
+    "涉及的L1数量": 5
+  }
+}

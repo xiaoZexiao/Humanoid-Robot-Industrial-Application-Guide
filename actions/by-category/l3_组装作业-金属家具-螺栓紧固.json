@@ -1,0 +1,872 @@
+{
+  "scene_id": "21-213-2130",
+  "scene_name": "组装作业-金属家具-螺栓紧固",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至组装台工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在组装台前精确站定到操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手至物料架上的金属框架骨架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手包络抓握金属框架骨架两端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-金属型材-中型截面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂将金属框架搬运至组装台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-框架结构件-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将金属框架平稳放置在组装台面上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-金属框架-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "松开双手释放金属框架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "伸手至配件盒取面板",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-配件盒上方-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手抓握面板边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-板材边缘-薄板夹持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将面板搬运至框架上方对位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-平板件-轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "调整面板位置使安装孔与框架孔位对齐",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-螺栓孔位对齐-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]面板与框架存在多个螺栓孔需同时对齐，属于多轴对位而非简单放置",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "左手持续按压固定面板防止移位",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-垂直下压-中长时间",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "持续至step17"
+    },
+    {
+      "step_order": 13,
+      "human_description": "右手伸向螺栓料盒",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-零件盒-近距侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "12",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "指尖捏取一颗螺栓",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-螺栓",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "12",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将螺栓移至对齐的孔位上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-小型紧固件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "12",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将螺栓杆部插入对齐的安装孔中",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-螺栓孔配合-间隙0.5mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "12",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "手指旋转螺栓使其预拧入螺纹2-3圈",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-螺栓预紧-顺时针",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "12",
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开捏取螺栓的手指",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-松指-螺栓已咬合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "右手伸向气动扳手",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-工具架-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "以功能握姿握持气动扳手手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-气动扳手-扳机操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将气动扳手套筒对准螺栓头部套入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-套筒螺栓头配合-六角对中",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "扣动扳机驱动气动扳手旋拧紧固螺栓至目标扭矩",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-气动扳手-M6至M10螺栓",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将扳手套筒从螺栓头上移开",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-套筒脱离螺栓头-轻阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双手握住工件两端准备翻转",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-框架边缘-翻转准备握姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "双臂协调将工件绕水平轴翻转180度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将翻转后的工件放稳在组装台面上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-翻转后工件-稳定支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将气动扳手放回工具架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-手持工具-近距归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "松开手指释放工具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-工具归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walk-FactoryFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上以匀速步态行走至目标工位",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工位标定点-厘米级",
+      "l3_name_en": "Stop-WorkstationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在组装工位标定位置精确停止站定，为后续操作做好站位准备",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置偏差±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架区-无障碍直线",
+      "l3_name_en": "Reach-MaterialRack-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线轨迹伸展至物料架区域准备抓取物料",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸展距离300-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点偏差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-金属型材-中型截面",
+      "l3_name_en": "PowerGrip-MetalProfile-MediumSection",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握方管、角钢等金属型材截面，提供稳定握持力",
+      "object_category": "金属型材",
+      "parameter_ranges": {
+        "size_range": "截面20-60mm",
+        "weight_range": "单件2-15kg",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持稳定性"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-框架结构件-中载",
+      "l3_name_en": "CoopCarry-FrameStructure-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂同时承托金属框架结构件进行搬运，保持构件平稳",
+      "object_category": "金属框架",
+      "parameter_ranges": {
+        "size_range": "长度500-1500mm",
+        "weight_range": "5-20kg",
+        "force_range": "支撑力50-200N",
+        "precision_requirement": "搬运过程无磕碰"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-金属框架-厘米级",
+      "l3_name_en": "PlacePrecise-MetalFrame-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将金属框架精确放置在组装台指定区域，确保位置符合后续装配要求",
+      "object_category": "金属框架",
+      "parameter_ranges": {
+        "size_range": "长度500-1500mm",
+        "weight_range": "5-20kg",
+        "force_range": "放置力20-50N",
+        "precision_requirement": "位置偏差±1cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在确认物体已被支撑面承托后，手指渐进张开释放握持",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放速度0.5-2秒",
+        "precision_requirement": "无冲击释放"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-配件盒上方-近距",
+      "l3_name_en": "Reach-PartsBin-ShortDistance",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸展至工位旁配件盒上方，准备取用配件或面板",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸展距离200-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点偏差±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-板材边缘-薄板夹持",
+      "l3_name_en": "PowerGrip-SheetEdge-ThinPanelHold",
+      "parent_l2_id": "L2-04-01",
+      "description": "手指和手掌配合夹持金属面板边缘，提供稳定的搬运握持",
+      "object_category": "金属面板",
+      "parameter_ranges": {
+        "size_range": "板厚1-5mm",
+        "weight_range": "1-8kg",
+        "force_range": "夹持力20-50N",
+        "precision_requirement": "防滑稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-平板件-轻载",
+      "l3_name_en": "CoopCarry-FlatPanel-LightLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运金属平板件至目标位置",
+      "object_category": "金属面板",
+      "parameter_ranges": {
+        "size_range": "边长300-800mm",
+        "weight_range": "1-8kg",
+        "force_range": "支撑力10-80N",
+        "precision_requirement": "防止涂层磕碰"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-螺栓孔位对齐-3自由度对准",
+      "l3_name_en": "Align-BoltHoleMatch-3DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "调整面板XY平面位置及绕Z轴角度，使多个安装孔与框架孔位精确对齐",
+      "object_category": "带安装孔板件",
+      "parameter_ranges": {
+        "size_range": "孔径5-12mm",
+        "weight_range": "配件1-10kg",
+        "force_range": "调整力5-20N",
+        "precision_requirement": "孔位对齐偏差±1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-垂直下压-中长时间",
+      "l3_name_en": "Brace-VerticalPress-MediumDuration",
+      "parent_l2_id": "L2-05-06",
+      "description": "单手持续向下按压固定工件，防止装配过程中工件移位",
+      "object_category": "待装配件",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "下压力10-30N",
+        "precision_requirement": "保持位置稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-零件盒-近距侧向",
+      "l3_name_en": "Reach-PartsBin-ShortLateral",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂侧向伸展至工位旁零件盒取用紧固件",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸展距离150-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点偏差±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-螺栓",
+      "l3_name_en": "Pinch-TwoFingerOppose-Bolt",
+      "parent_l2_id": "L2-04-02",
+      "description": "拇指与食指对捏从料盒中捏取单颗螺栓",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "M4-M12",
+        "weight_range": "2-50g",
+        "force_range": "捏取力2-10N",
+        "precision_requirement": "稳定夹持杆部"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-小型紧固件-近距",
+      "l3_name_en": "Transfer-SmallFastener-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持螺栓等小型紧固件移动至安装位置上方",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M4-M12",
+        "weight_range": "2-50g",
+        "force_range": "N/A",
+        "precision_requirement": "终点偏差±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-螺栓孔配合-间隙0.5mm",
+      "l3_name_en": "Insert-BoltHoleFit-Clearance0.5mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将螺栓杆部沿轴向插入对齐的安装通孔中",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "M4-M12",
+        "weight_range": "2-50g",
+        "force_range": "插入力1-5N",
+        "precision_requirement": "轴向偏差±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-螺栓预紧-顺时针",
+      "l3_name_en": "HandTurn-BoltPreTighten-Clockwise",
+      "parent_l2_id": "L2-06-02",
+      "description": "手指直接旋转螺栓头部，顺时针拧入2-3圈使螺纹初步咬合",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "M4-M12",
+        "weight_range": "N/A",
+        "force_range": "扭矩0.1-1Nm",
+        "precision_requirement": "螺纹正确咬合"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-松指-螺栓已咬合",
+      "l3_name_en": "Release-OpenFingers-BoltEngaged",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认螺栓已与螺纹咬合固定后松开捏取的手指",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "M4-M12",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "螺栓不脱落"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-工具架-近距",
+      "l3_name_en": "Reach-ToolRack-ShortDistance",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸展至工位旁工具架取用装配工具",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸展距离200-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点偏差±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-气动扳手-扳机操作姿",
+      "l3_name_en": "ToolGrip-PneumaticWrench-TriggerPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以功能握姿握持气动扳手，食指置于扳机处准备触发",
+      "object_category": "气动扳手",
+      "parameter_ranges": {
+        "size_range": "手柄直径30-50mm",
+        "weight_range": "1-3kg",
+        "force_range": "握持力30-60N",
+        "precision_requirement": "扳机可触达"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-套筒螺栓头配合-六角对中",
+      "l3_name_en": "Insert-SocketBoltHead-HexAlign",
+      "parent_l2_id": "L2-07-01",
+      "description": "将扳手套筒对准螺栓六角头并套入，使套筒内壁与螺栓头六角配合",
+      "object_category": "套筒与螺栓头",
+      "parameter_ranges": {
+        "size_range": "套筒规格8-19mm",
+        "weight_range": "N/A",
+        "force_range": "对中力2-10N",
+        "precision_requirement": "六角对中偏差±5°"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-06-01-001",
+      "l3_name_zh": "工具旋拧-气动扳手-M6至M10螺栓",
+      "l3_name_en": "ToolTurn-PneumaticWrench-M6toM10Bolt",
+      "parent_l2_id": "L2-06-01",
+      "description": "触发气动扳手驱动套筒旋转，将螺栓紧固至目标扭矩",
+      "object_category": "螺栓",
+      "parameter_ranges": {
+        "size_range": "M6-M10",
+        "weight_range": "N/A",
+        "force_range": "输出扭矩8-50Nm",
+        "precision_requirement": "扭矩精度±10%"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-套筒脱离螺栓头-轻阻力",
+      "l3_name_en": "Withdraw-SocketFromBoltHead-LightResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "沿螺栓轴向将扳手套筒从螺栓头上拔出",
+      "object_category": "套筒与螺栓头",
+      "parameter_ranges": {
+        "size_range": "套筒规格8-19mm",
+        "weight_range": "N/A",
+        "force_range": "抽出力2-10N",
+        "precision_requirement": "无偏斜抽出"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-框架边缘-翻转准备握姿",
+      "l3_name_en": "PowerGrip-FrameEdge-FlipReadyPose",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手以翻转操作所需的对称握姿抓握框架两侧边缘",
+      "object_category": "金属框架",
+      "parameter_ranges": {
+        "size_range": "边缘厚度20-60mm",
+        "weight_range": "5-25kg",
+        "force_range": "握力40-100N",
+        "precision_requirement": "双手对称平衡"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-180度",
+      "l3_name_en": "Flip-AroundHorizontalAxis-180Degree",
+      "parent_l2_id": "L2-03-04",
+      "description": "双臂协调将工件绕水平轴翻转180度，使另一面朝上以便继续装配",
+      "object_category": "组装工件",
+      "parameter_ranges": {
+        "size_range": "长度500-1500mm",
+        "weight_range": "5-25kg",
+        "force_range": "翻转力矩[待补充]",
+        "precision_requirement": "翻转过程平稳无磕碰"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-翻转后工件-稳定支撑",
+      "l3_name_en": "PlacePrecise-FlippedWorkpiece-StableSupport",
+      "parent_l2_id": "L2-03-05",
+      "description": "将翻转后的工件平稳放置在组装台上，确保新操作面水平且工件稳定",
+      "object_category": "组装工件",
+      "parameter_ranges": {
+        "size_range": "长度500-1500mm",
+        "weight_range": "5-25kg",
+        "force_range": "放置力20-80N",
+        "precision_requirement": "稳定无晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-手持工具-近距归位",
+      "l3_name_en": "Transfer-HandheldTool-ShortReturn",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手将工具从操作位置移回工具架待命位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度150-400mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "归位偏差±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-工具归位",
+      "l3_name_en": "Release-GradualOpen-ToolReturned",
+      "parent_l2_id": "L2-04-07",
+      "description": "将工具放回工具架后渐进松开手指完成释放",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "0.5-3kg",
+        "force_range": "释放速度0.5-1秒",
+        "precision_requirement": "无冲击释放"
+      },
+      "is_new": true,
+      "source_scene": "S-21-213-2130-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-06",
+      "L2-06-01",
+      "L2-06-02",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-03"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

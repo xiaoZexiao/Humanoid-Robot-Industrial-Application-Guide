@@ -1,0 +1,553 @@
+{
+  "scene_id": "33-334-3340",
+  "scene_name": "搬运上架-金属丝绳盘-重载绕盘",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置行走至生产线末端丝绳盘托盘存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-仓库环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-20"
+    },
+    {
+      "step_order": 2,
+      "human_description": "视觉注视托盘上的丝绳盘，确认盘体状态和规格",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-重载盘体-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "读取丝绳盘标签获取规格信息和目标货架层位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-产品标签-货位信息",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身至托盘高度以便接触丝绳盘边缘",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-托盘高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂伸达至丝绳盘外缘侧面抓握位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-盘体侧面-双臂协同",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手力量抓握丝绳盘外缘凸起部位形成稳定握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆盘外缘-大直径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "向前推送使丝绳盘在托盘上开始滚动脱离托盘",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-001",
+      "l3_name": "推送-重载绕盘-滚动脱盘",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]此处推送目的是使盘体滚动位移而非施加机构功能力，归入L2-03-08而非L2-05-02",
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 8,
+      "human_description": "保持双手引导控制丝绳盘滚动方向行走至货架前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-滚动盘体-双臂引导",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 9,
+      "human_description": "在目标货架层前精确停位对准货架入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-货架层入口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "视觉注视目标货架层确认高度和空间状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-货架层位-空间确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "根据货架层高度调整下蹲姿态以匹配推送高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-短时保持",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]货架层高不一，若层高较低需深蹲，若层高与腰齐则仅需弯腰(L2-02-02)；此处按中等层高取半蹲",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "持续推送丝绳盘使其滚入货架层轨道",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-002",
+      "l3_name": "推送-重载绕盘-滚入货架",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 13,
+      "human_description": "沿货架导轨引导丝绳盘滑移至指定存放位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-001",
+      "l3_name": "滑移-货架导轨-长行程",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]丝绳盘进入货架后沿固定导轨/滚道约束移动，路径由货架结构定义，归入L2-07-04而非L2-03-08",
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 14,
+      "human_description": "精确定位丝绳盘至货架指定存放点",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-重载盘体-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 15,
+      "human_description": "双手渐进松开丝绳盘确保盘体稳定后释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-重物已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "从下蹲姿态起立恢复站立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-起立恢复-标准站姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "视觉扫描确认丝绳盘到位状态和摆放稳定性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-货架存放区-到位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 18,
+      "human_description": "返回生产线末端待命区准备下一个上架任务",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-仓库环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-20"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-仓库环氧地坪-匀速",
+      "l3_name_en": "Walk-WarehouseEpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在仓库内平整的环氧地坪上以匀速直线行走，地面无障碍物，行走路径明确",
+      "object_category": "地面/环境",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±30cm以内"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-重载盘体-状态确认",
+      "l3_name_en": "Gaze-HeavyCoil-StatusCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准大型重载盘体（如丝绳盘、线缆盘），确认盘体外观完整性、缠绕状态、是否有损伤变形",
+      "object_category": "重载盘体",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "不适用",
+        "precision_requirement": "目视分辨率能识别5mm以上缺陷"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-产品标签-货位信息",
+      "l3_name_en": "Read-ProductLabel-LocationInfo",
+      "parent_l2_id": "L2-09-07",
+      "description": "调整视觉传感器至产品标签位置，读取标签上的规格信息和目标存放货位编号",
+      "object_category": "产品标签/条码",
+      "parameter_ranges": {
+        "size_range": "标签尺寸50×100mm至100×200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "字符识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-托盘高度",
+      "l3_name_en": "BendForward-ModerateFlex-PalletHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "从站立姿态弯腰前屈，使双手能够触及托盘上物体（高度约15-30cm），保持膝关节微屈",
+      "object_category": "姿态/托盘",
+      "parameter_ranges": {
+        "size_range": "俯身后手部高度15-30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "保持平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-盘体侧面-双臂协同",
+      "l3_name_en": "Reach-CoilSide-BilateralArms",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前伸展至大型盘体侧面外缘位置，准备进行抓握",
+      "object_category": "大型盘体",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "双臂末端位置偏差<5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆盘外缘-大直径",
+      "l3_name_en": "PowerGrip-DiscEdge-LargeDiameter",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握大直径圆盘类物体的外缘凸起部分，提供滚动引导所需的控制力",
+      "object_category": "圆盘类物体外缘",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米，外缘厚度20-80mm",
+        "weight_range": "50-500kg",
+        "force_range": "握持力50-200N",
+        "precision_requirement": "握持稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-03-08-001",
+      "l3_name_zh": "推送-重载绕盘-滚动脱盘",
+      "l3_name_en": "Push-HeavyCoil-RollOffPallet",
+      "parent_l2_id": "L2-03-08",
+      "description": "向前施力推送使重载丝绳盘在托盘上开始滚动直至脱离托盘边缘",
+      "object_category": "重载绕盘",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "启动推力100-500N",
+        "precision_requirement": "滚动方向偏差<5度"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-滚动盘体-双臂引导",
+      "l3_name_en": "LoadedWalk-RollingCoil-BimanualGuide",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂持续引导重载盘体滚动的同时随盘体移动行走，保持对滚动方向的控制",
+      "object_category": "滚动盘体",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米，行走距离5-30米",
+        "weight_range": "50-500kg（滚动状态下实际推力显著低于物重）",
+        "force_range": "持续引导力30-100N",
+        "precision_requirement": "滚动路径偏差<30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-货架层入口-厘米级",
+      "l3_name_en": "StopPosition-ShelfEntrance-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在货架层入口前精确停止，使身体位置对准货架入口便于后续推送操作",
+      "object_category": "货架入口",
+      "parameter_ranges": {
+        "size_range": "货架层宽度0.8-2米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-货架层位-空间确认",
+      "l3_name_en": "Gaze-ShelfLayer-SpaceCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准目标货架层位，确认层高、可用空间、是否有障碍物",
+      "object_category": "货架层",
+      "parameter_ranges": {
+        "size_range": "层高0.5-2米，层深0.5-2米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别10cm以上障碍物"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-短时保持",
+      "l3_name_en": "Squat-HalfSquat-ShortHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "下蹲至半蹲姿态（膝关节屈曲约90度），以匹配中等高度货架层进行推送操作，短时保持",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "下蹲后手部工作高度0.4-0.8米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定可施力"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-03-08-002",
+      "l3_name_zh": "推送-重载绕盘-滚入货架",
+      "l3_name_en": "Push-HeavyCoil-RollIntoShelf",
+      "parent_l2_id": "L2-03-08",
+      "description": "持续向前推送使丝绳盘滚动进入货架层入口，克服入口台阶或导轨阻力",
+      "object_category": "重载绕盘",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "推送力100-400N",
+        "precision_requirement": "入口对准偏差<5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-07-04-001",
+      "l3_name_zh": "滑移-货架导轨-长行程",
+      "l3_name_en": "Slide-ShelfRail-LongTravel",
+      "parent_l2_id": "L2-07-04",
+      "description": "引导丝绳盘沿货架内置导轨或滚道滑移至指定存放位置，路径受导轨约束",
+      "object_category": "货架导轨系统",
+      "parameter_ranges": {
+        "size_range": "滑移行程0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "滑移推力50-200N",
+        "precision_requirement": "沿轨道中心偏差<2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-重载盘体-厘米级",
+      "l3_name_en": "PlacePrecise-HeavyCoil-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将重载丝绳盘精确定位至货架指定存放点，确保盘体居中稳定",
+      "object_category": "重载盘体",
+      "parameter_ranges": {
+        "size_range": "盘体直径0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "微调力10-50N",
+        "precision_requirement": "位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-重物已支撑",
+      "l3_name_en": "Release-GradualLoosen-HeavyObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在确认重载物体已被货架稳定支撑后，手指渐进松开，避免物体倾倒或滑移",
+      "object_category": "重载物体",
+      "parameter_ranges": {
+        "size_range": "物体直径0.5-2米",
+        "weight_range": "50-500kg",
+        "force_range": "不适用",
+        "precision_requirement": "释放后物体无位移"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立恢复-标准站姿",
+      "l3_name_en": "Squat-StandUp-StandardPosture",
+      "parent_l2_id": "L2-02-03",
+      "description": "从下蹲姿态起立恢复至标准站立姿势",
+      "object_category": "姿态恢复",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "恢复后姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-货架存放区-到位确认",
+      "l3_name_en": "ScanInspect-ShelfStorage-PlacementCheck",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉扫描货架存放区域，确认物品到位状态、摆放稳定性和周围空间",
+      "object_category": "货架存放区",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.5×0.5米至2×2米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别5cm以上位移或倾斜"
+      },
+      "is_new": true,
+      "source_scene": "SC-33-334-3340-01"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-05",
+      "L2-03-08",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-07-04",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-08",
+    "涉及的L1数量": 6
+  }
+}

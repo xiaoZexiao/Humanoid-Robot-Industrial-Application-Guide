@@ -1,0 +1,420 @@
+{
+  "scene_id": "40-00-00",
+  "scene_name": "外观检测-仪表壳体-多面翻转",
+  "total_steps": 17,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "目视定位待检区中的下一个待检仪表壳体",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-待检工件-位置定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 2,
+      "human_description": "将手臂伸向待检区工件上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料区上方-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "用手掌和手指包络抓握仪表壳体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-壳体零件-中等尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将工件移至标准光源下的检查位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-壳体零件-近距搬运",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "近距观察工件正面检查划痕、色差、杂质、变形等缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-壳体表面-外观缺陷",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "绕水平轴翻转工件90度使侧面A朝向视觉检查方向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "近距观察侧面A检查外观缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-壳体表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 8,
+      "human_description": "继续翻转工件90度使背面朝向视觉检查方向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "近距观察背面检查外观缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-壳体表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "继续翻转工件90度使侧面B朝向视觉检查方向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "近距观察侧面B检查外观缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-壳体表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "绕垂直轴翻转工件使顶面朝向视觉检查方向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-绕垂直轴-90度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "近距观察顶面检查外观缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-壳体表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "翻转工件180度使底面朝向视觉检查方向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-003",
+      "l3_name": "翻转-绕水平轴-180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "近距观察底面检查外观缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-壳体表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将已检工件移至对应分类区（合格区或不合格区）",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-壳体零件-分类放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "渐进松开手指将工件放置于分类区指定位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-待检工件-位置定位",
+      "l3_name_en": "Gaze-PendingWorkpiece-PositionLocating",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视定位待检区域中的待检工件，确认其位置以便后续抓取",
+      "object_category": "待检工件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级定位"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料区上方-近距直线",
+      "l3_name_en": "Reach-MaterialAreaAbove-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线轨迹伸向物料区上方准备抓取工件",
+      "object_category": "空载",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-壳体零件-中等尺寸",
+      "l3_name_en": "PowerGrasp-HousingPart-MediumSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络方式抓握中等尺寸的壳体类零件，确保翻转检查过程中的稳定性",
+      "object_category": "壳体零件（仪表壳体、面板、外罩）",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "5-30N握力",
+        "precision_requirement": "稳定抓持即可"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-壳体零件-近距搬运",
+      "l3_name_en": "Transfer-HousingPart-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握壳体零件从待检区转移至标准光源下的检查位置",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-壳体表面-外观缺陷",
+      "l3_name_en": "CloseInspect-HousingSurface-AppearanceDefect",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离（<200mm）视觉检查壳体表面的外观缺陷，包括划痕、色差、杂质、变形等",
+      "object_category": "壳体表面",
+      "parameter_ranges": {
+        "size_range": "检视面积5-50cm²每次",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "缺陷识别0.5mm级"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-90度",
+      "l3_name_en": "Flip-HorizontalAxis-90Degree",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中绕水平轴翻转工件90度，使相邻面朝向检视方向",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "角度误差±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "翻转-绕垂直轴-90度",
+      "l3_name_en": "Flip-VerticalAxis-90Degree",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中绕垂直轴翻转工件90度，使顶面或底面朝向检视方向",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "角度误差±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-03-04-003",
+      "l3_name_zh": "翻转-绕水平轴-180度",
+      "l3_name_en": "Flip-HorizontalAxis-180Degree",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中绕水平轴翻转工件180度，使对面朝向检视方向",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "角度误差±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-壳体零件-分类放置",
+      "l3_name_en": "Transfer-HousingPart-ClassifiedPlacement",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握已检壳体零件从检查位置转移至对应分类区（合格区或不合格区）",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工件已放置于支撑面上后，渐进松开手指完成释放",
+      "object_category": "壳体零件",
+      "parameter_ranges": {
+        "size_range": "5-50cm",
+        "weight_range": "0.1-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "平稳释放无冲击"
+      },
+      "is_new": true,
+      "source_scene": "SC-40-00-00-检测测试-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-09-01",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-03-02",
+      "L2-09-02",
+      "L2-03-04",
+      "L2-04-07"
+    ],
+    "最高频L2": "L2-09-02",
+    "涉及的L1数量": 3
+  }
+}

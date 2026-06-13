@@ -1,0 +1,933 @@
+{
+  "scene_id": "11-111-1110",
+  "scene_name": "巡检监测-洗煤厂重介车间-设备粉尘环境",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从巡检起点出发，在湿滑有泥浆的地面上向重介旋流器方向行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-湿滑泥浆地面-低速稳态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在设备间的通道拐角处转弯变向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-低速连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "跨越地面的管路和线缆障碍",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-地面管线-20cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在重介旋流器前方的观察位置精确停步",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备观察点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "转动躯干面向设备主体进行观察",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度内-面向设备",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "扫视旋流器整体外观检查运转状态和泄漏情况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-旋转设备外观-目视巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 7,
+      "human_description": "侧耳倾听旋流器运转声音判断是否有异常噪音",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-旋转设备运转声-异常判别",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "6",
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 8,
+      "human_description": "注视设备上的压力表盘调整视线角度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-模拟仪表盘-读数对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "读取压力表显示数值并记录",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-圆形压力表盘-压力数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "弯腰俯身检查设备底部管路连接处",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "近距离检视管路接头是否有堵塞或泄漏痕迹",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-管路接头-堵塞泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-从弯腰位",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 恢复直立是弯腰的逆过程，仍属于L2-02-02而非L2-02-03，因为不涉及膝关节深度屈曲",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "伸手到达采样取样口位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-设备取样口-侧向中距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "抓握采样阀门手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-阀门手柄-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "旋转采样阀门开启取样口",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-球阀手柄-90度开启",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开阀门手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-手柄构件-渐进松指",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "伸手取出腰间的采样容器",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-腰部工具位-短距下探",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "抓取采样容器",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-采样容器-圆筒形",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将采样容器移动至取样口下方接取介质样品",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-采样容器-取样口对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 20,
+      "human_description": "静态保持容器位置等待样品流入",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-单臂持物姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将装有样品的容器移开",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-液体容器-近距侧移",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "另一手抓握阀门手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-阀门手柄-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "旋转阀门关闭取样口",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-球阀手柄-90度关闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开阀门手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-手柄构件-渐进松指",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "取出密度计工具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-密度计-测量功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将密度计插入样品容器中测量介质密度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-密度计-液体密度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 27,
+      "human_description": "读取密度计显示数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-密度计刻度-密度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "在湿滑地面上向脱介筛方向行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-湿滑泥浆地面-低速稳态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 29,
+      "human_description": "在脱介筛前停位并扫视设备及皮带运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-皮带输送设备-跑偏磨损检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 30,
+      "human_description": "在设备间狭窄过道侧身通行",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-侧身挤过",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 31,
+      "human_description": "行走至磁选机位置检查设备状态",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-湿滑泥浆地面-低速稳态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-25"
+    },
+    {
+      "step_order": 32,
+      "human_description": "用手触摸磁选机外壳感知是否有异常振动或温升",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-振动温度异常-设备外壳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-湿滑泥浆地面-低速稳态",
+      "l3_name_en": "Walk-WetSludgyFloor-LowSpeedStable",
+      "parent_l2_id": "L2-01-01",
+      "description": "在覆盖有湿滑介质泥浆的工业地面上以低速稳态步伐行走，需要增强防滑步态控制",
+      "object_category": "湿滑工业地面",
+      "parameter_ranges": {
+        "size_range": "单次行走距离5-50m",
+        "weight_range": "N/A",
+        "force_range": "需额外20-30%的摩擦力裕度",
+        "precision_requirement": "步态稳定性优先"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-低速连续步态",
+      "l3_name_en": "TurnWalk-90DegreeBend-LowSpeedContinuous",
+      "parent_l2_id": "L2-01-02",
+      "description": "在设备间通道拐角处进行约90度方向转换，保持低速连续步态以应对湿滑地面",
+      "object_category": "工业通道拐角",
+      "parameter_ranges": {
+        "size_range": "转向角度60-120度",
+        "weight_range": "N/A",
+        "force_range": "侧向摩擦力需额外裕度",
+        "precision_requirement": "转向平稳性"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-地面管线-20cm以内",
+      "l3_name_en": "StepOver-FloorPipeline-Under20cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "抬腿跨越地面上铺设的管路和线缆等障碍物，障碍高度在20cm以内",
+      "object_category": "地面管线障碍",
+      "parameter_ranges": {
+        "size_range": "障碍高度5-20cm",
+        "weight_range": "N/A",
+        "force_range": "标准抬腿力",
+        "precision_requirement": "避免绊倒"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备观察点-分米级",
+      "l3_name_en": "Stop-EquipmentObservationPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备前方合适的观察位置精确停步，精度要求为分米级",
+      "object_category": "设备观察位",
+      "parameter_ranges": {
+        "size_range": "距设备0.5-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度内-面向设备",
+      "l3_name_en": "TrunkRotate-Within90Degree-FacingEquipment",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动情况下转动躯干使身体正面朝向待检查设备，转动角度在90度以内",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度30-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视野对准"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-旋转设备外观-目视巡视",
+      "l3_name_en": "ScanInspect-RotatingEquipmentExterior-VisualPatrol",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视旋转设备（如旋流器、磁选机）的外观，检查运转状态、泄漏、异常磨损等",
+      "object_category": "旋转设备外观",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.5-3m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别mm级泄漏痕迹"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-旋转设备运转声-异常判别",
+      "l3_name_en": "Listen-RotatingEquipmentSound-AbnormalDetection",
+      "parent_l2_id": "L2-09-05",
+      "description": "倾听旋转设备运转时的声音，判别是否存在异常噪音如摩擦声、撞击声、共振声等",
+      "object_category": "设备运转声",
+      "parameter_ranges": {
+        "size_range": "声源距离0.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能分辨10dB以上的异常变化"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-模拟仪表盘-读数对准",
+      "l3_name_en": "Gaze-AnalogGaugeDial-ReadingAlignment",
+      "parent_l2_id": "L2-09-01",
+      "description": "调整视线方向使模拟仪表盘（压力表、温度表等）处于最佳观察角度",
+      "object_category": "模拟仪表盘",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "正面±30度视角"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-圆形压力表盘-压力数值",
+      "l3_name_en": "Read-CircularPressureGauge-PressureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取圆形压力表上的压力数值，需要识别指针位置和刻度对应关系",
+      "object_category": "圆形压力表",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2%满量程"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "BendForward-ModerateFlex-AboveKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴弯腰前屈，使视线或双手能够到达膝上高度区域",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度40-70cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-管路接头-堵塞泄漏检查",
+      "l3_name_en": "CloseInspect-PipeJoint-BlockageLeakCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离检视管路连接处的接头，检查是否存在堵塞物、泄漏痕迹或密封失效",
+      "object_category": "管路接头",
+      "parameter_ranges": {
+        "size_range": "检视距离10-30cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别mm级泄漏痕迹"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-从弯腰位",
+      "l3_name_en": "BendForward-ReturnUpright-FromBentPosition",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态恢复到直立姿态，髋关节伸展，躯干回正",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度30-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-设备取样口-侧向中距",
+      "l3_name_en": "Reach-EquipmentSamplingPort-SideMediumDistance",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方伸出到达设备上的取样口位置，伸达距离为中等距离",
+      "object_category": "设备取样口",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-阀门手柄-直径20至40mm",
+      "l3_name_en": "PowerGrip-ValveHandle-Diameter20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握阀门手柄，手柄直径在20-40mm范围，需提供旋转操作所需的握持稳定性",
+      "object_category": "阀门手柄",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-40mm",
+        "weight_range": "N/A",
+        "force_range": "握力10-30N",
+        "precision_requirement": "稳定握持"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-球阀手柄-90度开启",
+      "l3_name_en": "ValveOperate-BallValveHandle-90DegreeOpen",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转球阀手柄约90度使阀门从关闭位置转到开启位置",
+      "object_category": "球阀",
+      "parameter_ranges": {
+        "size_range": "手柄长度50-150mm",
+        "weight_range": "N/A",
+        "force_range": "操作力矩5-20Nm",
+        "precision_requirement": "到位即可"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-手柄构件-渐进松指",
+      "l3_name_en": "Release-HandleComponent-GradualFingerOpen",
+      "parent_l2_id": "L2-04-07",
+      "description": "渐进式松开手指解除对手柄类构件的握持，确保平稳释放",
+      "object_category": "手柄构件",
+      "parameter_ranges": {
+        "size_range": "手柄直径15-50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-腰部工具位-短距下探",
+      "l3_name_en": "Reach-WaistToolPosition-ShortDownward",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向下方伸出到达腰部佩戴的工具或容器存放位置",
+      "object_category": "腰部工具位",
+      "parameter_ranges": {
+        "size_range": "伸达距离15-30cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-采样容器-圆筒形",
+      "l3_name_en": "PowerGrip-SamplingContainer-Cylindrical",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握圆筒形的采样容器，确保在后续操作中稳定持握",
+      "object_category": "采样容器",
+      "parameter_ranges": {
+        "size_range": "容器直径40-80mm，高度100-200mm",
+        "weight_range": "空载0.1-0.3kg，满载0.5-2kg",
+        "force_range": "握力10-25N",
+        "precision_requirement": "稳定握持"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-采样容器-取样口对位",
+      "l3_name_en": "PrecisePlace-SamplingContainer-SamplingPortAlignment",
+      "parent_l2_id": "L2-03-05",
+      "description": "将采样容器精确放置到取样口下方，使流出的样品准确落入容器内",
+      "object_category": "采样容器定位",
+      "parameter_ranges": {
+        "size_range": "对位精度±2cm",
+        "weight_range": "容器重量0.1-0.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-单臂持物姿态-抗重力",
+      "l3_name_en": "Support-SingleArmHoldingPosture-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "单臂持握物体保持固定姿态，抵抗重力维持物体位置稳定",
+      "object_category": "持物姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "持物重量0.2-2kg",
+        "force_range": "持续支撑力2-20N",
+        "precision_requirement": "位置偏差<1cm"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-液体容器-近距侧移",
+      "l3_name_en": "Transfer-LiquidContainer-ShortSideMove",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握装有液体的容器进行短距离侧向移动，需保持水平防止液体溢出",
+      "object_category": "液体容器",
+      "parameter_ranges": {
+        "size_range": "移动距离10-40cm",
+        "weight_range": "容器加液体0.5-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "水平保持倾斜<5度"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-球阀手柄-90度关闭",
+      "l3_name_en": "ValveOperate-BallValveHandle-90DegreeClose",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转球阀手柄约90度使阀门从开启位置转到关闭位置",
+      "object_category": "球阀",
+      "parameter_ranges": {
+        "size_range": "手柄长度50-150mm",
+        "weight_range": "N/A",
+        "force_range": "操作力矩5-20Nm",
+        "precision_requirement": "到位即可"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-密度计-测量功能姿",
+      "l3_name_en": "ToolGrip-Densitometer-MeasurementPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合测量操作的方式握持密度计，手指按照使用功能排列以便于读数和操作",
+      "object_category": "密度计",
+      "parameter_ranges": {
+        "size_range": "密度计长度150-300mm，直径20-40mm",
+        "weight_range": "0.1-0.3kg",
+        "force_range": "N/A",
+        "precision_requirement": "稳定握持便于读数"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-密度计-液体密度",
+      "l3_name_en": "MeasurementPosition-Densitometer-LiquidDensity",
+      "parent_l2_id": "L2-09-06",
+      "description": "将密度计垂直插入液体样品中适当深度，保持稳定以便读取准确的密度值",
+      "object_category": "液体样品",
+      "parameter_ranges": {
+        "size_range": "浸入深度50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "垂直度±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-密度计刻度-密度数值",
+      "l3_name_en": "Read-DensitometerScale-DensityValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取密度计浮标与刻度的对应位置，获取液体密度数值",
+      "object_category": "密度计刻度",
+      "parameter_ranges": {
+        "size_range": "刻度间距0.01-0.05g/cm³",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±0.01g/cm³"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-皮带输送设备-跑偏磨损检查",
+      "l3_name_en": "ScanInspect-BeltConveyor-DeviationWearCheck",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视皮带输送设备，检查皮带是否跑偏、边缘磨损、托辊异常等",
+      "object_category": "皮带输送设备",
+      "parameter_ranges": {
+        "size_range": "扫描长度2-10m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别cm级跑偏"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-侧身挤过",
+      "l3_name_en": "Pass-EquipmentGap-SidewaysSqueeze",
+      "parent_l2_id": "L2-01-06",
+      "description": "在设备之间狭窄的间隙中侧身通过，通道宽度小于正常行走所需",
+      "object_category": "设备间狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度40-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免触碰设备"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-振动温度异常-设备外壳",
+      "l3_name_en": "TactileProbe-VibrationTemperatureAnomaly-EquipmentShell",
+      "parent_l2_id": "L2-09-04",
+      "description": "用手掌或手指接触设备外壳，感知是否存在异常振动或温度升高",
+      "object_category": "设备外壳表面",
+      "parameter_ranges": {
+        "size_range": "接触面积5-20cm²",
+        "weight_range": "N/A",
+        "force_range": "接触力<2N",
+        "precision_requirement": "能感知5°C以上温差和明显振动"
+      },
+      "is_new": true,
+      "source_scene": "S-11-111-1110-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-05",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-06-03",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-04",
+      "L2-09-05",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 6
+  }
+}

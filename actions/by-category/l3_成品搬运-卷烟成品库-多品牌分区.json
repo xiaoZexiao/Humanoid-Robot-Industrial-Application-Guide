@@ -1,0 +1,653 @@
+{
+  "scene_id": "16-162-1620",
+  "scene_name": "成品搬运-卷烟成品库-多品牌分区",
+  "total_steps": 23,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "在待命区站立保持待命姿态，等待入库任务指令",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-站立待命姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "目光对准任务终端屏幕，读取入库任务信息",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-终端显示屏-任务信息",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "从待命区沿通道直行走向码垛区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-仓库地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在通道交叉口转弯进入码垛区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在待入库托盘前精确停住",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-托盘前沿-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "弯腰俯身使视线对准托盘侧面的标签位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-浅度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "视觉对准并读取托盘上的品牌批次条码标签",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-条码标签-货物追溯信息",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 8,
+      "human_description": "起身恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲起立-快速恢复",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 从弯腰恢复站立涉及膝关节配合伸展，归入下蹲起立而非弯腰俯身的逆过程",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "转身面向叉车工方向准备示意",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-向后",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "沿主通道直行前往目标库区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-仓库地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-40"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在通道交叉口转弯进入目标货架通道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "在狭窄的货架通道中侧身通行",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-货架通道-肩宽受限",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 13,
+      "human_description": "在目标货位前精确停住",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-货位标识点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "目光对准货架货位编号标识确认位置正确",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-货位编号牌-库位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "扫视货位空间确认无障碍物可放置托盘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-货位空间-栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 16,
+      "human_description": "身体侧向倾斜贴近货架为叉车让出通行空间",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-001",
+      "l3_name": "侧倾-单侧-浅度避让",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "保持侧倾姿态静态支撑等待叉车放置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-002",
+      "l3_name": "支撑-侧倾避让姿态-抗倾斜",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 18,
+      "human_description": "目光追踪叉车叉齿和托盘运动监督放置过程",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-运动物体-位置监控",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "17",
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 19,
+      "human_description": "恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-002",
+      "l3_name": "侧倾-回正-姿态恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "目视检查托盘放置位置是否与货位对齐",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-托盘位置-对齐确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 21,
+      "human_description": "沿货架通道直行返回主通道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-仓库地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-25"
+    },
+    {
+      "step_order": 22,
+      "human_description": "转弯返回待命区方向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 23,
+      "human_description": "在待命区精确停位等待下一任务",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-待命区标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-站立待命姿态-抗重力",
+      "l3_name_en": "Support-StandbyPosture-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "保持直立站立姿态，双脚平稳支撑，维持身体平衡等待任务指令",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "自重支撑",
+        "precision_requirement": "姿态稳定即可"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-终端显示屏-任务信息",
+      "l3_name_en": "Read-TerminalDisplay-TaskInfo",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准任务终端显示屏，识别并读取入库任务的品牌、批次、目标货位等信息",
+      "object_category": "显示屏终端",
+      "parameter_ranges": {
+        "size_range": "屏幕尺寸7-15英寸",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "文字可识别"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-仓库地坪-匀速",
+      "l3_name_en": "Walk-WarehouseFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在仓库硬化地坪（环氧、水泥）上匀速直线行走",
+      "object_category": "仓库地面",
+      "parameter_ranges": {
+        "size_range": "通道宽度2-4m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "无特殊要求"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeTurn-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在通道交叉口进行约90度方向变换，保持连续步态不停顿完成转向",
+      "object_category": "通道交叉口",
+      "parameter_ranges": {
+        "size_range": "转弯半径1-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转向角度±15度"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-托盘前沿-厘米级",
+      "l3_name_en": "Stop-PalletEdge-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘前沿指定距离精确停止，为后续标签读取做准备",
+      "object_category": "托盘",
+      "parameter_ranges": {
+        "size_range": "托盘1200×1000mm标准尺寸",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-浅度前屈-腰部高度",
+      "l3_name_en": "BendOver-ShallowFlexion-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴浅度前屈约30-45度，使视线下移至腰部高度目标",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准目标"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-条码标签-货物追溯信息",
+      "l3_name_en": "Read-BarcodeLabel-CargoTraceInfo",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视觉传感器对准货物条码或标签，识别品牌、批次、生产日期等追溯信息",
+      "object_category": "条码/标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸50×30mm至150×100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "条码可解析"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲起立-快速恢复",
+      "l3_name_en": "Squat-HalfSquatRise-QuickRecovery",
+      "parent_l2_id": "L2-02-03",
+      "description": "从弯腰或半蹲姿态快速恢复至完全站立，膝关节和髋关节协同伸展",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "不适用",
+        "precision_requirement": "平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-向后",
+      "l3_name_en": "TurnBody-90to180Degrees-Backward",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身绕垂直轴旋转90-180度转向后方",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "不适用",
+        "precision_requirement": "方向对准"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-货架通道-肩宽受限",
+      "l3_name_en": "Passage-ShelfAisle-ShoulderConstrained",
+      "parent_l2_id": "L2-01-06",
+      "description": "在货架间狭窄通道中侧身或收肩通行，通道宽度接近肩宽",
+      "object_category": "货架通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度0.8-1.2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "避免碰撞货架"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-货位标识点-厘米级",
+      "l3_name_en": "Stop-ShelfLocationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在目标货位标识牌前精确停止，便于确认货位信息",
+      "object_category": "货位标识",
+      "parameter_ranges": {
+        "size_range": "标识牌100×150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-09-07-003",
+      "l3_name_zh": "读取-货位编号牌-库位确认",
+      "l3_name_en": "Read-ShelfNumberPlate-LocationConfirm",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准货架上的货位编号标识牌，确认当前位置与目标库位一致",
+      "object_category": "货位标识牌",
+      "parameter_ranges": {
+        "size_range": "标识牌尺寸100×150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "编号可识别"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-货位空间-栅格扫描",
+      "l3_name_en": "Scan-ShelfSpace-GridScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "系统性扫视货位空间，确认无遗留货物或障碍物，可放置新托盘",
+      "object_category": "货位空间",
+      "parameter_ranges": {
+        "size_range": "货位1.2×1.0×1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "障碍物检出"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-05-001",
+      "l3_name_zh": "侧倾-单侧-浅度避让",
+      "l3_name_en": "LateralLean-OneSide-ShallowAvoidance",
+      "parent_l2_id": "L2-02-05",
+      "description": "身体向一侧浅度倾斜贴近货架，为叉车通行让出空间",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "不适用",
+        "precision_requirement": "避让空间足够"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-06-002",
+      "l3_name_zh": "支撑-侧倾避让姿态-抗倾斜",
+      "l3_name_en": "Support-LateralLeanPosture-AntiTilt",
+      "parent_l2_id": "L2-02-06",
+      "description": "保持身体侧倾避让姿态稳定，抵抗重力引起的倾斜趋势",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "侧向抗力",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-运动物体-位置监控",
+      "l3_name_en": "Gaze-MovingObject-PositionMonitor",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光持续追踪运动中的物体（如叉车托举的托盘），监控其位置和运动状态",
+      "object_category": "运动物体",
+      "parameter_ranges": {
+        "size_range": "托盘1200×1000mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "持续跟踪"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-02-05-002",
+      "l3_name_zh": "侧倾-回正-姿态恢复",
+      "l3_name_en": "LateralLean-ReturnCenter-PostureRecovery",
+      "parent_l2_id": "L2-02-05",
+      "description": "从侧倾姿态恢复至直立中正姿态",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "自身体重",
+        "force_range": "不适用",
+        "precision_requirement": "直立稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-托盘位置-对齐确认",
+      "l3_name_en": "Gaze-PalletPosition-AlignmentConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光对准已放置的托盘，确认其与货位边界对齐、放置端正",
+      "object_category": "托盘",
+      "parameter_ranges": {
+        "size_range": "托盘1200×1000mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "对齐偏差可辨识"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-待命区标定点-厘米级",
+      "l3_name_en": "Stop-StandbyAreaMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在待命区地面标定点精确停止，进入待命状态",
+      "object_category": "地面标定点",
+      "parameter_ranges": {
+        "size_range": "标定区域500×500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-16-162-1620-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-02-05",
+      "L2-02-06",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 3
+  }
+}

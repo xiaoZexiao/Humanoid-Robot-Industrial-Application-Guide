@@ -1,0 +1,358 @@
+各 L2 均无已有 L3 条目，从 001 开始编号。下面输出分析结果，0607xzx：
+
+```json
+{
+  "scene_id": "14-00-1493",
+  "scene_name": "冰淇淋脱模-冷冻成型-低温操作",
+  "total_steps": 11,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "工人穿戴防寒装备后沿平整地面步行至脱模工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-平整地坪-常速直行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 2,
+      "human_description": "工人在模具传送线旁精确停步至最优操作站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-传送线侧方标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "工人目视确认冻结冰淇淋模具已传送到达操作区正前方",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-冰淇淋模具-到位位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 4,
+      "human_description": "工人前伸手臂至模具中冰淇淋棒杆正上方预备位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-棒杆上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 5,
+      "human_description": "工人以拇指和食指对捏住从模具顶面露出的冰淇淋棒杆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-圆棒截面棒杆",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "工人沿模具腔体轴向垂直向上均匀施力，将冻结冰淇淋从模具中直线拔出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-模具腔体配合-低温冻结粘附阻力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 备选L2-05-03（拉拔抽取）。判定归入L2-07-02的理由：冰淇淋外形由模具腔体几何形状精确定义，若拔出过程偏离腔体轴向超过约2mm即会使冰淇淋与模具壁产生干涉并导致产品断裂，等效于刚性配合中的"卡死"失效；路径约束来源于几何配合，而非纯粹摩擦力，符合L2-07-02的判定标准。",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1.5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "工人目视快速确认拔出的冰淇淋整体形态完整、无断裂缺损",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-冰淇淋产品-形态完整性确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 8,
+      "human_description": "工人单手持冰淇淋棒将产品从脱模位平移至包装输送带正上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-单支冰淇淋产品-近距横移",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 9,
+      "human_description": "工人将持握的冰淇淋对准输送带上的指定放置槽位垂直向下放入",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-单支冰淇淋-厘米级间距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "工人渐进松开捏握冰淇淋棒杆的手指，确认产品已稳定支撑后完全释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已槽位支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.1-0.3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "工人回收手臂返回至等待抓取下一个冰淇淋棒的预备位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-脱模待机预备位-无障碍回位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-平整地坪-常速直行",
+      "l3_name_en": "Walk-FlatFloor-NormalSpeedStraight",
+      "parent_l2_id": "L2-01-01",
+      "description": "工人在平整的工厂地坪上以正常步速直线行走至目标工位，无方向变化，地面坡度≤3°",
+      "object_category": "地面/行进路径",
+      "parameter_ranges": {
+        "size_range": "通道宽度≥1.5m（机器人肩宽1.5倍以上）",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到位精度±50cm（后续由L2-01-08精确停位完成）"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-传送线侧方标定点-厘米级",
+      "l3_name_en": "StopPosition-ConveyorSideMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "工人在行走末尾以1-2步微调落脚位置，在模具传送线旁的标定位置精确停立，确保双手工作空间覆盖脱模操作区",
+      "object_category": "工位标定点/地面标识",
+      "parameter_ranges": {
+        "size_range": "操作覆盖半径约600-800mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±3-5cm（满足操作覆盖要求）"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-冰淇淋模具-到位位置确认",
+      "l3_name_en": "Gaze-IceCreamMold-ArrivalPositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "工人目视确认上游传送来的冻结冰淇淋模具已到达操作区内，棒杆朝向正确且可供抓取",
+      "object_category": "冰淇淋模具",
+      "parameter_ranges": {
+        "size_range": "模具尺寸约50×30×80mm（单支）",
+        "weight_range": "不适用（感知动作）",
+        "force_range": "不适用",
+        "precision_requirement": "视觉判断精度：到位/未到位二值判断"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-棒杆上方-无障碍直线",
+      "l3_name_en": "Reach-AboveStick-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "工人在无遮挡环境中沿直线路径伸出手臂，使指尖到达冰淇淋棒杆正上方约10-20mm处的预捏位",
+      "object_category": "目标预备位（空间点）",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "不适用（空载）",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位精度±5-10mm（以捏取动作完成精确对位）"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-圆棒截面棒杆",
+      "l3_name_en": "Pinch-TwoFingerOppose-RoundCrossSectionStick",
+      "parent_l2_id": "L2-04-02",
+      "description": "工人以拇指和食指指腹相向夹住冰淇淋棒杆，施加足以承受脱模拉力的捏取力，低温环境下需防止手指僵硬导致捏握失效",
+      "object_category": "冰淇淋棒杆（木质/纸质）",
+      "parameter_ranges": {
+        "size_range": "棒杆直径3-5mm，长度约70-90mm（露出模具部分约20-30mm）",
+        "weight_range": "单支冰淇淋连同棒杆约40-80g",
+        "force_range": "捏取力5-20N（需克服脱模粘附力）",
+        "precision_requirement": "指尖接触位置精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-模具腔体配合-低温冻结粘附阻力",
+      "l3_name_en": "Extract-MoldCavityFit-LowTempFreezeAdhesion",
+      "parent_l2_id": "L2-07-02",
+      "description": "工人沿冰淇淋模具腔体轴向方向垂直向上匀速施力，克服冻结粘附力将冰淇淋从模具腔体中直线拔出，全程需保持轴向对齐以防产品断裂",
+      "object_category": "冻结冰淇淋产品",
+      "parameter_ranges": {
+        "size_range": "产品截面约30×20mm，脱模行程约60-100mm",
+        "weight_range": "单支产品约40-80g",
+        "force_range": "脱模拉力10-50N（随冻结程度和配合紧度变化）",
+        "precision_requirement": "轴向偏斜<2°（偏斜过大导致产品断裂）"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-冰淇淋产品-形态完整性确认",
+      "l3_name_en": "Gaze-IceCreamProduct-ShapeIntegrityConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "工人在脱模完成后目视快速扫视持握中的冰淇淋产品，确认整体形态完整无断裂缺损，不合格品即时剔除",
+      "object_category": "冰淇淋成品",
+      "parameter_ranges": {
+        "size_range": "产品尺寸约30×20×80mm",
+        "weight_range": "不适用（感知动作）",
+        "force_range": "不适用",
+        "precision_requirement": "外观缺陷识别能力：可见断裂≥3mm"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-单支冰淇淋产品-近距横移",
+      "l3_name_en": "Transfer-SingleIceCream-ShortDistanceLateral",
+      "parent_l2_id": "L2-03-02",
+      "description": "工人单手持冰淇淋棒将产品在水平方向近距平移至包装输送带槽位正上方，保持产品竖向姿态",
+      "object_category": "冰淇淋成品",
+      "parameter_ranges": {
+        "size_range": "移动距离100-400mm",
+        "weight_range": "单支约40-80g",
+        "force_range": "不适用（重力持握，无主动施力）",
+        "precision_requirement": "到位精度±20mm（后续由L2-03-05完成精确落点）"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-单支冰淇淋-厘米级间距定位",
+      "l3_name_en": "PlaceExact-SingleIceCream-CentimeterSpacing",
+      "parent_l2_id": "L2-03-05",
+      "description": "工人将持握的冰淇淋对准包装输送带上的放置槽位，垂直向下精确放入，确保产品间距符合包装机入料节拍要求",
+      "object_category": "冰淇淋成品",
+      "parameter_ranges": {
+        "size_range": "槽位间距约30-60mm（依包装规格而定）",
+        "weight_range": "单支约40-80g",
+        "force_range": "放置力<5N（轻放，避免产品冲击损坏）",
+        "precision_requirement": "放置位置精度±5-10mm"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已槽位支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSlotSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "工人在确认冰淇淋产品已稳定落入输送带槽位后，渐进张开拇指和食指完全释放棒杆",
+      "object_category": "冰淇淋棒杆",
+      "parameter_ranges": {
+        "size_range": "棒杆直径3-5mm",
+        "weight_range": "不适用（释放后由槽位承重）",
+        "force_range": "释放力矩趋近于零（渐进松开）",
+        "precision_requirement": "释放时产品位置漂移<5mm"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-脱模待机预备位-无障碍回位",
+      "l3_name_en": "Reach-DemoldingStandbyPosition-UnobstructedReturn",
+      "parent_l2_id": "L2-03-01",
+      "description": "工人在完成放置动作后将手臂回收至下一循环抓取动作的预备位，手保持空载状态",
+      "object_category": "目标预备位（空间点）",
+      "parameter_ranges": {
+        "size_range": "回位移动距离100-400mm",
+        "weight_range": "不适用（空载）",
+        "force_range": "不适用",
+        "precision_requirement": "到位精度±20mm（到达下一循环伸达起点区域即可）"
+      },
+      "is_new": true,
+      "source_scene": "14-00-1493"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-09-01",
+      "L2-03-01",
+      "L2-04-02",
+      "L2-07-02",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-07"
+    ],
+    "最高频L2": "L2-03-01（空载伸达，step 4 和 step 11 均使用，代表高频循环往复动作）",
+    "涉及的L1数量": 5
+  }
+}
+```

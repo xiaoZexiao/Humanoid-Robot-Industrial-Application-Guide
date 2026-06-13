@@ -1,0 +1,571 @@
+{
+  "scene_id": "6-61-610",
+  "scene_name": "操作调节-重介系统-密度控制",
+  "total_steps": 23,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至重介系统控制区的密度仪监控位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在密度仪前方适当位置精确停住，确保视线能清晰读取仪表",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-仪表监控点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视密度仪表盘，读取当前分选密度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-密度仪表盘-密度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "行走至介质添加阀门所在位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在介质添加阀门手轮前方精确停位，确保双手可操作阀门",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-阀门操作点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将手臂伸向介质添加阀门的手轮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-阀门手轮-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手或单手握住阀门手轮外缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-阀门手轮-直径100至300mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "旋转介质添加阀门手轮，调节介质添加量至目标开度",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-手轮闸阀-开度调节",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 9,
+      "human_description": "松开阀门手轮，手指逐渐张开释放握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-阀门手轮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "行走至分流阀门所在位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在分流阀门手轮前方精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-阀门操作点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将手臂伸向分流阀门的手轮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-阀门手轮-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双手或单手握住分流阀门手轮外缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-阀门手轮-直径100至300mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "旋转分流阀门手轮，调节分流比例至目标开度",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-分流阀手轮-比例调节",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]分流阀与普通闸阀的区别在于需要精确控制分流比例，但核心操作仍为阀门旋转",
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 15,
+      "human_description": "松开分流阀门手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-阀门手轮",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "行走至调节旋钮控制面板位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将手臂伸向控制面板上的调节旋钮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-控制面板旋钮-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "用拇指和食指捏住调节旋钮边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-旋钮帽",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "精确旋转调节旋钮，微调参数设定值",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-参数设定旋钮-度级精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "松开调节旋钮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-旋钮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "行走返回密度仪监控位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 22,
+      "human_description": "目视密度仪表盘，确认调节后密度变化趋势",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-密度仪表盘-密度数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 23,
+      "human_description": "保持站立姿态持续监控密度仪数值变化",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-站立监控姿态-抗疲劳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-300"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在平整的工业地坪上以稳定速度直线行走，地面材质通常为混凝土或环氧涂层",
+      "object_category": "工业地坪",
+      "parameter_ranges": {
+        "size_range": "行走距离1-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-仪表监控点-分米级",
+      "l3_name_en": "Stop-InstrumentMonitoringPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在仪表或显示屏前精确停止，确保视线角度适合读取数据",
+      "object_category": "仪表监控位置",
+      "parameter_ranges": {
+        "size_range": "距仪表0.5-1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-阀门操作点-分米级",
+      "l3_name_en": "Stop-ValveOperationPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在阀门前方精确停止，确保手臂可以舒适触及阀门手轮",
+      "object_category": "阀门操作位置",
+      "parameter_ranges": {
+        "size_range": "距阀门0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±15cm"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-密度仪表盘-密度数值",
+      "l3_name_en": "Read-DensityMeterDial-DensityValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "对准密度仪表盘，读取当前介质密度数值，通常为模拟指针式或数字显示",
+      "object_category": "密度仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径80-200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "读数分辨率0.01g/cm³"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-阀门手轮-无障碍直线",
+      "l3_name_en": "Reach-ValveHandwheel-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂沿直线路径伸向阀门手轮位置，准备进行握持操作",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±5cm"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-阀门手轮-直径100至300mm",
+      "l3_name_en": "PowerGrip-ValveHandwheel-Diameter100to300mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络方式握住阀门手轮外缘，形成稳定的旋转施力点",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-300mm",
+        "weight_range": "不适用",
+        "force_range": "握力20-80N",
+        "precision_requirement": "握持稳定无滑脱"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-手轮闸阀-开度调节",
+      "l3_name_en": "ValveOp-HandwheelGateValve-OpeningAdjust",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转手轮式闸阀或截止阀，将阀门开度调节至目标位置",
+      "object_category": "手轮闸阀/截止阀",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-300mm",
+        "weight_range": "不适用",
+        "force_range": "旋转力矩5-50Nm",
+        "precision_requirement": "开度控制±5%"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-阀门手轮",
+      "l3_name_en": "Release-GradualLoosen-ValveHandwheel",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐渐张开手指松开对阀门手轮的握持，确保阀门位置不变",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-300mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "松开后阀位无偏移"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-分流阀手轮-比例调节",
+      "l3_name_en": "ValveOp-DiverterValveHandwheel-RatioAdjust",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转分流阀手轮，调节介质在不同管路间的分配比例",
+      "object_category": "分流阀",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-250mm",
+        "weight_range": "不适用",
+        "force_range": "旋转力矩5-40Nm",
+        "precision_requirement": "分流比例控制±3%"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-控制面板旋钮-无障碍直线",
+      "l3_name_en": "Reach-ControlPanelKnob-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "将手臂伸向控制面板上的调节旋钮位置",
+      "object_category": "控制面板旋钮",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-旋钮帽",
+      "l3_name_en": "Pinch-TwoFingerOpposition-KnobCap",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指和食指捏住调节旋钮的外缘或旋钮帽",
+      "object_category": "调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径15-40mm",
+        "weight_range": "不适用",
+        "force_range": "捏力2-10N",
+        "precision_requirement": "捏持稳定可旋转"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-参数设定旋钮-度级精度",
+      "l3_name_en": "FineTune-ParameterSettingKnob-DegreePrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "精确旋转参数设定旋钮，进行小角度高精度调节",
+      "object_category": "参数设定旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径15-40mm",
+        "weight_range": "不适用",
+        "force_range": "旋转力矩0.1-2Nm",
+        "precision_requirement": "角度分辨率1-5度"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-旋钮",
+      "l3_name_en": "Release-GradualLoosen-Knob",
+      "parent_l2_id": "L2-04-07",
+      "description": "逐渐松开对调节旋钮的捏持，确保设定值不变",
+      "object_category": "调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径15-40mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "松开后设定值无偏移"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-站立监控姿态-抗疲劳",
+      "l3_name_en": "Support-StandingMonitoringPosture-AntiFatigue",
+      "parent_l2_id": "L2-02-06",
+      "description": "保持直立站姿持续观察仪表，需维持姿态稳定性以抵抗疲劳",
+      "object_category": "监控站位",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定持续30秒至数分钟"
+      },
+      "is_new": true,
+      "source_scene": "6-61-610-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-06-03",
+      "L2-06-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 6
+  }
+}

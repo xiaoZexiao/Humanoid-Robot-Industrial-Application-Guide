@@ -1,0 +1,293 @@
+{
+  "scene_id": "39-00-3922",
+  "scene_name": "插接装配-FPC排线连接器-多规格换型",
+  "total_steps": 9,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "操作员将手伸向FPC排线料盒上方，准备抓取目标规格的FPC排线",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-料盒上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "用拇指和食指精密捏取一根FPC排线，轻柔控制避免折弯损伤",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-FPC排线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "将FPC排线从料盒转移到主板连接器上方区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-FPC排线-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "视觉对准目标连接器插座位置，确认FPC与插座的相对位置关系",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-连接器插座-对位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "精确调整FPC位置使其与连接器插座精确对齐，达到0.1mm级对准精度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-FPC排线-亚毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将FPC排线沿连接器插座方向插入，需同时控制XY位置和插入角度",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-FPC连接器-4自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 与L2-07-01直线插入的区别：FPC插接需同时控制XY平移、绕Z旋转、沿Z插入共4个自由度，非单轴插入",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "向下按压连接器锁扣直到听到咔嗒声或感觉到位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-FPC锁扣-单向锁定",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 与L2-05-01点压触发的区别：FPC锁扣有明确的弹性变形→锁定到位的力突变特征，属于卡扣压合而非简单点压",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手指逐渐松开FPC排线，确保排线保持在已插接固定位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "目视检查插接状态，确认锁扣完全到位、无引脚弯曲、连接可靠",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-插接状态-质量确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-料盒上方-无障碍直线",
+      "l3_name_en": "Reach-AboveBin-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从当前位置沿直线轨迹伸向零件料盒上方区域，为后续抓取动作做准备",
+      "object_category": "料盒/物料区",
+      "parameter_ranges": {
+        "size_range": "料盒开口100-300mm",
+        "weight_range": "空载",
+        "force_range": "无外力",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-FPC排线",
+      "l3_name_en": "Pinch-TwoFingerOpposed-FPCCable",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指以对捏方式抓取FPC柔性排线，控制捏取力避免排线折损",
+      "object_category": "FPC柔性排线",
+      "parameter_ranges": {
+        "size_range": "宽度4-30mm，厚度0.1-0.3mm",
+        "weight_range": "<1g",
+        "force_range": "捏取力0.1-0.5N",
+        "precision_requirement": "毫米级定位"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-FPC排线-近距",
+      "l3_name_en": "Transfer-FPCCable-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握FPC排线从料盒位置转移至主板连接器上方区域",
+      "object_category": "FPC柔性排线",
+      "parameter_ranges": {
+        "size_range": "宽度4-30mm",
+        "weight_range": "<1g",
+        "force_range": "保持力0.1-0.5N",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-连接器插座-对位确认",
+      "l3_name_en": "Gaze-ConnectorSocket-AlignmentConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准目标连接器插座位置，获取精确位置信息用于后续对位操作",
+      "object_category": "电子连接器插座",
+      "parameter_ranges": {
+        "size_range": "连接器间距0.3-0.5mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "0.1mm级视觉分辨"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-FPC排线-亚毫米级",
+      "l3_name_en": "PrecisePlace-FPCCable-SubMillimeter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将FPC排线精确定位到连接器插座正上方位置，达到0.1mm级对准精度",
+      "object_category": "FPC柔性排线",
+      "parameter_ranges": {
+        "size_range": "宽度4-30mm",
+        "weight_range": "<1g",
+        "force_range": "无外力",
+        "precision_requirement": "±0.1mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-FPC连接器-4自由度对准",
+      "l3_name_en": "Dock-FPCConnector-4DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "将FPC排线沿连接器插座方向插入，同时控制XY位置、绕Z旋转角度和插入深度",
+      "object_category": "FPC连接器接口",
+      "parameter_ranges": {
+        "size_range": "连接器间距0.3-0.5mm，宽度4-30mm",
+        "weight_range": "<1g",
+        "force_range": "插入力0.2-1N",
+        "precision_requirement": "±0.1mm位置，±0.5°角度"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-FPC锁扣-单向锁定",
+      "l3_name_en": "SnapFit-FPCLatch-UniDirectionalLock",
+      "parent_l2_id": "L2-07-06",
+      "description": "向下按压FPC连接器锁扣，使其弹性变形后锁定到位，有明确click反馈",
+      "object_category": "FPC连接器锁扣",
+      "parameter_ranges": {
+        "size_range": "锁扣宽度4-30mm",
+        "weight_range": "N/A",
+        "force_range": "按压力0.5-2N",
+        "precision_requirement": "锁扣到位触觉/听觉反馈"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已固定",
+      "l3_name_en": "Release-GradualOpen-ObjectSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开释放已通过锁扣固定的FPC排线，确保释放过程不影响排线位置",
+      "object_category": "已固定零件",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "无位移扰动"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-插接状态-质量确认",
+      "l3_name_en": "Gaze-ConnectionStatus-QualityConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查FPC插接完成状态，确认锁扣完全到位、引脚无弯曲、接触可靠",
+      "object_category": "插接完成的连接器",
+      "parameter_ranges": {
+        "size_range": "连接器宽度4-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别引脚弯曲、锁扣未到位等0.1mm级异常"
+      },
+      "is_new": true,
+      "source_scene": "SC-39-00-3922-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-07-03",
+      "L2-07-06",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-09-01",
+    "涉及的L1数量": 4
+  }
+}

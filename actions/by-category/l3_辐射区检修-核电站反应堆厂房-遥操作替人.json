@@ -1,0 +1,842 @@
+{
+  "scene_id": "44-441-4414",
+  "scene_name": "辐射区检修-核电站反应堆厂房-遥操作替人",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从辐射控制区入口沿通道直线行走至厂房区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业防护地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿钢制楼梯上行至设备平台层",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业钢梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 3,
+      "human_description": "侧身通过设备间狭窄管道间隙",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-管道间隙-肩宽受限",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在检修工位标定点精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-检修工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将头部转向设备方向，目视扫描设备整体外观",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-核设备外壳表面-系统巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 6,
+      "human_description": "弯腰俯身查看设备下部管路连接处",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下检视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "视线聚焦于管路法兰连接处检查密封状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-法兰密封面-泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 8,
+      "human_description": "起身恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-检视后复位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "躯干向左旋转90度查看设备侧面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-侧面检视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "手臂伸向随身携带的辐射剂量仪",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-腰挂工具袋-近距取物",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "手指握持辐射剂量仪手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-辐射测量仪-握枪姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将辐射剂量仪移动至设备表面测量点",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-辐射剂量仪-接触剂量率",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 13,
+      "human_description": "视觉聚焦辐射剂量仪显示屏读取数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-仪表数字显示-剂量数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将辐射剂量仪放回腰挂工具袋",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-手持仪器-工具袋归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "松开手指释放剂量仪",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "行走移动至阀门操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业防护地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 17,
+      "human_description": "目视对准阀门手轮确认当前开度指示",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-阀门开度指示-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 18,
+      "human_description": "双臂向前伸向阀门手轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-阀门手轮-双臂前伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双手包络抓握阀门手轮辐条",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-阀门手轮辐条-双手对握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "旋转阀门手轮至目标开度位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-截止阀手轮-定开度调节",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-20"
+    },
+    {
+      "step_order": 21,
+      "human_description": "松开手指释放阀门手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-阀门手轮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "伸手到取样工具包拿取取样瓶",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-取样工具包-近距取物",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "手指精密捏取密封取样瓶",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-三指捏握-密封取样瓶",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将取样瓶移动至取样点位置精确放置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-取样瓶-取样点对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 25,
+      "human_description": "旋开取样瓶盖进行取样操作",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-取样瓶盖-逆时针开启",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 26,
+      "human_description": "旋紧取样瓶盖密封样品",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-002",
+      "l3_name": "手拧-取样瓶盖-顺时针密封",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将密封好的取样瓶放回取样工具包",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-003",
+      "l3_name": "定放-取样瓶-样品包归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 28,
+      "human_description": "沿原路线返回辐射控制区出口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业防护地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-90"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业防护地坪-匀速",
+      "l3_name_en": "Walk-IndustrialProtectedFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在核电站厂房内经过辐射防护处理的工业地坪上匀速直线行走，地面平整但可能存在辐射标识线",
+      "object_category": "防护地坪表面",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.2-3.0m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业钢梯-上行",
+      "l3_name_en": "Climb-IndustrialSteelStair-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿核电站厂房内标准工业钢制楼梯上行，楼梯带有防滑踏板和双侧扶手",
+      "object_category": "工业钢制楼梯",
+      "parameter_ranges": {
+        "size_range": "踏步深度250-300mm，高度150-180mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "踏步定位±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-管道间隙-肩宽受限",
+      "l3_name_en": "Pass-PipeGap-ShoulderWidthConstrained",
+      "parent_l2_id": "L2-01-06",
+      "description": "侧身通过核电站设备间狭窄管道间隙，需要收缩肩部并保持身体侧向",
+      "object_category": "管道设备间隙",
+      "parameter_ranges": {
+        "size_range": "间隙宽度400-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免管道接触"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-检修工位标定点-厘米级",
+      "l3_name_en": "Stop-MaintenanceStationMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在检修工位地面标定点精确停止，确保后续操作可达性",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "标定区域直径30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-核设备外壳表面-系统巡视",
+      "l3_name_en": "Scan-NuclearEquipmentShell-SystematicInspection",
+      "parent_l2_id": "L2-09-03",
+      "description": "对核电站设备外壳表面进行系统性视觉扫描，检查锈蚀、泄漏、变形等异常",
+      "object_category": "核设备外壳",
+      "parameter_ranges": {
+        "size_range": "设备尺寸0.5-5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "缺陷识别≥5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下检视",
+      "l3_name_en": "BendForward-ModerateFlex-BelowKneeInspection",
+      "parent_l2_id": "L2-02-02",
+      "description": "弯腰前屈至膝盖以下高度，用于检视低位管路和设备连接处",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "俯身角度60-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "姿态保持稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-法兰密封面-泄漏检查",
+      "l3_name_en": "CloseInspect-FlangeSealFace-LeakageCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离检视管路法兰连接处密封面，识别渗漏痕迹或密封失效迹象",
+      "object_category": "法兰密封面",
+      "parameter_ranges": {
+        "size_range": "法兰直径DN50-DN300",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检视距离100-200mm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-检视后复位",
+      "l3_name_en": "BendForward-ReturnUpright-PostInspectionReset",
+      "parent_l2_id": "L2-02-02",
+      "description": "从俯身检视姿态恢复到站立直立状态",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度60-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "平稳恢复"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-侧面检视",
+      "l3_name_en": "TorsoRotation-90Degree-SideInspection",
+      "parent_l2_id": "L2-02-04",
+      "description": "躯干绕垂直轴旋转约90度，使视线对准设备侧面进行检视",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准目标"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-腰挂工具袋-近距取物",
+      "l3_name_en": "Reach-WaistToolPouch-NearbyGrab",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向腰部携带的工具袋位置，为取出工具或仪器做准备",
+      "object_category": "腰挂工具袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "手部到达工具袋开口"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-辐射测量仪-握枪姿",
+      "l3_name_en": "ToolGrip-RadiationMeter-PistolGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "以握枪姿势握持便携式辐射剂量测量仪手柄，食指控制触发按钮",
+      "object_category": "辐射测量仪",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "仪器重量0.3-1.5kg",
+        "force_range": "握持力5-15N",
+        "precision_requirement": "稳定握持，手指可触发"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-辐射剂量仪-接触剂量率",
+      "l3_name_en": "MeasurePosition-RadiationMeter-ContactDoseRate",
+      "parent_l2_id": "L2-09-06",
+      "description": "将辐射剂量仪探头移动至设备表面特定测量点进行接触剂量率测量",
+      "object_category": "设备表面测量点",
+      "parameter_ranges": {
+        "size_range": "探头距离0-50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-仪表数字显示-剂量数值",
+      "l3_name_en": "Read-DigitalMeterDisplay-DoseValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉聚焦辐射剂量仪LCD显示屏，读取并确认剂量率数值",
+      "object_category": "仪表数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸20-50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "数值识别精度100%"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-手持仪器-工具袋归位",
+      "l3_name_en": "PrecisePlace-HandheldInstrument-ToolPouchReturn",
+      "parent_l2_id": "L2-03-05",
+      "description": "将手持测量仪器精确放回腰挂工具袋中的指定位置",
+      "object_category": "手持仪器",
+      "parameter_ranges": {
+        "size_range": "仪器尺寸100-200mm",
+        "weight_range": "0.3-1.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "入袋定位±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已归位",
+      "l3_name_en": "Release-GradualFingerOpen-ToolSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认工具已稳定放入工具袋后，手指渐进张开释放工具",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "确保工具稳定后释放"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-阀门开度指示-状态确认",
+      "l3_name_en": "Gaze-ValvePositionIndicator-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准阀门手轮上的开度指示标识，确认当前阀门开关状态",
+      "object_category": "阀门开度指示器",
+      "parameter_ranges": {
+        "size_range": "指示盘直径50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "开度识别精度10%"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-阀门手轮-双臂前伸",
+      "l3_name_en": "Reach-ValveHandwheel-BothArmForward",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂向前伸出至阀门手轮位置，为双手握持手轮做准备",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "手部到达手轮可握位置"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-阀门手轮辐条-双手对握",
+      "l3_name_en": "PowerGrip-ValveWheelSpoke-TwoHandOpposed",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手分别握住阀门手轮对侧辐条，形成对称施力握持",
+      "object_category": "阀门手轮辐条",
+      "parameter_ranges": {
+        "size_range": "辐条直径15-30mm，手轮直径200-400mm",
+        "weight_range": "N/A",
+        "force_range": "握持力20-80N",
+        "precision_requirement": "对称握持位置"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-截止阀手轮-定开度调节",
+      "l3_name_en": "ValveOperate-GlobeValveWheel-SetOpeningAdjust",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转截止阀手轮至指定开度位置，按操作规程控制旋转速度和圈数",
+      "object_category": "截止阀手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径200-400mm",
+        "weight_range": "N/A",
+        "force_range": "操作力矩20-150Nm",
+        "precision_requirement": "开度精度±5%"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-阀门手轮",
+      "l3_name_en": "Release-GradualFingerOpen-ValveHandwheel",
+      "parent_l2_id": "L2-04-07",
+      "description": "完成阀门操作后，双手手指渐进张开释放手轮辐条",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "平稳释放避免回弹"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-取样工具包-近距取物",
+      "l3_name_en": "Reach-SamplingToolKit-NearbyGrab",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向携带的取样工具包位置，为取出取样瓶做准备",
+      "object_category": "取样工具包",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "手部到达工具包开口"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-三指捏握-密封取样瓶",
+      "l3_name_en": "Pinch-ThreeFingerGrip-SealedSampleBottle",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指、食指、中指三指捏握密封取样瓶瓶身",
+      "object_category": "密封取样瓶",
+      "parameter_ranges": {
+        "size_range": "瓶身直径20-40mm，高度50-100mm",
+        "weight_range": "空瓶重量20-100g",
+        "force_range": "捏握力3-10N",
+        "precision_requirement": "稳定捏握不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-取样瓶-取样点对位",
+      "l3_name_en": "PrecisePlace-SampleBottle-SamplingPointAlign",
+      "parent_l2_id": "L2-03-05",
+      "description": "将取样瓶精确放置于取样点位置，对准取样接口或目标区域",
+      "object_category": "取样瓶",
+      "parameter_ranges": {
+        "size_range": "瓶口直径15-30mm",
+        "weight_range": "20-100g",
+        "force_range": "N/A",
+        "precision_requirement": "对位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-取样瓶盖-逆时针开启",
+      "l3_name_en": "HandTwist-SampleBottleCap-CounterclockwiseOpen",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手逆时针旋拧取样瓶盖使其松脱开启",
+      "object_category": "取样瓶盖",
+      "parameter_ranges": {
+        "size_range": "瓶盖直径20-35mm",
+        "weight_range": "N/A",
+        "force_range": "开启力矩0.5-3Nm",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-06-02-002",
+      "l3_name_zh": "手拧-取样瓶盖-顺时针密封",
+      "l3_name_en": "HandTwist-SampleBottleCap-ClockwiseSeal",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手顺时针旋拧取样瓶盖使其紧固密封",
+      "object_category": "取样瓶盖",
+      "parameter_ranges": {
+        "size_range": "瓶盖直径20-35mm",
+        "weight_range": "N/A",
+        "force_range": "密封力矩1-5Nm",
+        "precision_requirement": "密封可靠"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    },
+    {
+      "l3_id": "L3-03-05-003",
+      "l3_name_zh": "定放-取样瓶-样品包归位",
+      "l3_name_en": "PrecisePlace-SampleBottle-SampleBagReturn",
+      "parent_l2_id": "L2-03-05",
+      "description": "将装有样品的密封取样瓶放回取样工具包指定位置",
+      "object_category": "取样瓶",
+      "parameter_ranges": {
+        "size_range": "瓶身直径20-40mm",
+        "weight_range": "含样品50-200g",
+        "force_range": "N/A",
+        "precision_requirement": "入袋定位±15mm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-441-4414-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-06-02",
+      "L2-06-03",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 6
+  }
+}

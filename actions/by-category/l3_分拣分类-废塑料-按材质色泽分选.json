@@ -1,0 +1,338 @@
+{
+  "scene_id": "42-422-4220",
+  "scene_name": "分拣分类-废塑料-按材质色泽分选",
+  "total_steps": 11,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从准备区行走至传送带旁的指定分拣工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地面-常速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在传送带旁标定位置精确停稳",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-传送带工位-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视扫描传送带上连续流过的废塑料，识别材质和颜色",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-传送带流动物料-追踪扫描",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]扫描覆盖传送带持续流动区域，属于面域扫描而非单点注视",
+      "parallel_with": null,
+      "duration_estimate": "0.3-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "视线锁定特定目标塑料块，确认其材质类型",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-废塑料块-材质辨识",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "手臂伸向传送带上的目标塑料位置，追踪其移动",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-传送带上方-动态追踪",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.6"
+    },
+    {
+      "step_order": 6,
+      "human_description": "手指张开后包裹抓取目标塑料块",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-不规则块状-中小尺寸",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]废塑料形状不规则、重量10-500g，需全手包络稳定抓取，归入力量抓握而非精密捏取",
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "上身转向对应材质的料框方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度以内-快速换向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "8",
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手臂将塑料块转移到目标料框上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻质废料-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "7",
+      "duration_estimate": "0.4-0.8"
+    },
+    {
+      "step_order": 9,
+      "human_description": "松开手指释放塑料块使其落入料框",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-快速张指-自由落体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.1-0.2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "上身转回面向传送带方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度以内-快速换向",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "11",
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "手臂回位至传送带上方准备下一次抓取",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-传送带上方-回位待机",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "10",
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地面-常速",
+      "l3_name_en": "Walk-FactoryFloor-NormalSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧或混凝土地面上以正常步速行走至指定工位",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-30m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±0.5m终点精度"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-传送带工位-分米级",
+      "l3_name_en": "Stop-ConveyorStation-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在传送带旁的指定分拣位置精确停稳，确保双手可触及传送带和周围料框",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5x0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-传送带流动物料-追踪扫描",
+      "l3_name_en": "Scan-ConveyorFlowMaterial-TrackingScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "持续视觉扫描传送带上流动的物料，追踪识别目标物体的位置和特征",
+      "object_category": "传送带物流",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.3-0.6m宽×0.5-1m长",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "物体识别精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-废塑料块-材质辨识",
+      "l3_name_en": "Gaze-PlasticWaste-MaterialIdentification",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线锁定特定废塑料块，通过颜色、光泽、透明度等视觉特征判断材质类型",
+      "object_category": "废塑料",
+      "parameter_ranges": {
+        "size_range": "目标尺寸3-20cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "材质分类准确率要求"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-传送带上方-动态追踪",
+      "l3_name_en": "Reach-AboveConveyor-DynamicTracking",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向传送带上移动的目标物体位置，需动态追踪目标移动",
+      "object_category": "移动目标区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "追踪精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-不规则块状-中小尺寸",
+      "l3_name_en": "PowerGrip-IrregularChunk-SmallMediumSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓取形状不规则的块状物体，需根据物体形状自适应调整握姿",
+      "object_category": "不规则块状物",
+      "parameter_ranges": {
+        "size_range": "最大尺寸3-15cm",
+        "weight_range": "10-500g",
+        "force_range": "握力5-30N",
+        "precision_requirement": "无精度要求"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度以内-快速换向",
+      "l3_name_en": "Rotate-Within90Degrees-QuickTurn",
+      "parent_l2_id": "L2-02-04",
+      "description": "上身快速旋转90度以内，用于在传送带与不同方向料框之间切换朝向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "旋转角度30-90度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻质废料-近距",
+      "l3_name_en": "Transfer-LightweightWaste-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将抓取的轻质废料从传送带位置转移到身旁的料框上方",
+      "object_category": "轻质废料",
+      "parameter_ranges": {
+        "size_range": "转移距离0.3-0.8m",
+        "weight_range": "10-500g",
+        "force_range": "不适用",
+        "precision_requirement": "落点精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-快速张指-自由落体",
+      "l3_name_en": "Release-QuickOpen-FreeFall",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指快速张开释放物体，使其自由落入下方容器",
+      "object_category": "轻质物料",
+      "parameter_ranges": {
+        "size_range": "物体尺寸3-15cm",
+        "weight_range": "10-500g",
+        "force_range": "不适用",
+        "precision_requirement": "落点精度由释放高度决定"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-传送带上方-回位待机",
+      "l3_name_en": "Reach-AboveConveyor-ReturnStandby",
+      "parent_l2_id": "L2-03-01",
+      "description": "完成投放后手臂快速回位至传送带上方的待机位置，准备下一次抓取",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "无精度要求"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220_Sorting-PlasticWaste-ByTypeAndColor"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-02-04",
+    "涉及的L1数量": 4
+  }
+}

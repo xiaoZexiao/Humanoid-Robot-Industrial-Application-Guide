@@ -1,0 +1,305 @@
+{
+  "scene_id": "33-339-3392",
+  "scene_name": "模具喷涂-有色金属压铸-高温脱模剂",
+  "total_steps": 11,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "以扣扳操控姿势握持喷枪，食指预置于扳机位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-工业喷枪-扣扳操控姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "目视压铸机状态指示灯或模具开合位置，监测开模信号",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-压铸机状态-开模监测",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "开模信号出现后快速向压铸机方向行走进入作业区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地面-快速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在模具型腔正前方喷涂作业点快速精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-作业标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将手持喷枪举起并移动至距离型腔150-300mm的喷涂起始位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持喷枪-近距举升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "食指扣动喷枪扳机触发喷涂启动",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-喷枪扳机-轻度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "保持扣住扳机状态，沿型腔表面各部位移动喷枪进行均匀覆盖喷涂",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "喷涂-高温脱模剂-中型模具型腔",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 8,
+      "human_description": "松开食指解除对扳机的按压力停止喷涂",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-扳机松指-保持握枪",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 仅释放食指对扳机的按压，手掌仍握持喷枪本体，属于部分释放的广义应用",
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将喷枪从型腔前收回至身体侧方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持喷枪-近距举升",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "快速向后行走撤离高温作业区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地面-快速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在安全等待区域停止站立等待下一循环",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-作业标定点-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-工业喷枪-扣扳操控姿",
+      "l3_name_en": "ToolGrip-IndustrialSprayGun-TriggerOperatingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以功能握姿持握工业喷枪，掌心包握枪柄，食指自然搭于扳机上方或轻触扳机，随时可扣动触发",
+      "object_category": "工业喷枪/喷涂设备",
+      "parameter_ranges": {
+        "size_range": "枪柄直径25-40mm，枪身长度200-400mm",
+        "weight_range": "0.5-2kg（含管路拖拽力）",
+        "force_range": "握持力10-30N，扳机扣动力5-15N",
+        "precision_requirement": "手指需精确定位于扳机触发位置"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-压铸机状态-开模监测",
+      "l3_name_en": "Gaze-DieCastingMachineStatus-MoldOpeningMonitor",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视压铸机开合模状态指示灯或模具实际开合位置，判断开模信号以决定进入时机",
+      "object_category": "压铸机/状态指示装置",
+      "parameter_ranges": {
+        "size_range": "指示灯直径20-50mm，观察距离2-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "需准确识别开模完成状态，反应时间<0.5秒"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地面-快速",
+      "l3_name_en": "Walk-IndustrialFloor-Fast",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间平整地面上快速直线行走，步速高于正常行走以满足时间窗口约束",
+      "object_category": "工业地面/环氧地坪/金属栅格",
+      "parameter_ranges": {
+        "size_range": "行走距离2-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-作业标定点-厘米级",
+      "l3_name_en": "StopPosition-WorkstationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在快速行走末段减速并精确停止于指定作业位置，确保后续操作的可达性",
+      "object_category": "地面标定点/作业工位",
+      "parameter_ranges": {
+        "size_range": "标定区域50x50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持喷枪-近距举升",
+      "l3_name_en": "Transfer-HandheldSprayGun-ShortRangeLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手持喷枪从身侧待命位置举升移动至作业目标前方的喷涂起始位置，或从作业位置收回",
+      "object_category": "工业喷枪",
+      "parameter_ranges": {
+        "size_range": "移动距离300-800mm",
+        "weight_range": "0.5-2kg",
+        "force_range": "举升力5-20N",
+        "precision_requirement": "终点位置精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-喷枪扳机-轻度",
+      "l3_name_en": "PointPress-SprayGunTrigger-Light",
+      "parent_l2_id": "L2-05-01",
+      "description": "食指快速扣动喷枪扳机至触发位置，启动喷涂功能",
+      "object_category": "喷枪扳机/触发开关",
+      "parameter_ranges": {
+        "size_range": "扳机行程10-20mm",
+        "weight_range": "不适用",
+        "force_range": "触发力5-15N",
+        "precision_requirement": "需完全扣至触发点"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-08-03-001",
+      "l3_name_zh": "喷涂-高温脱模剂-中型模具型腔",
+      "l3_name_en": "Spray-HighTempReleaseAgent-MediumMoldCavity",
+      "parent_l2_id": "L2-08-03",
+      "description": "保持扳机按压状态，以150-300mm枪距沿模具型腔表面移动喷枪，均匀覆盖各部位喷涂脱模剂",
+      "object_category": "压铸模具型腔",
+      "parameter_ranges": {
+        "size_range": "型腔面积0.1-1m²，枪距150-300mm",
+        "weight_range": "不适用",
+        "force_range": "喷涂压力0.3-0.6MPa",
+        "precision_requirement": "覆盖均匀度偏差<10%，喷涂时间5-15秒"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-扳机松指-保持握枪",
+      "l3_name_en": "Release-TriggerFingerRelax-MaintainGunGrip",
+      "parent_l2_id": "L2-04-07",
+      "description": "松开食指对喷枪扳机的按压力，扳机在弹簧作用下自动复位停止喷涂，手掌继续握持喷枪本体",
+      "object_category": "喷枪扳机",
+      "parameter_ranges": {
+        "size_range": "扳机复位行程10-20mm",
+        "weight_range": "不适用",
+        "force_range": "释放力0N（被动松开）",
+        "precision_requirement": "需完全释放至扳机复位"
+      },
+      "is_new": true,
+      "source_scene": "SC-3392-MoldSpray-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-08-03",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 6
+  }
+}

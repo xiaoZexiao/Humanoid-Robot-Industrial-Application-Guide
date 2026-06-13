@@ -1,0 +1,639 @@
+{
+  "scene_id": "32-00-3251",
+  "scene_name": "铜管探伤-质检工位-无损检测",
+  "total_steps": 23,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至质检工位的检测台前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在检测台前的标定工位处精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "上半身向左转动约90度面向待检铜管料架",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双臂伸向待检铜管料架上的铜管位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架区域-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手分别握住铜管两端，全手包络管体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆管体-直径30至80mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂协同将铜管从料架搬运至检测台上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-长条管材-中载",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]铜管长度1-2m，重量2-5kg，超过单臂承载范围，归入双臂协调搬运而非单臂转移",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将铜管精确放置于检测台的V型定位槽内",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-长条管材-毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双手同时缓慢松开铜管，确认其稳定于定位槽中",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "上半身转向右侧面对探伤设备操作区",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "右臂伸向探伤探头的存放架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-设备操作区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "以功能握持姿势握住涡流探伤探头手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-探伤探头-扫描功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将探头从存放架移至铜管起始端上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-检测探头-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将探头贴近铜管表面，调整角度使探头与管面垂直接触",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-涡流探头-缺陷检测",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "沿铜管轴向从一端到另一端匀速移动探头，覆盖全长扫描",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-管材全长表面-线性扫描",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]探伤扫描目的是感知缺陷信息，不改变工件状态，接触力<2N仅为维持信号耦合，符合L1-09定义而非L1-08",
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 15,
+      "human_description": "目光转向检测仪显示屏，观察波形或数值显示",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-检测仪显示屏-数据读取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "14",
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 16,
+      "human_description": "扫描完成后将探头从铜管表面抬起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-检测探头-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将探头精确放回存放架原位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-检测探头-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开探头手柄完成归位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双臂伸向检测台上已完成检测的铜管",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-检测台区域-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "双手分别握住铜管两端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆管体-直径30至80mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双臂协同将铜管搬运至合格区或不合格区料架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-长条管材-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将铜管按顺序放入分拣区料架的相应层位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-平行排列-单层",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]铜管需按顺序并排放置便于后续统计和追溯，存在排列规律性要求，归入码放而非单纯定点放置",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "双手松开铜管完成放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工厂环氧地坪上以匀速步态行走至目标区域",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅50-70cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差<30cm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工位标定点-厘米级",
+      "l3_name_en": "Stop-StationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工位地面标定点处精确停止，双脚落于指定区域内",
+      "object_category": "标定点",
+      "parameter_ranges": {
+        "size_range": "标定区域约50x50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位偏差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向左",
+      "l3_name_en": "TurnBody-90Degrees-Left",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，上半身绕垂直轴向左旋转约90度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-向右",
+      "l3_name_en": "TurnBody-90Degrees-Right",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，上半身绕垂直轴向右旋转约90度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架区域-无障碍直线",
+      "l3_name_en": "Reach-MaterialRackArea-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线伸向物料架上的目标物品位置",
+      "object_category": "物料架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±3cm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-设备操作区-无障碍直线",
+      "l3_name_en": "Reach-EquipmentOperationArea-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线伸向检测设备的操作区域",
+      "object_category": "设备操作区",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-检测台区域-无障碍直线",
+      "l3_name_en": "Reach-InspectionTableArea-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线伸向检测台上的工件位置",
+      "object_category": "检测台",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±3cm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-检测探头-近距",
+      "l3_name_en": "Transfer-InspectionProbe-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握检测探头在近距离范围内移动",
+      "object_category": "检测探头",
+      "parameter_ranges": {
+        "size_range": "探头直径20-50mm，长度100-200mm",
+        "weight_range": "200-500g",
+        "force_range": "N/A",
+        "precision_requirement": "轨迹平稳无剧烈晃动"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-长条管材-中载",
+      "l3_name_en": "CoordinatedCarry-LongTube-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协同搬运长条形管材，两手分别握住管材两端",
+      "object_category": "管材",
+      "parameter_ranges": {
+        "size_range": "长度1-2m，直径30-80mm",
+        "weight_range": "2-8kg",
+        "force_range": "单臂承载1-4kg",
+        "precision_requirement": "搬运过程保持水平稳定"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-长条管材-毫米级",
+      "l3_name_en": "PrecisePlacement-LongTube-MillimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将长条管材精确放置于检测台V型定位槽中",
+      "object_category": "管材",
+      "parameter_ranges": {
+        "size_range": "长度1-2m，直径30-80mm",
+        "weight_range": "2-8kg",
+        "force_range": "N/A",
+        "precision_requirement": "位置偏差±2mm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-检测探头-厘米级",
+      "l3_name_en": "PrecisePlacement-InspectionProbe-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将检测探头精确放回存放架原位",
+      "object_category": "检测探头",
+      "parameter_ranges": {
+        "size_range": "探头直径20-50mm",
+        "weight_range": "200-500g",
+        "force_range": "N/A",
+        "precision_requirement": "位置偏差±1cm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-平行排列-单层",
+      "l3_name_en": "ArrayPlace-ParallelArrangement-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将管材按平行方式排列放入料架同一层内",
+      "object_category": "管材",
+      "parameter_ranges": {
+        "size_range": "间距均匀，约50-100mm",
+        "weight_range": "2-8kg/根",
+        "force_range": "N/A",
+        "precision_requirement": "间距偏差±10mm"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆管体-直径30至80mm",
+      "l3_name_en": "PowerGrip-CylindricalTube-Diameter30to80mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络握住圆形截面的管材，手指和手掌形成闭环抓持",
+      "object_category": "管材",
+      "parameter_ranges": {
+        "size_range": "直径30-80mm",
+        "weight_range": "握持段重量0.5-2kg",
+        "force_range": "握力20-60N",
+        "precision_requirement": "抓持稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-探伤探头-扫描功能姿",
+      "l3_name_en": "ToolGrip-NDTProbe-ScanningPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合扫描操作的姿势握持探伤探头手柄，拇指可控制探头角度",
+      "object_category": "探伤探头",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm",
+        "weight_range": "200-500g",
+        "force_range": "握力10-25N",
+        "precision_requirement": "握持稳定便于精细操控"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开松开物体，物体此时已有其他支撑",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放速度可控",
+        "precision_requirement": "释放过程物体无位移"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-检测仪显示屏-数据读取",
+      "l3_name_en": "Gaze-DetectorDisplay-DataReading",
+      "parent_l2_id": "L2-09-01",
+      "description": "目光对准检测仪显示屏，读取波形、数值等检测数据",
+      "object_category": "显示屏",
+      "parameter_ranges": {
+        "size_range": "屏幕尺寸5-15英寸",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线稳定便于数据识别"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-管材全长表面-线性扫描",
+      "l3_name_en": "ScanInspect-TubeFullLength-LinearScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "沿管材轴向从一端到另一端匀速移动探头，覆盖全长表面进行无损检测",
+      "object_category": "管材表面",
+      "parameter_ranges": {
+        "size_range": "扫描长度500-2000mm",
+        "weight_range": "N/A",
+        "force_range": "接触力<2N",
+        "precision_requirement": "扫描速度10-50mm/s，覆盖率100%"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-涡流探头-缺陷检测",
+      "l3_name_en": "MeasurementPosition-EddyCurrentProbe-DefectDetection",
+      "parent_l2_id": "L2-09-06",
+      "description": "将涡流探伤探头贴近工件表面并调整角度至最佳检测姿态",
+      "object_category": "涡流探头",
+      "parameter_ranges": {
+        "size_range": "探头与工件距离0-3mm",
+        "weight_range": "N/A",
+        "force_range": "接触力<2N",
+        "precision_requirement": "探头垂直于工件表面，偏差±5度"
+      },
+      "is_new": true,
+      "source_scene": "32-00-3251-检测-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-06"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 5
+  }
+}

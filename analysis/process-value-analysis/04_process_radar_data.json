@@ -1,0 +1,302 @@
+[
+  {
+    "process_step": "包装",
+    "category": "包装成品",
+    "scene_count": 23,
+    "value_density": 83.95,
+    "dimensions": {
+      "labor_urgency": 3.22,
+      "scale_potential": 4.52,
+      "superhuman_value": 3.22,
+      "operation_complexity": 2.22,
+      "structure_level": 3.83,
+      "fault_tolerance": 3.83,
+      "takt_pressure": 3.43
+    }
+  },
+  {
+    "process_step": "原料入库",
+    "category": "仓储物流",
+    "scene_count": 16,
+    "value_density": 56.96,
+    "dimensions": {
+      "labor_urgency": 3.44,
+      "scale_potential": 4.12,
+      "superhuman_value": 3.12,
+      "operation_complexity": 2.12,
+      "structure_level": 3.12,
+      "fault_tolerance": 4.12,
+      "takt_pressure": 4.19
+    }
+  },
+  {
+    "process_step": "检测",
+    "category": "检测质控",
+    "scene_count": 14,
+    "value_density": 56.7,
+    "dimensions": {
+      "labor_urgency": 3.43,
+      "scale_potential": 4.07,
+      "superhuman_value": 4.64,
+      "operation_complexity": 2.29,
+      "structure_level": 4.57,
+      "fault_tolerance": 3.79,
+      "takt_pressure": 3.21
+    }
+  },
+  {
+    "process_step": "总装",
+    "category": "其他工序",
+    "scene_count": 13,
+    "value_density": 51.61,
+    "dimensions": {
+      "labor_urgency": 3.23,
+      "scale_potential": 4.69,
+      "superhuman_value": 4.0,
+      "operation_complexity": 3.23,
+      "structure_level": 3.69,
+      "fault_tolerance": 2.92,
+      "takt_pressure": 2.46
+    }
+  },
+  {
+    "process_step": "设备维护",
+    "category": "巡检维护",
+    "scene_count": 13,
+    "value_density": 49.66,
+    "dimensions": {
+      "labor_urgency": 3.54,
+      "scale_potential": 3.92,
+      "superhuman_value": 4.0,
+      "operation_complexity": 2.92,
+      "structure_level": 3.08,
+      "fault_tolerance": 3.62,
+      "takt_pressure": 4.69
+    }
+  },
+  {
+    "process_step": "检验",
+    "category": "检测质控",
+    "scene_count": 12,
+    "value_density": 45.0,
+    "dimensions": {
+      "labor_urgency": 3.33,
+      "scale_potential": 3.5,
+      "superhuman_value": 4.42,
+      "operation_complexity": 2.17,
+      "structure_level": 4.17,
+      "fault_tolerance": 4.0,
+      "takt_pressure": 3.58
+    }
+  },
+  {
+    "process_step": "配料称量",
+    "category": "原料处理",
+    "scene_count": 10,
+    "value_density": 38.3,
+    "dimensions": {
+      "labor_urgency": 3.8,
+      "scale_potential": 3.7,
+      "superhuman_value": 4.0,
+      "operation_complexity": 2.6,
+      "structure_level": 3.8,
+      "fault_tolerance": 3.1,
+      "takt_pressure": 4.0
+    }
+  },
+  {
+    "process_step": "灌装",
+    "category": "其他工序",
+    "scene_count": 9,
+    "value_density": 35.64,
+    "dimensions": {
+      "labor_urgency": 3.78,
+      "scale_potential": 4.33,
+      "superhuman_value": 3.78,
+      "operation_complexity": 2.33,
+      "structure_level": 4.44,
+      "fault_tolerance": 3.33,
+      "takt_pressure": 2.67
+    }
+  },
+  {
+    "process_step": "质检",
+    "category": "检测质控",
+    "scene_count": 9,
+    "value_density": 34.29,
+    "dimensions": {
+      "labor_urgency": 3.0,
+      "scale_potential": 4.11,
+      "superhuman_value": 4.33,
+      "operation_complexity": 1.78,
+      "structure_level": 3.56,
+      "fault_tolerance": 4.22,
+      "takt_pressure": 4.33
+    }
+  },
+  {
+    "process_step": "采掘作业",
+    "category": "其他工序",
+    "scene_count": 8,
+    "value_density": 33.36,
+    "dimensions": {
+      "labor_urgency": 4.5,
+      "scale_potential": 3.62,
+      "superhuman_value": 4.38,
+      "operation_complexity": 2.5,
+      "structure_level": 2.88,
+      "fault_tolerance": 4.12,
+      "takt_pressure": 4.38
+    }
+  },
+  {
+    "process_step": "检测测试",
+    "category": "检测质控",
+    "scene_count": 8,
+    "value_density": 31.04,
+    "dimensions": {
+      "labor_urgency": 3.5,
+      "scale_potential": 3.62,
+      "superhuman_value": 4.5,
+      "operation_complexity": 2.75,
+      "structure_level": 4.0,
+      "fault_tolerance": 4.38,
+      "takt_pressure": 4.62
+    }
+  },
+  {
+    "process_step": "成品出库",
+    "category": "仓储物流",
+    "scene_count": 8,
+    "value_density": 30.32,
+    "dimensions": {
+      "labor_urgency": 3.38,
+      "scale_potential": 4.75,
+      "superhuman_value": 3.25,
+      "operation_complexity": 1.75,
+      "structure_level": 4.0,
+      "fault_tolerance": 3.88,
+      "takt_pressure": 3.62
+    }
+  },
+  {
+    "process_step": "涂装",
+    "category": "其他工序",
+    "scene_count": 7,
+    "value_density": 28.63,
+    "dimensions": {
+      "labor_urgency": 3.71,
+      "scale_potential": 4.14,
+      "superhuman_value": 4.43,
+      "operation_complexity": 2.57,
+      "structure_level": 4.0,
+      "fault_tolerance": 3.71,
+      "takt_pressure": 3.71
+    }
+  },
+  {
+    "process_step": "功能测试",
+    "category": "检测质控",
+    "scene_count": 8,
+    "value_density": 28.32,
+    "dimensions": {
+      "labor_urgency": 2.75,
+      "scale_potential": 3.75,
+      "superhuman_value": 4.12,
+      "operation_complexity": 2.12,
+      "structure_level": 4.38,
+      "fault_tolerance": 4.88,
+      "takt_pressure": 3.88
+    }
+  },
+  {
+    "process_step": "设备巡检",
+    "category": "巡检维护",
+    "scene_count": 7,
+    "value_density": 27.37,
+    "dimensions": {
+      "labor_urgency": 3.14,
+      "scale_potential": 4.29,
+      "superhuman_value": 4.29,
+      "operation_complexity": 2.29,
+      "structure_level": 4.0,
+      "fault_tolerance": 4.86,
+      "takt_pressure": 4.86
+    }
+  },
+  {
+    "process_step": "破碎筛分",
+    "category": "原料处理",
+    "scene_count": 7,
+    "value_density": 27.02,
+    "dimensions": {
+      "labor_urgency": 4.14,
+      "scale_potential": 4.0,
+      "superhuman_value": 3.43,
+      "operation_complexity": 2.86,
+      "structure_level": 3.29,
+      "fault_tolerance": 3.71,
+      "takt_pressure": 4.29
+    }
+  },
+  {
+    "process_step": "人工拆解",
+    "category": "其他工序",
+    "scene_count": 6,
+    "value_density": 25.02,
+    "dimensions": {
+      "labor_urgency": 4.33,
+      "scale_potential": 4.0,
+      "superhuman_value": 4.17,
+      "operation_complexity": 3.83,
+      "structure_level": 3.33,
+      "fault_tolerance": 3.0,
+      "takt_pressure": 4.33
+    }
+  },
+  {
+    "process_step": "码垛",
+    "category": "包装成品",
+    "scene_count": 6,
+    "value_density": 22.98,
+    "dimensions": {
+      "labor_urgency": 3.67,
+      "scale_potential": 4.67,
+      "superhuman_value": 3.17,
+      "operation_complexity": 2.0,
+      "structure_level": 3.83,
+      "fault_tolerance": 4.0,
+      "takt_pressure": 3.17
+    }
+  },
+  {
+    "process_step": "装配",
+    "category": "加工制造",
+    "scene_count": 6,
+    "value_density": 22.98,
+    "dimensions": {
+      "labor_urgency": 3.0,
+      "scale_potential": 4.33,
+      "superhuman_value": 4.17,
+      "operation_complexity": 3.67,
+      "structure_level": 4.0,
+      "fault_tolerance": 2.83,
+      "takt_pressure": 3.17
+    }
+  },
+  {
+    "process_step": "清洗",
+    "category": "其他工序",
+    "scene_count": 6,
+    "value_density": 22.68,
+    "dimensions": {
+      "labor_urgency": 3.67,
+      "scale_potential": 3.83,
+      "superhuman_value": 3.83,
+      "operation_complexity": 2.33,
+      "structure_level": 4.17,
+      "fault_tolerance": 3.83,
+      "takt_pressure": 4.0
+    }
+  }
+]

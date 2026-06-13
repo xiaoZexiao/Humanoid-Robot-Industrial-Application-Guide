@@ -1,0 +1,684 @@
+{
+  "scene_id": "11-119-1190",
+  "scene_name": "巡检监测-尾矿库-坝体安全",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从巡检起点沿道路行走至坝顶入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-混凝土路面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿坝体斜坡道路上行至坝顶",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-04",
+      "l2_name": "斜面行走",
+      "l3_id": "L3-01-04-001",
+      "l3_name": "坡面行走-坝体斜坡-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在坝顶沿巡检路线平稳行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-坝顶路面-低速巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "4",
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 4,
+      "human_description": "行走同时目视扫描坝体表面检查裂缝渗漏塌陷迹象",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-坝体表面-边行边扫",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "3",
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 5,
+      "human_description": "发现可疑异常点时在该位置精确停步",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-异常点近前-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "弯腰俯身以近距离观察坝体表面细节",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "近距离目视检查疑似裂缝或渗漏点",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-坝体表面-裂缝渗漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 8,
+      "human_description": "恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身复位-恢复站立",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰的逆过程，仍归入L2-02-02弯腰俯身类",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "手伸向腰间设备袋位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-腰间设备袋-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "从设备袋中抓取拍照设备并以拍摄姿势握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-手持相机-拍摄功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将相机举至眼前对准目标取景",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-异常点-拍照取景",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "按压快门按钮拍摄记录",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-相机快门-轻触",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "松开手指将相机放回腰间设备袋",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-手持设备-入袋归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "沿坝顶继续行走至下一监测点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-坝顶路面-低速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-60"
+    },
+    {
+      "step_order": 15,
+      "human_description": "在路径转角处变向转弯继续前行",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-坝顶弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "在渗流量监测仪表前停步站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-仪表正前方-读数距离",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "注视渗流量监测仪表表盘读取数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-渗流量仪表盘-数值读取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 18,
+      "human_description": "移动至位移监测仪表位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-坝顶路面-低速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 19,
+      "human_description": "注视位移监测仪表读取位移数据",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-位移监测仪表-数值读取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 20,
+      "human_description": "沿坝坡斜面道路下行至库区水边",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-04",
+      "l2_name": "斜面行走",
+      "l3_id": "L3-01-04-002",
+      "l3_name": "坡面行走-坝坡泥泞面-下行",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽然地面湿滑泥泞，但主要特征仍是斜面行走，湿滑属于地面类型参数",
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 21,
+      "human_description": "目视扫描观察库区水位及水面状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-库区水位线-视觉巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 22,
+      "human_description": "目视扫描检查排洪设施外观完整性",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-003",
+      "l3_name": "扫检-排洪设施外观-完整性检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-45"
+    },
+    {
+      "step_order": 23,
+      "human_description": "沿坝坡斜面道路上行返回坝顶",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-04",
+      "l2_name": "斜面行走",
+      "l3_id": "L3-01-04-001",
+      "l3_name": "坡面行走-坝体斜坡-上行",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "90-240"
+    },
+    {
+      "step_order": 24,
+      "human_description": "沿道路行走返回巡检起点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-混凝土路面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-混凝土路面-匀速",
+      "l3_name_en": "Walk-ConcreteSurface-SteadySpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在硬化混凝土路面上以匀速步态直线行走，无障碍无坡度",
+      "object_category": "地面/混凝土路面",
+      "parameter_ranges": {
+        "size_range": "路面宽度>1.5m",
+        "weight_range": "N/A",
+        "force_range": "正常步行推进力",
+        "precision_requirement": "无特殊精度要求"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-坝顶路面-低速巡检",
+      "l3_name_en": "Walk-DamCrestPath-SlowPatrol",
+      "parent_l2_id": "L2-01-01",
+      "description": "在坝顶路面上以较低速度行走，同时保持观察注意力",
+      "object_category": "地面/坝顶路面",
+      "parameter_ranges": {
+        "size_range": "路面宽度3-6m",
+        "weight_range": "N/A",
+        "force_range": "低速步行推进力",
+        "precision_requirement": "需保持稳定步态便于观察"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-坝顶弯道-连续步态",
+      "l3_name_en": "TurnWalk-DamCrestCorner-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在坝顶巡检路线的转角处变向转弯，保持连续步态不停顿",
+      "object_category": "地面/坝顶弯道",
+      "parameter_ranges": {
+        "size_range": "转弯半径>1m",
+        "weight_range": "N/A",
+        "force_range": "正常步行推进力",
+        "precision_requirement": "转向角度30-90度"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-01-04-001",
+      "l3_name_zh": "坡面行走-坝体斜坡-上行",
+      "l3_name_en": "SlopeWalk-DamSlope-Ascending",
+      "parent_l2_id": "L2-01-04",
+      "description": "沿坝体斜坡道路向上行走，需克服坡度阻力",
+      "object_category": "地面/坝体斜坡",
+      "parameter_ranges": {
+        "size_range": "坡道宽度2-4m",
+        "weight_range": "N/A",
+        "force_range": "上坡推进力增加20-50%",
+        "precision_requirement": "坡度10-25度"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-01-04-002",
+      "l3_name_zh": "坡面行走-坝坡泥泞面-下行",
+      "l3_name_en": "SlopeWalk-MuddyDamSlope-Descending",
+      "parent_l2_id": "L2-01-04",
+      "description": "沿坝坡泥泞湿滑地面向下行走，需要额外稳定控制",
+      "object_category": "地面/泥泞坝坡",
+      "parameter_ranges": {
+        "size_range": "坡道宽度2-4m",
+        "weight_range": "N/A",
+        "force_range": "下坡制动力，需防滑控制",
+        "precision_requirement": "坡度10-25度，摩擦系数降低"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-异常点近前-分米级",
+      "l3_name_en": "Stop-NearAnomalyPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在发现的异常点附近精确停步，为近距离检视做准备",
+      "object_category": "位置/异常点",
+      "parameter_ranges": {
+        "size_range": "停位距异常点0.3-1m",
+        "weight_range": "N/A",
+        "force_range": "制动力正常",
+        "precision_requirement": "分米级定位精度"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-仪表正前方-读数距离",
+      "l3_name_en": "Stop-FrontOfMeter-ReadingDistance",
+      "parent_l2_id": "L2-01-08",
+      "description": "在监测仪表正前方合适距离处停步，便于读取仪表数值",
+      "object_category": "位置/仪表前",
+      "parameter_ranges": {
+        "size_range": "距仪表0.5-1.5m",
+        "weight_range": "N/A",
+        "force_range": "制动力正常",
+        "precision_requirement": "需正对仪表表盘"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝部高度",
+      "l3_name_en": "BendOver-ModerateFlex-KneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节屈曲为主弯腰俯身，使视线降低至膝部高度附近",
+      "object_category": "姿态/弯腰",
+      "parameter_ranges": {
+        "size_range": "躯干前倾角45-70度",
+        "weight_range": "N/A",
+        "force_range": "腰背肌维持力",
+        "precision_requirement": "保持稳定俯身姿态"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身复位-恢复站立",
+      "l3_name_en": "BendOver-RiseUp-ReturnStanding",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态伸直腰背恢复直立站姿",
+      "object_category": "姿态/起身",
+      "parameter_ranges": {
+        "size_range": "躯干从前倾恢复至直立",
+        "weight_range": "N/A",
+        "force_range": "腰背肌起身力",
+        "precision_requirement": "平稳起身不晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-腰间设备袋-近距直线",
+      "l3_name_en": "Reach-WaistEquipmentPouch-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向腰间设备袋位置伸出，准备取出随身携带的设备",
+      "object_category": "目标区域/腰间设备袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-40cm",
+        "weight_range": "N/A",
+        "force_range": "无外部阻力",
+        "precision_requirement": "厘米级定位"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-手持相机-拍摄功能姿",
+      "l3_name_en": "ToolGrip-HandheldCamera-ShootingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以拍摄功能姿势握持手持相机或手机，食指置于快门位置",
+      "object_category": "工具/手持拍照设备",
+      "parameter_ranges": {
+        "size_range": "设备尺寸5-15cm",
+        "weight_range": "设备重量100-500g",
+        "force_range": "握持力5-15N",
+        "precision_requirement": "手指可触及快门按钮"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-手持设备-入袋归位",
+      "l3_name_en": "Release-HandheldDevice-ReturnToPouch",
+      "parent_l2_id": "L2-04-07",
+      "description": "松开手指将手持设备放入腰间设备袋中归位",
+      "object_category": "物体/手持设备",
+      "parameter_ranges": {
+        "size_range": "设备尺寸5-15cm",
+        "weight_range": "设备重量100-500g",
+        "force_range": "渐进松指",
+        "precision_requirement": "确保设备入袋不跌落"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-相机快门-轻触",
+      "l3_name_en": "Press-CameraShutter-LightTouch",
+      "parent_l2_id": "L2-05-01",
+      "description": "食指轻按相机或手机快门按钮完成拍照触发",
+      "object_category": "按钮/快门按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径5-15mm",
+        "weight_range": "N/A",
+        "force_range": "触发力1-5N",
+        "precision_requirement": "按压行程1-3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-异常点-拍照取景",
+      "l3_name_en": "Gaze-AnomalyPoint-PhotoFraming",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线和相机镜头对准异常点进行取景构图",
+      "object_category": "目标/异常点",
+      "parameter_ranges": {
+        "size_range": "目标尺寸1cm-1m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "目标位于画面中心区域"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-坝体表面-裂缝渗漏检查",
+      "l3_name_en": "CloseInspect-DamSurface-CrackLeakCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离目视检查坝体表面细节，识别裂缝、渗水痕迹等异常",
+      "object_category": "检查对象/坝体表面",
+      "parameter_ranges": {
+        "size_range": "检视距离10-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别毫米级裂缝"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-坝体表面-边行边扫",
+      "l3_name_en": "ScanPatrol-DamSurface-WalkAndScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "行走过程中持续扫描观察坝体表面，发现裂缝渗漏塌陷迹象",
+      "object_category": "扫描区域/坝体表面",
+      "parameter_ranges": {
+        "size_range": "单次扫描覆盖面积5-20m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可发现厘米级异常"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-库区水位线-视觉巡视",
+      "l3_name_en": "ScanPatrol-ReservoirWaterLevel-VisualSurvey",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视扫描观察库区水位高度及水面状态异常",
+      "object_category": "扫描区域/库区水面",
+      "parameter_ranges": {
+        "size_range": "观察范围数十至数百米",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别水位变化及表面异常"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-03-003",
+      "l3_name_zh": "扫检-排洪设施外观-完整性检查",
+      "l3_name_en": "ScanPatrol-FloodDischargeEquipment-IntegrityCheck",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视扫描检查排洪设施外观结构完整性和工作状态",
+      "object_category": "扫描区域/排洪设施",
+      "parameter_ranges": {
+        "size_range": "设施尺寸数米至数十米",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可识别结构损坏和异常状态"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-渗流量仪表盘-数值读取",
+      "l3_name_en": "Read-SeepageFlowMeter-ValueReading",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视渗流量监测仪表盘面，读取当前渗流量数值",
+      "object_category": "信息载体/渗流量仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径10-30cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可读取表盘刻度和数字"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-位移监测仪表-数值读取",
+      "l3_name_en": "Read-DisplacementMeter-ValueReading",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视位移监测仪表显示面，读取当前位移监测数值",
+      "object_category": "信息载体/位移监测仪表",
+      "parameter_ranges": {
+        "size_range": "显示面积5-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可读取数字显示或刻度值"
+      },
+      "is_new": true,
+      "source_scene": "S-11-119-1190-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-04",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 5
+  }
+}

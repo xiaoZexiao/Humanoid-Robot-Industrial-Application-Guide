@@ -1,0 +1,624 @@
+{
+  "scene_id": "24-243-2432",
+  "scene_name": "打磨抛光-金属工艺品-表面处理",
+  "total_steps": 22,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从上道工序区域行走至抛光工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在抛光轮前精确站定至操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-抛光轮工位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手至待加工物料架处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "全手包络抓握待抛光金属工件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-金属工件-中小尺寸",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]工件5-500mm，需稳固握持抵抗抛光轮反作用力，属于力量抓握而非精密捏取",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将工件移至眼前检视位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-金属工件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "目视检查工件表面粗糙度和瑕疵位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-工件表面-粗糙度评估",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "手指调整工件在手中的朝向，使待抛光面朝向抛光轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-05",
+      "l2_name": "手内旋转调姿",
+      "l3_id": "L3-04-05-001",
+      "l3_name": "手旋-金属工件-90度调向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将工件移向高速旋转的抛光轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-金属工件-趋近抛光轮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将工件平面部位接触抛光轮，施加压力进行平面抛光",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-01",
+      "l2_name": "平面研磨抛光",
+      "l3_id": "L3-08-01-001",
+      "l3_name": "平磨-精抛光泽-布轮抛光",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 10,
+      "human_description": "通过手臂运动翻转工件至另一平面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-金属工件-180度换面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "对工件另一平面进行抛光处理",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-01",
+      "l2_name": "平面研磨抛光",
+      "l3_id": "L3-08-01-001",
+      "l3_name": "平磨-精抛光泽-布轮抛光",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 12,
+      "human_description": "调整工件角度，使曲面部位接触抛光轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-金属工件-角度微调",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将工件曲面部位贴合抛光轮进行曲面抛光",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-02",
+      "l2_name": "曲面适形打磨",
+      "l3_id": "L3-08-02-001",
+      "l3_name": "曲磨-金属工艺品曲面-布轮适形",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]工艺品含凸凹曲面，需工具姿态自适应，区别于平面研磨",
+      "parallel_with": null,
+      "duration_estimate": "20-90"
+    },
+    {
+      "step_order": 14,
+      "human_description": "翻转工件处理剩余曲面区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-金属工件-180度换面",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "继续对剩余曲面进行适形抛光",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-02",
+      "l2_name": "曲面适形打磨",
+      "l3_id": "L3-08-02-001",
+      "l3_name": "曲磨-金属工艺品曲面-布轮适形",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-90"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将工件从抛光轮移开至检视区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-金属工件-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "目视检查工件整体光泽度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-工件表面-光泽度检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将工件贴近眼前检视细节瑕疵",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-抛光表面-划痕瑕疵检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将合格工件移至成品托盘区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-金属工件-中距至成品区",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将工件精确放置于成品托盘指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-金属工件-毫米级定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "松开手指释放工件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "手臂回收至身侧准备取下一件工件",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身侧复位-自然回收",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工厂环氧地坪上以稳定步速直线行走至目标工位",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离2-10m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-抛光轮工位-厘米级",
+      "l3_name_en": "Stop-PolishingWheelStation-CmLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在抛光轮前精确站定，身体与抛光轮保持合适操作距离",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架-无障碍直线",
+      "l3_name_en": "Reach-MaterialRack-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线轨迹伸向物料架处准备抓取工件",
+      "object_category": "物料存放区",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-身侧复位-自然回收",
+      "l3_name_en": "Reach-SideReset-NaturalRetract",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手将手臂自然回收至身体侧面的休息位置",
+      "object_category": "身体侧面区域",
+      "parameter_ranges": {
+        "size_range": "回收距离30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "无精度要求"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-金属工件-近距",
+      "l3_name_en": "Transfer-MetalWorkpiece-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握金属工件在近距离范围内移动位置",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-500mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "轨迹精度±1cm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-金属工件-趋近抛光轮",
+      "l3_name_en": "Transfer-MetalWorkpiece-ApproachWheel",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握工件缓慢接近高速旋转的抛光轮",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-500mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "接近速度可控，末端精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-金属工件-中距至成品区",
+      "l3_name_en": "Transfer-MetalWorkpiece-MidRangeToFinished",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握完成品移动至成品存放区域",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-500mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "轨迹精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-金属工件-180度换面",
+      "l3_name_en": "Flip-MetalWorkpiece-180DegTurn",
+      "parent_l2_id": "L2-03-04",
+      "description": "通过手臂运动将工件绕水平轴翻转180度以切换加工面",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-500mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "翻转角度±10°"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "翻转-金属工件-角度微调",
+      "l3_name_en": "Flip-MetalWorkpiece-AngleAdjust",
+      "parent_l2_id": "L2-03-04",
+      "description": "小幅度调整工件朝向以使特定曲面区域对准抛光轮",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-500mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "角度调整范围15-45°"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-金属工件-毫米级定位",
+      "l3_name_en": "PlacePrecise-MetalWorkpiece-MmLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将金属工件精确放置到成品托盘的指定位置",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-500mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-金属工件-中小尺寸",
+      "l3_name_en": "PowerGrip-MetalWorkpiece-SmallMedium",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握中小尺寸金属工件以抵抗抛光轮反作用力",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件截面20-150mm",
+        "weight_range": "0.01-5kg",
+        "force_range": "握力10-50N",
+        "precision_requirement": "稳固抓持无滑动"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-04-05-001",
+      "l3_name_zh": "手旋-金属工件-90度调向",
+      "l3_name_en": "InHandRotate-MetalWorkpiece-90DegOrient",
+      "parent_l2_id": "L2-04-05",
+      "description": "通过手指运动在手内将工件旋转约90度调整朝向",
+      "object_category": "金属工艺品",
+      "parameter_ranges": {
+        "size_range": "工件尺寸30-100mm",
+        "weight_range": "0.01-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度±15°"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑后渐进松开手指完成释放",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "释放过程无冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-08-01-001",
+      "l3_name_zh": "平磨-精抛光泽-布轮抛光",
+      "l3_name_en": "FlatPolish-MirrorFinish-ClothWheel",
+      "parent_l2_id": "L2-08-01",
+      "description": "将金属工件平面部位接触高速旋转布轮，施加可控压力进行精抛以获得光泽",
+      "object_category": "金属平面",
+      "parameter_ranges": {
+        "size_range": "抛光面积1-2500cm²",
+        "weight_range": "工件0.01-5kg",
+        "force_range": "抛光压力1-10kg（10-100N）",
+        "precision_requirement": "表面粗糙度Ra<0.2μm"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-08-02-001",
+      "l3_name_zh": "曲磨-金属工艺品曲面-布轮适形",
+      "l3_name_en": "ContourPolish-MetalCraftCurve-ClothWheelAdapt",
+      "parent_l2_id": "L2-08-02",
+      "description": "将金属工艺品曲面部位贴合软布轮，通过姿态调整实现全曲面均匀抛光",
+      "object_category": "金属曲面",
+      "parameter_ranges": {
+        "size_range": "曲率半径5-500mm",
+        "weight_range": "工件0.01-5kg",
+        "force_range": "抛光压力1-10kg（10-100N）",
+        "precision_requirement": "曲面光泽均匀，无漏抛"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-工件表面-粗糙度评估",
+      "l3_name_en": "Gaze-WorkpieceSurface-RoughnessAssess",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查工件表面粗糙度状态以确定抛光起点",
+      "object_category": "金属表面",
+      "parameter_ranges": {
+        "size_range": "观察距离20-40cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别Ra>1μm的粗糙区域"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-工件表面-光泽度检查",
+      "l3_name_en": "Gaze-WorkpieceSurface-GlossCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查抛光后工件整体光泽度是否达标",
+      "object_category": "金属表面",
+      "parameter_ranges": {
+        "size_range": "观察距离30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "判断光泽度等级"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-抛光表面-划痕瑕疵检查",
+      "l3_name_en": "CloseInspect-PolishedSurface-ScratchDefect",
+      "parent_l2_id": "L2-09-02",
+      "description": "将工件贴近眼前近距离检视是否存在细微划痕或抛光遗漏",
+      "object_category": "金属抛光面",
+      "parameter_ranges": {
+        "size_range": "观察距离10-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别>0.1mm的划痕"
+      },
+      "is_new": true,
+      "source_scene": "S-2432-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-05",
+      "L2-04-07",
+      "L2-08-01",
+      "L2-08-02",
+      "L2-09-01",
+      "L2-09-02"
+    ],
+    "最高频L2": "L2-03-02",
+    "涉及的L1数量": 5
+  }
+}

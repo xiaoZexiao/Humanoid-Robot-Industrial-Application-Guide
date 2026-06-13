@@ -1,0 +1,739 @@
+{
+  "scene_id": "35-351-3511",
+  "scene_name": "搬运码垛-重型铸件毛坯-50kg以上",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至待搬运铸件存放区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "目视确认目标铸件位置及外形特征",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-重型铸件-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "行走至目标铸件旁并精确停位于操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-铸件侧方-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身接近低位放置的铸件",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "扫视铸件表面寻找合适的吊装挂点位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-铸件表面-挂点定位扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸手到达行车吊钩位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-吊钩上方-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "用力量抓握方式握住行车吊钩",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-吊钩把手-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将吊钩移动至铸件挂点上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-吊钩-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将吊钩对准并钩入铸件挂点孔位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-吊钩与挂孔-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 铸件不规则需多轴对位，非简单直线插入",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 10,
+      "human_description": "松开手指释放吊钩",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-吊钩已挂接",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "轻拉吊钩验证挂接是否牢固",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-吊钩验证-轻拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 验证性轻拉而非实际拉出，归入拉拔因动作模式相同",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "直立起身恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-复原直立-站立高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "后退行走至安全距离外",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-车间地面-后退",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 14,
+      "human_description": "举手向行车操作员发出起吊信号",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-头顶上方-信号手势",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 手势信号归入空载伸达，因动作为手部空间运动无外部接触",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "目视观察铸件起吊过程确认无倾斜",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-起吊铸件-姿态监控",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 16,
+      "human_description": "手势指挥行车沿水平方向移动",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-水平指向-方向指挥",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "行走跟随行车移动至目标码垛位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 18,
+      "human_description": "手势指挥行车开始下降",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-向下指向-下降指挥",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "目视观察铸件下降并引导精确落位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-下降铸件-落位引导",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 20,
+      "human_description": "手势指挥行车停止下降",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-005",
+      "l3_name": "伸达-握拳平举-停止指挥",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "行走至已落位的铸件旁边",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-铸件侧方-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "弯腰俯身接近落位铸件上的吊钩",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "伸手到达铸件上的吊钩位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-吊钩上方-直线路径",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "力量抓握握住吊钩",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-吊钩把手-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "将吊钩从铸件挂点中脱出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-吊钩脱挂-低阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将脱开的吊钩移离铸件上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-吊钩-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "释放吊钩使其自然悬垂",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-吊钩已挂接",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "直立起身恢复站立姿态并目视确认码垛状态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-复原直立-站立高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间环氧地坪-匀速",
+      "l3_name_en": "Walk-FactoryEpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间环氧树脂地坪上进行匀速直线行走，用于在工位间移动",
+      "object_category": "工业地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±30cm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-车间地面-后退",
+      "l3_name_en": "Walk-FactoryFloor-Backward",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间地面上后退行走，用于从操作区域退至安全距离",
+      "object_category": "工业地面",
+      "parameter_ranges": {
+        "size_range": "后退距离2-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点精度±50cm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-铸件侧方-分米级",
+      "l3_name_en": "Stop-CastingSide-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在重型铸件侧方精确停位，便于进行后续挂钩/解钩操作",
+      "object_category": "重型铸件",
+      "parameter_ranges": {
+        "size_range": "停位距铸件0.5-1m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝部高度",
+      "l3_name_en": "BendOver-ModerateFlex-KneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "保持膝关节微屈状态下弯腰前倾，使双手可达膝部高度的操作目标",
+      "object_category": "低位工件",
+      "parameter_ranges": {
+        "size_range": "目标高度0.4-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态保持稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-复原直立-站立高度",
+      "l3_name_en": "BendOver-ReturnUpright-StandingHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复到正常站立姿态",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-吊钩上方-直线路径",
+      "l3_name_en": "Reach-AboveHook-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手伸达至行车吊钩位置，准备抓取吊钩",
+      "object_category": "行车吊钩",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-头顶上方-信号手势",
+      "l3_name_en": "Reach-AboveHead-SignalGesture",
+      "parent_l2_id": "L2-03-01",
+      "description": "举手至头顶上方做出起吊信号手势，指挥行车起吊",
+      "object_category": "信号传递",
+      "parameter_ranges": {
+        "size_range": "手部高于头顶0.3-0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手势清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-水平指向-方向指挥",
+      "l3_name_en": "Reach-HorizontalPoint-DirectionCommand",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂水平伸出指向目标方向，指挥行车移动方向",
+      "object_category": "信号传递",
+      "parameter_ranges": {
+        "size_range": "手臂完全伸展",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "指向方向明确"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-向下指向-下降指挥",
+      "l3_name_en": "Reach-PointDown-LowerCommand",
+      "parent_l2_id": "L2-03-01",
+      "description": "手掌朝下做向下压的手势，指挥行车下降",
+      "object_category": "信号传递",
+      "parameter_ranges": {
+        "size_range": "胸前至腰部高度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手势清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-03-01-005",
+      "l3_name_zh": "伸达-握拳平举-停止指挥",
+      "l3_name_en": "Reach-FistRaised-StopCommand",
+      "parent_l2_id": "L2-03-01",
+      "description": "握拳平举做出停止信号，指挥行车停止动作",
+      "object_category": "信号传递",
+      "parameter_ranges": {
+        "size_range": "肩部至头部高度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手势清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-吊钩-近距",
+      "l3_name_en": "Transfer-Hook-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握吊钩在近距范围内转移至目标位置",
+      "object_category": "行车吊钩",
+      "parameter_ranges": {
+        "size_range": "转移距离0.2-0.6m",
+        "weight_range": "吊钩重量2-10kg",
+        "force_range": "抓持力20-50N",
+        "precision_requirement": "末端精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-吊钩把手-直径20至40mm",
+      "l3_name_en": "PowerGrip-HookHandle-Dia20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握行车吊钩把手，确保稳固持握",
+      "object_category": "吊钩把手",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "吊钩2-10kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "包络稳固"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-吊钩已挂接",
+      "l3_name_en": "Release-GradualLoosen-HookEngaged",
+      "parent_l2_id": "L2-04-07",
+      "description": "在吊钩已牢固挂接后逐渐松开手指完成释放",
+      "object_category": "吊钩把手",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平缓释放避免冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-吊钩验证-轻拉力",
+      "l3_name_en": "Pull-HookVerification-LightForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "轻轻拉动已挂接的吊钩验证挂接是否牢固可靠",
+      "object_category": "吊钩连接",
+      "parameter_ranges": {
+        "size_range": "拉动距离1-5cm",
+        "weight_range": "不适用",
+        "force_range": "验证拉力20-50N",
+        "precision_requirement": "感知是否松动"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-吊钩脱挂-低阻力",
+      "l3_name_en": "Extract-HookDisengage-LowResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "将吊钩从铸件挂点中沿约束路径抽出脱离",
+      "object_category": "吊钩与挂孔配合",
+      "parameter_ranges": {
+        "size_range": "抽出行程5-15cm",
+        "weight_range": "吊钩2-10kg",
+        "force_range": "抽出力10-30N",
+        "precision_requirement": "避免卡阻"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-吊钩与挂孔-3自由度对准",
+      "l3_name_en": "Dock-HookToLug-3DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "将吊钩对准铸件上不规则的挂孔并完成钩入，需同时控制XY位置和入钩角度",
+      "object_category": "吊钩与铸件挂点",
+      "parameter_ranges": {
+        "size_range": "挂孔直径30-80mm",
+        "weight_range": "吊钩2-10kg",
+        "force_range": "插入力5-20N",
+        "precision_requirement": "对位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-重型铸件-位置确认",
+      "l3_name_en": "Gaze-HeavyCasting-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认目标重型铸件的位置和外形特征",
+      "object_category": "重型铸件",
+      "parameter_ranges": {
+        "size_range": "观察距离2-10m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "目标识别准确"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-起吊铸件-姿态监控",
+      "l3_name_en": "Gaze-LiftingCasting-AttitudeMonitor",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视监控铸件起吊过程中的姿态变化，确认无倾斜或摆动",
+      "object_category": "吊运中铸件",
+      "parameter_ranges": {
+        "size_range": "观察距离3-8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "倾斜角度检测±5°"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-下降铸件-落位引导",
+      "l3_name_en": "Gaze-LoweringCasting-PlacementGuide",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察铸件下降过程并引导精确落位到码垛位置",
+      "object_category": "吊运中铸件",
+      "parameter_ranges": {
+        "size_range": "观察距离2-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "落位精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-铸件表面-挂点定位扫描",
+      "l3_name_en": "Scan-CastingSurface-LugPointLocate",
+      "parent_l2_id": "L2-09-03",
+      "description": "扫视铸件不规则表面，寻找并确定合适的吊装挂点位置",
+      "object_category": "铸件表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积0.2-1m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "挂点位置识别"
+      },
+      "is_new": true,
+      "source_scene": "S-35-351-3511-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-07-02",
+      "L2-07-03",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

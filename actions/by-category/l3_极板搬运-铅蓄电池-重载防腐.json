@@ -1,0 +1,667 @@
+{
+  "scene_id": "38-384-3843",
+  "scene_name": "极板搬运-铅蓄电池-重载防腐",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置行走至涂膏机出料端",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在涂膏机出料口前精确停位，对准极板取料位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备出料口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视检查极板涂膏层状态，确认涂层完整无脱落",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-涂层表面-质量确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身接近涂膏机出料台面上的极板",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-台面高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂向前伸向极板边缘位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-板材边缘-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手从极板两侧边缘轻柔抓握，避开涂膏表面",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-板材边缘-控力抓取",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽需控制力度避免涂层脱落，但操作对象为刚性板材边缘，手指包络抓握，归入力量抓握而非形变适应抓取",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调缓慢提起极板，保持水平姿态",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-平板型材-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "起身恢复直立姿态，同时保持极板稳定",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-持物状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "躯干向右侧旋转，面向转运车方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-持物转向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "双臂将极板平稳移动至转运车托盘上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-平板型材-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将极板精确水平放置到托盘指定位置，与前序极板对齐",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-层叠排列-多层",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 极板需按规律层叠码放且要求对齐，强调相对位置一致性，归入规律排列码放而非精确定点放置",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双手缓慢松开极板边缘，确认极板稳定后释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "躯干向左侧旋转，转回面向涂膏机方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-空手转向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "目视确认托盘上极板码放整齐且数量已满",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-码放状态-完整性确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "走到转运车把手位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双手伸向转运车把手",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-车辆把手-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双手抓握转运车推把",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆管把手-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "向前推动转运车使其开始移动",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-转运车-匀力持续推",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 推车目的是克服摩擦力使车移动，力的施加是核心，归入持续推压而非滑移推送",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "推着载有极板的转运车行走至固化房",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-重载推车-双手推持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 20,
+      "human_description": "在固化房货架前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-货架前方-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "松开转运车把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-把手脱离",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "双手抓握托盘上最顶层极板边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-板材边缘-控力抓取",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "双臂将极板从托盘提起并转移至固化房货架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-平板型材-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将极板水平放置到固化房货架层板上，按规律排列",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-层叠排列-多层",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房的环氧地坪上以均匀步速直线行走，地面平整无明显坡度",
+      "object_category": "环氧地坪",
+      "parameter_ranges": {
+        "size_range": "步幅500-700mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级路径偏差"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备出料口-厘米级",
+      "l3_name_en": "Stop-EquipmentOutlet-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备出料口前精确停止，使身体位置便于后续取料操作",
+      "object_category": "设备出料口",
+      "parameter_ranges": {
+        "size_range": "停位距设备300-500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-涂层表面-质量确认",
+      "l3_name_en": "Gaze-CoatingSurface-QualityCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查涂层表面状态，确认涂层完整性、均匀性、有无脱落或缺陷",
+      "object_category": "涂层表面",
+      "parameter_ranges": {
+        "size_range": "检测面积0.01-0.5m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可识别>1mm的涂层缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-台面高度",
+      "l3_name_en": "Bend-ModerateFlex-TableHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节前屈方式弯腰，使双手能够触及台面高度（600-900mm）的物品",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "目标高度600-900mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "双手可触及目标"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-板材边缘-无障碍直线",
+      "l3_name_en": "Reach-PlateEdge-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂沿无障碍直线路径伸向板状物体边缘位置，为后续抓取做准备",
+      "object_category": "板材边缘",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手掌到达边缘±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-板材边缘-控力抓取",
+      "l3_name_en": "PowerGrip-PlateEdge-ForceControlled",
+      "parent_l2_id": "L2-04-01",
+      "description": "以全手包络方式抓握板材边缘，控制抓握力度避免损伤涂层或使板材变形",
+      "object_category": "板材边缘",
+      "parameter_ranges": {
+        "size_range": "边缘厚度5-20mm",
+        "weight_range": "单板1-5kg",
+        "force_range": "抓握力20-80N",
+        "precision_requirement": "力度控制±10N"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-平板型材-中载",
+      "l3_name_en": "CoopCarry-FlatPlate-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运平板状物体，保持板面水平稳定，防止倾斜或晃动",
+      "object_category": "平板型材",
+      "parameter_ranges": {
+        "size_range": "板尺寸200×300mm至500×600mm",
+        "weight_range": "1-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "水平偏差<5°"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-持物状态",
+      "l3_name_en": "Bend-ReturnUpright-WhileHolding",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰状态恢复直立，同时双手保持对所持物品的稳定控制",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "持物重量1-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "物品姿态偏差<5°"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-持物转向",
+      "l3_name_en": "Rotate-90Deg-WhileHolding",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身绕垂直轴旋转约90度，同时保持双手所持物品稳定",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100°",
+        "weight_range": "持物重量1-10kg",
+        "force_range": "不适用",
+        "precision_requirement": "物品水平偏差<5°"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-层叠排列-多层",
+      "l3_name_en": "Stack-LayeredArrangement-MultiLevel",
+      "parent_l2_id": "L2-03-06",
+      "description": "将平板状物品按层叠方式规律码放，确保各层对齐、间隔均匀",
+      "object_category": "平板型材",
+      "parameter_ranges": {
+        "size_range": "单层数量10-50块",
+        "weight_range": "单块1-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "边缘对齐偏差<10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "缓慢松开手指释放物体，物体已被其他表面支撑，释放过程确保物体位置不发生偏移",
+      "object_category": "已支撑物体",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "1-10kg",
+        "force_range": "释放速度0.5-2秒",
+        "precision_requirement": "释放后物体位移<5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-空手转向",
+      "l3_name_en": "Rotate-90Deg-EmptyHand",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身绕垂直轴旋转约90度，双手空载",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100°",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-码放状态-完整性确认",
+      "l3_name_en": "Gaze-StackStatus-CompletenessCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查物品码放状态，确认数量、对齐度和整体完整性",
+      "object_category": "码放堆",
+      "parameter_ranges": {
+        "size_range": "检视范围0.1-1m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可识别明显错位或缺失"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-车辆把手-无障碍直线",
+      "l3_name_en": "Reach-VehicleHandle-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂沿无障碍路径伸向转运车把手位置，为后续抓握做准备",
+      "object_category": "车辆把手",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手掌到达把手±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-圆管把手-直径20至40mm",
+      "l3_name_en": "PowerGrip-TubeHandle-Dia20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "以全手包络方式抓握圆管状把手，手指环绕管身形成稳固握持",
+      "object_category": "圆管把手",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "握力30-100N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-转运车-匀力持续推",
+      "l3_name_en": "Push-TransportCart-SteadyForce",
+      "parent_l2_id": "L2-05-02",
+      "description": "对转运车把手施加持续水平推力，克服滚动摩擦使车辆移动",
+      "object_category": "转运车",
+      "parameter_ranges": {
+        "size_range": "车体尺寸600×800mm至1200×1500mm",
+        "weight_range": "车+载荷50-500kg",
+        "force_range": "推力50-200N",
+        "precision_requirement": "力方向偏差<15°"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-重载推车-双手推持",
+      "l3_name_en": "LoadedWalk-HeavyCart-TwoHandPush",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手推持重载转运车行走，需持续施加推力同时保持步态稳定",
+      "object_category": "重载推车",
+      "parameter_ranges": {
+        "size_range": "行走距离10-100m",
+        "weight_range": "车+载荷50-500kg",
+        "force_range": "推力30-150N",
+        "precision_requirement": "路径偏差<300mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-货架前方-厘米级",
+      "l3_name_en": "Stop-ShelfFront-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在货架前方精确停止，使身体及推车位置便于后续取放操作",
+      "object_category": "货架",
+      "parameter_ranges": {
+        "size_range": "停位距货架300-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-把手脱离",
+      "l3_name_en": "Release-GradualLoosen-HandleDetach",
+      "parent_l2_id": "L2-04-07",
+      "description": "缓慢松开手指释放对把手的握持，完成人与设备的分离",
+      "object_category": "把手",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "释放时间0.3-1秒",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-38-384-3843-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-04-01",
+    "涉及的L1数量": 6
+  }
+}

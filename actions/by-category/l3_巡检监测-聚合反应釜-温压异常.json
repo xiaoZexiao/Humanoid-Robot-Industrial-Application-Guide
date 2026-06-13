@@ -1,0 +1,666 @@
+{
+  "scene_id": "26-00-2651",
+  "scene_name": "巡检监测-聚合反应釜-温压异常",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从巡检起点出发，沿装置区通道直线行走至反应釜区域入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防爆地坪-匀速巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在反应釜区域通道拐弯处转向行走进入设备区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在反应釜与管道之间的狭窄空间侧身通行",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-肩宽受限",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在反应釜温度表前方指定位置精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-仪表观测点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "视线对准反应釜温度表盘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-温度表盘-数值确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "读取温度表指针指示的数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-模拟表盘-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "上半身向左侧旋转约45度面向压力表",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-45度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "视线对准反应釜压力表盘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-压力表盘-数值确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "读取压力表指针指示的数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-模拟表盘-压力数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "上半身向右侧旋转约90度面向电流表",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "视线对准搅拌电机电流表并读取数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-模拟表盘-电流数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "头部偏转朝向反应釜主体方向侧耳倾听设备运行声音",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-运行噪声-反应釜本体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "手臂从身侧伸向反应釜外壳可触及位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-设备外壳-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]伸达目的是为触觉探测做准备而非感知信息采集本身，故归入L1-03而非L1-09",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "手掌接触反应釜外壳感知表面温度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-温度异常-反应釜外壳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "手臂从反应釜外壳收回至身侧自然位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身侧复位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "沿通道直线行走至冷凝器检查点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防爆地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 17,
+      "human_description": "在冷凝器观测点精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-仪表观测点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "对冷凝器外观和管路连接进行目视扫描检查",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-冷凝器外观-栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 19,
+      "human_description": "侧耳倾听冷凝器运行是否有异常声响",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-002",
+      "l3_name": "侧听-异常声响-冷凝器本体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "沿通道直线行走至循环泵检查点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防爆地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 21,
+      "human_description": "在循环泵观测点精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-仪表观测点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "侧耳倾听循环泵运行是否有异常摩擦声或振动声",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-003",
+      "l3_name": "侧听-异常摩擦声-循环泵处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "手掌接触循环泵外壳感知振动和温度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-002",
+      "l3_name": "触探-振动异常-循环泵外壳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 24,
+      "human_description": "沿通道直线行走返回巡检起点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防爆地坪-匀速巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防爆地坪-匀速巡检",
+      "l3_name_en": "walk-explosionproof_floor-steady_patrol",
+      "parent_l2_id": "L2-01-01",
+      "description": "在化工装置区防爆地坪上以稳定匀速进行巡检行走，步态平稳以保持观测稳定性",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "单次行程10-100m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "turn_walk-90degree_corner-continuous_gait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在装置区通道拐角处完成约90度方向转换，保持连续步态不停顿",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "转向角度±15度"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-肩宽受限",
+      "l3_name_en": "pass_through-equipment_gap-shoulder_width_limited",
+      "parent_l2_id": "L2-01-06",
+      "description": "在设备与管道之间的狭窄空间侧身通行，通道宽度接近或小于肩宽",
+      "object_category": "通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度40-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免触碰设备"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-仪表观测点-分米级",
+      "l3_name_en": "stop-instrument_viewpoint-decimeter_precision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在仪表前方的最佳观测位置精确停止，确保视线与仪表盘面垂直便于读数",
+      "object_category": "定位点",
+      "parameter_ranges": {
+        "size_range": "距仪表0.5-1.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-45度-向左",
+      "l3_name_en": "rotate_torso-45degree-leftward",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不动，上半身绕垂直轴向左旋转约45度以调整面向方向",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-向右",
+      "l3_name_en": "rotate_torso-90degree-rightward",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不动，上半身绕垂直轴向右旋转约90度以调整面向方向",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-设备外壳-无障碍直线",
+      "l3_name_en": "reach-equipment_shell-unobstructed_linear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从身侧自然位置伸向设备外壳可触及区域，轨迹为无障碍直线",
+      "object_category": "设备外壳",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端位置±5cm"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-身侧复位-无障碍直线",
+      "l3_name_en": "reach-side_reset-unobstructed_linear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从当前位置收回至身侧自然悬垂位置，轨迹为无障碍直线",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "复位距离30-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-温度表盘-数值确认",
+      "l3_name_en": "gaze-temperature_dial-value_confirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准温度表盘中心，调整头部角度使表盘处于最佳视野位置",
+      "object_category": "温度表",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线偏差±5度"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-压力表盘-数值确认",
+      "l3_name_en": "gaze-pressure_dial-value_confirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准压力表盘中心，调整头部角度使表盘处于最佳视野位置",
+      "object_category": "压力表",
+      "parameter_ranges": {
+        "size_range": "表盘直径80-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线偏差±5度"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-冷凝器外观-栅格扫描",
+      "l3_name_en": "scan-condenser_appearance-grid_scan",
+      "parent_l2_id": "L2-09-03",
+      "description": "对冷凝器外观及管路连接进行系统性目视扫描，覆盖整个可视区域",
+      "object_category": "冷凝器",
+      "parameter_ranges": {
+        "size_range": "扫描区域1-3m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "无遗漏区域"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-温度异常-反应釜外壳",
+      "l3_name_en": "touch_probe-temperature_anomaly-reactor_shell",
+      "parent_l2_id": "L2-09-04",
+      "description": "手掌接触反应釜外壳表面，通过触觉感知表面温度是否异常",
+      "object_category": "反应釜外壳",
+      "parameter_ranges": {
+        "size_range": "接触面积50-100cm²",
+        "weight_range": "N/A",
+        "force_range": "接触力<2N",
+        "precision_requirement": "温度感知分辨率±5°C"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-04-002",
+      "l3_name_zh": "触探-振动异常-循环泵外壳",
+      "l3_name_en": "touch_probe-vibration_anomaly-pump_shell",
+      "parent_l2_id": "L2-09-04",
+      "description": "手掌接触循环泵外壳表面，通过触觉感知振动幅度和频率是否异常",
+      "object_category": "循环泵外壳",
+      "parameter_ranges": {
+        "size_range": "接触面积50-100cm²",
+        "weight_range": "N/A",
+        "force_range": "接触力<2N",
+        "precision_requirement": "振动感知灵敏度0.1mm/s"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-运行噪声-反应釜本体",
+      "l3_name_en": "listen-running_noise-reactor_body",
+      "parent_l2_id": "L2-09-05",
+      "description": "头部朝向反应釜方向侧耳倾听，判断设备运行声音是否正常",
+      "object_category": "反应釜",
+      "parameter_ranges": {
+        "size_range": "听觉距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "声音异常识别"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-05-002",
+      "l3_name_zh": "侧听-异常声响-冷凝器本体",
+      "l3_name_en": "listen-abnormal_sound-condenser_body",
+      "parent_l2_id": "L2-09-05",
+      "description": "头部朝向冷凝器方向侧耳倾听，识别是否存在泄漏声或异常振动声",
+      "object_category": "冷凝器",
+      "parameter_ranges": {
+        "size_range": "听觉距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "声音异常识别"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-05-003",
+      "l3_name_zh": "侧听-异常摩擦声-循环泵处",
+      "l3_name_en": "listen-abnormal_friction-pump_location",
+      "parent_l2_id": "L2-09-05",
+      "description": "头部朝向循环泵方向侧耳倾听，识别是否存在轴承摩擦声或汽蚀声",
+      "object_category": "循环泵",
+      "parameter_ranges": {
+        "size_range": "听觉距离0.5-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "声音异常识别"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-模拟表盘-温度数值",
+      "l3_name_en": "read-analog_dial-temperature_value",
+      "parent_l2_id": "L2-09-07",
+      "description": "对模拟温度表盘进行读数，识别指针位置并转换为温度数值",
+      "object_category": "温度表",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1格"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-模拟表盘-压力数值",
+      "l3_name_en": "read-analog_dial-pressure_value",
+      "parent_l2_id": "L2-09-07",
+      "description": "对模拟压力表盘进行读数，识别指针位置并转换为压力数值",
+      "object_category": "压力表",
+      "parameter_ranges": {
+        "size_range": "表盘直径80-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1格"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    },
+    {
+      "l3_id": "L3-09-07-003",
+      "l3_name_zh": "读取-模拟表盘-电流数值",
+      "l3_name_en": "read-analog_dial-current_value",
+      "parent_l2_id": "L2-09-07",
+      "description": "对电流表表盘进行读数，识别指针位置并转换为电流数值",
+      "object_category": "电流表",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-100mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1格"
+      },
+      "is_new": true,
+      "source_scene": "26-00-2651-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-04",
+      "L2-09-05",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 4
+  }
+}

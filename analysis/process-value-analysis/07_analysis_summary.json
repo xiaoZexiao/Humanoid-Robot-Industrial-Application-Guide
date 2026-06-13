@@ -1,0 +1,116 @@
+{
+  "analysis_date": "2026-06-10",
+  "total_scenes": 973,
+  "unique_process_steps": 557,
+  "process_categories": 8,
+  "methodology": {
+    "value_score_formula": "(labor_urgency + scale_potential + superhuman_value) / 3",
+    "difficulty_score_formula": "(operation_complexity + (5-structure_level) + (5-fault_tolerance) + (5-takt_pressure)) / 4",
+    "value_density_formula": "scene_count × avg_value_score",
+    "intervention_roi_formula": "value_density / avg_difficulty_score"
+  },
+  "top10_by_density": [
+    {
+      "rank": 1,
+      "process_step": "包装",
+      "scene_count": 23,
+      "value_density": 83.95
+    },
+    {
+      "rank": 2,
+      "process_step": "原料入库",
+      "scene_count": 16,
+      "value_density": 56.96
+    },
+    {
+      "rank": 3,
+      "process_step": "检测",
+      "scene_count": 14,
+      "value_density": 56.7
+    },
+    {
+      "rank": 4,
+      "process_step": "总装",
+      "scene_count": 13,
+      "value_density": 51.61
+    },
+    {
+      "rank": 5,
+      "process_step": "设备维护",
+      "scene_count": 13,
+      "value_density": 49.66
+    },
+    {
+      "rank": 6,
+      "process_step": "检验",
+      "scene_count": 12,
+      "value_density": 45.0
+    },
+    {
+      "rank": 7,
+      "process_step": "配料称量",
+      "scene_count": 10,
+      "value_density": 38.3
+    },
+    {
+      "rank": 8,
+      "process_step": "灌装",
+      "scene_count": 9,
+      "value_density": 35.64
+    },
+    {
+      "rank": 9,
+      "process_step": "质检",
+      "scene_count": 9,
+      "value_density": 34.29
+    },
+    {
+      "rank": 10,
+      "process_step": "采掘作业",
+      "scene_count": 8,
+      "value_density": 33.36
+    }
+  ],
+  "category_ranking": [
+    {
+      "category": "其他工序",
+      "scene_count": 467,
+      "value_density": 1793.28
+    },
+    {
+      "category": "加工制造",
+      "scene_count": 178,
+      "value_density": 683.52
+    },
+    {
+      "category": "检测质控",
+      "scene_count": 105,
+      "value_density": 406.35
+    },
+    {
+      "category": "仓储物流",
+      "scene_count": 70,
+      "value_density": 261.1
+    },
+    {
+      "category": "巡检维护",
+      "scene_count": 55,
+      "value_density": 220.55
+    },
+    {
+      "category": "包装成品",
+      "scene_count": 54,
+      "value_density": 201.42
+    },
+    {
+      "category": "原料处理",
+      "scene_count": 39,
+      "value_density": 147.03
+    },
+    {
+      "category": "环保安全",
+      "scene_count": 5,
+      "value_density": 22.0
+    }
+  ]
+}

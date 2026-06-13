@@ -1,0 +1,1111 @@
+{
+  "scene_id": "40-401-4011",
+  "scene_name": "老化测试-电子仪表-高温环境监控",
+  "total_steps": 38,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至功能测试下线暂存区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在暂存区物料架前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料架取料点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身至暂存架产品高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "手臂伸向目标电子仪表产品",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-暂存架产品区-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手包络抓握电子仪表成品",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-盒状电子仪表-尺寸10至50cm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将产品提离暂存架并移向身前",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-中型电子仪表-近距提升",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]单件0.5-10kg在单臂承载范围内，若超过5kg可能需双臂",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身恢复-直立姿态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手持产品行走至老化架位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型电子产品-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 9,
+      "human_description": "在老化架装载位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-老化架装载位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将产品精确放置到老化架指定层位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-电子仪表成品-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "松开手指释放产品",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-产品已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "伸手至线缆存放区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-线缆存放区-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "抓取电源和监控线缆束",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质-线缆束状",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]线缆为柔性物体需要形变适应，非刚性力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将线缆接头移至产品接口上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-电源监控线缆-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将电源接头插入产品电源接口",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-电源连接器-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将监控线接头插入产品数据接口",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-002",
+      "l3_name": "对接-数据监控连接器-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 17,
+      "human_description": "释放线缆使其自然垂落",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-线缆已连接",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "下蹲至老化架脚轮刹车高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-短时保持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "用脚踩或手拨解锁脚轮刹车",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-07",
+      "l2_name": "拨动切换",
+      "l3_id": "L3-05-07-001",
+      "l3_name": "拨动-脚轮刹车-解锁方向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "起立恢复站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-起立恢复-站立姿态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双手握住老化架推把手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆柱推把-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "持续推动老化架使其开始移动",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-带轮老化架-匀力起动推",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "推动老化架行走至老化箱前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-老化架推车-双手推行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在老化箱入口精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-老化箱入口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "松开老化架推把",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-架体已制动",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 26,
+      "human_description": "拉开老化箱门至全开位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-老化箱门-0至120度开启",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "双手重新握住老化架推把",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆柱推把-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 28,
+      "human_description": "将老化架沿导轨推入老化箱内",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-001",
+      "l3_name": "滑移-老化箱内导轨-500至1000mm行程",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]老化架沿老化箱内定位导轨推入，运动路径受几何约束",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 29,
+      "human_description": "松开老化架推把",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-渐进松指-架体已制动",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 30,
+      "human_description": "关闭老化箱门至完全闭合",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-老化箱门-120至0度关闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 31,
+      "human_description": "按下老化箱启动按钮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业设备按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 32,
+      "human_description": "行走至老化室入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 33,
+      "human_description": "拉开老化室门进入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-003",
+      "l3_name": "开合-工业防护门-0至90度开启",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 34,
+      "human_description": "在老化室内行走巡视各老化箱",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 35,
+      "human_description": "目视扫描各老化箱外观和指示灯状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-老化设备区域-横向扫视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 34,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 36,
+      "human_description": "注视监控显示屏读取运行数据",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-温控仪表盘-温度时间数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 37,
+      "human_description": "逐一注视各产品指示灯确认状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-产品状态指示灯-运行状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 38,
+      "human_description": "按下报警消音或状态确认按钮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-报警确认按钮-轻触",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业环氧地坪-匀速",
+      "l3_name_en": "Walk-IndustrialEpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房环氧地坪上以稳定速度直线行走，地面平整无障碍",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅50-70cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "厘米级路径跟随"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料架取料点-厘米级",
+      "l3_name_en": "Stop-MaterialRackPickPoint-CmPrecision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料暂存架前精确停止，使身体位于最佳取料姿态范围内",
+      "object_category": "定位标记",
+      "parameter_ranges": {
+        "size_range": "停位区域±5cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlexion-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴前屈上身约45度，使手部可达腰部至膝部高度区域",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "前屈角度30-60度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身恢复-直立姿态",
+      "l3_name_en": "BendForward-RiseRecover-UprightPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰前屈姿态恢复至直立站姿，躯干伸展回正",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "恢复角度30-90度",
+        "weight_range": "可能负重0-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-暂存架产品区-近距直线",
+      "l3_name_en": "Reach-StorageRackProductArea-NearLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿近似直线轨迹伸向暂存架上的产品位置",
+      "object_category": "目标空间区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-线缆存放区-侧向伸展",
+      "l3_name_en": "Reach-CableStorageArea-LateralExtend",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向侧方伸展至线缆存放位置准备抓取",
+      "object_category": "目标空间区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-盒状电子仪表-尺寸10至50cm",
+      "l3_name_en": "PowerGrip-BoxElectronicInstrument-Size10to50cm",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络抓握盒状或方形电子仪表成品，确保稳固持握",
+      "object_category": "电子仪表",
+      "parameter_ranges": {
+        "size_range": "10-50cm",
+        "weight_range": "0.5-10kg",
+        "force_range": "握力10-50N",
+        "precision_requirement": "稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-圆柱推把-直径20至40mm",
+      "l3_name_en": "PowerGrip-CylindricalPushHandle-Dia20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手握住老化架或推车的圆柱形推把手柄",
+      "object_category": "推车把手",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "N/A",
+        "force_range": "握力20-80N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-中型电子仪表-近距提升",
+      "l3_name_en": "Transfer-MediumElectronicInstrument-NearLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂或双臂将电子仪表从暂存位置提起并移向身前",
+      "object_category": "电子仪表",
+      "parameter_ranges": {
+        "size_range": "10-50cm",
+        "weight_range": "0.5-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳无碰撞"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-电源监控线缆-近距",
+      "l3_name_en": "Transfer-PowerMonitorCable-NearDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "将线缆接头端移至产品接口位置准备插接",
+      "object_category": "线缆",
+      "parameter_ranges": {
+        "size_range": "线缆长度0.5-2m",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "接头定位±1cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型电子产品-双臂前持",
+      "l3_name_en": "LoadedWalk-MediumElectronicProduct-TwoArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持中型电子仪表产品行走至目标位置",
+      "object_category": "电子仪表",
+      "parameter_ranges": {
+        "size_range": "10-50cm",
+        "weight_range": "0.5-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳行走"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-老化架推车-双手推行",
+      "l3_name_en": "LoadedWalk-BurnInRackCart-TwoHandPush",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手推动装载产品的老化架推车行走",
+      "object_category": "老化架推车",
+      "parameter_ranges": {
+        "size_range": "推车尺寸约1x0.6x1.5m",
+        "weight_range": "架体+产品50-200kg",
+        "force_range": "推力20-100N",
+        "precision_requirement": "路径跟随±10cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-老化架装载位-厘米级",
+      "l3_name_en": "Stop-BurnInRackLoadPosition-CmPrecision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在老化架装载位置精确停止便于产品放置",
+      "object_category": "定位标记",
+      "parameter_ranges": {
+        "size_range": "停位区域±5cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-老化箱入口-厘米级",
+      "l3_name_en": "Stop-BurnInChamberEntrance-CmPrecision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在老化箱入口对正位置精确停止便于推入老化架",
+      "object_category": "定位标记",
+      "parameter_ranges": {
+        "size_range": "对中精度±3cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-电子仪表成品-厘米级",
+      "l3_name_en": "PrecisePlace-ElectronicInstrumentProduct-CmPrecision",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电子仪表成品精确放置到老化架指定层位的定位区域",
+      "object_category": "电子仪表",
+      "parameter_ranges": {
+        "size_range": "10-50cm",
+        "weight_range": "0.5-10kg",
+        "force_range": "N/A",
+        "precision_requirement": "±1cm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-产品已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ProductSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开释放已稳定放置在支撑面上的产品",
+      "object_category": "电子仪表",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "0.5-10kg",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "无位移扰动"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-线缆已连接",
+      "l3_name_en": "Release-GradualFingerOpen-CableConnected",
+      "parent_l2_id": "L2-04-07",
+      "description": "插接完成后手指逐渐张开释放线缆接头",
+      "object_category": "线缆",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "不扰动连接"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-渐进松指-架体已制动",
+      "l3_name_en": "Release-GradualFingerOpen-RackBraked",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认老化架已停稳后松开推把手柄",
+      "object_category": "推车把手",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放力渐减至0",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质-线缆束状",
+      "l3_name_en": "AdaptiveGrip-Soft-CableBundle",
+      "parent_l2_id": "L2-04-04",
+      "description": "手指适应性抓握柔性线缆束，控制握力避免损伤",
+      "object_category": "线缆",
+      "parameter_ranges": {
+        "size_range": "线缆直径5-15mm",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "握力5-20N",
+        "precision_requirement": "适度夹持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-电源连接器-3自由度对准",
+      "l3_name_en": "Dock-PowerConnector-3DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "将电源接头与产品电源接口对准后插入，需XY位置和角度对准",
+      "object_category": "电源连接器",
+      "parameter_ranges": {
+        "size_range": "接头尺寸10-30mm",
+        "weight_range": "N/A",
+        "force_range": "插入力5-20N",
+        "precision_requirement": "对准精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-07-03-002",
+      "l3_name_zh": "对接-数据监控连接器-3自由度对准",
+      "l3_name_en": "Dock-DataMonitorConnector-3DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "将数据监控线接头与产品数据接口对准后插入",
+      "object_category": "数据连接器",
+      "parameter_ranges": {
+        "size_range": "接头尺寸10-25mm",
+        "weight_range": "N/A",
+        "force_range": "插入力3-15N",
+        "precision_requirement": "对准精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-短时保持",
+      "l3_name_en": "Squat-HalfSquat-ShortHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "膝关节屈曲约90度下蹲至低位操作高度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "膝屈曲60-100度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立恢复-站立姿态",
+      "l3_name_en": "Squat-StandRecover-StandingPosture",
+      "parent_l2_id": "L2-02-03",
+      "description": "从下蹲姿态伸直膝关节恢复站立",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-05-07-001",
+      "l3_name_zh": "拨动-脚轮刹车-解锁方向",
+      "l3_name_en": "Toggle-CasterBrake-UnlockDirection",
+      "parent_l2_id": "L2-05-07",
+      "description": "用手或脚拨动脚轮刹车机构解除锁定使推车可移动",
+      "object_category": "脚轮刹车",
+      "parameter_ranges": {
+        "size_range": "拨动行程10-30mm",
+        "weight_range": "N/A",
+        "force_range": "拨动力5-20N",
+        "precision_requirement": "到位感知"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-带轮老化架-匀力起动推",
+      "l3_name_en": "Push-WheeledBurnInRack-SteadyStartPush",
+      "parent_l2_id": "L2-05-02",
+      "description": "对带脚轮的老化架施加持续推力使其起动并保持移动",
+      "object_category": "老化架推车",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "50-200kg",
+        "force_range": "起动推力50-100N，维持推力20-50N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-老化箱门-0至120度开启",
+      "l3_name_en": "Hinge-BurnInChamberDoor-0to120DegOpen",
+      "parent_l2_id": "L2-07-05",
+      "description": "拉动老化箱铰接门从关闭状态开启至全开位置",
+      "object_category": "老化箱门",
+      "parameter_ranges": {
+        "size_range": "门幅600-1000mm",
+        "weight_range": "门重10-30kg",
+        "force_range": "拉力10-40N",
+        "precision_requirement": "开启角度90-120度"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-07-05-002",
+      "l3_name_zh": "开合-老化箱门-120至0度关闭",
+      "l3_name_en": "Hinge-BurnInChamberDoor-120to0DegClose",
+      "parent_l2_id": "L2-07-05",
+      "description": "推动老化箱铰接门从全开位置关闭至完全闭合",
+      "object_category": "老化箱门",
+      "parameter_ranges": {
+        "size_range": "门幅600-1000mm",
+        "weight_range": "门重10-30kg",
+        "force_range": "推力10-40N",
+        "precision_requirement": "完全闭合密封"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-07-05-003",
+      "l3_name_zh": "开合-工业防护门-0至90度开启",
+      "l3_name_en": "Hinge-IndustrialAccessDoor-0to90DegOpen",
+      "parent_l2_id": "L2-07-05",
+      "description": "拉开工业厂房或老化室的防护门进入",
+      "object_category": "工业门",
+      "parameter_ranges": {
+        "size_range": "门幅800-1200mm",
+        "weight_range": "门重15-50kg",
+        "force_range": "拉力15-50N",
+        "precision_requirement": "开启角度足以通过"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-07-04-001",
+      "l3_name_zh": "滑移-老化箱内导轨-500至1000mm行程",
+      "l3_name_en": "Slide-BurnInChamberGuide-500to1000mmTravel",
+      "parent_l2_id": "L2-07-04",
+      "description": "沿老化箱内部定位导轨将老化架推入到位",
+      "object_category": "老化架",
+      "parameter_ranges": {
+        "size_range": "行程500-1000mm",
+        "weight_range": "架体+产品50-200kg",
+        "force_range": "推力30-80N",
+        "precision_requirement": "沿导轨直线运动"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业设备按钮-中等力度",
+      "l3_name_en": "Press-IndustrialEquipmentButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按压工业设备控制面板上的启动或功能按钮",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径15-30mm",
+        "weight_range": "N/A",
+        "force_range": "按压力3-10N",
+        "precision_requirement": "按压到位触发"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-报警确认按钮-轻触",
+      "l3_name_en": "Press-AlarmAckButton-LightTouch",
+      "parent_l2_id": "L2-05-01",
+      "description": "轻触按压报警消音或状态确认按钮",
+      "object_category": "控制按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径10-25mm",
+        "weight_range": "N/A",
+        "force_range": "按压力1-5N",
+        "precision_requirement": "按压触发反馈"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-老化设备区域-横向扫视",
+      "l3_name_en": "Scan-BurnInEquipmentArea-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视横向扫描老化室内各老化箱的外观状态和指示灯",
+      "object_category": "老化设备区域",
+      "parameter_ranges": {
+        "size_range": "扫描区域>2m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "覆盖所有设备"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-温控仪表盘-温度时间数值",
+      "l3_name_en": "Read-TempControlDisplay-TempTimeValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视并读取老化箱温控显示屏上的温度和运行时间数值",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "数字清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-产品状态指示灯-运行状态确认",
+      "l3_name_en": "Gaze-ProductStatusLED-RunStateConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "逐一注视老化架上各产品的状态指示灯确认运行正常",
+      "object_category": "LED指示灯",
+      "parameter_ranges": {
+        "size_range": "指示灯直径3-10mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "颜色状态可辨"
+      },
+      "is_new": true,
+      "source_scene": "BurnInTest-ElectronicInstruments-HighTempMonitoring"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-02",
+      "L2-05-07",
+      "L2-07-03",
+      "L2-07-04",
+      "L2-07-05",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 7
+  }
+}

@@ -1,0 +1,993 @@
+{
+  "scene_id": "37-371-3712",
+  "scene_name": "布线绑扎-铁路车辆电气柜-狭窄空间线束整理",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "沿车间通道行走至目标车体电气柜工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在电气柜前精确停位，确保后续操作的可达范围",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-电气柜前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "拉开电气柜柜门至完全打开位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-电气柜门-全开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "伸手至工具车取扎带枪",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "握持扎带枪手柄，手指呈操作握姿",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-扎带枪-扳机操作姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸手至料架取压接钳",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-料架-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 4,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "握持压接钳手柄，呈压接操作握姿",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-压接钳-双手柄压握姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "伸手至线缆料盘取待敷设电缆",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-线缆盘-中距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手握持柔性电缆束中段",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质-线缆束",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 电缆为柔性物体，抓取时需控制力分布避免护套变形，符合形变适应抓取而非力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "转体面向电气柜内部狭窄空间",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身使上身进入电气柜操作高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中等前屈-柜内高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "侧身挤入宽度小于40cm的电气柜狭窄空间",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-电气柜间隙-侧身挤入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将电缆从柜外转移至柜内线槽入口处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-柔性线缆-中距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将电缆沿线槽推送敷设至目标位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-001",
+      "l3_name": "推送-柔性线缆-线槽内",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 电缆始终与线槽底面接触沿槽滑动，目的是位移而非施力，属于滑移推送而非L1-05",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 15,
+      "human_description": "调整线束弯曲半径和走向使其贴合线槽",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-002",
+      "l3_name": "适抓-软质-线束整形",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手至扎带袋取出一根扎带",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-扎带袋-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "用指尖捏取单根扎带",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-扎带",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将扎带绕过线束形成环绕",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-扎带-绕线束环绕",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将扎带尾端插入扎带头锁扣孔",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-扎带尾入锁扣-松配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "拉紧扎带尾端使扎带锁紧线束",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-扎带尾端-拉紧锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "用扎带枪剪切多余扎带尾端",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-扎带枪剪切-瞬时夹断",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 扎带枪剪切通过对向刀片夹紧剪断，属于夹紧类动作",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "伸手将电缆端头送至端子台位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-线缆端头-送至端子台",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "捏取预压接端子套在剥好的线芯上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-002",
+      "l3_name": "捏取-二指对捏-接线端子",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将套有端子的线芯插入压接钳对应孔位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-端子入压接钳口-精确对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 25,
+      "human_description": "双手握压压接钳手柄完成端子压接",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-002",
+      "l3_name": "夹持-压接钳压合-定力压接",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将压接好的端子插入端子台对应位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-003",
+      "l3_name": "插入-端子入端子台-卡位配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "目视检查端子压接质量和连接状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-压接端子-质量确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 28,
+      "human_description": "轻拉线缆检验端子连接牢固度",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-002",
+      "l3_name": "拉拔-端子连接-验证性轻拉",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 29,
+      "human_description": "侧身退出电气柜狭窄空间",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-002",
+      "l3_name": "通行-电气柜间隙-侧身退出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 30,
+      "human_description": "起身恢复站立姿势",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-起立恢复-站姿",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 从弯腰俯身状态恢复涉及膝关节深度伸展，归入下蹲起立",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 31,
+      "human_description": "关闭电气柜柜门至锁定位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-电气柜门-关闭锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 32,
+      "human_description": "将工具放回工具架指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-手持工具-架位归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间环氧地坪上匀速直线行走，前往指定工位",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-电气柜前-厘米级",
+      "l3_name_en": "Stop-ElectricalCabinetFront-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在电气柜正前方精确停位，确保后续伸手操作可达",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5m×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-电气柜门-全开",
+      "l3_name_en": "Swing-ElectricalCabinetDoor-FullOpen",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿柜门铰链轴旋转拉开电气柜门至完全打开位置",
+      "object_category": "电气柜门",
+      "parameter_ranges": {
+        "size_range": "门宽400-600mm，高度800-1500mm",
+        "weight_range": "5-15kg",
+        "force_range": "10-30N",
+        "precision_requirement": "开启角度90-120°"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架-无障碍直线",
+      "l3_name_en": "Reach-ToolRack-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂在自由空间中直线伸出，到达工具架上的目标工具位置",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-扎带枪-扳机操作姿",
+      "l3_name_en": "ToolGrip-CableTieGun-TriggerGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "手握扎带枪手柄，食指置于扳机位，其余手指握紧手柄，呈随时操作状态",
+      "object_category": "扎带枪",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-35mm",
+        "weight_range": "0.3-0.8kg",
+        "force_range": "握力15-30N",
+        "precision_requirement": "扳机触发精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-料架-近距",
+      "l3_name_en": "Reach-MaterialRack-ShortDistance",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向近处料架取放物料的准备动作",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-压接钳-双手柄压握姿",
+      "l3_name_en": "ToolGrip-CrimpingPliers-DualHandleGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "双手分别握持压接钳的两个手柄，呈准备压合状态",
+      "object_category": "压接钳",
+      "parameter_ranges": {
+        "size_range": "手柄长度150-250mm",
+        "weight_range": "0.5-1.5kg",
+        "force_range": "单手握力20-40N",
+        "precision_requirement": "手柄对中±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-线缆盘-中距",
+      "l3_name_en": "Reach-CableReel-MediumDistance",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向中等距离的线缆盘，准备抓取电缆",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.4-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质-线缆束",
+      "l3_name_en": "AdaptiveGrasp-Soft-CableBundle",
+      "parent_l2_id": "L2-04-04",
+      "description": "手指适形包裹柔性线缆束，控制握力避免护套变形同时保持稳定抓持",
+      "object_category": "电缆",
+      "parameter_ranges": {
+        "size_range": "线缆直径5-30mm，束径10-60mm",
+        "weight_range": "0.5-5kg/m",
+        "force_range": "握力10-40N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-侧向",
+      "l3_name_en": "TrunkRotation-90Degree-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，上半身绕垂直轴旋转约90度，面向侧方目标",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "旋转角度±10°"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中等前屈-柜内高度",
+      "l3_name_en": "BendForward-MediumFlexion-CabinetHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴前屈弯腰，使头部和双手降至电气柜内部操作高度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "前屈角度30-60°",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "目标高度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-电气柜间隙-侧身挤入",
+      "l3_name_en": "PassThrough-ElectricalCabinetGap-SidewaysEntry",
+      "parent_l2_id": "L2-01-06",
+      "description": "侧身进入宽度受限的电气柜内部空间，肩部与柜体侧壁保持最小间距",
+      "object_category": "狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "与柜壁距离≥2cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-柔性线缆-中距",
+      "l3_name_en": "Transfer-FlexibleCable-MediumDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握柔性线缆，将其从起点转移至中等距离外的目标位置",
+      "object_category": "电缆",
+      "parameter_ranges": {
+        "size_range": "转移距离0.3-0.8m",
+        "weight_range": "0.5-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "终点定位±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-08-001",
+      "l3_name_zh": "推送-柔性线缆-线槽内",
+      "l3_name_en": "SlidePush-FlexibleCable-InsideTrunking",
+      "parent_l2_id": "L2-03-08",
+      "description": "将电缆沿线槽方向推送滑动，使其贴合线槽底部完成敷设",
+      "object_category": "电缆",
+      "parameter_ranges": {
+        "size_range": "推送距离0.2-1.5m",
+        "weight_range": "0.5-5kg",
+        "force_range": "推力5-20N",
+        "precision_requirement": "线槽居中±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-04-04-002",
+      "l3_name_zh": "适抓-软质-线束整形",
+      "l3_name_en": "AdaptiveGrasp-Soft-HarnessShaping",
+      "parent_l2_id": "L2-04-04",
+      "description": "手指柔性抓持线束并施加可控形变力，调整线束弯曲半径和走向",
+      "object_category": "线束",
+      "parameter_ranges": {
+        "size_range": "线束直径10-50mm",
+        "weight_range": "N/A",
+        "force_range": "整形力5-30N",
+        "precision_requirement": "弯曲半径≥线缆最小弯曲半径"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-扎带袋-近距",
+      "l3_name_en": "Reach-CableTieBag-ShortDistance",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向近处的扎带存放袋，准备取出扎带",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.15-0.4m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-扎带",
+      "l3_name_en": "PinchGrasp-TwoFingerOpposing-CableTie",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指指尖对捏单根扎带，将其从扎带袋中取出",
+      "object_category": "扎带",
+      "parameter_ranges": {
+        "size_range": "扎带宽度2.5-5mm，厚度1-2mm",
+        "weight_range": "1-5g",
+        "force_range": "捏力2-8N",
+        "precision_requirement": "捏取位置±3mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-扎带-绕线束环绕",
+      "l3_name_en": "Transfer-CableTie-AroundHarnessWrap",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持扎带绕线束外周移动，形成环绕结构以便后续锁紧",
+      "object_category": "扎带",
+      "parameter_ranges": {
+        "size_range": "环绕周长50-200mm",
+        "weight_range": "1-5g",
+        "force_range": "N/A",
+        "precision_requirement": "环绕闭合±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-扎带尾入锁扣-松配合",
+      "l3_name_en": "Insert-CableTieTailIntoLock-LooseFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将扎带尾端沿轴向插入扎带头部的锁扣孔，直至尾端穿出",
+      "object_category": "扎带",
+      "parameter_ranges": {
+        "size_range": "锁扣孔宽3-6mm，尾宽2.5-5mm",
+        "weight_range": "N/A",
+        "force_range": "插入力1-5N",
+        "precision_requirement": "对中精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-扎带尾端-拉紧锁定",
+      "l3_name_en": "Pull-CableTieTail-TightenLock",
+      "parent_l2_id": "L2-05-03",
+      "description": "持续拉动扎带尾端，使扎带收紧锁定在线束上至设定张紧力",
+      "object_category": "扎带",
+      "parameter_ranges": {
+        "size_range": "拉动行程20-100mm",
+        "weight_range": "N/A",
+        "force_range": "拉力10-50N",
+        "precision_requirement": "张紧力±10%"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-扎带枪剪切-瞬时夹断",
+      "l3_name_en": "Clamp-CableTieGunCut-InstantSever",
+      "parent_l2_id": "L2-05-04",
+      "description": "扣动扎带枪扳机，刀片对向夹紧剪断多余扎带尾端",
+      "object_category": "扎带",
+      "parameter_ranges": {
+        "size_range": "扎带尾宽2.5-5mm",
+        "weight_range": "N/A",
+        "force_range": "扳机力15-40N",
+        "precision_requirement": "切口距锁扣≤3mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-线缆端头-送至端子台",
+      "l3_name_en": "Transfer-CableEnd-ToTerminalBlock",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持电缆端头将其准确送至端子台对应接线位置",
+      "object_category": "电缆端头",
+      "parameter_ranges": {
+        "size_range": "转移距离0.1-0.5m",
+        "weight_range": "0.05-0.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "终点定位±3mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-04-02-002",
+      "l3_name_zh": "捏取-二指对捏-接线端子",
+      "l3_name_en": "PinchGrasp-TwoFingerOpposing-WireTerminal",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指精密捏取接线端子，准备套入线芯",
+      "object_category": "接线端子",
+      "parameter_ranges": {
+        "size_range": "端子长度8-25mm，孔径1.5-10mm",
+        "weight_range": "1-10g",
+        "force_range": "捏力3-10N",
+        "precision_requirement": "姿态偏差±5°"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-端子入压接钳口-精确对位",
+      "l3_name_en": "Insert-TerminalIntoCrimpJaw-PreciseAlignment",
+      "parent_l2_id": "L2-07-01",
+      "description": "将套有端子的线芯精确对位插入压接钳对应规格的压接孔位",
+      "object_category": "接线端子",
+      "parameter_ranges": {
+        "size_range": "孔位直径1.5-10mm",
+        "weight_range": "N/A",
+        "force_range": "插入力1-5N",
+        "precision_requirement": "对中精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-05-04-002",
+      "l3_name_zh": "夹持-压接钳压合-定力压接",
+      "l3_name_en": "Clamp-CrimpingPliersCompress-ControlledForce",
+      "parent_l2_id": "L2-05-04",
+      "description": "双手压合压接钳手柄，以控制力度完成端子与线芯的机械压接",
+      "object_category": "接线端子",
+      "parameter_ranges": {
+        "size_range": "端子规格0.5-10mm²",
+        "weight_range": "N/A",
+        "force_range": "压接力50-300N",
+        "precision_requirement": "压接变形量符合端子规格"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-07-01-003",
+      "l3_name_zh": "插入-端子入端子台-卡位配合",
+      "l3_name_en": "Insert-TerminalIntoBlock-SnapFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将压接好的端子插入端子台对应卡位，直至卡扣锁定",
+      "object_category": "接线端子",
+      "parameter_ranges": {
+        "size_range": "端子台孔距5-10mm",
+        "weight_range": "N/A",
+        "force_range": "插入力5-20N",
+        "precision_requirement": "对位精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-压接端子-质量确认",
+      "l3_name_en": "CloseInspect-CrimpedTerminal-QualityConfirm",
+      "parent_l2_id": "L2-09-02",
+      "description": "将视觉传感器贴近压接端子处，检查压接质量和连接状态",
+      "object_category": "压接端子",
+      "parameter_ranges": {
+        "size_range": "检视距离50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视觉分辨率≤0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-05-03-002",
+      "l3_name_zh": "拉拔-端子连接-验证性轻拉",
+      "l3_name_en": "Pull-TerminalConnection-VerificationTug",
+      "parent_l2_id": "L2-05-03",
+      "description": "以轻柔拉力拉拔已连接的端子，验证压接和插接的牢固度",
+      "object_category": "电缆端子",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "拉力5-20N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-01-06-002",
+      "l3_name_zh": "通行-电气柜间隙-侧身退出",
+      "l3_name_en": "PassThrough-ElectricalCabinetGap-SidewaysExit",
+      "parent_l2_id": "L2-01-06",
+      "description": "侧身从宽度受限的电气柜内部空间退出，返回柜外",
+      "object_category": "狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度30-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "与柜壁距离≥2cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-起立恢复-站姿",
+      "l3_name_en": "Squat-RiseRecover-Standing",
+      "parent_l2_id": "L2-02-03",
+      "description": "从下蹲或弯腰俯身状态恢复至直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-07-05-002",
+      "l3_name_zh": "开合-电气柜门-关闭锁定",
+      "l3_name_en": "Swing-ElectricalCabinetDoor-CloseLock",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿柜门铰链轴推动关闭电气柜门，直至门锁锁定",
+      "object_category": "电气柜门",
+      "parameter_ranges": {
+        "size_range": "门宽400-600mm，高度800-1500mm",
+        "weight_range": "5-15kg",
+        "force_range": "推力10-30N",
+        "precision_requirement": "门锁对位±2mm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-手持工具-架位归位",
+      "l3_name_en": "PrecisePlace-HandTool-RackReturn",
+      "parent_l2_id": "L2-03-05",
+      "description": "将手持工具精确放置回工具架指定位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-300mm",
+        "weight_range": "0.2-1.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置位置±1cm"
+      },
+      "is_new": true,
+      "source_scene": "SCN-37-371-3712-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-03-08",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-04",
+      "L2-05-03",
+      "L2-05-04",
+      "L2-07-01",
+      "L2-07-05",
+      "L2-09-02"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

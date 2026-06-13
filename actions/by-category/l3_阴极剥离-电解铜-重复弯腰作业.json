@@ -1,0 +1,488 @@
+{
+  "scene_id": "32-00-3211",
+  "scene_name": "阴极剥离-电解铜-重复弯腰作业",
+  "total_steps": 17,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从上一工位平地行走至当前待剥离的始极板前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业水泥地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在始极板正前方精确停位以便后续操作",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-始极板工位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身使双手能够接触到始极板底部的阴极铜边缘",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-深度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双臂向前伸出触及阴极铜片的可抓握边缘",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-铜片边缘-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手以力量抓握方式牢固抓住阴极铜片边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-薄板边缘-厚度10至20mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "向外施力将电沉积的铜层从不锈钢始极板上剥离拉拔下来",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-电沉积附着层-大拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]铜层与始极板为电化学沉积结合，剥离过程无严格几何约束，偏离直线不会卡死，归入L2-05-03而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "保持双手握持铜片状态下起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-负载起身恢复-从深度前屈",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调翻转阴极铜片使其一面朝向检查视角",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "目视扫描检查阴极铜片A面的表面质量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-铜片表面-目视栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "再次翻转阴极铜片使另一面朝向检查视角",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-180度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "目视扫描检查阴极铜片B面的表面质量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-铜片表面-目视栅格扫描",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双手持握阴极铜片行走至码垛区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-重型铜片-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "弯腰俯身至码垛高度准备放置铜片",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-中度前屈-膝盖高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将阴极铜片按规律层叠码放到指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-层叠排列-多层",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "渐进松开手指释放阴极铜片",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "起身恢复直立姿态准备处理下一片",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-004",
+      "l3_name": "俯身-空载起身恢复-从中度前屈",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "平地行走至下一块待剥离的始极板前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业水泥地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业水泥地面-匀速",
+      "l3_name_en": "Walk-IndustrialConcrete-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在电解车间的工业水泥地面上以匀速步态平稳行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "步态稳定性要求中等"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-始极板工位-厘米级",
+      "l3_name_en": "Stop-CathodePlateStation-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在始极板正前方精确停止，使身体处于最佳操作位置",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域约0.5m×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-深度前屈-膝下高度",
+      "l3_name_en": "Bend-DeepForward-BelowKnee",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节深度屈曲使双手能够达到膝盖以下高度进行操作",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "弯曲角度70-90度",
+        "weight_range": "N/A",
+        "force_range": "腰背肌群承受自身体重负荷",
+        "precision_requirement": "姿态稳定性要求高"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-铜片边缘-无障碍直线",
+      "l3_name_en": "Reach-CopperSheetEdge-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂沿无障碍直线路径向前伸出触及阴极铜片的可抓握边缘",
+      "object_category": "阴极铜片边缘",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-薄板边缘-厚度10至20mm",
+      "l3_name_en": "PowerGrip-ThinPlateEdge-Thickness10to20mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握厚度10-20mm的阴极铜片边缘，提供足够握力以支撑100-150kg重量",
+      "object_category": "阴极铜片",
+      "parameter_ranges": {
+        "size_range": "板厚10-20mm，边缘可握宽度50-80mm",
+        "weight_range": "100-150kg",
+        "force_range": "握力需支撑50-75kg（单手）",
+        "precision_requirement": "握持稳定性要求高"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-电沉积附着层-大拉力",
+      "l3_name_en": "Pull-ElectrodepositedLayer-HighForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "向外施加大拉力将电化学沉积在不锈钢始极板上的铜层剥离下来",
+      "object_category": "电沉积铜层",
+      "parameter_ranges": {
+        "size_range": "铜片尺寸约1000mm×1000mm",
+        "weight_range": "100-150kg",
+        "force_range": "初始剥离力200-500N，持续拉力与铜片重量相当",
+        "precision_requirement": "力方向控制精度要求中等"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-负载起身恢复-从深度前屈",
+      "l3_name_en": "Bend-LoadedRiseRecovery-FromDeepForward",
+      "parent_l2_id": "L2-02-02",
+      "description": "在双手持握重物状态下从深度前屈姿态恢复到直立姿态",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "角度变化70-90度",
+        "weight_range": "负载100-150kg",
+        "force_range": "腰背肌群承受自重+负载力矩",
+        "precision_requirement": "重心控制精度要求高"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-180度",
+      "l3_name_en": "Flip-AroundHorizontalAxis-180Degrees",
+      "parent_l2_id": "L2-03-04",
+      "description": "双臂协调将大尺寸平板物体绕水平轴翻转180度以检查另一面",
+      "object_category": "阴极铜片",
+      "parameter_ranges": {
+        "size_range": "板面尺寸约1000mm×1000mm",
+        "weight_range": "100-150kg",
+        "force_range": "翻转力矩峰值约500-750Nm",
+        "precision_requirement": "翻转过程稳定性要求高"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-铜片表面-目视栅格扫描",
+      "l3_name_en": "ScanInspect-CopperSurface-VisualGridScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视系统性扫描阴极铜片表面，检查气孔、结瘤、划伤等缺陷",
+      "object_category": "阴极铜片表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积约1m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "缺陷识别精度需达到mm级"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-重型铜片-双臂前持",
+      "l3_name_en": "LoadedWalk-HeavyCopperSheet-DualArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身体前方持握重型阴极铜片状态下平稳行走至码垛区域",
+      "object_category": "阴极铜片",
+      "parameter_ranges": {
+        "size_range": "行走距离2-5m",
+        "weight_range": "100-150kg",
+        "force_range": "N/A",
+        "precision_requirement": "步态稳定性要求高，防倾倒"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-中度前屈-膝盖高度",
+      "l3_name_en": "Bend-ModerateForward-KneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节中度屈曲使双手能够达到膝盖高度进行码放操作",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "弯曲角度40-60度",
+        "weight_range": "负载100-150kg",
+        "force_range": "腰背肌群承受自重+负载力矩",
+        "precision_requirement": "姿态稳定性要求高"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-层叠排列-多层",
+      "l3_name_en": "Stack-LayeredArrangement-MultiLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将阴极铜片按照层叠模式规律码放，确保各片对齐且稳定",
+      "object_category": "阴极铜片",
+      "parameter_ranges": {
+        "size_range": "单片约1000mm×1000mm×15mm",
+        "weight_range": "100-150kg/片",
+        "force_range": "放置时需控制下降速度避免冲击",
+        "precision_requirement": "对齐精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已稳定支撑后渐进式松开手指完成释放",
+      "object_category": "阴极铜片",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "100-150kg",
+        "force_range": "握力从峰值渐降至0",
+        "precision_requirement": "释放过程平稳无冲击"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    },
+    {
+      "l3_id": "L3-02-02-004",
+      "l3_name_zh": "俯身-空载起身恢复-从中度前屈",
+      "l3_name_en": "Bend-UnloadedRiseRecovery-FromModerateForward",
+      "parent_l2_id": "L2-02-02",
+      "description": "在空载状态下从中度前屈姿态恢复到直立姿态",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "角度变化40-60度",
+        "weight_range": "无负载",
+        "force_range": "腰背肌群承受自身体重",
+        "precision_requirement": "姿态恢复稳定性要求中等"
+      },
+      "is_new": true,
+      "source_scene": "SC-32-00-3211-CathodeStripping"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-04",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-02-02",
+    "涉及的L1数量": 5
+  }
+}

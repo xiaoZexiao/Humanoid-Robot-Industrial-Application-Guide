@@ -1,0 +1,138 @@
+{
+  "analysis_date": "2026-06-10",
+  "methodology": {
+    "value_score_formula": "(labor_urgency + scale_potential + superhuman_value) / 3",
+    "difficulty_score_formula": "(operation_complexity + (5-structure_level) + (5-fault_tolerance) + (5-takt_pressure)) / 4",
+    "quadrant_logic": {
+      "Q1-优先实施": "高价值(≥中位数) + 低难度(≤中位数)",
+      "Q2-重点攻关": "高价值(≥中位数) + 高难度(>中位数)",
+      "Q3-可填充": "低价值(<中位数) + 低难度(≤中位数)",
+      "Q4-暂缓": "低价值(<中位数) + 高难度(>中位数)"
+    }
+  },
+  "statistics": {
+    "total_scenes": 973,
+    "value_score": {
+      "min": 2.0,
+      "max": 5.0,
+      "avg": 3.84,
+      "median": 4.0
+    },
+    "difficulty_score": {
+      "min": 0.25,
+      "max": 3.0,
+      "avg": 1.55,
+      "median": 1.5
+    },
+    "thresholds": {
+      "value_threshold": 4.0,
+      "difficulty_threshold": 1.5
+    }
+  },
+  "quadrant_distribution": {
+    "Q1-优先实施": {
+      "count": 304,
+      "percentage": "31.2%",
+      "top_industries": [
+        {
+          "name": "有色金属冶炼和压延加工业",
+          "count": 15
+        },
+        {
+          "name": "非金属矿物制品业",
+          "count": 14
+        },
+        {
+          "name": "仪器仪表制造业",
+          "count": 14
+        },
+        {
+          "name": "石油、煤炭及其他燃料加工业",
+          "count": 13
+        },
+        {
+          "name": "电气机械和器材制造业",
+          "count": 13
+        }
+      ]
+    },
+    "Q2-重点攻关": {
+      "count": 209,
+      "percentage": "21.5%",
+      "top_industries": [
+        {
+          "name": "汽车制造业",
+          "count": 15
+        },
+        {
+          "name": "电气机械和器材制造业",
+          "count": 13
+        },
+        {
+          "name": "食品制造业",
+          "count": 11
+        },
+        {
+          "name": "专用设备制造业",
+          "count": 11
+        },
+        {
+          "name": "石油和天然气开采业",
+          "count": 10
+        }
+      ]
+    },
+    "Q3-可填充": {
+      "count": 220,
+      "percentage": "22.6%",
+      "top_industries": [
+        {
+          "name": "皮革、毛皮、羽毛及其制品和制鞋业",
+          "count": 13
+        },
+        {
+          "name": "纺织业",
+          "count": 12
+        },
+        {
+          "name": "农副食品加工业",
+          "count": 12
+        },
+        {
+          "name": "通用设备制造业",
+          "count": 10
+        },
+        {
+          "name": "其他制造业",
+          "count": 10
+        }
+      ]
+    },
+    "Q4-暂缓": {
+      "count": 240,
+      "percentage": "24.7%",
+      "top_industries": [
+        {
+          "name": "文教、工美、体育和娱乐用品制造业",
+          "count": 16
+        },
+        {
+          "name": "木材加工和木、竹、藤、棕、草制品业",
+          "count": 13
+        },
+        {
+          "name": "化学纤维制造业",
+          "count": 12
+        },
+        {
+          "name": "铁路、船舶、航空航天和其他运输设备制造业",
+          "count": 12
+        },
+        {
+          "name": "纺织业",
+          "count": 10
+        }
+      ]
+    }
+  }
+}

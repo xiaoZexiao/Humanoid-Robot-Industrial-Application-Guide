@@ -1,0 +1,700 @@
+{
+  "scene_id": "33-337-3373",
+  "scene_name": "搪瓷挂釉-卫生洁具-高温窑炉",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置行走至待入炉坯体存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在坯体存放架前精确停止，对准目标坯体位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料架标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "手臂伸向放置在旁边的专用夹持工装",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工装存放位-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手握住专用夹持工装的手柄部分",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-长柄夹钳-双手功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "弯腰俯身使工装能够对准较低位置的坯体",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将工装夹钳伸向目标坯体的夹持部位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-长柄工装-近距对位",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽持有工装但主要目的是对位而非搬运，仍归入负载转移",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "操作工装使夹钳闭合，将搪瓷坯体牢固夹持",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-工装对向钳夹-瞬时锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协同将夹持的坯体从存放架上抬起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-大型洁具坯体-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-回正直立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "持坯体行走至窑炉入口区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-大型坯体-双臂工装持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在窑炉入口前精确停位，对准入炉轨道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-窑炉入口-厘米级对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "沿窑炉导轨将坯体推送至指定烧成位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-001",
+      "l3_name": "滑移-窑炉承载轨道-中长行程",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]运动受窑炉内轨道几何约束，归入导轨滑移而非持续推压",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "操作工装松开夹钳，释放对坯体的夹持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-工装夹钳开启-坯体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将工装从窑炉内退出",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-长柄工装-后撤退出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "从窑炉入口区域后退至安全距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-高温区域后撤-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "行走至窑炉出口区域等待烧成完成的坯体",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 17,
+      "human_description": "在窑炉出口前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-窑炉出口-厘米级对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将工装伸入窑炉出口对准烧成完毕的坯体",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-长柄工装-前伸入炉",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 19,
+      "human_description": "操作工装夹紧烧成后的高温坯体",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-工装对向钳夹-瞬时锁定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "沿窑炉轨道将坯体从炉内拉出",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-轨道支撑坯体-中等拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽有轨道但拉出过程中坯体有一定自由度，不属于严格几何约束的L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "持高温坯体缓慢行走至冷却架区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-高温坯体-双臂工装持缓行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 22,
+      "human_description": "在冷却架前精确停位对准放置位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-004",
+      "l3_name": "停位-冷却架标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将坯体精确放置在冷却架指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-大型洁具坯体-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "操作工装松开夹钳释放坯体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-工装夹钳开启-坯体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业环氧地坪-匀速",
+      "l3_name_en": "Walk-IndustrialEpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间标准环氧地坪上匀速直线行走，地面平整无障碍",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "行走路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-高温区域后撤-匀速",
+      "l3_name_en": "Walk-HighTempZoneRetreat-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "从高温作业区域（80-120℃）后撤行走至安全距离",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "环境温度80-120℃"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-大型坯体-双臂工装持",
+      "l3_name_en": "LoadedWalk-LargeBisque-DualArmToolHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂持专用工装夹持大型搪瓷坯体行走，载荷10-50kg",
+      "object_category": "搪瓷坯体（卫生洁具）",
+      "parameter_ranges": {
+        "size_range": "浴缸/洗手盆尺寸",
+        "weight_range": "10-50kg",
+        "force_range": "持握力50-150N",
+        "precision_requirement": "行走稳定性防碰撞"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-高温坯体-双臂工装持缓行",
+      "l3_name_en": "LoadedWalk-HighTempBisque-DualArmSlowPace",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂持工装夹持刚出炉的高温坯体缓慢行走，需控制移动速度避免急冷开裂",
+      "object_category": "高温搪瓷坯体",
+      "parameter_ranges": {
+        "size_range": "浴缸/洗手盆尺寸",
+        "weight_range": "10-50kg",
+        "force_range": "持握力50-150N",
+        "precision_requirement": "移动平稳防急冷，坯体温度200-400℃"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料架标定点-厘米级",
+      "l3_name_en": "Stop-MaterialRackMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料存放架前的标定位置精确停止，便于后续取料操作",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-窑炉入口-厘米级对位",
+      "l3_name_en": "Stop-KilnEntrance-CentimeterAlignment",
+      "parent_l2_id": "L2-01-08",
+      "description": "在窑炉入口前精确停位，确保坯体能准确送入炉内轨道",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±2cm，需对准入炉轨道"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-窑炉出口-厘米级对位",
+      "l3_name_en": "Stop-KilnExit-CentimeterAlignment",
+      "parent_l2_id": "L2-01-08",
+      "description": "在窑炉出口前精确停位，便于接取烧成完毕的坯体",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±2cm，环境温度80-120℃"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-01-08-004",
+      "l3_name_zh": "停位-冷却架标定点-厘米级",
+      "l3_name_en": "Stop-CoolingRackMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在冷却架前精确停位，确保坯体能准确放置到指定冷却位",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干中度前屈弯腰，使手部能够到达腰部以下高度的操作目标",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "前屈角度30-60度"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-回正直立-负载状态",
+      "l3_name_en": "BendForward-ReturnUpright-Loaded",
+      "parent_l2_id": "L2-02-02",
+      "description": "在持有重载的状态下从弯腰姿态恢复至直立姿态",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "负载10-50kg",
+        "force_range": "腰背支撑力[待补充]",
+        "precision_requirement": "平稳起身防止载荷晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工装存放位-无障碍直线",
+      "l3_name_en": "Reach-ToolStoragePosition-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线路径伸向工装存放位置，准备抓取专用夹持工装",
+      "object_category": "无直接操作对象",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点位置精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-长柄工装-近距对位",
+      "l3_name_en": "Transfer-LongHandleTool-ShortRangeAlign",
+      "parent_l2_id": "L2-03-02",
+      "description": "持长柄夹持工装移动至目标坯体位置，使工装夹口对准坯体夹持部位",
+      "object_category": "长柄夹持工装",
+      "parameter_ranges": {
+        "size_range": "工装长度800-1500mm",
+        "weight_range": "工装重量3-8kg",
+        "force_range": "N/A",
+        "precision_requirement": "对位精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-长柄工装-后撤退出",
+      "l3_name_en": "Transfer-LongHandleTool-Retract",
+      "parent_l2_id": "L2-03-02",
+      "description": "将长柄工装从窑炉内后撤退出",
+      "object_category": "长柄夹持工装",
+      "parameter_ranges": {
+        "size_range": "工装长度800-1500mm",
+        "weight_range": "工装重量3-8kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳退出避免碰撞"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-长柄工装-前伸入炉",
+      "l3_name_en": "Transfer-LongHandleTool-ExtendIntoKiln",
+      "parent_l2_id": "L2-03-02",
+      "description": "将长柄工装前伸进入窑炉出口，对准待取出的高温坯体",
+      "object_category": "长柄夹持工装",
+      "parameter_ranges": {
+        "size_range": "工装长度800-1500mm",
+        "weight_range": "工装重量3-8kg",
+        "force_range": "N/A",
+        "precision_requirement": "对位精度±10mm，环境温度80-120℃"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-大型洁具坯体-重载",
+      "l3_name_en": "CoordinatedCarry-LargeSanitaryBisque-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协同通过工装将大型卫生洁具坯体抬起搬运",
+      "object_category": "搪瓷坯体（浴缸、洗手盆）",
+      "parameter_ranges": {
+        "size_range": "长500-1800mm，宽300-800mm",
+        "weight_range": "10-50kg",
+        "force_range": "提升力100-500N",
+        "precision_requirement": "双臂协调同步"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-大型洁具坯体-厘米级",
+      "l3_name_en": "PrecisionPlace-LargeSanitaryBisque-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将大型卫生洁具坯体精确放置到冷却架指定位置",
+      "object_category": "搪瓷坯体（浴缸、洗手盆）",
+      "parameter_ranges": {
+        "size_range": "长500-1800mm，宽300-800mm",
+        "weight_range": "10-50kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置位置精度±2cm，轻放防磕碰"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-长柄夹钳-双手功能姿",
+      "l3_name_en": "ToolGrip-LongHandleClamp-DualHandFunctional",
+      "parent_l2_id": "L2-04-03",
+      "description": "双手握持长柄夹持工装的手柄，采用能够操控夹紧/松开机构的功能握姿",
+      "object_category": "长柄夹持工装",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "工装重量3-8kg",
+        "force_range": "握持力30-80N",
+        "precision_requirement": "双手协调控制夹紧机构"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-工装夹钳开启-坯体已支撑",
+      "l3_name_en": "Release-ToolClampOpen-BisqueSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "操作工装的松开机构使夹钳张开，释放对坯体的夹持（坯体已有支撑）",
+      "object_category": "长柄夹持工装",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "操作力10-30N",
+        "precision_requirement": "渐进松开防止坯体移位"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-轨道支撑坯体-中等拉力",
+      "l3_name_en": "Pull-TrackSupportedBisque-MediumForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "将轨道支撑的坯体从窑炉内拉出，克服摩擦阻力和坯体惯性",
+      "object_category": "搪瓷坯体",
+      "parameter_ranges": {
+        "size_range": "长500-1800mm，宽300-800mm",
+        "weight_range": "10-50kg",
+        "force_range": "拉力50-200N",
+        "precision_requirement": "匀速拉出防急动"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-工装对向钳夹-瞬时锁定",
+      "l3_name_en": "Clamp-ToolOpposingJaw-InstantLock",
+      "parent_l2_id": "L2-05-04",
+      "description": "操作专用夹持工装使钳口闭合，对向夹紧坯体并锁定",
+      "object_category": "搪瓷坯体",
+      "parameter_ranges": {
+        "size_range": "坯体壁厚5-30mm",
+        "weight_range": "坯体10-50kg",
+        "force_range": "夹紧力100-300N",
+        "precision_requirement": "夹持位置准确防滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    },
+    {
+      "l3_id": "L3-07-04-001",
+      "l3_name_zh": "滑移-窑炉承载轨道-中长行程",
+      "l3_name_en": "Slide-KilnCarrierTrack-MediumLongStroke",
+      "parent_l2_id": "L2-07-04",
+      "description": "沿窑炉内承载轨道将坯体推送至指定烧成位置",
+      "object_category": "搪瓷坯体",
+      "parameter_ranges": {
+        "size_range": "行程500-2000mm",
+        "weight_range": "坯体10-50kg",
+        "force_range": "推送力30-100N",
+        "precision_requirement": "到位精度±5cm，确保烧成温度场均匀"
+      },
+      "is_new": true,
+      "source_scene": "S-3373-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-05-04",
+      "L2-07-04"
+    ],
+    "最高频L2": "L2-01-08",
+    "涉及的L1数量": 5
+  }
+}

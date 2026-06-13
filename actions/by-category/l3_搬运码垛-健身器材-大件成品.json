@@ -1,0 +1,551 @@
+{
+  "scene_id": "24-244-2443",
+  "scene_name": "搬运码垛-健身器材-大件成品",
+  "total_steps": 18,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从等待区沿车间地面行走至待搬运的包装健身器材旁",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-厂房地坪-匀速前行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在待搬物品侧方精确停止，使双臂处于最佳抓握距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料抓取点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视确认包装件的朝向、外观完好性及最佳抓握位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-包装大件-抓握位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "下蹲至包装件高度，膝关节深度屈曲准备抓握",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲位-抓取准备",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂同时伸向包装件两侧的抓握把手或边缘位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-大件两侧-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手全掌包络抓握包装件边缘或提手，形成稳定握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-包装箱体边缘-大尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "通过下肢和腰背发力起立，同时将包装件抬离地面",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-负重起立-重载抬升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调将包装件调整至腰腹高度的搬运姿态",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-不规则大件-重载托持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "保持稳定握持，携带大件包装物沿地面行走至托盘区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-大型箱体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在托盘边缘精确停止，对准目标码放位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-托盘码位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "扫视托盘当前堆叠状态，确认目标码放位置和空间",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-托盘码垛区-空位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "躯干向托盘方向旋转，使包装件朝向对准放置方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-负载状态-对准码位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "保持握持状态下蹲，准备将包装件放至托盘高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-003",
+      "l3_name": "蹲姿-负载下蹲-放置准备",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "双臂协调控制包装件缓慢下降至托盘表面高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-不规则大件-控降放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将包装件按照码垛模式放置到托盘指定位置，确保与相邻件对齐",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-托盘堆叠-单层紧密",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] L2-03-05精确定点放置 vs L2-03-06规律排列码放：本场景强调多件之间的相对位置一致性和堆叠规律，而非单件绝对定位精度，故归入L2-03-06",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "确认包装件稳定后，双手同步渐进松开释放物品",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-大件已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "释放后起立恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-004",
+      "l3_name": "蹲姿-空载起立-姿态恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "沿地面行走返回待搬物品区准备下一轮搬运",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-厂房地坪-匀速前行",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-厂房地坪-匀速前行",
+      "l3_name_en": "Walk-FactoryFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在平整的厂房环氧地坪或混凝土地面上匀速直线行走，无障碍物阻挡",
+      "object_category": "地面环境",
+      "parameter_ranges": {
+        "size_range": "步幅0.4-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm以内"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料抓取点-厘米级",
+      "l3_name_en": "Stop-MaterialGripPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在待抓取物料旁精确停止，使身体处于最佳抓握距离和角度",
+      "object_category": "定位参考点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置偏差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-包装大件-抓握位确认",
+      "l3_name_en": "Gaze-LargePackage-GripPointConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认大型包装件的外观完好性、朝向及最佳抓握位置",
+      "object_category": "包装大件",
+      "parameter_ranges": {
+        "size_range": "物品尺寸1-2m",
+        "weight_range": "30-150kg",
+        "force_range": "不适用",
+        "precision_requirement": "识别抓握点位置"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲位-抓取准备",
+      "l3_name_en": "Squat-HalfSquat-GripPreparation",
+      "parent_l2_id": "L2-02-03",
+      "description": "下蹲至半蹲位使上半身降至地面物品高度，准备抓取低位物体",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "膝关节屈曲90-120度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "躯干保持平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-大件两侧-双臂对称",
+      "l3_name_en": "Reach-LargeItemSides-SymmetricArms",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向大件物品两侧对称伸出，准备抓握",
+      "object_category": "空间轨迹",
+      "parameter_ranges": {
+        "size_range": "臂展0.5-1.2m",
+        "weight_range": "不适用（空载）",
+        "force_range": "不适用",
+        "precision_requirement": "双臂对称偏差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-包装箱体边缘-大尺寸",
+      "l3_name_en": "PowerGrip-PackageEdge-LargeSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握大型包装件的边缘、把手或凹槽，形成稳定握持",
+      "object_category": "包装箱体",
+      "parameter_ranges": {
+        "size_range": "抓握宽度50-150mm",
+        "weight_range": "30-150kg（分担后单手15-75kg）",
+        "force_range": "握力50-200N",
+        "precision_requirement": "握持稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-负重起立-重载抬升",
+      "l3_name_en": "Squat-LoadedRise-HeavyLift",
+      "parent_l2_id": "L2-02-03",
+      "description": "在握持重物状态下通过下肢和腰背发力起立，将物品从低位抬起",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "起立行程0.3-0.6m",
+        "weight_range": "负载30-150kg",
+        "force_range": "下肢推力300-800N",
+        "precision_requirement": "保持躯干稳定不晃动"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-不规则大件-重载托持",
+      "l3_name_en": "CoopCarry-IrregularLarge-HeavySupport",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将不规则形状的大件重物托持并调整至搬运高度和姿态",
+      "object_category": "不规则大件",
+      "parameter_ranges": {
+        "size_range": "物品尺寸1-2m",
+        "weight_range": "30-150kg",
+        "force_range": "双臂总负载300-1500N",
+        "precision_requirement": "保持物品平稳不倾斜"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-大型箱体-双臂前持",
+      "l3_name_en": "LoadedWalk-LargeBox-FrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持大型箱体在平地上行走，视野部分被遮挡",
+      "object_category": "大型箱体",
+      "parameter_ranges": {
+        "size_range": "物品尺寸1-2m",
+        "weight_range": "30-150kg",
+        "force_range": "不适用",
+        "precision_requirement": "步态稳定，路径偏差±15cm"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-托盘码位-厘米级",
+      "l3_name_en": "Stop-PalletPosition-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘边缘精确停止，对准目标码放位置",
+      "object_category": "定位参考点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置偏差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-托盘码垛区-空位确认",
+      "l3_name_en": "Scan-PalletArea-SpaceConfirm",
+      "parent_l2_id": "L2-09-03",
+      "description": "扫视托盘区域当前堆叠状态，确认目标码放位置和剩余空间",
+      "object_category": "托盘区域",
+      "parameter_ranges": {
+        "size_range": "扫描范围1-2m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别可用空位"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-负载状态-对准码位",
+      "l3_name_en": "Rotate-LoadedState-AlignPosition",
+      "parent_l2_id": "L2-02-04",
+      "description": "在握持重物状态下躯干旋转，使物品朝向对准托盘放置方向",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度0-90度",
+        "weight_range": "负载30-150kg",
+        "force_range": "不适用",
+        "precision_requirement": "对准偏差±5度"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-02-03-003",
+      "l3_name_zh": "蹲姿-负载下蹲-放置准备",
+      "l3_name_en": "Squat-LoadedLower-PlacePreparation",
+      "parent_l2_id": "L2-02-03",
+      "description": "在握持重物状态下缓慢下蹲，准备将物品放置到低位目标",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "下蹲行程0.3-0.6m",
+        "weight_range": "负载30-150kg",
+        "force_range": "下肢制动力300-800N",
+        "precision_requirement": "下降速度可控"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-不规则大件-控降放置",
+      "l3_name_en": "CoopCarry-IrregularLarge-ControlledLower",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调控制大件物品缓慢下降至目标放置高度",
+      "object_category": "不规则大件",
+      "parameter_ranges": {
+        "size_range": "物品尺寸1-2m",
+        "weight_range": "30-150kg",
+        "force_range": "双臂总制动力300-1500N",
+        "precision_requirement": "下降速度均匀可控"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-托盘堆叠-单层紧密",
+      "l3_name_en": "Stack-PalletLayer-SingleTight",
+      "parent_l2_id": "L2-03-06",
+      "description": "将大件物品按码垛模式放置到托盘上，确保与相邻件紧密对齐",
+      "object_category": "托盘堆叠",
+      "parameter_ranges": {
+        "size_range": "物品尺寸1-2m",
+        "weight_range": "30-150kg",
+        "force_range": "不适用",
+        "precision_requirement": "相邻件间隙<50mm"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-大件已支撑",
+      "l3_name_en": "Release-GradualOpen-LargeSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认大件物品已被托盘稳定支撑后，双手渐进松开释放",
+      "object_category": "包装大件",
+      "parameter_ranges": {
+        "size_range": "物品尺寸1-2m",
+        "weight_range": "30-150kg",
+        "force_range": "握力渐退至0",
+        "precision_requirement": "释放过程物品无偏移"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    },
+    {
+      "l3_id": "L3-02-03-004",
+      "l3_name_zh": "蹲姿-空载起立-姿态恢复",
+      "l3_name_en": "Squat-UnloadedRise-PostureRecovery",
+      "parent_l2_id": "L2-02-03",
+      "description": "释放物品后空载状态下起立恢复站立姿态",
+      "object_category": "躯体姿态",
+      "parameter_ranges": {
+        "size_range": "起立行程0.3-0.6m",
+        "weight_range": "不适用（空载）",
+        "force_range": "下肢推力100-200N",
+        "precision_requirement": "快速恢复稳定站姿"
+      },
+      "is_new": true,
+      "source_scene": "PALLETIZING-FITNESS-LARGE-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-02-03",
+    "涉及的L1数量": 5
+  }
+}

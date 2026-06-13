@@ -1,0 +1,760 @@
+{
+  "scene_id": "18-00-00",
+  "scene_name": "面料检验标记-验布机-疵点识别",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从原料仓库或休息区行走至验布机工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "转体面向验布机操作面板方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-面向设备",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手到布卷存放架或料车上的待检布卷位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架-无障碍路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手分别抓握布卷两端的轴芯部位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱轴芯-双手对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂协调将布卷从料架搬运至验布机展布轴位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-布卷筒状-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将布卷轴芯对准验布机展布轴支架并插入定位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-轴承座配合-间隙1至3mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手松开布卷轴芯使其稳定落座在支架上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "横向推动布卷使其在展布轴上居中对齐",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-001",
+      "l3_name": "推送-布卷端面-金属轴面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将布卷头部牵引穿过光源台引至卷取轴",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-柔性布料端头-中距",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 布料端头柔软但仍属单臂可完成的牵引动作，归入L2-03-02而非L2-03-03",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将布料端头夹入或固定在卷取轴夹持机构上",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-布料夹持卡扣-弹性锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "伸手到验布机控制面板位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-控制面板-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "按下验布机启动按钮开始走布",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业启动按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "旋转速度调节旋钮设定走布速度至10-30m/分钟",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-速度调节旋钮-中等精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "目视扫描通过光源台的移动布面检查疵点",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-移动布面-横向往复扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-300"
+    },
+    {
+      "step_order": 15,
+      "human_description": "发现疵点时按下停止按钮暂停走布",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-工业停止按钮-快速响应",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "目视注视疵点位置确认疵点类型和具体位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-布面疵点-缺陷分类",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 需要近距离分辨疵点类型（破洞/污渍/织疵/色差），属于近距贴近检视而非一般注视",
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "伸手到工具架取标记笔或标签贴纸",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具架-近距无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "手指捏取标记笔或标签贴纸",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-标记笔-书写功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将标记工具移动至布面疵点位置上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-标记工具-近距精确",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "在疵点边缘用标记笔画圈或贴上标签",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-001",
+      "l3_name": "标记-记号笔-圆形环路",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 标记笔画圈属于沿线状路径的涂覆动作，虽非涂胶但运动模式相同，归入L2-08-04",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将标记工具移回工具架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-标记工具-近距精确",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "松开手指将标记工具放回工具架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 23,
+      "human_description": "按下启动按钮继续走布检验",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业启动按钮-中等力度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "布卷检验完毕后按下停止按钮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-工业停止按钮-快速响应",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手到卷取轴上已检验完成的布卷位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架-无障碍路径",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "双手抓握已检验布卷两端轴芯",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱轴芯-双手对称",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将布卷从卷取轴支架上抽出取下",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-轴承座配合-低阻力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 28,
+      "human_description": "双臂协调将已检验布卷搬运至成品区或下游输送位置并放置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-布卷筒状-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walk-FactoryFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧树脂或水泥地坪上以匀速直线行走至目标工位",
+      "object_category": "无（自主移动）",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-面向设备",
+      "l3_name_en": "TurnBody-90Degree-FacingEquipment",
+      "parent_l2_id": "L2-02-04",
+      "description": "原地转动躯干约90度使身体正面朝向目标设备操作面",
+      "object_category": "无（姿态调整）",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架-无障碍路径",
+      "l3_name_en": "Reach-MaterialRack-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手向物料架或料车方向伸展手臂到达目标物体位置",
+      "object_category": "无（空载运动）",
+      "parameter_ranges": {
+        "size_range": "伸展距离300-800mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±30mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-控制面板-无障碍直线",
+      "l3_name_en": "Reach-ControlPanel-ClearLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手向设备控制面板方向直线伸展手臂准备操作按钮或旋钮",
+      "object_category": "无（空载运动）",
+      "parameter_ranges": {
+        "size_range": "伸展距离200-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±10mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-工具架-近距无障碍",
+      "l3_name_en": "Reach-ToolHolder-NearClear",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手向近距工具架伸展手臂准备取用标记工具",
+      "object_category": "无（空载运动）",
+      "parameter_ranges": {
+        "size_range": "伸展距离100-400mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±20mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-柔性布料端头-中距",
+      "l3_name_en": "Transfer-FlexibleFabricEnd-MidRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握柔性布料端头沿验布机通道牵引至卷取轴位置",
+      "object_category": "柔性布料",
+      "parameter_ranges": {
+        "size_range": "布料幅宽1400-1800mm",
+        "weight_range": "端头牵引力<2kg",
+        "force_range": "牵引力5-20N",
+        "precision_requirement": "路径跟随±50mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-标记工具-近距精确",
+      "l3_name_en": "Transfer-MarkingTool-NearPrecise",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握标记笔或标签在近距范围内精确移动至目标位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-200mm",
+        "weight_range": "10-50g",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-布卷筒状-中载",
+      "l3_name_en": "CoopCarry-FabricRoll-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运筒状布卷，双手分别托持布卷两端轴芯区域",
+      "object_category": "筒状卷材",
+      "parameter_ranges": {
+        "size_range": "直径200-500mm，长度1500-2000mm",
+        "weight_range": "15-50kg",
+        "force_range": "双臂各承载7.5-25kg",
+        "precision_requirement": "搬运过程稳定无滚动"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-08-001",
+      "l3_name_zh": "推送-布卷端面-金属轴面",
+      "l3_name_en": "Push-FabricRollEnd-MetalShaft",
+      "parent_l2_id": "L2-03-08",
+      "description": "横向推动布卷端面使其沿金属展布轴滑移至居中位置",
+      "object_category": "筒状卷材",
+      "parameter_ranges": {
+        "size_range": "横向调整范围50-200mm",
+        "weight_range": "布卷15-50kg",
+        "force_range": "推力20-80N",
+        "precision_requirement": "居中精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱轴芯-双手对称",
+      "l3_name_en": "PowerGrip-CylindricalCore-BilateralSymmetric",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手分别全手包络抓握圆柱形轴芯两端，形成稳定对称支撑",
+      "object_category": "圆柱轴芯",
+      "parameter_ranges": {
+        "size_range": "轴芯直径30-80mm",
+        "weight_range": "整体负载15-50kg",
+        "force_range": "单手握力50-150N",
+        "precision_requirement": "握持稳定无滑移"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-标记笔-书写功能姿",
+      "l3_name_en": "ToolGrip-Marker-WritingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以书写姿势握持标记笔，拇指食指中指形成三点稳定握持",
+      "object_category": "书写工具",
+      "parameter_ranges": {
+        "size_range": "笔身直径10-20mm，长度100-150mm",
+        "weight_range": "10-30g",
+        "force_range": "握持力5-15N",
+        "precision_requirement": "笔尖控制精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑后渐进张开手指完成释放",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "不限",
+        "weight_range": "不限",
+        "force_range": "释放过程力渐减",
+        "precision_requirement": "释放过程无冲击"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业启动按钮-中等力度",
+      "l3_name_en": "Press-IndustrialStartButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用指尖短促按压工业设备启动按钮直至触发反馈",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径15-40mm",
+        "weight_range": "不适用",
+        "force_range": "触发力3-15N",
+        "precision_requirement": "对准精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-工业停止按钮-快速响应",
+      "l3_name_en": "Press-IndustrialStopButton-QuickResponse",
+      "parent_l2_id": "L2-05-01",
+      "description": "快速按压工业设备停止按钮实现即时停机",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径20-50mm（急停按钮较大）",
+        "weight_range": "不适用",
+        "force_range": "触发力3-20N",
+        "precision_requirement": "响应时间<0.5秒"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-速度调节旋钮-中等精度",
+      "l3_name_en": "FineTune-SpeedKnob-MediumPrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "用指尖旋转速度调节旋钮至目标刻度位置",
+      "object_category": "调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "旋转力矩0.05-0.3Nm",
+        "precision_requirement": "角度精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-轴承座配合-间隙1至3mm",
+      "l3_name_en": "Insert-BearingSeatFit-Gap1to3mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将圆柱轴芯沿直线插入轴承座或V型支架的配合位置",
+      "object_category": "圆柱轴芯",
+      "parameter_ranges": {
+        "size_range": "轴芯直径30-80mm",
+        "weight_range": "含布卷15-50kg",
+        "force_range": "插入力10-50N",
+        "precision_requirement": "轴向对准±3mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-轴承座配合-低阻力",
+      "l3_name_en": "Extract-BearingSeatFit-LowResistance",
+      "parent_l2_id": "L2-07-02",
+      "description": "沿轴向将圆柱轴芯从轴承座或支架中直线抽出",
+      "object_category": "圆柱轴芯",
+      "parameter_ranges": {
+        "size_range": "轴芯直径30-80mm",
+        "weight_range": "含布卷15-50kg",
+        "force_range": "抽出力10-30N",
+        "precision_requirement": "保持轴向对准避免卡滞"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-布料夹持卡扣-弹性锁定",
+      "l3_name_en": "SnapFit-FabricClampClip-ElasticLock",
+      "parent_l2_id": "L2-07-06",
+      "description": "将布料端头压入卷取轴夹持机构使弹性卡扣锁定固定",
+      "object_category": "柔性布料与夹持机构",
+      "parameter_ranges": {
+        "size_range": "夹持宽度50-100mm",
+        "weight_range": "布料端头<0.5kg",
+        "force_range": "卡入力10-30N",
+        "precision_requirement": "布料平整无褶皱"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-08-04-001",
+      "l3_name_zh": "标记-记号笔-圆形环路",
+      "l3_name_en": "Mark-Marker-CircularLoop",
+      "parent_l2_id": "L2-08-04",
+      "description": "用记号笔沿圆形路径在布面疵点周围画出标记圈",
+      "object_category": "柔性布料表面",
+      "parameter_ranges": {
+        "size_range": "标记圈直径20-50mm",
+        "weight_range": "不适用",
+        "force_range": "书写压力1-5N",
+        "precision_requirement": "线条连续闭合"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-布面疵点-缺陷分类",
+      "l3_name_en": "CloseInspect-FabricDefect-Classification",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离观察布面疵点以分辨缺陷类型（破洞/污渍/织疵/色差）",
+      "object_category": "布料表面缺陷",
+      "parameter_ranges": {
+        "size_range": "观察距离100-300mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能分辨1mm级缺陷特征"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-移动布面-横向往复扫描",
+      "l3_name_en": "ScanInspect-MovingFabric-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线在1.4-1.8m幅宽的移动布面上横向往复扫描检测疵点",
+      "object_category": "移动布料表面",
+      "parameter_ranges": {
+        "size_range": "扫描幅宽1400-1800mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能检出3mm以上疵点"
+      },
+      "is_new": true,
+      "source_scene": "SC-18-00-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-08",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-06-06",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-06",
+      "L2-08-04",
+      "L2-09-02",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-05-01",
+    "涉及的L1数量": 9
+  }
+}

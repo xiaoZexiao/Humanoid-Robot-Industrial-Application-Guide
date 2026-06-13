@@ -1,0 +1,946 @@
+{
+  "scene_id": "28-282-00",
+  "scene_name": "投料配料-聚合原料-化学品接触",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至防护装备存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 2,
+      "human_description": "伸手至防护手套存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-防护用品架-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "抓取防护手套",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质-片状柔性",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]手套为柔性材料，抓取时发生形变，归入形变适应抓取而非力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将手套转移至身前便于穿戴的位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻质防护用品-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将手指插入手套开口并推进至手套末端",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-柔性套管-宽松配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "行走至原料仓库存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 7,
+      "human_description": "视觉扫描原料货架区域定位目标原料",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-货架存储区-水平扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "读取原料包装上的标签确认品名和批号",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-化学品标签-品名批号确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "弯腰俯身至原料袋存放高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "双手伸向原料袋两侧把手位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-地面物料-双臂展开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "双手力量抓握原料袋两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-袋装物料-双手对称握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双臂协调将原料袋提起至腰部高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-袋装粉料-中载提升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲起立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽然主要是起立动作，但因持有重物且涉及膝关节伸展，归入下蹲起立而非弯腰俯身",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "负载状态下行走至称量工作台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-袋装物料-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将原料袋放置于称量工作台上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-袋装物料-台面中心",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开手指释放原料袋",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "伸手至原料袋封口处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-包装封口-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "捏取原料袋封口线头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-线状物",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "拉拔抽出封口线打开原料袋",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-缝纫封口线-轻拉力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "伸手至称量勺存放处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-工具架-侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "握持称量勺手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-长柄勺-舀取功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将称量勺插入原料袋中舀取物料",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-粉粒料堆-工具浸入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将盛有物料的称量勺转移至电子秤上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-勺盛物料-水平平稳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "翻转称量勺将物料倾倒入称量容器",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-盛料容器-绕水平轴倾倒",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 25,
+      "human_description": "注视电子秤显示屏读取重量数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-电子秤显示-重量数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 26,
+      "human_description": "双手抓握称量容器两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-称量容器-双手对称握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "负载状态下行走至投料口位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-称量容器-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 28,
+      "human_description": "单手抓住投料口盖板把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-把手-单手全握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1"
+    },
+    {
+      "step_order": 29,
+      "human_description": "拉开投料口铰接盖板至完全打开位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-投料口盖板-全开位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 30,
+      "human_description": "将称量容器倾斜翻转使物料倾倒入投料口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-称量容器-绕水平轴倾倒",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 31,
+      "human_description": "将投料口盖板推回关闭位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-投料口盖板-全开位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 32,
+      "human_description": "行走返回称量工作台准备下一批次或收尾",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在环氧树脂或混凝土等工业地坪上以稳定速度直线行走",
+      "object_category": "地面/环境",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±50cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-袋装物料-双臂前持",
+      "l3_name_en": "LoadedWalk-BaggedMaterial-DualArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持袋装物料（如化工原料袋）状态下平稳行走",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "袋尺寸40×60cm至60×100cm",
+        "weight_range": "10-50kg",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-称量容器-双臂前持",
+      "l3_name_en": "LoadedWalk-WeighingContainer-DualArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持盛有物料的称量容器状态下平稳行走",
+      "object_category": "称量容器",
+      "parameter_ranges": {
+        "size_range": "容器直径20-40cm",
+        "weight_range": "5-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持水平，倾斜角<5°"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "BendForward-ModerateFlex-AboveKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "上身前倾约45-60度，手部到达膝盖以上至腰部高度的目标位置",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "目标高度40-80cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲起立-负载状态",
+      "l3_name_en": "Squat-HalfSquatRise-Loaded",
+      "parent_l2_id": "L2-02-03",
+      "description": "在手持重物状态下从半蹲姿态起立至直立",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负载5-50kg",
+        "force_range": "不适用",
+        "precision_requirement": "保持平衡，重心稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-防护用品架-直线路径",
+      "l3_name_en": "Reach-PPEStorage-LinearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线路径伸向防护用品存放架取物",
+      "object_category": "存储架/环境",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-70cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-地面物料-双臂展开",
+      "l3_name_en": "Reach-FloorMaterial-DualArmSpread",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向两侧展开伸向地面或低处放置的物料两侧",
+      "object_category": "低位物料",
+      "parameter_ranges": {
+        "size_range": "双臂展开距离40-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-包装封口-近距直线",
+      "l3_name_en": "Reach-PackageSeal-CloseLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向近处包装袋的封口位置准备开封",
+      "object_category": "包装封口",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-工具架-侧向",
+      "l3_name_en": "Reach-ToolRack-Lateral",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向侧方伸向工具存放架取用工具",
+      "object_category": "工具架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻质防护用品-近距",
+      "l3_name_en": "Transfer-LightPPE-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将轻质防护用品从取物位置转移至使用位置",
+      "object_category": "防护用品",
+      "parameter_ranges": {
+        "size_range": "物品尺寸10-30cm",
+        "weight_range": "<500g",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-勺盛物料-水平平稳",
+      "l3_name_en": "Transfer-ScoopedMaterial-LevelSteady",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将盛有物料的勺具保持水平状态转移至目标位置",
+      "object_category": "勺具/物料",
+      "parameter_ranges": {
+        "size_range": "勺具长度30-50cm",
+        "weight_range": "0.5-3kg（含物料）",
+        "force_range": "不适用",
+        "precision_requirement": "保持水平，倾斜角<10°"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-袋装粉料-中载提升",
+      "l3_name_en": "CoopCarry-BaggedPowder-MediumLoadLift",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将袋装粉状物料从低处提升至腰部高度",
+      "object_category": "袋装粉料",
+      "parameter_ranges": {
+        "size_range": "袋尺寸40×60cm至60×100cm",
+        "weight_range": "10-50kg",
+        "force_range": "提升力100-500N",
+        "precision_requirement": "协调误差<5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-盛料容器-绕水平轴倾倒",
+      "l3_name_en": "Flip-FilledContainer-HorizontalAxisPour",
+      "parent_l2_id": "L2-03-04",
+      "description": "将盛有物料的容器绕水平轴旋转倾倒物料",
+      "object_category": "盛料容器",
+      "parameter_ranges": {
+        "size_range": "容器直径10-30cm",
+        "weight_range": "0.5-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "角度控制±10°"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "翻转-称量容器-绕水平轴倾倒",
+      "l3_name_en": "Flip-WeighingContainer-HorizontalAxisPour",
+      "parent_l2_id": "L2-03-04",
+      "description": "将较大称量容器绕水平轴旋转将物料倾倒入投料口",
+      "object_category": "称量容器",
+      "parameter_ranges": {
+        "size_range": "容器直径20-40cm",
+        "weight_range": "5-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "对准投料口±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-袋装物料-台面中心",
+      "l3_name_en": "PlacePrecise-BaggedMaterial-TableCenter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将袋装物料精确放置于工作台面中央指定区域",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "袋尺寸40×60cm至60×100cm",
+        "weight_range": "10-50kg",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-袋装物料-双手对称握",
+      "l3_name_en": "PowerGrip-BaggedMaterial-DualHandSymmetric",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手对称位置全手包络抓握袋装物料两侧",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "抓握宽度10-15cm（每手）",
+        "weight_range": "10-50kg",
+        "force_range": "握力50-200N",
+        "precision_requirement": "双手对称±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-称量容器-双手对称握",
+      "l3_name_en": "PowerGrip-WeighingContainer-DualHandSymmetric",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手对称位置全手包络抓握称量容器两侧或两个把手",
+      "object_category": "称量容器",
+      "parameter_ranges": {
+        "size_range": "容器直径20-40cm",
+        "weight_range": "5-30kg",
+        "force_range": "握力30-150N",
+        "precision_requirement": "双手对称"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-把手-单手全握",
+      "l3_name_en": "PowerGrip-Handle-SingleHandFull",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手全手包络抓握设备把手或手柄",
+      "object_category": "把手/手柄",
+      "parameter_ranges": {
+        "size_range": "把手直径20-40mm",
+        "weight_range": "不适用",
+        "force_range": "握力20-100N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-线状物",
+      "l3_name_en": "PinchGrip-TwoFingerOppose-LinearObject",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指与食指对捏抓取细线、封口线等线状物体",
+      "object_category": "线状物",
+      "parameter_ranges": {
+        "size_range": "直径<5mm",
+        "weight_range": "<50g",
+        "force_range": "捏力1-10N",
+        "precision_requirement": "±2mm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-长柄勺-舀取功能姿",
+      "l3_name_en": "ToolGrip-LongHandleScoop-ScoopFunctionPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "按照舀取操作功能需求握持长柄勺具的手柄",
+      "object_category": "勺具",
+      "parameter_ranges": {
+        "size_range": "手柄长度20-40cm，直径15-30mm",
+        "weight_range": "200g-1kg",
+        "force_range": "握力10-50N",
+        "precision_requirement": "功能性握姿"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质-片状柔性",
+      "l3_name_en": "AdaptGrip-Soft-SheetFlexible",
+      "parent_l2_id": "L2-04-04",
+      "description": "自适应抓取柔软片状物体如手套、布料等",
+      "object_category": "柔性片状物",
+      "parameter_ranges": {
+        "size_range": "尺寸10-50cm",
+        "weight_range": "<500g",
+        "force_range": "适应性抓取力5-30N",
+        "precision_requirement": "不损坏物品"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已被台面或其他支撑面承托后渐进松开手指释放",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "不限",
+        "weight_range": "不限",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-缝纫封口线-轻拉力",
+      "l3_name_en": "Pull-SewingSealThread-LightForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "以轻拉力拉拔抽出包装袋的缝纫封口线实现开封",
+      "object_category": "封口线/缝线",
+      "parameter_ranges": {
+        "size_range": "线长30-100cm",
+        "weight_range": "<10g",
+        "force_range": "拉力5-20N",
+        "precision_requirement": "匀速拉拔"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-柔性套管-宽松配合",
+      "l3_name_en": "Insert-FlexibleSleeve-LooseFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将手指或手部插入柔性套管类物品如手套中",
+      "object_category": "柔性套管",
+      "parameter_ranges": {
+        "size_range": "内径80-120mm",
+        "weight_range": "不适用",
+        "force_range": "插入力<10N",
+        "precision_requirement": "对准入口±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-粉粒料堆-工具浸入",
+      "l3_name_en": "Insert-PowderBulk-ToolImmerse",
+      "parent_l2_id": "L2-07-01",
+      "description": "将勺具等工具插入粉状或颗粒状物料堆中进行舀取",
+      "object_category": "粉粒料堆",
+      "parameter_ranges": {
+        "size_range": "插入深度5-20cm",
+        "weight_range": "不适用",
+        "force_range": "插入力5-30N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-投料口盖板-全开位",
+      "l3_name_en": "HingeOpen-FeedPortCover-FullOpen",
+      "parent_l2_id": "L2-07-05",
+      "description": "拉动或推动投料口铰接盖板从关闭位置到完全打开位置或反向关闭",
+      "object_category": "铰接盖板",
+      "parameter_ranges": {
+        "size_range": "盖板直径/边长30-60cm",
+        "weight_range": "盖板重量2-10kg",
+        "force_range": "开合力20-80N",
+        "precision_requirement": "开合角度0-120°"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-货架存储区-水平扫描",
+      "l3_name_en": "AreaScan-ShelfStorage-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉系统在货架存储区进行水平方向系统性扫描以定位目标物料",
+      "object_category": "货架/存储区",
+      "parameter_ranges": {
+        "size_range": "扫描范围2-10m宽",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别目标位置±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-化学品标签-品名批号确认",
+      "l3_name_en": "Read-ChemicalLabel-NameBatchVerify",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉系统对准化学品包装标签读取品名、批号等关键信息进行确认",
+      "object_category": "化学品标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸10×15cm至20×30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "OCR识别准确率>99%"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-电子秤显示-重量数值",
+      "l3_name_en": "Read-ScaleDisplay-WeightValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉系统对准电子秤显示屏读取当前重量数值",
+      "object_category": "电子显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸5×10cm至10×20cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数值识别精度±0.1g"
+      },
+      "is_new": true,
+      "source_scene": "S-28-282-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-07-01",
+      "L2-07-05",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

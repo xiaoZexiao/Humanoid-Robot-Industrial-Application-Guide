@@ -1,0 +1,773 @@
+{
+  "scene_id": "36-361-00",
+  "scene_name": "涂胶密封-车身接缝-连续走线",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机区沿通道走向涂胶工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 2,
+      "human_description": "伸手至工具架上胶枪存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "手指按功能姿势握住胶枪握把和扳机",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-胶枪-扣压触发姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "持胶枪走向白车身涂胶起始位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持胶枪-单手前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在车身前部接缝起点处精确站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-车身接缝起点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "目视对准接缝起点确认涂胶位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-车身接缝-涂胶起点定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "食指按下胶枪扳机启动出胶",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-胶枪扳机-轻度力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "沿车身前围板上部水平接缝匀速涂覆密封胶",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-001",
+      "l3_name": "涂胶-车身密封胶-直线水平路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 9,
+      "human_description": "上半身向左旋转跟随接缝转角方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-45至90度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "沿车身A柱侧面斜向接缝涂覆密封胶",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-002",
+      "l3_name": "涂胶-车身密封胶-斜向连续路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰俯身以对准门槛下部接缝高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-深度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "沿车身门槛下部接缝涂覆密封胶",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-003",
+      "l3_name": "涂胶-车身密封胶-低位水平路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-50"
+    },
+    {
+      "step_order": 13,
+      "human_description": "保持弯腰姿态小步侧移跟随接缝走向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-环氧地坪-低速侧移",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "12",
+      "duration_estimate": "30-50"
+    },
+    {
+      "step_order": 14,
+      "human_description": "上半身向右旋转绕过车身后角",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90至135度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "沿车身后围板下部接缝涂覆密封胶",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-003",
+      "l3_name": "涂胶-车身密封胶-低位水平路径",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-35"
+    },
+    {
+      "step_order": 16,
+      "human_description": "起身恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-站立高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "绕行至车身侧面中段位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 18,
+      "human_description": "腰背后仰仰头以对准车顶边缘接缝",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-轻度后仰-头顶上方高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]后仰为矢状面运动，与前屈同属L2-02-02的动作范畴，方向相反",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "沿车顶边缘流水槽接缝涂覆密封胶",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-004",
+      "l3_name": "涂胶-车身密封胶-高位仰角路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "25-45"
+    },
+    {
+      "step_order": 20,
+      "human_description": "保持仰姿沿车身侧面慢步移动",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-环氧地坪-低速侧移",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "19",
+      "duration_estimate": "25-45"
+    },
+    {
+      "step_order": 21,
+      "human_description": "恢复正常站姿头颈归位",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-站立高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "松开食指释放胶枪扳机停止出胶",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-胶枪扳机-释放停止",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 23,
+      "human_description": "目视沿涂胶路径扫描检查胶线连续性和宽度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-涂胶路径-线性扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 24,
+      "human_description": "绕车身巡视期间变向转弯移动",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": "23",
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 25,
+      "human_description": "持胶枪走回工具存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持胶枪-单手前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将胶枪放置到工具架指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-胶枪-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "手指逐渐松开胶枪握把",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 28,
+      "human_description": "走回待机区等待下一辆车",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在焊装车间环氧树脂地坪上以稳定速度直线行走",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-环氧地坪-低速侧移",
+      "l3_name_en": "Walk-EpoxyFloor-SlowSidestep",
+      "parent_l2_id": "L2-01-01",
+      "description": "在涂胶作业中保持作业姿态沿车身方向小步侧向移动",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "跟随涂胶速度匹配"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeCurve-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "绕车身转角时进行约90度方向变化的连续行走",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转弯半径0.5-1.5m"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-手持胶枪-单手前持",
+      "l3_name_en": "LoadedWalk-SealantGun-SingleHandFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "单手持胶枪在工位间行走移动",
+      "object_category": "工业胶枪",
+      "parameter_ranges": {
+        "size_range": "胶枪长度300-500mm",
+        "weight_range": "1.5-3kg（含胶筒）",
+        "force_range": "不适用",
+        "precision_requirement": "行走稳定不甩动"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-车身接缝起点-厘米级",
+      "l3_name_en": "Stop-BodySeamStart-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在车身接缝涂胶起始位置精确停止站定",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-深度前屈-膝下高度",
+      "l3_name_en": "BendForward-DeepFlexion-BelowKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "深度弯腰使操作手位到达膝盖以下高度以处理低位接缝",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "操作高度20-50cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-站立高度",
+      "l3_name_en": "BendForward-ReturnUpright-StandingHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰或后仰姿态恢复到正常站立姿势",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-轻度后仰-头顶上方高度",
+      "l3_name_en": "BendBackward-SlightExtension-OverheadHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "腰背轻度后仰仰头使视线和操作手位对准高于头顶的位置",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "操作高度180-220cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-45至90度-向左",
+      "l3_name_en": "TrunkRotation-45to90Degree-Left",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身向左侧旋转45-90度以跟随接缝转角方向",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90至135度-向右",
+      "l3_name_en": "TrunkRotation-90to135Degree-Right",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身向右侧大幅旋转90-135度绕过车身转角",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架上方-无障碍直线",
+      "l3_name_en": "Reach-ToolRackArea-UnobstructedStraight",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向工具架上方位置准备抓取胶枪",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达范围50-80cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-胶枪-厘米级",
+      "l3_name_en": "PrecisionPlace-SealantGun-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将胶枪精确放置到工具架的指定挂放位置",
+      "object_category": "工业胶枪",
+      "parameter_ranges": {
+        "size_range": "胶枪长度300-500mm",
+        "weight_range": "1.5-3kg",
+        "force_range": "不适用",
+        "precision_requirement": "放置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-胶枪-扣压触发姿",
+      "l3_name_en": "ToolGrip-SealantGun-TriggerPressPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "手指按功能姿势握住胶枪握把，食指置于扳机位置准备触发",
+      "object_category": "工业胶枪",
+      "parameter_ranges": {
+        "size_range": "握把直径25-40mm",
+        "weight_range": "1.5-3kg",
+        "force_range": "握力10-30N",
+        "precision_requirement": "食指对准扳机"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开松开已放置在支撑面上的物体",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "适用于各类手持物品",
+        "weight_range": "0.1-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-胶枪扳机-轻度力",
+      "l3_name_en": "PointPress-SealantGunTrigger-LightForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "食指按下胶枪扳机启动出胶功能",
+      "object_category": "胶枪扳机",
+      "parameter_ranges": {
+        "size_range": "扳机行程5-15mm",
+        "weight_range": "不适用",
+        "force_range": "触发力5-20N",
+        "precision_requirement": "触发反馈明确"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-胶枪扳机-释放停止",
+      "l3_name_en": "PointPress-SealantGunTrigger-ReleaseTo Stop",
+      "parent_l2_id": "L2-05-01",
+      "description": "松开食指释放胶枪扳机使出胶停止",
+      "object_category": "胶枪扳机",
+      "parameter_ranges": {
+        "size_range": "扳机行程5-15mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "响应时间<0.5s"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-08-04-001",
+      "l3_name_zh": "涂胶-车身密封胶-直线水平路径",
+      "l3_name_en": "SealantApplication-BodySealant-StraightHorizontalPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "沿车身水平方向接缝匀速涂覆密封胶保持胶线连续均匀",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "枪口贴近压力2-5N",
+        "precision_requirement": "胶线宽度8-12mm，连续无断胶"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-08-04-002",
+      "l3_name_zh": "涂胶-车身密封胶-斜向连续路径",
+      "l3_name_en": "SealantApplication-BodySealant-DiagonalContinuousPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "沿车身A柱B柱等斜向接缝涂覆密封胶",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "枪口贴近压力2-5N",
+        "precision_requirement": "胶线宽度8-12mm，连续无断胶"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-08-04-003",
+      "l3_name_zh": "涂胶-车身密封胶-低位水平路径",
+      "l3_name_en": "SealantApplication-BodySealant-LowHorizontalPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "弯腰姿态下沿车身门槛底部等低位接缝涂覆密封胶",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "枪口贴近压力2-5N",
+        "precision_requirement": "胶线宽度8-12mm，操作高度20-50cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-08-04-004",
+      "l3_name_zh": "涂胶-车身密封胶-高位仰角路径",
+      "l3_name_en": "SealantApplication-BodySealant-OverheadAngledPath",
+      "parent_l2_id": "L2-08-04",
+      "description": "仰头姿态下沿车顶边缘流水槽等高位接缝涂覆密封胶",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "枪口贴近压力2-5N",
+        "precision_requirement": "胶线宽度8-12mm，操作高度180-220cm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-车身接缝-涂胶起点定位",
+      "l3_name_en": "Gaze-BodySeam-SealantStartPositioning",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视对准车身接缝起始位置以确定涂胶起点",
+      "object_category": "车身接缝",
+      "parameter_ranges": {
+        "size_range": "接缝宽度3-8mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视觉定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-涂胶路径-线性扫描",
+      "l3_name_en": "ScanInspect-SealantPath-LinearScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "沿已涂胶路径进行视觉扫描检查胶线连续性和宽度一致性",
+      "object_category": "涂胶路径",
+      "parameter_ranges": {
+        "size_range": "扫描长度数米至十余米",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别断胶和胶量不均缺陷"
+      },
+      "is_new": true,
+      "source_scene": "SealantApplication-BodySeam-ContinuousPath"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-05",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-08-04",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-08-04",
+    "涉及的L1数量": 7
+  }
+}

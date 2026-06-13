@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>人形机器人工业场景星图 v2.3</title>
+    <title>人形机器人工业场景星图 v3.1</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Three.js 核心 -->
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
@@ -439,6 +439,407 @@
             font-family: monospace;
             margin: 0 2px;
         }
+
+        /* 数据状态标识 */
+        .data-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        .badge-full { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
+        .badge-l3 { background: rgba(74, 158, 255, 0.3); color: #4a9eff; border: 1px solid #4a9eff; }
+        .badge-guide { background: rgba(34, 197, 94, 0.3); color: #22c55e; border: 1px solid #22c55e; }
+
+        /* Tab 导航 */
+        .detail-tabs {
+            display: flex;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding: 0 28px;
+            gap: 4px;
+        }
+        .detail-tab {
+            padding: 12px 20px;
+            font-size: 13px;
+            color: #666;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .detail-tab:hover { color: #aaa; }
+        .detail-tab.active {
+            color: #4a9eff;
+            border-bottom-color: #4a9eff;
+        }
+        .detail-tab.disabled {
+            color: #333;
+            cursor: not-allowed;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* 元动作时间线 */
+        .action-timeline {
+            position: relative;
+            padding-left: 24px;
+        }
+        .action-timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255,255,255,0.1);
+        }
+        .action-step {
+            position: relative;
+            padding: 12px 0 12px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        .action-step::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 18px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #4a9eff;
+            border: 2px solid #050510;
+        }
+        .action-step-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .action-step-num {
+            font-size: 11px;
+            color: #4a9eff;
+            font-family: monospace;
+            background: rgba(74,158,255,0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .action-step-desc {
+            font-size: 13px;
+            color: #bbb;
+            line-height: 1.5;
+        }
+        .action-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .action-tag {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .tag-l1 { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        .tag-l2 { background: rgba(234, 179, 8, 0.15); color: #eab308; }
+        .tag-l3 { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+        .tag-duration { background: rgba(255,255,255,0.05); color: #666; }
+
+        /* L2使用统计 */
+        .l2-stats {
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+        .l2-stats-title {
+            font-size: 11px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .l2-tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .l2-tag {
+            font-size: 11px;
+            padding: 4px 10px;
+            background: rgba(234, 179, 8, 0.1);
+            color: #eab308;
+            border-radius: 4px;
+        }
+
+        /* 建设指南样式 */
+        .guide-phases {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .guide-phase {
+            flex: 1;
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            padding: 14px;
+            border-left: 3px solid;
+        }
+        .phase-1 { border-color: #22c55e; }
+        .phase-2 { border-color: #eab308; }
+        .phase-3 { border-color: #4a9eff; }
+        .guide-phase-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .guide-phase-content {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        .guide-difficulties {
+            margin-bottom: 20px;
+        }
+        .difficulty-item {
+            padding: 12px;
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        .difficulty-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        .difficulty-step {
+            font-size: 10px;
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .difficulty-name {
+            font-size: 13px;
+            color: #fff;
+        }
+        .difficulty-method {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.5;
+        }
+
+        .guide-conditions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .condition-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.02);
+            border-radius: 6px;
+            font-size: 12px;
+        }
+        .condition-status {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        .status-ok { background: #22c55e; }
+        .status-no { background: #ef4444; }
+        .status-check { background: #eab308; }
+        .condition-name { color: #aaa; }
+
+        /* 无数据提示 */
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #444;
+        }
+        .no-data-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .no-data-text {
+            font-size: 14px;
+        }
+
+        /* 建设指南子Tab */
+        .guide-subtabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            padding-bottom: 8px;
+        }
+        .guide-subtab {
+            padding: 8px 16px;
+            font-size: 12px;
+            color: #666;
+            cursor: pointer;
+            border-radius: 6px 6px 0 0;
+            background: none;
+            border: none;
+            transition: all 0.2s;
+        }
+        .guide-subtab:hover { color: #aaa; background: rgba(255,255,255,0.02); }
+        .guide-subtab.active { color: #4a9eff; background: rgba(74,158,255,0.1); }
+        .guide-subcontent { display: none; }
+        .guide-subcontent.active { display: block; }
+
+        /* 场景画像样式 */
+        .portrait-section {
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+        .portrait-title {
+            font-size: 11px;
+            color: #4a9eff;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .portrait-content {
+            font-size: 13px;
+            color: #999;
+            line-height: 1.7;
+        }
+
+        /* 避坑指南样式 */
+        .pitfall-item {
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 3px solid #ef4444;
+            border-radius: 0 8px 8px 0;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+        .pitfall-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ef4444;
+            margin-bottom: 10px;
+        }
+        .pitfall-row {
+            margin-bottom: 8px;
+        }
+        .pitfall-label {
+            font-size: 10px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .pitfall-text {
+            font-size: 12px;
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        /* 经济性分析样式 */
+        .economics-section {
+            background: rgba(34, 197, 94, 0.05);
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+        .economics-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #22c55e;
+            margin-bottom: 10px;
+        }
+        .cost-item {
+            display: flex;
+            gap: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+        }
+        .cost-item:last-child { border-bottom: none; }
+        .cost-name {
+            width: 120px;
+            font-size: 12px;
+            color: #aaa;
+            flex-shrink: 0;
+        }
+        .cost-reason {
+            font-size: 11px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* 关键难点展开 */
+        .difficulty-expand {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .difficulty-detail {
+            margin-bottom: 8px;
+        }
+        .difficulty-detail-label {
+            font-size: 10px;
+            color: #555;
+            margin-bottom: 2px;
+        }
+        .difficulty-detail-text {
+            font-size: 11px;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        /* 条件清单详情 */
+        .condition-detail {
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+        }
+        .condition-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .condition-layer {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.05);
+            color: #666;
+        }
+        .condition-stage {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(74,158,255,0.1);
+            color: #4a9eff;
+        }
+        .condition-state {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        .condition-action {
+            font-size: 11px;
+            color: #22c55e;
+            line-height: 1.5;
+        }
+        .condition-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 6px;
+            font-size: 10px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -480,6 +881,33 @@
                         <span class="stats-value" id="stats-q4">0</span>
                     </div>
                 </div>
+                <div class="stats-panel" style="margin-top:12px;">
+                    <div class="filter-label" style="margin-bottom:8px;">数据完整度</div>
+                    <div class="stats-row">
+                        <span class="stats-label" style="display:flex;align-items:center;gap:6px;">
+                            <span style="width:8px;height:8px;border-radius:50%;background:#fbbf24;"></span>L3+指南
+                        </span>
+                        <span class="stats-value" id="stats-full">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label" style="display:flex;align-items:center;gap:6px;">
+                            <span style="width:8px;height:8px;border-radius:50%;background:#4a9eff;"></span>仅L3
+                        </span>
+                        <span class="stats-value" id="stats-l3">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label" style="display:flex;align-items:center;gap:6px;">
+                            <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;"></span>仅指南
+                        </span>
+                        <span class="stats-value" id="stats-guide">0</span>
+                    </div>
+                    <div class="stats-row">
+                        <span class="stats-label" style="display:flex;align-items:center;gap:6px;">
+                            <span style="width:8px;height:8px;border-radius:50%;background:#333;"></span>待补充
+                        </span>
+                        <span class="stats-value" id="stats-basic">0</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -505,7 +933,10 @@
         <div id="detail-card">
             <div class="detail-header">
                 <div>
-                    <div class="detail-title-zh" id="detail-title-zh"></div>
+                    <div class="detail-title-zh">
+                        <span id="detail-title-zh"></span>
+                        <span class="data-badge" id="detail-data-badge"></span>
+                    </div>
                     <div class="detail-title-en" id="detail-title-en"></div>
                     <div class="detail-tags">
                         <span class="detail-tag" id="detail-industry-tag"></span>
@@ -514,30 +945,47 @@
                 </div>
                 <button class="close-btn" onclick="closeDetail()">×</button>
             </div>
+            <!-- Tab 导航 -->
+            <div class="detail-tabs">
+                <button class="detail-tab active" data-tab="basic" onclick="switchTab('basic')">基础信息</button>
+                <button class="detail-tab" data-tab="actions" id="tab-actions" onclick="switchTab('actions')">元动作分解</button>
+                <button class="detail-tab" data-tab="guide" id="tab-guide" onclick="switchTab('guide')">建设指南</button>
+            </div>
             <div class="detail-body">
-                <div class="detail-left">
-                    <canvas class="radar-container" id="detail-radar" width="280" height="280"></canvas>
-                    <div class="quadrant-info" id="detail-quadrant"></div>
-                </div>
-                <div class="detail-right">
-                    <div class="info-block">
-                        <div class="info-block-title">场景描述</div>
-                        <div class="info-block-content" id="detail-description"></div>
+                <!-- Tab 1: 基础信息 -->
+                <div class="tab-content active" id="content-basic">
+                    <div class="detail-left">
+                        <canvas class="radar-container" id="detail-radar" width="280" height="280"></canvas>
+                        <div class="quadrant-info" id="detail-quadrant"></div>
                     </div>
-                    <div class="info-block">
-                        <div class="info-block-title">选中理由</div>
-                        <div class="info-block-content" id="detail-rationale"></div>
-                    </div>
-                    <div class="info-block">
-                        <div class="info-block-title">工序链</div>
-                        <div class="info-block-content">
-                            <div class="process-chain" id="detail-chain"></div>
+                    <div class="detail-right">
+                        <div class="info-block">
+                            <div class="info-block-title">场景描述</div>
+                            <div class="info-block-content" id="detail-description"></div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-block-title">选中理由</div>
+                            <div class="info-block-content" id="detail-rationale"></div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-block-title">工序链</div>
+                            <div class="info-block-content">
+                                <div class="process-chain" id="detail-chain"></div>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-block-title">评分明细</div>
+                            <div id="detail-scores"></div>
                         </div>
                     </div>
-                    <div class="info-block">
-                        <div class="info-block-title">评分明细</div>
-                        <div id="detail-scores"></div>
-                    </div>
+                </div>
+                <!-- Tab 2: 元动作分解 -->
+                <div class="tab-content" id="content-actions" style="width:100%;">
+                    <div id="actions-content"></div>
+                </div>
+                <!-- Tab 3: 建设指南 -->
+                <div class="tab-content" id="content-guide" style="width:100%;">
+                    <div id="guide-content"></div>
                 </div>
             </div>
             <div class="detail-footer">
@@ -606,7 +1054,7 @@
     // 初始化
     // ============================================================
     async function init() {
-        const response = await fetch('scenes-data.json');
+        const response = await fetch('scenes-data-full.json');
         scenes = await response.json();
 
         // 分配行业颜色
@@ -666,8 +1114,16 @@
     }
 
     // ============================================================
-    // 节点渲染 (核心球体 + 光晕Sprite)
+    // 节点渲染 (核心球体 + 光晕Sprite + 数据状态环)
     // ============================================================
+    // 数据状态颜色
+    const dataStatusColors = {
+        full: '#fbbf24',      // 金色: L3+指南
+        l3_only: '#4a9eff',   // 蓝色: 只有L3
+        guide_only: '#22c55e', // 绿色: 只有指南
+        basic: null           // 无额外标识
+    };
+
     function createNodeObject(node) {
         const color = new THREE.Color(industryColors[node.source_major_name] || '#4a9eff');
         const scaleScore = node.scores?.scale_potential?.score || 3;
@@ -701,6 +1157,34 @@
         const group = new THREE.Group();
         group.add(core);
         group.add(glow);
+
+        // 数据状态环 (有数据的场景添加外环标识)
+        const statusColor = dataStatusColors[node.data_status];
+        if (statusColor) {
+            const ringGeom = new THREE.RingGeometry(radius * 1.3, radius * 1.5, 32);
+            const ringMat = new THREE.MeshBasicMaterial({
+                color: new THREE.Color(statusColor),
+                transparent: true,
+                opacity: 0.8,
+                side: THREE.DoubleSide
+            });
+            const ring = new THREE.Mesh(ringGeom, ringMat);
+            group.add(ring);
+
+            // 额外光晕强调
+            const statusGlowCanvas = createGlowTexture(new THREE.Color(statusColor));
+            const statusGlowTexture = new THREE.CanvasTexture(statusGlowCanvas);
+            const statusGlowMat = new THREE.SpriteMaterial({
+                map: statusGlowTexture,
+                transparent: true,
+                opacity: 0.25,
+                blending: THREE.AdditiveBlending
+            });
+            const statusGlow = new THREE.Sprite(statusGlowMat);
+            const statusGlowSize = radius * 5;
+            statusGlow.scale.set(statusGlowSize, statusGlowSize, 1);
+            group.add(statusGlow);
+        }
 
         // 存储引用
         nodeObjects.set(node.id, {
@@ -965,9 +1449,31 @@
     // ============================================================
     // 详情卡片
     // ============================================================
+    let currentDetailScene = null;
+
     function showDetail(scene) {
+        currentDetailScene = scene;
+
         document.getElementById('detail-title-zh').textContent = scene.scene_name_zh || '';
         document.getElementById('detail-title-en').textContent = scene.scene_name_en || '';
+
+        // 数据状态标识
+        const badge = document.getElementById('detail-data-badge');
+        if (scene.data_status === 'full') {
+            badge.textContent = 'L3+指南';
+            badge.className = 'data-badge badge-full';
+            badge.style.display = 'inline-block';
+        } else if (scene.data_status === 'l3_only') {
+            badge.textContent = 'L3';
+            badge.className = 'data-badge badge-l3';
+            badge.style.display = 'inline-block';
+        } else if (scene.data_status === 'guide_only') {
+            badge.textContent = '指南';
+            badge.className = 'data-badge badge-guide';
+            badge.style.display = 'inline-block';
+        } else {
+            badge.style.display = 'none';
+        }
 
         const industryTag = document.getElementById('detail-industry-tag');
         industryTag.textContent = scene.source_major_name || '';
@@ -997,12 +1503,326 @@
         // 象限
         document.getElementById('detail-quadrant').textContent = `本场景位于「${getQuadrant(scene)}」`;
 
+        // Tab 状态
+        const tabActions = document.getElementById('tab-actions');
+        const tabGuide = document.getElementById('tab-guide');
+        tabActions.classList.toggle('disabled', !scene.l3_data);
+        tabGuide.classList.toggle('disabled', !scene.guide_data);
+
+        // 渲染元动作
+        renderActionsTab(scene);
+        // 渲染建设指南
+        renderGuideTab(scene);
+
+        // 重置到基础信息Tab
+        switchTab('basic');
+
         updateNavInfo();
         drawDetailRadar(scene);
 
         document.getElementById('detail-overlay').classList.add('visible');
         document.getElementById('hover-panel').classList.remove('visible');
     }
+
+    // Tab 切换
+    window.switchTab = function(tabId) {
+        // 检查是否可切换
+        if (tabId === 'actions' && !currentDetailScene?.l3_data) return;
+        if (tabId === 'guide' && !currentDetailScene?.guide_data) return;
+
+        // 更新Tab按钮状态
+        document.querySelectorAll('.detail-tab').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.tab === tabId);
+        });
+        // 更新内容显示
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.toggle('active', content.id === `content-${tabId}`);
+        });
+    };
+
+    // 渲染元动作Tab
+    function renderActionsTab(scene) {
+        const container = document.getElementById('actions-content');
+        if (!scene.l3_data) {
+            container.innerHTML = `
+                <div class="no-data">
+                    <div class="no-data-icon">⏳</div>
+                    <div class="no-data-text">L3元动作待提取</div>
+                </div>
+            `;
+            return;
+        }
+
+        const l3 = scene.l3_data;
+        const sequence = l3.action_sequence || [];
+
+        let html = `
+            <div class="info-block">
+                <div class="info-block-title">动作序列 (共${l3.total_steps || sequence.length}步)</div>
+                <div class="action-timeline">
+        `;
+
+        sequence.forEach(step => {
+            html += `
+                <div class="action-step">
+                    <div class="action-step-header">
+                        <span class="action-step-num">Step ${step.step_order}</span>
+                        ${step.duration_estimate ? `<span class="action-tag tag-duration">${step.duration_estimate}s</span>` : ''}
+                    </div>
+                    <div class="action-step-desc">${step.human_description || ''}</div>
+                    <div class="action-tags">
+                        <span class="action-tag tag-l1">${step.l1_id}: ${step.l1_name || ''}</span>
+                        <span class="action-tag tag-l2">${step.l2_id}: ${step.l2_name || ''}</span>
+                        <span class="action-tag tag-l3">${step.l3_id}: ${step.l3_name || ''}</span>
+                    </div>
+                </div>
+            `;
+        });
+
+        html += '</div></div>';
+
+        // L2使用统计
+        const summary = l3.l2_usage_summary || {};
+        const l2List = summary['涉及的L2编号列表'] || [];
+        if (l2List.length > 0) {
+            html += `
+                <div class="l2-stats">
+                    <div class="l2-stats-title">L2使用统计 (涉及${summary['涉及的L1数量'] || 0}个L1)</div>
+                    <div class="l2-tag-list">
+                        ${l2List.map(l2 => `<span class="l2-tag">${l2}</span>`).join('')}
+                    </div>
+                    ${summary['最高频L2'] ? `<div style="margin-top:8px;font-size:11px;color:#666;">最高频: ${summary['最高频L2']}</div>` : ''}
+                </div>
+            `;
+        }
+
+        container.innerHTML = html;
+    }
+
+    // 渲染建设指南Tab
+    let currentGuideSubtab = 'overview';
+
+    function renderGuideTab(scene) {
+        const container = document.getElementById('guide-content');
+        if (!scene.guide_data) {
+            container.innerHTML = `
+                <div class="no-data">
+                    <div class="no-data-icon">📋</div>
+                    <div class="no-data-text">建设指南待生成</div>
+                </div>
+            `;
+            return;
+        }
+
+        const guide = scene.guide_data;
+        const portrait = guide.portrait || {};
+        const taskAnalysis = guide.task_analysis || {};
+        const construction = guide.construction || {};
+        const pitfalls = guide.pitfalls || [];
+        const economics = guide.economics || {};
+        const difficulties = taskAnalysis.key_difficulties || [];
+        const conditions = construction.conditions || [];
+
+        // 子Tab导航
+        let html = `
+            <div class="guide-subtabs">
+                <button class="guide-subtab active" data-subtab="overview" onclick="switchGuideSubtab('overview')">总览</button>
+                <button class="guide-subtab" data-subtab="portrait" onclick="switchGuideSubtab('portrait')">场景画像</button>
+                <button class="guide-subtab" data-subtab="difficulties" onclick="switchGuideSubtab('difficulties')">难点分析</button>
+                <button class="guide-subtab" data-subtab="conditions" onclick="switchGuideSubtab('conditions')">条件清单</button>
+                <button class="guide-subtab" data-subtab="pitfalls" onclick="switchGuideSubtab('pitfalls')">避坑指南</button>
+                <button class="guide-subtab" data-subtab="economics" onclick="switchGuideSubtab('economics')">经济性</button>
+            </div>
+        `;
+
+        // 子Tab内容: 总览
+        html += `<div class="guide-subcontent active" id="guide-overview">`;
+        html += `
+            <div class="info-block">
+                <div class="info-block-title">三阶段建设路径</div>
+                <div class="guide-phases">
+                    <div class="guide-phase phase-1">
+                        <div class="guide-phase-title">阶段一: 入场验证</div>
+                        <div class="guide-phase-content">${(construction.phase1_validation || '').substring(0, 200)}...</div>
+                    </div>
+                    <div class="guide-phase phase-2">
+                        <div class="guide-phase-title">阶段二: 首台部署</div>
+                        <div class="guide-phase-content">${(construction.phase2_first_deploy || '').substring(0, 200)}...</div>
+                    </div>
+                    <div class="guide-phase phase-3">
+                        <div class="guide-phase-title">阶段三: 扩展判据</div>
+                        <div class="guide-phase-content">${(construction.phase3_expansion_criteria || '').substring(0, 200)}...</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        // 快速统计
+        const okCount = conditions.filter(c => c.status === '满足').length;
+        const noCount = conditions.filter(c => c.status === '不满足').length;
+        const checkCount = conditions.filter(c => c.status === '需确认').length;
+        html += `
+            <div class="info-block">
+                <div class="info-block-title">快速统计</div>
+                <div style="display:flex;gap:24px;font-size:13px;">
+                    <div><span style="color:#22c55e;font-weight:600;">${okCount}</span> 项已满足</div>
+                    <div><span style="color:#ef4444;font-weight:600;">${noCount}</span> 项不满足</div>
+                    <div><span style="color:#eab308;font-weight:600;">${checkCount}</span> 项需确认</div>
+                    <div><span style="color:#a855f7;font-weight:600;">${difficulties.length}</span> 个关键难点</div>
+                    <div><span style="color:#f97316;font-weight:600;">${pitfalls.length}</span> 个避坑项</div>
+                </div>
+            </div>
+        `;
+        if (portrait.pain_point) {
+            html += `
+                <div class="info-block">
+                    <div class="info-block-title">核心痛点</div>
+                    <div class="info-block-content" style="font-size:13px;">${portrait.pain_point}</div>
+                </div>
+            `;
+        }
+        html += `</div>`;
+
+        // 子Tab内容: 场景画像
+        html += `<div class="guide-subcontent" id="guide-portrait">`;
+        if (portrait.line_position) {
+            html += `<div class="portrait-section"><div class="portrait-title">产线定位</div><div class="portrait-content">${portrait.line_position}</div></div>`;
+        }
+        if (portrait.current_operation) {
+            html += `<div class="portrait-section"><div class="portrait-title">当前操作方式</div><div class="portrait-content">${portrait.current_operation}</div></div>`;
+        }
+        if (portrait.environment) {
+            html += `<div class="portrait-section"><div class="portrait-title">作业环境</div><div class="portrait-content">${portrait.environment}</div></div>`;
+        }
+        if (portrait.pain_point) {
+            html += `<div class="portrait-section"><div class="portrait-title">核心痛点</div><div class="portrait-content">${portrait.pain_point}</div></div>`;
+        }
+        html += `</div>`;
+
+        // 子Tab内容: 难点分析
+        html += `<div class="guide-subcontent" id="guide-difficulties">`;
+        if (taskAnalysis.difficulty_summary) {
+            html += `<div class="info-block"><div class="info-block-title">难度总结</div><div class="info-block-content" style="font-size:13px;">${taskAnalysis.difficulty_summary}</div></div>`;
+        }
+        if (difficulties.length > 0) {
+            html += `<div class="info-block"><div class="info-block-title">关键难点 (${difficulties.length}项)</div><div class="guide-difficulties">`;
+            difficulties.forEach(d => {
+                html += `
+                    <div class="difficulty-item">
+                        <div class="difficulty-header">
+                            <span class="difficulty-step">Step ${d.step_ref}</span>
+                            <span class="difficulty-name">${d.l3_name || ''}</span>
+                        </div>
+                        <div class="difficulty-method">${d.worker_method || ''}</div>
+                        <div class="difficulty-expand">
+                            ${d.physical_constraints ? `<div class="difficulty-detail"><div class="difficulty-detail-label">物理约束</div><div class="difficulty-detail-text">${d.physical_constraints}</div></div>` : ''}
+                            ${d.human_robot_diff ? `<div class="difficulty-detail"><div class="difficulty-detail-label">人机差异</div><div class="difficulty-detail-text">${d.human_robot_diff}</div></div>` : ''}
+                            ${d.failure_and_recovery ? `<div class="difficulty-detail"><div class="difficulty-detail-label">失败与恢复</div><div class="difficulty-detail-text">${d.failure_and_recovery}</div></div>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            html += `</div></div>`;
+        }
+        html += `</div>`;
+
+        // 子Tab内容: 条件清单
+        html += `<div class="guide-subcontent" id="guide-conditions">`;
+        if (conditions.length > 0) {
+            // 按层分组
+            const layers = [...new Set(conditions.map(c => c.layer))];
+            layers.forEach(layer => {
+                const layerConditions = conditions.filter(c => c.layer === layer);
+                html += `<div class="info-block"><div class="info-block-title">${layer} (${layerConditions.length}项)</div>`;
+                layerConditions.forEach(c => {
+                    let statusClass = 'status-check';
+                    let statusText = '需确认';
+                    if (c.status === '满足') { statusClass = 'status-ok'; statusText = '满足'; }
+                    else if (c.status === '不满足') { statusClass = 'status-no'; statusText = '不满足'; }
+                    else if (c.status === '本场景不涉及') { statusClass = 'status-check'; statusText = '不涉及'; }
+                    html += `
+                        <div class="condition-detail">
+                            <div class="condition-header">
+                                <span class="condition-status ${statusClass}"></span>
+                                <span style="font-size:13px;color:#fff;">${c.name || ''}</span>
+                                <span class="condition-stage">${c.stage || ''}</span>
+                                <span style="font-size:11px;color:${statusClass === 'status-ok' ? '#22c55e' : (statusClass === 'status-no' ? '#ef4444' : '#eab308')}">${statusText}</span>
+                            </div>
+                            ${c.current_state ? `<div class="condition-state">${c.current_state}</div>` : ''}
+                            ${c.action_needed ? `<div class="condition-action">→ ${c.action_needed}</div>` : ''}
+                            <div class="condition-meta">
+                                ${c.estimated_cost ? `<span>预估成本: ${c.estimated_cost}</span>` : ''}
+                                ${c.estimated_duration ? `<span>预估周期: ${c.estimated_duration}</span>` : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            });
+        }
+        html += `</div>`;
+
+        // 子Tab内容: 避坑指南
+        html += `<div class="guide-subcontent" id="guide-pitfalls">`;
+        if (pitfalls.length > 0) {
+            pitfalls.forEach((p, i) => {
+                html += `
+                    <div class="pitfall-item">
+                        <div class="pitfall-title">${i + 1}. ${p.title || ''}</div>
+                        <div class="pitfall-row"><div class="pitfall-label">现象</div><div class="pitfall-text">${p.symptom || ''}</div></div>
+                        <div class="pitfall-row"><div class="pitfall-label">根因</div><div class="pitfall-text">${p.root_cause || ''}</div></div>
+                        <div class="pitfall-row"><div class="pitfall-label">规避</div><div class="pitfall-text" style="color:#22c55e;">${p.mitigation || ''}</div></div>
+                    </div>
+                `;
+            });
+        } else {
+            html += `<div class="no-data"><div class="no-data-text" style="font-size:13px;color:#555;">暂无避坑指南</div></div>`;
+        }
+        html += `</div>`;
+
+        // 子Tab内容: 经济性分析
+        html += `<div class="guide-subcontent" id="guide-economics">`;
+        if (economics.value_source) {
+            html += `<div class="economics-section"><div class="economics-title">价值来源</div><div style="font-size:13px;color:#aaa;line-height:1.7;">${economics.value_source}</div></div>`;
+        }
+        if (economics.cost_items_human && economics.cost_items_human.length > 0) {
+            html += `<div class="info-block"><div class="info-block-title">人工成本项</div>`;
+            economics.cost_items_human.forEach(item => {
+                html += `<div class="cost-item"><div class="cost-name">${item.item_name || ''}</div><div class="cost-reason">${item.why_relevant || ''}<br><span style="color:#4a9eff;">待采集: ${item.data_to_collect || ''}</span></div></div>`;
+            });
+            html += `</div>`;
+        }
+        if (economics.cost_items_robot && economics.cost_items_robot.length > 0) {
+            html += `<div class="info-block"><div class="info-block-title">机器人成本项</div>`;
+            economics.cost_items_robot.forEach(item => {
+                html += `<div class="cost-item"><div class="cost-name">${item.item_name || ''}</div><div class="cost-reason">${item.why_relevant || ''}<br><span style="color:#4a9eff;">待采集: ${item.data_to_collect || ''}</span></div></div>`;
+            });
+            html += `</div>`;
+        }
+        if (economics.sensitivity_analysis) {
+            html += `<div class="economics-section"><div class="economics-title">敏感性分析</div><div style="font-size:12px;color:#888;line-height:1.7;">${economics.sensitivity_analysis}</div></div>`;
+        }
+        if (economics.disclaimer) {
+            html += `<div style="font-size:11px;color:#555;font-style:italic;margin-top:12px;">${economics.disclaimer}</div>`;
+        }
+        if (!economics.value_source && (!economics.cost_items_human || economics.cost_items_human.length === 0)) {
+            html += `<div class="no-data"><div class="no-data-text" style="font-size:13px;color:#555;">暂无经济性分析</div></div>`;
+        }
+        html += `</div>`;
+
+        container.innerHTML = html;
+        currentGuideSubtab = 'overview';
+    }
+
+    // 建设指南子Tab切换
+    window.switchGuideSubtab = function(subtabId) {
+        currentGuideSubtab = subtabId;
+        document.querySelectorAll('.guide-subtab').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.subtab === subtabId);
+        });
+        document.querySelectorAll('.guide-subcontent').forEach(content => {
+            content.classList.toggle('active', content.id === `guide-${subtabId}`);
+        });
+    };
 
     function getQuadrant(scene) {
         const s = scene.scores || {};
@@ -1180,18 +2000,31 @@
         document.getElementById('stats-count').textContent = `${filteredScenes.length} / ${scenes.length}`;
 
         let q1 = 0, q2 = 0, q3 = 0, q4 = 0;
+        let full = 0, l3Only = 0, guideOnly = 0, basic = 0;
+
         filteredScenes.forEach(scene => {
             const q = getQuadrant(scene);
             if (q === '快速落地区') q1++;
             else if (q === '战略攻坚区') q2++;
             else if (q === '锦上添花区') q3++;
             else q4++;
+
+            // 数据状态统计
+            if (scene.data_status === 'full') full++;
+            else if (scene.data_status === 'l3_only') l3Only++;
+            else if (scene.data_status === 'guide_only') guideOnly++;
+            else basic++;
         });
 
         document.getElementById('stats-q1').textContent = q1;
         document.getElementById('stats-q2').textContent = q2;
         document.getElementById('stats-q3').textContent = q3;
         document.getElementById('stats-q4').textContent = q4;
+
+        document.getElementById('stats-full').textContent = full;
+        document.getElementById('stats-l3').textContent = l3Only;
+        document.getElementById('stats-guide').textContent = guideOnly;
+        document.getElementById('stats-basic').textContent = basic;
     }
 
     function updateGraph() {

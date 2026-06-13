@@ -1,0 +1,947 @@
+{
+  "scene_id": "15-152-00",
+  "scene_name": "CIP清洗接管-管道系统-多点切换",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "视觉查看清洗作业单，确认本次需操作的接点位置清单",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-作业单据-接点清单",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "行走至工具/备用软管存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手到软管/卡箍扳手存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "单手抓握卡箍扳手手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-卡箍扳手-旋拧功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "另一只手抓握备用软管中段",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-软管-直径30至50mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "4",
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "携带工具和软管行走至第一个CIP接点位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-软管及工具-双手分持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-60"
+    },
+    {
+      "step_order": 7,
+      "human_description": "沿工业楼梯上行至接点所在平台高度",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-标准工业楼梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 8,
+      "human_description": "在接点操作位置精确停住脚步",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-管道接口旁-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将携带的软管暂放于脚边地面",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-软管落地",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "视觉注视当前接口和管路状态，确认操作对象",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-管道接口-连接状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 11,
+      "human_description": "伸手到上游阀门手轮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-阀门手轮-管道侧方",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双手握住阀门手轮的轮辐",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-阀门手轮-直径100至200mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "顺时针旋转阀门手轮至全关位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-截止阀手轮-全开至全闭",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 14,
+      "human_description": "松开阀门手轮，手指张开",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-阀门手轮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "伸手至卡箍接头位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-卡箍接头-管道连接处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将卡箍扳手卡口对准卡箍螺杆",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-扳手卡口配合-间隙1mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 17,
+      "human_description": "逆时针旋转扳手松开卡箍螺杆",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-卡箍扳手-卫生级卡箍",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]使用专用卡箍扳手，属于工具辅助旋拧而非徒手旋拧",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 18,
+      "human_description": "移开扳手，一只手握住卡箍环体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-卡箍环体-弧形截面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将卡箍从两段管口法兰处分离取下",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-卡箍环体-径向脱开",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]卡箍脱开不受严格几何约束引导，偏离直线不会卡死，归入L2-05-03而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将卡箍放置于一旁临时存放处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-卡箍-近距放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双手握住软管接头两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-软管-直径30至50mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "沿轴向拔出软管接头，使两端法兰分离",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-软管接头-法兰密封配合",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]软管接头与法兰为密封配合，偏斜会导致密封圈卡死，属于L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将拆下的软管放置于指定回收区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-旧软管-近距放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 24,
+      "human_description": "弯腰拾取脚边预放的新软管",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 25,
+      "human_description": "双手抓握新软管接头两端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-软管-直径30至50mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "起身恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身恢复-站立姿态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将新软管接头精确对准两端管口法兰",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-软管接头-法兰对中",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 28,
+      "human_description": "沿轴向推入软管接头，使两端法兰密封贴合",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-软管接头-法兰密封配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 29,
+      "human_description": "取过卡箍，套在两端法兰凹槽外围",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-07",
+      "l2_name": "弹性形变装配",
+      "l3_id": "L3-07-07-001",
+      "l3_name": "弹装-卡箍环-径向撑开套入",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]卡箍需撑开后卡入法兰凹槽，涉及弹性形变",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 30,
+      "human_description": "使用卡箍扳手顺时针旋紧螺杆至规定扭矩",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-卡箍扳手-卫生级卡箍",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 31,
+      "human_description": "逆时针旋转阀门手轮至全开位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-截止阀手轮-全闭至全开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 32,
+      "human_description": "目视检查接口密封状态及管路标识，确认连接正确无误",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-卡箍接口-密封泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-作业单据-接点清单",
+      "l3_name_en": "Read-WorkOrder-ConnectionPointList",
+      "parent_l2_id": "L2-09-07",
+      "description": "目视读取CIP清洗作业单或电子工单上的接点位置清单，识别文字编号信息",
+      "object_category": "纸质/电子作业单据",
+      "parameter_ranges": {
+        "size_range": "A4纸或7-10寸屏幕",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "文字清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadySpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在食品车间环氧树脂地面上平稳匀速行走",
+      "object_category": "环氧地坪",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "步态稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架-无障碍直线",
+      "l3_name_en": "Reach-ToolRack-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "上肢沿无障碍直线路径伸向工具架上的目标位置",
+      "object_category": "工具架存放位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-卡箍扳手-旋拧功能姿",
+      "l3_name_en": "ToolGrip-ClampWrench-TorquePosition",
+      "parent_l2_id": "L2-04-03",
+      "description": "以旋拧功能姿势握持卡箍扳手手柄，手指按施力方向排列",
+      "object_category": "卡箍扳手",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm，长度150-250mm",
+        "weight_range": "0.3-0.8kg",
+        "force_range": "握力10-30N",
+        "precision_requirement": "功能姿势正确"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-软管-直径30至50mm",
+      "l3_name_en": "PowerGrip-Hose-Diameter30to50mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握食品级软管中段，提供稳定支撑力",
+      "object_category": "食品级软管",
+      "parameter_ranges": {
+        "size_range": "外径30-50mm",
+        "weight_range": "软管段0.5-3kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "稳定抓持"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-软管及工具-双手分持",
+      "l3_name_en": "LoadedWalk-HoseAndTool-TwoHandCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手分别持握软管和工具，在车间内负载行走",
+      "object_category": "软管+手工具组合",
+      "parameter_ranges": {
+        "size_range": "软管长度1-3m",
+        "weight_range": "总负载2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "步态稳定不绊"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-标准工业楼梯-上行",
+      "l3_name_en": "Climb-IndustrialStairs-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿标准工业楼梯向上攀登至高位平台",
+      "object_category": "工业楼梯",
+      "parameter_ranges": {
+        "size_range": "踏步高150-200mm，宽250-300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "踏步准确"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-管道接口旁-厘米级",
+      "l3_name_en": "Stop-PipeConnection-CentimeterAccuracy",
+      "parent_l2_id": "L2-01-08",
+      "description": "在管道接口操作位置精确停止，便于后续上肢操作",
+      "object_category": "操作工位",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-软管落地",
+      "l3_name_en": "Release-GradualOpen-HoseDrop",
+      "parent_l2_id": "L2-04-07",
+      "description": "渐进张开手指释放软管，使其可控落地",
+      "object_category": "软管",
+      "parameter_ranges": {
+        "size_range": "外径30-50mm",
+        "weight_range": "0.5-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "落地可控"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-管道接口-连接状态确认",
+      "l3_name_en": "Gaze-PipeConnection-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视注视管道接口区域，确认当前连接状态和管路标识",
+      "object_category": "管道接口",
+      "parameter_ranges": {
+        "size_range": "接口直径25-80mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "清晰辨识"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-阀门手轮-管道侧方",
+      "l3_name_en": "Reach-ValveHandwheel-PipeSide",
+      "parent_l2_id": "L2-03-01",
+      "description": "上肢从身体侧方伸向管道上的阀门手轮位置",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-阀门手轮-直径100至200mm",
+      "l3_name_en": "PowerGrip-ValveHandwheel-Diameter100to200mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手握住阀门手轮轮辐，准备施加旋转力矩",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-200mm",
+        "weight_range": "N/A（固定件）",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持稳固"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-截止阀手轮-全开至全闭",
+      "l3_name_en": "ValveOp-GateValve-FullOpenToClose",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转截止阀手轮从全开位置至全闭位置",
+      "object_category": "截止阀/闸阀",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-200mm",
+        "weight_range": "N/A",
+        "force_range": "扭矩5-30Nm",
+        "precision_requirement": "到位确认"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-阀门手轮",
+      "l3_name_en": "Release-GradualOpen-ValveHandwheel",
+      "parent_l2_id": "L2-04-07",
+      "description": "完成阀门操作后渐进松开手指释放手轮",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-卡箍接头-管道连接处",
+      "l3_name_en": "Reach-ClampJoint-PipeConnection",
+      "parent_l2_id": "L2-03-01",
+      "description": "上肢伸向管道连接处的卡箍接头位置",
+      "object_category": "卡箍接头",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-700mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-扳手卡口配合-间隙1mm",
+      "l3_name_en": "Insert-WrenchSocket-Gap1mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将扳手卡口对准并插入卡箍螺杆头部",
+      "object_category": "扳手-螺杆配合",
+      "parameter_ranges": {
+        "size_range": "螺杆规格M8-M12",
+        "weight_range": "N/A",
+        "force_range": "插入力5-15N",
+        "precision_requirement": "对中±1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-06-01-001",
+      "l3_name_zh": "工具旋拧-卡箍扳手-卫生级卡箍",
+      "l3_name_en": "ToolTorque-ClampWrench-SanitaryClamp",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用卡箍扳手旋紧或松开卫生级卡箍螺杆",
+      "object_category": "卫生级卡箍",
+      "parameter_ranges": {
+        "size_range": "卡箍规格1寸-3寸",
+        "weight_range": "卡箍0.2-0.8kg",
+        "force_range": "扭矩10-30Nm（约10-30kg力臂）",
+        "precision_requirement": "扭矩达标"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-卡箍环体-弧形截面",
+      "l3_name_en": "PowerGrip-ClampRing-ArcSection",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手握住卡箍的弧形环体部分",
+      "object_category": "卡箍环体",
+      "parameter_ranges": {
+        "size_range": "卡箍外径50-100mm",
+        "weight_range": "0.2-0.8kg",
+        "force_range": "握力15-40N",
+        "precision_requirement": "稳定抓持"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-卡箍环体-径向脱开",
+      "l3_name_en": "Pull-ClampRing-RadialRemove",
+      "parent_l2_id": "L2-05-03",
+      "description": "沿径向将松开的卡箍从法兰凹槽中拉出脱开",
+      "object_category": "卡箍",
+      "parameter_ranges": {
+        "size_range": "卡箍规格1寸-3寸",
+        "weight_range": "0.2-0.8kg",
+        "force_range": "拉力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-卡箍-近距放置",
+      "l3_name_en": "Transfer-Clamp-NearbyPlace",
+      "parent_l2_id": "L2-03-02",
+      "description": "将卡箍从管道处转移至临近存放位置",
+      "object_category": "卡箍",
+      "parameter_ranges": {
+        "size_range": "卡箍外径50-100mm",
+        "weight_range": "0.2-0.8kg",
+        "force_range": "N/A",
+        "precision_requirement": "±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-软管接头-法兰密封配合",
+      "l3_name_en": "Extract-HoseConnector-FlangeSeal",
+      "parent_l2_id": "L2-07-02",
+      "description": "沿轴向将软管接头从法兰密封配合中抽出",
+      "object_category": "软管接头",
+      "parameter_ranges": {
+        "size_range": "接头直径25-80mm",
+        "weight_range": "软管组件1-5kg",
+        "force_range": "抽出力20-80N",
+        "precision_requirement": "轴向对中"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-旧软管-近距放置",
+      "l3_name_en": "Transfer-OldHose-NearbyPlace",
+      "parent_l2_id": "L2-03-02",
+      "description": "将拆下的旧软管转移至回收存放区",
+      "object_category": "软管",
+      "parameter_ranges": {
+        "size_range": "软管长度0.5-2m",
+        "weight_range": "1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "±100mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下高度",
+      "l3_name_en": "BendOver-ModerateFlex-BelowKnee",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节和腰椎中度屈曲，使上肢可触及膝下高度物体",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "弯腰角度45-70度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "稳定平衡"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身恢复-站立姿态",
+      "l3_name_en": "BendOver-RiseRecover-StandingPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰状态恢复直立站立姿态",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "恢复角度45-70度",
+        "weight_range": "N/A（可能持物）",
+        "force_range": "N/A",
+        "precision_requirement": "稳定平衡"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-软管接头-法兰对中",
+      "l3_name_en": "PrecisePlace-HoseConnector-FlangeAlign",
+      "parent_l2_id": "L2-03-05",
+      "description": "将软管接头精确对准管道法兰中心位置",
+      "object_category": "软管接头",
+      "parameter_ranges": {
+        "size_range": "接头直径25-80mm",
+        "weight_range": "1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "对中±2mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-软管接头-法兰密封配合",
+      "l3_name_en": "Insert-HoseConnector-FlangeSeal",
+      "parent_l2_id": "L2-07-01",
+      "description": "沿轴向将软管接头推入法兰密封配合位置",
+      "object_category": "软管接头",
+      "parameter_ranges": {
+        "size_range": "接头直径25-80mm",
+        "weight_range": "1-5kg",
+        "force_range": "插入力30-100N",
+        "precision_requirement": "轴向对中±1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-07-07-001",
+      "l3_name_zh": "弹装-卡箍环-径向撑开套入",
+      "l3_name_en": "ElasticAssembly-ClampRing-RadialStretchFit",
+      "parent_l2_id": "L2-07-07",
+      "description": "将卡箍环体撑开后套入两端法兰凹槽，依靠弹性回复锁定",
+      "object_category": "卡箍",
+      "parameter_ranges": {
+        "size_range": "卡箍规格1寸-3寸",
+        "weight_range": "0.2-0.8kg",
+        "force_range": "撑开力20-60N",
+        "precision_requirement": "卡入凹槽"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-截止阀手轮-全闭至全开",
+      "l3_name_en": "ValveOp-GateValve-FullCloseToOpen",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转截止阀手轮从全闭位置至全开位置",
+      "object_category": "截止阀/闸阀",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-200mm",
+        "weight_range": "N/A",
+        "force_range": "扭矩5-30Nm",
+        "precision_requirement": "到位确认"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-卡箍接口-密封泄漏检查",
+      "l3_name_en": "CloseInspect-ClampJoint-SealLeakCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离目视检查卡箍接口密封状态，确认无泄漏隐患",
+      "object_category": "卡箍接口",
+      "parameter_ranges": {
+        "size_range": "检视距离100-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "可辨识密封圈状态"
+      },
+      "is_new": true,
+      "source_scene": "S-15-152-CIP-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-06-01",
+      "L2-06-03",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-07",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-01",
+    "涉及的L1数量": 9
+  }
+}

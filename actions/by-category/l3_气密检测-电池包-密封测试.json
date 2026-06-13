@@ -1,0 +1,971 @@
+{
+  "scene_id": "36-00-3612",
+  "scene_name": "气密检测-电池包-密封测试",
+  "total_steps": 35,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机位置向上游接收区直线行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在电池包取料点精确停止定位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视检查待测电池包外观状态确认可测试",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-电池包外观-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身使双手能够够到电池包",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手空载伸向电池包两侧抓取位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-电池包侧面-双臂协同",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手全掌握住电池包两侧把手或壳体",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-电池包壳体-大型箱体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调将电池包抬起并搬离原位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-电池包箱体-中重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "直起身体恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-起立恢复-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]弯腰后起身主要靠膝关节伸展，归入下蹲起立",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "手持电池包行走至气密检测设备前方",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-电池包-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "4-8"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在检测设备装载位置精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-检测设备舱口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将电池包精确放入检测设备的定位夹具中",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-电池包-定位夹具",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双手松开电池包完成放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "单手空载伸向气管快接头存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-气管接头架-单臂直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "手指握住气管快接头外壳",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-快接头外壳-圆柱体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将气管快接头移动至电池包气密接口上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-气管接头-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将气管快接头对准电池包气密检测口并插入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-气管快接头-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 17,
+      "human_description": "按压气管接头使卡扣锁定到位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-气管快接头卡扣-推入锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开手指释放已锁定的气管接头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "单手空载伸向传感器线缆接头",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-传感器接头架-单臂直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "用指尖捏住传感器信号线接头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-三指捏握-信号接头",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将传感器接头移动至电池包信号接口上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-传感器接头-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将传感器接头对准电池包接口并插入",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-002",
+      "l3_name": "对接-传感器信号接头-4自由度对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 23,
+      "human_description": "按压传感器接头使其卡扣锁定",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-002",
+      "l3_name": "卡接-传感器接头卡扣-推入锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开手指释放已锁定的传感器接头",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "手指伸向设备控制面板启动按钮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-004",
+      "l3_name": "伸达-控制面板-单臂直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "按下气密测试启动按钮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 27,
+      "human_description": "目视监控设备显示屏或指示灯等待测试完成",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-设备指示灯-状态监控",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "180-300"
+    },
+    {
+      "step_order": 28,
+      "human_description": "读取显示屏上的气密测试结果数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-显示屏数值-测试结果判读",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 29,
+      "human_description": "手指握住气管快接头解锁环并按压解锁",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-快接头外壳-圆柱体",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "拔出气管快接头脱离电池包",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-快接头-中等拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]快接头解锁后拉出过程偏离直线不会卡死，归入拉拔抽取而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 31,
+      "human_description": "捏住传感器接头解锁并拔出",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-002",
+      "l3_name": "拉拔-传感器接头-轻拉力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 32,
+      "human_description": "双手空载伸向检测设备内的电池包",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-电池包侧面-双臂协同",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 33,
+      "human_description": "双手全掌握住电池包两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-电池包壳体-大型箱体",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 34,
+      "human_description": "双臂协调将电池包从设备中抬起取出",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-电池包箱体-中重载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 35,
+      "human_description": "手持电池包行走至下游EOL测试工位并放置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-电池包-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "4-8"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "walk-epoxy-floor-constant-speed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房环氧地坪上以稳定速度直线行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离2-20m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点偏差<50cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工位标定点-厘米级",
+      "l3_name_en": "stop-workstation-marker-centimeter",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工位标定点精确停止，为后续操作做好定位准备",
+      "object_category": "地面标记",
+      "parameter_ranges": {
+        "size_range": "停位标记区域30x30cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-检测设备舱口-厘米级",
+      "l3_name_en": "stop-test-equipment-hatch-centimeter",
+      "parent_l2_id": "L2-01-08",
+      "description": "在检测设备装载舱口前精确停止，便于放入工件",
+      "object_category": "设备舱口",
+      "parameter_ranges": {
+        "size_range": "舱口宽度80-150cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-电池包-双臂前持",
+      "l3_name_en": "loaded-walk-battery-pack-two-arm-front-carry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身前持握电池包进行行走搬运",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "电池包尺寸600x400x150mm",
+        "weight_range": "15-40kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走稳定无晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-电池包外观-状态确认",
+      "l3_name_en": "gaze-battery-pack-appearance-status-check",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查电池包外观是否有损坏、标签是否完整等",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "电池包尺寸600x400x150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别明显缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-设备指示灯-状态监控",
+      "l3_name_en": "gaze-equipment-indicator-status-monitor",
+      "parent_l2_id": "L2-09-01",
+      "description": "持续观察设备指示灯或显示屏监控测试进度",
+      "object_category": "指示灯/显示屏",
+      "parameter_ranges": {
+        "size_range": "显示区域50-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能辨识颜色和数字"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-显示屏数值-测试结果判读",
+      "l3_name_en": "read-display-value-test-result",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取测试设备显示屏上的气密测试数值并判断合格与否",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏5-10寸",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能读取小数点后2位"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "bend-medium-forward-waist-height",
+      "parent_l2_id": "L2-02-02",
+      "description": "弯腰使双手能够到达腰部以下高度的物体",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "前屈角度30-60度"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-起立恢复-负载状态",
+      "l3_name_en": "squat-stand-up-loaded",
+      "parent_l2_id": "L2-02-03",
+      "description": "在手持负载状态下从弯腰或下蹲姿态恢复站立",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "负载10-40kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳起立无晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-电池包侧面-双臂协同",
+      "l3_name_en": "reach-battery-side-dual-arm",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时伸向电池包两侧准备抓取",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "伸达距离40-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "对准抓取位置±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-气管接头架-单臂直线",
+      "l3_name_en": "reach-air-connector-rack-single-arm",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂伸向气管快接头存放位置准备抓取",
+      "object_category": "接头架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-传感器接头架-单臂直线",
+      "l3_name_en": "reach-sensor-connector-rack-single-arm",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂伸向传感器线缆接头存放位置准备抓取",
+      "object_category": "接头架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-01-004",
+      "l3_name_zh": "伸达-控制面板-单臂直线",
+      "l3_name_en": "reach-control-panel-single-arm",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂伸向设备控制面板上的按钮",
+      "object_category": "控制面板",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±1cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-气管接头-近距",
+      "l3_name_en": "transfer-air-connector-short-distance",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持气管快接头移动到目标位置",
+      "object_category": "气管快接头",
+      "parameter_ranges": {
+        "size_range": "接头直径20-40mm",
+        "weight_range": "50-200g",
+        "force_range": "N/A",
+        "precision_requirement": "到位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-传感器接头-近距",
+      "l3_name_en": "transfer-sensor-connector-short-distance",
+      "parent_l2_id": "L2-03-02",
+      "description": "手持传感器信号接头移动到目标位置",
+      "object_category": "信号接头",
+      "parameter_ranges": {
+        "size_range": "接头宽度10-25mm",
+        "weight_range": "20-100g",
+        "force_range": "N/A",
+        "precision_requirement": "到位精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-电池包箱体-中重载",
+      "l3_name_en": "coordinated-carry-battery-pack-medium-heavy",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运中重型电池包",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "尺寸600x400x150mm",
+        "weight_range": "15-40kg",
+        "force_range": "单臂负载7.5-20kg",
+        "precision_requirement": "搬运过程平稳"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-电池包-定位夹具",
+      "l3_name_en": "precise-place-battery-pack-fixture",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电池包精确放入检测设备的定位夹具中",
+      "object_category": "电池包",
+      "parameter_ranges": {
+        "size_range": "夹具定位公差±5mm",
+        "weight_range": "15-40kg",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-电池包壳体-大型箱体",
+      "l3_name_en": "power-grip-battery-pack-large-box",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手掌包络握住电池包侧面或把手",
+      "object_category": "电池包壳体",
+      "parameter_ranges": {
+        "size_range": "握持面宽度80-150mm",
+        "weight_range": "15-40kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "握持稳固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-快接头外壳-圆柱体",
+      "l3_name_en": "power-grip-quick-connector-cylinder",
+      "parent_l2_id": "L2-04-01",
+      "description": "手指全握住气管快接头的圆柱形外壳",
+      "object_category": "快接头",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "50-200g",
+        "force_range": "握力10-30N",
+        "precision_requirement": "握持稳定可操作"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-三指捏握-信号接头",
+      "l3_name_en": "pinch-three-finger-signal-connector",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指、食指、中指捏住小型信号接头",
+      "object_category": "信号接头",
+      "parameter_ranges": {
+        "size_range": "接头宽度10-25mm",
+        "weight_range": "20-100g",
+        "force_range": "捏力3-10N",
+        "precision_requirement": "捏持稳定可定向"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "release-gradual-open-object-supported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑后渐进张开手指释放",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "释放平稳无冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-气管快接头-3自由度对准",
+      "l3_name_en": "dock-air-quick-connector-3dof-align",
+      "parent_l2_id": "L2-07-03",
+      "description": "将气管快接头对准电池包气密检测接口并插入",
+      "object_category": "气管快接头",
+      "parameter_ranges": {
+        "size_range": "接口直径10-20mm",
+        "weight_range": "50-200g",
+        "force_range": "插入力5-20N",
+        "precision_requirement": "对准精度±1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-07-03-002",
+      "l3_name_zh": "对接-传感器信号接头-4自由度对准",
+      "l3_name_en": "dock-sensor-signal-connector-4dof-align",
+      "parent_l2_id": "L2-07-03",
+      "description": "将传感器信号接头对准电池包信号接口并插入",
+      "object_category": "信号接头",
+      "parameter_ranges": {
+        "size_range": "接口针数4-20针",
+        "weight_range": "20-100g",
+        "force_range": "插入力3-15N",
+        "precision_requirement": "对准精度±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-气管快接头卡扣-推入锁定",
+      "l3_name_en": "snap-air-connector-latch-push-lock",
+      "parent_l2_id": "L2-07-06",
+      "description": "按压气管快接头使卡扣弹片变形后锁定到位",
+      "object_category": "快接头卡扣",
+      "parameter_ranges": {
+        "size_range": "接头直径10-20mm",
+        "weight_range": "N/A",
+        "force_range": "按压力10-30N",
+        "precision_requirement": "听到卡扣click声"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-07-06-002",
+      "l3_name_zh": "卡接-传感器接头卡扣-推入锁定",
+      "l3_name_en": "snap-sensor-connector-latch-push-lock",
+      "parent_l2_id": "L2-07-06",
+      "description": "按压传感器信号接头使锁扣锁定到位",
+      "object_category": "信号接头卡扣",
+      "parameter_ranges": {
+        "size_range": "接头宽度10-25mm",
+        "weight_range": "N/A",
+        "force_range": "按压力5-15N",
+        "precision_requirement": "锁扣到位确认"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业按钮-中等力度",
+      "l3_name_en": "press-industrial-button-medium-force",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按下工业设备控制面板上的启动按钮",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径20-40mm",
+        "weight_range": "N/A",
+        "force_range": "按压力3-10N",
+        "precision_requirement": "按压触发反馈"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-快接头-中等拉力",
+      "l3_name_en": "pull-quick-connector-medium-force",
+      "parent_l2_id": "L2-05-03",
+      "description": "解锁后将气管快接头从接口中拔出",
+      "object_category": "快接头",
+      "parameter_ranges": {
+        "size_range": "接头直径10-20mm",
+        "weight_range": "N/A",
+        "force_range": "拉拔力10-30N",
+        "precision_requirement": "直线拉出"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    },
+    {
+      "l3_id": "L3-05-03-002",
+      "l3_name_zh": "拉拔-传感器接头-轻拉力",
+      "l3_name_en": "pull-sensor-connector-light-force",
+      "parent_l2_id": "L2-05-03",
+      "description": "解锁后将传感器信号接头从接口中拔出",
+      "object_category": "信号接头",
+      "parameter_ranges": {
+        "size_range": "接头宽度10-25mm",
+        "weight_range": "N/A",
+        "force_range": "拉拔力5-15N",
+        "precision_requirement": "直线拉出避免弯折针脚"
+      },
+      "is_new": true,
+      "source_scene": "S-36-00-3612-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-03",
+      "L2-07-03",
+      "L2-07-06",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

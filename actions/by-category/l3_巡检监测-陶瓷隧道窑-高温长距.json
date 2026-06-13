@@ -1,0 +1,648 @@
+{
+  "scene_id": "30-307-3071",
+  "scene_name": "巡检监测-陶瓷隧道窑-高温长距",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从控制室出发，沿厂房通道行走至隧道窑预热带入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-水泥地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在预热带入口巡检起始标识处精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-巡检起点标识-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "沿窑体侧通道向前直行，进入预热带区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-窑侧耐火通道-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-120"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在第一个温度监测点前停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-温度监测点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "转身面向窑壁温度显示仪表",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "目视对准温度显示仪表盘面",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-温度显示仪表-数值读取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "读取温度仪表上的数字显示值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-数字温度表-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "转身面向窑壁观火孔位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向侧",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "弯腰俯身至观火孔高度以便观察",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "目视对准观火孔观察内部火焰颜色与形态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-窑炉观火孔-火焰状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 11,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-起立恢复-短时",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰状态起立，主要涉及膝关节和髋关节的伸展，归入下蹲起立而非弯腰俯身的逆过程",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "继续沿窑侧通道直行进入烧成带区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-高温区通道-中速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "90-180"
+    },
+    {
+      "step_order": 13,
+      "human_description": "在窑车运行观察点停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-窑车观察点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "扫视窑车轨道及车体运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-窑车轨道区域-水平扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 15,
+      "human_description": "侧耳倾听窑车运行声音判断是否有异常摩擦或卡滞",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-机械运行声-窑车轨道处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 16,
+      "human_description": "继续沿烧成带通道直行至风机区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-高温区通道-中速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-120"
+    },
+    {
+      "step_order": 17,
+      "human_description": "在风机组观察点停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-004",
+      "l3_name": "停位-风机监测点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "目视风机运转状态及指示灯",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-003",
+      "l3_name": "注视-风机设备-运转状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 19,
+      "human_description": "侧耳倾听风机运转声音判断是否有异常振动或噪声",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-002",
+      "l3_name": "侧听-风机运转声-风机组处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 20,
+      "human_description": "继续沿通道直行进入冷却带区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-004",
+      "l3_name": "行走-冷却带通道-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "90-180"
+    },
+    {
+      "step_order": 21,
+      "human_description": "在冷却带监测点停位进行最后一轮温度检查",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-温度监测点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "读取冷却带温度仪表数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-数字温度表-温度数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "沿冷却带通道直行至隧道窑出口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-004",
+      "l3_name": "行走-冷却带通道-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-120"
+    },
+    {
+      "step_order": 24,
+      "human_description": "从隧道窑出口返回控制室完成本轮巡检",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-水泥地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-水泥地面-匀速",
+      "l3_name_en": "Walk-ConcreteSurface-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在水泥或硬化地面上以匀速稳定步态行走，无方向大幅变化",
+      "object_category": "平整硬化地面",
+      "parameter_ranges": {
+        "size_range": "行走距离10-100m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<0.5m"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-窑侧耐火通道-匀速",
+      "l3_name_en": "Walk-KilnSideRefractory-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "沿隧道窑侧面耐火砖或金属格栅通道行走，环境温度较高",
+      "object_category": "耐火通道地面",
+      "parameter_ranges": {
+        "size_range": "通道宽度0.8-1.5m，行走距离50-150m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "保持通道中线±0.3m"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-01-003",
+      "l3_name_zh": "行走-高温区通道-中速",
+      "l3_name_en": "Walk-HighTempZone-MediumPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在烧成带高温区域侧通道行走，需适应环境辐射热",
+      "object_category": "高温区耐火通道",
+      "parameter_ranges": {
+        "size_range": "环境温度40-80℃（通道区），行走距离20-50m段",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "与窑壁保持安全距离>0.3m"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-01-004",
+      "l3_name_zh": "行走-冷却带通道-匀速",
+      "l3_name_en": "Walk-CoolingZone-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "沿隧道窑冷却带侧通道行走，温度逐渐降低",
+      "object_category": "冷却区通道地面",
+      "parameter_ranges": {
+        "size_range": "行走距离20-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<0.3m"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-巡检起点标识-分米级",
+      "l3_name_en": "Stop-InspectionStartMark-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在巡检路线起始点标识处精确停止，准备开始巡检作业",
+      "object_category": "地面标识/标线",
+      "parameter_ranges": {
+        "size_range": "标识尺寸0.3-0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-温度监测点-分米级",
+      "l3_name_en": "Stop-TempMonitorPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在温度监测仪表前方精确停止，便于读取数据",
+      "object_category": "监测点标识",
+      "parameter_ranges": {
+        "size_range": "与仪表距离0.5-1.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±15cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-窑车观察点-分米级",
+      "l3_name_en": "Stop-KilnCarViewPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在窑车轨道观察位置精确停止，便于观察窑车运行状态",
+      "object_category": "观察点标识",
+      "parameter_ranges": {
+        "size_range": "与轨道距离0.5-1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-01-08-004",
+      "l3_name_zh": "停位-风机监测点-分米级",
+      "l3_name_en": "Stop-FanMonitorPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在风机设备观察位置精确停止，便于检查风机运转状态",
+      "object_category": "设备监测点",
+      "parameter_ranges": {
+        "size_range": "与风机距离1.0-2.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干前屈约45-60度，使头部下降至腰部高度以便观察低位目标",
+      "object_category": "低位观察目标",
+      "parameter_ranges": {
+        "size_range": "目标高度0.5-1.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-起立恢复-短时",
+      "l3_name_en": "Squat-StandRecover-Brief",
+      "parent_l2_id": "L2-02-03",
+      "description": "从弯腰或下蹲姿态恢复至直立站姿",
+      "object_category": "姿态恢复",
+      "parameter_ranges": {
+        "size_range": "高度变化0.3-0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平衡保持"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向侧",
+      "l3_name_en": "TorsoRotate-90Deg-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，躯干绕垂直轴旋转约90度面向侧面目标",
+      "object_category": "躯干旋转",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准目标±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-温度显示仪表-数值读取",
+      "l3_name_en": "Gaze-TempDisplay-ValueRead",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准温度显示仪表盘面，聚焦数字或指针显示区域",
+      "object_category": "工业仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径50-150mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准表盘中心±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-窑炉观火孔-火焰状态确认",
+      "l3_name_en": "Gaze-KilnPeephole-FlameCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准窑炉观火孔，观察内部火焰颜色、形态及分布",
+      "object_category": "窑炉观火孔",
+      "parameter_ranges": {
+        "size_range": "观火孔直径30-80mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线正对孔心±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-01-003",
+      "l3_name_zh": "注视-风机设备-运转状态确认",
+      "l3_name_en": "Gaze-FanEquipment-OperationCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准风机设备本体及指示灯，确认运转状态",
+      "object_category": "旋转设备",
+      "parameter_ranges": {
+        "size_range": "风机直径0.3-1.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖风机主体及指示面板"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-窑车轨道区域-水平扫描",
+      "l3_name_en": "Scan-KilnCarTrack-HorizontalSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线水平扫过窑车轨道及车体，检查运行平稳性和异常",
+      "object_category": "轨道运输设备",
+      "parameter_ranges": {
+        "size_range": "扫描区域宽度2-4m，长度5-10m可视范围",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖轨道全宽及可见窑车"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-机械运行声-窑车轨道处",
+      "l3_name_en": "Listen-MechanicalSound-KilnCarTrack",
+      "parent_l2_id": "L2-09-05",
+      "description": "侧耳倾听窑车在轨道上运行的声音，判断是否有异常摩擦、卡滞声",
+      "object_category": "轨道运输声源",
+      "parameter_ranges": {
+        "size_range": "声源距离1-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "辨别正常运行声与异常噪声"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-05-002",
+      "l3_name_zh": "侧听-风机运转声-风机组处",
+      "l3_name_en": "Listen-FanOperationSound-FanUnit",
+      "parent_l2_id": "L2-09-05",
+      "description": "侧耳倾听风机运转产生的声音，判断是否有异常振动或轴承噪声",
+      "object_category": "旋转设备声源",
+      "parameter_ranges": {
+        "size_range": "声源距离1-3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "辨别正常风噪与异常机械声"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-数字温度表-温度数值",
+      "l3_name_en": "Read-DigitalTempMeter-TempValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取数字式温度显示仪表上的温度数值，需正确识别数字",
+      "object_category": "数字显示仪表",
+      "parameter_ranges": {
+        "size_range": "显示字高10-30mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数字识别正确率100%"
+      },
+      "is_new": true,
+      "source_scene": "S-30-307-3071-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-05",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 3
+  }
+}

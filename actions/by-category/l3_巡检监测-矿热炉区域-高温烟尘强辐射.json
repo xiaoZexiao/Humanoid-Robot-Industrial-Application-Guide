@@ -1,0 +1,663 @@
+{
+  "scene_id": "31-314-3140",
+  "scene_name": "巡检监测-矿热炉区域-高温烟尘强辐射",
+  "total_steps": 26,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从控制室或安全待命区出发，沿车间主通道行走至矿热炉区域入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-耐热地坪-高温区巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在电极观察安全位（距炉体约5-8米）精确停位，面向电极工作区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-005",
+      "l3_name": "停位-高温安全观测点-米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "注视电极端部位置，观察电极消耗长度和表面状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-004",
+      "l3_name": "注视-高温电极-消耗状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 4,
+      "human_description": "注视电弧区域，观察电弧稳定性和颜色特征",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-005",
+      "l3_name": "注视-电弧状态-稳定性判断",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽有强光辐射需防护滤光，但核心动作仍是视觉对准，归入L2-09-01",
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 5,
+      "human_description": "上半身向炉口方向旋转约45-90度，调整视线朝向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度内-朝向下一检测点",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "沿炉台边缘安全通道行走至炉口观察位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-耐热地坪-高温区巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 7,
+      "human_description": "在炉口料面观察位精确停位，与炉口保持安全距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-005",
+      "l3_name": "停位-高温安全观测点-米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "对炉口料面区域进行系统性扫视，观察料面高度和分布",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-003",
+      "l3_name": "扫检-炉口料面-熔炼状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 9,
+      "human_description": "近距观察料面局部区域的熔化状况和烟气逸出情况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-002",
+      "l3_name": "贴检-熔炼料面-熔化均匀性",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽称'贴检'但因高温需保持1-2米安全距离，本质仍属近距检视而非远距扫描",
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 10,
+      "human_description": "行走至电气参数监控仪表区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-耐热地坪-高温区巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-25"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在电气仪表柜前精确停位，面向仪表显示区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料暂存区-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "注视电流表，读取各相电极电流数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-003",
+      "l3_name": "读取-电流表盘-电流数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 13,
+      "human_description": "注视电压表，读取各相电极电压数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-004",
+      "l3_name": "读取-电压表盘-电压数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 14,
+      "human_description": "注视功率表或功率因数表，读取运行功率参数",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-005",
+      "l3_name": "读取-功率表盘-功率数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 15,
+      "human_description": "转向并行走至冷却系统监控区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 16,
+      "human_description": "在冷却水管路检查位置精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-006",
+      "l3_name": "停位-管路检查点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "注视冷却水流量计，读取冷却水流量数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-006",
+      "l3_name": "读取-流量表盘-流量数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "注视冷却水温度表，读取进出水温度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-007",
+      "l3_name": "读取-温度表盘-冷却水温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 19,
+      "human_description": "注视冷却系统压力表，读取水压数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-机械压力表-压力数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "侧耳倾听冷却水泵运行声音，判断是否存在异常振动或杂音",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-002",
+      "l3_name": "侧听-冷却泵运转声-异响判别",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 21,
+      "human_description": "目视检查冷却水管路接头有无渗漏",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-006",
+      "l3_name": "注视-管路接头-渗漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 22,
+      "human_description": "空手伸向红外测温仪存放位置准备取用",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料暂存区-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "以功能姿势握持红外测温仪，食指置于扳机位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-003",
+      "l3_name": "工具握持-红外测温枪-测量功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将红外测温仪对准炉壁关键部位进行温度测量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-003",
+      "l3_name": "测量定位-红外测温枪-炉壁温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 25,
+      "human_description": "对矿热炉区域进行整体环视扫描确认无安全隐患",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-004",
+      "l3_name": "扫检-矿热炉区域-安全确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 26,
+      "human_description": "沿安全通道行走返回控制室或安全区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-003",
+      "l3_name": "行走-耐热地坪-高温区巡检",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-003",
+      "l3_name_zh": "行走-耐热地坪-高温区巡检",
+      "l3_name_en": "Walk-HeatResistantFloor-HighTempPatrol",
+      "parent_l2_id": "L2-01-01",
+      "description": "在矿热炉等高温冶金设备周边的耐热地坪上以稳定匀速行走，需适应高温辐射、烟尘和强光环境",
+      "object_category": "耐热地坪/金属格栅",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.5-3m，步幅0.4-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±30cm，与高温区保持安全距离"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-01-08-005",
+      "l3_name_zh": "停位-高温安全观测点-米级",
+      "l3_name_en": "Stop-HighTempSafeObservationPoint-MeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在高温设备观察安全距离（5-10米）处精确停止站定，确保处于热辐射和飞溅物安全区",
+      "object_category": "安全观测标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域约1×1m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "与热源保持最小安全距离5m，位置精度±50cm"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-01-004",
+      "l3_name_zh": "注视-高温电极-消耗状态",
+      "l3_name_en": "Gaze-HighTempElectrode-ConsumptionStatus",
+      "parent_l2_id": "L2-09-01",
+      "description": "透过防护滤光装置目视对准矿热炉电极端部，观察电极长度消耗情况、表面氧化状态和断裂风险",
+      "object_category": "碳素电极/石墨电极",
+      "parameter_ranges": {
+        "size_range": "电极直径1-2m，观察距离5-10m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视线对准精度±5°，需配合防辐射护目"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-01-005",
+      "l3_name_zh": "注视-电弧状态-稳定性判断",
+      "l3_name_en": "Gaze-ArcStatus-StabilityJudgment",
+      "parent_l2_id": "L2-09-01",
+      "description": "透过强光滤光装置观察矿热炉电弧区域，判断电弧稳定性、亮度变化和颜色特征是否正常",
+      "object_category": "电弧/等离子区",
+      "parameter_ranges": {
+        "size_range": "电弧区域直径0.5-2m，观察距离8-15m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "需强光滤波防护，色温判断精度"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-03-003",
+      "l3_name_zh": "扫检-炉口料面-熔炼状态",
+      "l3_name_en": "ScanInspect-FurnaceMouthCharge-SmeltingStatus",
+      "parent_l2_id": "L2-09-03",
+      "description": "对矿热炉炉口料面进行系统性视觉扫描，观察炉料分布、料面高度、熔化区域和塌料情况",
+      "object_category": "炉口料面/熔融区",
+      "parameter_ranges": {
+        "size_range": "料面直径3-6m，观察距离5-10m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视野覆盖全部料面，需配合热成像"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-02-002",
+      "l3_name_zh": "贴检-熔炼料面-熔化均匀性",
+      "l3_name_en": "CloseInspect-SmeltingCharge-MeltingUniformity",
+      "parent_l2_id": "L2-09-02",
+      "description": "在安全距离内仔细观察料面局部区域的熔化状况，包括熔池形状、渣层分布和气体逸出情况",
+      "object_category": "熔融料面",
+      "parameter_ranges": {
+        "size_range": "检视局部区域0.5-1m²，观察距离3-5m（带防护）",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别熔化异常和塌料前兆"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-003",
+      "l3_name_zh": "读取-电流表盘-电流数值",
+      "l3_name_en": "Read-AmmeterDial-CurrentValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准电流表表盘或数显屏，读取各相电极的运行电流数值并判断是否在工艺范围内",
+      "object_category": "电流表/数显仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1%FS，电流范围0-100kA"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-004",
+      "l3_name_zh": "读取-电压表盘-电压数值",
+      "l3_name_en": "Read-VoltmeterDial-VoltageValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准电压表表盘或数显屏，读取各相电极工作电压数值",
+      "object_category": "电压表/数显仪表",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1%FS，电压范围0-500V"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-005",
+      "l3_name_zh": "读取-功率表盘-功率数值",
+      "l3_name_en": "Read-PowerMeterDial-PowerValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准功率表或功率因数表，读取矿热炉当前运行功率参数",
+      "object_category": "功率表/功率因数表",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2%，功率范围0-50MW"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-01-08-006",
+      "l3_name_zh": "停位-管路检查点-分米级",
+      "l3_name_en": "Stop-PipelineCheckpoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在冷却水管路或工艺管道检查位置精确停止，便于观察管路状态和读取仪表",
+      "object_category": "管路检查工位",
+      "parameter_ranges": {
+        "size_range": "停位区域0.5×0.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-006",
+      "l3_name_zh": "读取-流量表盘-流量数值",
+      "l3_name_en": "Read-FlowmeterDial-FlowValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准冷却水流量计表盘或数显屏，读取当前冷却水流量数值",
+      "object_category": "流量计/流量显示",
+      "parameter_ranges": {
+        "size_range": "表盘直径80-150mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2%，流量范围根据管径"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-07-007",
+      "l3_name_zh": "读取-温度表盘-冷却水温度",
+      "l3_name_en": "Read-TemperatureGauge-CoolingWaterTemp",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准冷却水进出口温度表，读取温度数值并计算温升判断冷却效果",
+      "object_category": "温度表/数显温度计",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-100mm或数显屏",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±1℃，温度范围0-100℃"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-05-002",
+      "l3_name_zh": "侧听-冷却泵运转声-异响判别",
+      "l3_name_en": "Listen-CoolingPumpSound-AnomalyDetection",
+      "parent_l2_id": "L2-09-05",
+      "description": "调整头部使耳部朝向冷却水泵方向，听取泵体运转声音判断是否存在轴承磨损、气蚀或振动异常",
+      "object_category": "冷却水泵/循环泵",
+      "parameter_ranges": {
+        "size_range": "聆听距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "在环境噪音70-90dB中识别异常声"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-01-006",
+      "l3_name_zh": "注视-管路接头-渗漏检查",
+      "l3_name_en": "Gaze-PipeJoint-LeakageCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查冷却水管路的接头、法兰和阀门处，观察是否存在滴漏、渗水或锈蚀痕迹",
+      "object_category": "管路接头/法兰/阀门",
+      "parameter_ranges": {
+        "size_range": "接头直径DN50-DN200",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别滴漏级别渗水"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-04-03-003",
+      "l3_name_zh": "工具握持-红外测温枪-测量功能姿",
+      "l3_name_en": "ToolGrip-InfraredThermometer-MeasurementPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以测量操作所需的功能姿势握持红外测温枪，食指置于测量扳机位置便于瞄准和触发",
+      "object_category": "红外测温仪",
+      "parameter_ranges": {
+        "size_range": "测温枪长度150-250mm",
+        "weight_range": "200-500g",
+        "force_range": "握持力10-20N",
+        "precision_requirement": "握姿稳定可单手瞄准"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-06-003",
+      "l3_name_zh": "测量定位-红外测温枪-炉壁温度",
+      "l3_name_en": "MeasurePosition-InfraredThermometer-FurnaceWallTemp",
+      "parent_l2_id": "L2-09-06",
+      "description": "将红外测温枪激光瞄准炉壁、电极夹持器、冷却壁等关键部位，扣动扳机进行非接触温度测量",
+      "object_category": "炉壁/设备表面",
+      "parameter_ranges": {
+        "size_range": "测量距离1-10m，光斑直径根据距离变化",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "测温精度±2℃或±2%，量程-50~1500℃"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    },
+    {
+      "l3_id": "L3-09-03-004",
+      "l3_name_zh": "扫检-矿热炉区域-安全确认",
+      "l3_name_en": "ScanInspect-SubmergedArcFurnaceArea-SafetyConfirm",
+      "parent_l2_id": "L2-09-03",
+      "description": "对整个矿热炉区域进行环视扫描，确认设备运行正常、无异常烟气泄漏、无人员安全隐患",
+      "object_category": "矿热炉区域/设备群",
+      "parameter_ranges": {
+        "size_range": "扫描区域100-500m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视野覆盖>90%，识别明显异常"
+      },
+      "is_new": true,
+      "source_scene": "31-314-3140-Inspection-SubmergedArcFurnace"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-04-03",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-05",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-09-07",
+    "涉及的L1数量": 5
+  }
+}

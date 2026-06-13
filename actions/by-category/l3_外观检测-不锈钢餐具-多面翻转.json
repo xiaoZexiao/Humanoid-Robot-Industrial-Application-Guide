@@ -1,0 +1,318 @@
+{
+  "scene_id": "33-338-3382",
+  "scene_name": "外观检测-不锈钢餐具-多面翻转",
+  "total_steps": 12,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "伸手至待检餐具物料盒位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料存放区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 2,
+      "human_description": "用拇指和食指捏取餐具边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指侧捏-扁平餐具边缘",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "将餐具移至灯箱检测区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻型餐具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "目视检查餐具正面表面是否有缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-餐具表面-外观缺陷",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "翻转餐具180度使背面朝向视线",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕长轴-180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "目视检查餐具背面表面是否有缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-餐具表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "旋转调整餐具姿态以显露边缘便于检视",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-变倾角-小角度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "目视检查餐具边缘是否有缺陷",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-餐具表面-外观缺陷",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "倾斜餐具改变光照反射角度以暴露微小划痕",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "翻转-变倾角-小角度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在变换光照角度下扫视餐具全表面检测微小划痕和抛光不均",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-餐具表面-变角度扫描",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]与L2-09-01区分：本步骤为系统性覆盖整个表面区域的扫描而非对单一目标点的注视，扫描面积>0.1m²符合L2-09-03判定标准",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将餐具移至判定结果对应的周转盒上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻型餐具-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "松开手指使餐具平稳落入周转盒中",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-自由落入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料存放区-无障碍直线",
+      "l3_name_en": "Reach-MaterialStorageArea-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从身体侧方沿直线轨迹伸向前方物料存放区域，路径上无障碍物",
+      "object_category": "物料存放区/周转盒",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A（空载）",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指侧捏-扁平餐具边缘",
+      "l3_name_en": "Pinch-TwoFingerLateralGrip-FlatCutleryEdge",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指侧面捏取扁平餐具（刀/叉/勺）的边缘部位",
+      "object_category": "不锈钢餐具",
+      "parameter_ranges": {
+        "size_range": "厚度1-3mm，长度150-250mm",
+        "weight_range": "30-80g",
+        "force_range": "捏取力2-5N",
+        "precision_requirement": "边缘对准精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻型餐具-近距",
+      "l3_name_en": "Transfer-LightCutlery-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握轻型餐具在工位范围内短距离移动",
+      "object_category": "不锈钢餐具",
+      "parameter_ranges": {
+        "size_range": "长度150-250mm",
+        "weight_range": "30-80g",
+        "force_range": "N/A",
+        "precision_requirement": "终点定位±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-餐具表面-外观缺陷",
+      "l3_name_en": "Gaze-CutlerySurface-VisualDefect",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准餐具表面，检测划痕、凹坑、锈斑、抛光不均等外观缺陷",
+      "object_category": "餐具表面",
+      "parameter_ranges": {
+        "size_range": "检测面积20-100cm²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "缺陷检测分辨率0.1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕长轴-180度",
+      "l3_name_en": "Flip-AroundLongAxis-180Degrees",
+      "parent_l2_id": "L2-03-04",
+      "description": "将手持物体绕其长轴方向翻转180度，实现正反面切换",
+      "object_category": "扁平型物体",
+      "parameter_ranges": {
+        "size_range": "长度100-300mm",
+        "weight_range": "20-200g",
+        "force_range": "N/A",
+        "precision_requirement": "翻转角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "翻转-变倾角-小角度",
+      "l3_name_en": "Tilt-AngleAdjustment-SmallAngle",
+      "parent_l2_id": "L2-03-04",
+      "description": "小幅度调整手持物体的倾斜角度，用于改变观察视角或光照反射角度",
+      "object_category": "扁平型物体",
+      "parameter_ranges": {
+        "size_range": "长度100-300mm",
+        "weight_range": "20-200g",
+        "force_range": "N/A",
+        "precision_requirement": "角度调整精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-餐具表面-变角度扫描",
+      "l3_name_en": "Scan-CutlerySurface-VariableAngleScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "通过调整餐具与视线/光源的相对角度，系统性扫视餐具全表面以检测微小缺陷",
+      "object_category": "餐具表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积50-200cm²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "微小划痕检测分辨率0.05mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-自由落入",
+      "l3_name_en": "Release-GradualFingerOpen-FreeDrop",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开释放物体，使物体在重力作用下自由落入下方容器",
+      "object_category": "轻型物体",
+      "parameter_ranges": {
+        "size_range": "物体尺寸50-300mm",
+        "weight_range": "20-200g",
+        "force_range": "N/A",
+        "precision_requirement": "落入位置精度±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-33-338-3382-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-09-01（3次）与L2-03-04（3次）并列，其中L2-09-01为场景核心动作",
+    "涉及的L1数量": 3
+  }
+}

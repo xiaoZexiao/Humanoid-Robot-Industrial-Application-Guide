@@ -1,0 +1,618 @@
+{
+  "scene_id": "37-374-3743",
+  "scene_name": "测试操作-航天器功能测试-洁净室人机界面操作",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "穿戴洁净服后，在洁净室地面上行走至航天器测试工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防静电地坪-低速稳行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在航天器控制面板前的标定位置精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-控制面板操作位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视测试规程文件或显示屏，读取当前测试步骤编号和操作要求",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-测试规程文档-步骤指令",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "视线转向航天器面板，目视定位目标按钮的具体位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-控制面板元件-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "手臂从身侧伸出，空手移动至目标按钮上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-面板控制区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "用食指按压航天器面板上的工业按钮，触发开关动作",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-航天器控制按钮-轻触力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "手指离开按钮，手臂收回至身前待命位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身前待命区-直线回收",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "目视观察面板上对应的指示灯是否点亮或变色",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-状态指示灯-响应确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "读取相关仪表盘上显示的数值读数",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-数字仪表盘-参数数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "视线转向下一个操作目标——拨动开关的位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-控制面板元件-位置确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "手臂伸出，手指移动至目标拨动开关位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-面板控制区-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "用拇指或食指拨动开关至目标档位",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-07",
+      "l2_name": "拨动切换",
+      "l3_id": "L3-05-07-001",
+      "l3_name": "拨动-航天器切换开关-上下切换",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "手臂收回至身前待命位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身前待命区-直线回收",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "目视观察开关切换后对应指示灯的状态变化",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-状态指示灯-响应确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "视线转向下一个操作目标——精密调节旋钮的位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-控制面板元件-位置确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "手臂伸出，手指移动至目标旋钮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-面板控制区-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "拇指和食指捏住旋钮边缘，准备旋转操作",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-调节旋钮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "精密旋转旋钮至规程要求的刻度位置",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-航天器参数旋钮-刻度精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 19,
+      "human_description": "手指松开旋钮，手臂收回至身前待命位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-旋钮已定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "目视读取旋钮旁边显示屏或仪表上的参数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-数字仪表盘-参数数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 21,
+      "human_description": "手臂伸向记录设备或终端，准备录入测试数据",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-记录设备区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "手指按压记录终端键盘上的数字键录入测试结果",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-002",
+      "l3_name": "点压-终端键盘按键-轻触连续",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 键盘输入涉及连续多次点压，但每次按键仍为独立的点压触发动作，累计为一个原子动作单元",
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 23,
+      "human_description": "沿航天器测试面板侧向移动，到达下一测试区域操作位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-沿面板侧移-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在新测试区域的控制面板前精确停位站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-控制面板操作位-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防静电地坪-低速稳行",
+      "l3_name_en": "Walk-AntistaticFloor-SlowSteady",
+      "parent_l2_id": "L2-01-01",
+      "description": "在洁净室防静电环氧地坪上以低速稳定步态行走，确保不产生静电和微粒扬起",
+      "object_category": "洁净室地面",
+      "parameter_ranges": {
+        "size_range": "行走距离2-20m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "步态平稳无急停"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-控制面板操作位-厘米级",
+      "l3_name_en": "Stop-ControlPanelPosition-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在航天器控制面板前的标定操作位精确停止，确保手臂可触及所有目标控制元件",
+      "object_category": "操作工位标定点",
+      "parameter_ranges": {
+        "size_range": "停位精度±3cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级定位精度"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-测试规程文档-步骤指令",
+      "l3_name_en": "Read-TestProcedureDoc-StepInstruction",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取测试规程文档或显示屏上的当前测试步骤编号、操作对象和操作要求",
+      "object_category": "测试规程文档/显示屏",
+      "parameter_ranges": {
+        "size_range": "文字高度3-10mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "准确识别步骤编号和参数值"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-控制面板元件-位置确认",
+      "l3_name_en": "Gaze-ControlPanelElement-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准航天器控制面板上的目标操作元件，确认其精确位置和当前状态",
+      "object_category": "按钮/开关/旋钮",
+      "parameter_ranges": {
+        "size_range": "元件尺寸5-50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别元件类型和位置"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-面板控制区-无障碍直线",
+      "l3_name_en": "Reach-PanelControlArea-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂从待命位置沿直线伸出至控制面板上目标元件的操作位置",
+      "object_category": "控制面板区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到位精度±1cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-航天器控制按钮-轻触力度",
+      "l3_name_en": "Press-SpacecraftControlButton-LightTouch",
+      "parent_l2_id": "L2-05-01",
+      "description": "用食指或拇指按压航天器面板上的工业按钮，触发开关动作并感受到click反馈",
+      "object_category": "航天器控制按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径8-25mm",
+        "weight_range": "不适用",
+        "force_range": "触发力1-10N",
+        "precision_requirement": "准确触发目标按钮"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-身前待命区-直线回收",
+      "l3_name_en": "Reach-FrontStandbyArea-LinearRetract",
+      "parent_l2_id": "L2-03-01",
+      "description": "完成操作后手臂沿直线收回至身前待命位置，准备下一步操作",
+      "object_category": "待命空间",
+      "parameter_ranges": {
+        "size_range": "回收距离30-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "无特殊精度要求"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-状态指示灯-响应确认",
+      "l3_name_en": "Gaze-StatusIndicator-ResponseConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察控制面板上的状态指示灯，确认操作后的响应状态（亮/灭/颜色变化）",
+      "object_category": "状态指示灯",
+      "parameter_ranges": {
+        "size_range": "指示灯直径3-15mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "准确识别亮灭和颜色状态"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-数字仪表盘-参数数值",
+      "l3_name_en": "Read-DigitalGauge-ParameterValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取数字仪表盘或显示屏上显示的测试参数数值，记录电压、电流、温度等读数",
+      "object_category": "数字仪表/显示屏",
+      "parameter_ranges": {
+        "size_range": "数字高度5-20mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "准确读取数字精确到显示精度"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-05-07-001",
+      "l3_name_zh": "拨动-航天器切换开关-上下切换",
+      "l3_name_en": "Toggle-SpacecraftSwitch-UpDownToggle",
+      "parent_l2_id": "L2-05-07",
+      "description": "用拇指或食指拨动航天器面板上的拨动开关，使其从一个档位切换到另一个档位",
+      "object_category": "拨动开关",
+      "parameter_ranges": {
+        "size_range": "开关行程5-15mm",
+        "weight_range": "不适用",
+        "force_range": "切换力0.5-5N",
+        "precision_requirement": "切换到位并确认锁定"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-调节旋钮",
+      "l3_name_en": "Pinch-TwoFingerPinch-AdjustmentKnob",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指和食指指尖捏住小型调节旋钮边缘，准备进行精密旋转调节",
+      "object_category": "调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径10-30mm",
+        "weight_range": "不适用",
+        "force_range": "捏持力1-5N",
+        "precision_requirement": "稳定捏持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-航天器参数旋钮-刻度精度",
+      "l3_name_en": "FineTune-SpacecraftParamKnob-ScalePrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "精密旋转航天器控制面板上的参数调节旋钮，将旋钮调至规程要求的精确刻度位置",
+      "object_category": "参数调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径10-30mm",
+        "weight_range": "不适用",
+        "force_range": "旋转力矩0.01-0.5Nm",
+        "precision_requirement": "角度精度±2度或1刻度"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-旋钮已定位",
+      "l3_name_en": "Release-GradualLoosen-KnobPositioned",
+      "parent_l2_id": "L2-04-07",
+      "description": "完成旋钮调节后，手指缓慢渐进松开旋钮，确保旋钮不因松手而偏移",
+      "object_category": "调节旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径10-30mm",
+        "weight_range": "不适用",
+        "force_range": "渐进释放",
+        "precision_requirement": "释放后旋钮位置不变"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-记录设备区-无障碍直线",
+      "l3_name_en": "Reach-RecordingDeviceArea-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向记录终端或数据输入设备，准备进行测试数据录入操作",
+      "object_category": "记录终端/键盘",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-05-01-002",
+      "l3_name_zh": "点压-终端键盘按键-轻触连续",
+      "l3_name_en": "Press-TerminalKeyboardKey-LightContinuous",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指连续按压记录终端键盘上的按键，录入测试结果数据",
+      "object_category": "终端键盘按键",
+      "parameter_ranges": {
+        "size_range": "按键尺寸10-15mm",
+        "weight_range": "不适用",
+        "force_range": "触发力0.3-1N",
+        "precision_requirement": "准确击中目标按键"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-沿面板侧移-连续步态",
+      "l3_name_en": "TurnWalk-AlongPanelSideMove-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "沿航天器测试面板侧向移动，从一个测试区域转移到相邻的测试区域",
+      "object_category": "洁净室地面",
+      "parameter_ranges": {
+        "size_range": "移动距离1-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平稳侧移无碰撞"
+      },
+      "is_new": true,
+      "source_scene": "SC-37-374-3743-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-07",
+      "L2-06-06",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 6
+  }
+}

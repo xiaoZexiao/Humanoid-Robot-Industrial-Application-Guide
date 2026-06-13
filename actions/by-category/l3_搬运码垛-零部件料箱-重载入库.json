@@ -1,0 +1,668 @@
+{
+  "scene_id": "36-367-3670",
+  "scene_name": "搬运码垛-零部件料箱-重载入库",
+  "total_steps": 23,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置走向检测合格品堆放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在空料箱堆放位置精确停下",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-料箱堆放区-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身至空料箱高度便于抓取",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手分别伸向料箱两侧的握持位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-箱体侧面-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手同时握住料箱两侧把手或边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-箱体把手-对握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂协调将料箱从地面抬起至腰部高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-矩形箱体-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "起身恢复直立姿态同时保持对料箱的握持",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-直起-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰姿态恢复直立，属于弯腰俯身的逆过程，归入L2-02-02而非L2-02-03下蹲起立，因为主要运动在髋关节和腰椎",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手持重载料箱走向零件装箱工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-重型箱体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 9,
+      "human_description": "在零件装箱工位的指定位置精确停下",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-装箱工位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "弯腰将空料箱放置在装箱台面上",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-中度前屈-台面高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "将料箱精确放置在装箱台面的指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-料箱-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "双手松开料箱把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-箱体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "伸手到待装箱的检测合格零件位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-零件料盒-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "抓取单个待装箱的零件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-工业零件-单手包络",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将零件从取料位置移向料箱内部",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-中型零件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将零件规律排列放入料箱内",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-零件矩阵-单层",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "松开手指释放零件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-零件已定位",
+      "is_new_l3": true,
+      "boundary_note": "步骤13-17需重复多次直至料箱装满",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "双手抓住已装满零件的重载料箱两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-箱体把手-对握",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双臂协调将重载料箱从台面抬起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-矩形箱体-重载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 20,
+      "human_description": "手持重载料箱走向托盘码垛区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-重型箱体-双臂前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "在托盘指定码垛位置精确停下",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-托盘码垛点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 22,
+      "human_description": "根据当前码垛层数调整身体姿态将料箱对准目标位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-004",
+      "l3_name": "俯身-变幅前屈-码垛高度适应",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]码垛1-2层需深度弯腰，3-5层需轻度弯腰或保持直立，主要运动仍在髋关节和腰椎屈伸，归入L2-02-02",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将料箱按规律对齐放置在托盘上形成整齐码垛",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-002",
+      "l3_name": "码放-料箱阵列-多层堆叠",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工厂环氧地坪上以匀速步态直线行走至目标区域",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行程3-20m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点误差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-重型箱体-双臂前持",
+      "l3_name_en": "LoadedWalk-HeavyBox-DualArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持重型箱体（15-30kg）状态下稳步行走，重心前移适应负载",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "箱体400-600mm边长",
+        "weight_range": "15-30kg",
+        "force_range": "持握力150-300N",
+        "precision_requirement": "步态稳定，无明显晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-料箱堆放区-厘米级",
+      "l3_name_en": "Stop-BoxStackArea-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在料箱堆放区域的标定位置精确停止，便于后续抓取操作",
+      "object_category": "工位标记",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置误差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-装箱工位-厘米级",
+      "l3_name_en": "Stop-PackingStation-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在零件装箱工位的操作位置精确停止",
+      "object_category": "工位标记",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置误差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-托盘码垛点-厘米级",
+      "l3_name_en": "Stop-PalletStackPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘指定码垛位置精确停止，确保料箱可对齐放置",
+      "object_category": "托盘标记",
+      "parameter_ranges": {
+        "size_range": "托盘1000x1200mm标准尺寸",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置误差±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节屈曲30-60度使上半身前倾，将手部作业高度降至腰部水平",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度60-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-直起-负载状态",
+      "l3_name_en": "BendForward-Straighten-Loaded",
+      "parent_l2_id": "L2-02-02",
+      "description": "在双手握持重载状态下从弯腰姿态恢复直立，需腿部和腰背协同发力",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负载15-30kg",
+        "force_range": "腰背输出力矩100-200Nm",
+        "precision_requirement": "平稳起身无晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-中度前屈-台面高度",
+      "l3_name_en": "BendForward-ModerateFlex-TableHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "前屈至工作台面高度便于放置或操作物品",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度70-90cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-02-02-004",
+      "l3_name_zh": "俯身-变幅前屈-码垛高度适应",
+      "l3_name_en": "BendForward-VariableFlex-StackHeightAdaptive",
+      "parent_l2_id": "L2-02-02",
+      "description": "根据码垛层数动态调整前屈幅度：低层深弯腰、高层轻弯腰或直立",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度20-150cm（对应1-5层码垛）",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "高度适应性"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-箱体侧面-双臂对称",
+      "l3_name_en": "Reach-BoxSide-DualArmSymmetric",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向箱体两侧伸出，准备进行双手对握抓取",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "箱宽400-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "双臂对称到位"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-零件料盒-无障碍直线",
+      "l3_name_en": "Reach-PartsBin-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂沿无障碍直线路径伸向零件料盒位置准备抓取",
+      "object_category": "零件",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-中型零件-近距",
+      "l3_name_en": "Transfer-MediumPart-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握中型零件在近距离（<1m）范围内转移至目标位置",
+      "object_category": "零件",
+      "parameter_ranges": {
+        "size_range": "零件尺寸50-200mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "握持力10-50N",
+        "precision_requirement": "轨迹平稳"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-矩形箱体-重载",
+      "l3_name_en": "CoopCarry-RectangularBox-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调抬起并搬运重载矩形箱体，保持箱体水平稳定",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "箱体400-600mm边长",
+        "weight_range": "15-30kg",
+        "force_range": "单臂承载75-150N",
+        "precision_requirement": "箱体水平度±5°"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-料箱-厘米级",
+      "l3_name_en": "PlacePrecise-Box-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将料箱精确放置在指定位置，确保与工位基准对齐",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "箱体400-600mm边长",
+        "weight_range": "15-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "位置误差±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-零件矩阵-单层",
+      "l3_name_en": "Stack-PartsMatrix-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将零件按矩阵排列模式规律放入料箱，形成单层整齐阵列",
+      "object_category": "零件",
+      "parameter_ranges": {
+        "size_range": "零件尺寸50-200mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "行列间距一致性±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-03-06-002",
+      "l3_name_zh": "码放-料箱阵列-多层堆叠",
+      "l3_name_en": "Stack-BoxArray-MultiLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将重载料箱按阵列模式码放在托盘上，支持3-5层堆叠，确保垂直对齐",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "箱体400-600mm边长",
+        "weight_range": "15-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "层间垂直偏差±1cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-箱体把手-对握",
+      "l3_name_en": "PowerGrip-BoxHandle-BilateralGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手同时以全手包络方式握住箱体两侧把手或边缘，形成稳定对握",
+      "object_category": "料箱把手",
+      "parameter_ranges": {
+        "size_range": "把手宽度80-150mm",
+        "weight_range": "承载15-30kg",
+        "force_range": "单手握力80-150N",
+        "precision_requirement": "握持稳定无滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-工业零件-单手包络",
+      "l3_name_en": "PowerGrip-IndustrialPart-SingleHandWrap",
+      "parent_l2_id": "L2-04-01",
+      "description": "单手以全手包络方式抓握中型工业零件",
+      "object_category": "零件",
+      "parameter_ranges": {
+        "size_range": "零件截面30-80mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-箱体已支撑",
+      "l3_name_en": "Release-GradualOpen-BoxSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在箱体已有稳定支撑后渐进松开手指完成释放",
+      "object_category": "料箱",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "15-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "释放过程无位移"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-零件已定位",
+      "l3_name_en": "Release-GradualOpen-PartPositioned",
+      "parent_l2_id": "L2-04-07",
+      "description": "在零件已放置到位后渐进松开手指",
+      "object_category": "零件",
+      "parameter_ranges": {
+        "size_range": "零件尺寸50-200mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "释放无扰动"
+      },
+      "is_new": true,
+      "source_scene": "SC-36-367-3670-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07"
+    ],
+    "最高频L2": "L2-02-02",
+    "涉及的L1数量": 4
+  }
+}

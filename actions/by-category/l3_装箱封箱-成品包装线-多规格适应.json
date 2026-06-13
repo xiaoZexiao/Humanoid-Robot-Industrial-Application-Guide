@@ -1,0 +1,912 @@
+{
+  "scene_id": "15-152-00",
+  "scene_name": "装箱封箱-成品包装线-多规格适应",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "走到装箱工位并站定在工作台前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "转身使躯干正对工作台和输送带",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度内-面向工位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身到旁侧空箱存放区",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "伸手到折叠空箱堆垛位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料存放区-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手抓握折叠状态的空纸箱",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-扁平板状-纸箱厚度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲起立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰俯身状态起身，膝关节有一定屈曲配合，归入下蹲起立而非单纯弯腰逆动作",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂将折叠空箱搬运至工作台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-扁平纸箱-轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将折叠纸箱放置到工作台指定位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松手-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "抓住纸箱上层折叠盖边缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-纸板边缘-薄板捏持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "翻开纸箱第一侧折盖至垂直位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-纸箱折盖-90度展开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "翻开纸箱第二侧折盖至垂直位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-001",
+      "l3_name": "开合-纸箱折盖-90度展开",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 10,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "向下按压纸箱底部使其完全展开成型",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-纸箱底部-定型压实",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "伸手到上游输送带成品瓶/罐位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-输送带上方-直线伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "抓握瓶装/罐装成品（单瓶或2-4瓶组）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-003",
+      "l3_name": "力握-圆柱瓶罐-直径50至80mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将抓取的产品从输送带移入纸箱上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-瓶装产品-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "按矩阵排列规律将产品码放入箱内指定格位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-矩阵排列-单层",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "松手释放产品使其稳定立于箱内格位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-物体直立",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "【重复步骤13-17共6-12次直至装满12-24瓶】折叠纸箱前侧小盖向内",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-纸箱小盖-90度内折",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 19,
+      "human_description": "折叠纸箱后侧小盖向内",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-002",
+      "l3_name": "开合-纸箱小盖-90度内折",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 18,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "折叠纸箱顶盖A覆盖在小盖上方",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-003",
+      "l3_name": "开合-纸箱大盖-90度闭合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "折叠纸箱顶盖B与顶盖A对接闭合",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-05",
+      "l2_name": "铰接开合",
+      "l3_id": "L3-07-05-003",
+      "l3_name": "开合-纸箱大盖-90度闭合",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 22,
+      "human_description": "伸手到封箱胶带机存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具存放区-侧向伸展",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 23,
+      "human_description": "以功能握姿抓握封箱胶带机手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-封箱胶带机-拖拽功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "将封箱器胶带头定位到箱顶中缝起始端",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-封箱器-厘米级对位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "沿箱顶中缝线性拖拽封箱器完成胶带粘贴",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-04",
+      "l2_name": "线性涂胶密封",
+      "l3_id": "L3-08-04-001",
+      "l3_name": "贴封-封箱胶带-直线封口",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]胶带粘贴与涂胶密封同属线性路径的粘合密封作业，均需保持工具与表面持续接触并沿路径移动，归入L2-08-04",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 26,
+      "human_description": "松开封箱器并将其放回存放位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松手-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 27,
+      "human_description": "伸手到批号标签存放处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具存放区-侧向伸展",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 28,
+      "human_description": "指尖捏取一张批号标签",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-薄标签纸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 29,
+      "human_description": "将标签移动到纸箱侧面指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-标签贴纸-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 30,
+      "human_description": "按压标签使其平整粘贴于箱面",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-002",
+      "l3_name": "推压-不干胶标签-抚平粘贴",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 31,
+      "human_description": "双手抓握已封好的成品箱两侧",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-004",
+      "l3_name": "力握-纸箱侧面-中型箱体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 32,
+      "human_description": "将成品箱沿工作台滑动推送至下游输送带",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-001",
+      "l3_name": "推送-纸箱平底-金属台面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪上以匀速步态直线行走至目标工位",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "无负载",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度内-面向工位",
+      "l3_name_en": "Rotate-Within90Deg-FaceStation",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，躯干绕垂直轴旋转90度以内使身体正对工作台",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节和腰椎屈曲为主，躯干前倾30-60度，使手部可达腰部以下高度",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "姿态稳定即可"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料存放区-侧向伸展",
+      "l3_name_en": "Reach-MaterialStorage-LateralExtend",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂或双臂向侧方伸展至物料/空箱存放区域上方",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "无负载",
+        "force_range": "N/A",
+        "precision_requirement": "到达目标区域即可"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-扁平板状-纸箱厚度",
+      "l3_name_en": "PowerGrip-FlatPlate-CartonThickness",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握折叠状态的纸箱，手指贴合纸板边缘施加握力",
+      "object_category": "折叠纸箱",
+      "parameter_ranges": {
+        "size_range": "厚度5-30mm",
+        "weight_range": "0.3-1kg",
+        "force_range": "握力10-30N",
+        "precision_requirement": "稳定抓持即可"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲起立-负载状态",
+      "l3_name_en": "Squat-HalfSquatRise-Loaded",
+      "parent_l2_id": "L2-02-03",
+      "description": "从半蹲或弯腰状态起立恢复直立，同时手中持有负载",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "负载0.3-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳起立"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-扁平纸箱-轻载",
+      "l3_name_en": "CoopCarry-FlatCarton-LightLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将折叠纸箱从存放位置搬运至工作台面",
+      "object_category": "折叠纸箱",
+      "parameter_ranges": {
+        "size_range": "尺寸400×300×50mm至600×400×80mm",
+        "weight_range": "0.3-1kg",
+        "force_range": "搬运力5-15N",
+        "precision_requirement": "平稳搬运"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松手-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指从闭合逐渐张开，物体已由工作台或其他支撑面承托",
+      "object_category": "通用",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "通用",
+        "force_range": "N/A",
+        "precision_requirement": "平稳释放"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-纸板边缘-薄板捏持",
+      "l3_name_en": "PowerGrip-CardboardEdge-ThinPlateHold",
+      "parent_l2_id": "L2-04-01",
+      "description": "手指夹持纸箱折叠盖的纸板边缘以便进行翻折操作",
+      "object_category": "纸板边缘",
+      "parameter_ranges": {
+        "size_range": "厚度2-5mm",
+        "weight_range": "N/A",
+        "force_range": "握力5-15N",
+        "precision_requirement": "稳定夹持"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-07-05-001",
+      "l3_name_zh": "开合-纸箱折盖-90度展开",
+      "l3_name_en": "Hinge-CartonFlap-90DegOpen",
+      "parent_l2_id": "L2-07-05",
+      "description": "沿纸箱预压折痕将侧盖或顶盖从闭合位置翻开至90度垂直位置",
+      "object_category": "纸箱折盖",
+      "parameter_ranges": {
+        "size_range": "折盖宽度100-300mm",
+        "weight_range": "N/A",
+        "force_range": "翻折力2-10N",
+        "precision_requirement": "到达展开位即可"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-纸箱底部-定型压实",
+      "l3_name_en": "Press-CartonBottom-Forming",
+      "parent_l2_id": "L2-05-02",
+      "description": "向下持续施压使纸箱底部折叠结构完全展开并稳定成型",
+      "object_category": "纸箱底部",
+      "parameter_ranges": {
+        "size_range": "底面尺寸300×200mm至500×400mm",
+        "weight_range": "N/A",
+        "force_range": "下压力20-50N",
+        "precision_requirement": "底部平整成型"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-输送带上方-直线伸展",
+      "l3_name_en": "Reach-AboveConveyor-LinearExtend",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向前方直线伸展至输送带上方成品所在位置",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.6m",
+        "weight_range": "无负载",
+        "force_range": "N/A",
+        "precision_requirement": "到达目标上方"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-01-003",
+      "l3_name_zh": "力握-圆柱瓶罐-直径50至80mm",
+      "l3_name_en": "PowerGrip-CylindricalBottle-Dia50to80mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握瓶装或罐装产品的圆柱形瓶身",
+      "object_category": "瓶/罐",
+      "parameter_ranges": {
+        "size_range": "直径50-80mm，高度150-300mm",
+        "weight_range": "0.3-1kg/瓶",
+        "force_range": "握力15-40N",
+        "precision_requirement": "稳定抓持防滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-瓶装产品-近距",
+      "l3_name_en": "Transfer-BottledProduct-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持瓶从输送带位置移动至纸箱上方，距离0.3-0.5m",
+      "object_category": "瓶装产品",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-0.5m",
+        "weight_range": "0.3-1kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳移动不晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-矩阵排列-单层",
+      "l3_name_en": "Stack-MatrixArray-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "按预定矩阵规律将瓶/罐放入箱内指定格位，形成单层整齐排列",
+      "object_category": "瓶装产品",
+      "parameter_ranges": {
+        "size_range": "3×4至4×6矩阵",
+        "weight_range": "单瓶0.3-1kg",
+        "force_range": "N/A",
+        "precision_requirement": "格位对齐±10mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-物体直立",
+      "l3_name_en": "Release-GradualOpen-ObjectUpright",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开释放瓶/罐，确保其在箱内格位中保持直立稳定",
+      "object_category": "瓶/罐",
+      "parameter_ranges": {
+        "size_range": "通用",
+        "weight_range": "0.3-1kg",
+        "force_range": "N/A",
+        "precision_requirement": "物体直立不倾倒"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-07-05-002",
+      "l3_name_zh": "开合-纸箱小盖-90度内折",
+      "l3_name_en": "Hinge-CartonMinorFlap-90DegFold",
+      "parent_l2_id": "L2-07-05",
+      "description": "将纸箱短边侧的小折盖从垂直位置向内折叠至水平位置",
+      "object_category": "纸箱折盖",
+      "parameter_ranges": {
+        "size_range": "折盖宽度80-150mm",
+        "weight_range": "N/A",
+        "force_range": "翻折力2-8N",
+        "precision_requirement": "完全折入"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-07-05-003",
+      "l3_name_zh": "开合-纸箱大盖-90度闭合",
+      "l3_name_en": "Hinge-CartonMajorFlap-90DegClose",
+      "parent_l2_id": "L2-07-05",
+      "description": "将纸箱长边侧的大折盖从垂直位置向内折叠闭合覆盖箱顶",
+      "object_category": "纸箱折盖",
+      "parameter_ranges": {
+        "size_range": "折盖宽度150-300mm",
+        "weight_range": "N/A",
+        "force_range": "翻折力3-12N",
+        "precision_requirement": "与另一大盖对齐"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-工具存放区-侧向伸展",
+      "l3_name_en": "Reach-ToolStorage-LateralExtend",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向侧方伸展至封箱器、标签等工具的存放位置",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "无负载",
+        "force_range": "N/A",
+        "precision_requirement": "到达工具位置"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-封箱胶带机-拖拽功能姿",
+      "l3_name_en": "ToolGrip-TapeDispenser-DragPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以适合沿箱面拖拽的功能握姿抓握手持封箱胶带机手柄",
+      "object_category": "封箱胶带机",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm",
+        "weight_range": "0.5-1.5kg",
+        "force_range": "握力20-40N",
+        "precision_requirement": "功能握姿正确"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-封箱器-厘米级对位",
+      "l3_name_en": "Place-TapeDispenser-CmPrecision",
+      "parent_l2_id": "L2-03-05",
+      "description": "将封箱器的胶带出口精确定位到纸箱中缝的起始位置",
+      "object_category": "封箱胶带机",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "0.5-1.5kg",
+        "force_range": "N/A",
+        "precision_requirement": "对中精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-08-04-001",
+      "l3_name_zh": "贴封-封箱胶带-直线封口",
+      "l3_name_en": "TapeSeal-PackingTape-LinearSeam",
+      "parent_l2_id": "L2-08-04",
+      "description": "沿纸箱中缝直线拖拽封箱器完成胶带粘贴封口作业",
+      "object_category": "封箱胶带",
+      "parameter_ranges": {
+        "size_range": "封口长度300-600mm",
+        "weight_range": "N/A",
+        "force_range": "下压力10-30N",
+        "precision_requirement": "沿中缝偏差±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-薄标签纸",
+      "l3_name_en": "Pinch-TwoFingerOppose-ThinLabel",
+      "parent_l2_id": "L2-04-02",
+      "description": "拇指与食指对捏精密捏取单张不干胶标签",
+      "object_category": "标签纸",
+      "parameter_ranges": {
+        "size_range": "尺寸30×50mm至80×120mm",
+        "weight_range": "<5g",
+        "force_range": "捏力1-5N",
+        "precision_requirement": "单张取出不粘连"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-标签贴纸-近距",
+      "l3_name_en": "Transfer-LabelSticker-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持标签从取标位置移动至纸箱侧面粘贴位置",
+      "object_category": "标签纸",
+      "parameter_ranges": {
+        "size_range": "移动距离0.2-0.5m",
+        "weight_range": "<5g",
+        "force_range": "N/A",
+        "precision_requirement": "平稳移动"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-05-02-002",
+      "l3_name_zh": "推压-不干胶标签-抚平粘贴",
+      "l3_name_en": "Press-AdhesiveLabel-SmoothStick",
+      "parent_l2_id": "L2-05-02",
+      "description": "以掌根或指腹持续按压并抚平不干胶标签使其平整粘贴于箱面",
+      "object_category": "不干胶标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸30×50mm至80×120mm",
+        "weight_range": "N/A",
+        "force_range": "按压力5-15N",
+        "precision_requirement": "无气泡无翘边"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-04-01-004",
+      "l3_name_zh": "力握-纸箱侧面-中型箱体",
+      "l3_name_en": "PowerGrip-CartonSide-MediumBox",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手分别握住纸箱两侧面以便搬运或推送",
+      "object_category": "成品纸箱",
+      "parameter_ranges": {
+        "size_range": "箱体尺寸300×200×200mm至500×400×350mm",
+        "weight_range": "8-20kg",
+        "force_range": "握力30-60N/手",
+        "precision_requirement": "稳定抓持"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    },
+    {
+      "l3_id": "L3-03-08-001",
+      "l3_name_zh": "推送-纸箱平底-金属台面",
+      "l3_name_en": "Push-CartonFlatBottom-MetalSurface",
+      "parent_l2_id": "L2-03-08",
+      "description": "双手推动已封好的纸箱沿金属工作台面滑动至下游输送带",
+      "object_category": "成品纸箱",
+      "parameter_ranges": {
+        "size_range": "推送距离0.3-1m",
+        "weight_range": "8-20kg",
+        "force_range": "推力30-80N",
+        "precision_requirement": "到达输送带接收区"
+      },
+      "is_new": true,
+      "source_scene": "SC-15-152-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-03-06",
+      "L2-03-08",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-07-05",
+      "L2-08-04"
+    ],
+    "最高频L2": "L2-07-05",
+    "涉及的L1数量": 7
+  }
+}

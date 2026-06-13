@@ -1,0 +1,685 @@
+{
+  "scene_id": "9-92-00",
+  "scene_name": "搬运投放-贵金属精炼原料-高价值物料",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置沿车间通道行走至原料暂存区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在原料存放架前停止并对准指定托盘位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料架标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视检查并读取原料容器上的批次标签和重量标识",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-批次标签-物料追溯",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "弯腰俯身接近位于货架低层的原料容器",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手同时伸向原料容器两侧的提手位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-容器提手-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手分别抓握原料容器两侧的金属提手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱提手-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协同发力将原料容器从货架上提起",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-桶盘型容器-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "保持持物状态伸直腰部恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲起立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽然动作起点为弯腰而非全蹲，但需要膝关节配合伸展，按起立归类",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "手持原料容器沿规划路线行走至电子称重台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-重型容器-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在称重台正前方精确停止对准放置区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-称重台中心-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "缓慢弯腰将容器平稳放置于称重台秤面中央",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-重型容器-称重台中心",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 12,
+      "human_description": "确认容器稳定后松开双手对提手的抓握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-容器已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "目视称重显示屏读取并确认物料净重数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-电子显示屏-重量数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 14,
+      "human_description": "在操作终端触摸屏上点击确认记录当前称重数据",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-触摸屏按钮-轻触",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 15,
+      "human_description": "再次弯腰俯身接近称重台上的原料容器",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双手分别抓握容器两侧提手准备搬运至炉前",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱提手-直径20至40mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双臂协同将容器从称重台提起至胸前搬运高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-桶盘型容器-重载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "手持容器沿高温防护通道行走至熔炼炉投料口前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-高价值物料-高温通道",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 19,
+      "human_description": "在熔炼炉投料口正前方精确停位对准投料区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-炉口投料位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将容器由水平状态翻转约120度使物料倾倒入炉",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90至150度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "保持倾斜姿态直至容器内物料完全倾倒入炉",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-前倾持物姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将空容器翻转恢复至水平状态",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90至150度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "后退步行离开高温炉口区域至安全距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-002",
+      "l3_name": "行走-耐高温地面-后退撤离",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 后退行走仍属于平地直行，方向变化在约束范围内",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "手持空容器行走至空容器回收区并放置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-003",
+      "l3_name": "负载行走-空容器-单臂侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间环氧地坪上进行匀速平稳行走，无障碍物干扰",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-01-002",
+      "l3_name_zh": "行走-耐高温地面-后退撤离",
+      "l3_name_en": "Walk-HeatResistantFloor-BackwardRetreat",
+      "parent_l2_id": "L2-01-01",
+      "description": "在熔炼炉前耐高温地面上后退行走撤离高温区域",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "后退距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "方向偏差±15°"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-重型容器-双臂前持",
+      "l3_name_en": "LoadedWalk-HeavyContainer-DualArmFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手持握重型容器在胸前位置进行负载行走",
+      "object_category": "容器",
+      "parameter_ranges": {
+        "size_range": "容器直径30-60cm",
+        "weight_range": "10-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "平稳度防洒"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-高价值物料-高温通道",
+      "l3_name_en": "LoadedWalk-HighValueMaterial-HighTempCorridor",
+      "parent_l2_id": "L2-01-07",
+      "description": "在高温车间通道内手持高价值贵金属物料容器行走，需特别注意防洒落防灼伤",
+      "object_category": "贵金属原料容器",
+      "parameter_ranges": {
+        "size_range": "容器直径30-60cm",
+        "weight_range": "10-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "零洒落"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-003",
+      "l3_name_zh": "负载行走-空容器-单臂侧持",
+      "l3_name_en": "LoadedWalk-EmptyContainer-SingleArmSideCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "单手提握空容器在体侧位置进行轻负载行走",
+      "object_category": "空容器",
+      "parameter_ranges": {
+        "size_range": "容器直径30-60cm",
+        "weight_range": "2-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "一般"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料架标定点-厘米级",
+      "l3_name_en": "Stop-MaterialRackMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料存放架前指定取料位置精确停止",
+      "object_category": "位置标记",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-称重台中心-厘米级",
+      "l3_name_en": "Stop-WeighingScaleCenter-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在电子称重台正前方精确停止以便放置物料",
+      "object_category": "位置标记",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-炉口投料位-厘米级",
+      "l3_name_en": "Stop-FurnaceChargePoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在熔炼炉投料口正前方安全距离处精确停位",
+      "object_category": "投料位标记",
+      "parameter_ranges": {
+        "size_range": "安全距离0.8-1.2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴心向前弯腰约45-60度以接近腰部高度的操作对象",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "前屈角度45-60°",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲起立-负载状态",
+      "l3_name_en": "Squat-HalfSquatRise-Loaded",
+      "parent_l2_id": "L2-02-03",
+      "description": "在手持重物状态下从弯腰或半蹲姿态起立恢复直立",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "膝关节屈曲30-60°",
+        "weight_range": "负载10-30kg",
+        "force_range": "腿部发力",
+        "precision_requirement": "平稳起立"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-前倾持物姿态-抗重力",
+      "l3_name_en": "Brace-ForwardLeanHolding-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "身体前倾状态下持续支撑重物并保持稳定姿态",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "前倾角度15-45°",
+        "weight_range": "持物5-15kg",
+        "force_range": "核心肌群持续发力",
+        "precision_requirement": "姿态稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-容器提手-双臂对称",
+      "l3_name_en": "Reach-ContainerHandle-DualArmSymmetric",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前下方伸展以接近容器两侧对称提手位置",
+      "object_category": "容器提手",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "对准提手±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-桶盘型容器-重载",
+      "l3_name_en": "CoopCarry-BucketTrayContainer-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协同将桶装或盘装重型容器从一处提起转移",
+      "object_category": "桶盘型容器",
+      "parameter_ranges": {
+        "size_range": "容器直径30-60cm高度20-40cm",
+        "weight_range": "10-30kg",
+        "force_range": "双臂协同提拉力100-300N",
+        "precision_requirement": "水平保持防洒"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-90至150度",
+      "l3_name_en": "Flip-AroundHorizontalAxis-90to150Deg",
+      "parent_l2_id": "L2-03-04",
+      "description": "将手持容器绕水平轴翻转90-150度以倾倒内容物",
+      "object_category": "容器",
+      "parameter_ranges": {
+        "size_range": "容器直径30-60cm",
+        "weight_range": "5-30kg（含内容物）",
+        "force_range": "翻转力矩10-50Nm",
+        "precision_requirement": "可控倾倒速度"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-重型容器-称重台中心",
+      "l3_name_en": "PlacePrecise-HeavyContainer-ScaleCenter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将重型容器精确平稳放置于称重台秤面中央位置",
+      "object_category": "重型容器",
+      "parameter_ranges": {
+        "size_range": "容器底面直径30-50cm",
+        "weight_range": "10-30kg",
+        "force_range": "下放速度控制",
+        "precision_requirement": "位置±2cm轻放无冲击"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱提手-直径20至40mm",
+      "l3_name_en": "PowerGrip-CylindricalHandle-Dia20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握容器的圆柱形金属提手",
+      "object_category": "圆柱提手",
+      "parameter_ranges": {
+        "size_range": "直径20-40mm",
+        "weight_range": "N/A",
+        "force_range": "握力50-150N",
+        "precision_requirement": "握紧防滑"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-容器已支撑",
+      "l3_name_en": "Release-GradualUngrip-ContainerSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在确认容器已稳定支撑后逐渐松开手指释放抓握",
+      "object_category": "容器提手",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "握力从100N渐减至0",
+        "precision_requirement": "平稳释放无晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-触摸屏按钮-轻触",
+      "l3_name_en": "TapPress-TouchscreenButton-LightTouch",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指轻触电子触摸屏上的虚拟按钮进行数据确认录入",
+      "object_category": "触摸屏",
+      "parameter_ranges": {
+        "size_range": "按钮尺寸15-50mm",
+        "weight_range": "N/A",
+        "force_range": "触控力1-5N",
+        "precision_requirement": "触点精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-批次标签-物料追溯",
+      "l3_name_en": "Read-BatchLabel-MaterialTracing",
+      "parent_l2_id": "L2-09-07",
+      "description": "目视或传感器读取原料容器上的批次追溯标签信息",
+      "object_category": "标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸50x100mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "字符识别清晰"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-电子显示屏-重量数值",
+      "l3_name_en": "Read-DigitalDisplay-WeightValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "目视读取电子称重台显示屏上的数字重量读数",
+      "object_category": "电子显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸100-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "数值识别精度0.01kg"
+      },
+      "is_new": true,
+      "source_scene": "SC-9-92-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 6
+  }
+}

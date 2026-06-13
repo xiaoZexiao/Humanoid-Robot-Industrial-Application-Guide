@@ -1,0 +1,913 @@
+{
+  "scene_id": "43-439-4390",
+  "scene_name": "物料配送-修理车间-跨区域多品种",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "视觉扫描配送任务单，确认本趟配送的物料清单和目标工位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-配送任务单-物料清单确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "从当前位置行走至仓库物料存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-常速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在物料架区域转向行走至目标货位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-货架通道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 4,
+      "human_description": "精确停位于目标货架前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-货架定位点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "扫描货架区域定位目标物料位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-货架存放区-逐层扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "读取物料标签确认料号与数量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-物料标签-料号确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "弯腰俯身至物料所在的低位货层",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]物料位于中低层货架，膝关节基本不弯曲，以髋关节屈曲为主，归入弯腰俯身而非下蹲",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手臂伸入货架取物位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-货架内部-有限深度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "抓取备件盒或物料包",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形盒体-中小尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将物料从货架搬出至身前",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-小型物料盒-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "直起身体恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-直立复位-站姿恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "转体朝向配送推车方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-朝向推车",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将物料放置到配送推车的指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-分区排列-单层",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]多品种物料需按工位分区有序放置，符合规律排列码放而非简单定点放置",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "松开手指释放物料",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "重复步骤3-14拣选其他物料（此处简化，实际按物料数量循环）",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-货架通道-连续步态",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双手握住配送推车把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆管把手-直径20至40mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "向前推动配送车开始移动",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-配送推车-匀力持续推",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "18",
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "推着载货推车在车间平地行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-推车载物-双臂前推",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "17",
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 19,
+      "human_description": "推车转弯进入狭窄设备通道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-推车宽度受限",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]通道宽度受限需侧身或精确控制推车路径，归入狭窄通行",
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 20,
+      "human_description": "到达楼梯口停稳推车",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-楼梯口-推车制动",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双臂抬起推车前端准备上楼",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-推车框架-中载提抬",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "拖拉推车沿楼梯台阶向上攀登",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-工业楼梯-负载上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 23,
+      "human_description": "继续推车行走至目标工位区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-推车载物-双臂前推",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在目标工位旁精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-工位标定点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 25,
+      "human_description": "松开推车把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-张开松手-推车已制动",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 26,
+      "human_description": "扫视推车确认该工位对应物料位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-推车物料区-定位扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "抓取该工位所需的物料",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形盒体-中小尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "将物料从推车搬出",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-小型物料盒-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 29,
+      "human_description": "将物料递交给工位操作人员",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-07",
+      "l2_name": "递交传接",
+      "l3_id": "L3-03-07-001",
+      "l3_name": "传递-机至人-协调交接",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 30,
+      "human_description": "松手完成物料交接",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-协调松手-对方已接",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 31,
+      "human_description": "推着推车前往下一个工位（重复步骤18-30直到所有工位配送完毕）",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-推车载物-双臂前推",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "120-300"
+    },
+    {
+      "step_order": 32,
+      "human_description": "推空车返回仓库",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-空载推车-双臂前推",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]空车仍需推行控制，虽无货物但推车本身构成负载，归入负载行走",
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-配送任务单-物料清单确认",
+      "l3_name_en": "Read-DeliveryTaskSheet-MaterialListConfirmation",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉对准配送任务单或电子屏幕，读取物料编号、数量、目标工位等信息",
+      "object_category": "纸质单据/电子屏幕",
+      "parameter_ranges": {
+        "size_range": "A4纸张或7-10寸屏幕",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "文字清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-常速",
+      "l3_name_en": "Walk-WorkshopFloor-NormalSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上以正常步速直线行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "无精确停位要求"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-货架通道-连续步态",
+      "l3_name_en": "TurnWalk-ShelfAisle-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在货架之间的通道内变向行走，行进方向变化15-90度，保持连续步态",
+      "object_category": "通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度0.8-1.5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞货架"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-货架定位点-分米级",
+      "l3_name_en": "Stop-ShelfPosition-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在目标货架前精确停止，使身体处于可操作取物的最佳位置",
+      "object_category": "货架",
+      "parameter_ranges": {
+        "size_range": "停位偏差±10cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-货架存放区-逐层扫描",
+      "l3_name_en": "Scan-ShelfStorageArea-LayerByLayer",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉扫描多层货架，从上至下或从下至上逐层搜索目标物料位置",
+      "object_category": "货架区域",
+      "parameter_ranges": {
+        "size_range": "扫描区域1-3平方米",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "物料定位"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-物料标签-料号确认",
+      "l3_name_en": "Read-MaterialLabel-PartNumberConfirm",
+      "parent_l2_id": "L2-09-07",
+      "description": "近距离读取物料包装上的标签信息，确认物料编号与任务单匹配",
+      "object_category": "物料标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸20x30mm至100x150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "条码/文字可识别"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节屈曲30-60度，上身前倾使手部可达腰部以下高度的目标",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度50-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "保持平衡"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-货架内部-有限深度",
+      "l3_name_en": "Reach-InsideShelf-LimitedDepth",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸入货架层板之间的空间，到达存放物料的位置",
+      "object_category": "货架空间",
+      "parameter_ranges": {
+        "size_range": "伸达深度30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞周边物料"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-矩形盒体-中小尺寸",
+      "l3_name_en": "PowerGrip-RectangularBox-SmallMedium",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握矩形物料盒或包装箱体，手指和手掌共同施力",
+      "object_category": "物料盒/包装箱",
+      "parameter_ranges": {
+        "size_range": "边长100-300mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "握力10-50N",
+        "precision_requirement": "稳定握持"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-小型物料盒-近距",
+      "l3_name_en": "Transfer-SmallMaterialBox-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握物料盒从取物位置搬运至放置位置，移动距离小于1米",
+      "object_category": "物料盒",
+      "parameter_ranges": {
+        "size_range": "移动距离0.3-1m",
+        "weight_range": "0.5-5kg",
+        "force_range": "臂力支撑",
+        "precision_requirement": "平稳移动"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-直立复位-站姿恢复",
+      "l3_name_en": "BendForward-UprightReturn-StandRecover",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前屈姿态恢复到直立站姿，髋关节伸展回正",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "可能持物0-5kg",
+        "force_range": "核心肌群发力",
+        "precision_requirement": "保持平衡"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-朝向推车",
+      "l3_name_en": "TrunkRotate-90to180deg-FaceCart",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，上半身绕垂直轴旋转90-180度，使面向配送推车方向",
+      "object_category": "姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度90-180度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "朝向对准"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-分区排列-单层",
+      "l3_name_en": "Stack-ZonedArrangement-SingleLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将物料按目标工位分区有序放置在推车平台上，同一工位物料放置在同一区域",
+      "object_category": "物料/推车平台",
+      "parameter_ranges": {
+        "size_range": "物料间距5-15cm",
+        "weight_range": "单件0.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "分区清晰可辨"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "缓慢张开手指释放物体，确认物体已稳定放置在支撑面上",
+      "object_category": "物料",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "握力渐减至0",
+        "precision_requirement": "物体稳定不倾倒"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-圆管把手-直径20至40mm",
+      "l3_name_en": "PowerGrip-TubularHandle-Dia20to40mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握推车的圆管形把手，形成稳定握持以便推拉控制",
+      "object_category": "推车把手",
+      "parameter_ranges": {
+        "size_range": "把手直径20-40mm",
+        "weight_range": "N/A",
+        "force_range": "握力20-60N",
+        "precision_requirement": "稳定握持"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-配送推车-匀力持续推",
+      "l3_name_en": "Push-DeliveryCart-SteadyContinuous",
+      "parent_l2_id": "L2-05-02",
+      "description": "双臂对推车把手施加持续向前的推力，驱动推车移动",
+      "object_category": "配送推车",
+      "parameter_ranges": {
+        "size_range": "推车尺寸0.6x0.8m至1x1.2m",
+        "weight_range": "推车+货物总重20-100kg",
+        "force_range": "推力30-150N",
+        "precision_requirement": "方向控制"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-推车载物-双臂前推",
+      "l3_name_en": "LoadedWalk-CartWithGoods-TwoArmPush",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手握持推车把手，推着载有物料的推车在车间内行走",
+      "object_category": "配送推车",
+      "parameter_ranges": {
+        "size_range": "行走距离10-100m",
+        "weight_range": "推车+货物20-100kg",
+        "force_range": "维持推力20-80N",
+        "precision_requirement": "路径避障"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-推车宽度受限",
+      "l3_name_en": "Navigate-EquipmentGap-CartWidthConstrained",
+      "parent_l2_id": "L2-01-06",
+      "description": "推着推车通过设备之间的狭窄通道，需精确控制推车路径避免碰撞",
+      "object_category": "狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度0.8-1.2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "两侧间隙≥5cm"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-楼梯口-推车制动",
+      "l3_name_en": "Stop-StairEntry-CartBrake",
+      "parent_l2_id": "L2-01-08",
+      "description": "在楼梯口前精确停止推车，确保推车稳定不滑动",
+      "object_category": "楼梯口",
+      "parameter_ranges": {
+        "size_range": "停位偏差±10cm",
+        "weight_range": "N/A",
+        "force_range": "制动力足以静止",
+        "precision_requirement": "推车稳定"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-推车框架-中载提抬",
+      "l3_name_en": "CoopCarry-CartFrame-MediumLift",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂同时抬起推车前端，使推车后轮着地、前端悬空，便于上下楼梯",
+      "object_category": "推车",
+      "parameter_ranges": {
+        "size_range": "推车前端宽度0.5-0.8m",
+        "weight_range": "提起负载30-80kg",
+        "force_range": "双臂抬力150-400N",
+        "precision_requirement": "同步协调"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-工业楼梯-负载上行",
+      "l3_name_en": "Climb-IndustrialStairs-LoadedAscend",
+      "parent_l2_id": "L2-01-03",
+      "description": "拖拉或抬持推车沿工业楼梯台阶向上攀登",
+      "object_category": "楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度15-20cm，宽度25-30cm",
+        "weight_range": "推车+货物20-100kg",
+        "force_range": "拉力100-300N",
+        "precision_requirement": "每步稳定"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-工位标定点-分米级",
+      "l3_name_en": "Stop-WorkstationMark-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在目标工位旁的指定位置精确停止推车，便于物料交接",
+      "object_category": "工位",
+      "parameter_ranges": {
+        "size_range": "停位偏差±15cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-张开松手-推车已制动",
+      "l3_name_en": "Release-OpenHand-CartBraked",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认推车已制动稳定后，张开双手松开把手",
+      "object_category": "推车把手",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "握力渐减至0",
+        "precision_requirement": "推车不移动"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-推车物料区-定位扫描",
+      "l3_name_en": "Scan-CartMaterialZone-LocateScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉扫描推车上的物料分区，定位当前工位所需物料的位置",
+      "object_category": "推车物料区",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.5-1平方米",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "物料识别"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-03-07-001",
+      "l3_name_zh": "传递-机至人-协调交接",
+      "l3_name_en": "Handover-RobotToHuman-CoordinatedTransfer",
+      "parent_l2_id": "L2-03-07",
+      "description": "将物料递交给工位操作人员，等待对方伸手接取后协调完成交接",
+      "object_category": "物料",
+      "parameter_ranges": {
+        "size_range": "物料尺寸100-300mm",
+        "weight_range": "0.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "双方协调同步"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-协调松手-对方已接",
+      "l3_name_en": "Release-CoordinatedOpen-ReceiverHolding",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认接收方已稳定握持物料后，协调松开手指完成交接",
+      "object_category": "物料",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "握力渐减至0",
+        "precision_requirement": "感知对方握持状态"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-空载推车-双臂前推",
+      "l3_name_en": "LoadedWalk-EmptyCart-TwoArmPush",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手握持空推车把手，推着空车返回仓库",
+      "object_category": "配送推车",
+      "parameter_ranges": {
+        "size_range": "行走距离10-100m",
+        "weight_range": "空车10-30kg",
+        "force_range": "维持推力10-30N",
+        "precision_requirement": "路径避障"
+      },
+      "is_new": true,
+      "source_scene": "43-439-4390-MaterialDelivery-RepairWorkshop-MultiZoneVariety"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-03",
+      "L2-01-06",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-06",
+      "L2-03-07",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 6
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "scene_id": "29-00-2927",
+  "scene_name": "装配检测-日用塑料制品-多部件组合",
+  "total_steps": 19,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "伸手至基础件物料盒上方准备抓取塑料容器",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料盒上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 2,
+      "human_description": "全手包络抓握塑料容器基础件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形截面-中等尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "单臂将基础件从物料盒转移至装配工位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-塑料制品-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "将基础件精确放置于装配工位定位点",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-装配基准件-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "松开手指释放已定位的基础件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "伸手至配合件物料盒上方准备抓取盖子",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料盒上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "全手包络抓握塑料盖子配合件",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形截面-中等尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "单臂将盖子转移至基础件正上方对位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-塑料制品-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-1.5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "下压使盖子与容器卡扣咬合到位发出咔嗒声",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-塑料悬臂卡扣-弹性锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "松开手指离开已卡合的盖子",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "伸手至小配件物料盒准备抓取按钮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料盒上方-无障碍直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "用拇指和食指精密捏取小型塑料按钮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-塑料小件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "单臂将小按钮转移至产品装配孔位上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-小型配件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "下压使按钮卡入壳体孔位锁定到位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-塑料悬臂卡扣-弹性锁定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "松开手指离开已卡合的按钮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "目视检查各卡扣接缝确认装配到位无缝隙",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-装配接缝-装配确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "全手包络抓握组装完成的成品",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形截面-中等尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "单臂将成品转移至下游输出传送带",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-塑料制品-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "松开手指释放成品于传送带上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料盒上方-无障碍直线",
+      "l3_name_en": "Reach-AboveBin-UnobstructedLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向物料盒上方空间，为后续抓取动作做准备定位",
+      "object_category": "空间目标点",
+      "parameter_ranges": {
+        "size_range": "目标区域直径100-300mm",
+        "weight_range": "空载",
+        "force_range": "无外力",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-矩形截面-中等尺寸",
+      "l3_name_en": "PowerGrip-RectangularSection-MediumSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握具有矩形截面的中等尺寸塑料制品，手指和手掌形成稳定握持",
+      "object_category": "塑料制品",
+      "parameter_ranges": {
+        "size_range": "截面50-150mm，长度100-300mm",
+        "weight_range": "50-500g",
+        "force_range": "握力10-30N",
+        "precision_requirement": "无特殊精度要求"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-塑料制品-近距",
+      "l3_name_en": "Transfer-PlasticProduct-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂负载塑料制品在工位范围内进行近距离空间转移",
+      "object_category": "塑料制品",
+      "parameter_ranges": {
+        "size_range": "50-300mm",
+        "weight_range": "50-500g",
+        "force_range": "保持握持力10-30N",
+        "precision_requirement": "终点±10mm"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-小型配件-近距",
+      "l3_name_en": "Transfer-SmallComponent-ShortDistance",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂负载小型塑料配件在工位范围内进行近距离空间转移，需保持捏取稳定",
+      "object_category": "小型塑料配件",
+      "parameter_ranges": {
+        "size_range": "10-50mm",
+        "weight_range": "5-50g",
+        "force_range": "保持捏取力2-10N",
+        "precision_requirement": "终点±5mm"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-装配基准件-厘米级",
+      "l3_name_en": "PrecisePlace-AssemblyBase-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将作为装配基准的工件精确放置于工作台定位点，确保后续配合件装配对位",
+      "object_category": "装配基础件",
+      "parameter_ranges": {
+        "size_range": "50-300mm",
+        "weight_range": "50-500g",
+        "force_range": "轻放力<5N",
+        "precision_requirement": "±5mm"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指渐进张开释放物体，此时物体已获得外部支撑（工作台或已装配到位）",
+      "object_category": "已支撑物体",
+      "parameter_ranges": {
+        "size_range": "10-300mm",
+        "weight_range": "5-500g",
+        "force_range": "释放过程力渐减至0",
+        "precision_requirement": "无"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-塑料悬臂卡扣-弹性锁定",
+      "l3_name_en": "SnapFit-PlasticCantileverClip-ElasticLock",
+      "parent_l2_id": "L2-07-06",
+      "description": "下压使塑料件的悬臂卡扣产生弹性变形后越过配合面并回弹锁定，伴有咔嗒声反馈",
+      "object_category": "塑料卡扣件",
+      "parameter_ranges": {
+        "size_range": "卡扣宽度5-30mm",
+        "weight_range": "配合件10-300g",
+        "force_range": "压入力5-30N",
+        "precision_requirement": "对位±2mm"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-塑料小件",
+      "l3_name_en": "Pinch-TwoFingerOpposed-SmallPlasticPart",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指与食指指腹对向捏取小型塑料配件如按钮、小盖等",
+      "object_category": "小型塑料配件",
+      "parameter_ranges": {
+        "size_range": "直径或边长10-40mm",
+        "weight_range": "1-50g",
+        "force_range": "捏取力2-10N",
+        "precision_requirement": "抓取位置±3mm"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-装配接缝-装配确认",
+      "l3_name_en": "Gaze-AssemblySeam-FitConfirmation",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视检查各部件装配接缝处，确认卡扣到位、无缝隙、配合良好",
+      "object_category": "装配接缝",
+      "parameter_ranges": {
+        "size_range": "接缝长度10-200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可识别0.5mm以上缝隙"
+      },
+      "is_new": true,
+      "source_scene": "29-00-2927-Assembly"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-07-06",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 4
+  }
+}

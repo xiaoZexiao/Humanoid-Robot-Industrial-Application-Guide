@@ -1,0 +1,883 @@
+{
+  "scene_id": "19-00-1952",
+  "scene_name": "绷帮成型-皮鞋制造-多工位操作",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从上游传送带接收位置行走到物料接收区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-短距匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在物料区精确停到鞋帮存放架前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料架前-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手到鞋帮存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架层格-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "用手指适应性抓取柔软的鞋帮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-皮革帮面-片状柔软",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]鞋帮为柔软皮革材料，抓取时会产生形变，符合L2-04-04形变适应抓取而非L2-04-01力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将鞋帮从存放架移到工作台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-柔性片材-近距轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "另一只手伸向鞋楦存放处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料架层格-近距直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 5,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "力量抓握刚性鞋楦",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-鞋楦模具-中等尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将鞋楦移到工作台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-刚性模具-近距中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将鞋帮开口对准鞋楦头部",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-柔性帮面-开口对准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将鞋帮拉伸套入鞋楦，皮革产生弹性形变",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-07",
+      "l2_name": "弹性形变装配",
+      "l3_id": "L3-07-07-001",
+      "l3_name": "弹装-皮革帮面-撑开套入",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]鞋帮套入鞋楦过程中皮革需要拉伸变形才能包覆，符合L2-07-07弹性形变装配",
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "携带套好的鞋楦行走到前帮绷拉工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型工件-单手侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将鞋楦插入工位夹具定位孔",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-模具定位-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 13,
+      "human_description": "松开对鞋楦的握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-已固定工件-渐进松指",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 14,
+      "human_description": "伸手到绷帮钳存放处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具挂架-侧向伸取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "握取绷帮钳手柄呈功能使用姿势",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-绷帮钳-夹拉功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将绷帮钳移到前帮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-手持工具-近距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "用绷帮钳夹住前帮皮革边缘",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-钳夹皮革-工具对向夹",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "向鞋底方向拉紧前帮皮革",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-绷紧皮革-定向拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]拉紧鞋帮的运动方向朝向鞋底（可视为朝向身体方向的变体），且无严格几何约束，符合L2-05-03拉拔抽取",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 19,
+      "human_description": "保持拉紧力等待钉固",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-维持拉力-短时保持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "另一只手伸向钉枪存放处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具挂架-侧向伸取",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 19,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "握取钉枪手柄呈击发姿势",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-002",
+      "l3_name": "工具握持-钉枪-击发功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "将钉枪枪口抵到皮革与鞋底交接处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-工具接触点-毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "按下钉枪扳机击发钉入",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-钉枪扳机-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开绷帮钳对皮革的夹持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-工具松夹-渐进松力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "躯干向右侧旋转转向中帮位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-侧向作业-90度转向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "用绷帮钳夹住中帮皮革边缘",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-钳夹皮革-工具对向夹",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "向鞋底方向拉紧中帮皮革并钉固",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-绷紧皮革-定向拉力",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "按下钉枪扳机固定中帮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-钉枪扳机-中等力度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 29,
+      "human_description": "躯干继续旋转转向后帮位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-侧向作业-90度转向",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 30,
+      "human_description": "后帮绷拉钉固（同中帮操作）",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-绷紧皮革-定向拉力",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 31,
+      "human_description": "目视检查帮面绷紧平整度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-帮面成型-环绕巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 32,
+      "human_description": "将成型鞋从夹具中抽出放到传送带",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-夹具定位孔-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-短距匀速",
+      "l3_name_en": "walk-workshop_floor-short_distance_steady",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上进行短距离（3-10米）匀速直线行走",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "行走距离3-10m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点定位±30cm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料架前-分米级",
+      "l3_name_en": "stop-material_rack-decimeter_precision",
+      "parent_l2_id": "L2-01-08",
+      "description": "在物料架、工具架前精确停止，为后续取放物料做准备",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料架层格-近距直线",
+      "l3_name_en": "reach-shelf_compartment-short_linear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向物料架的某一层格伸出，进行近距离（0.3-0.8m）的直线伸达动作",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点定位±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-皮革帮面-片状柔软",
+      "l3_name_en": "adaptive_grasp-leather_upper-sheet_flexible",
+      "parent_l2_id": "L2-04-04",
+      "description": "用手指适应性抓取柔软的皮革鞋帮，手指顺应材料形变进行力度控制",
+      "object_category": "皮革片材",
+      "parameter_ranges": {
+        "size_range": "帮面展开尺寸200-350mm",
+        "weight_range": "50-200g",
+        "force_range": "抓取力2-8N",
+        "precision_requirement": "形变控制，避免褶皱"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-柔性片材-近距轻载",
+      "l3_name_en": "transfer-flexible_sheet-short_light",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将柔性片状物料（如皮革帮面）从取料位移动到工作位",
+      "object_category": "柔性片材",
+      "parameter_ranges": {
+        "size_range": "片材尺寸200-400mm",
+        "weight_range": "50-300g",
+        "force_range": "不适用",
+        "precision_requirement": "放置精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-鞋楦模具-中等尺寸",
+      "l3_name_en": "power_grasp-shoe_last-medium_size",
+      "parent_l2_id": "L2-04-01",
+      "description": "用全手包络抓握鞋楦模具，确保稳定握持以进行后续套楦操作",
+      "object_category": "刚性模具",
+      "parameter_ranges": {
+        "size_range": "鞋楦长度220-300mm，宽度80-120mm",
+        "weight_range": "300-800g",
+        "force_range": "握持力15-40N",
+        "precision_requirement": "稳定握持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-刚性模具-近距中载",
+      "l3_name_en": "transfer-rigid_mold-short_medium",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将刚性模具（如鞋楦）从存放位移动到工作位",
+      "object_category": "刚性模具",
+      "parameter_ranges": {
+        "size_range": "模具长度200-350mm",
+        "weight_range": "300-1000g",
+        "force_range": "不适用",
+        "precision_requirement": "放置精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-柔性帮面-开口对准",
+      "l3_name_en": "flip-flexible_upper-opening_align",
+      "parent_l2_id": "L2-03-04",
+      "description": "在自由空间中翻转调整柔性鞋帮的姿态，使其开口对准鞋楦头部",
+      "object_category": "柔性帮面",
+      "parameter_ranges": {
+        "size_range": "帮面展开尺寸200-350mm",
+        "weight_range": "50-200g",
+        "force_range": "不适用",
+        "precision_requirement": "开口朝向对准±15°"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-07-07-001",
+      "l3_name_zh": "弹装-皮革帮面-撑开套入",
+      "l3_name_en": "elastic_assembly-leather_upper-stretch_fit",
+      "parent_l2_id": "L2-07-07",
+      "description": "将皮革鞋帮撑开并套入鞋楦，皮革在套入过程中产生弹性拉伸形变",
+      "object_category": "皮革帮面",
+      "parameter_ranges": {
+        "size_range": "帮面需拉伸5-15mm",
+        "weight_range": "50-200g",
+        "force_range": "拉伸力10-30N",
+        "precision_requirement": "帮面与鞋楦贴合无明显褶皱"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型工件-单手侧持",
+      "l3_name_en": "loaded_walk-medium_workpiece-single_hand_side",
+      "parent_l2_id": "L2-01-07",
+      "description": "手持中等重量工件（如套好帮面的鞋楦）在工位间行走",
+      "object_category": "中型工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸200-350mm",
+        "weight_range": "400-1200g",
+        "force_range": "不适用",
+        "precision_requirement": "行走稳定不掉落"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-模具定位-间隙配合",
+      "l3_name_en": "insert-mold_positioning-clearance_fit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将鞋楦底部插入工位夹具的定位孔或定位销中，实现工件固定",
+      "object_category": "刚性模具",
+      "parameter_ranges": {
+        "size_range": "定位孔/销直径15-30mm",
+        "weight_range": "400-1200g",
+        "force_range": "插入力5-15N",
+        "precision_requirement": "配合间隙0.5-2mm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-已固定工件-渐进松指",
+      "l3_name_en": "release-secured_workpiece-gradual_open",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工件已被夹具或其他方式固定后，渐进松开手指完成释放",
+      "object_category": "已固定工件",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平稳释放无冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工具挂架-侧向伸取",
+      "l3_name_en": "reach-tool_rack-lateral_extend",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向侧方工具挂架伸出，为拿取工具做准备",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "终点定位±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-绷帮钳-夹拉功能姿",
+      "l3_name_en": "tool_grip-lasting_pliers-clamp_pull_pose",
+      "parent_l2_id": "L2-04-03",
+      "description": "握取绷帮钳手柄，手指按夹拉功能需求排列，便于后续夹持和拉紧操作",
+      "object_category": "绷帮钳",
+      "parameter_ranges": {
+        "size_range": "钳柄长度100-150mm",
+        "weight_range": "200-500g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "功能姿势正确"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-手持工具-近距定位",
+      "l3_name_en": "transfer-handheld_tool-short_positioning",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手持工具从存放位移动到作业目标位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-300mm",
+        "weight_range": "200-800g",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-钳夹皮革-工具对向夹",
+      "l3_name_en": "clamp-plier_leather-tool_opposing",
+      "parent_l2_id": "L2-05-04",
+      "description": "使用绷帮钳夹住皮革帮面边缘，形成稳定夹持以便后续拉紧",
+      "object_category": "皮革边缘",
+      "parameter_ranges": {
+        "size_range": "夹持宽度10-30mm",
+        "weight_range": "不适用",
+        "force_range": "夹持力20-50N",
+        "precision_requirement": "夹持牢固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-绷紧皮革-定向拉力",
+      "l3_name_en": "pull-tension_leather-directional_force",
+      "parent_l2_id": "L2-05-03",
+      "description": "通过绷帮钳向鞋底方向拉紧皮革帮面，使其贴合鞋楦成型",
+      "object_category": "皮革帮面",
+      "parameter_ranges": {
+        "size_range": "拉伸行程10-30mm",
+        "weight_range": "不适用",
+        "force_range": "拉力30-80N",
+        "precision_requirement": "拉力均匀，帮面平整"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-维持拉力-短时保持",
+      "l3_name_en": "brace-maintain_tension-short_hold",
+      "parent_l2_id": "L2-05-06",
+      "description": "保持手臂对绷帮钳的拉力输出，维持皮革绷紧状态等待钉固",
+      "object_category": "受拉皮革",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "维持力30-80N",
+        "precision_requirement": "力度稳定不松弛"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-04-03-002",
+      "l3_name_zh": "工具握持-钉枪-击发功能姿",
+      "l3_name_en": "tool_grip-nail_gun-firing_pose",
+      "parent_l2_id": "L2-04-03",
+      "description": "握取钉枪手柄，食指扣在扳机上呈击发姿势",
+      "object_category": "钉枪",
+      "parameter_ranges": {
+        "size_range": "枪柄长度80-120mm",
+        "weight_range": "500-1500g",
+        "force_range": "握持力15-35N",
+        "precision_requirement": "击发姿势正确"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-工具接触点-毫米级",
+      "l3_name_en": "place-tool_contact-millimeter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将工具末端（如钉枪枪口）精确放置到作业接触点",
+      "object_category": "手持工具末端",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±3mm"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-钉枪扳机-中等力度",
+      "l3_name_en": "press-nail_gun_trigger-medium_force",
+      "parent_l2_id": "L2-05-01",
+      "description": "用食指按下钉枪扳机触发击发，将固定钉钉入皮革和鞋底",
+      "object_category": "钉枪扳机",
+      "parameter_ranges": {
+        "size_range": "扳机行程8-15mm",
+        "weight_range": "不适用",
+        "force_range": "触发力10-25N",
+        "precision_requirement": "触发到位"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-工具松夹-渐进松力",
+      "l3_name_en": "release-tool_unclamp-gradual_relax",
+      "parent_l2_id": "L2-04-07",
+      "description": "渐进松开绷帮钳的夹持力，解除对皮革的夹持",
+      "object_category": "夹持工具",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平稳释放"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-侧向作业-90度转向",
+      "l3_name_en": "rotate-lateral_work-90_degree_turn",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，上半身绕垂直轴旋转约90度转向侧面作业位置",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转向角度±10°"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-帮面成型-环绕巡视",
+      "l3_name_en": "scan-upper_forming-circumferential_inspection",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视环绕检查鞋帮成型质量，确认绷紧平整无褶皱",
+      "object_category": "成型帮面",
+      "parameter_ranges": {
+        "size_range": "检查范围360°环绕",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别>2mm的褶皱缺陷"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-夹具定位孔-间隙配合",
+      "l3_name_en": "extract-fixture_hole-clearance_fit",
+      "parent_l2_id": "L2-07-02",
+      "description": "将鞋楦从工位夹具定位孔中直线抽出",
+      "object_category": "刚性模具",
+      "parameter_ranges": {
+        "size_range": "定位孔深度20-50mm",
+        "weight_range": "400-1200g",
+        "force_range": "抽出力5-15N",
+        "precision_requirement": "轴向抽出偏斜<1°"
+      },
+      "is_new": true,
+      "source_scene": "S-19-00-1952-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-03",
+      "L2-05-04",
+      "L2-05-06",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-07",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-05-03",
+    "涉及的L1数量": 7
+  }
+}

@@ -1,0 +1,777 @@
+{
+  "scene_id": "22-222-2221",
+  "scene_name": "搬运堆叠-废纸原料包-重载拆包",
+  "total_steps": 27,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区行走到叉车放置的废纸包工作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业堆场地面-常规速度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在废纸包侧面合适操作距离处精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料包侧-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视扫描废纸包外表面确认打包带位置、数量和类型",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-大型包装外表面-快速巡视",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "空手伸向腰部工具挂架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-腰部工具位-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "握住钢带剪刀把手形成剪切操作握姿",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-钢带剪-剪切功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "持剪刀移动手臂到废纸包打包带位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "弯腰俯身使身体接近打包带操作高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "目视对准第一条打包带的切割点位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-打包带-切割点定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将剪刀刀口精确贴合到打包带表面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-剪刀刀口-毫米级",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]此处是工具定位而非物体放置，但定位精度要求符合L2-03-05特征",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "用力挤压剪刀把手剪断打包带",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹切-剪刀双刃对夹-瞬时切断",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]剪刀剪切本质是双向对夹施力，虽目的为切断而非固持，但力学特征符合L2-05-04",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 11,
+      "human_description": "打包带断开瞬间快速撤回手臂避免弹伤",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-快速撤回-避险动作",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "躯干旋转调整身体朝向至下一条打包带方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-45至90度-侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "目视对准第二条打包带的切割点位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-打包带-切割点定位",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将剪刀刀口精确贴合到第二条打包带表面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-剪刀刀口-毫米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "用力挤压剪刀把手剪断第二条打包带",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹切-剪刀双刃对夹-瞬时切断",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "打包带断开瞬间快速撤回手臂避免弹伤",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-快速撤回-避险动作",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起立恢复-直立姿态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "空手伸向地面切断的打包带位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-地面物料位-弯腰配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "弯腰俯身接近地面打包带高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-003",
+      "l3_name": "俯身-深度前屈-地面高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 18,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "全手握住切断的钢带或塑料带",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-条带状-宽度20至50mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "用力将打包带从废纸包缝隙中拉出",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-缠绕固定带-中等拉力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "持打包带移动手臂到废料收集区上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-003",
+      "l3_name": "转移-条带状废料-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "松开手指将打包带释放到收集箱中",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体自由落下",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "行走到废纸包正面即碎浆机进料口方向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度绕包-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 25,
+      "human_description": "双臂伸展贴近散落废纸表面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-大型物料表面-双臂展开",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "双臂持续推压废纸使其滑入碎浆机进料口",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-散装废纸-匀力持续推",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将切割工具放回腰部工具挂架并松开手指",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-工具归位-挂架固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业堆场地面-常规速度",
+      "l3_name_en": "Walk-IndustrialYardFloor-NormalSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在废纸堆场的水泥或沥青地面上以常规速度直线行走，地面可能有少量粉尘和碎屑",
+      "object_category": "工业地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-20m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分米级路径跟踪"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料包侧-分米级",
+      "l3_name_en": "Stop-MaterialBaleSide-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在大型物料包侧面约0.5-1m处精确停止，为后续拆包操作做好定位",
+      "object_category": "大型物料包",
+      "parameter_ranges": {
+        "size_range": "停止距离精度±10cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-大型包装外表面-快速巡视",
+      "l3_name_en": "Scan-LargePackageSurface-QuickInspection",
+      "parent_l2_id": "L2-09-03",
+      "description": "快速扫视大型包装物的外表面，识别打包带位置、数量和类型（钢带或塑料带）",
+      "object_category": "大型包装外表面",
+      "parameter_ranges": {
+        "size_range": "包装尺寸1-2m见方",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级特征识别"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-腰部工具位-直线路径",
+      "l3_name_en": "Reach-WaistToolPosition-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手沿直线路径伸向腰部工具挂架或工具袋位置，准备抓取工具",
+      "object_category": "腰部佩戴区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-钢带剪-剪切功能姿",
+      "l3_name_en": "ToolGrip-SteelBandCutter-CuttingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "按剪切功能要求握住钢带剪或重型剪刀的把手，拇指和其他四指分别握住两个把手",
+      "object_category": "剪切工具",
+      "parameter_ranges": {
+        "size_range": "把手长度150-250mm",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "握持力20-50N",
+        "precision_requirement": "功能性握姿"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer-HandheldTool-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持工具在近距离范围内移动到目标操作位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "移动距离0.5-1m",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴前屈约30-60度，使操作位置从站立视线高度降至腰部高度",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "弯曲角度30-60度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "目标高度约0.8-1.0m"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-打包带-切割点定位",
+      "l3_name_en": "Gaze-PackingBand-CutPointPositioning",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视对准打包带上合适的切割位置，确认切割点避开交叉和重叠区域",
+      "object_category": "打包带",
+      "parameter_ranges": {
+        "size_range": "带宽20-50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "毫米级位置识别"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-剪刀刀口-毫米级",
+      "l3_name_en": "PrecisePlace-ScissorBlade-MillimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将剪刀刀口精确定位到打包带表面的切割点，使刀口完全贴合带材",
+      "object_category": "剪刀刀口",
+      "parameter_ranges": {
+        "size_range": "刀口宽度30-60mm",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "定位力<5N",
+        "precision_requirement": "毫米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹切-剪刀双刃对夹-瞬时切断",
+      "l3_name_en": "ClampCut-ScissorBilateralClamp-InstantSever",
+      "parent_l2_id": "L2-05-04",
+      "description": "通过挤压剪刀把手使双刃对向闭合，产生剪切力瞬间切断打包带",
+      "object_category": "打包带（钢带或塑料带）",
+      "parameter_ranges": {
+        "size_range": "带宽20-50mm，带厚0.5-1.5mm",
+        "weight_range": "不适用",
+        "force_range": "手部握力100-300N",
+        "precision_requirement": "完全切断"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-快速撤回-避险动作",
+      "l3_name_en": "Transfer-QuickRetract-HazardAvoidance",
+      "parent_l2_id": "L2-03-02",
+      "description": "在打包带切断瞬间快速撤回持工具的手臂，避免打包带弹开造成伤害",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "撤回距离30-50cm",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "反应时间<0.5秒"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-45至90度-侧向",
+      "l3_name_en": "TrunkRotate-45to90Degrees-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，上半身绕垂直轴旋转45-90度，调整身体朝向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "旋转角度45-90度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起立恢复-直立姿态",
+      "l3_name_en": "BendForward-StandUpRecover-UprightPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复到直立站姿，躯干由前屈状态伸直",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "恢复角度30-90度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平稳恢复"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-地面物料位-弯腰配合",
+      "l3_name_en": "Reach-GroundMaterialPosition-BendingCoordinate",
+      "parent_l2_id": "L2-03-01",
+      "description": "配合弯腰动作将空手伸向地面附近的物料位置",
+      "object_category": "地面物料",
+      "parameter_ranges": {
+        "size_range": "伸达距离50-100cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-02-02-003",
+      "l3_name_zh": "俯身-深度前屈-地面高度",
+      "l3_name_en": "BendForward-DeepFlex-GroundLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴深度前屈约60-90度，使手部能够触及地面高度",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "弯曲角度60-90度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "目标高度0-30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-条带状-宽度20至50mm",
+      "l3_name_en": "PowerGrip-StripShaped-Width20to50mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络握住条带状物体（钢带或塑料带），确保足够握力防止滑脱",
+      "object_category": "打包带",
+      "parameter_ranges": {
+        "size_range": "带宽20-50mm",
+        "weight_range": "单条带0.5-2kg",
+        "force_range": "握力30-80N",
+        "precision_requirement": "稳定抓持"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-缠绕固定带-中等拉力",
+      "l3_name_en": "Pull-WrappedFixingBand-MediumForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "用力将缠绕在物料包上的打包带从缝隙和包裹中抽出",
+      "object_category": "打包带",
+      "parameter_ranges": {
+        "size_range": "带长2-5m",
+        "weight_range": "单条带0.5-2kg",
+        "force_range": "拉力50-150N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-02-003",
+      "l3_name_zh": "转移-条带状废料-近距",
+      "l3_name_en": "Transfer-StripShapedWaste-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持条带状废料移动到收集区域上方",
+      "object_category": "条带状废料",
+      "parameter_ranges": {
+        "size_range": "移动距离1-3m",
+        "weight_range": "废料重量0.5-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体自由落下",
+      "l3_name_en": "Release-GradualLoosen-ObjectFreeFall",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指渐进松开使物体在重力作用下自由落入容器中",
+      "object_category": "条带状废料",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "物体重量0.5-2kg",
+        "force_range": "释放过程力降至0",
+        "precision_requirement": "落点误差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度绕包-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeAroundBale-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "绕大型物料包行走约90度转向，从侧面移动到正面位置",
+      "object_category": "大型物料包周边区域",
+      "parameter_ranges": {
+        "size_range": "行走弧长2-4m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分米级路径"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-大型物料表面-双臂展开",
+      "l3_name_en": "Reach-LargeMaterialSurface-DualArmExtend",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时展开伸向大型物料表面，准备进行推压操作",
+      "object_category": "大型散装物料",
+      "parameter_ranges": {
+        "size_range": "伸达跨度80-120cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-散装废纸-匀力持续推",
+      "l3_name_en": "Push-LooseWastePaper-SteadyContinuousPush",
+      "parent_l2_id": "L2-05-02",
+      "description": "双臂持续向碎浆机进料口方向推压散落的废纸，使其滑入进料口",
+      "object_category": "散装废纸",
+      "parameter_ranges": {
+        "size_range": "推送距离0.5-2m",
+        "weight_range": "分批推送每次50-200kg",
+        "force_range": "推力100-500N",
+        "precision_requirement": "方向偏差±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-工具归位-挂架固定",
+      "l3_name_en": "Release-ToolReturn-RackMount",
+      "parent_l2_id": "L2-04-07",
+      "description": "将工具放回工具挂架后松开手指，使工具稳定挂置在挂架上",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度200-400mm",
+        "weight_range": "工具重量0.5-2kg",
+        "force_range": "释放过程力降至0",
+        "precision_requirement": "稳定挂置"
+      },
+      "is_new": true,
+      "source_scene": "SC-22-2221-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-05-03",
+      "L2-05-04",
+      "L2-09-01",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-03-02",
+    "涉及的L1数量": 5
+  }
+}

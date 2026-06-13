@@ -1,0 +1,489 @@
+{
+  "scene_id": "36-361-00",
+  "scene_name": "搬运上料-冲压板料-重载翻转",
+  "total_steps": 17,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机位置沿车间通道走向料垛取料点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间环氧地坪-常速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在料垛前的取料标定点精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视观察料垛顶部板料的位置、朝向和堆叠状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-物料位置状态-取放确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "躯干前屈弯腰使双手能够触及料垛上板料的边缘高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-低位取料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂同时向前伸展至板料长边两侧边缘位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-大型物料边缘-自由路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手五指张开后包握住板料边缘形成稳固力量抓握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-薄板边缘-大尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调发力将板料从料垛上垂直提起脱离堆叠",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-大型薄板-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "躯干从弯腰状态伸直恢复至站立姿态同时保持板料稳定",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "起身-中度前屈恢复-站立姿态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰俯身的逆过程，仍属于L2-02-02躯干前后方向构型变化，而非L2-02-03下蹲起立",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双臂协调将板料绕水平轴翻转180度调整其朝向",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-180度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]在自由空间中改变物体朝向，不涉及外部旋转力交互，归入L1-03而非L1-06",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "双臂前持板料沿车间通道向冲压机进料台方向行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-大型薄板-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在冲压机进料台前的放料标定点精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "目视进料台上的定位标记确定板料放置的精确位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-定位标记-对准确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双臂协调控制将板料精确对准定位点后缓慢下放至进料台面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-大型板料-厘米级",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]板料放置到台面无几何约束引导，归入L2-03-05而非L1-07约束路径操作",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "双手手指渐进张开松脱对板料边缘的抓握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "目视检查已放置板料与定位标记的对齐情况确认无偏差",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-物料位置状态-取放确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "躯干绕垂直轴旋转180度面向待机区方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-180度范围-转向",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]双脚位置不变仅上半身转动，归入L2-02-04而非L2-01-02变向行走",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "沿车间通道返回待机位置准备下一循环",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间环氧地坪-常速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间环氧地坪-常速",
+      "l3_name_en": "Walk-FactoryEpoxyFloor-NormalSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧树脂地坪上以正常工作速度直线行走",
+      "object_category": "车间地面",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-大型薄板-双臂前持",
+      "l3_name_en": "LoadedWalk-LargeSheet-DualArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身体前方水平持握大型薄板状物料进行负载行走",
+      "object_category": "冲压板料",
+      "parameter_ranges": {
+        "size_range": "1.0m×2.0m至1.5m×3.0m",
+        "weight_range": "15-40kg",
+        "force_range": "不适用",
+        "precision_requirement": "步态稳定性要求高"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工位标定点-厘米级",
+      "l3_name_en": "Stop-WorkstationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工位地面标定点精确停止站定以便执行后续操作",
+      "object_category": "工位定位点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-低位取料",
+      "l3_name_en": "BendForward-ModerateFlex-LowPickup",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干向前弯曲约30-60度使手部能够触及腰部以下高度的物料",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "目标高度膝上至腰部(0.4-0.9m)"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "起身-中度前屈恢复-站立姿态",
+      "l3_name_en": "StandUp-FromModerateFlex-UprightPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从中度前屈弯腰状态伸直躯干恢复至直立站姿",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "恢复角度范围30-60度至直立"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-180度范围-转向",
+      "l3_name_en": "TorsoRotation-180DegreeRange-Turning",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不移动情况下躯干绕垂直轴旋转90-180度改变身体朝向",
+      "object_category": "躯干旋转",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "旋转角度90-180度"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-大型物料边缘-自由路径",
+      "l3_name_en": "Reach-LargeMaterialEdge-FreePath",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂在无障碍空间中向前伸展至大型物料的边缘抓取位置",
+      "object_category": "板料边缘",
+      "parameter_ranges": {
+        "size_range": "物料尺寸1.0m×2.0m以上",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "伸达距离0.5-1.0m"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-大型薄板-重载",
+      "l3_name_en": "CoordinatedCarry-LargeSheet-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调配合将大型薄板状重载物料提起并保持稳定",
+      "object_category": "冲压板料",
+      "parameter_ranges": {
+        "size_range": "1.0m×2.0m至1.5m×3.0m",
+        "weight_range": "15-40kg",
+        "force_range": "单臂承载7.5-20kg",
+        "precision_requirement": "保持板料水平稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-180度",
+      "l3_name_en": "Flip-AroundHorizontalAxis-180Degree",
+      "parent_l2_id": "L2-03-04",
+      "description": "双臂协调将板状物料绕水平轴翻转180度使其上下面互换",
+      "object_category": "冲压板料",
+      "parameter_ranges": {
+        "size_range": "1.0m×2.0m至1.5m×3.0m",
+        "weight_range": "15-40kg",
+        "force_range": "翻转力矩[待补充]",
+        "precision_requirement": "翻转角度180±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-大型板料-厘米级",
+      "l3_name_en": "PrecisionPlace-LargeSheet-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将大型板状物料精确对准定位标记后平稳下放至指定位置",
+      "object_category": "冲压板料",
+      "parameter_ranges": {
+        "size_range": "1.0m×2.0m至1.5m×3.0m",
+        "weight_range": "15-40kg",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-薄板边缘-大尺寸",
+      "l3_name_en": "PowerGrip-SheetEdge-LargeSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "五指张开后包握薄板材料边缘形成稳固的力量型抓握",
+      "object_category": "板料边缘",
+      "parameter_ranges": {
+        "size_range": "板厚0.8-3mm，边缘可握宽度10-30mm",
+        "weight_range": "单手承载7.5-20kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已被外部支撑面承托后手指逐渐张开解除抓握",
+      "object_category": "板料",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "释放时间0.5-1秒"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-物料位置状态-取放确认",
+      "l3_name_en": "Gaze-MaterialPositionStatus-PickPlaceConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准物料观察其位置、朝向和状态以确认取放操作条件",
+      "object_category": "板料",
+      "parameter_ranges": {
+        "size_range": "观察对象1.0m×2.0m以上",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "观察距离0.5-2.0m"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-定位标记-对准确认",
+      "l3_name_en": "Gaze-PositionMark-AlignmentConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准工位定位标记识别放置位置以引导精确对位操作",
+      "object_category": "定位标记",
+      "parameter_ranges": {
+        "size_range": "标记尺寸50-200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-36-361-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-09-01",
+    "涉及的L1数量": 5
+  }
+}

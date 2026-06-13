@@ -1,0 +1,759 @@
+{
+  "scene_id": "31-311-3110",
+  "scene_name": "渣处理监控-高温炉渣破碎-粉尘飞溅环境",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命区出发，沿通道行走至渣处理车间入口",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在车间入口转向，进入渣流观察区通道",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "行走至渣流观察平台，跨越地面管线",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-地面管线-20cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "在渣流观察点精确停位，站定于安全观察距离",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-观察标定点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "目视观察出渣口渣流状态，判断流动是否正常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-高温渣流-流态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 6,
+      "human_description": "转动身体观察渣沟两侧情况",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向左",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "扫视渣沟沿线，检查是否有堵塞或溢流迹象",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-渣沟沿线-线性扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 8,
+      "human_description": "转回身体朝向行进方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-向右",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "沿巡检路线行走至水淬设备区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-30"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在水淬设备前停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-观察标定点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "扫视水淬设备整体运行状态，观察蒸汽排放情况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-水淬设备表面-栅格扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-20"
+    },
+    {
+      "step_order": 12,
+      "human_description": "注视水淬池水位指示",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-液位计刻度-液位数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 13,
+      "human_description": "侧耳倾听设备运转声音，判断是否有异常噪音",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-设备运转声-水淬泵处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 14,
+      "human_description": "行走至干渣设备区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-25"
+    },
+    {
+      "step_order": 15,
+      "human_description": "在干渣破碎机前停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-观察标定点-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "扫视干渣破碎机及输送带运行状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-003",
+      "l3_name": "扫检-破碎输送设备-线性扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-20"
+    },
+    {
+      "step_order": 17,
+      "human_description": "注视粉尘浓度监测仪表读数",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-浓度仪表盘-粉尘浓度值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "发现渣沟局部堵塞，行走至工具存放架",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 19,
+      "human_description": "伸手至工具架，接近长柄铲",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "握住长柄铲手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-长柄铲-双手持杆姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "持铲行走至堵塞位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具-双手横持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 22,
+      "human_description": "弯腰俯身至工作高度，准备清理",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "用铲铲除堵塞物，推送至渣沟内",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-凝固渣块-匀力铲推",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 此动作主要目的是施加力推动堵塞物，而非精确位移，归入L2-05-02而非L2-03-08",
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 24,
+      "human_description": "直起身体恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-从前屈位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 25,
+      "human_description": "持铲行走回工具存放架",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具-双手横持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-15"
+    },
+    {
+      "step_order": 26,
+      "human_description": "将铲放置回工具架上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-长柄工具-工具架挂位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 27,
+      "human_description": "松开手指释放工具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已挂放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 28,
+      "human_description": "沿巡检路线行走返回待命区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "40-60"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业厂房地面-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房环氧地坪或混凝土地面上匀速行走，地面可能有轻微积灰或水渍",
+      "object_category": "工业厂房地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-连续步态",
+      "l3_name_en": "TurnWalk-90DegreeTurn-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "在厂房通道交叉口进行约90度方向转换，保持连续行走步态不停顿",
+      "object_category": "通道转角",
+      "parameter_ranges": {
+        "size_range": "转弯半径0.5-1.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "转向角度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-地面管线-20cm以内",
+      "l3_name_en": "StepOver-FloorPipes-Under20cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "跨越铺设在地面的工艺管线、电缆槽等障碍物，高度不超过20cm",
+      "object_category": "地面管线",
+      "parameter_ranges": {
+        "size_range": "障碍高度5-20cm，宽度10-30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "抬腿高度裕量5cm以上"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-观察标定点-分米级",
+      "l3_name_en": "Stop-ObservationPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在巡检路线上的指定观察点精确停止，确保处于安全观察距离和最佳视角位置",
+      "object_category": "巡检观察点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-长柄工具-双手横持",
+      "l3_name_en": "LoadedWalk-LongHandleTool-TwoHandHorizontal",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手横向持握长柄工具（如铲、耙）行走，工具长度影响通行宽度和步态",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度1.2-2.0m",
+        "weight_range": "3-8kg",
+        "force_range": "不适用",
+        "precision_requirement": "避免碰撞设备"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "上身前屈约45-60度，使双手工作高度降至腰部以下，用于低位作业准备",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "前屈角度45-60度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "保持平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-从前屈位",
+      "l3_name_en": "BendForward-ReturnUpright-FromFlexion",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前屈工作姿态恢复至直立站姿，髋部和腰椎伸展",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度45-60度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "动作平稳"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向左",
+      "l3_name_en": "TrunkRotate-90Degree-Leftward",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚原地不动，上半身绕垂直轴向左旋转约90度，用于改变观察方向",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-向右",
+      "l3_name_en": "TrunkRotate-90Degree-Rightward",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚原地不动，上半身绕垂直轴向右旋转约90度，用于改变观察方向",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±10度"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架上方-无障碍直线",
+      "l3_name_en": "Reach-ToolRackAbove-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂向前上方伸出，到达工具架位置，路径无障碍物遮挡",
+      "object_category": "工具存放架",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.5-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "到达位置±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-长柄工具-工具架挂位",
+      "l3_name_en": "PlacePrecise-LongHandleTool-RackHook",
+      "parent_l2_id": "L2-03-05",
+      "description": "将长柄工具精确放置到工具架的挂钩或卡槽位置",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具长度1.2-2.0m",
+        "weight_range": "3-8kg",
+        "force_range": "不适用",
+        "precision_requirement": "挂位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-长柄铲-双手持杆姿",
+      "l3_name_en": "ToolGrip-LongShovel-TwoHandShaftGrip",
+      "parent_l2_id": "L2-04-03",
+      "description": "双手分开握住长柄铲的杆部，一手靠近铲头端控制方向，一手靠近尾端提供力矩",
+      "object_category": "长柄铲",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，双手间距0.4-0.8m",
+        "weight_range": "3-8kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "握持稳固不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已挂放",
+      "l3_name_en": "Release-GradualOpen-ToolHung",
+      "parent_l2_id": "L2-04-07",
+      "description": "工具已放置在挂架上后，手指渐进张开松脱握持",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "不适用",
+        "force_range": "释放力渐减",
+        "precision_requirement": "确认工具稳定后松手"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-凝固渣块-匀力铲推",
+      "l3_name_en": "Push-SolidifiedSlag-SteadyShovel",
+      "parent_l2_id": "L2-05-02",
+      "description": "使用长柄铲对渣沟内凝固的渣块施加持续推力，将堵塞物推送入渣流",
+      "object_category": "凝固炉渣",
+      "parameter_ranges": {
+        "size_range": "渣块尺寸10-50cm",
+        "weight_range": "渣块重量5-50kg",
+        "force_range": "推力50-200N",
+        "precision_requirement": "力方向沿渣沟方向"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-高温渣流-流态确认",
+      "l3_name_en": "Gaze-HotSlagFlow-FlowStateConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视高温炉渣流动状态，观察流速、颜色、粘稠度等特征以判断是否正常",
+      "object_category": "高温渣流",
+      "parameter_ranges": {
+        "size_range": "观察距离3-10m（安全距离）",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线对准渣流中心"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-渣沟沿线-线性扫描",
+      "l3_name_en": "Scan-SlagTroughLine-LinearSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视线沿渣沟长度方向线性移动扫描，检查沿线是否有堵塞、溢流或结构异常",
+      "object_category": "渣沟",
+      "parameter_ranges": {
+        "size_range": "扫描长度10-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖渣沟全长"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-水淬设备表面-栅格扫描",
+      "l3_name_en": "Scan-WaterQuenchEquipSurface-GridSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "以栅格模式系统性扫视水淬设备外表面，检查泄漏、腐蚀、蒸汽异常等",
+      "object_category": "水淬设备",
+      "parameter_ranges": {
+        "size_range": "设备尺寸3-10m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖设备可视面"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-03-003",
+      "l3_name_zh": "扫检-破碎输送设备-线性扫描",
+      "l3_name_en": "Scan-CrusherConveyor-LinearSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "沿干渣破碎机和输送带运行方向线性扫视，检查运转状态和物料流动",
+      "object_category": "破碎输送设备",
+      "parameter_ranges": {
+        "size_range": "设备长度5-20m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖设备运行段"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-设备运转声-水淬泵处",
+      "l3_name_en": "Listen-EquipRunningSound-AtWaterPump",
+      "parent_l2_id": "L2-09-05",
+      "description": "侧耳倾听水淬泵及相关设备运转声音，判断是否存在异常振动或摩擦噪音",
+      "object_category": "水淬泵",
+      "parameter_ranges": {
+        "size_range": "听距1-5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能分辨异常频率"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-液位计刻度-液位数值",
+      "l3_name_en": "Read-LevelGaugeScale-LevelValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视液位计刻度盘，读取当前液位数值并判断是否在正常范围",
+      "object_category": "液位计",
+      "parameter_ranges": {
+        "size_range": "刻度盘直径100-200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "读数精度±5%量程"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-浓度仪表盘-粉尘浓度值",
+      "l3_name_en": "Read-ConcentrationMeter-DustLevel",
+      "parent_l2_id": "L2-09-07",
+      "description": "注视粉尘浓度监测仪表显示屏，读取当前粉尘浓度数值并判断安全状态",
+      "object_category": "粉尘浓度仪",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸50-100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别报警阈值"
+      },
+      "is_new": true,
+      "source_scene": "SC-3110-SLAG-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-05",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-05",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-05",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 7
+  }
+}

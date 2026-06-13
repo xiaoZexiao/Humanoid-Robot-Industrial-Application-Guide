@@ -1,0 +1,337 @@
+{
+  "scene_id": "42-422-4220",
+  "scene_name": "分拣分类-废纸-按品类等级分选",
+  "total_steps": 11,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "视觉扫描传送带上的混合废纸堆，识别下一个要抓取的目标废纸",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-传送带物料-品类预判",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "视线锁定目标废纸，确认其在传送带上的精确位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-传送带物料-抓取定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "空手向传送带上的目标废纸伸出手臂",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-传送带上方-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "手指适应废纸的柔软形态，捏取或抓握目标废纸",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-纸张柔性-片状不规则",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]废纸为柔性物体且形态不规则，虽然重量轻可用指尖捏取，但考虑到纸张可能折叠、受潮变形，需要手指适应其形状，故归入L2-04-04而非L2-04-02",
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将废纸从传送带提起至胸前视觉检视高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻质柔性物-近距提升",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "近距离查看废纸，判断纸张类型、等级、是否受潮、是否含塑料膜或胶带",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-纸张材质-品类分级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1.5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "根据判断结果，躯干转向对应品类的打包区方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-0至180度-分拣朝向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手臂将废纸移动至对应打包区上方位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-轻质柔性物-投放定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 9,
+      "human_description": "松开手指，使废纸自由落入打包区",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-自由落放-轻质柔性物",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.2-0.3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "躯干回转复位，朝向传送带方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-0至180度-分拣朝向",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.8"
+    },
+    {
+      "step_order": 11,
+      "human_description": "手臂回收至身体前方待命位置，准备下一循环",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-身体前方-待命复位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-传送带物料-品类预判",
+      "l3_name_en": "AreaScan-ConveyorMaterial-CategoryPrescreen",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉系统对传送带上的混合物料进行栅格式扫描，快速识别各物料的大致类别和位置，为后续抓取选择目标",
+      "object_category": "传送带物料流",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.5-2m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "类别识别准确率>90%"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-传送带物料-抓取定位",
+      "l3_name_en": "Gaze-ConveyorMaterial-GraspLocalization",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线锁定传送带上已识别的目标物料，精确确认其三维位置和姿态，为手臂伸达提供定位信息",
+      "object_category": "传送带物料",
+      "parameter_ranges": {
+        "size_range": "目标尺寸50-500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-传送带上方-直线路径",
+      "l3_name_en": "Reach-AboveConveyor-LinearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手沿直线路径向传送带上方的目标位置伸出手臂，无障碍物遮挡",
+      "object_category": "空载运动",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-800mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端到位精度±30mm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-纸张柔性-片状不规则",
+      "l3_name_en": "AdaptGrasp-FlexiblePaper-IrregularSheet",
+      "parent_l2_id": "L2-04-04",
+      "description": "手指根据纸张的柔软形态和折叠状态自适应调整抓握构型，既可用指尖捏取纸张边缘，也可用多指包络折叠纸堆",
+      "object_category": "纸张/纸制品",
+      "parameter_ranges": {
+        "size_range": "单件100-600mm",
+        "weight_range": "10-500g",
+        "force_range": "抓握力0.5-5N",
+        "precision_requirement": "抓取成功率>95%"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻质柔性物-近距提升",
+      "l3_name_en": "Transfer-LightFlexible-ShortLift",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将轻质柔性物体从低位提升至视觉检视高度，移动距离较短",
+      "object_category": "轻质柔性物料",
+      "parameter_ranges": {
+        "size_range": "物体尺寸100-600mm",
+        "weight_range": "10-500g",
+        "force_range": "不适用",
+        "precision_requirement": "到位精度±50mm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-纸张材质-品类分级",
+      "l3_name_en": "CloseInspect-PaperMaterial-GradeClassify",
+      "parent_l2_id": "L2-09-02",
+      "description": "将纸张移至眼前近距离查看，判断纸张类型（纸箱/报纸/杂志/办公纸）、质量等级、是否受潮发霉、是否含塑料膜或胶带等异物",
+      "object_category": "纸张/纸制品",
+      "parameter_ranges": {
+        "size_range": "检视距离150-400mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分类准确率>95%"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-0至180度-分拣朝向",
+      "l3_name_en": "TrunkRotate-0to180deg-SortingOrientation",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚不动，躯干绕垂直轴旋转以朝向不同的分拣投放区域，旋转角度根据目标打包区位置在0-180度范围内变化",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "朝向精度±15度"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-轻质柔性物-投放定位",
+      "l3_name_en": "Transfer-LightFlexible-DropPositioning",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将轻质柔性物体从身体前方移动至目标投放区域上方，为释放做定位准备",
+      "object_category": "轻质柔性物料",
+      "parameter_ranges": {
+        "size_range": "物体尺寸100-600mm",
+        "weight_range": "10-500g",
+        "force_range": "不适用",
+        "precision_requirement": "投放区域±100mm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-自由落放-轻质柔性物",
+      "l3_name_en": "Release-FreeDrop-LightFlexible",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开，使轻质柔性物体在重力作用下自由落入下方容器或区域",
+      "object_category": "轻质柔性物料",
+      "parameter_ranges": {
+        "size_range": "物体尺寸100-600mm",
+        "weight_range": "10-500g",
+        "force_range": "释放高度200-500mm",
+        "precision_requirement": "落点偏差±150mm"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-身体前方-待命复位",
+      "l3_name_en": "Reach-FrontBody-StandbyReset",
+      "parent_l2_id": "L2-03-01",
+      "description": "完成投放后手臂回收至身体前方的待命位置，准备进入下一个操作循环",
+      "object_category": "空载运动",
+      "parameter_ranges": {
+        "size_range": "运动距离300-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "无严格精度要求"
+      },
+      "is_new": true,
+      "source_scene": "42-422-4220-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-09-03",
+      "L2-09-01",
+      "L2-03-01",
+      "L2-04-04",
+      "L2-03-02",
+      "L2-09-02",
+      "L2-02-04",
+      "L2-04-07"
+    ],
+    "最高频L2": "L2-03-02",
+    "涉及的L1数量": 4
+  }
+}

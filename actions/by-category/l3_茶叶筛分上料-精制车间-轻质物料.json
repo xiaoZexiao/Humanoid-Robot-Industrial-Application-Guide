@@ -1,0 +1,668 @@
+{
+  "scene_id": "15-153-1530",
+  "scene_name": "茶叶筛分上料-精制车间-轻质物料",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机位置沿车间地面行走至茶袋存放区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-水泥地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 2,
+      "human_description": "弯腰屈髋使双手能够触及低位存放的茶袋",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "双臂向前伸展接近茶袋两端抓握位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料堆放区-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手全手包络抓握茶袋两端编织袋材质部位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-编织袋端部-大尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "膝关节和髋关节协调发力从弯腰状态直立起身抬起茶袋",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-浅蹲起身-负重状态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 虽然初始是弯腰而非下蹲，但负重起身时膝关节屈曲参与发力，符合L2-02-03的运动模式",
+      "parallel_with": null,
+      "duration_estimate": "1.5-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂前持茶袋从存放区行走至筛分机进料斗位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-袋装物料-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "4-6"
+    },
+    {
+      "step_order": 7,
+      "human_description": "在进料斗边缘指定操作位置精确停稳",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-进料斗边缘-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调将茶袋提升并搁置于进料斗边缘支架上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-袋装物料-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双手渐进松开手指释放茶袋使其稳定在支架上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "单臂向工具架方向伸展接近割刀存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具存放区-侧向路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "手指按切割功能姿势握持割刀手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-割刀-切割功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "持握割刀的手臂移动使刀刃定位于茶袋顶部切割起点",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "割刀沿茶袋顶部直线划切开口长度约20-30cm",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-06",
+      "l2_name": "边缘去毛刺修整",
+      "l3_id": "L3-08-06-001",
+      "l3_name": "切割-柔性包装袋-直线划切",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 切割动作沿线进行且工具与材料持续接触，虽然是开口而非去毛刺，但运动学特征符合L2-08-06沿线作业的模式",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "持割刀手臂移动将割刀送回工具架位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "手指渐进松开释放割刀使其归位于工具架",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-工具归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双臂向已切口茶袋伸展准备再次抓握",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料堆放区-直线路径",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双手全手包络重新抓握茶袋中下部位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-编织袋端部-大尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "双臂协调将茶袋提起离开支架移向进料斗上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-袋装物料-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双臂协调翻转茶袋使切口朝向进料斗开口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-90至180度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "控制茶袋倾斜角度使茶叶以均匀速度流入进料斗避免堵塞筛网",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-002",
+      "l3_name": "倾倒-柔性容器-控速倾斜",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 倾倒是翻转调姿的持续控制阶段，通过姿态角度变化控制物料流出速度，本质仍是物体姿态调整",
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 21,
+      "human_description": "快速往复抖动茶袋使残余茶叶从袋内脱落",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-003",
+      "l3_name": "抖落-柔性容器-往复振动",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 抖动是小幅度快速往复的姿态调整，属于翻转调姿的特殊形式",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 22,
+      "human_description": "双臂将空茶袋移向废袋堆放区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-空袋废料-轻载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "双手松开手指释放空茶袋使其落入废袋收集区",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-003",
+      "l3_name": "释放-快速松指-自由落体",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "从筛分机位置行走返回茶袋存放区准备下一袋操作",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-水泥地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-水泥地面-匀速",
+      "l3_name_en": "Walk-ConcreteSurface-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工厂水泥或环氧地坪上以匀速步态直线行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-袋装物料-双臂前持",
+      "l3_name_en": "LoadedWalk-BaggedMaterial-DualArmFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在身前持握袋装物料行走，负重导致步态调整",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "袋长60-80cm",
+        "weight_range": "25-40kg",
+        "force_range": "握持力50-100N",
+        "precision_requirement": "路径偏差±15cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-进料斗边缘-厘米级",
+      "l3_name_en": "StopPosition-FeedHopperEdge-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在筛分机进料斗边缘指定位置精确停止以便后续操作",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下高度",
+      "l3_name_en": "BendOver-ModerateFlex-BelowKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节和腰椎屈曲使上半身前倾至膝盖以下高度以触及低位物体",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部到达高度30-50cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-浅蹲起身-负重状态",
+      "l3_name_en": "Squat-ShallowRise-Loaded",
+      "parent_l2_id": "L2-02-03",
+      "description": "在持握重物状态下通过膝关节和髋关节协调发力从弯腰或浅蹲状态起身站立",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负重25-40kg",
+        "force_range": "腿部发力峰值300-500N",
+        "precision_requirement": "不适用"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料堆放区-直线路径",
+      "l3_name_en": "Reach-MaterialStackArea-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂向物料堆放区域沿无障碍直线路径伸展",
+      "object_category": "空间区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端到位±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工具存放区-侧向路径",
+      "l3_name_en": "Reach-ToolStorageArea-LateralPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向侧方工具存放位置伸展取放工具",
+      "object_category": "空间区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端到位±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer-HandTool-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单手持握轻型工具在近距范围内移动定位",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度15-25cm",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "定位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-袋装物料-中载",
+      "l3_name_en": "CoordinatedCarry-BaggedMaterial-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调提起和移动中等重量的袋装柔性物料",
+      "object_category": "袋装物料",
+      "parameter_ranges": {
+        "size_range": "袋尺寸60×40×30cm",
+        "weight_range": "25-40kg",
+        "force_range": "单臂承载15-25kg",
+        "precision_requirement": "移动路径±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-空袋废料-轻载",
+      "l3_name_en": "CoordinatedCarry-EmptyBagWaste-LightLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调移动已倒空的轻质袋装废料",
+      "object_category": "空袋废料",
+      "parameter_ranges": {
+        "size_range": "袋尺寸60×40cm展开",
+        "weight_range": "0.1-0.3kg",
+        "force_range": "单臂承载<1kg",
+        "precision_requirement": "投放精度±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-90至180度",
+      "l3_name_en": "Flip-AroundHorizontalAxis-90To180Degrees",
+      "parent_l2_id": "L2-03-04",
+      "description": "双臂协调使物体绕水平轴翻转大角度以改变朝向",
+      "object_category": "柔性容器",
+      "parameter_ranges": {
+        "size_range": "容器尺寸60×40×30cm",
+        "weight_range": "25-40kg",
+        "force_range": "翻转力矩20-40Nm",
+        "precision_requirement": "角度控制±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-04-002",
+      "l3_name_zh": "倾倒-柔性容器-控速倾斜",
+      "l3_name_en": "Pour-FlexibleContainer-ControlledTilt",
+      "parent_l2_id": "L2-03-04",
+      "description": "持续控制柔性容器倾斜角度使内部颗粒物料以均匀速度流出",
+      "object_category": "柔性容器",
+      "parameter_ranges": {
+        "size_range": "容器尺寸60×40×30cm",
+        "weight_range": "初始25-40kg递减至<1kg",
+        "force_range": "角度控制力矩10-30Nm",
+        "precision_requirement": "流量控制通过角度变化率±5度/秒"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-03-04-003",
+      "l3_name_zh": "抖落-柔性容器-往复振动",
+      "l3_name_en": "Shake-FlexibleContainer-ReciprocalVibration",
+      "parent_l2_id": "L2-03-04",
+      "description": "快速往复抖动柔性容器使残余物料从内壁脱落",
+      "object_category": "柔性容器",
+      "parameter_ranges": {
+        "size_range": "容器尺寸60×40cm",
+        "weight_range": "<1kg",
+        "force_range": "振动加速度2-5m/s²",
+        "precision_requirement": "振动频率2-4Hz幅度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-编织袋端部-大尺寸",
+      "l3_name_en": "PowerGrip-WovenBagEnd-LargeSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握编织袋材质的茶袋端部提供足够握力支撑重量",
+      "object_category": "编织袋",
+      "parameter_ranges": {
+        "size_range": "抓握部位直径8-15cm",
+        "weight_range": "单手承载12-20kg",
+        "force_range": "握持力80-150N",
+        "precision_requirement": "抓握位置±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-割刀-切割功能姿",
+      "l3_name_en": "ToolGrip-CuttingKnife-CuttingPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "手指按照切割作业所需姿势握持割刀手柄以便精确控制刀刃",
+      "object_category": "切割工具",
+      "parameter_ranges": {
+        "size_range": "刀柄长度10-15cm",
+        "weight_range": "0.1-0.3kg",
+        "force_range": "握持力20-50N",
+        "precision_requirement": "刀刃指向精度±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualUngrip-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有外部支撑的情况下渐进松开手指完成释放",
+      "object_category": "已支撑物体",
+      "parameter_ranges": {
+        "size_range": "不限",
+        "weight_range": "不限",
+        "force_range": "松开速度渐进",
+        "precision_requirement": "确保物体稳定后完全松开"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-工具归位",
+      "l3_name_en": "Release-GradualUngrip-ToolReturn",
+      "parent_l2_id": "L2-04-07",
+      "description": "将工具放回存放位置后渐进松开手指完成归位",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度10-25cm",
+        "weight_range": "0.1-0.5kg",
+        "force_range": "松开速度渐进",
+        "precision_requirement": "工具归位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-04-07-003",
+      "l3_name_zh": "释放-快速松指-自由落体",
+      "l3_name_en": "Release-QuickUngrip-FreeDrop",
+      "parent_l2_id": "L2-04-07",
+      "description": "快速松开手指让轻质物体自由落入收集区",
+      "object_category": "轻质废料",
+      "parameter_ranges": {
+        "size_range": "不限",
+        "weight_range": "<1kg",
+        "force_range": "瞬时松开",
+        "precision_requirement": "落点精度±30cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    },
+    {
+      "l3_id": "L3-08-06-001",
+      "l3_name_zh": "切割-柔性包装袋-直线划切",
+      "l3_name_en": "Cut-FlexiblePackagingBag-StraightSlice",
+      "parent_l2_id": "L2-08-06",
+      "description": "使用割刀沿直线路径划切开柔性编织袋材质形成开口",
+      "object_category": "柔性包装袋",
+      "parameter_ranges": {
+        "size_range": "切割长度20-30cm",
+        "weight_range": "不适用",
+        "force_range": "切割力5-15N",
+        "precision_requirement": "切割线直线度±1cm"
+      },
+      "is_new": true,
+      "source_scene": "S-15-153-1530-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-08-06"
+    ],
+    "最高频L2": "L2-03-04",
+    "涉及的L1数量": 5
+  }
+}

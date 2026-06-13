@@ -1,0 +1,934 @@
+{
+  "scene_id": "8-00-00",
+  "scene_name": "检修维护-球磨机衬板更换-超重狭窄",
+  "total_steps": 32,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "携带液压工具箱走向球磨机检修人孔位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-工具箱体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "将工具箱放置在人孔入口旁的地面上",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-工具箱体-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 3,
+      "human_description": "下蹲降低身体重心准备进入狭窄人孔",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-短时保持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 4,
+      "human_description": "侧身挤过球磨机检修人孔（直径约600-800mm）进入筒体内部",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-圆形人孔-肩宽以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在筒体内站直恢复正常站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-半蹲起立-快速恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "在筒体弧形内壁上小心行走至待更换衬板位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-04",
+      "l2_name": "斜面行走",
+      "l3_id": "L3-01-04-001",
+      "l3_name": "坡面行走-弧形筒壁-斜向移动",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]筒体内壁为连续弧面，坡度随位置变化，归入斜面行走而非平地直行",
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 7,
+      "human_description": "在目标衬板前停稳双脚站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-衬板中心-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "弯腰俯身接近衬板固定螺栓位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "伸手至衬板螺栓位置进行目视检查",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-螺栓锈蚀状态-可拆性评估",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "伸手从身旁接取液压扳手",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具递接区-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "用力量抓握方式握住液压扳手手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-液压扳手-旋拧功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "将液压扳手套筒对准衬板固定螺栓头部",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-套筒螺栓配合-间隙1mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 13,
+      "human_description": "操作液压扳手逆时针松开高扭矩螺栓",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-液压扳手-M36超大螺栓",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 14,
+      "human_description": "松开后用手继续旋出螺栓至完全脱离螺纹",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-001",
+      "l3_name": "手拧-大螺栓-逆时针松脱",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将螺栓从螺栓孔中直线抽出",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-02",
+      "l2_name": "直线抽出",
+      "l3_id": "L3-07-02-001",
+      "l3_name": "抽出-螺栓孔配合-自由滑出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将拆下的螺栓放置在指定收集区",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-大型螺栓-近距放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "重复步骤12-16拆除衬板其余固定螺栓（此处省略，实际需拆4-8颗）",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-001",
+      "l3_name": "工具旋拧-液压扳手-M36超大螺栓",
+      "is_new_l3": false,
+      "boundary_note": "复用L3-06-01-001，重复4-8次",
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 18,
+      "human_description": "接取撬棍工具准备分离衬板",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-长杆撬棍-双手握持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "将撬棍尖端插入衬板与筒壁之间的缝隙",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-002",
+      "l3_name": "插入-撬棍缝隙配合-楔入",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "用力撬动撬棍使衬板与筒壁初步分离",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-粘连衬板-杠杆撬动",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]虽然使用杠杆原理但最终是线性拉拔力使衬板脱离，归入拉拔抽取",
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双手扶住已松动的衬板边缘防止倾倒",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-超重衬板-水平扶稳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 22,
+      "human_description": "配合吊装钢丝绳挂钩位置协助挂装",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-07",
+      "l2_name": "递交传接",
+      "l3_id": "L3-03-07-001",
+      "l3_name": "传递-吊装挂钩-人机协作",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 23,
+      "human_description": "持续扶稳衬板配合起吊设备缓慢吊离安装面",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-002",
+      "l3_name": "抵持-起吊衬板-导向扶稳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松手释放已被吊装设备完全承托的旧衬板",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-扶持部件-确认吊稳后",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 25,
+      "human_description": "扶稳新衬板配合吊装设备将其吊运至安装位置上方",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-002",
+      "l3_name": "抵持-起吊衬板-导向扶稳",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 26,
+      "human_description": "双手推动衬板微调水平位置使螺栓孔对准",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-08",
+      "l2_name": "滑移推送",
+      "l3_id": "L3-03-08-001",
+      "l3_name": "推送-悬吊衬板-精密对孔",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 27,
+      "human_description": "取新螺栓插入衬板安装孔并穿过筒壁孔位",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-衬板螺栓孔-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]需同时对准衬板孔和筒壁孔，涉及XY位置+Z插入，归入多轴对位",
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 28,
+      "human_description": "手动旋入螺栓使螺纹初步咬合",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-02",
+      "l2_name": "徒手旋拧",
+      "l3_id": "L3-06-02-002",
+      "l3_name": "手拧-大螺栓-顺时针预紧",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 29,
+      "human_description": "使用液压扳手顺时针紧固螺栓至规定扭矩",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-002",
+      "l3_name": "工具旋拧-液压扳手-定扭矩紧固",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-25"
+    },
+    {
+      "step_order": 30,
+      "human_description": "重复步骤27-29安装其余固定螺栓（实际需安装4-8颗）",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-01",
+      "l2_name": "工具辅助旋拧",
+      "l3_id": "L3-06-01-002",
+      "l3_name": "工具旋拧-液压扳手-定扭矩紧固",
+      "is_new_l3": false,
+      "boundary_note": "复用L3-06-01-002，重复4-8次",
+      "parallel_with": null,
+      "duration_estimate": "60-150"
+    },
+    {
+      "step_order": 31,
+      "human_description": "目视检查衬板安装到位情况及螺栓紧固状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-衬板安装面-外观质量巡检",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 32,
+      "human_description": "侧身挤过人孔退出球磨机筒体",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-圆形人孔-肩宽以内",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-工具箱体-双臂前持",
+      "l3_name_en": "Loaded-Walk-ToolBox-DualArmFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持重型工具箱在平地行走，负载重量15-40kg，视野部分遮挡",
+      "object_category": "工具箱",
+      "parameter_ranges": {
+        "size_range": "500×300×250mm至800×500×400mm",
+        "weight_range": "15-40kg",
+        "force_range": "[待补充]",
+        "precision_requirement": "路径精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-工具箱体-厘米级",
+      "l3_name_en": "Place-ToolBox-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将工具箱放置在地面指定位置，定位精度±5cm",
+      "object_category": "工具箱",
+      "parameter_ranges": {
+        "size_range": "500×300×250mm至800×500×400mm",
+        "weight_range": "15-40kg",
+        "force_range": "[待补充]",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-短时保持",
+      "l3_name_en": "Squat-HalfSquat-BriefHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "膝关节屈曲约90度的半蹲姿态，保持时间小于10秒，用于降低身体高度通过低矮空间",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "自身体重支撑",
+        "precision_requirement": "姿态稳定即可"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-圆形人孔-肩宽以内",
+      "l3_name_en": "Passage-CircularManhole-ShoulderWidthConstrained",
+      "parent_l2_id": "L2-01-06",
+      "description": "侧身通过直径小于肩宽1.5倍的圆形人孔或检修口，需降低身体高度并调整肩部角度",
+      "object_category": "通道结构",
+      "parameter_ranges": {
+        "size_range": "人孔直径600-800mm",
+        "weight_range": "N/A",
+        "force_range": "[待补充]",
+        "precision_requirement": "通过即可"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-半蹲起立-快速恢复",
+      "l3_name_en": "Squat-HalfSquatRise-QuickRecover",
+      "parent_l2_id": "L2-02-03",
+      "description": "从半蹲姿态快速恢复至站立姿态，动作时间小于2秒",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "自身体重驱动",
+        "precision_requirement": "平衡稳定即可"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-01-04-001",
+      "l3_name_zh": "坡面行走-弧形筒壁-斜向移动",
+      "l3_name_en": "SlopeWalk-CurvedCylinderWall-DiagonalMovement",
+      "parent_l2_id": "L2-01-04",
+      "description": "在球磨机等圆筒形设备内壁上沿弧面行走，坡度随位置连续变化（0-30度），需持续调整身体平衡",
+      "object_category": "圆筒内壁",
+      "parameter_ranges": {
+        "size_range": "筒体直径3-6米",
+        "weight_range": "N/A",
+        "force_range": "[待补充]",
+        "precision_requirement": "防滑稳定"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-衬板中心-厘米级",
+      "l3_name_en": "StopPosition-LinerCenter-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在指定衬板前精确停稳，站位精度±5cm，为后续操作建立稳定基础",
+      "object_category": "工作点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干前屈约45-60度，头部下降至腰部高度，用于接近低位作业点",
+      "object_category": "无",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "自身躯干支撑",
+        "precision_requirement": "姿态可控"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-螺栓锈蚀状态-可拆性评估",
+      "l3_name_en": "CloseInspect-BoltCorrosion-RemovabilityAssess",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离目视检查螺栓表面锈蚀程度，评估是否可正常拆卸或需要特殊处理",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "螺栓M24-M48",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别锈蚀等级"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具递接区-无障碍直线",
+      "l3_name_en": "Reach-ToolHandoverZone-ClearPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿无障碍直线路径伸向工具存放或递接区域，准备抓取工具",
+      "object_category": "空间区域",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端±3cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-液压扳手-旋拧功能姿",
+      "l3_name_en": "ToolGrip-HydraulicWrench-TorqueFunctionPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以旋拧作业功能姿势握住液压扳手手柄，手指按工具使用要求排列",
+      "object_category": "液压工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径30-50mm",
+        "weight_range": "工具重量5-15kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "功能握姿正确"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-套筒螺栓配合-间隙1mm",
+      "l3_name_en": "Insert-SocketBoltFit-Gap1mm",
+      "parent_l2_id": "L2-07-01",
+      "description": "将扳手套筒对准并套入螺栓头部六角面，配合间隙约1mm",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "螺栓M24-M48，套筒对应规格",
+        "weight_range": "N/A",
+        "force_range": "插入力<20N",
+        "precision_requirement": "套筒对中±2mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-06-01-001",
+      "l3_name_zh": "工具旋拧-液压扳手-M36超大螺栓",
+      "l3_name_en": "ToolTorque-HydraulicWrench-M36OversizeBolt",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用液压扳手对M30-M48超大规格螺栓进行松紧操作，扭矩范围500-3000Nm",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M30-M48",
+        "weight_range": "螺栓0.5-3kg",
+        "force_range": "扭矩500-3000Nm",
+        "precision_requirement": "扭矩精度±5%"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-06-02-001",
+      "l3_name_zh": "手拧-大螺栓-逆时针松脱",
+      "l3_name_en": "HandTurn-LargeBolt-CCWLoosen",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手逆时针旋转已松开的大螺栓使其完全脱离螺纹",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M24-M48",
+        "weight_range": "螺栓0.3-3kg",
+        "force_range": "手拧扭矩<50Nm",
+        "precision_requirement": "完全脱螺纹"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-07-02-001",
+      "l3_name_zh": "抽出-螺栓孔配合-自由滑出",
+      "l3_name_en": "Extract-BoltHoleFit-FreeSlide",
+      "parent_l2_id": "L2-07-02",
+      "description": "将已完全松脱的螺栓沿孔轴方向直线抽出",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M24-M48，孔深50-150mm",
+        "weight_range": "螺栓0.3-3kg",
+        "force_range": "抽出力<100N",
+        "precision_requirement": "轴向偏斜<2度"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-大型螺栓-近距放置",
+      "l3_name_en": "Transfer-LargeBolt-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持大型螺栓移动至近距收集区并放下",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M24-M48",
+        "weight_range": "0.3-3kg",
+        "force_range": "[待补充]",
+        "precision_requirement": "放置±5cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-长杆撬棍-双手握持",
+      "l3_name_en": "PowerGrip-LongPryBar-TwoHandGrip",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手分开握住长撬棍的两个握持点，用于施加杠杆力",
+      "object_category": "撬棍工具",
+      "parameter_ranges": {
+        "size_range": "长度800-1500mm，直径20-35mm",
+        "weight_range": "3-8kg",
+        "force_range": "握力100-200N每手",
+        "precision_requirement": "握点间距>300mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-07-01-002",
+      "l3_name_zh": "插入-撬棍缝隙配合-楔入",
+      "l3_name_en": "Insert-PryBarGapFit-Wedging",
+      "parent_l2_id": "L2-07-01",
+      "description": "将撬棍尖端楔入两个部件之间的狭窄缝隙，为施加撬动力做准备",
+      "object_category": "缝隙结构",
+      "parameter_ranges": {
+        "size_range": "缝隙宽度5-30mm",
+        "weight_range": "N/A",
+        "force_range": "插入力50-200N",
+        "precision_requirement": "尖端对准缝隙"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-粘连衬板-杠杆撬动",
+      "l3_name_en": "Pry-AdheredLiner-LeverAction",
+      "parent_l2_id": "L2-05-03",
+      "description": "使用撬棍杠杆原理对矿浆粘连的衬板施加分离力，使其脱离筒壁",
+      "object_category": "衬板",
+      "parameter_ranges": {
+        "size_range": "衬板面积0.2-1㎡",
+        "weight_range": "100-800kg",
+        "force_range": "撬动力500-2000N",
+        "precision_requirement": "受控分离"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-超重衬板-水平扶稳",
+      "l3_name_en": "Brace-HeavyLiner-HorizontalStabilize",
+      "parent_l2_id": "L2-05-06",
+      "description": "双手水平抵住已松动的超重衬板防止其倾倒，配合吊装设备",
+      "object_category": "衬板",
+      "parameter_ranges": {
+        "size_range": "衬板面积0.2-1㎡",
+        "weight_range": "100-800kg",
+        "force_range": "抵持力200-800N",
+        "precision_requirement": "防倾倒控制"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-07-001",
+      "l3_name_zh": "传递-吊装挂钩-人机协作",
+      "l3_name_en": "Handover-LiftingHook-HumanMachineCoord",
+      "parent_l2_id": "L2-03-07",
+      "description": "配合起吊设备，协助将吊装挂钩正确挂装到重型部件吊耳上",
+      "object_category": "吊装挂钩",
+      "parameter_ranges": {
+        "size_range": "挂钩开口50-150mm",
+        "weight_range": "挂钩5-20kg",
+        "force_range": "[待补充]",
+        "precision_requirement": "准确挂入吊耳"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-05-06-002",
+      "l3_name_zh": "抵持-起吊衬板-导向扶稳",
+      "l3_name_en": "Brace-LiftingLiner-GuidingStabilize",
+      "parent_l2_id": "L2-05-06",
+      "description": "在吊装设备起吊超重衬板过程中持续扶稳，防止摆动并引导路径",
+      "object_category": "衬板",
+      "parameter_ranges": {
+        "size_range": "衬板面积0.2-1㎡",
+        "weight_range": "100-800kg",
+        "force_range": "导向力100-500N",
+        "precision_requirement": "摆幅<10cm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-扶持部件-确认吊稳后",
+      "l3_name_en": "Release-SupportedPart-AfterLiftConfirm",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认吊装设备已完全承托部件后松开双手，受控释放",
+      "object_category": "被吊部件",
+      "parameter_ranges": {
+        "size_range": "[待补充]",
+        "weight_range": "100-800kg",
+        "force_range": "N/A",
+        "precision_requirement": "确认吊稳才释放"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-03-08-001",
+      "l3_name_zh": "推送-悬吊衬板-精密对孔",
+      "l3_name_en": "Push-SuspendedLiner-PrecisionHoleAlign",
+      "parent_l2_id": "L2-03-08",
+      "description": "推动悬吊状态的衬板微调水平位置，使安装孔与筒壁螺栓孔精确对准",
+      "object_category": "衬板",
+      "parameter_ranges": {
+        "size_range": "衬板面积0.2-1㎡",
+        "weight_range": "100-800kg（悬吊状态）",
+        "force_range": "推送力50-300N",
+        "precision_requirement": "对孔精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-衬板螺栓孔-3自由度对准",
+      "l3_name_en": "Dock-LinerBoltHole-3DOFAlign",
+      "parent_l2_id": "L2-07-03",
+      "description": "将螺栓同时穿过衬板安装孔和筒壁螺栓孔，需XY位置和Z方向同时对准",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M24-M48，双层孔深80-200mm",
+        "weight_range": "螺栓0.3-3kg",
+        "force_range": "插入力<100N",
+        "precision_requirement": "同轴度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-06-02-002",
+      "l3_name_zh": "手拧-大螺栓-顺时针预紧",
+      "l3_name_en": "HandTurn-LargeBolt-CWPreTighten",
+      "parent_l2_id": "L2-06-02",
+      "description": "徒手顺时针旋转大螺栓使螺纹初步咬合，为后续工具紧固做准备",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M24-M48",
+        "weight_range": "螺栓0.3-3kg",
+        "force_range": "手拧扭矩<30Nm",
+        "precision_requirement": "螺纹咬合3-5牙"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-06-01-002",
+      "l3_name_zh": "工具旋拧-液压扳手-定扭矩紧固",
+      "l3_name_en": "ToolTorque-HydraulicWrench-TargetTorqueFasten",
+      "parent_l2_id": "L2-06-01",
+      "description": "使用液压扳手将螺栓紧固至规定扭矩值，扭矩值由设备要求确定",
+      "object_category": "紧固件",
+      "parameter_ranges": {
+        "size_range": "M30-M48",
+        "weight_range": "螺栓0.5-3kg",
+        "force_range": "目标扭矩800-3000Nm",
+        "precision_requirement": "扭矩精度±5%"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-衬板安装面-外观质量巡检",
+      "l3_name_en": "ScanInspect-LinerSurface-AppearanceQC",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视扫描已安装衬板的表面和边缘，检查贴合度、螺栓紧固状态等质量项",
+      "object_category": "衬板表面",
+      "parameter_ranges": {
+        "size_range": "扫描面积0.2-1㎡",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "发现>2mm间隙或异常"
+      },
+      "is_new": true,
+      "source_scene": "8-00-00-MM-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-04",
+      "L2-01-06",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-03-07",
+      "L2-03-08",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-05-06",
+      "L2-06-01",
+      "L2-06-02",
+      "L2-07-01",
+      "L2-07-02",
+      "L2-07-03",
+      "L2-09-02",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-06-01",
+    "涉及的L1数量": 9
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "scene_id": "29-00-2922",
+  "scene_name": "搬运码垛-塑料管材-长料双臂",
+  "total_steps": 17,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "目视输送线上待码垛的管材/管材捆，确认其位置和姿态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-输送线物料-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 2,
+      "human_description": "沿输送线旁通道行走至管材取料位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-常速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在取料点精确停止，双脚站位与管材对正",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-输送线取料点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "左臂向前伸出至管材左端抓取位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-长料端部-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "右臂向前伸出至管材右端抓取位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-长料端部-无障碍",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 4,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "左手全手包络握住管材/管材捆左端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆管截面-直径20至200mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 7,
+      "human_description": "右手全手包络握住管材/管材捆右端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆管截面-直径20至200mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 6,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调发力将管材从输送线上抬起至腰部高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-长条管材-中重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "上半身向托盘方向旋转约90-180度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-向托盘",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "双手持管材行走至托盘码垛位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长条管材-双臂横持",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 管材长度4-6米导致视野部分遮挡，且重量2-30kg显著影响步态，符合L2-01-07负载行走的判定条件",
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在托盘旁精确停位，与当前码垛层对齐",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-托盘码垛点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "弯腰俯身将管材降低至码垛目标高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双臂协调将管材移动到托盘上的指定码放位置，与已码放管材平行排列",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-平行排列-多层",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 与L2-03-05精确定点放置的区别：本动作强调管材之间的相对位置一致性和平行排列规律，而非单根管材的绝对定位精度",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "左手缓慢张开释放管材左端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "右手缓慢张开释放管材右端",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": 14,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 16,
+      "human_description": "直起腰部恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-站姿",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 直起身是弯腰俯身的逆向动作，同属L2-02-02，因为主要运动仍是髋关节和腰椎的屈伸",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "转身并行走返回输送线取料位置准备下一循环",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-常速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-输送线物料-位置确认",
+      "l3_name_en": "Gaze-ConveyorMaterial-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "头部和视线对准输送线上的物料，确认其位置、姿态和状态以准备取料操作",
+      "object_category": "输送线物料",
+      "parameter_ranges": {
+        "size_range": "观察距离0.5-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置分辨±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-常速",
+      "l3_name_en": "Walk-IndustrialFloor-NormalSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业厂房的环氧地坪或混凝土地面上以正常步速直线行走",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离1-20m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差±200mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-输送线取料点-分米级",
+      "l3_name_en": "Stop-ConveyorPickPoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在输送线旁的取料位置精确停止，使身体站位与待取物料对正",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.3x0.3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±100mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-长料端部-无障碍",
+      "l3_name_en": "Reach-LongMaterialEnd-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向前伸出至长条物料端部的抓取位置，准备进行抓握操作",
+      "object_category": "长条物料",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆管截面-直径20至200mm",
+      "l3_name_en": "PowerGrip-CircularPipe-Dia20to200mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络握住圆形截面的管材或管材捆，手指和手掌形成稳定的环抱式抓持",
+      "object_category": "圆管/管材捆",
+      "parameter_ranges": {
+        "size_range": "直径20-200mm",
+        "weight_range": "单手承载1-15kg",
+        "force_range": "握力30-150N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-长条管材-中重载",
+      "l3_name_en": "CoopCarry-LongPipe-MediumHeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调配合将长条管材从支撑面抬起并保持水平姿态搬运",
+      "object_category": "长条管材/管材捆",
+      "parameter_ranges": {
+        "size_range": "长度4-6m，直径20-200mm",
+        "weight_range": "2-30kg",
+        "force_range": "单臂提升力10-150N",
+        "precision_requirement": "水平保持±5°"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-向托盘",
+      "l3_name_en": "Rotate-90to180Deg-TowardPallet",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身绕垂直轴旋转90-180度，使身体正面从输送线方向转向托盘方向",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-长条管材-双臂横持",
+      "l3_name_en": "LoadedWalk-LongPipe-DualArmHorizontal",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂横向托持长条管材状态下行走，需保持载荷平衡并适应视野部分遮挡",
+      "object_category": "长条管材/管材捆",
+      "parameter_ranges": {
+        "size_range": "管材长度4-6m",
+        "weight_range": "2-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走路径偏差±300mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-托盘码垛点-厘米级",
+      "l3_name_en": "Stop-PalletStackPoint-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在托盘旁的码垛位置精确停止，使长料放置方向与托盘边缘平行",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "停位区域0.2x0.2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "BendForward-ModerateFlex-AboveKnee",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节和腰椎屈曲使上半身前倾，将双手位置降低至膝盖以上高度",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "目标高度0.5-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "高度控制±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-平行排列-多层",
+      "l3_name_en": "Stack-ParallelArray-MultiLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "将长条物料放置到托盘上，与已有物料平行排列，形成规律的多层码垛结构",
+      "object_category": "长条管材/管材捆",
+      "parameter_ranges": {
+        "size_range": "物料长度4-6m，码垛层数3-8层",
+        "weight_range": "单件2-30kg",
+        "force_range": "N/A",
+        "precision_requirement": "排列间距误差±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑后，手指逐渐张开释放抓握，确保物体不发生位移",
+      "object_category": "已放置物体",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "释放前握力渐减至0",
+        "precision_requirement": "释放后物体位移<10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-站姿",
+      "l3_name_en": "BendForward-RecoverUpright-Standing",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态恢复直立，髋关节和腰椎伸展回到正常站立姿态",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-29-00-2922-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-04-01",
+    "涉及的L1数量": 5
+  }
+}

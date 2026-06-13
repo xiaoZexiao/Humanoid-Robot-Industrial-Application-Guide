@@ -1,0 +1,659 @@
+{
+  "scene_id": "35-356-3562",
+  "scene_name": "晶圆搬送-半导体设备洁净室-FOUP搬运",
+  "total_steps": 22,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前待命位置沿洁净室通道走向FOUP存储区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧防静电地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在FOUP存储架指定位置前精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-存储架标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "视线对准目标FOUP确认其位置和外观状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-FOUP载具-位置状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "读取FOUP侧面的RFID标签或条码获取批次信息",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-RFID/条码标签-批次追溯",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "微屈膝调整身体高度以便操作中位存储架上的FOUP",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-轻度前倾-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]FOUP存放位置在腰部至胸部高度，仅需轻度前倾而非深度弯腰或下蹲",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双手向前伸展接近FOUP两侧的人机工程学把手",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-FOUP把手区域-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手全握FOUP两侧把手形成稳定握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-工程把手-直径20至35mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "沿存储架导轨将FOUP水平滑出取出位置",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-04",
+      "l2_name": "导轨滑移",
+      "l3_id": "L3-07-04-001",
+      "l3_name": "滑移-洁净存储架导轨-300至500mm行程",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]FOUP在存储架上沿导轨滑动取出，属于导轨滑移而非直线抽出",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将FOUP从导轨末端垂直提起脱离存储架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-FOUP箱体-中载5至15kg",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "恢复直立站姿准备行走",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-回正站立-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "双手持FOUP沿洁净通道走向目标设备",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-FOUP载具-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 12,
+      "human_description": "在目标设备的装载端口前精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-设备装载端口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "视线对准设备载台确认对接位置和状态指示灯",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-设备载台定位点-对接位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "轻微前倾俯身以便将FOUP对准载台高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-轻度前倾-腰部高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将FOUP底部的定位销与载台定位孔精确对准",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-FOUP载具-亚毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "垂直下压使FOUP底部定位销插入载台定位孔完成对接",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-03",
+      "l2_name": "多轴对位插接",
+      "l3_id": "L3-07-03-001",
+      "l3_name": "对接-FOUP运动学耦合接口-3自由度对准",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]FOUP底部有运动学耦合定位销，需XY平移+Z轴插入多自由度对准",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 17,
+      "human_description": "确认对接到位后逐步松开双手把手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已定位锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "近距观察FOUP与载台对接状态及设备指示灯",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-FOUP对接界面-安装到位确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 19,
+      "human_description": "恢复直立站姿并转身面向批次记录终端",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90至180度-侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "走至洁净室内的批次记录触摸终端前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧防静电地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "单手伸向触摸屏准备录入批次信息",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-触摸终端屏幕-单臂直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "手指点击触摸屏录入FOUP批次和安装位置信息",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-电容触摸屏-轻触力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧防静电地坪-匀速",
+      "l3_name_en": "Walk-EpoxyESDFloor-ConstantSpeed",
+      "parent_l2_id": "L2-01-01",
+      "description": "在半导体洁净室环氧防静电地坪上以匀速稳定步态行走，动作轻柔避免产生颗粒扬尘",
+      "object_category": "防静电地坪",
+      "parameter_ranges": {
+        "size_range": "通道宽度1.5-3m",
+        "weight_range": "自重负载",
+        "force_range": "常规行走力",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-存储架标定点-厘米级",
+      "l3_name_en": "Stop-StorageRackMarker-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在FOUP存储架前的指定标记点精确停止，确保身体位置便于后续取放操作",
+      "object_category": "地面标定点",
+      "parameter_ranges": {
+        "size_range": "标记区域30x30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±3cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-FOUP载具-位置状态确认",
+      "l3_name_en": "Gaze-FOUPCarrier-PositionStatusCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准存储架上的目标FOUP，确认其位置正确、外观完好、无明显污染或损伤",
+      "object_category": "FOUP晶圆载具",
+      "parameter_ranges": {
+        "size_range": "FOUP尺寸300mm/450mm标准规格",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视觉分辨率1mm级"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-RFID/条码标签-批次追溯",
+      "l3_name_en": "Read-RFIDBarcode-LotTracking",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取FOUP侧面或底部的RFID标签或条形码，获取批次号、晶圆数量等追溯信息",
+      "object_category": "RFID/条码标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸20x50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "读取成功率>99.9%"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-轻度前倾-腰部高度",
+      "l3_name_en": "Lean-SlightForward-WaistLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "轻度前倾俯身约15-30度，使手部能够舒适地操作腰部至胸部高度的物体",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态角度±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-FOUP把手区域-双臂对称",
+      "l3_name_en": "Reach-FOUPHandleArea-BimanualSymmetric",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前伸展，手部对称地接近FOUP两侧的人机工程学把手位置",
+      "object_category": "FOUP把手",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-500mm",
+        "weight_range": "空载",
+        "force_range": "不适用",
+        "precision_requirement": "双手对称性±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-工程把手-直径20至35mm",
+      "l3_name_en": "PowerGrip-EngineeringHandle-Dia20to35mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络式握住符合人机工程学设计的圆柱形把手，提供稳定的握持力",
+      "object_category": "工程把手",
+      "parameter_ranges": {
+        "size_range": "直径20-35mm",
+        "weight_range": "支撑载荷5-20kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "握持稳定性"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-07-04-001",
+      "l3_name_zh": "滑移-洁净存储架导轨-300至500mm行程",
+      "l3_name_en": "Slide-CleanroomStorageRail-300to500mmTravel",
+      "parent_l2_id": "L2-07-04",
+      "description": "沿洁净存储架的精密导轨将FOUP水平滑出，动作平稳避免产生颗粒",
+      "object_category": "洁净存储架导轨",
+      "parameter_ranges": {
+        "size_range": "行程300-500mm",
+        "weight_range": "载荷5-15kg",
+        "force_range": "推拉力5-20N",
+        "precision_requirement": "轨道对准±1mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-FOUP箱体-中载5至15kg",
+      "l3_name_en": "BimanualCarry-FOUPBox-MediumLoad5to15kg",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调抬起并保持FOUP箱体，控制姿态稳定避免晃动和倾斜",
+      "object_category": "FOUP晶圆载具",
+      "parameter_ranges": {
+        "size_range": "300x340x395mm或450mm规格",
+        "weight_range": "5-15kg",
+        "force_range": "单臂2.5-7.5kg",
+        "precision_requirement": "姿态保持水平±2度"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-回正站立-恢复直立",
+      "l3_name_en": "Lean-ReturnUpright-RecoverStanding",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前倾俯身姿态恢复至直立站姿，为后续行走做准备",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "可能负载5-15kg",
+        "force_range": "躯干伸展力",
+        "precision_requirement": "垂直度±3度"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-FOUP载具-双臂前持",
+      "l3_name_en": "LoadedWalk-FOUPCarrier-BimanualFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持FOUP以稳定步态在洁净室内行走，保持载具水平稳定",
+      "object_category": "FOUP晶圆载具",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "5-15kg",
+        "force_range": "持续支撑力",
+        "precision_requirement": "载具水平保持±3度"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-设备装载端口-厘米级",
+      "l3_name_en": "Stop-EquipmentLoadPort-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备装载端口前的指定位置精确停止，使FOUP能够与载台对准",
+      "object_category": "设备装载端口",
+      "parameter_ranges": {
+        "size_range": "停位区域50x50cm",
+        "weight_range": "负载状态5-15kg",
+        "force_range": "不适用",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-设备载台定位点-对接位置确认",
+      "l3_name_en": "Gaze-EquipmentLoadPortMarker-DockingPositionCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准设备载台上的定位标记和状态指示灯，确认对接位置就绪",
+      "object_category": "设备载台定位点",
+      "parameter_ranges": {
+        "size_range": "定位销孔距约100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视觉分辨率0.5mm级"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-FOUP载具-亚毫米级",
+      "l3_name_en": "PrecisionPlace-FOUPCarrier-SubMillimeter",
+      "parent_l2_id": "L2-03-05",
+      "description": "将FOUP底部的定位销精确对准载台的定位孔，实现亚毫米级定位精度",
+      "object_category": "FOUP晶圆载具",
+      "parameter_ranges": {
+        "size_range": "定位销直径约8mm",
+        "weight_range": "5-15kg",
+        "force_range": "精细调整力1-5N",
+        "precision_requirement": "±0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-07-03-001",
+      "l3_name_zh": "对接-FOUP运动学耦合接口-3自由度对准",
+      "l3_name_en": "Dock-FOUPKinematicCouplingInterface-3DOFAlignment",
+      "parent_l2_id": "L2-07-03",
+      "description": "将FOUP底部的运动学耦合定位销插入载台定位孔，需同时控制XY平移和Z轴下压",
+      "object_category": "运动学耦合接口",
+      "parameter_ranges": {
+        "size_range": "三点定位销间距约100mm",
+        "weight_range": "5-15kg",
+        "force_range": "下压力10-30N",
+        "precision_requirement": "对准精度±0.2mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已定位锁定",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectLockedInPlace",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认FOUP已稳定对接后逐步松开手指，释放过程中监控物体稳定性",
+      "object_category": "工程把手",
+      "parameter_ranges": {
+        "size_range": "把手直径20-35mm",
+        "weight_range": "释放载荷5-15kg",
+        "force_range": "握力渐减",
+        "precision_requirement": "释放过程平稳"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-FOUP对接界面-安装到位确认",
+      "l3_name_en": "CloseInspect-FOUPDockingInterface-InstallationVerify",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离观察FOUP与载台的对接界面，确认定位销完全插入、设备就绪指示灯亮起",
+      "object_category": "FOUP对接界面",
+      "parameter_ranges": {
+        "size_range": "检视距离100-300mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "检测分辨率0.5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90至180度-侧向",
+      "l3_name_en": "Rotate-90to180Degrees-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身旋转90至180度转向目标方向",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "空载",
+        "force_range": "躯干旋转力矩",
+        "precision_requirement": "方向对准±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-触摸终端屏幕-单臂直线",
+      "l3_name_en": "Reach-TouchScreenTerminal-SingleArmLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "单臂向前伸展接近触摸屏终端，准备进行信息录入操作",
+      "object_category": "触摸屏终端",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-400mm",
+        "weight_range": "空载",
+        "force_range": "不适用",
+        "precision_requirement": "手指对准屏幕±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-电容触摸屏-轻触力度",
+      "l3_name_en": "Tap-CapacitiveTouchscreen-LightPress",
+      "parent_l2_id": "L2-05-01",
+      "description": "手指轻触电容式触摸屏进行信息录入，包括批次号确认、位置选择等操作",
+      "object_category": "电容触摸屏",
+      "parameter_ranges": {
+        "size_range": "触摸目标10x10mm以上",
+        "weight_range": "不适用",
+        "force_range": "0.1-1N",
+        "precision_requirement": "点击位置±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-3562-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-07-03",
+      "L2-07-04",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-02-02",
+    "涉及的L1数量": 7
+  }
+}

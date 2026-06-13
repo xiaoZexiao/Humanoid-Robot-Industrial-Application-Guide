@@ -1,0 +1,687 @@
+{
+  "scene_id": "8-00-00",
+  "scene_name": "加注润滑-设备集中注油-多点定期",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从当前位置行走至润滑工具存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业厂房地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在工具存放区精确停住，站定在油桶和油枪旁",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料存放点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身靠近地面的油桶",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "用力量抓握方式握住油桶提手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-提手结构-中型容器",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "用功能握持方式握住油枪手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-油枪-加注功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 4,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "直起身体恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "手持油桶和油枪行走至第一个润滑点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-润滑工具组-双手分持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 8,
+      "human_description": "在润滑点前精确停住，便于后续操作",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-设备润滑点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将油桶放置在地面稳固位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-容器类-地面稳固",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "松开握住油桶提手的手指",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "弯腰或下蹲使身体接近低位润滑点",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-中时保持",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]润滑点位置多变，低位点需要深度屈膝(>90°)归入下蹲而非弯腰",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "视觉定位找到注油嘴的准确位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-润滑嘴-位置定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将持有油枪的手臂伸向注油嘴位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持工具-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将油枪嘴对准并卡入黄油嘴接口",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-油枪嘴对接-锥面锁定",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]油枪嘴与黄油嘴有锥面配合和弹性卡紧特征，归入卡扣压合而非直线插入",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "持续按压油枪手柄向润滑点注入润滑脂",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-02",
+      "l2_name": "持续推压",
+      "l3_id": "L3-05-02-001",
+      "l3_name": "推压-油枪手柄-间歇泵送",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 16,
+      "human_description": "目视观察润滑脂溢出状态判断是否加注充足",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-润滑嘴周围-溢出检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 15,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将油枪嘴从黄油嘴上拔出",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-油枪嘴脱开-中等拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]油枪嘴拔出过程中允许一定角度偏斜不会卡死，归入拉拔而非L2-07-02直线抽出",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "从蹲姿起立恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-起立恢复-单手持物",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "弯腰伸手抓取地面的油桶提手",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-地面物体-俯身伸手",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "握住油桶提手",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-提手结构-中型容器",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 21,
+      "human_description": "携带油桶油枪行走至下一个润滑点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-润滑工具组-双手分持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-60"
+    },
+    {
+      "step_order": 22,
+      "human_description": "完成所有润滑点后返回工具存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-润滑工具组-双手分持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-120"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将油桶和油枪放回存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-工具组合-存放架位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开双手释放油桶和油枪",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业厂房地面-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在选矿厂等工业环境的平整地面上匀速直线行走，地面可能有轻微粉尘或油污",
+      "object_category": "工业厂房地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-200m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-物料存放点-分米级",
+      "l3_name_en": "Stop-MaterialStoragePoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工具或物料存放区域精确停止，便于后续拾取物品",
+      "object_category": "物料存放区",
+      "parameter_ranges": {
+        "size_range": "停位目标区域0.5-2m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "BendForward-ModerateFlex-AboveKnee",
+      "parent_l2_id": "L2-02-02",
+      "description": "髋关节前屈使躯干倾斜，双手可触及膝盖以上至腰部高度区域",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "操作高度50-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态保持稳定"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-提手结构-中型容器",
+      "l3_name_en": "PowerGrip-HandleStructure-MediumContainer",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络握住容器提手，提供稳定的提持力",
+      "object_category": "容器提手",
+      "parameter_ranges": {
+        "size_range": "提手直径15-30mm，跨距80-150mm",
+        "weight_range": "容器重量5-25kg",
+        "force_range": "握力50-150N",
+        "precision_requirement": "稳定握持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-油枪-加注功能姿",
+      "l3_name_en": "ToolGrip-GreaseGun-InjectionPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以功能握姿握住油枪手柄，食指或拇指可操作扳机/柱塞手柄",
+      "object_category": "油枪",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，枪身长度300-500mm",
+        "weight_range": "油枪重量1.5-4kg（含润滑脂）",
+        "force_range": "握力30-80N",
+        "precision_requirement": "手指可灵活操作扳机"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-负载状态",
+      "l3_name_en": "BendForward-ReturnUpright-LoadedState",
+      "parent_l2_id": "L2-02-02",
+      "description": "在双手持有物品的状态下从弯腰姿态恢复至直立",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "手持负载5-30kg",
+        "force_range": "躯干伸展力矩[待补充]",
+        "precision_requirement": "平稳起身不失衡"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-润滑工具组-双手分持",
+      "l3_name_en": "LoadedWalk-LubricationToolSet-TwoHandCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "一手提油桶一手持油枪的状态下在厂区行走",
+      "object_category": "润滑工具组合",
+      "parameter_ranges": {
+        "size_range": "油桶直径200-300mm，油枪长度300-500mm",
+        "weight_range": "总负载8-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "行走稳定不晃动"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-设备润滑点-分米级",
+      "l3_name_en": "Stop-EquipmentLubePoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备润滑点前方精确停止，使身体处于便于操作的位置",
+      "object_category": "设备润滑点",
+      "parameter_ranges": {
+        "size_range": "站位距润滑点0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±15cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-容器类-地面稳固",
+      "l3_name_en": "PrecisionPlace-Container-GroundStable",
+      "parent_l2_id": "L2-03-05",
+      "description": "将容器类物品稳定放置于地面，确保不倾倒",
+      "object_category": "容器",
+      "parameter_ranges": {
+        "size_range": "容器底面直径150-400mm",
+        "weight_range": "5-30kg",
+        "force_range": "放置力<20N",
+        "precision_requirement": "水平放置偏差<5°"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已有稳定支撑后逐渐张开手指解除抓握",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "物体尺寸不限",
+        "weight_range": "不限",
+        "force_range": "释放时间0.3-1s",
+        "precision_requirement": "确认支撑稳定后释放"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-中时保持",
+      "l3_name_en": "Squat-HalfSquat-MediumHold",
+      "parent_l2_id": "L2-02-03",
+      "description": "膝关节屈曲约90-120°的半蹲姿态，保持10-60秒进行低位操作",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "操作高度20-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定可持续"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-润滑嘴-位置定位",
+      "l3_name_en": "Gaze-LubeNipple-PositionLocate",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准设备上的黄油嘴/注油嘴，确认其精确位置",
+      "object_category": "润滑嘴/黄油嘴",
+      "parameter_ranges": {
+        "size_range": "注油嘴直径6-15mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持工具-近距",
+      "l3_name_en": "Transfer-HandheldTool-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将手持的工具从当前位置移动到目标操作位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "移动距离0.2-0.8m",
+        "weight_range": "工具重量0.5-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "终点位置偏差<3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-油枪嘴对接-锥面锁定",
+      "l3_name_en": "SnapFit-GreaseGunCoupler-TaperLock",
+      "parent_l2_id": "L2-07-06",
+      "description": "将油枪嘴对准黄油嘴并压入，锥面配合产生弹性卡紧实现密封对接",
+      "object_category": "油枪嘴-黄油嘴接口",
+      "parameter_ranges": {
+        "size_range": "接口直径8-16mm",
+        "weight_range": "不适用",
+        "force_range": "卡接力20-50N",
+        "precision_requirement": "对中精度±2mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-02-001",
+      "l3_name_zh": "推压-油枪手柄-间歇泵送",
+      "l3_name_en": "Push-GreaseGunHandle-IntermittentPump",
+      "parent_l2_id": "L2-05-02",
+      "description": "反复按压油枪手柄或扳机，将润滑脂泵送至润滑点",
+      "object_category": "油枪手柄/扳机",
+      "parameter_ranges": {
+        "size_range": "手柄行程20-80mm",
+        "weight_range": "不适用",
+        "force_range": "按压力50-200N",
+        "precision_requirement": "按压节奏均匀"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-润滑嘴周围-溢出检查",
+      "l3_name_en": "CloseInspect-AroundLubeNipple-OverflowCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离观察润滑嘴周围是否有新鲜润滑脂溢出，判断加注是否充足",
+      "object_category": "润滑嘴周围区域",
+      "parameter_ranges": {
+        "size_range": "观察区域直径20-50mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "可识别润滑脂颜色和新鲜度"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-油枪嘴脱开-中等拉力",
+      "l3_name_en": "Pull-GreaseGunCouplerDetach-ModeratePull",
+      "parent_l2_id": "L2-05-03",
+      "description": "将油枪嘴从黄油嘴上拔出，克服锥面摩擦力实现脱开",
+      "object_category": "油枪嘴接口",
+      "parameter_ranges": {
+        "size_range": "接口直径8-16mm",
+        "weight_range": "不适用",
+        "force_range": "拉拔力30-80N",
+        "precision_requirement": "直线方向拉出"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立恢复-单手持物",
+      "l3_name_en": "Squat-StandUp-SingleHandLoaded",
+      "parent_l2_id": "L2-02-03",
+      "description": "从蹲姿状态起立恢复站姿，一只手持有工具",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "单手持物1-5kg",
+        "force_range": "下肢伸展力矩[待补充]",
+        "precision_requirement": "起立平稳不失衡"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-地面物体-俯身伸手",
+      "l3_name_en": "Reach-GroundObject-BendAndExtend",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手向下方地面物体伸出手臂，为抓取做准备",
+      "object_category": "地面物体",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "手部接近目标物体±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-工具组合-存放架位",
+      "l3_name_en": "PrecisionPlace-ToolSet-StorageRack",
+      "parent_l2_id": "L2-03-05",
+      "description": "将工具组合放回指定的存放架或存放区位置",
+      "object_category": "工具组合",
+      "parameter_ranges": {
+        "size_range": "存放区域0.3-1m²",
+        "weight_range": "工具组合总重5-30kg",
+        "force_range": "放置力<30N",
+        "precision_requirement": "放置位置偏差±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-08-00-00-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-02",
+      "L2-05-03",
+      "L2-07-06",
+      "L2-09-01",
+      "L2-09-02"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 7
+  }
+}

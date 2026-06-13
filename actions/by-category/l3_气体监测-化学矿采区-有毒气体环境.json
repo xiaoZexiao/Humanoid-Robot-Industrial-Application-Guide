@@ -1,0 +1,654 @@
+{
+  "scene_id": "10-102-1020",
+  "scene_name": "气体监测-化学矿采区-有毒气体环境",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "在安全区域用双手握持多功能气体检测仪组（含检测仪、记录板等，总重2-5kg）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-便携检测仪-中型载荷",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 2,
+      "human_description": "携带检测设备从安全区域向采掘工作面方向行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-检测仪组-双手前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在矿道中跨越地面散落的线缆或管道障碍物",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-矿道管线-20cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "沿矿道斜坡向下行走进入采掘面区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-04",
+      "l2_name": "斜面行走",
+      "l3_id": "L3-01-04-001",
+      "l3_name": "坡面行走-矿道斜坡-下坡负载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-40"
+    },
+    {
+      "step_order": 5,
+      "human_description": "在设备与岩壁间的狭窄通道侧身通过",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-矿道夹缝-肩宽受限",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 6,
+      "human_description": "到达第一个预定检测点位，精确停在标记位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-检测点标记-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将检测仪从双手持握调整为单手持握，腾出另一只手操作",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-07",
+      "l2_name": "递交传接",
+      "l3_id": "L3-03-07-001",
+      "l3_name": "传递-检测仪-双手至单手换持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将气体检测仪探头伸向采样位置（如岩壁裂隙、低洼处）",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-气体检测仪-气体浓度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "弯腰俯身将检测探头靠近地面低处检测气体积聚区",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "保持弯腰姿态静态支撑，等待检测仪读数稳定",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-前倾持仪姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 11,
+      "human_description": "视线转向检测仪显示屏，读取气体浓度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-检测仪显示屏-浓度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "按下检测仪上的确认/记录按钮锁定当前读数",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-仪器按钮-轻力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-直立恢复-起身",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 起身是弯腰的逆过程，归入L2-02-02而非L2-02-03，因为不涉及膝关节深度屈曲",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "躯干向左转动90度面向下一检测点方向",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-定向转换",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "携带检测仪向下一检测点行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-检测仪组-双手前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 16,
+      "human_description": "在第二检测点精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-检测点标记-分米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将检测仪探头伸向当前点位的采样位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-气体检测仪-气体浓度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "目视检测仪显示屏读取H2S/SO2/NH3等气体浓度数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-检测仪显示屏-浓度数值",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 19,
+      "human_description": "按下按钮切换检测仪通道查看不同气体读数",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-仪器按钮-轻力度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "完成全部检测点后，携带设备沿原路返回",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-检测仪组-双手前持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-120"
+    },
+    {
+      "step_order": 21,
+      "human_description": "沿矿道斜坡向上行走返回安全区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-04",
+      "l2_name": "斜面行走",
+      "l3_id": "L3-01-04-002",
+      "l3_name": "坡面行走-矿道斜坡-上坡负载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "25-50"
+    },
+    {
+      "step_order": 22,
+      "human_description": "到达安全区域设备存放处精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-设备存放点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将检测仪设备组放置到指定存放位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-检测仪设备组-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开手指释放检测仪，完成放置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-设备已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-便携检测仪-中型载荷",
+      "l3_name_en": "PowerGrip-PortableDetector-MediumLoad",
+      "parent_l2_id": "L2-04-01",
+      "description": "使用全手包络握持便携式气体检测仪或检测仪组，设备重量在2-5kg范围，需稳定持握以便行走中携带",
+      "object_category": "便携检测设备",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm，整体尺寸200x150x100mm",
+        "weight_range": "2-5kg",
+        "force_range": "握持力20-40N",
+        "precision_requirement": "稳定持握即可"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-检测仪组-双手前持",
+      "l3_name_en": "LoadedWalk-DetectorSet-TwoHandFrontCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手前持便携式检测仪设备组在工业环境中行走，负载重量影响步态但不遮挡视野",
+      "object_category": "便携检测设备组",
+      "parameter_ranges": {
+        "size_range": "整体尺寸300x200x150mm以内",
+        "weight_range": "2-5kg",
+        "force_range": "持握力20-40N",
+        "precision_requirement": "步态稳定即可"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-矿道管线-20cm以内",
+      "l3_name_en": "StepOver-MineTunnelPipeline-Under20cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "在矿道中抬腿跨越散落在地面的电缆、管道等临时障碍物，障碍物高度不超过20cm",
+      "object_category": "地面管线障碍",
+      "parameter_ranges": {
+        "size_range": "障碍物高度5-20cm，宽度10-30cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "抬腿高度需超过障碍物高度5cm以上"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-04-001",
+      "l3_name_zh": "坡面行走-矿道斜坡-下坡负载",
+      "l3_name_en": "SlopeWalk-MineTunnelRamp-DownhillLoaded",
+      "parent_l2_id": "L2-01-04",
+      "description": "在矿道斜坡上负重向下行走，需控制步速防止因重力加速导致失稳",
+      "object_category": "矿道斜坡地面",
+      "parameter_ranges": {
+        "size_range": "坡道宽度2-4m，长度10-100m",
+        "weight_range": "负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "坡度5-15度"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-矿道夹缝-肩宽受限",
+      "l3_name_en": "PassThrough-MineTunnelGap-ShoulderConstrained",
+      "parent_l2_id": "L2-01-06",
+      "description": "在矿道中设备与岩壁之间的狭窄空间侧身通过，通道宽度小于正常肩宽",
+      "object_category": "狭窄通道",
+      "parameter_ranges": {
+        "size_range": "通道宽度400-600mm",
+        "weight_range": "负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "需侧身通过"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-检测点标记-分米级",
+      "l3_name_en": "StopPosition-DetectionPointMarker-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在预设的气体检测点位标记处精确停止，定位精度要求为分米级",
+      "object_category": "检测点标记",
+      "parameter_ranges": {
+        "size_range": "标记点直径5-10cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-03-07-001",
+      "l3_name_zh": "传递-检测仪-双手至单手换持",
+      "l3_name_en": "Transfer-Detector-TwoHandToOneHandSwitch",
+      "parent_l2_id": "L2-03-07",
+      "description": "将双手持握的检测仪设备转移为单手持握，腾出另一只手进行其他操作",
+      "object_category": "便携检测设备",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "2-5kg",
+        "force_range": "单手握持力30-50N",
+        "precision_requirement": "换持过程平稳不脱落"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-气体检测仪-气体浓度",
+      "l3_name_en": "MeasurementPosition-GasDetector-GasConcentration",
+      "parent_l2_id": "L2-09-06",
+      "description": "将气体检测仪探头移动并定位到目标采样位置，使探头处于最佳检测距离和角度",
+      "object_category": "气体检测仪",
+      "parameter_ranges": {
+        "size_range": "探头直径10-30mm",
+        "weight_range": "检测仪0.5-2kg",
+        "force_range": "不适用",
+        "precision_requirement": "探头距采样点5-30cm"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "BendForward-ModerateFlex-AboveKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴向前弯腰俯身，手部到达膝盖以上高度位置，用于低处检测作业",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "手持负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "前屈角度30-60度"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-前倾持仪姿态-抗重力",
+      "l3_name_en": "Support-ForwardLeanWithInstrument-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "在弯腰持握检测仪的姿态下保持静态稳定，等待仪器读数稳定，持续时间5-10秒",
+      "object_category": "姿态保持",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "手持负载2-5kg",
+        "force_range": "躯干抗矩力矩[待补充]",
+        "precision_requirement": "姿态稳定波动<5度"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-检测仪显示屏-浓度数值",
+      "l3_name_en": "Read-DetectorDisplay-ConcentrationValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "将视线对准气体检测仪显示屏，读取H2S、SO2、NH3等有毒气体的浓度数值",
+      "object_category": "仪器显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏2-4英寸",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数字识别精度ppm级"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-仪器按钮-轻力度",
+      "l3_name_en": "PointPress-InstrumentButton-LightForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用手指按压检测仪上的功能按钮，触发读数确认、通道切换等功能",
+      "object_category": "仪器按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径5-15mm",
+        "weight_range": "不适用",
+        "force_range": "按压力1-5N",
+        "precision_requirement": "按压位置±3mm"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-直立恢复-起身",
+      "l3_name_en": "BendForward-UprightRecovery-StandUp",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复到直立站姿，为弯腰动作的逆过程",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "手持负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "恢复到直立姿态"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-定向转换",
+      "l3_name_en": "TrunkRotation-90Degree-DirectionChange",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，躯干绕垂直轴旋转约90度，用于改变面向方向",
+      "object_category": "姿态调整",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "手持负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "旋转角度60-120度"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-04-002",
+      "l3_name_zh": "坡面行走-矿道斜坡-上坡负载",
+      "l3_name_en": "SlopeWalk-MineTunnelRamp-UphillLoaded",
+      "parent_l2_id": "L2-01-04",
+      "description": "在矿道斜坡上负重向上行走，需克服重力做功，步速较下坡慢",
+      "object_category": "矿道斜坡地面",
+      "parameter_ranges": {
+        "size_range": "坡道宽度2-4m，长度10-100m",
+        "weight_range": "负载2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "坡度5-15度"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-设备存放点-分米级",
+      "l3_name_en": "StopPosition-EquipmentStoragePoint-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备存放区域的指定位置精确停止，准备放置检测设备",
+      "object_category": "设备存放点",
+      "parameter_ranges": {
+        "size_range": "存放区域0.5x0.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-检测仪设备组-厘米级",
+      "l3_name_en": "PrecisionPlace-DetectorSet-CentimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将检测仪设备组精确放置到指定存放位置，确保设备平稳落位",
+      "object_category": "便携检测设备组",
+      "parameter_ranges": {
+        "size_range": "设备整体300x200x150mm",
+        "weight_range": "2-5kg",
+        "force_range": "不适用",
+        "precision_requirement": "±2cm"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-设备已支撑",
+      "l3_name_en": "Release-GradualFingerOpen-EquipmentSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在设备已被支撑面稳定支撑后，手指渐进松开，完成设备放置",
+      "object_category": "便携检测设备",
+      "parameter_ranges": {
+        "size_range": "手柄直径25-40mm",
+        "weight_range": "2-5kg",
+        "force_range": "释放过程0.5-1秒",
+        "precision_requirement": "确认设备稳定后释放"
+      },
+      "is_new": true,
+      "source_scene": "10-102-1020-GasMonitoring"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-04",
+      "L2-01-05",
+      "L2-01-06",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-02-06",
+      "L2-03-05",
+      "L2-03-07",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-07",
+    "涉及的L1数量": 6
+  }
+}

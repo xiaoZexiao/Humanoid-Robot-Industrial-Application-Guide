@@ -1,0 +1,602 @@
+{
+  "scene_id": "40-405-4050",
+  "scene_name": "衡器砝码加载-称重校准-重复标定",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从上游工位行走至待校准衡器所在的校准台前",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在衡器正前方的操作标定点精确停止站位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "视线对准衡器数字显示屏读取当前零位示值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-数字显示屏-数值确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "手臂伸向砝码存放架上的小规格砝码区域",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-砝码存放架-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "用拇指和食指精密捏取小规格标准砝码（1g-200g）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-标准砝码小件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "将小砝码从存放架转移至衡器称台上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-标准砝码-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将砝码精确放置到称台中心位置（精度±5mm）",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-标准砝码-毫米级居中",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 8,
+      "human_description": "缓慢松开手指释放砝码使其平稳落在称台上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-砝码已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "视线对准显示屏读取加载后的示值并记录偏差",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-数字显示屏-数值确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 10,
+      "human_description": "手臂伸向衡器侧面的校准参数调节旋钮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-设备操作面板-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "精密微调校准旋钮消除示值偏差",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-06",
+      "l2_name": "角度精密微调",
+      "l3_id": "L3-06-06-001",
+      "l3_name": "微调-校准调节旋钮-高精度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 12,
+      "human_description": "手臂伸向称台上已放置的小砝码",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-称台上方-无障碍",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "精密捏取称台上的小砝码准备移除",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-标准砝码小件",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将小砝码从称台转移回砝码存放架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-标准砝码-近距",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将砝码放置到存放架的指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-002",
+      "l3_name": "定放-砝码归位-定点",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开手指释放砝码完成归位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-砝码已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双手伸向砝码架上的大规格砝码（5kg-20kg）",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-砝码存放架-无障碍",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 18,
+      "human_description": "双手全握抓取大规格标准砝码",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体-大砝码双手",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]大砝码重量超过单手负载能力，需双手力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双臂协调将大砝码从存放架搬运至称台上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆柱砝码-中重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "将大砝码精确放置到称台中心位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-标准砝码-毫米级居中",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双手缓慢松开释放大砝码",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-双手渐退-重载砝码",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "读取大量程加载后的显示示值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-数字显示屏-数值确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 23,
+      "human_description": "双手抓取称台上的大砝码准备移除",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体-大砝码双手",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "双臂协调将大砝码搬回存放架指定位置并释放",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆柱砝码-中重载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walk-FactoryFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间环氧地坪或水泥地面上匀速直线行走至目标工位",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离2-15m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "终点精度±50cm"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工位标定点-厘米级",
+      "l3_name_en": "Stop-WorkstationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在衡器前方的操作位置精确停止，确保处于最佳操作距离和角度",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "位置精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-数字显示屏-数值确认",
+      "l3_name_en": "Read-DigitalDisplay-ValueConfirm",
+      "parent_l2_id": "L2-09-07",
+      "description": "视线对准衡器数字显示屏，读取并确认显示的称重数值",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "显示屏尺寸2-8英寸",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数分辨率0.01g-0.1g"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-砝码存放架-无障碍",
+      "l3_name_en": "Reach-WeightRack-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂空载伸向砝码存放架上的目标砝码位置",
+      "object_category": "砝码存放架",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-标准砝码小件",
+      "l3_name_en": "Pinch-TwoFingerOppose-SmallWeight",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指和食指精密捏取小规格E2/F1级标准砝码",
+      "object_category": "标准砝码",
+      "parameter_ranges": {
+        "size_range": "直径5-40mm",
+        "weight_range": "1g-200g",
+        "force_range": "捏持力0.5-3N",
+        "precision_requirement": "稳定捏持不滑落"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-标准砝码-近距",
+      "l3_name_en": "Transfer-StandardWeight-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持砝码从存放架转移至称台上方，保持平稳",
+      "object_category": "标准砝码",
+      "parameter_ranges": {
+        "size_range": "转移距离30-60cm",
+        "weight_range": "1g-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "转移过程平稳无晃动"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-标准砝码-毫米级居中",
+      "l3_name_en": "Place-StandardWeight-MillimeterCentering",
+      "parent_l2_id": "L2-03-05",
+      "description": "将标准砝码精确放置到衡器称台的几何中心位置",
+      "object_category": "标准砝码",
+      "parameter_ranges": {
+        "size_range": "砝码直径10-100mm",
+        "weight_range": "1g-20kg",
+        "force_range": "N/A",
+        "precision_requirement": "居中精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-砝码已支撑",
+      "l3_name_en": "Release-GradualLoosen-WeightSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指缓慢渐进松开，使砝码平稳落在称台或存放架上",
+      "object_category": "标准砝码",
+      "parameter_ranges": {
+        "size_range": "砝码直径5-60mm",
+        "weight_range": "1g-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "释放无冲击"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-设备操作面板-无障碍",
+      "l3_name_en": "Reach-EquipmentPanel-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂空载伸向衡器侧面的校准参数调节面板区域",
+      "object_category": "设备操作面板",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±1cm"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-06-06-001",
+      "l3_name_zh": "微调-校准调节旋钮-高精度",
+      "l3_name_en": "FineTune-CalibrationKnob-HighPrecision",
+      "parent_l2_id": "L2-06-06",
+      "description": "精密旋转衡器校准参数调节旋钮，消除示值偏差",
+      "object_category": "校准旋钮",
+      "parameter_ranges": {
+        "size_range": "旋钮直径10-30mm",
+        "weight_range": "N/A",
+        "force_range": "旋转力矩0.05-0.5Nm",
+        "precision_requirement": "角度分辨率<1°"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-称台上方-无障碍",
+      "l3_name_en": "Reach-ScalePlatform-Unobstructed",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂空载伸向衡器称台上方已放置的砝码位置",
+      "object_category": "称台",
+      "parameter_ranges": {
+        "size_range": "伸达距离20-50cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-05-002",
+      "l3_name_zh": "定放-砝码归位-定点",
+      "l3_name_en": "Place-WeightReturn-FixedSlot",
+      "parent_l2_id": "L2-03-05",
+      "description": "将砝码精确放回存放架的指定槽位",
+      "object_category": "砝码存放架槽位",
+      "parameter_ranges": {
+        "size_range": "槽位直径比砝码大5-10mm",
+        "weight_range": "1g-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "落入指定槽位"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱体-大砝码双手",
+      "l3_name_en": "PowerGrip-Cylinder-HeavyWeightBimanual",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手全掌包络抓取大规格圆柱形标准砝码",
+      "object_category": "大规格标准砝码",
+      "parameter_ranges": {
+        "size_range": "直径60-150mm",
+        "weight_range": "5kg-20kg",
+        "force_range": "握持力50-150N",
+        "precision_requirement": "稳定握持不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-圆柱砝码-中重载",
+      "l3_name_en": "BimanualCarry-CylindricalWeight-MediumHeavy",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运大规格圆柱形标准砝码",
+      "object_category": "大规格标准砝码",
+      "parameter_ranges": {
+        "size_range": "直径60-150mm，高度80-200mm",
+        "weight_range": "5kg-20kg",
+        "force_range": "搬运力50-200N",
+        "precision_requirement": "搬运平稳，协调同步"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-双手渐退-重载砝码",
+      "l3_name_en": "Release-BimanualGradual-HeavyWeight",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手同步缓慢松开，使大砝码平稳落在支撑面上",
+      "object_category": "大规格标准砝码",
+      "parameter_ranges": {
+        "size_range": "直径60-150mm",
+        "weight_range": "5kg-20kg",
+        "force_range": "N/A",
+        "precision_requirement": "双手同步释放，无冲击"
+      },
+      "is_new": true,
+      "source_scene": "40-405-4050-CAL-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-08",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-07",
+      "L2-06-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 5
+  }
+}

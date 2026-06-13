@@ -1,0 +1,877 @@
+{
+  "scene_id": "37-373-3737",
+  "scene_name": "维护检修-海洋平台设备-远程遥操作巡检",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从控制室出发，沿平台通道向第一个待检设备区域直线行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防滑甲板-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "穿过两台设备之间的狭窄间隙到达检测位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-设备间隙-侧身挤过",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 3,
+      "human_description": "在压力容器设备前方0.5米处精确停止",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备前方-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "目视扫视设备整体外观，检查是否有明显锈蚀、泄漏或变形",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-设备外观-蛇形扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 5,
+      "human_description": "视线对准压力表表盘中心，调整头部角度使表盘完整进入视野",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-压力表盘-数值记录",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "目视对准设备运行状态指示灯，确认颜色和闪烁状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-指示灯-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将手臂伸向设备电机外壳表面",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-设备外壳-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "手掌贴触电机外壳，感知表面温度是否异常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-04",
+      "l2_name": "触觉探测检查",
+      "l3_id": "L3-09-04-001",
+      "l3_name": "触探-温度异常-电机外壳",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "头部偏转朝向电机方向，侧耳倾听运转声音是否有异常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-运转声-旋转设备处",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "上半身前屈弯腰至膝盖高度，以便观察设备底部",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝下高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "目视检查设备底座和地脚螺栓状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-底座连接-松动检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 12,
+      "human_description": "躯干回正恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-回正起身-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定] 起身动作是弯腰的逆过程，膝关节未深度屈曲，归入L2-02-02而非L2-02-03",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "上半身向左旋转约90度朝向管路阀门",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-侧向设备",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "读取管路上温度表的数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-温度表盘-数值记录",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "伸手握住手动截止阀的手轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-阀门手轮-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "双手握紧阀门手轮外缘",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆环体-手轮外缘",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "旋转阀门手轮，检查阀门是否可正常操作",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-截止阀手轮-功能检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-6"
+    },
+    {
+      "step_order": 18,
+      "human_description": "松开阀门手轮，手指逐渐张开释放",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-阀门手轮",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "身体向右侧倾斜探伸，将视线送入设备间的狭窄空间",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-001",
+      "l3_name": "侧倾-右侧-中等探伸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 20,
+      "human_description": "目视检查狭窄空间内的管路连接点是否有泄漏痕迹",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-002",
+      "l3_name": "贴检-管路接头-泄漏检查",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 21,
+      "human_description": "身体回正恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-05",
+      "l2_name": "侧倾探伸",
+      "l3_id": "L3-02-05-002",
+      "l3_name": "侧倾-回正-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "沿通道转向约120度走向下一个设备检测点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-大角度弯道-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "沿楼梯向上攀登至上层平台",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-钢格栅楼梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "8-15"
+    },
+    {
+      "step_order": 24,
+      "human_description": "跨过地面上的管道线缆障碍",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-05",
+      "l2_name": "障碍跨越",
+      "l3_id": "L3-01-05-001",
+      "l3_name": "跨越-管道线缆-20cm以内",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手拿取红外测温枪准备检测",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-工具携带位-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "以功能握姿握住红外测温枪手柄，食指置于扳机处",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-手持测量仪-扳机功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将测温枪对准电气接头，保持合适距离进行测温",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-红外测温枪-接头温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 28,
+      "human_description": "按下测温枪扳机触发测量并读取数值",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-扳机开关-轻力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防滑甲板-匀速",
+      "l3_name_en": "Walk-NonSlipDeck-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在海洋平台防滑钢格栅或防滑涂层甲板上匀速直线行走",
+      "object_category": "防滑甲板/钢格栅地面",
+      "parameter_ranges": {
+        "size_range": "通道宽度800-1500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "无精确要求"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-设备间隙-侧身挤过",
+      "l3_name_en": "Pass-EquipmentGap-SidewaysSqueeze",
+      "parent_l2_id": "L2-01-06",
+      "description": "在两台设备之间的狭窄间隙中侧身通过",
+      "object_category": "设备间隙通道",
+      "parameter_ranges": {
+        "size_range": "间隙宽度400-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞设备"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备前方-分米级",
+      "l3_name_en": "Stop-FrontOfEquipment-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备前方指定位置精确停止，为后续检查操作做准备",
+      "object_category": "设备检查位",
+      "parameter_ranges": {
+        "size_range": "停止距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-设备外观-蛇形扫描",
+      "l3_name_en": "Scan-EquipmentAppearance-SerpentineScan",
+      "parent_l2_id": "L2-09-03",
+      "description": "以蛇形路径系统性扫视设备外观，检查锈蚀、泄漏、变形等异常",
+      "object_category": "工业设备外观",
+      "parameter_ranges": {
+        "size_range": "扫描区域0.5-3m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别>5mm的表面异常"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-压力表盘-数值记录",
+      "l3_name_en": "Read-PressureGauge-ValueRecord",
+      "parent_l2_id": "L2-09-07",
+      "description": "对准压力表表盘读取当前压力数值并记录",
+      "object_category": "压力表/仪表盘",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别最小刻度"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-指示灯-状态确认",
+      "l3_name_en": "Gaze-IndicatorLight-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视对准设备运行状态指示灯，确认颜色和闪烁状态",
+      "object_category": "状态指示灯",
+      "parameter_ranges": {
+        "size_range": "灯直径10-30mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能区分颜色和闪烁频率"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-设备外壳-直线路径",
+      "l3_name_en": "Reach-EquipmentHousing-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线路径伸向设备外壳表面，为触觉检测做准备",
+      "object_category": "设备外壳表面",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-04-001",
+      "l3_name_zh": "触探-温度异常-电机外壳",
+      "l3_name_en": "Touch-TemperatureAnomaly-MotorHousing",
+      "parent_l2_id": "L2-09-04",
+      "description": "手掌贴触电机外壳表面，通过温度传感器或触觉感知检测温度是否异常",
+      "object_category": "电机/设备外壳",
+      "parameter_ranges": {
+        "size_range": "接触面积50-100cm²",
+        "weight_range": "N/A",
+        "force_range": "接触力<2N",
+        "precision_requirement": "温度分辨率±2°C"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-运转声-旋转设备处",
+      "l3_name_en": "Listen-OperatingSound-RotatingEquipment",
+      "parent_l2_id": "L2-09-05",
+      "description": "头部偏转朝向旋转设备方向，侧耳倾听运转声音是否有异常噪音",
+      "object_category": "旋转设备/电机/泵",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别异常振动声、摩擦声"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝下高度",
+      "l3_name_en": "BendForward-ModerateFlex-BelowKneeHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "上半身前屈弯腰至膝盖高度，以便观察设备底部区域",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "弯腰角度60-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-底座连接-松动检查",
+      "l3_name_en": "CloseInspect-BaseConnection-LooseCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离目视检查设备底座和地脚螺栓的连接状态，识别松动迹象",
+      "object_category": "设备底座/地脚螺栓",
+      "parameter_ranges": {
+        "size_range": "观察距离100-300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别>0.5mm的间隙变化"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-回正起身-恢复直立",
+      "l3_name_en": "BendForward-ReturnUpright-RecoverStanding",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰姿态躯干回正，恢复直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "起身角度60-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-侧向设备",
+      "l3_name_en": "TurnBody-90Degree-TowardEquipment",
+      "parent_l2_id": "L2-02-04",
+      "description": "上半身绕垂直轴旋转约90度，朝向侧方设备",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "旋转角度80-100度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-温度表盘-数值记录",
+      "l3_name_en": "Read-TemperatureGauge-ValueRecord",
+      "parent_l2_id": "L2-09-07",
+      "description": "对准温度表表盘读取当前温度数值并记录",
+      "object_category": "温度表/仪表盘",
+      "parameter_ranges": {
+        "size_range": "表盘直径60-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别最小刻度"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-阀门手轮-直线路径",
+      "l3_name_en": "Reach-ValveHandwheel-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线路径伸向阀门手轮，为握持操作做准备",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-700mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆环体-手轮外缘",
+      "l3_name_en": "PowerGrip-CircularRing-HandwheelRim",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手全手包络握紧阀门手轮的圆环外缘",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-300mm",
+        "weight_range": "N/A",
+        "force_range": "握力20-100N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-截止阀手轮-功能检查",
+      "l3_name_en": "ValveOp-GateValveHandwheel-FunctionCheck",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转截止阀手轮，检查阀门是否可正常开启和关闭",
+      "object_category": "截止阀/闸阀",
+      "parameter_ranges": {
+        "size_range": "手轮直径100-300mm",
+        "weight_range": "N/A",
+        "force_range": "旋转力矩10-50Nm",
+        "precision_requirement": "旋转角度控制±15度"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-阀门手轮",
+      "l3_name_en": "Release-GradualLoosen-ValveHandwheel",
+      "parent_l2_id": "L2-04-07",
+      "description": "手指逐渐张开，渐进式释放对阀门手轮的握持",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-02-05-001",
+      "l3_name_zh": "侧倾-右侧-中等探伸",
+      "l3_name_en": "LateralLean-RightSide-MediumReach",
+      "parent_l2_id": "L2-02-05",
+      "description": "身体向右侧倾斜探伸，将视线送入设备间的狭窄空间进行检视",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "侧倾角度15-30度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-02-002",
+      "l3_name_zh": "贴检-管路接头-泄漏检查",
+      "l3_name_en": "CloseInspect-PipeJoint-LeakCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离目视检查管路连接点，识别是否有泄漏痕迹",
+      "object_category": "管路接头/法兰连接",
+      "parameter_ranges": {
+        "size_range": "观察距离100-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "能识别微小渗漏痕迹"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-02-05-002",
+      "l3_name_zh": "侧倾-回正-恢复直立",
+      "l3_name_en": "LateralLean-ReturnCenter-RecoverUpright",
+      "parent_l2_id": "L2-02-05",
+      "description": "从侧倾姿态身体回正，恢复直立姿态",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "回正角度15-30度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-大角度弯道-连续步态",
+      "l3_name_en": "TurnWalk-LargeAngleCurve-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "沿通道转向超过90度走向下一个设备检测点",
+      "object_category": "通道弯道",
+      "parameter_ranges": {
+        "size_range": "转向角度90-150度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-钢格栅楼梯-上行",
+      "l3_name_en": "Climb-SteelGratingStairs-Ascending",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿海洋平台钢格栅楼梯向上攀登至上层平台",
+      "object_category": "钢格栅楼梯",
+      "parameter_ranges": {
+        "size_range": "台阶高度150-200mm，台阶宽度250-300mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-01-05-001",
+      "l3_name_zh": "跨越-管道线缆-20cm以内",
+      "l3_name_en": "StepOver-PipesCables-Under20cm",
+      "parent_l2_id": "L2-01-05",
+      "description": "抬腿跨过地面上敷设的管道或线缆障碍",
+      "object_category": "地面管道/线缆",
+      "parameter_ranges": {
+        "size_range": "障碍高度5-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免踩踏损坏"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-工具携带位-直线路径",
+      "l3_name_en": "Reach-ToolCarryPosition-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向身体工具携带位置，取用检测工具",
+      "object_category": "工具携带位/工具袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离200-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-手持测量仪-扳机功能姿",
+      "l3_name_en": "ToolGrip-HandheldMeter-TriggerFunctionalPose",
+      "parent_l2_id": "L2-04-03",
+      "description": "以功能握姿握住手持测量仪器手柄，食指置于扳机处便于触发",
+      "object_category": "手持测量仪器",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-40mm",
+        "weight_range": "仪器重量200-800g",
+        "force_range": "握力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-红外测温枪-接头温度",
+      "l3_name_en": "MeasurePosition-InfraredThermometer-JointTemp",
+      "parent_l2_id": "L2-09-06",
+      "description": "将红外测温枪对准电气接头或设备测温点，保持合适距离进行非接触式测温",
+      "object_category": "电气接头/设备测温点",
+      "parameter_ranges": {
+        "size_range": "测量距离100-500mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "对准精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-扳机开关-轻力度",
+      "l3_name_en": "Press-TriggerSwitch-LightForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "食指按压测量工具扳机开关触发测量功能",
+      "object_category": "扳机开关",
+      "parameter_ranges": {
+        "size_range": "扳机行程3-8mm",
+        "weight_range": "N/A",
+        "force_range": "按压力2-10N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "S-37-373-3737-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-03",
+      "L2-01-05",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-02-05",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-06-03",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-04",
+      "L2-09-05",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-09-07",
+    "涉及的L1数量": 7
+  }
+}

@@ -1,0 +1,758 @@
+{
+  "scene_id": "20-204-2041",
+  "scene_name": "高温炭化-竹炭制品-窑炉操作",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从监控室/休息区行走至炭化窑监控区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在温度监控仪表前精确停止站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-仪表观测点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "调整头部视线对准温度显示仪表",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-温度仪表-数值读取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "读取温度曲线显示屏上的当前温度值和趋势",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-温度曲线显示屏-炭化温度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 5,
+      "human_description": "原地转体朝向风门操作位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-90度-向操作位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "行走至进气风门操作位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 7,
+      "human_description": "在风门手轮前精确站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-阀门操作位-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "伸手到达风门手轮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-阀门手轮-直线路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "全手包络抓握风门手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆形手轮-直径150至300mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "旋转风门手轮调节进气量开度",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-风门手轮-开度调节",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 11,
+      "human_description": "松开风门手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-手轮已固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 12,
+      "human_description": "行走至观察窗/进料口位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 13,
+      "human_description": "在观察窗前停位站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-003",
+      "l3_name": "停位-观察窗前-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "弯腰俯身至观察窗高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "通过观察窗贴近查看炭化物料状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-窑内物料-炭化程度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 16,
+      "human_description": "直起身体恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-站姿",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]直起身属于弯腰俯身的逆动作，仍归入L2-02-02",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "沿窑体外壁行走开始巡检",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-沿弧形窑体-连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 18,
+      "human_description": "视觉扫描窑体外表面检查异常",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-窑体外壳-裂缝泄漏检测",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 17,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 19,
+      "human_description": "侧耳聆听窑内是否有异常声音",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-05",
+      "l2_name": "听觉定位侧听",
+      "l3_id": "L3-09-05-001",
+      "l3_name": "侧听-燃烧异常声-窑体内部",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": 17,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 20,
+      "human_description": "行走至排烟管道检测点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 21,
+      "human_description": "在排烟管道接头处停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-004",
+      "l3_name": "停位-管道检测点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "伸手将便携式CO检测仪靠近管道接头",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-06",
+      "l2_name": "测量工具定位",
+      "l3_id": "L3-09-06-001",
+      "l3_name": "测量定位-CO检测仪-气体浓度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 23,
+      "human_description": "读取CO检测仪显示屏数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-检测仪屏幕-CO浓度值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "行走至排气阀门位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-耐高温地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手到达排气阀门手轮",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-阀门手轮-直线路径",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "全手包络抓握排气阀门手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆形手轮-直径150至300mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 27,
+      "human_description": "旋转排气阀门调节排气量",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-002",
+      "l3_name": "阀操-排气阀手轮-开度调节",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 28,
+      "human_description": "松开排气阀门手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-手轮已固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-耐高温地坪-匀速",
+      "l3_name_en": "Walk-HeatResistantFloor-Steady",
+      "parent_l2_id": "L2-01-01",
+      "description": "在高温环境（60℃以上）的耐高温地坪上匀速直线行走，需注意地面可能存在的热辐射区域",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "行走距离3-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差±20cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-仪表观测点-分米级",
+      "l3_name_en": "Stop-InstrumentViewpoint-Decimeter",
+      "parent_l2_id": "L2-01-08",
+      "description": "在温度监控仪表正前方精确停止，确保视线能清晰读取仪表显示",
+      "object_category": "观测站位",
+      "parameter_ranges": {
+        "size_range": "站位面积0.3×0.3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-温度仪表-数值读取",
+      "l3_name_en": "Gaze-TemperatureGauge-ValueReading",
+      "parent_l2_id": "L2-09-01",
+      "description": "调整头部和视线方向对准温度监控仪表，使仪表显示内容处于视野中心",
+      "object_category": "仪表/显示器",
+      "parameter_ranges": {
+        "size_range": "仪表尺寸100-500mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "视线偏差±5°"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-温度曲线显示屏-炭化温度",
+      "l3_name_en": "Read-TemperatureCurveDisplay-CarbonizationTemp",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取温度曲线显示屏上的数值和趋势线，判断当前炭化温度是否在800-1200℃目标范围内",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "屏幕尺寸7-15英寸",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数值识别精度±1℃"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-90度-向操作位",
+      "l3_name_en": "Turn-90Degree-ToOperationPosition",
+      "parent_l2_id": "L2-02-04",
+      "description": "双脚位置不变，上半身旋转约90度转向下一个操作位置方向",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度偏差±10°"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-阀门操作位-厘米级",
+      "l3_name_en": "Stop-ValveOperationPosition-Centimeter",
+      "parent_l2_id": "L2-01-08",
+      "description": "在阀门手轮正前方精确停止，确保手臂能舒适地伸达并操作手轮",
+      "object_category": "操作站位",
+      "parameter_ranges": {
+        "size_range": "站位面积0.4×0.4m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-阀门手轮-直线路径",
+      "l3_name_en": "Reach-ValveHandwheel-StraightPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手沿直线路径将手伸向阀门手轮位置，准备抓握",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离300-600mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端位置±20mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆形手轮-直径150至300mm",
+      "l3_name_en": "PowerGrip-CircularHandwheel-Dia150to300mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握圆形阀门手轮边缘，施加足够握力以传递旋转力矩",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-300mm",
+        "weight_range": "不适用",
+        "force_range": "握力30-80N",
+        "precision_requirement": "握持稳定不打滑"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-风门手轮-开度调节",
+      "l3_name_en": "ValveOperate-DamperHandwheel-OpeningAdjust",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转炭化窑进气风门手轮，调节进气量开度以控制炭化温度和氧气供给",
+      "object_category": "风门阀门",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-300mm",
+        "weight_range": "不适用",
+        "force_range": "操作力矩5-30Nm",
+        "precision_requirement": "开度精度±5%"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-手轮已固定",
+      "l3_name_en": "Release-GradualFingerOpen-HandwheelSecured",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认阀门手轮已在目标位置后，手指渐进张开松开手轮",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-300mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "释放过程不改变手轮位置"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-01-08-003",
+      "l3_name_zh": "停位-观察窗前-分米级",
+      "l3_name_en": "Stop-ObservationWindowFront-Decimeter",
+      "parent_l2_id": "L2-01-08",
+      "description": "在炭化窑观察窗正前方停止，确保能通过窗口观察窑内物料状态",
+      "object_category": "观测站位",
+      "parameter_ranges": {
+        "size_range": "站位面积0.3×0.3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴心前屈躯干约30-45度，使视线降低到腰部高度的观察窗位置",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "俯身角度30-45°"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-02-001",
+      "l3_name_zh": "贴检-窑内物料-炭化程度",
+      "l3_name_en": "CloseInspect-KilnMaterial-CarbonizationDegree",
+      "parent_l2_id": "L2-09-02",
+      "description": "通过观察窗近距离观察窑内竹材的颜色、形态变化，判断炭化进度",
+      "object_category": "炭化物料",
+      "parameter_ranges": {
+        "size_range": "观察窗直径100-200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "观察距离<200mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-站姿",
+      "l3_name_en": "BendForward-RecoverUpright-Standing",
+      "parent_l2_id": "L2-02-02",
+      "description": "从前屈姿态恢复至直立站姿，躯干伸展回到垂直位置",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "恢复到垂直站姿"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-沿弧形窑体-连续步态",
+      "l3_name_en": "TurnWalk-AlongCurvedKiln-ContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "沿圆形或弧形炭化窑体外壁行走巡检，行进方向持续跟随窑体曲线变化",
+      "object_category": "地面/通道",
+      "parameter_ranges": {
+        "size_range": "窑体周长10-30m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "与窑体保持安全距离0.5-1m"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-窑体外壳-裂缝泄漏检测",
+      "l3_name_en": "ScanInspect-KilnShell-CrackLeakDetection",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉扫描炭化窑外壳表面，检查是否存在裂缝、变形、烟气泄漏等异常",
+      "object_category": "窑体外壳",
+      "parameter_ranges": {
+        "size_range": "扫描面积5-20m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别>2mm裂缝"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-05-001",
+      "l3_name_zh": "侧听-燃烧异常声-窑体内部",
+      "l3_name_en": "Listen-AbnormalBurnSound-KilnInterior",
+      "parent_l2_id": "L2-09-05",
+      "description": "在窑体旁侧耳聆听内部燃烧声音，识别是否存在异常爆裂、气流不均等声音特征",
+      "object_category": "声源",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能分辨正常/异常燃烧声"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-01-08-004",
+      "l3_name_zh": "停位-管道检测点-分米级",
+      "l3_name_en": "Stop-PipeInspectionPoint-Decimeter",
+      "parent_l2_id": "L2-01-08",
+      "description": "在排烟管道接头或密封点前停止，准备进行气体泄漏检测",
+      "object_category": "检测站位",
+      "parameter_ranges": {
+        "size_range": "站位面积0.3×0.3m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-06-001",
+      "l3_name_zh": "测量定位-CO检测仪-气体浓度",
+      "l3_name_en": "MeasurePosition-CODetector-GasConcentration",
+      "parent_l2_id": "L2-09-06",
+      "description": "将便携式一氧化碳检测仪探头靠近管道接头或可能泄漏点，采集气体浓度数据",
+      "object_category": "气体检测仪",
+      "parameter_ranges": {
+        "size_range": "探头到检测点距离50-150mm",
+        "weight_range": "检测仪重量0.2-0.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±30mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-检测仪屏幕-CO浓度值",
+      "l3_name_en": "Read-DetectorScreen-COConcentration",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取CO检测仪显示屏上的气体浓度数值，判断是否超过安全阈值",
+      "object_category": "数字显示屏",
+      "parameter_ranges": {
+        "size_range": "屏幕尺寸1-3英寸",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "数值识别精度±1ppm"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    },
+    {
+      "l3_id": "L3-06-03-002",
+      "l3_name_zh": "阀操-排气阀手轮-开度调节",
+      "l3_name_en": "ValveOperate-ExhaustValveHandwheel-OpeningAdjust",
+      "parent_l2_id": "L2-06-03",
+      "description": "旋转炭化窑排气阀门手轮，调节排气量以控制窑内压力和烟气排放",
+      "object_category": "排气阀门",
+      "parameter_ranges": {
+        "size_range": "手轮直径150-300mm",
+        "weight_range": "不适用",
+        "force_range": "操作力矩5-30Nm",
+        "precision_requirement": "开度精度±5%"
+      },
+      "is_new": true,
+      "source_scene": "SC-20-204-2041-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-06-03",
+      "L2-09-01",
+      "L2-09-02",
+      "L2-09-03",
+      "L2-09-05",
+      "L2-09-06",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 6
+  }
+}

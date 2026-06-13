@@ -1,0 +1,429 @@
+{
+  "scene_id": "22-223-2231",
+  "scene_name": "码垛堆叠-纸箱成品-标准化重复",
+  "total_steps": 14,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置平地行走至输送线取料点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "目视观察输送线上纸箱捆的位置和朝向",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-待取物料-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身至纸箱捆高度以便抓取",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双臂向前伸出至纸箱捆两侧",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-物料侧面-双臂对称",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手从两侧夹持抓握纸箱捆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-矩形箱体-双手对握",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 6,
+      "human_description": "直立起身将纸箱捆抬离输送线",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-负载起立-中载",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身动作膝关节参与明显，且负载10-30kg需要腿部发力，归入下蹲起立而非弯腰俯身的逆过程",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂将纸箱捆搬运至胸前稳定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-矩形箱体-中载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "负载状态下行走至托盘码垛位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-中型箱体-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "目视确认托盘上的目标码放位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-码垛目标位-垛型确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 10,
+      "human_description": "根据码放层高调整身体姿态弯腰或伸展",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-变高度适应-码垛高度",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]码垛高度1.2-1.8米，高层需弯腰前伸，低层需下蹲；以弯腰为主因高处码放更频繁且劳损更大",
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 11,
+      "human_description": "双臂将纸箱捆移动至目标码放位置上方",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-矩形箱体-中载",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "按规定垛型将纸箱捆码放到位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-矩阵排列-多层堆叠",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "双手松开释放纸箱捆",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-双手同步-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 14,
+      "human_description": "恢复直立姿态准备下一循环",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-空载起立-姿态恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-环氧地坪-匀速",
+      "l3_name_en": "Walk-EpoxyFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工厂环氧地坪上以稳定速度直线行走，无障碍物干扰",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅0.5-0.7m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "±10cm路径偏差"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-待取物料-位置确认",
+      "l3_name_en": "Gaze-PendingMaterial-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视对准待抓取物料，确认其位置、朝向和状态",
+      "object_category": "物料",
+      "parameter_ranges": {
+        "size_range": "目标尺寸0.3-1.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置识别±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Bend-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "上身前屈约45-60度，使双手可达腰部以下至膝部高度的物体",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度0.4-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态保持稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-物料侧面-双臂对称",
+      "l3_name_en": "Reach-MaterialSides-BilateralSymmetric",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同时向前伸出至目标物料的两侧，为双手抓握做准备",
+      "object_category": "空间轨迹",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "双臂对称±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-矩形箱体-双手对握",
+      "l3_name_en": "PowerGrip-RectangularBox-BilateralClamp",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手从箱体两侧施加对向夹持力，全手包络形成稳定抓握",
+      "object_category": "纸箱捆",
+      "parameter_ranges": {
+        "size_range": "箱体宽度0.3-0.6m",
+        "weight_range": "10-30kg",
+        "force_range": "夹持力50-150N",
+        "precision_requirement": "握持稳定不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-负载起立-中载",
+      "l3_name_en": "Squat-LoadedRise-MediumLoad",
+      "parent_l2_id": "L2-02-03",
+      "description": "手持中等重量负载从弯腰或半蹲姿态起身至直立，腿部发力为主",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "起身高度变化0.3-0.5m",
+        "weight_range": "负载10-30kg",
+        "force_range": "腿部输出力200-400N",
+        "precision_requirement": "重心稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-矩形箱体-中载",
+      "l3_name_en": "CoopCarry-RectangularBox-MediumLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调搬运中等重量的矩形箱体，保持箱体水平稳定",
+      "object_category": "纸箱捆",
+      "parameter_ranges": {
+        "size_range": "箱体尺寸0.4×0.3×0.3m至0.6×0.5×0.4m",
+        "weight_range": "10-30kg",
+        "force_range": "单臂承载50-150N",
+        "precision_requirement": "水平偏差±5°"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-中型箱体-双臂前持",
+      "l3_name_en": "LoadedWalk-MediumBox-FrontalHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂在胸前持握中等重量箱体状态下平稳行走",
+      "object_category": "纸箱捆",
+      "parameter_ranges": {
+        "size_range": "行走距离2-5m",
+        "weight_range": "负载10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "步态稳定、负载不晃动"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-码垛目标位-垛型确认",
+      "l3_name_en": "Gaze-PalletTarget-PatternConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视确认托盘上的目标码放位置，判断当前层高和垛型位置",
+      "object_category": "托盘/垛型",
+      "parameter_ranges": {
+        "size_range": "托盘尺寸1.0×1.2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置判断±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-变高度适应-码垛高度",
+      "l3_name_en": "Bend-HeightAdaptive-PalletLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "根据当前码垛层高（0.2-1.8m）动态调整俯身角度，高层需前倾伸展，低层需深度弯腰",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "目标高度0.2-1.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态适应码放高度"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-矩阵排列-多层堆叠",
+      "l3_name_en": "Stack-MatrixPattern-MultiLayer",
+      "parent_l2_id": "L2-03-06",
+      "description": "按规定垛型将箱体码放至托盘指定位置，保持行列对齐和层间稳定",
+      "object_category": "纸箱捆",
+      "parameter_ranges": {
+        "size_range": "垛型尺寸1.0×1.2×1.8m",
+        "weight_range": "单捆10-30kg",
+        "force_range": "不适用",
+        "precision_requirement": "位置偏差±3cm，垂直偏差±2°"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-双手同步-物体已支撑",
+      "l3_name_en": "Release-BilateralSync-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "双手同步松开已放置稳妥的箱体，确保释放时物体已有下方支撑",
+      "object_category": "纸箱捆",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "10-30kg",
+        "force_range": "释放过程渐进松开",
+        "precision_requirement": "释放后物体不位移"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-空载起立-姿态恢复",
+      "l3_name_en": "Squat-UnloadedRise-PostureRecovery",
+      "parent_l2_id": "L2-02-03",
+      "description": "完成码放后从弯腰姿态恢复直立，准备进入下一码垛循环",
+      "object_category": "身体姿态",
+      "parameter_ranges": {
+        "size_range": "起身高度变化0.2-0.4m",
+        "weight_range": "空载",
+        "force_range": "不适用",
+        "precision_requirement": "快速恢复直立"
+      },
+      "is_new": true,
+      "source_scene": "S-22-223-2231-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-06",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-09-01"
+    ],
+    "最高频L2": "L2-03-03",
+    "涉及的L1数量": 4
+  }
+}

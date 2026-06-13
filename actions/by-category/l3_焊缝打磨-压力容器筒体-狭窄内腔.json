@@ -1,0 +1,743 @@
+{
+  "scene_id": "35-352-3521",
+  "scene_name": "焊缝打磨-压力容器筒体-狭窄内腔",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从车间通道行走至工具存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-环氧地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在工具架前精确停位以便取用角磨机",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-物料暂存区-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "手臂伸向工具架上的角磨机位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具架-侧向伸取",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "以打磨操作所需的功能姿势握持角磨机手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-003",
+      "l3_name": "工具握持-角磨机-打磨功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "手持角磨机行走至压力容器开口处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-003",
+      "l3_name": "负载行走-手持工具-单臂侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 6,
+      "human_description": "在容器开口处精确停位准备进入",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-005",
+      "l3_name": "停位-容器开口-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "向容器内部进行区域扫视确认作业环境",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-004",
+      "l3_name": "扫检-容器内腔-进入前安全确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 8,
+      "human_description": "从站立姿态转换为跪地姿态准备进入容器",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-01",
+      "l2_name": "站坐跪转换",
+      "l3_id": "L3-02-01-003",
+      "l3_name": "转换-站立-双膝跪地",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "蜷曲身体钻入直径600-1500mm的容器开口进入内腔",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-003",
+      "l3_name": "通行-筒体内腔开口-蜷曲钻入",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]钻入动作涉及支撑基底平移故归L1-01而非L1-02，且空间宽度受限符合L2-01-06定义",
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 10,
+      "human_description": "在容器内沿筒体弧面爬行移动到焊缝位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-004",
+      "l3_name": "通行-筒体内壁-四肢爬行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 11,
+      "human_description": "调整躯干弯曲姿态以适应狭窄内腔空间进行作业",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-006",
+      "l3_name": "俯身-蜷曲适形-狭窄内腔作业",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 12,
+      "human_description": "近距离贴近检视内焊缝位置和状态",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-003",
+      "l3_name": "贴检-内焊缝表面-打磨前状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将角磨机砂轮盘移动靠近焊缝起点位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-006",
+      "l3_name": "转移-角磨机-近距定位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 14,
+      "human_description": "按下角磨机电源开关启动设备",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-003",
+      "l3_name": "点压-角磨机开关-启动触发",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 15,
+      "human_description": "沿内焊缝路径移动角磨机进行打磨去除焊瘤和飞溅",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-07",
+      "l2_name": "焊缝路径跟随",
+      "l3_id": "L3-08-07-001",
+      "l3_name": "焊缝跟随-内环焊缝-角磨打磨",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "300-1200"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开角磨机开关使设备停止运转",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-006",
+      "l3_name": "释放-扳机松开-角磨机停止",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "将角磨机放置在身旁稳定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-004",
+      "l3_name": "定放-角磨机-容器内临时存放",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 18,
+      "human_description": "伸手取用身边携带的钢丝刷或刮刀",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-007",
+      "l3_name": "伸达-随身工具袋-近距取用",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "握持清渣工具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-004",
+      "l3_name": "工具握持-钢丝刷-清渣功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "沿打磨后的焊缝表面往复刷扫清除残留焊渣",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-05",
+      "l2_name": "表面擦拭清洁",
+      "l3_id": "L3-08-05-003",
+      "l3_name": "擦拭-焊缝表面-钢丝刷清渣",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]清渣为去除附着物而非材料去除，法向力<5N，归入L2-08-05而非L2-08-01",
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 21,
+      "human_description": "手指渐进张开释放清渣工具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 22,
+      "human_description": "近距离检视打磨后焊缝表面质量是否达到探伤要求",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-02",
+      "l2_name": "近距贴近检视",
+      "l3_id": "L3-09-02-001",
+      "l3_name": "贴检-焊缝表面-外观缺陷检查",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 23,
+      "human_description": "重新握持角磨机准备离开",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-003",
+      "l3_name": "工具握持-角磨机-打磨功能姿",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在容器内沿筒体弧面爬行移动返回开口方向",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-004",
+      "l3_name": "通行-筒体内壁-四肢爬行",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-60"
+    },
+    {
+      "step_order": 25,
+      "human_description": "蜷曲身体从容器开口钻出",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-005",
+      "l3_name": "通行-筒体内腔开口-蜷曲钻出",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 26,
+      "human_description": "从跪地姿态恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-01",
+      "l2_name": "站坐跪转换",
+      "l3_id": "L3-02-01-004",
+      "l3_name": "转换-跪地-站立恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 27,
+      "human_description": "手持角磨机行走至工具存放区",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-003",
+      "l3_name": "负载行走-手持工具-单臂侧持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 28,
+      "human_description": "将角磨机精确放置回工具架",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-005",
+      "l3_name": "定放-电动工具-工具架归位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-04-03-003",
+      "l3_name_zh": "工具握持-角磨机-打磨功能姿",
+      "l3_name_en": "ToolGrip-AngleGrinder-GrindingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以打磨操作所需功能姿势握持角磨机，主手握把手柄，辅手握侧手柄保持稳定控制",
+      "object_category": "角磨机",
+      "parameter_ranges": {
+        "size_range": "机身长度250-350mm，砂轮直径100-180mm",
+        "weight_range": "1.5-4kg",
+        "force_range": "握持力20-50N每手",
+        "precision_requirement": "双手协调控制砂轮角度"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-07-003",
+      "l3_name_zh": "负载行走-手持工具-单臂侧持",
+      "l3_name_en": "LoadedWalk-HandheldTool-SingleArmSideCarry",
+      "parent_l2_id": "L2-01-07",
+      "description": "单臂在身侧握持中等重量电动工具状态下的行走，工具重量影响步态平衡",
+      "object_category": "手持电动工具",
+      "parameter_ranges": {
+        "size_range": "工具长度200-400mm",
+        "weight_range": "1.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "行走过程工具不碰撞"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-08-005",
+      "l3_name_zh": "停位-容器开口-厘米级",
+      "l3_name_en": "Stop-VesselOpening-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在压力容器人孔或开口处精确停位，使身体处于便于安全进入的最佳位置",
+      "object_category": "容器开口",
+      "parameter_ranges": {
+        "size_range": "开口直径400-800mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±5cm，与开口中心对正"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-09-03-004",
+      "l3_name_zh": "扫检-容器内腔-进入前安全确认",
+      "l3_name_en": "ScanInspect-VesselInterior-PreEntrySafetyCheck",
+      "parent_l2_id": "L2-09-03",
+      "description": "进入受限空间前对容器内部进行全面扫视，确认通风状态、无积水积渣、照明充足",
+      "object_category": "受限空间内部",
+      "parameter_ranges": {
+        "size_range": "扫描深度1-5m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "识别障碍物和危险因素"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-02-01-003",
+      "l3_name_zh": "转换-站立-双膝跪地",
+      "l3_name_en": "Transition-Standing-DoubleKneeling",
+      "parent_l2_id": "L2-02-01",
+      "description": "从站立姿态转换为双膝跪地姿态，降低身体重心准备进入低矮空间",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "膝盖软着地避免冲击"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-06-003",
+      "l3_name_zh": "通行-筒体内腔开口-蜷曲钻入",
+      "l3_name_en": "Passing-CylindricalVesselOpening-CrouchedEntry",
+      "parent_l2_id": "L2-01-06",
+      "description": "蜷曲身体从直径600-800mm的容器开口钻入内腔，需收缩肩部依次通过",
+      "object_category": "筒体开口/人孔",
+      "parameter_ranges": {
+        "size_range": "开口直径400-800mm，通过深度300-600mm",
+        "weight_range": "可能携带工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "身体通过时与开口边缘保持间距"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-06-004",
+      "l3_name_zh": "通行-筒体内壁-四肢爬行",
+      "l3_name_en": "Passing-CylinderInnerWall-QuadrupedCrawl",
+      "parent_l2_id": "L2-01-06",
+      "description": "在直径600-1500mm的圆筒形容器内沿弧形内壁四肢着地爬行移动",
+      "object_category": "筒体内壁",
+      "parameter_ranges": {
+        "size_range": "筒体直径600-1500mm，爬行距离1-3m",
+        "weight_range": "可能携带工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "保持身体稳定不撞壁"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-02-02-006",
+      "l3_name_zh": "俯身-蜷曲适形-狭窄内腔作业",
+      "l3_name_en": "Bending-CrouchedConform-NarrowCavityWork",
+      "parent_l2_id": "L2-02-02",
+      "description": "在狭窄圆筒内腔中持续保持躯干深度弯曲蜷缩姿态以适应空间限制进行作业",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "适应空间直径600-1500mm",
+        "weight_range": "N/A",
+        "force_range": "持续核心肌群发力",
+        "precision_requirement": "保持姿态稳定可进行精细操作"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-09-02-003",
+      "l3_name_zh": "贴检-内焊缝表面-打磨前状态确认",
+      "l3_name_en": "CloseInspect-InnerWeldSurface-PreGrindingStatusCheck",
+      "parent_l2_id": "L2-09-02",
+      "description": "近距离检视容器内部焊缝的原始状态，识别焊瘤、飞溅、咬边等待打磨缺陷位置",
+      "object_category": "内焊缝",
+      "parameter_ranges": {
+        "size_range": "焊缝长度1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "检视距离100-300mm，可识别>1mm缺陷"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-02-006",
+      "l3_name_zh": "转移-角磨机-近距定位",
+      "l3_name_en": "Transfer-AngleGrinder-ShortRangePositioning",
+      "parent_l2_id": "L2-03-02",
+      "description": "将手持角磨机从待机位置移动至焊缝作业点，砂轮盘靠近但不接触工件表面",
+      "object_category": "角磨机",
+      "parameter_ranges": {
+        "size_range": "移动距离200-500mm",
+        "weight_range": "1.5-4kg",
+        "force_range": "N/A",
+        "precision_requirement": "砂轮与工件保持5-20mm间距"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-05-01-003",
+      "l3_name_zh": "点压-角磨机开关-启动触发",
+      "l3_name_en": "PointPress-AngleGrinderSwitch-StartTrigger",
+      "parent_l2_id": "L2-05-01",
+      "description": "按下角磨机的电源开关或扳机启动电机，开关需保持按压状态设备才持续运转",
+      "object_category": "电动工具开关",
+      "parameter_ranges": {
+        "size_range": "开关行程5-15mm",
+        "weight_range": "N/A",
+        "force_range": "按压力10-30N",
+        "precision_requirement": "触发到位即可"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-08-07-001",
+      "l3_name_zh": "焊缝跟随-内环焊缝-角磨打磨",
+      "l3_name_en": "WeldTracking-InnerCircularWeld-AngleGrinding",
+      "parent_l2_id": "L2-08-07",
+      "description": "角磨机砂轮沿容器内部环焊缝路径持续接触移动，去除焊瘤、飞溅及余高使表面平整",
+      "object_category": "环焊缝",
+      "parameter_ranges": {
+        "size_range": "焊缝长度1-3m，焊缝宽度10-30mm",
+        "weight_range": "N/A",
+        "force_range": "法向压力10-50N",
+        "precision_requirement": "打磨深度控制避免伤及母材"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-04-07-006",
+      "l3_name_zh": "释放-扳机松开-角磨机停止",
+      "l3_name_en": "Release-TriggerRelease-AngleGrinderStop",
+      "parent_l2_id": "L2-04-07",
+      "description": "松开对角磨机扳机开关的按压力，使开关复位电机停转",
+      "object_category": "电动工具扳机",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "完全松开确保停转"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-05-004",
+      "l3_name_zh": "定放-角磨机-容器内临时存放",
+      "l3_name_en": "PrecisionPlace-AngleGrinder-InVesselTemporaryStorage",
+      "parent_l2_id": "L2-03-05",
+      "description": "将角磨机平稳放置在容器内壁稳定位置，确保不滑落且便于再次取用",
+      "object_category": "角磨机",
+      "parameter_ranges": {
+        "size_range": "放置区域约300×200mm",
+        "weight_range": "1.5-4kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置稳定不滑移"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-01-007",
+      "l3_name_zh": "伸达-随身工具袋-近距取用",
+      "l3_name_en": "Reach-PersonalToolPouch-ShortRangeAccess",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向腰间或身旁的随身工具袋位置准备取用辅助工具",
+      "object_category": "工具袋",
+      "parameter_ranges": {
+        "size_range": "伸达距离150-400mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "准确触及工具位置"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-04-03-004",
+      "l3_name_zh": "工具握持-钢丝刷-清渣功能姿",
+      "l3_name_en": "ToolGrip-WireBrush-SlagCleaningPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以清渣刷扫操作所需姿势握持钢丝刷手柄，便于往复施力",
+      "object_category": "钢丝刷",
+      "parameter_ranges": {
+        "size_range": "刷柄长度150-300mm",
+        "weight_range": "100-500g",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "握姿稳定可控制刷压"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-08-05-003",
+      "l3_name_zh": "擦拭-焊缝表面-钢丝刷清渣",
+      "l3_name_en": "Wiping-WeldSurface-WireBrushSlagRemoval",
+      "parent_l2_id": "L2-08-05",
+      "description": "使用钢丝刷沿焊缝表面往复刷扫，清除打磨后残留的氧化皮和细碎焊渣",
+      "object_category": "焊缝表面",
+      "parameter_ranges": {
+        "size_range": "清洁长度1-3m",
+        "weight_range": "N/A",
+        "force_range": "法向压力2-8N",
+        "precision_requirement": "覆盖焊缝全宽"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-01-06-005",
+      "l3_name_zh": "通行-筒体内腔开口-蜷曲钻出",
+      "l3_name_en": "Passing-CylindricalVesselOpening-CrouchedExit",
+      "parent_l2_id": "L2-01-06",
+      "description": "蜷曲身体从容器内腔向外钻出开口，通常脚先出或后退爬出",
+      "object_category": "筒体开口/人孔",
+      "parameter_ranges": {
+        "size_range": "开口直径400-800mm，通过深度300-600mm",
+        "weight_range": "可能携带工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "身体通过时与开口边缘保持间距"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-02-01-004",
+      "l3_name_zh": "转换-跪地-站立恢复",
+      "l3_name_en": "Transition-Kneeling-StandingRecovery",
+      "parent_l2_id": "L2-02-01",
+      "description": "从双膝跪地姿态恢复为站立姿态，单腿先撑起后站稳",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "可能手持工具1-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "站稳后保持平衡"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    },
+    {
+      "l3_id": "L3-03-05-005",
+      "l3_name_zh": "定放-电动工具-工具架归位",
+      "l3_name_en": "PrecisionPlace-PowerTool-ToolRackReturn",
+      "parent_l2_id": "L2-03-05",
+      "description": "将电动工具精确放置回工具架的指定位置完成归位",
+      "object_category": "电动工具",
+      "parameter_ranges": {
+        "size_range": "工具架槽位尺寸适配工具",
+        "weight_range": "1.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置位置精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "35-352-3521-WeldGrinding-PressureVesselShell-NarrowInterior"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-06",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-01",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-08-05",
+      "L2-08-07",
+      "L2-09-02",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-01-06",
+    "涉及的L1数量": 7
+  }
+}

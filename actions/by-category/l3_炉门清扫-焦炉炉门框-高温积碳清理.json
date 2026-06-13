@@ -1,0 +1,393 @@
+{
+  "scene_id": "25-252-2521",
+  "scene_name": "炉门清扫-焦炉炉门框-高温积碳清理",
+  "total_steps": 15,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "手持长柄刮刀从工具存放处或上一炉号走向目标炉门区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具-中距前行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在炉门前1.5-2米的安全工作距离处停稳站定",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-高温作业点-米级安全距离",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视炉门框四周边缘，确认积碳和残渣的分布位置与厚度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-炉门框边缘-积碳分布确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手调整至长柄刮刀的刮铲作业握姿，前手握杆中部控制方向，后手握杆末端施力",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-长柄刮刀-双手刮铲姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双臂协调将刮刀举起，使刀头接近炉门框顶部边缘",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-长柄工具-举升至作业高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 6,
+      "human_description": "沿炉门框顶边水平方向往复刮铲，将积碳和残渣清除",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-06",
+      "l2_name": "边缘去毛刺修整",
+      "l3_id": "L3-08-06-001",
+      "l3_name": "刮铲清理-炉门框边缘-高温积碳",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]该动作沿边缘线进行而非面域操作，且目标是去除附着物而非表面改性，符合L2-08-06边缘处理特征",
+      "parallel_with": null,
+      "duration_estimate": "20-30"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调移动刮刀至炉门框左侧边缘起始位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-长柄工具-作业位置转换",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "沿炉门框左侧边缘垂直方向往复刮铲清理积碳",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-06",
+      "l2_name": "边缘去毛刺修整",
+      "l3_id": "L3-08-06-001",
+      "l3_name": "刮铲清理-炉门框边缘-高温积碳",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "25-35"
+    },
+    {
+      "step_order": 9,
+      "human_description": "双臂协调移动刮刀至炉门框右侧边缘起始位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-002",
+      "l3_name": "协搬-长柄工具-作业位置转换",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "沿炉门框右侧边缘垂直方向往复刮铲清理积碳",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-06",
+      "l2_name": "边缘去毛刺修整",
+      "l3_id": "L3-08-06-001",
+      "l3_name": "刮铲清理-炉门框边缘-高温积碳",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "25-35"
+    },
+    {
+      "step_order": 11,
+      "human_description": "膝关节屈曲下蹲至半蹲姿态，以便刮刀能够触及炉门框底部边缘",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-半蹲-低位作业高度调整",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 12,
+      "human_description": "沿炉门框底部边缘水平方向往复刮铲清理积碳",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-06",
+      "l2_name": "边缘去毛刺修整",
+      "l3_id": "L3-08-06-001",
+      "l3_name": "刮铲清理-炉门框边缘-高温积碳",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "20-30"
+    },
+    {
+      "step_order": 13,
+      "human_description": "膝关节伸展恢复直立站姿",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-002",
+      "l3_name": "蹲姿-起立-站姿恢复",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "目视扫描整个炉门框四周边缘，检查是否有残留积碳未清理干净",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-炉门框周边-清理效果确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-8"
+    },
+    {
+      "step_order": 15,
+      "human_description": "手持长柄刮刀离开当前炉门区，前往下一炉号或工具存放处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-长柄工具-中距前行",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-长柄工具-中距前行",
+      "l3_name_en": "LoadedWalk-LongHandledTool-MediumDistance",
+      "parent_l2_id": "L2-01-07",
+      "description": "手持长柄工具（如刮刀、铲子、长柄刷等）进行中距离行走，工具长度影响行走姿态和平衡",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "工具总长1.5-2.5m，杆径30-50mm",
+        "weight_range": "3-8kg",
+        "force_range": "无主动施力，仅保持握持",
+        "precision_requirement": "路径精度±0.3m"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-高温作业点-米级安全距离",
+      "l3_name_en": "Stop-HighTempWorkPoint-MeterLevelSafeDistance",
+      "parent_l2_id": "L2-01-08",
+      "description": "在高温辐射热环境作业点前停位，需保持安全作业距离以避免热伤害，同时满足工具作业伸达需求",
+      "object_category": "高温设备工位",
+      "parameter_ranges": {
+        "size_range": "停位距离1.5-2.5m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "位置精度±0.2m"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-炉门框边缘-积碳分布确认",
+      "l3_name_en": "Gaze-OvenDoorFrameEdge-CarbonDistributionCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视炉门框四周边缘区域，识别积碳、石墨残渣的分布位置和堆积厚度，为后续清理作业提供目标信息",
+      "object_category": "炉门框边缘",
+      "parameter_ranges": {
+        "size_range": "门框周长4-6m，边缘宽度50-100mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别>5mm厚度的积碳堆积"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-长柄刮刀-双手刮铲姿",
+      "l3_name_en": "ToolGrip-LongHandledScraper-TwoHandScrapingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "双手握持长柄刮刀的刮铲作业姿势，前手握杆中部控制刮铲方向和接触角度，后手握杆末端提供推力和杠杆支撑",
+      "object_category": "长柄刮刀",
+      "parameter_ranges": {
+        "size_range": "杆长1.5-2.5m，杆径30-50mm，刀头宽100-200mm",
+        "weight_range": "3-8kg",
+        "force_range": "握力20-50N",
+        "precision_requirement": "握位稳定，不滑脱"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-长柄工具-举升至作业高度",
+      "l3_name_en": "CoordCarry-LongHandledTool-LiftToWorkHeight",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调将长柄工具从待机位置举升至目标作业高度，使工具末端能够接触到高位工件表面",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "举升高度1.5-2.5m",
+        "weight_range": "3-8kg",
+        "force_range": "举升力30-80N",
+        "precision_requirement": "末端定位±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-03-03-002",
+      "l3_name_zh": "协搬-长柄工具-作业位置转换",
+      "l3_name_en": "CoordCarry-LongHandledTool-WorkPositionTransfer",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调移动长柄工具，将工具末端从当前作业位置转移至下一作业位置，保持工具姿态基本稳定",
+      "object_category": "长柄工具",
+      "parameter_ranges": {
+        "size_range": "转移距离0.5-2m",
+        "weight_range": "3-8kg",
+        "force_range": "无额外施力",
+        "precision_requirement": "末端定位±100mm"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-08-06-001",
+      "l3_name_zh": "刮铲清理-炉门框边缘-高温积碳",
+      "l3_name_en": "ScrapingClean-OvenDoorFrameEdge-HighTempCarbonDeposit",
+      "parent_l2_id": "L2-08-06",
+      "description": "使用长柄刮刀沿炉门框边缘往复刮铲，清除附着的石墨和焦炭残渣，确保密封面清洁，作业环境为300-500℃辐射热",
+      "object_category": "炉门框边缘积碳",
+      "parameter_ranges": {
+        "size_range": "边缘宽度50-100mm，单边长度1-2m",
+        "weight_range": "积碳层厚度5-30mm",
+        "force_range": "刮铲力50-150N",
+        "precision_requirement": "清除残留<2mm"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-半蹲-低位作业高度调整",
+      "l3_name_en": "Squat-HalfSquat-LowWorkHeightAdjust",
+      "parent_l2_id": "L2-02-03",
+      "description": "膝关节屈曲下蹲至半蹲姿态，降低身体重心和手臂作业高度，以便操作低于站立腰部以下的工件区域",
+      "object_category": "低位工件",
+      "parameter_ranges": {
+        "size_range": "目标高度0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定可持续作业"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-02-03-002",
+      "l3_name_zh": "蹲姿-起立-站姿恢复",
+      "l3_name_en": "Squat-StandUp-PostureRecovery",
+      "parent_l2_id": "L2-02-03",
+      "description": "从下蹲或半蹲姿态伸展膝关节，恢复直立站姿",
+      "object_category": "不适用",
+      "parameter_ranges": {
+        "size_range": "起立高度变化0.3-0.5m",
+        "weight_range": "可能持有工具3-8kg",
+        "force_range": "膝关节伸展力[待补充]",
+        "precision_requirement": "平衡稳定不跌倒"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-炉门框周边-清理效果确认",
+      "l3_name_en": "ScanInspect-OvenDoorFramePerimeter-CleaningEffectConfirm",
+      "parent_l2_id": "L2-09-03",
+      "description": "目视扫描炉门框四周边缘完整周长，检查是否存在未清理干净的积碳残留，确认密封面达到装门要求",
+      "object_category": "炉门框边缘",
+      "parameter_ranges": {
+        "size_range": "扫描区域周长4-6m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "能识别>3mm的残留积碳"
+      },
+      "is_new": true,
+      "source_scene": "S-2521-LMQS-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-07",
+      "L2-01-08",
+      "L2-09-01",
+      "L2-04-03",
+      "L2-03-03",
+      "L2-08-06",
+      "L2-02-03",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-08-06",
+    "涉及的L1数量": 5
+  }
+}

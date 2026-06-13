@@ -1,0 +1,591 @@
+{
+  "scene_id": "24-243-2433",
+  "scene_name": "喷涂上漆-漆器工艺品-多层漆面",
+  "total_steps": 22,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待命位置走向喷枪存放架",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-防静电地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在喷枪架前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备架前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "伸手到喷枪悬挂位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-工具架上方-无障碍直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "以喷涂功能姿势握住喷枪手柄，食指搭在扳机上",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-喷枪-扳机触发姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "将喷枪从挂架上取下并移至身侧",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-手持喷枪-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "携带喷枪走向漆器工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持喷枪-单臂侧持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 7,
+      "human_description": "在漆器转台前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-工件转台前-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "目视扫描漆器整体表面，确认中漆打磨质量和待喷涂区域",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-漆器曲面-环视扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "弯腰俯身以获得对漆器下部区域的合适喷涂角度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "将喷枪移动到漆器下部区域起始喷涂位置，保持15-25cm距离",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-喷枪定距-近距精调",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "沿漆器下部曲面进行路径喷涂，控制走枪速度和距离",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "喷涂-生漆腰果漆-复杂曲面",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 12,
+      "human_description": "起身恢复直立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-复位起身-恢复直立",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰的逆过程，仍归入弯腰俯身L2，因为主要运动仍是髋关节和腰椎的屈伸",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "躯干向左旋转约45度以对准漆器中部侧面区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-45度-侧向调整",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将喷枪移动到漆器中部区域起始位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-喷枪定距-近距精调",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "沿漆器中部曲面进行路径喷涂",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "喷涂-生漆腰果漆-复杂曲面",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 16,
+      "human_description": "躯干继续向左旋转以对准漆器上部及顶部区域",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-45度-侧向调整",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "沿漆器上部及顶部曲面进行路径喷涂，完成整件覆盖",
+      "l1_id": "L1-08",
+      "l1_name": "表面随形运动",
+      "l2_id": "L2-08-03",
+      "l2_name": "路径喷涂涂覆",
+      "l3_id": "L3-08-03-001",
+      "l3_name": "喷涂-生漆腰果漆-复杂曲面",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "60-180"
+    },
+    {
+      "step_order": 18,
+      "human_description": "目视扫描检查喷涂后的漆器表面，确认漆膜均匀度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-002",
+      "l3_name": "扫检-漆膜表面-质量复核",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 19,
+      "human_description": "携带喷枪走回喷枪存放架",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-手持喷枪-单臂侧持",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 20,
+      "human_description": "在喷枪挂架前精确停位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-设备架前-厘米级",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "将喷枪移动到挂架悬挂位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-喷枪挂架-毫米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 22,
+      "human_description": "松开手指释放喷枪手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-工具已挂",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-防静电地坪-匀速",
+      "l3_name_en": "Walk-AntistaticFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在涂装车间防静电环氧地坪上匀速行走，地面洁净但可能有轻微漆雾沉积",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "步幅40-60cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "路径偏差<30cm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-设备架前-厘米级",
+      "l3_name_en": "Stop-EquipmentRack-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在设备架（如工具挂架、喷枪架）前精确停止，为后续取放操作做准备",
+      "object_category": "设备架",
+      "parameter_ranges": {
+        "size_range": "距架体30-50cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-工具架上方-无障碍直线",
+      "l3_name_en": "Reach-ToolRackAbove-UnobstructedLine",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手向工具悬挂架上方伸出手臂，沿无障碍直线路径到达目标工具位置",
+      "object_category": "空间位置",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-80cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "末端定位±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-喷枪-扳机触发姿",
+      "l3_name_en": "ToolGrip-SprayGun-TriggerStance",
+      "parent_l2_id": "L2-04-03",
+      "description": "以喷涂功能姿势握住喷枪手柄，全手包络握柄，食指搭在扳机上随时可触发",
+      "object_category": "喷枪",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm",
+        "weight_range": "喷枪整体0.3-1.5kg",
+        "force_range": "握持力10-30N",
+        "precision_requirement": "食指对准扳机"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-手持喷枪-近距",
+      "l3_name_en": "Transfer-HandheldSprayGun-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持喷枪在近距离范围内转移，如从架上取下移至身侧",
+      "object_category": "喷枪",
+      "parameter_ranges": {
+        "size_range": "移动距离30-80cm",
+        "weight_range": "0.3-1.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "一般精度"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-手持喷枪-单臂侧持",
+      "l3_name_en": "LoadedWalk-HandheldSprayGun-SingleArmSide",
+      "parent_l2_id": "L2-01-07",
+      "description": "单臂侧持喷枪状态下行走，喷枪连接气管需注意不被拉扯",
+      "object_category": "喷枪",
+      "parameter_ranges": {
+        "size_range": "行走距离2-10m",
+        "weight_range": "0.3-1.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "气管牵引方向适应"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-工件转台前-厘米级",
+      "l3_name_en": "Stop-WorkpieceTurntable-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在工件旋转台前精确停位，为后续喷涂作业建立合适的工作距离",
+      "object_category": "转台工位",
+      "parameter_ranges": {
+        "size_range": "距工件中心50-100cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "停位精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-漆器曲面-环视扫描",
+      "l3_name_en": "AreaScan-LacquerwareSurface-CircularView",
+      "parent_l2_id": "L2-09-03",
+      "description": "环绕或转体式目视扫描漆器复杂曲面，检查中漆层质量和待喷涂状态",
+      "object_category": "漆器工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-100cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "覆盖全部可见表面"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "Bend-ModerateFlex-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "中度弯腰俯身，使视线和操作高度降至腰部水平，便于操作低位区域",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "前屈角度30-60°",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定保持"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-喷枪定距-近距精调",
+      "l3_name_en": "Transfer-SprayGunPositioning-ShortRangeFine",
+      "parent_l2_id": "L2-03-02",
+      "description": "持喷枪调整到目标工件表面的精确距离位置，为喷涂起始做准备",
+      "object_category": "喷枪",
+      "parameter_ranges": {
+        "size_range": "喷涂距离15-25cm",
+        "weight_range": "0.3-1.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "距离精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-08-03-001",
+      "l3_name_zh": "喷涂-生漆腰果漆-复杂曲面",
+      "l3_name_en": "SprayCoat-NaturalLacquerCashewPaint-ComplexCurve",
+      "parent_l2_id": "L2-08-03",
+      "description": "手持喷枪在复杂曲面工件上进行路径喷涂，喷涂生漆或腰果漆，需保持恒定枪距、角度和走枪速度以确保漆膜均匀",
+      "object_category": "漆器工件",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-100cm",
+        "weight_range": "不适用",
+        "force_range": "扳机触发力2-5N",
+        "precision_requirement": "漆膜厚度30-50μm，枪距15-25cm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-复位起身-恢复直立",
+      "l3_name_en": "Bend-RecoverUpright-RestoreStanding",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复至直立站姿",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "复位角度30-60°",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平稳起身"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-45度-侧向调整",
+      "l3_name_en": "TorsoRotate-45Degree-LateralAdjust",
+      "parent_l2_id": "L2-02-04",
+      "description": "躯干绕垂直轴旋转约45度，用于调整面向工件不同区域的喷涂角度",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度30-60°",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "角度精度±10°"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-09-03-002",
+      "l3_name_zh": "扫检-漆膜表面-质量复核",
+      "l3_name_en": "AreaScan-PaintFilmSurface-QualityCheck",
+      "parent_l2_id": "L2-09-03",
+      "description": "喷涂完成后对漆膜表面进行全面扫描检视，确认色泽均匀度、无流挂、无漏喷",
+      "object_category": "漆膜表面",
+      "parameter_ranges": {
+        "size_range": "工件尺寸5-100cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "识别>0.5mm缺陷"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-喷枪挂架-毫米级",
+      "l3_name_en": "PlacePrecise-SprayGunHanger-MillimeterLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将喷枪精确放置到悬挂架的挂钩位置",
+      "object_category": "喷枪",
+      "parameter_ranges": {
+        "size_range": "挂钩开口15-30mm",
+        "weight_range": "0.3-1.5kg",
+        "force_range": "不适用",
+        "precision_requirement": "定位精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-工具已挂",
+      "l3_name_en": "Release-GradualFingerOpen-ToolHung",
+      "parent_l2_id": "L2-04-07",
+      "description": "在工具已稳定挂于挂架后，渐进松开手指完成释放",
+      "object_category": "喷枪/工具",
+      "parameter_ranges": {
+        "size_range": "手柄直径20-35mm",
+        "weight_range": "0.3-1.5kg",
+        "force_range": "释放前握力10-30N",
+        "precision_requirement": "渐进释放无脱落"
+      },
+      "is_new": true,
+      "source_scene": "SprayCoating-LacquerCraft-MultiLayerFinish"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-03",
+      "L2-04-07",
+      "L2-08-03",
+      "L2-09-03"
+    ],
+    "最高频L2": "L2-08-03",
+    "涉及的L1数量": 6
+  }
+}

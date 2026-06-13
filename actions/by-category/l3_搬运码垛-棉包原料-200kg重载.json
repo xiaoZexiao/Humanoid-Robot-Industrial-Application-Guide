@@ -1,0 +1,737 @@
+{
+  "scene_id": "17-171-1711",
+  "scene_name": "搬运码垛-棉包原料-200kg重载",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "从待机位置沿物流通道直线行走至卸货区棉包堆放处",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在目标棉包前方精确停止，使身体正对棉包便于后续抓取",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-货物前方-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 3,
+      "human_description": "目视观察棉包的位置、朝向、编织袋完整性及可抓取位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-大型货包-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 4,
+      "human_description": "读取棉包上的批次标签信息以确定码垛分区",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-批次标签-批次识别",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "深度弯腰俯身至棉包中部高度以准备抓握",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-深度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂同时向前伸展至棉包两侧的编织袋捆扎带位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-大型货包侧面-双臂同步",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双手全手力量抓握棉包编织袋的捆扎带或袋体褶皱处",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-软质编织袋-捆扎带抓握",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]编织袋材质柔软、表面不规则，需要手指顺应袋面形变，符合L2-04-04形变适应抓取而非L2-04-01力量抓握",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 8,
+      "human_description": "双臂协调发力将棉包从地面或低层货堆提起至搬运高度",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-大型软包-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 9,
+      "human_description": "保持双臂持握棉包状态下躯干恢复直立",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-06",
+      "l2_name": "静态支撑保持",
+      "l3_id": "L3-02-06-001",
+      "l3_name": "支撑-负载直立姿态-抗重力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]此步骤核心是在负载状态下维持躯干稳定直立，不是单纯的下蹲起立动作，属于L2-02-06静态支撑保持",
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 10,
+      "human_description": "手持200kg棉包沿物流通道向暂存区方向行走",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-大型软包-双臂前持",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "30-60"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在物流通道转弯处改变行进方向转向暂存区码垛位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-02",
+      "l2_name": "变向转弯行走",
+      "l3_id": "L3-01-02-001",
+      "l3_name": "转向行走-90度弯道-负载连续步态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 12,
+      "human_description": "在指定码垛位置精确停止，对准目标放置点",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-002",
+      "l3_name": "停位-码垛标定点-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 13,
+      "human_description": "目视观察已有棉包码垛情况确认当前层放置位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-码垛区域-位置确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 14,
+      "human_description": "根据码垛高度需要弯腰或保持直立调整放置姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-中度前屈-负载放置",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 15,
+      "human_description": "将棉包按批次规律整齐放置到码垛位，与相邻棉包对齐",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-06",
+      "l2_name": "规律排列码放",
+      "l3_id": "L3-03-06-001",
+      "l3_name": "码放-层叠排列-重载软包",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "确认棉包已稳定落位后逐渐松开双手释放抓握",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-重载已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "躯干恢复直立姿态准备返回或继续下一轮搬运",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-03",
+      "l2_name": "下蹲起立",
+      "l3_id": "L3-02-03-001",
+      "l3_name": "蹲姿-恢复直立-短时",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]从弯腰状态恢复直立，膝关节参与较多，按L2-02-03下蹲起立归类",
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 18,
+      "human_description": "从暂存区直线行走至投料区取料位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-工业地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "15-30"
+    },
+    {
+      "step_order": 19,
+      "human_description": "双手抓握编织袋封口处的缝线或扎带准备拆包",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-缝线扎带",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-3"
+    },
+    {
+      "step_order": 20,
+      "human_description": "拉拔抽取编织袋封口缝线或撕开封口扎带",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-缝线封口-中等拉力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-10"
+    },
+    {
+      "step_order": 21,
+      "human_description": "双手抓握编织袋开口处向两侧拉开袋口",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-002",
+      "l3_name": "拉拔-袋口撑开-对向拉力",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "双臂协调将敞口棉包倾斜使棉花倒入投料口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-04",
+      "l2_name": "物体翻转调姿",
+      "l3_id": "L3-03-04-001",
+      "l3_name": "翻转-绕水平轴-倾倒卸料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-20"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将空编织袋从投料口区域移走放置到废料收集处",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-轻质包装袋-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "释放空袋至废料收集区完成单次投料循环",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-直接松指-轻质废料",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-工业地坪-匀速",
+      "l3_name_en": "Walk-IndustrialFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在仓库或车间的环氧地坪、水泥地面等工业平地上以稳定速度直线行走",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级路径跟踪"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-货物前方-分米级",
+      "l3_name_en": "Stop-CargoFront-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在待操作货物前方指定位置精确停止，保证后续抓取操作的可达性",
+      "object_category": "大型货包",
+      "parameter_ranges": {
+        "size_range": "停止精度±10cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-大型货包-状态确认",
+      "l3_name_en": "Gaze-LargeCargo-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察大型货包的位置、朝向、包装完整性及可抓取部位",
+      "object_category": "大型软包装货物",
+      "parameter_ranges": {
+        "size_range": "货包尺寸0.5-2m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级位置感知"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-批次标签-批次识别",
+      "l3_name_en": "Read-BatchLabel-BatchIdentify",
+      "parent_l2_id": "L2-09-07",
+      "description": "读取货物上的批次标签信息用于分类存放或追溯",
+      "object_category": "印刷/打印标签",
+      "parameter_ranges": {
+        "size_range": "标签尺寸50-200mm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "字符识别精度>95%"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-深度前屈-腰部高度",
+      "l3_name_en": "BendDown-DeepForward-WaistHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "深度弯腰使双手能够触及腰部以下高度的目标物体",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "手部下探距离0.5-1.0m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "姿态稳定性"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-大型货包侧面-双臂同步",
+      "l3_name_en": "Reach-LargeCargoSide-DualArmSync",
+      "parent_l2_id": "L2-03-01",
+      "description": "双臂同步向前伸展至大型货包两侧准备抓握",
+      "object_category": "大型软包装货物",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级定位"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-软质编织袋-捆扎带抓握",
+      "l3_name_en": "AdaptGrip-SoftWovenBag-StrapGrip",
+      "parent_l2_id": "L2-04-04",
+      "description": "手指顺应柔软编织袋表面或捆扎带进行形变适应抓取",
+      "object_category": "编织袋/塑料膜包装",
+      "parameter_ranges": {
+        "size_range": "抓握部位宽度50-150mm",
+        "weight_range": "承载载荷180-220kg",
+        "force_range": "抓握力50-200N",
+        "precision_requirement": "抓握稳定性"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-大型软包-重载",
+      "l3_name_en": "CoopCarry-LargeSoftPack-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协调发力将大型软包装货物提起至搬运高度",
+      "object_category": "大型软包装货物",
+      "parameter_ranges": {
+        "size_range": "货包尺寸1.0-1.5m",
+        "weight_range": "180-220kg",
+        "force_range": "提升力1800-2200N",
+        "precision_requirement": "双臂同步协调"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-02-06-001",
+      "l3_name_zh": "支撑-负载直立姿态-抗重力",
+      "l3_name_en": "Support-LoadedUpright-AntiGravity",
+      "parent_l2_id": "L2-02-06",
+      "description": "在双臂持握重物状态下维持躯干直立稳定抵抗重力",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "负载100-250kg",
+        "force_range": "抗倾覆力矩[待补充]",
+        "precision_requirement": "姿态偏差<5度"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-大型软包-双臂前持",
+      "l3_name_en": "LoadedWalk-LargeSoftPack-DualArmFrontHold",
+      "parent_l2_id": "L2-01-07",
+      "description": "双臂前持大型软包装货物状态下在平地行走",
+      "object_category": "大型软包装货物",
+      "parameter_ranges": {
+        "size_range": "货包尺寸1.0-1.5m",
+        "weight_range": "180-220kg",
+        "force_range": "不适用",
+        "precision_requirement": "步态稳定性"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-01-02-001",
+      "l3_name_zh": "转向行走-90度弯道-负载连续步态",
+      "l3_name_en": "TurnWalk-90DegreeBend-LoadedContinuousGait",
+      "parent_l2_id": "L2-01-02",
+      "description": "负载状态下在90度弯道处改变行进方向同时保持连续步态",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "转弯半径1-3m",
+        "weight_range": "负载180-220kg",
+        "force_range": "不适用",
+        "precision_requirement": "路径跟踪±20cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-01-08-002",
+      "l3_name_zh": "停位-码垛标定点-分米级",
+      "l3_name_en": "Stop-PalletizingMark-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在码垛区指定标定位置精确停止以便准确放置货物",
+      "object_category": "码垛区域",
+      "parameter_ranges": {
+        "size_range": "停止精度±10cm",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-码垛区域-位置确认",
+      "l3_name_en": "Gaze-PalletizingArea-PositionConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "目视观察已有码垛情况确认当前货物的放置位置",
+      "object_category": "码垛堆",
+      "parameter_ranges": {
+        "size_range": "观察区域2-5m²",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "厘米级位置判断"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-中度前屈-负载放置",
+      "l3_name_en": "BendDown-ModerateForward-LoadedPlacement",
+      "parent_l2_id": "L2-02-02",
+      "description": "在持握重物状态下中度弯腰以调整放置高度",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "前屈角度30-60度",
+        "weight_range": "负载180-220kg",
+        "force_range": "不适用",
+        "precision_requirement": "姿态可控性"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-03-06-001",
+      "l3_name_zh": "码放-层叠排列-重载软包",
+      "l3_name_en": "Palletize-StackedArray-HeavySoftPack",
+      "parent_l2_id": "L2-03-06",
+      "description": "将大型软包装货物按层叠规律整齐放置到码垛位",
+      "object_category": "大型软包装货物",
+      "parameter_ranges": {
+        "size_range": "货包尺寸1.0-1.5m",
+        "weight_range": "180-220kg",
+        "force_range": "放置控制力[待补充]",
+        "precision_requirement": "对齐精度±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-重载已支撑",
+      "l3_name_en": "Release-GradualLoosen-HeavyLoadSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "确认重载货物已稳定落位后逐渐松开手指释放抓握",
+      "object_category": "大型软包装货物",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "180-220kg",
+        "force_range": "释放过程0.5-2秒",
+        "precision_requirement": "平稳过渡"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-02-03-001",
+      "l3_name_zh": "蹲姿-恢复直立-短时",
+      "l3_name_en": "Squat-RecoverUpright-Brief",
+      "parent_l2_id": "L2-02-03",
+      "description": "从弯腰或下蹲状态恢复至直立姿态",
+      "object_category": "无外部对象",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "不适用",
+        "force_range": "不适用",
+        "precision_requirement": "平衡稳定性"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-缝线扎带",
+      "l3_name_en": "Pinch-TwoFingerOppose-ThreadStrap",
+      "parent_l2_id": "L2-04-02",
+      "description": "用拇指和食指对捏抓取编织袋封口的缝线或扎带",
+      "object_category": "缝线/扎带",
+      "parameter_ranges": {
+        "size_range": "线径1-5mm",
+        "weight_range": "<50g",
+        "force_range": "捏取力5-20N",
+        "precision_requirement": "毫米级"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-缝线封口-中等拉力",
+      "l3_name_en": "Pull-ThreadedSeal-ModeratePull",
+      "parent_l2_id": "L2-05-03",
+      "description": "拉拔抽取编织袋封口处的缝合线以打开包装",
+      "object_category": "缝线封口",
+      "parameter_ranges": {
+        "size_range": "封口长度0.5-1.0m",
+        "weight_range": "不适用",
+        "force_range": "拉拔力20-100N",
+        "precision_requirement": "方向控制"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-05-03-002",
+      "l3_name_zh": "拉拔-袋口撑开-对向拉力",
+      "l3_name_en": "Pull-BagOpening-OpposingForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "双手抓握袋口两侧向相反方向拉开以撑开袋口",
+      "object_category": "编织袋开口",
+      "parameter_ranges": {
+        "size_range": "袋口宽度0.5-1.0m",
+        "weight_range": "不适用",
+        "force_range": "撑开力50-150N",
+        "precision_requirement": "双手协调"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-03-04-001",
+      "l3_name_zh": "翻转-绕水平轴-倾倒卸料",
+      "l3_name_en": "Flip-AroundHorizontalAxis-TiltUnload",
+      "parent_l2_id": "L2-03-04",
+      "description": "将敞口容器或袋包绕水平轴翻转倾斜使内容物倒出",
+      "object_category": "敞口袋包",
+      "parameter_ranges": {
+        "size_range": "袋包尺寸0.8-1.5m",
+        "weight_range": "50-220kg（含内容物）",
+        "force_range": "翻转力矩[待补充]",
+        "precision_requirement": "倾倒角度控制"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-轻质包装袋-近距",
+      "l3_name_en": "Transfer-LightPackagingBag-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂将空的轻质包装袋从操作区转移至废料收集处",
+      "object_category": "空编织袋/塑料膜",
+      "parameter_ranges": {
+        "size_range": "袋体尺寸0.5-1.5m",
+        "weight_range": "<2kg",
+        "force_range": "不适用",
+        "precision_requirement": "低"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-直接松指-轻质废料",
+      "l3_name_en": "Release-DirectLoosen-LightWaste",
+      "parent_l2_id": "L2-04-07",
+      "description": "直接松开手指释放轻质废料至收集区",
+      "object_category": "轻质废料",
+      "parameter_ranges": {
+        "size_range": "不适用",
+        "weight_range": "<2kg",
+        "force_range": "不适用",
+        "precision_requirement": "低"
+      },
+      "is_new": true,
+      "source_scene": "S-17-171-1711-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-02",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-03",
+      "L2-02-06",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-03-04",
+      "L2-03-06",
+      "L2-04-02",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-01-01",
+    "涉及的L1数量": 6
+  }
+}

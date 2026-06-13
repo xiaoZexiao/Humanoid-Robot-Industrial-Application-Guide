@@ -1,0 +1,620 @@
+{
+  "scene_id": "19-195-00",
+  "scene_name": "鞋楦管理-制鞋车间-多规格切换",
+  "total_steps": 24,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "视觉读取工单或电子屏幕上的配送任务信息，确认需取鞋楦的款式、尺码、宽度和数量",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-工单信息-任务获取",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 2,
+      "human_description": "从当前位置行走至楦库货架区域",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地面-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 3,
+      "human_description": "扫视多层货架，根据分区标识定位目标款式尺码所在的货架层和格位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-货架阵列-视觉搜索",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 4,
+      "human_description": "读取鞋楦本体或货架格位上的标识标签，确认款式、尺码、宽度型号匹配",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-鞋楦标签-规格核对",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 5,
+      "human_description": "弯腰前屈身体，使双手能够达到中低层货架的鞋楦存放位置",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-货架中低层",
+      "is_new_l3": true,
+      "boundary_note": "若鞋楦在最低层需改用L2-02-03下蹲，此处假设中低层场景",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "空手伸向货架格位内的目标鞋楦",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-货架格位-有障碍路径",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "全手包握鞋楦楦体中段，手指贴合鞋楦曲面形成稳定握持",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-异形曲面体-中等尺寸",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将鞋楦从货架格位中向外拉出，克服鞋楦与相邻鞋楦或格位的轻微摩擦阻力",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-格位存放件-低阻力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]鞋楦与格位为松配合，偏离方向不会导致卡死，归L2-05-03而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "直起身体恢复站立姿态，同时保持对鞋楦的握持",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-负载状态",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "左手持握鞋楦状态下行走至另一格位，准备取下一只配对鞋楦",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-001",
+      "l3_name": "负载行走-单件手持-短距移位",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 11,
+      "human_description": "右手空载伸向第二只配对鞋楦的位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-货架格位-有障碍路径",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "右手全手包握第二只鞋楦",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-异形曲面体-中等尺寸",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将第二只鞋楦从格位中拉出",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-格位存放件-低阻力",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "双手各持一只鞋楦，行走至绷帮工位",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-07",
+      "l2_name": "负载行走",
+      "l3_id": "L3-01-07-002",
+      "l3_name": "负载行走-双手分持-中距配送",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 15,
+      "human_description": "在绷帮工位指定放置点精确停步",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-工位标定点-厘米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 16,
+      "human_description": "将左手鞋楦放置到工位鞋楦架或操作台指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-鞋楦-工位定位点",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "左手松开手指释放鞋楦",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 18,
+      "human_description": "将右手鞋楦放置到工位第二个指定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-鞋楦-工位定位点",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 19,
+      "human_description": "右手松开手指释放鞋楦",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    },
+    {
+      "step_order": 20,
+      "human_description": "空载行走返回楦库，准备下一轮配送或回收已完成的鞋楦",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地面-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 21,
+      "human_description": "扫视货架确认回收鞋楦应归还的格位位置",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-货架阵列-视觉搜索",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "持握待回收鞋楦伸向目标货架格位",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-鞋楦-近距入架",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "将鞋楦推入货架格位中，使其与相邻鞋楦对齐排列",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-货架格位-松配合",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]归入L2-07-01而非L2-05-02：格位侧壁形成路径约束，偏斜会与邻楦碰撞",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 24,
+      "human_description": "松开手指释放鞋楦，完成归位",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.3-0.5"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-工单信息-任务获取",
+      "l3_name_en": "Read-WorkOrder-TaskAcquisition",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉读取纸质工单、电子屏幕或手持终端上的任务信息，提取物料编号、数量、位置等结构化数据",
+      "object_category": "工单/显示屏",
+      "parameter_ranges": {
+        "size_range": "A5纸至21寸屏幕",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "字符识别精度>99%"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地面-匀速",
+      "l3_name_en": "Walk-WorkshopFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在车间环氧地坪或水泥地面上以稳定速度直线行走，无显著障碍物",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差<30cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-货架阵列-视觉搜索",
+      "l3_name_en": "Scan-ShelfArray-VisualSearch",
+      "parent_l2_id": "L2-09-03",
+      "description": "对多层多列货架进行系统性视觉扫描，根据分区标识或物料外观定位目标存放位置",
+      "object_category": "货架系统",
+      "parameter_ranges": {
+        "size_range": "扫描区域1-10m²",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "定位精度±1格位"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-鞋楦标签-规格核对",
+      "l3_name_en": "Read-LastLabel-SpecVerify",
+      "parent_l2_id": "L2-09-07",
+      "description": "近距离读取鞋楦本体刻印或粘贴的标签，核对款式编号、尺码、宽度等规格信息",
+      "object_category": "鞋楦标签",
+      "parameter_ranges": {
+        "size_range": "标签10x20mm至30x50mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "数字字符识别精度>99%"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-货架中低层",
+      "l3_name_en": "BendForward-ModerateFlex-MidLowShelf",
+      "parent_l2_id": "L2-02-02",
+      "description": "躯干前屈30-60度，使手部能够到达膝部至腰部高度的货架层，双脚保持原位",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "目标高度40-100cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-货架格位-有障碍路径",
+      "l3_name_en": "Reach-ShelfSlot-ObstructedPath",
+      "parent_l2_id": "L2-03-01",
+      "description": "空手伸入货架格位空间，避开相邻存放物或格位边框，到达目标物体可抓取位置",
+      "object_category": "货架格位",
+      "parameter_ranges": {
+        "size_range": "伸达距离30-60cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-异形曲面体-中等尺寸",
+      "l3_name_en": "PowerGrip-IrregularCurved-MediumSize",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络具有不规则曲面外形的中等尺寸物体，手指自适应贴合曲面形成稳定握持",
+      "object_category": "异形曲面物体",
+      "parameter_ranges": {
+        "size_range": "最大截面80-150mm",
+        "weight_range": "0.3-2kg",
+        "force_range": "握力10-30N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-格位存放件-低阻力",
+      "l3_name_en": "Pull-SlotStoredItem-LowResistance",
+      "parent_l2_id": "L2-05-03",
+      "description": "将存放在货架格位中的物体向外拉出，克服物体与格位壁面或相邻物体的轻微摩擦阻力",
+      "object_category": "格位存放物",
+      "parameter_ranges": {
+        "size_range": "拉出行程10-40cm",
+        "weight_range": "0.3-3kg",
+        "force_range": "拉力5-20N",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-负载状态",
+      "l3_name_en": "BendForward-ReturnUpright-Loaded",
+      "parent_l2_id": "L2-02-02",
+      "description": "在手部持有物体负载的状态下，从弯腰姿态恢复到直立站姿",
+      "object_category": "N/A",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "手持负载0.5-5kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-01-07-001",
+      "l3_name_zh": "负载行走-单件手持-短距移位",
+      "l3_name_en": "LoadedWalk-SingleHandheld-ShortMove",
+      "parent_l2_id": "L2-01-07",
+      "description": "单手持握中等重量物体状态下短距离行走，物体不影响视野和步态",
+      "object_category": "手持物体",
+      "parameter_ranges": {
+        "size_range": "行走距离1-5m",
+        "weight_range": "0.5-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-01-07-002",
+      "l3_name_zh": "负载行走-双手分持-中距配送",
+      "l3_name_en": "LoadedWalk-BothHandsCarrying-MediumDelivery",
+      "parent_l2_id": "L2-01-07",
+      "description": "双手各持一件物体状态下行走配送，保持平衡和物体稳定",
+      "object_category": "双手分持物体",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "单件0.5-2kg，总计1-4kg",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-工位标定点-厘米级",
+      "l3_name_en": "Stop-WorkstationMark-CentimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在行走末尾最后1-3步减速并精确停止在工位标定位置，为后续精确放置做准备",
+      "object_category": "工位标定点",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±3cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-鞋楦-工位定位点",
+      "l3_name_en": "PlacePrecise-Last-WorkstationPoint",
+      "parent_l2_id": "L2-03-05",
+      "description": "将手持鞋楦精确放置到工位鞋楦架或操作台的指定定位点，确保后续工序对位准确",
+      "object_category": "鞋楦",
+      "parameter_ranges": {
+        "size_range": "鞋楦长度150-350mm",
+        "weight_range": "0.3-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "放置精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在确认物体已获得外部支撑后，手指逐渐张开解除与物体的接触",
+      "object_category": "已支撑物体",
+      "parameter_ranges": {
+        "size_range": "N/A",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "N/A"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-鞋楦-近距入架",
+      "l3_name_en": "Transfer-Last-ShortRangeToShelf",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握鞋楦进行近距离空间转移，将其从持握位置移动到货架格位入口处",
+      "object_category": "鞋楦",
+      "parameter_ranges": {
+        "size_range": "转移距离30-60cm",
+        "weight_range": "0.3-2kg",
+        "force_range": "N/A",
+        "precision_requirement": "末端对准精度±1cm"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-货架格位-松配合",
+      "l3_name_en": "Insert-ShelfSlot-LooseFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将物体沿货架格位的导向方向推入，格位侧壁形成路径约束，确保物体与相邻物体对齐排列",
+      "object_category": "货架格位",
+      "parameter_ranges": {
+        "size_range": "插入行程10-40cm",
+        "weight_range": "0.3-3kg",
+        "force_range": "推力5-15N",
+        "precision_requirement": "横向偏差<格位间隙"
+      },
+      "is_new": true,
+      "source_scene": "SC-19-195-LastManagement"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-07",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-07-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-07",
+    "涉及的L1数量": 7
+  }
+}

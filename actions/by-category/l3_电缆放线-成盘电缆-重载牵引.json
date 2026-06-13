@@ -1,0 +1,809 @@
+{
+  "scene_id": "38-383-3831",
+  "scene_name": "电缆放线-成盘电缆-重载牵引",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "行走至收卷工位的收线机旁",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "5-15"
+    },
+    {
+      "step_order": 2,
+      "human_description": "视觉确认收线机运行状态和空线盘就位情况",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-设备状态-就绪确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身至电缆头所在高度",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-腰部高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手伸向电缆头位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-线缆端部-近距直线",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "双手力量抓握电缆头部（电缆直径5-50mm）",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆柱体电缆-直径5至50mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 6,
+      "human_description": "起身恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-起身恢复-站立姿态",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]起身是弯腰的逆过程，仍归入L2-02-02而非L2-02-03，因为膝关节未深度屈曲",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 7,
+      "human_description": "双臂协调牵引电缆头向线盘方向移动（重载牵引）",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-柔性线缆-重载牵引",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 8,
+      "human_description": "将电缆头对准线盘的固定孔位",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-002",
+      "l3_name": "注视-装配孔位-对准引导",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 9,
+      "human_description": "将电缆头穿入线盘中心固定孔",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-01",
+      "l2_name": "直线插入",
+      "l3_id": "L3-07-01-001",
+      "l3_name": "插入-线缆穿孔-间隙配合",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 10,
+      "human_description": "释放电缆头使其保持在穿入位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 11,
+      "human_description": "伸手取固定夹具或扎带",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具盒上方-近距取件",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 12,
+      "human_description": "抓取固定夹具",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-02",
+      "l2_name": "精密捏取",
+      "l3_id": "L3-04-02-001",
+      "l3_name": "捏取-二指对捏-固定夹具",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "将固定夹具移动到电缆固定位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-001",
+      "l3_name": "转移-小型紧固件-近距",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "将夹具卡扣压合固定电缆头到线盘",
+      "l1_id": "L1-07",
+      "l1_name": "约束路径操作",
+      "l2_id": "L2-07-06",
+      "l2_name": "卡扣压合",
+      "l3_id": "L3-07-06-001",
+      "l3_name": "卡接-线缆固定夹-单向锁定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-4"
+    },
+    {
+      "step_order": 15,
+      "human_description": "行走至收线机控制面板位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-车间地坪-匀速",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "伸手至启动按钮位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-003",
+      "l3_name": "伸达-控制面板-按钮操作准备",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 17,
+      "human_description": "点压启动按钮开启收线机",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业按钮-中等力度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "持续视觉扫描监控电缆在线盘上的排线均匀度",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-03",
+      "l2_name": "区域扫描巡视",
+      "l3_id": "L3-09-03-001",
+      "l3_name": "扫检-线盘排线区域-往复扫描",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "持续监控"
+    },
+    {
+      "step_order": 19,
+      "human_description": "伸手到电缆行进路径处准备引导",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-线缆端部-近距直线",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 20,
+      "human_description": "抓握运动中的电缆控制其位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-04",
+      "l2_name": "形变适应抓取",
+      "l3_id": "L3-04-04-001",
+      "l3_name": "适抓-柔性线缆-动态引导",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]电缆在收卷过程中持续运动且为柔性材料，需要适应性抓取而非刚性力握",
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "施加侧向力引导电缆排列到正确位置",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-06",
+      "l2_name": "静态抵持",
+      "l3_id": "L3-05-06-001",
+      "l3_name": "抵持-侧向引导-张力控制",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-10"
+    },
+    {
+      "step_order": 22,
+      "human_description": "松开电缆恢复自动收卷",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-渐进松指-动态线缆",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "视觉读取张力显示仪表数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-张力表盘-数值监控",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": "18",
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 24,
+      "human_description": "收卷完成后点压停止按钮",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-01",
+      "l2_name": "点压触发",
+      "l3_id": "L3-05-01-001",
+      "l3_name": "点压-工业按钮-中等力度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 25,
+      "human_description": "伸手取电缆剪切工具",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-002",
+      "l3_name": "伸达-工具盒上方-近距取件",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 26,
+      "human_description": "以功能握姿抓握剪切工具手柄",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-03",
+      "l2_name": "工具功能握持",
+      "l3_id": "L3-04-03-001",
+      "l3_name": "工具握持-电缆剪-剪切功能姿",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "将剪切工具移动到电缆剪切位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-02",
+      "l2_name": "单臂负载转移",
+      "l3_id": "L3-03-02-002",
+      "l3_name": "转移-手持工具-短距精准",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    },
+    {
+      "step_order": 28,
+      "human_description": "施加对向夹紧力剪断电缆",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-04",
+      "l2_name": "夹紧固持",
+      "l3_id": "L3-05-04-001",
+      "l3_name": "夹持-工具剪切-瞬时切断",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]剪切本质是通过剪切工具施加对向力，与夹紧固持的力学机制相同，归入L2-05-04而非新建L2",
+      "parallel_with": null,
+      "duration_estimate": "1-3"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-车间地坪-匀速",
+      "l3_name_en": "Walk-FactoryFloor-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在工业车间环氧地坪或混凝土地面上以匀速步态行走至指定工位",
+      "object_category": "地面",
+      "parameter_ranges": {
+        "size_range": "行走距离5-50m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "停位精度±0.5m"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-设备状态-就绪确认",
+      "l3_name_en": "Gaze-EquipmentStatus-ReadinessCheck",
+      "parent_l2_id": "L2-09-01",
+      "description": "视觉对准设备状态指示区域，确认设备运行状态和物料就位情况",
+      "object_category": "设备状态显示",
+      "parameter_ranges": {
+        "size_range": "观察距离1-3m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "状态识别准确率>95%"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-腰部高度",
+      "l3_name_en": "BendForward-ModerateFlex-WaistLevel",
+      "parent_l2_id": "L2-02-02",
+      "description": "以髋关节为轴心前屈上半身，使双手能够触及腰部以下至膝部高度的作业区域",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "前屈角度30-60度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "姿态稳定保持"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-线缆端部-近距直线",
+      "l3_name_en": "Reach-CableEnd-ShortLinear",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂沿直线轨迹伸向线缆端头位置，为后续抓取做准备",
+      "object_category": "线缆",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±50mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆柱体电缆-直径5至50mm",
+      "l3_name_en": "PowerGrip-CylindricalCable-Dia5to50mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "全手包络抓握圆柱形电缆，提供足够握力以支撑后续牵引操作",
+      "object_category": "电缆",
+      "parameter_ranges": {
+        "size_range": "直径5-50mm",
+        "weight_range": "单位长度重量0.1-5kg/m",
+        "force_range": "握力50-200N",
+        "precision_requirement": "防滑稳定抓持"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-起身恢复-站立姿态",
+      "l3_name_en": "BendForward-RiseRecover-StandingPosture",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身状态恢复至直立站姿，完成躯干伸展",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度30-60度",
+        "weight_range": "可能负载0-20kg",
+        "force_range": "腰背肌力输出",
+        "precision_requirement": "平稳恢复不失衡"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-柔性线缆-重载牵引",
+      "l3_name_en": "CoordCarry-FlexibleCable-HeavyPulling",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协同牵引柔性电缆，克服电缆自重和摩擦力将电缆头移动到目标位置",
+      "object_category": "电缆",
+      "parameter_ranges": {
+        "size_range": "电缆直径5-50mm，牵引长度0.5-3m",
+        "weight_range": "牵引段重量5-50kg",
+        "force_range": "牵引力50-300N",
+        "precision_requirement": "路径偏差±100mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-09-01-002",
+      "l3_name_zh": "注视-装配孔位-对准引导",
+      "l3_name_en": "Gaze-AssemblyHole-AlignmentGuide",
+      "parent_l2_id": "L2-09-01",
+      "description": "视线对准装配目标孔位，为精确插入操作提供视觉引导",
+      "object_category": "装配孔位",
+      "parameter_ranges": {
+        "size_range": "孔径10-80mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "孔位识别精度±5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-07-01-001",
+      "l3_name_zh": "插入-线缆穿孔-间隙配合",
+      "l3_name_en": "Insert-CableThroughHole-ClearanceFit",
+      "parent_l2_id": "L2-07-01",
+      "description": "将电缆端头沿轴向穿入线盘中心固定孔，完成电缆与线盘的初步装配",
+      "object_category": "电缆-线盘孔",
+      "parameter_ranges": {
+        "size_range": "电缆直径5-50mm，孔径比电缆大5-20mm",
+        "weight_range": "电缆端部重量1-10kg",
+        "force_range": "插入力10-50N",
+        "precision_requirement": "对中精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualOpen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑的情况下，手指渐进张开释放抓握",
+      "object_category": "通用物体",
+      "parameter_ranges": {
+        "size_range": "物体尺寸不限",
+        "weight_range": "物体重量不限",
+        "force_range": "释放速度可控",
+        "precision_requirement": "平稳释放不扰动"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-03-01-002",
+      "l3_name_zh": "伸达-工具盒上方-近距取件",
+      "l3_name_en": "Reach-ToolboxAbove-ShortPickup",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向工具盒或物料盒上方，为取出工具或小件做准备",
+      "object_category": "工具/物料盒",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.2-0.6m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±30mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-04-02-001",
+      "l3_name_zh": "捏取-二指对捏-固定夹具",
+      "l3_name_en": "Pinch-TwoFingerOppose-FixtureClip",
+      "parent_l2_id": "L2-04-02",
+      "description": "使用拇指和食指对捏方式取起小型固定夹具或扎带",
+      "object_category": "固定夹具",
+      "parameter_ranges": {
+        "size_range": "夹具尺寸10-50mm",
+        "weight_range": "重量5-100g",
+        "force_range": "捏取力2-10N",
+        "precision_requirement": "稳定捏持不滑落"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-03-02-001",
+      "l3_name_zh": "转移-小型紧固件-近距",
+      "l3_name_en": "Transfer-SmallFastener-ShortRange",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握小型紧固件或夹具，在近距离范围内转移至目标位置",
+      "object_category": "紧固件/夹具",
+      "parameter_ranges": {
+        "size_range": "物体尺寸10-80mm",
+        "weight_range": "重量5-200g",
+        "force_range": "N/A",
+        "precision_requirement": "转移终点精度±20mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-07-06-001",
+      "l3_name_zh": "卡接-线缆固定夹-单向锁定",
+      "l3_name_en": "SnapFit-CableClamp-UnidirectionalLock",
+      "parent_l2_id": "L2-07-06",
+      "description": "将固定夹具压合到电缆和线盘固定点上，弹性卡扣到位锁定",
+      "object_category": "线缆固定夹",
+      "parameter_ranges": {
+        "size_range": "夹具适配电缆直径5-50mm",
+        "weight_range": "夹具重量10-100g",
+        "force_range": "压合力20-100N",
+        "precision_requirement": "卡扣到位确认"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-03-01-003",
+      "l3_name_zh": "伸达-控制面板-按钮操作准备",
+      "l3_name_en": "Reach-ControlPanel-ButtonOperationPrep",
+      "parent_l2_id": "L2-03-01",
+      "description": "手臂伸向控制面板上的按钮位置，为点压操作做准备",
+      "object_category": "控制面板",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "末端定位精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-05-01-001",
+      "l3_name_zh": "点压-工业按钮-中等力度",
+      "l3_name_en": "Press-IndustrialButton-MediumForce",
+      "parent_l2_id": "L2-05-01",
+      "description": "用指尖对工业控制面板按钮施加短暂垂直压力触发功能",
+      "object_category": "工业按钮",
+      "parameter_ranges": {
+        "size_range": "按钮直径15-40mm",
+        "weight_range": "N/A",
+        "force_range": "按压力5-30N",
+        "precision_requirement": "触发响应确认"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-09-03-001",
+      "l3_name_zh": "扫检-线盘排线区域-往复扫描",
+      "l3_name_en": "Scan-ReelWindingArea-ReciprocatingSweep",
+      "parent_l2_id": "L2-09-03",
+      "description": "视觉持续往复扫描线盘上电缆排列区域，监控排线均匀度和层叠状态",
+      "object_category": "线盘排线区",
+      "parameter_ranges": {
+        "size_range": "扫描区域直径0.5-2m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "排线偏差检出>5mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-04-04-001",
+      "l3_name_zh": "适抓-柔性线缆-动态引导",
+      "l3_name_en": "AdaptGrip-FlexibleCable-DynamicGuide",
+      "parent_l2_id": "L2-04-04",
+      "description": "对持续运动中的柔性电缆进行适应性抓握，控制其运动轨迹",
+      "object_category": "柔性电缆",
+      "parameter_ranges": {
+        "size_range": "电缆直径5-50mm",
+        "weight_range": "抓持段重量0.5-5kg",
+        "force_range": "抓持力10-50N",
+        "precision_requirement": "力度自适应不损伤电缆"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-05-06-001",
+      "l3_name_zh": "抵持-侧向引导-张力控制",
+      "l3_name_en": "Brace-LateralGuide-TensionControl",
+      "parent_l2_id": "L2-05-06",
+      "description": "对运动中的电缆施加侧向抵持力，引导其排列位置并维持适当张力",
+      "object_category": "运动电缆",
+      "parameter_ranges": {
+        "size_range": "电缆直径5-50mm",
+        "weight_range": "N/A",
+        "force_range": "侧向力10-100N",
+        "precision_requirement": "位置引导精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-渐进松指-动态线缆",
+      "l3_name_en": "Release-GradualOpen-DynamicCable",
+      "parent_l2_id": "L2-04-07",
+      "description": "在电缆持续运动状态下渐进松开手指，使电缆平滑脱离控制",
+      "object_category": "运动电缆",
+      "parameter_ranges": {
+        "size_range": "电缆直径5-50mm",
+        "weight_range": "N/A",
+        "force_range": "释放过渡力递减",
+        "precision_requirement": "平滑脱离无卡顿"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-张力表盘-数值监控",
+      "l3_name_en": "Read-TensionGauge-ValueMonitor",
+      "parent_l2_id": "L2-09-07",
+      "description": "视觉对准张力显示仪表，读取并监控张力数值是否在正常范围",
+      "object_category": "张力仪表",
+      "parameter_ranges": {
+        "size_range": "仪表直径50-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "数值读取精度±2%"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-04-03-001",
+      "l3_name_zh": "工具握持-电缆剪-剪切功能姿",
+      "l3_name_en": "ToolGrip-CableCutter-CuttingPosture",
+      "parent_l2_id": "L2-04-03",
+      "description": "以剪切操作所需的功能性握姿抓握电缆剪工具手柄",
+      "object_category": "电缆剪",
+      "parameter_ranges": {
+        "size_range": "手柄长度100-300mm",
+        "weight_range": "工具重量0.5-3kg",
+        "force_range": "握持力30-100N",
+        "precision_requirement": "功能姿态正确"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-03-02-002",
+      "l3_name_zh": "转移-手持工具-短距精准",
+      "l3_name_en": "Transfer-HandTool-ShortPrecise",
+      "parent_l2_id": "L2-03-02",
+      "description": "单臂持握工具，在短距离范围内精确移动到作业位置",
+      "object_category": "手持工具",
+      "parameter_ranges": {
+        "size_range": "工具长度100-500mm",
+        "weight_range": "工具重量0.2-3kg",
+        "force_range": "N/A",
+        "precision_requirement": "终点定位精度±10mm"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    },
+    {
+      "l3_id": "L3-05-04-001",
+      "l3_name_zh": "夹持-工具剪切-瞬时切断",
+      "l3_name_en": "Clamp-ToolCutting-InstantSever",
+      "parent_l2_id": "L2-05-04",
+      "description": "通过剪切工具施加对向夹紧力，瞬时切断电缆",
+      "object_category": "电缆",
+      "parameter_ranges": {
+        "size_range": "电缆直径5-50mm",
+        "weight_range": "N/A",
+        "force_range": "剪切力200-2000N",
+        "precision_requirement": "切口整齐"
+      },
+      "is_new": true,
+      "source_scene": "S-38-383-3831-收卷成盘-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-02-02",
+      "L2-03-01",
+      "L2-03-02",
+      "L2-03-03",
+      "L2-04-01",
+      "L2-04-02",
+      "L2-04-03",
+      "L2-04-04",
+      "L2-04-07",
+      "L2-05-01",
+      "L2-05-04",
+      "L2-05-06",
+      "L2-07-01",
+      "L2-07-06",
+      "L2-09-01",
+      "L2-09-03",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-03-01",
+    "涉及的L1数量": 7
+  }
+}

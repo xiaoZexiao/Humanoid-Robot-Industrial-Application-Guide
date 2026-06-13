@@ -1,0 +1,758 @@
+{
+  "scene_id": "44-443-4430",
+  "scene_name": "阀门操作-热力管网阀门井-高温手轮旋拧",
+  "total_steps": 28,
+  "action_sequence": [
+    {
+      "step_order": 1,
+      "human_description": "沿管网路径行走至阀门井位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-01",
+      "l2_name": "平地直行",
+      "l3_id": "L3-01-01-001",
+      "l3_name": "行走-市政道路-匀速",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-60"
+    },
+    {
+      "step_order": 2,
+      "human_description": "在井盖旁精确停稳，便于后续操作",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-08",
+      "l2_name": "精确停位",
+      "l3_id": "L3-01-08-001",
+      "l3_name": "停位-井盖边缘-分米级",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 3,
+      "human_description": "弯腰俯身至井盖高度以便抓握井盖把手",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 4,
+      "human_description": "双手抓握井盖边缘把手或凹槽",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-001",
+      "l3_name": "力握-圆形边缘-直径600至800mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 5,
+      "human_description": "用力将井盖从井口提起",
+      "l1_id": "L1-05",
+      "l1_name": "线性力施加",
+      "l2_id": "L2-05-03",
+      "l2_name": "拉拔抽取",
+      "l3_id": "L3-05-03-001",
+      "l3_name": "拉拔-嵌入式井盖-大拉力",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]井盖从井口凹槽中提起，存在一定配合但非精密几何约束，归入L2-05-03而非L2-07-02",
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 6,
+      "human_description": "双臂将井盖搬运至井口旁侧",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-03",
+      "l2_name": "双臂协调搬运",
+      "l3_id": "L3-03-03-001",
+      "l3_name": "协搬-圆盘形井盖-重载",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-5"
+    },
+    {
+      "step_order": 7,
+      "human_description": "将井盖平稳放置在地面",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 8,
+      "human_description": "直起身体恢复站立姿态",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-002",
+      "l3_name": "俯身-恢复直立-站立高度",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 9,
+      "human_description": "转身面向井口及下井梯子",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-001",
+      "l3_name": "转体-180度-向后",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 10,
+      "human_description": "沿井壁固定梯子向下攀降进入阀门井",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-001",
+      "l3_name": "升降-竖井爬梯-下行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 11,
+      "human_description": "在狭窄井内侧身移动至阀门位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-阀门井内-肩宽受限",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 12,
+      "human_description": "转身正对手轮阀门",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-04",
+      "l2_name": "躯干旋转",
+      "l3_id": "L3-02-04-002",
+      "l3_name": "转体-90度-侧向",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 13,
+      "human_description": "伸出双臂接近手轮握柄位置",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-01",
+      "l2_name": "空载伸达",
+      "l3_id": "L3-03-01-001",
+      "l3_name": "伸达-阀门手轮-狭窄空间",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 14,
+      "human_description": "双手力量抓握手轮外缘对称位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆形手轮-直径300至800mm",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 15,
+      "human_description": "双手用力旋转手轮一定角度（约90-180度）",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-大口径截止阀手轮-大扭矩旋拧",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 16,
+      "human_description": "松开手轮以便重新调整抓握位置",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-快速松指-物体固定",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 17,
+      "human_description": "双手在新位置重新抓握手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-01",
+      "l2_name": "力量抓握",
+      "l3_id": "L3-04-01-002",
+      "l3_name": "力握-圆形手轮-直径300至800mm",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 18,
+      "human_description": "重复旋转手轮直至达到目标开度（此步骤循环执行数十至数百次）",
+      "l1_id": "L1-06",
+      "l1_name": "旋转操作",
+      "l2_id": "L2-06-03",
+      "l2_name": "阀门旋转操作",
+      "l3_id": "L3-06-03-001",
+      "l3_name": "阀操-大口径截止阀手轮-大扭矩旋拧",
+      "is_new_l3": false,
+      "boundary_note": "[边界判定]完整阀门调节需循环步骤15-18数十至数百次，此处仅记录单次原子操作",
+      "parallel_with": null,
+      "duration_estimate": "60-600"
+    },
+    {
+      "step_order": 19,
+      "human_description": "完成旋拧后松开手轮",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-002",
+      "l3_name": "释放-快速松指-物体固定",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "0.5-1"
+    },
+    {
+      "step_order": 20,
+      "human_description": "转头注视井内压力表表盘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-工业仪表盘-状态确认",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 21,
+      "human_description": "读取压力表显示数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-001",
+      "l3_name": "读取-压力表盘-压力数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 22,
+      "human_description": "转头注视温度计表盘",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-01",
+      "l2_name": "视觉注视对准",
+      "l3_id": "L3-09-01-001",
+      "l3_name": "注视-工业仪表盘-状态确认",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 23,
+      "human_description": "读取温度计显示数值",
+      "l1_id": "L1-09",
+      "l1_name": "感知定位运动",
+      "l2_id": "L2-09-07",
+      "l2_name": "标识读取定位",
+      "l3_id": "L3-09-07-002",
+      "l3_name": "读取-温度计盘-温度数值",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "2-5"
+    },
+    {
+      "step_order": 24,
+      "human_description": "在井内侧身移动至爬梯位置",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-06",
+      "l2_name": "狭窄通行",
+      "l3_id": "L3-01-06-001",
+      "l3_name": "通行-阀门井内-肩宽受限",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "3-10"
+    },
+    {
+      "step_order": 25,
+      "human_description": "沿井壁固定梯子向上攀爬出井",
+      "l1_id": "L1-01",
+      "l1_name": "全身位移",
+      "l2_id": "L2-01-03",
+      "l2_name": "梯阶升降",
+      "l3_id": "L3-01-03-002",
+      "l3_name": "升降-竖井爬梯-上行",
+      "is_new_l3": true,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "10-30"
+    },
+    {
+      "step_order": 26,
+      "human_description": "弯腰抓握放置在旁侧的井盖",
+      "l1_id": "L1-02",
+      "l1_name": "躯体姿态调整",
+      "l2_id": "L2-02-02",
+      "l2_name": "弯腰俯身",
+      "l3_id": "L3-02-02-001",
+      "l3_name": "俯身-中度前屈-膝上高度",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    },
+    {
+      "step_order": 27,
+      "human_description": "双臂将井盖搬运并精确对准井口",
+      "l1_id": "L1-03",
+      "l1_name": "上肢空间运动",
+      "l2_id": "L2-03-05",
+      "l2_name": "精确定点放置",
+      "l3_id": "L3-03-05-001",
+      "l3_name": "定放-圆形井盖-厘米级",
+      "is_new_l3": true,
+      "boundary_note": "[边界判定]井盖需精确对准井口凹槽，位置精度要求高，归入L2-03-05而非L2-03-03",
+      "parallel_with": null,
+      "duration_estimate": "3-8"
+    },
+    {
+      "step_order": 28,
+      "human_description": "松开井盖使其落入井口凹槽",
+      "l1_id": "L1-04",
+      "l1_name": "手部抓握操控",
+      "l2_id": "L2-04-07",
+      "l2_name": "受控释放",
+      "l3_id": "L3-04-07-001",
+      "l3_name": "释放-渐进松指-物体已支撑",
+      "is_new_l3": false,
+      "boundary_note": null,
+      "parallel_with": null,
+      "duration_estimate": "1-2"
+    }
+  ],
+  "new_l3_definitions": [
+    {
+      "l3_id": "L3-01-01-001",
+      "l3_name_zh": "行走-市政道路-匀速",
+      "l3_name_en": "Walk-MunicipalRoad-SteadyPace",
+      "parent_l2_id": "L2-01-01",
+      "description": "在市政道路或管网沿线平整路面匀速行走至目标位置",
+      "object_category": "地面/路面",
+      "parameter_ranges": {
+        "size_range": "步长0.5-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "路径偏差<0.5m"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-01-08-001",
+      "l3_name_zh": "停位-井盖边缘-分米级",
+      "l3_name_en": "Stop-ManholeCoverEdge-DecimeterLevel",
+      "parent_l2_id": "L2-01-08",
+      "description": "在井盖边缘精确停止，使身体处于便于操作井盖的最佳位置",
+      "object_category": "地面标识/设施位置",
+      "parameter_ranges": {
+        "size_range": "停位精度10-20cm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "分米级"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-02-02-001",
+      "l3_name_zh": "俯身-中度前屈-膝上高度",
+      "l3_name_en": "BendOver-ModerateFlex-AboveKnee",
+      "parent_l2_id": "L2-02-02",
+      "description": "上半身前屈约45-60度，使手部能够到达膝盖以上高度的操作对象",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "前屈角度45-60度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度误差±10度"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-04-01-001",
+      "l3_name_zh": "力握-圆形边缘-直径600至800mm",
+      "l3_name_en": "PowerGrip-CircularEdge-Dia600to800mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手抓握大型圆形物体（如井盖）的边缘或把手，形成稳固的力量抓握",
+      "object_category": "井盖/圆形重物",
+      "parameter_ranges": {
+        "size_range": "直径600-800mm",
+        "weight_range": "30-80kg",
+        "force_range": "握力50-150N每手",
+        "precision_requirement": "抓握位置误差±5cm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-05-03-001",
+      "l3_name_zh": "拉拔-嵌入式井盖-大拉力",
+      "l3_name_en": "Pull-EmbeddedManholeCover-HighForce",
+      "parent_l2_id": "L2-05-03",
+      "description": "将嵌入井口凹槽中的井盖垂直向上拉起脱离井口",
+      "object_category": "井盖",
+      "parameter_ranges": {
+        "size_range": "直径600-800mm",
+        "weight_range": "30-80kg",
+        "force_range": "拉力300-800N",
+        "precision_requirement": "垂直拉起，防止卡边"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-03-03-001",
+      "l3_name_zh": "协搬-圆盘形井盖-重载",
+      "l3_name_en": "CoopCarry-DiscShapedManholeCover-HeavyLoad",
+      "parent_l2_id": "L2-03-03",
+      "description": "双臂协同搬运大型圆盘形井盖，从井口移至旁侧放置位置",
+      "object_category": "井盖",
+      "parameter_ranges": {
+        "size_range": "直径600-800mm",
+        "weight_range": "30-80kg",
+        "force_range": "承载力300-800N",
+        "precision_requirement": "搬运平稳，防止跌落"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-04-07-001",
+      "l3_name_zh": "释放-渐进松指-物体已支撑",
+      "l3_name_en": "Release-GradualLoosen-ObjectSupported",
+      "parent_l2_id": "L2-04-07",
+      "description": "在物体已获得外部支撑后，渐进式放松手指完成释放",
+      "object_category": "通用重物",
+      "parameter_ranges": {
+        "size_range": "[待补充]",
+        "weight_range": "1-80kg",
+        "force_range": "释放过程力渐减至0",
+        "precision_requirement": "平稳释放，无冲击"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-02-02-002",
+      "l3_name_zh": "俯身-恢复直立-站立高度",
+      "l3_name_en": "BendOver-RecoverUpright-StandingHeight",
+      "parent_l2_id": "L2-02-02",
+      "description": "从弯腰俯身姿态恢复至直立站姿",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "恢复角度45-90度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "平衡稳定"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-02-04-001",
+      "l3_name_zh": "转体-180度-向后",
+      "l3_name_en": "Rotate-180Deg-Backward",
+      "parent_l2_id": "L2-02-04",
+      "description": "原地躯干旋转180度，面向相反方向",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度180度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度误差±15度"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-01-03-001",
+      "l3_name_zh": "升降-竖井爬梯-下行",
+      "l3_name_en": "ClimbLadder-VerticalShaft-Descend",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿竖井内壁固定爬梯逐级向下攀降",
+      "object_category": "固定爬梯/竖井",
+      "parameter_ranges": {
+        "size_range": "井深2-5m，梯级间距250-300mm",
+        "weight_range": "N/A",
+        "force_range": "抓握力100-200N",
+        "precision_requirement": "步态稳定，三点支撑"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-01-06-001",
+      "l3_name_zh": "通行-阀门井内-肩宽受限",
+      "l3_name_en": "Traverse-ValvePitInterior-ShoulderConstrained",
+      "parent_l2_id": "L2-01-06",
+      "description": "在阀门井狭窄空间内侧身或挤行移动至目标位置",
+      "object_category": "狭窄通道/阀门井",
+      "parameter_ranges": {
+        "size_range": "通道宽度0.6-1.0m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避免碰撞管道设备"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-02-04-002",
+      "l3_name_zh": "转体-90度-侧向",
+      "l3_name_en": "Rotate-90Deg-Lateral",
+      "parent_l2_id": "L2-02-04",
+      "description": "原地躯干旋转约90度，从侧面转为正对目标",
+      "object_category": "躯干姿态",
+      "parameter_ranges": {
+        "size_range": "旋转角度60-120度",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "角度误差±15度"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-03-01-001",
+      "l3_name_zh": "伸达-阀门手轮-狭窄空间",
+      "l3_name_en": "Reach-ValveHandwheel-ConfinedSpace",
+      "parent_l2_id": "L2-03-01",
+      "description": "在狭窄空间中伸出双臂接近阀门手轮的抓握位置",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "伸达距离0.3-0.8m",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "避障到达"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-04-01-002",
+      "l3_name_zh": "力握-圆形手轮-直径300至800mm",
+      "l3_name_en": "PowerGrip-CircularHandwheel-Dia300to800mm",
+      "parent_l2_id": "L2-04-01",
+      "description": "双手在手轮外缘对称位置进行力量抓握，为旋拧提供施力点",
+      "object_category": "阀门手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径300-800mm",
+        "weight_range": "N/A",
+        "force_range": "握力50-200N每手",
+        "precision_requirement": "对称抓握，利于发力"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-06-03-001",
+      "l3_name_zh": "阀操-大口径截止阀手轮-大扭矩旋拧",
+      "l3_name_en": "ValveOp-LargeDiameterGateValveHandwheel-HighTorque",
+      "parent_l2_id": "L2-06-03",
+      "description": "双手握住大口径截止阀手轮，施加大扭矩使手轮旋转以调节阀门开度",
+      "object_category": "截止阀/闸阀手轮",
+      "parameter_ranges": {
+        "size_range": "手轮直径300-800mm，阀门口径DN100-DN500",
+        "weight_range": "N/A",
+        "force_range": "扭矩50-500Nm",
+        "precision_requirement": "旋转角度控制±5度"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-04-07-002",
+      "l3_name_zh": "释放-快速松指-物体固定",
+      "l3_name_en": "Release-QuickLoosen-ObjectFixed",
+      "parent_l2_id": "L2-04-07",
+      "description": "快速松开手指释放固定安装的物体（如手轮），以便重新抓握",
+      "object_category": "固定安装件",
+      "parameter_ranges": {
+        "size_range": "[待补充]",
+        "weight_range": "N/A",
+        "force_range": "释放时间<0.5s",
+        "precision_requirement": "快速完成"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-09-01-001",
+      "l3_name_zh": "注视-工业仪表盘-状态确认",
+      "l3_name_en": "Gaze-IndustrialGaugeDial-StatusConfirm",
+      "parent_l2_id": "L2-09-01",
+      "description": "将视线对准工业仪表盘面，确保仪表刻度在视野中清晰可辨",
+      "object_category": "压力表/温度计",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "视角正对，距离0.3-1.0m"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-09-07-001",
+      "l3_name_zh": "读取-压力表盘-压力数值",
+      "l3_name_en": "Read-PressureGaugeDial-PressureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "识别并读取压力表指针所指示的压力数值",
+      "object_category": "压力表",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-200mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±0.05MPa"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-09-07-002",
+      "l3_name_zh": "读取-温度计盘-温度数值",
+      "l3_name_en": "Read-ThermometerDial-TemperatureValue",
+      "parent_l2_id": "L2-09-07",
+      "description": "识别并读取温度计指针所指示的温度数值",
+      "object_category": "温度计",
+      "parameter_ranges": {
+        "size_range": "表盘直径100-150mm",
+        "weight_range": "N/A",
+        "force_range": "N/A",
+        "precision_requirement": "读数精度±2℃"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-01-03-002",
+      "l3_name_zh": "升降-竖井爬梯-上行",
+      "l3_name_en": "ClimbLadder-VerticalShaft-Ascend",
+      "parent_l2_id": "L2-01-03",
+      "description": "沿竖井内壁固定爬梯逐级向上攀爬出井",
+      "object_category": "固定爬梯/竖井",
+      "parameter_ranges": {
+        "size_range": "井深2-5m，梯级间距250-300mm",
+        "weight_range": "N/A",
+        "force_range": "抓握力100-200N",
+        "precision_requirement": "步态稳定，三点支撑"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    },
+    {
+      "l3_id": "L3-03-05-001",
+      "l3_name_zh": "定放-圆形井盖-厘米级",
+      "l3_name_en": "PrecisionPlace-CircularManholeCover-CmLevel",
+      "parent_l2_id": "L2-03-05",
+      "description": "将井盖精确对准井口凹槽并放入到位",
+      "object_category": "井盖",
+      "parameter_ranges": {
+        "size_range": "直径600-800mm",
+        "weight_range": "30-80kg",
+        "force_range": "定位力50-200N",
+        "precision_requirement": "对准精度±2cm"
+      },
+      "is_new": true,
+      "source_scene": "S-44-443-4430-001"
+    }
+  ],
+  "l2_usage_summary": {
+    "涉及的L2编号列表": [
+      "L2-01-01",
+      "L2-01-03",
+      "L2-01-06",
+      "L2-01-08",
+      "L2-02-02",
+      "L2-02-04",
+      "L2-03-01",
+      "L2-03-03",
+      "L2-03-05",
+      "L2-04-01",
+      "L2-04-07",
+      "L2-05-03",
+      "L2-06-03",
+      "L2-09-01",
+      "L2-09-07"
+    ],
+    "最高频L2": "L2-04-01",
+    "涉及的L1数量": 7
+  }
+}
